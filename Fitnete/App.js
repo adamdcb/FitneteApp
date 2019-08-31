@@ -3,7 +3,7 @@ import {
   StatusBar,
 } from 'react-native';
 
-import { createAppNavigator, InitialStoryboard } from './app/global/navigation/NavigationService';
+import { createAppNavigator, InitialStoryboard } from './app/utils/navigation/NavigationService';
 
 const AppContainer = createAppNavigator(InitialStoryboard.Onboarding);
 
