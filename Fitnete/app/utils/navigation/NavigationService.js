@@ -1,14 +1,16 @@
 import {
     createAppContainer,
-    createSwitchNavigator
+    createSwitchNavigator,
+    StackActions
 } from 'react-navigation'
 import {
     createStackNavigator
 } from 'react-navigation-stack';
 
 import OnboardingScreen from '../../onboarding/OnboardingScreen';
+import PrivacyPolicyScreen from '../../onboarding/PrivacyPolicyScreen';
 
-const Routes = {
+const Route = {
     Onboarding: 'Onboarding',
     PrivacyPolicy: 'PrivacyPolicy',
     TermsAndConditions: 'TermsAndConditions'
@@ -20,13 +22,33 @@ const InitialStoryboard = {
 
 const OnboardingStack = createStackNavigator(
     {
-        Onboarding:  OnboardingScreen
+        Onboarding:  {
+            screen: OnboardingScreen,
+            navigationOptions: () => ({
+                header: null,
+                headerBackTitle: null
+              })
+        },
+        PrivacyPolicy: PrivacyPolicyScreen
+    },
+    {
+        defaultNavigationOptions: () => ({
+            headerStyle: {
+                borderBottomWidth: 0
+            }
+        })
     }
 );
 
 // const AppStack = createStackNavigator(
 
 // );
+
+let _navigator;
+
+function setTopLevelNavigator(navigatorRef) {
+    _navigator = navigatorRef;
+}
 
 function createAppNavigator(initialRoute = InitialStoryboard.Onboarding) {
     const AppNavigator = createSwitchNavigator(
@@ -40,8 +62,18 @@ function createAppNavigator(initialRoute = InitialStoryboard.Onboarding) {
     return createAppContainer(AppNavigator)
 }
 
+function push(route, params) {
+    const action = StackActions.push({
+        routeName: route,
+        params: params
+    });
+    _navigator.dispatch(action);
+}
+
 export {
-    Routes,
+    Route,
     InitialStoryboard,
-    createAppNavigator
+    createAppNavigator,
+    setTopLevelNavigator,
+    push
 }

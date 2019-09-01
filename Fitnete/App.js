@@ -3,7 +3,7 @@ import {
   StatusBar,
 } from 'react-native';
 
-import { createAppNavigator, InitialStoryboard } from './app/utils/navigation/NavigationService';
+import { createAppNavigator, InitialStoryboard, setTopLevelNavigator } from './app/utils/navigation/NavigationService';
 
 const AppContainer = createAppNavigator(InitialStoryboard.Onboarding);
 
@@ -11,7 +11,9 @@ const App = () => {
   return (
     <Fragment>
       <StatusBar barStyle="dark-content" />
-      <AppContainer />
+      <AppContainer
+        ref={(nav) => setTopLevelNavigator(nav)}
+      />
     </Fragment>
   );
 };
