@@ -2,20 +2,35 @@ import React from 'react';
 import { View, SafeAreaView, Text, TouchableOpacity, StyleSheet } from 'react-native';
 import { push, Route } from '../utils/navigation/NavigationService';
 import I18n from '../utils/i18n/I18n';
+import OnboardingPresenter from './OnboardingPresenter';
 
 class OnboardingScreen extends React.Component {
     constructor(props) {
-        super(props)
-        this.onAccept = this.onAccept.bind(this);
+        super(props);
         this.onPrivacyPolicyTap = this.onPrivacyPolicyTap.bind(this);
+        this.onTermsAndConditionsTap = this.onTermsAndConditionsTap.bind(this);
+        this.onAcceptTerms = this.onAcceptTerms.bind(this);
+        this.presenter = new OnboardingPresenter(this);
     }
 
-    onAccept() {
+    componentDidMount() {
 
+    }
+
+    onAcceptTerms() {
+        this.presenter.didAcceptTerms();
     }
 
     onPrivacyPolicyTap() {
-        push(Route.PrivacyPolicy)
+        push(Route.PrivacyPolicy);
+    }
+
+    onTermsAndConditionsTap() {
+        push(Route.TermsAndConditions);
+    }
+
+    componentWillUnmount() {
+        this.presenter.unmountView();
     }
 
     render() {
@@ -23,10 +38,10 @@ class OnboardingScreen extends React.Component {
             <SafeAreaView style={styles.container}>
                 <Text>{I18n.t('hello')}</Text>
                 <View style={styles.termsContainer}>
-                <Text>By signing up, you agree to Terms of Service and <Text onPress={this.onPrivacyPolicyTap} style = {{ textDecorationLine: 'underline' }}>Privacy Policy.</Text></Text>
+                <Text style={{ marginBottom: 20 }}>By signing up, you agree to <Text onPress={this.onTermsAndConditionsTap} style = {{ textDecorationLine: 'underline' }}>Terms and Conditions</Text> and <Text onPress={this.onPrivacyPolicyTap} style = {{ textDecorationLine: 'underline' }}>Privacy Policy</Text>.</Text>
                     <TouchableOpacity
                         style={styles.button}
-                        onPress={this.onPress}
+                        onPress={this.onAcceptTerms}
                     >
                         <Text style={styles.buttonText}>
                             {I18n.t('accept').toUpperCase()}
@@ -57,7 +72,7 @@ const styles = StyleSheet.create({
         color: '#FFFFFF',
         fontWeight: 'bold'
     }
-})
+});
 
 
 export default OnboardingScreen;

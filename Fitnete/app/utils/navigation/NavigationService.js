@@ -1,24 +1,19 @@
 import {
     createAppContainer,
     createSwitchNavigator,
-    StackActions
+    StackActions,
+    NavigationActions
 } from 'react-navigation'
 import {
     createStackNavigator
 } from 'react-navigation-stack';
 
+import { Route, InitialStoryboard } from './NavConstants';
+
+import LoadingScreen from '../../loading/LoadingScreen';
 import OnboardingScreen from '../../onboarding/OnboardingScreen';
-import PrivacyPolicyScreen from '../../onboarding/PrivacyPolicyScreen';
-
-const Route = {
-    Onboarding: 'Onboarding',
-    PrivacyPolicy: 'PrivacyPolicy',
-    TermsAndConditions: 'TermsAndConditions'
-}
-
-const InitialStoryboard = {
-    Onboarding: 'Onboarding'
-}
+import PrivacyPolicyScreen from '../../terms-and-conditions/privacy-policy/PrivacyPolicyScreen';
+import TermsAndConditionsScreen from '../../terms-and-conditions/terms/TermsAndConditionsScreen';
 
 const OnboardingStack = createStackNavigator(
     {
@@ -29,7 +24,8 @@ const OnboardingStack = createStackNavigator(
                 headerBackTitle: null
               })
         },
-        PrivacyPolicy: PrivacyPolicyScreen
+        PrivacyPolicy: PrivacyPolicyScreen,
+        TermsAndConditions: TermsAndConditionsScreen
     },
     {
         defaultNavigationOptions: () => ({
@@ -50,9 +46,10 @@ function setTopLevelNavigator(navigatorRef) {
     _navigator = navigatorRef;
 }
 
-function createAppNavigator(initialRoute = InitialStoryboard.Onboarding) {
+function createAppNavigator(initialRoute = InitialStoryboard.Loading) {
     const AppNavigator = createSwitchNavigator(
         {
+            Loading: LoadingScreen,
             Onboarding:  OnboardingStack
         },
         {
@@ -70,10 +67,19 @@ function push(route, params) {
     _navigator.dispatch(action);
 }
 
+function navigate(route, params) {
+    const action = NavigationActions.navigate({
+        routeName: route,
+        params: params
+    });
+    _navigator.dispatch(action);
+}
+
 export {
     Route,
     InitialStoryboard,
     createAppNavigator,
     setTopLevelNavigator,
-    push
+    push,
+    navigate
 }
