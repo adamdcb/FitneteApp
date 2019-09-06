@@ -10,13 +10,13 @@ export default class AppPresenter {
         try {
             const userStatus = await AsyncStorage.getItem('Fitnete.user.status.key')
             if (userStatus === null) {
-                this.view.setInitialStoryboard(InitialStoryboard.Onboarding);
+                this.view.setInitialStoryboard(InitialStoryboard.AppIntro);
             } else {
                 // TODO: implement logic here!
-                this.view.setInitialStoryboard(InitialStoryboard.Onboarding);
+                this.view.setInitialStoryboard(InitialStoryboard.AppIntro);
             }
           } catch(e) {
-            this.view.setInitialStoryboard(InitialStoryboard.Onboarding);
+            this.view.setInitialStoryboard(InitialStoryboard.AppIntro);
           }
     }
 

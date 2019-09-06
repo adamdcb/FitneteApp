@@ -11,14 +11,14 @@ import {
 import { Route, InitialStoryboard } from './NavConstants';
 
 import LoadingScreen from '../../loading/LoadingScreen';
-import OnboardingScreen from '../../onboarding/OnboardingScreen';
+import AppIntroScreen from '../../app-intro/AppIntroScreen';
 import PrivacyPolicyScreen from '../../terms-and-conditions/privacy-policy/PrivacyPolicyScreen';
 import TermsAndConditionsScreen from '../../terms-and-conditions/terms/TermsAndConditionsScreen';
 
-const OnboardingStack = createStackNavigator(
+const AppIntroStack = createStackNavigator(
     {
-        Onboarding:  {
-            screen: OnboardingScreen,
+        AppIntro:  {
+            screen: AppIntroScreen,
             navigationOptions: () => ({
                 header: null,
                 headerBackTitle: null
@@ -50,7 +50,7 @@ function createAppNavigator(initialRoute = InitialStoryboard.Loading) {
     const AppNavigator = createSwitchNavigator(
         {
             Loading: LoadingScreen,
-            Onboarding:  OnboardingStack
+            AppIntro:  AppIntroStack
         },
         {
             initialRouteName: initialRoute,
