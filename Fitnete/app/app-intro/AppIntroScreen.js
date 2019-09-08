@@ -21,7 +21,6 @@ class AppIntroScreen extends React.Component {
             isTermsAndCondtionsCheckBoxActive: false,
             isPrivacyPolicyCheckBoxActive: false
         }
-        this.checkBoxesState = 0;
         this.onPrivacyPolicyTap = this.onPrivacyPolicyTap.bind(this);
         this.onTermsAndConditionsTap = this.onTermsAndConditionsTap.bind(this);
         this.onToggleTermsAndConditionsCheckBox = this.onToggleTermsAndConditionsCheckBox.bind(this);
