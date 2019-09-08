@@ -1,6 +1,7 @@
 const Route = {
     PrivacyPolicy: 'PrivacyPolicy',
-    TermsAndConditions: 'TermsAndConditions'
+    TermsAndConditions: 'TermsAndConditions',
+    WaterTracker: 'WaterTracker'
 }
 
 const InitialStoryboard = {

@@ -16,4 +16,11 @@ export default {
         page2Description: 'Adjust your personalized fitness plan to meet your goals, and fit your schedule',
         page3Description: 'By setting daily water intake goals, you can ensure you stay hydrated as you progress'
     },
+    waterTracker: {
+        title: 'Daily Water Intake',
+        totalWaterIntaker: 'Total water intake',
+        completedGoals: 'Completed goals',
+        sliderInfo: 'Move this handle to set value, or tap for input',
+        goToWorkouts: 'Go to workouts'
+    }
 };

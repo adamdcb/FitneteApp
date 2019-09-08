@@ -2,11 +2,14 @@ import {
     createAppContainer,
     createSwitchNavigator,
     StackActions,
-    NavigationActions
+    NavigationActions,
 } from 'react-navigation'
 import {
-    createStackNavigator
+    createStackNavigator,
+    Header
 } from 'react-navigation-stack';
+import React from 'react';
+import { Image } from 'react-native';
 
 import { Route, InitialStoryboard } from './NavConstants';
 
@@ -14,31 +17,39 @@ import LoadingScreen from '../../loading/LoadingScreen';
 import AppIntroScreen from '../../app-intro/AppIntroScreen';
 import PrivacyPolicyScreen from '../../terms-and-conditions/privacy-policy/PrivacyPolicyScreen';
 import TermsAndConditionsScreen from '../../terms-and-conditions/terms/TermsAndConditionsScreen';
+import WaterTrackerScreen from '../../water-tracker/WaterTrackerScreen';
+
+const WaterTrackerScreens = {
+    WaterTracker:  {
+        screen: WaterTrackerScreen,
+        navigationOptions: () => ({
+            headerTransparent: true
+        })
+    }
+};
 
 const AppIntroStack = createStackNavigator(
     {
-        AppIntro:  {
+        AppIntro: {
             screen: AppIntroScreen,
             navigationOptions: () => ({
                 header: null,
                 headerBackTitle: null
-              })
+            })
         },
         PrivacyPolicy: PrivacyPolicyScreen,
-        TermsAndConditions: TermsAndConditionsScreen
+        TermsAndConditions: TermsAndConditionsScreen,
+        ...WaterTrackerScreens
     },
     {
         defaultNavigationOptions: () => ({
+            // headerBackImage: <Image source={{ uri: '' }}/>,
             headerStyle: {
                 borderBottomWidth: 0
             }
         })
     }
 );
-
-// const AppStack = createStackNavigator(
-
-// );
 
 let _navigator;
 
@@ -50,10 +61,10 @@ function createAppNavigator(initialRoute = InitialStoryboard.Loading) {
     const AppNavigator = createSwitchNavigator(
         {
             Loading: LoadingScreen,
-            AppIntro:  AppIntroStack
+            AppIntro: AppIntroStack
         },
         {
-            initialRouteName: initialRoute,
+            initialRouteName: initialRoute
         }
     );
     return createAppContainer(AppNavigator)
@@ -75,11 +86,16 @@ function navigate(route, params) {
     _navigator.dispatch(action);
 }
 
+function headerHeight() {
+    return Header.HEIGHT;
+}
+
 export {
     Route,
     InitialStoryboard,
     createAppNavigator,
     setTopLevelNavigator,
     push,
-    navigate
+    navigate,
+    headerHeight
 }
