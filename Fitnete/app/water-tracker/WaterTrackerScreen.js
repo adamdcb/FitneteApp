@@ -58,51 +58,57 @@ class WaterTrackerScreen extends React.Component {
                         </View>
                     </View>
                     <View style={styles.sliderOuterContainer}>
-                        <View
-                            style={styles.sliderInnerContainer}
-                        >
+                        <View style={styles.sliderShadowContainer}>
+                            <View style={styles.sliderShadowView} />
+                        </View>
+                        <View style={styles.sliderBackgroundContainer}>
                             <LinearGradient
                                 style={styles.sliderBackgroundView}
                                 colors={['#A0F8FF', '#FAFAFA']}
                                 useAngle
                                 angle={90}
                                 angleCenter={{ x: 0.5, y: 0.5 }}
+                                pointerEvents="none"
                             />
+                        </View>
 
-                            <Slider
-                                style={styles.slider}
-                                trackStyle={styles.sliderTrack}
-                                minimumValue={minimumValue}
-                                maximumValue={maximumValue}
-                                step={SLIDER_STEP_SIZE}
-                                value={this.state.value}
-                                onValueChange={this.onSliderValueChange}
-                                minimumTrackTintColor={'transparent'}
-                                customMinimumTrack={(
-                                    <LinearGradient
-                                        style={styles.sliderCustomMinimumTrack}
-                                        colors={['#09D4E3', '#13B6D1']}
-                                        useAngle
-                                        angle={135}
-                                        angleCenter={{ x: 0.5, y: 0.5 }}
-                                    />
-                                )}
-                                maximumTrackTintColor={'transparent'}
-                                customThumb={(
-                                    <View style={styles.sliderThumbContainer}>
+                        <Slider
+                            style={styles.slider}
+                            trackStyle={styles.sliderTrack}
+                            minimumValue={minimumValue}
+                            maximumValue={maximumValue}
+                            step={SLIDER_STEP_SIZE}
+                            value={this.state.value}
+                            onValueChange={this.onSliderValueChange}
+                            minimumTrackTintColor={'transparent'}
+                            customMinimumTrack={(
+                                <LinearGradient
+                                    style={styles.sliderCustomMinimumTrack}
+                                    colors={['#09D4E3', '#13B6D1']}
+                                    useAngle
+                                    angle={135}
+                                    angleCenter={{ x: 0.5, y: 0.5 }}
+                                />
+                            )}
+                            maximumTrackTintColor={'transparent'}
+                            customThumb={(
+                                <View style={styles.sliderThumbOuterContainer}>
+                                    <View style={styles.sliderThumbInnerContainer}>
                                         <View style={styles.sliderThumbLine} />
                                         <View style={styles.sliderThumbTriangle} />
                                     </View>
-                                )}
-                                thumbTouchSize={{
-                                    width: 64,
-                                    height: 128
-                                }}
-                            />
-                            <View
-                                style={styles.sliderTickContainer}
-                                pointerEvents="none"
-                            >
+                                </View>
+                            )}
+                            thumbTouchSize={{
+                                width: 64,
+                                height: 128
+                            }}
+                        />
+                        <View
+                            style={styles.sliderTickOuterContainer}
+                            pointerEvents="none"
+                        >
+                            <View style={styles.sliderTickInnerContainer}>
                                 <View style={styles.sliderTick} />
                                 <View style={styles.sliderTick} />
                                 <View style={styles.sliderTick} />
@@ -130,6 +136,9 @@ class WaterTrackerScreen extends React.Component {
     }
 }
 
+const SLIDER_HEIGHT = 32;
+const SLIDER_PADDING = 10;
+
 const styles = StyleSheet.create({
     container: {
         flex: 1,
@@ -145,6 +154,7 @@ const styles = StyleSheet.create({
         textAlign: 'center'
     },
     waterIntakeContainer: {
+        height: 272,
         flexDirection: 'row',
         justifyContent: 'space-between',
         paddingVertical: 24
@@ -175,13 +185,21 @@ const styles = StyleSheet.create({
         textAlign: 'left'
     },
     sliderOuterContainer: {
-        marginTop: 40,
-        height: 72,
-        justifyContent: 'flex-end'
+        marginTop: 24,
+        height: SLIDER_HEIGHT * 3,
+        paddingBottom: SLIDER_HEIGHT / 2
     },
-    sliderInnerContainer: {
-        height: 32,
-        flexDirection: 'row',
+    sliderShadowContainer: {
+        width: '100%',
+        height: SLIDER_HEIGHT,
+        top: SLIDER_HEIGHT * 1.5,
+        position: 'absolute'
+    },
+    sliderShadowView: {
+        flex: 1,
+        marginHorizontal: SLIDER_PADDING,
+        borderRadius: 8,
+        backgroundColor: '#FFFFFF',
         shadowOffset: {
             width: 0,
             height: 1
@@ -190,29 +208,43 @@ const styles = StyleSheet.create({
         shadowRadius: 2.22,
         elevation: 3
     },
-    sliderBackgroundView: {
+    sliderBackgroundContainer: {
         width: '100%',
-        height: 32,
+        height: SLIDER_HEIGHT,
+        top: SLIDER_HEIGHT * 1.5,
+        position: 'absolute',
+        elevation: 4
+    },
+    sliderBackgroundView: {
+        flex: 1,
         borderRadius: 8,
-        position: 'absolute'
+        marginHorizontal: SLIDER_PADDING
     },
     slider: {
         flex: 1,
-        marginTop: -4
+        justifyContent: 'flex-end',
+        elevation: 4
     },
     sliderTrack: {
-        height: 32
+        marginHorizontal: SLIDER_PADDING,
+        height: SLIDER_HEIGHT
     },
     sliderCustomMinimumTrack: {
         flex: 1,
+        marginRight: SLIDER_PADDING,
         borderRadius: 4
     },
-    sliderThumbContainer: {
-        height: 72,
-        marginBottom: 20
+    sliderThumbOuterContainer: {
+        height: SLIDER_HEIGHT * 2.25,
+        marginHorizontal: SLIDER_PADDING
+    },
+    sliderThumbInnerContainer: {
+        width: 10,
+        height: SLIDER_HEIGHT * 2.25,
+        position: 'absolute'
     },
     sliderThumbLine: {
-        height: 62,
+        height: SLIDER_HEIGHT * 2.25,
         width: 2,
         backgroundColor: '#33D6E2'
     },
@@ -234,15 +266,21 @@ const styles = StyleSheet.create({
             { rotate: '180deg' }
         ]
     },
-    sliderTickContainer: {
+    sliderTickOuterContainer: {
         width: '100%',
+        height: SLIDER_HEIGHT,
+        top: SLIDER_HEIGHT * 1.5,
+        position: 'absolute',
+        elevation: 4
+    },
+    sliderTickInnerContainer: {
+        flex: 1,
         flexDirection: 'row',
-        height: 32,
-        justifyContent: 'space-evenly',
-        position: 'absolute'
+        marginHorizontal: SLIDER_PADDING,
+        justifyContent: 'space-evenly'
     },
     sliderTick: {
-        height: 32,
+        height: SLIDER_HEIGHT,
         width: 1,
         backgroundColor: '#00000016'
     },

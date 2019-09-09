@@ -31,6 +31,7 @@ class AppIntroScreen extends React.Component {
 
     onAcceptTerms() {
         this.presenter.didAcceptTerms();
+        push(Route.WaterTracker);
     }
 
     onPrivacyPolicyTap() {
