@@ -1,5 +1,5 @@
 import React from 'react';
-import { TouchableOpacity, Text, StyleSheet } from 'react-native';
+import { TouchableOpacity, Text, StyleSheet, Platform } from 'react-native';
 
 
 class CheckBox extends React.Component {
@@ -54,8 +54,8 @@ const styles = StyleSheet.create({
     checkmarkActive: {
         textAlign: 'center',
         color: '#FFFFFF',
-        fontSize: 13,
-        fontWeight: '500'
+        fontFamily: 'Poppins-SemiBold',
+        fontSize: Platform.OS === 'android' ? 11 : 15,
     }
 });
 

@@ -29,8 +29,9 @@ const styles = StyleSheet.create({
         alignItems: 'center'
     },
     text: {
+        fontFamily: 'Poppins-SemiBold',
         fontSize: 15,
-        fontWeight: 'bold',
+        fontWeight: '600',
         textTransform: 'uppercase',
         color: '#FFFFFF'
     },

@@ -191,6 +191,7 @@ const styles = StyleSheet.create({
     },
     pageTitle: {
         color: '#3E3750',
+        fontFamily: 'Poppins-Bold',
         fontSize: 18,
         fontWeight: 'bold',
         textAlign: 'center',
@@ -198,6 +199,7 @@ const styles = StyleSheet.create({
     },
     pageMessage: {
         color: '#4F4C57',
+        fontFamily: 'Poppins-Regular',
         fontSize: 15,
         textAlign: 'center'
     },
@@ -216,12 +218,14 @@ const styles = StyleSheet.create({
     },
     termsText: {
         color: '#BBBBBB',
+        fontFamily: 'Poppins-Regular',
         fontSize: 14,
         marginHorizontal: 12,
         marginBottom: 24
     },
     termsTextUnderlined: {
         color: '#08C757',
+        fontFamily: 'Poppins-Regular',
         fontSize: 14,
         textDecorationLine: 'underline'
     }

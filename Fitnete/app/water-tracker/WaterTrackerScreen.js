@@ -147,14 +147,13 @@ const styles = StyleSheet.create({
     },
     title: {
         marginTop: 88,
-        height: 28,
         color: '#3E3750',
+        fontFamily: 'Poppins-Bold',
         fontSize: 24,
         fontWeight: "bold",
         textAlign: 'center'
     },
     waterIntakeContainer: {
-        height: 272,
         flexDirection: 'row',
         justifyContent: 'space-between',
         paddingVertical: 24
@@ -162,12 +161,14 @@ const styles = StyleSheet.create({
     waterIntakeValue: {
         height: 18,
         color: '#3E3750',
+        fontFamily: 'Poppins-Bold',
         fontSize: 15,
         fontWeight: "bold"
     },
     waterIntakeDescription: {
         width: 69,
         color: '#B4B3B6',
+        fontFamily: 'Poppins-Regular',
         fontSize: 12
     },
     waterIntakeImage: {
@@ -287,6 +288,7 @@ const styles = StyleSheet.create({
     sliderInfo: {
         marginTop: 16,
         color: '#4F4C57',
+        fontFamily: 'Poppins-Regular',
         fontSize: 15,
         textAlign: "center"
     },
@@ -312,6 +314,7 @@ const styles = StyleSheet.create({
     },
     goToWorkoutsLink: {
         color: '#0F7788',
+        fontFamily: 'Poppins-Regular',
         fontSize: 15,
         textAlign: "center",
         marginRight: 8

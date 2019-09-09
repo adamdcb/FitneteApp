@@ -5,7 +5,6 @@
 	};
 	objectVersion = 46;
 	objects = {
-
 /* Begin PBXBuildFile section */
 		00E356F31AD99517003FC87E /* FitneteTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 00E356F21AD99517003FC87E /* FitneteTests.m */; };
 		13B07FBC1A68108700A75B9A /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 13B07FB01A68108700A75B9A /* AppDelegate.m */; };
@@ -20,6 +19,9 @@
 		B43C784D45B7A16CF97BA5C7 /* libPods-Fitnete-tvOS.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 1492F996E5B29BCF24639C55 /* libPods-Fitnete-tvOS.a */; };
 		D392F876C3B17F467B5760B5 /* libPods-Fitnete-tvOSTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 97AF703555F8D58E19867ECC /* libPods-Fitnete-tvOSTests.a */; };
 		F5AA49BA33B27400FEAE6C15 /* libPods-FitneteTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = B951253FBBAD05F079786C1C /* libPods-FitneteTests.a */; };
+		33DB05DD2CA3486293F3FDAA /* Poppins-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 2A4995A5CE084AB6BEA9BB31 /* Poppins-Regular.ttf */; };
+		38C513C9919E4FA18DAAFCA6 /* Poppins-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = C22118CB2AE64B2F9CB30125 /* Poppins-Bold.ttf */; };
+		9AD37E0AC55D42C3AAC77E25 /* Poppins-SemiBold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 2C2F38C51B594FD0BF5B818C /* Poppins-SemiBold.ttf */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -67,6 +69,9 @@
 		ED297162215061F000B7C4FE /* JavaScriptCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = JavaScriptCore.framework; path = System/Library/Frameworks/JavaScriptCore.framework; sourceTree = SDKROOT; };
 		ED2971642150620600B7C4FE /* JavaScriptCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = JavaScriptCore.framework; path = Platforms/AppleTVOS.platform/Developer/SDKs/AppleTVOS12.0.sdk/System/Library/Frameworks/JavaScriptCore.framework; sourceTree = DEVELOPER_DIR; };
 		F583C8CF44FA068C48A1471A /* Pods-Fitnete-tvOS.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Fitnete-tvOS.debug.xcconfig"; path = "Target Support Files/Pods-Fitnete-tvOS/Pods-Fitnete-tvOS.debug.xcconfig"; sourceTree = "<group>"; };
+		2A4995A5CE084AB6BEA9BB31 /* Poppins-Regular.ttf */ = {isa = PBXFileReference; name = "Poppins-Regular.ttf"; path = "../assets/fonts/Poppins-Regular.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		C22118CB2AE64B2F9CB30125 /* Poppins-Bold.ttf */ = {isa = PBXFileReference; name = "Poppins-Bold.ttf"; path = "../assets/fonts/Poppins-Bold.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		2C2F38C51B594FD0BF5B818C /* Poppins-SemiBold.ttf */ = {isa = PBXFileReference; name = "Poppins-SemiBold.ttf"; path = "../assets/fonts/Poppins-SemiBold.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -180,6 +185,7 @@
 				83CBBA001A601CBA00E9B192 /* Products */,
 				2D16E6871FA4F8E400B85C8A /* Frameworks */,
 				11DEDDB9A41CA28626C02C68 /* Pods */,
+				EE5DFFBFC702488EB7F4A55B /* Resources */,
 			);
 			indentWidth = 2;
 			sourceTree = "<group>";
@@ -196,6 +202,17 @@
 			);
 			name = Products;
 			sourceTree = "<group>";
+		};
+		EE5DFFBFC702488EB7F4A55B /* Resources */ = {
+			isa = "PBXGroup";
+			children = (
+				2A4995A5CE084AB6BEA9BB31 /* Poppins-Regular.ttf */,
+				C22118CB2AE64B2F9CB30125 /* Poppins-Bold.ttf */,
+				2C2F38C51B594FD0BF5B818C /* Poppins-SemiBold.ttf */,
+			);
+			name = Resources;
+			sourceTree = "<group>";
+			path = "";
 		};
 /* End PBXGroup section */
 
@@ -284,7 +301,7 @@
 		83CBB9F71A601CBA00E9B192 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastUpgradeCheck = 0940;
+				LastUpgradeCheck = 940;
 				ORGANIZATIONNAME = Facebook;
 				TargetAttributes = {
 					00E356ED1AD99517003FC87E = {
@@ -338,6 +355,9 @@
 			files = (
 				13B07FBF1A68108700A75B9A /* Images.xcassets in Resources */,
 				13B07FBD1A68108700A75B9A /* LaunchScreen.xib in Resources */,
+				33DB05DD2CA3486293F3FDAA /* Poppins-Regular.ttf in Resources */,
+				38C513C9919E4FA18DAAFCA6 /* Poppins-Bold.ttf in Resources */,
+				9AD37E0AC55D42C3AAC77E25 /* Poppins-SemiBold.ttf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
