@@ -5,7 +5,7 @@ import Swiper from 'react-native-web-swiper';
 import { push, Route } from '../utils/navigation/NavigationService';
 import I18n from '../utils/i18n/I18n';
 import AppIntroPresenter from './AppIntroPresenter';
-import { Button } from '../utils/components/Button';
+import Button from '../utils/components/Button';
 import Container from '../utils/components/Container';
 import CheckBox from '../utils/components/CheckBox';
 
