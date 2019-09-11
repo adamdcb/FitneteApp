@@ -148,11 +148,10 @@ const SLIDER_PADDING = 10;
 const styles = StyleSheet.create({
     container: {
         flex: 1,
-        margin: 20,
-        marginTop: headerHeight()
+        margin: 20
     },
     title: {
-        marginTop: 88,
+        marginTop: 112,
         color: '#3E3750',
         fontFamily: 'Poppins-Bold',
         fontSize: 24,
