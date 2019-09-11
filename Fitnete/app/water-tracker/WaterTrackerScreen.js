@@ -6,6 +6,7 @@ import LinearGradient from 'react-native-linear-gradient';
 import { headerHeight } from '../utils/navigation/NavigationService';
 import I18n from '../utils/i18n/I18n';
 import Container from '../utils/components/Container';
+import FNIcon from '../utils/components/FNIcon';
 
 const SLIDER_STEP_SIZE = 100;
 
@@ -123,10 +124,15 @@ class WaterTrackerScreen extends React.Component {
                     <View style={styles.bottomContainer}>
                         <View style={styles.goToWorkoutsContainer}>
                             <View style={styles.divider} />
-                            <TouchableOpacity>
+                            <TouchableOpacity style={styles.goToWorkoutsLinkContainer} >
                                 <Text style={styles.goToWorkoutsLink}>
-                                    {I18n.t('waterTracker.goToWorkouts') + '  \u2192'}
+                                    {I18n.t('waterTracker.goToWorkouts')}
                                 </Text>
+                                <FNIcon
+                                    name="arrow-right"
+                                    color="#0F7788"
+                                    size={11}
+                                />
                             </TouchableOpacity>
                         </View>
                     </View>
@@ -227,13 +233,13 @@ const styles = StyleSheet.create({
         elevation: 4
     },
     sliderTrack: {
-        marginHorizontal: SLIDER_PADDING,
+        marginLeft: SLIDER_PADDING,
         height: SLIDER_HEIGHT
     },
     sliderCustomMinimumTrack: {
         flex: 1,
         marginRight: SLIDER_PADDING,
-        borderRadius: 4
+        borderRadius: 8
     },
     sliderThumbOuterContainer: {
         height: SLIDER_HEIGHT * 2.25,
@@ -310,7 +316,8 @@ const styles = StyleSheet.create({
         backgroundColor: '#EEEFF1'
     },
     goToWorkoutsLinkContainer: {
-        flexDirection: 'row'
+        flexDirection: 'row',
+        alignItems: 'center'
     },
     goToWorkoutsLink: {
         color: '#0F7788',
