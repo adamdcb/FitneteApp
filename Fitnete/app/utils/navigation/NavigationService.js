@@ -9,9 +9,9 @@ import {
     Header
 } from 'react-navigation-stack';
 import React from 'react';
-import { Image } from 'react-native';
 
 import { Route, InitialStoryboard } from './NavConstants';
+import HeaderBackButton from '../components/HeaderBackButton';
 
 import LoadingScreen from '../../loading/LoadingScreen';
 import AppIntroScreen from '../../app-intro/AppIntroScreen';
@@ -19,8 +19,14 @@ import PrivacyPolicyScreen from '../../terms-and-conditions/privacy-policy/Priva
 import TermsAndConditionsScreen from '../../terms-and-conditions/terms/TermsAndConditionsScreen';
 import WaterTrackerScreen from '../../water-tracker/WaterTrackerScreen';
 
+const HEADER_TITLE_STYLE = {
+    fontFamily: 'Poppins-Bold',
+    fontSize: 18,
+    color: '#3E3750'
+};
+
 const WaterTrackerScreens = {
-    WaterTracker:  {
+    WaterTracker: {
         screen: WaterTrackerScreen,
         navigationOptions: () => ({
             headerTransparent: true
@@ -43,10 +49,12 @@ const AppIntroStack = createStackNavigator(
     },
     {
         defaultNavigationOptions: () => ({
-            // headerBackImage: <Image source={{ uri: '' }}/>,
+            headerBackImage: <HeaderBackButton />,
             headerStyle: {
-                borderBottomWidth: 0
-            }
+                borderBottomWidth: 0,
+                elevation: 0
+            },
+            headerTitleStyle: HEADER_TITLE_STYLE
         })
     }
 );
