@@ -1,0 +1,58 @@
+{
+  "name": "fitnete",
+  "css_prefix_text": "icon-",
+  "css_use_suffix": false,
+  "hinting": true,
+  "units_per_em": 1000,
+  "ascent": 850,
+  "glyphs": [
+    {
+      "uid": "567bdcb72125d56c7d7afc75639281d5",
+      "css": "arrow-left",
+      "code": 59392,
+      "src": "custom_icons",
+      "selected": true,
+      "svg": {
+        "path": "M506 41.5L570.9 112.4 190 461.5 1384.6 461.5 1384.6 538.5 190 538.4 570.9 887.6 506 958.5 5.8 500 506 41.5ZM153.8 494.6L148.1 500 153.8 505.3 153.8 494.6Z",
+        "width": 1385
+      },
+      "search": [
+        "arrow-left"
+      ]
+    },
+    {
+      "uid": "089ef2c872416f8ecf81a86b7ce84b3a",
+      "css": "close",
+      "code": 59395,
+      "src": "custom_icons",
+      "selected": true,
+      "svg": {
+        "path": "M909.9 34.9L965.1 90.1 555.2 500 965.1 909.9 909.9 965.1 499.9 555.2 90.1 965.1 34.9 909.9 444.8 500 34.9 90.1 90.1 34.9 499.9 444.8 909.9 34.9Z",
+        "width": 1000
+      },
+      "search": [
+        "close"
+      ]
+    },
+    {
+      "uid": "8d8e8e4b8439b62c77e93272ac47f2f6",
+      "css": "arrow-right",
+      "code": 59396,
+      "src": "custom_icons",
+      "selected": true,
+      "svg": {
+        "path": "M878.6 34.1L813.7 105 1194.6 454.1 0 454.2 0 531.1 1194.6 531.1 813.7 880.3 878.6 951.2 1378.8 492.7 878.6 34.1ZM1230.8 487.3L1236.5 492.7 1230.8 497.9 1230.8 487.3Z",
+        "width": 1385
+      },
+      "search": [
+        "arrow-right"
+      ]
+    },
+    {
+      "uid": "14017aae737730faeda4a6fd8fb3a5f0",
+      "css": "check",
+      "code": 59393,
+      "src": "entypo"
+    }
+  ]
+}
