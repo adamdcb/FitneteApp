@@ -29,9 +29,13 @@ class AppIntroScreen extends React.Component {
         this.onSwiperIndexChanged = this.onSwiperIndexChanged.bind(this);
     }
 
+    componentDidMount() {
+        push(Route.AreasOfFocus);
+    }
+
     onAcceptTerms() {
         this.presenter.didAcceptTerms();
-        push(Route.WaterTracker);
+        push(Route.AreasOfFocus);
     }
 
     onPrivacyPolicyTap() {
@@ -70,8 +74,8 @@ class AppIntroScreen extends React.Component {
         const { isTermsAndCondtionsCheckBoxActive, isPrivacyPolicyCheckBoxActive } = this.state;
         const isAcceptEnabled = isTermsAndCondtionsCheckBoxActive && isPrivacyPolicyCheckBoxActive;
         return (
-            <Container>
-                <SafeAreaView style={styles.container}>
+            <SafeAreaView style={styles.container}>
+                <Container>
                     <Swiper
                         containerStyle={styles.swiper}
                         minDistanceForAction={0.1}
@@ -144,16 +148,15 @@ class AppIntroScreen extends React.Component {
                             onPress={this.onAcceptTerms}
                         />
                     </View>
-                </SafeAreaView>
-            </Container>
+                </Container>
+            </SafeAreaView>
         );
     }
 }
 
 const styles = StyleSheet.create({
     container: {
-        flex: 1,
-        margin: 20
+        flex: 1
     },
     swiper: {
         height: 200,

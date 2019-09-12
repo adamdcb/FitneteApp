@@ -18,6 +18,7 @@
     "react-native-reanimated": "1.2.0",
     "react-native-screens": "1.0.0-alpha.23",
     "react-native-slider-custom": "github:emmanuellmota/react-native-slider",
+    "react-native-switch-toggle": "1.1.0",
     "react-native-tab-view": "2.10.0",
     "react-native-vector-icons": "6.6.0",
     "react-native-web-swiper": "2.0.5",

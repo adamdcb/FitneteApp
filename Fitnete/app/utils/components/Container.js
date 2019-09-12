@@ -20,7 +20,8 @@ class Container extends React.PureComponent {
 
 const styles = StyleSheet.create({
     linearGradient: {
-        flex: 1
+        flex: 1,
+        paddingHorizontal: 20
     },
 });
 

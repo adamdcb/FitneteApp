@@ -29,11 +29,11 @@ class WaterTrackerScreen extends React.Component {
     render() {
         const { minimumValue, maximumValue } = this.state;
         return (
-            <Container
-                locations={[0, 0.5, 1]}
-                colors={['#CEF9FC', '#ECFFFA', '#FFFFFF']}
-            >
-                <SafeAreaView style={styles.container}>
+            <SafeAreaView style={styles.container}>
+                <Container
+                    locations={[0, 0.5, 1]}
+                    colors={['#CEF9FC', '#ECFFFA', '#FFFFFF']}
+                >
                     <Text style={styles.title}>
                         {I18n.t('waterTracker.title')}
                     </Text>
@@ -136,8 +136,8 @@ class WaterTrackerScreen extends React.Component {
                             </TouchableOpacity>
                         </View>
                     </View>
-                </SafeAreaView>
-            </Container>
+                </Container>
+            </SafeAreaView>
         );
     }
 }
@@ -147,8 +147,7 @@ const SLIDER_PADDING = 10;
 
 const styles = StyleSheet.create({
     container: {
-        flex: 1,
-        margin: 20
+        flex: 1
     },
     title: {
         marginTop: 112,

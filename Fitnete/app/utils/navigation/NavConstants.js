@@ -1,6 +1,7 @@
 const Route = {
     PrivacyPolicy: 'PrivacyPolicy',
     TermsAndConditions: 'TermsAndConditions',
+    AreasOfFocus: 'AreasOfFocus',
     WaterTracker: 'WaterTracker'
 }
 

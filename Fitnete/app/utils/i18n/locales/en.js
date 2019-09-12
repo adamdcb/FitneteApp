@@ -22,5 +22,18 @@ export default {
         completedGoals: 'Completed goals',
         sliderInfo: 'Move this handle to set value, or tap for input',
         goToWorkouts: 'Go to workouts'
+    },
+    areasOfFocus: {
+        title: 'Areas of Focus',
+        stepCurrent: 'Step %{step_number}',
+        stepTotal: 'out of %{total}',
+        description: 'Select Your Areas of Focus',
+        female: 'Female',
+        male: 'Male',
+        armsAndChest: 'Arms and Chest',
+        abdominals: 'Abdominals',
+        armsAndBack: 'Arms & Back',
+        legs: 'Legs',
+        continue: 'Continue'
     }
 };

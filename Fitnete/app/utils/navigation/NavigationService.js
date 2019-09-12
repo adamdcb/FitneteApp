@@ -18,6 +18,7 @@ import AppIntroScreen from '../../app-intro/AppIntroScreen';
 import PrivacyPolicyScreen from '../../terms-and-conditions/privacy-policy/PrivacyPolicyScreen';
 import TermsAndConditionsScreen from '../../terms-and-conditions/terms/TermsAndConditionsScreen';
 import WaterTrackerScreen from '../../water-tracker/WaterTrackerScreen';
+import AreasOfFocusScreen from '../../user-data-input/areas-of-focus/AreasOfFocusScreen';
 
 const HEADER_TITLE_STYLE = {
     fontFamily: 'Poppins-Bold',
@@ -25,13 +26,12 @@ const HEADER_TITLE_STYLE = {
     color: '#3E3750'
 };
 
+const UserDataInputScreens = {
+    AreasOfFocus: AreasOfFocusScreen
+}
+
 const WaterTrackerScreens = {
-    WaterTracker: {
-        screen: WaterTrackerScreen,
-        navigationOptions: () => ({
-            headerTransparent: true
-        })
-    }
+    WaterTracker: WaterTrackerScreen
 };
 
 const AppIntroStack = createStackNavigator(
@@ -39,18 +39,19 @@ const AppIntroStack = createStackNavigator(
         AppIntro: {
             screen: AppIntroScreen,
             navigationOptions: () => ({
-                header: null,
                 headerBackTitle: null
             })
         },
         PrivacyPolicy: PrivacyPolicyScreen,
         TermsAndConditions: TermsAndConditionsScreen,
-        ...WaterTrackerScreens
+        ...WaterTrackerScreens,
+        ...UserDataInputScreens
     },
     {
         defaultNavigationOptions: () => ({
             headerBackImage: <HeaderBackButton />,
             headerStyle: {
+                backgroundColor: '#F3F4FA',
                 borderBottomWidth: 0,
                 elevation: 0
             },
