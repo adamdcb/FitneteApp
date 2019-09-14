@@ -5,11 +5,13 @@
   "scripts": {
     "start": "react-native start",
     "test": "jest",
-    "lint": "eslint ."
+    "lint": "eslint .",
+    "postinstall": "patch-package"
   },
   "dependencies": {
     "@react-native-community/async-storage": "1.6.1",
     "i18n-js": "3.3.0",
+    "patch-package": "6.2.0",
     "react": "16.8.6",
     "react-native": "0.60.5",
     "react-native-gesture-handler": "1.4.1",
