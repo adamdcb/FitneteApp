@@ -1,0 +1,64 @@
+diff --git a/node_modules/react-native-switch-toggle/index.js b/node_modules/react-native-switch-toggle/index.js
+index db25a5a..489714a 100644
+--- a/node_modules/react-native-switch-toggle/index.js
++++ b/node_modules/react-native-switch-toggle/index.js
+@@ -1,13 +1,13 @@
+ import React, { Component } from 'react';
+ 
+-import { Animated, StyleSheet, Text, TouchableOpacity } from 'react-native';
++import { Animated, StyleSheet, View, Text, TouchableOpacity } from 'react-native';
+ 
+ import PropTypes from 'prop-types';
+ 
+ class Item extends Component {
+   static defaultProps = {
+     switchOn: false,
+-    onPress: () => {},
++    onPress: () => { },
+     containerStyle: {
+       width: 72,
+       height: 36,
+@@ -101,8 +101,8 @@ class Item extends Component {
+             this.props.containerStyle,
+             {
+               backgroundColor: this.state.animXValue.interpolate({
+-                inputRange: [ 0, 1 ],
+-                outputRange: [ this.props.backgroundColorOff, this.props.backgroundColorOn ],
++                inputRange: [0, 1],
++                outputRange: [this.props.backgroundColorOff, this.props.backgroundColorOn],
+               }),
+             },
+           ]}
+@@ -115,22 +115,26 @@ class Item extends Component {
+               this.props.circleStyle,
+               {
+                 backgroundColor: this.state.animXValue.interpolate({
+-                  inputRange: [ 0, 1 ],
+-                  outputRange: [ this.props.circleColorOff, this.props.circleColorOn ],
++                  inputRange: [0, 1],
++                  outputRange: [this.props.circleColorOff, this.props.circleColorOn],
+                 }),
+               },
+               {
+                 transform: [
+                   {
+                     translateX: this.state.animXValue.interpolate({
+-                      inputRange: [ 0, 1 ],
+-                      outputRange: [ this.state.circlePosXStart, this.state.circlePosXEnd ],
++                      inputRange: [0, 1],
++                      outputRange: [this.state.circlePosXStart, this.state.circlePosXEnd],
+                     }),
+                   },
+                 ],
+-              },
+-              this.props.buttonStyle,
++              }
+             ]}>
++            <View
++              style={[
++                this.props.buttonStyle
++              ]}>
++            </View>
+             <Animated.View style={this.props.buttonContainerStyle}>
+               <Text style={this.props.buttonTextStyle}>{this.props.buttonText}</Text>
+             </Animated.View>
