@@ -2,7 +2,7 @@ import React from 'react';
 import { View, SafeAreaView, Text, TouchableOpacity, StyleSheet } from 'react-native';
 import Swiper from 'react-native-web-swiper';
 
-import { push, Route } from '../utils/navigation/NavigationService';
+import { push, Route, navigate } from '../utils/navigation/NavigationService';
 import I18n from '../utils/i18n/I18n';
 import AppIntroPresenter from './AppIntroPresenter';
 import Button from '../utils/components/Button';
@@ -29,13 +29,8 @@ class AppIntroScreen extends React.Component {
         this.onSwiperIndexChanged = this.onSwiperIndexChanged.bind(this);
     }
 
-    componentDidMount() {
-        push(Route.AreasOfFocus);
-    }
-
     onAcceptTerms() {
         this.presenter.didAcceptTerms();
-        push(Route.AreasOfFocus);
     }
 
     onPrivacyPolicyTap() {
@@ -64,6 +59,10 @@ class AppIntroScreen extends React.Component {
             title: I18n.t(element.title),
             message: I18n.t(element.description)
         })
+    }
+
+    didAcceptTerms() {
+        navigate(Route.AreasOfFocus);
     }
 
     componentWillUnmount() {

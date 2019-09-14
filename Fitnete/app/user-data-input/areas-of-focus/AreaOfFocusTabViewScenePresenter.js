@@ -1,17 +1,31 @@
 import I18n from '../../utils/i18n/I18n';
+import UserDataSource from '../../data/UserDataSource';
 
 export default class AreaOfFocusTabViewScenePresenter {
     constructor(view, type) {
         this.view = view;
         this.type = type;
-        this.data = this._getData();
+        this.dataSource = new UserDataSource();
+        this.data = {};
     }
 
-    getData() {
-        return this.data[this.type];
+    async loadData() {
+        const data = this._getDefaultData();
+        const user = await this.dataSource.getUser();
+        const areasOfFocus = ((user || {}).fitness || {}).areasOfFocus;
+        if (areasOfFocus) {
+            const areas = data[this.type];
+            areas.forEach(a => {
+                if (areasOfFocus.includes(a.type)) {
+                    a.selected = true;
+                }
+            });
+        }
+        this.data = data;
+        this.view.setAreasData(this.data[this.type]);
     }
 
-    _getData() {
+    _getDefaultData() {
         const data = {
             female: [
                 {
@@ -69,10 +83,19 @@ export default class AreaOfFocusTabViewScenePresenter {
         return data;
     }
 
-    didToggleArea(index) {
-        const data = this.data[this.type];
-        data[index].selected = !data[index].selected;
-        this.view.setAreasData(data);
+    async didToggleArea(index) {
+        const areas = this.data[this.type];
+        const area = areas[index];
+        area.selected = !area.selected;
+        const data = {
+            fitness: {
+                areasOfFocus: areas.filter(a => a.selected).map(a => a.type).join(',')
+            }
+        };
+        const success = await this.dataSource.setUser(data);
+        if (success) {
+            this.view.setAreasData(areas);
+        }
     }
 
     unmountView() {

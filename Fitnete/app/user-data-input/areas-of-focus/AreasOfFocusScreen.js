@@ -10,18 +10,25 @@ import Button from '../../utils/components/Button';
 import AreaOfFocusPresenter from './AreaOfFocusPresenter';
 import { push, Route } from '../../utils/navigation/NavigationService';
 import AreasOfFocusTabViewScene from './AreasOfFocusTabViewScene';
+import UserDataSource from '../../data/UserDataSource';
 
 class AreasOfFocusScreen extends React.Component {
     constructor(props) {
         super(props);
         this.presenter = new AreaOfFocusPresenter(this);
-        const data = this.presenter.getData();
         this.state = {
-            tabView: this.getTabViewData(data)
+            tabView: null
         };
         this.onIndexChange = this.onIndexChange.bind(this);
         this.getScene = this.getScene.bind(this);
         this.onContinue = this.onContinue.bind(this);
+    }
+
+    async componentDidMount() {
+        this.presenter.loadData();
+        const userDS = new UserDataSource();
+        const user = await userDS.getUser();
+        console.log(user);
     }
 
     componentWillUnmount() {
@@ -60,8 +67,20 @@ class AreasOfFocusScreen extends React.Component {
         };
     }
 
+    getLoadingView() {
+        return (
+            <SafeAreaView style={styles.container}>
+                <Container />
+            </SafeAreaView>
+        );
+    }
+
     render() {
-        const { routes } = this.state.tabView;
+        const { tabView } = this.state;
+        if (!tabView) {
+            return this.getLoadingView();
+        }
+        const { routes } = tabView;
         const scenes = routes.reduce((prev, current) => {
             prev[current.key] = this.getScene;
             return prev;

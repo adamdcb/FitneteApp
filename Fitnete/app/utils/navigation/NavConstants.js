@@ -7,7 +7,8 @@ const Route = {
 
 const InitialStoryboard = {
     Loading: 'Loading',
-    AppIntro: 'AppIntro'
+    AppIntro: 'AppIntro',
+    UserDataInput: 'UserDataInput'
 }
 
 export {

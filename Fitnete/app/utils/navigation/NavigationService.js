@@ -48,7 +48,20 @@ const AppIntroStack = createStackNavigator(
             })
         },
         PrivacyPolicy: PrivacyPolicyScreen,
-        TermsAndConditions: TermsAndConditionsScreen,
+        TermsAndConditions: TermsAndConditionsScreen
+    },
+    {
+        defaultNavigationOptions: () => ({
+            headerBackImage: <HeaderBackButton />,
+            headerStyle: HEADER_STYLE,
+            headerBackTitle: null,
+            headerTitleStyle: HEADER_TITLE_STYLE
+        })
+    }
+);
+
+const UserDataInputStack = createStackNavigator(
+    {
         ...UserDataInputScreens,
         ...WaterTrackerScreens
     },
@@ -72,7 +85,8 @@ function createAppNavigator(initialRoute = InitialStoryboard.Loading) {
     const AppNavigator = createSwitchNavigator(
         {
             Loading: LoadingScreen,
-            AppIntro: AppIntroStack
+            AppIntro: AppIntroStack,
+            UserDataInput: UserDataInputStack
         },
         {
             initialRouteName: initialRoute

@@ -1,23 +1,26 @@
-import AsyncStorage from '@react-native-community/async-storage';
+import UserDataSource from './app/data/UserDataSource';
 import { InitialStoryboard } from './app/utils/navigation/NavConstants';
 
 export default class AppPresenter {
     constructor(view) {
         this.view = view;
+        this.dataSource = new UserDataSource();
     }
 
     async loadInitialStoryboard() {
         try {
-            const userStatus = await AsyncStorage.getItem('Fitnete.user.status.key')
-            if (userStatus === null) {
+            const user = await this.dataSource.getUser();
+            if (user === null || !user.didAcceptTerms) {
                 this.view.setInitialStoryboard(InitialStoryboard.AppIntro);
+            } else if (!user.profile) {
+                this.view.setInitialStoryboard(InitialStoryboard.UserDataInput);
             } else {
                 // TODO: implement logic here!
-                this.view.setInitialStoryboard(InitialStoryboard.AppIntro);
+                this.view.setInitialStoryboard(InitialStoryboard.UserDataInput);
             }
-          } catch(e) {
+        } catch (e) {
             this.view.setInitialStoryboard(InitialStoryboard.AppIntro);
-          }
+        }
     }
 
     unmountView() {

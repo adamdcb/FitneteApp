@@ -8,9 +8,13 @@ class AreasOfFocusTabViewScene extends React.Component {
         super(props);
         this.presenter = new AreaOfFocusTabViewScenePresenter(this, props.type);
         this.state = {
-            areas: this.presenter.getData()
+            areas: []
         }
         this.onToggleArea = this.onToggleArea.bind(this);
+    }
+
+    componentDidMount() {
+        this.presenter.loadData();
     }
 
     componentWillUnmount() {

@@ -1,8 +1,9 @@
-import AsyncStorage from '@react-native-community/async-storage';
+import UserDataSource from "../data/UserDataSource";
 
 export default class AppIntroPresenter {
     constructor(view) {
         this.view = view;
+        this.dataSource = new UserDataSource();
     }
 
     getData() {
@@ -29,18 +30,14 @@ export default class AppIntroPresenter {
         return data;
     }
 
-    didAcceptTerms() {
-        // try {
-        //     const userStatus = await AsyncStorage.getItem('Fitnete.user.status.key')
-        //     if (userStatus === null) {
-        //         this.view.setInitialStoryboard(InitialStoryboard.Onboarding);
-        //     } else {
-        //         // TODO: implement logic here!
-        //         this.view.setInitialStoryboard(InitialStoryboard.Onboarding);
-        //     }
-        //   } catch(e) {
-        //     this.view.setInitialStoryboard(InitialStoryboard.Onboarding);
-        //   }
+    async didAcceptTerms() {
+        const data = {
+            didAcceptTerms: true
+        };
+        const success = await this.dataSource.setUser(data);
+        if (success) {
+            this.view.didAcceptTerms();
+        }
     }
 
     unmountView() {
