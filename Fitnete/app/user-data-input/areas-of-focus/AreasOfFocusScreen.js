@@ -8,58 +8,64 @@ import Container from '../../utils/components/Container';
 import ProgressIndicator from '../../utils/components/ProgressIndicator';
 import Button from '../../utils/components/Button';
 import AreaOfFocusPresenter from './AreaOfFocusPresenter';
+import { push, Route } from '../../utils/navigation/NavigationService';
+import AreasOfFocusTabViewScene from './AreasOfFocusTabViewScene';
 
 class AreasOfFocusScreen extends React.Component {
     constructor(props) {
         super(props);
         this.presenter = new AreaOfFocusPresenter(this);
+        const data = this.presenter.getData();
         this.state = {
-            tabView: {
-                index: 0,
-                routes: [
-                    { key: 'female', title: I18n.t('areasOfFocus.female') },
-                    { key: 'male', title: I18n.t('areasOfFocus.male') },
-                ]
-            }
+            tabView: this.getTabViewData(data)
         };
         this.onIndexChange = this.onIndexChange.bind(this);
-        this.firstRoute = this.firstRoute.bind(this);
-        this.secondRoute = this.secondRoute.bind(this);
+        this.getScene = this.getScene.bind(this);
+        this.onContinue = this.onContinue.bind(this);
+    }
+
+    componentWillUnmount() {
+        this.presenter.unmountView();
+    }
+
+    onContinue() {
+        push(Route.WaterTracker);
     }
 
     onIndexChange(index) {
-        const tabView = {};
-        Object.assign(tabView, { ...this.state.tabView, index });
-        this.setState({ tabView });
+        this.presenter.didSelectGroup(index);
     }
 
-    firstRoute() {
+    setTabViewData(data) {
+        this.setState({
+            tabView: this.getTabViewData(data)
+        });
+    }
+
+    getScene({ route }) {
         return (
-            <View style={[styles.tabViewScene]}>
-                <View style={styles.tabViewImage}>
-
-                </View>
-
-                <SwitchToggle
-                    containerStyle={styles.switchContainer}
-                    circleStyle={styles.switchCircle}
-                    buttonStyle={styles.switchButton}
-                    backgroundColorOn="#08C757"
-                    backgroundColorOff="#3E3750"
-                // switchOn={this.state.switchOn2}
-                // onPress={this.onPress2}
-                />
-            </View>
-
+            <AreasOfFocusTabViewScene
+                type={route.key}
+            />
         )
     }
-    secondRoute() {
-        return (
-            <View style={[styles.tabViewScene]} />
-        )
+
+    getTabViewData(data) {
+        return {
+            index: data.selectedGroupIndex,
+            routes: data.groups.map(group => ({
+                key: group.type,
+                title: group.name
+            }))
+        };
     }
 
     render() {
+        const { routes } = this.state.tabView;
+        const scenes = routes.reduce((prev, current) => {
+            prev[current.key] = this.getScene;
+            return prev;
+        }, {});
         return (
             <SafeAreaView style={styles.container}>
                 <Container>
@@ -82,12 +88,12 @@ class AreasOfFocusScreen extends React.Component {
                     <TabView
                         style={styles.tabView}
                         navigationState={this.state.tabView}
-                        renderScene={SceneMap({
-                            female: this.firstRoute,
-                            male: this.secondRoute,
-                        })}
+                        renderScene={SceneMap(scenes)}
                         onIndexChange={this.onIndexChange}
-                        // initialLayout={{ width: Dimensions.get('window').width }}
+                        initialLayout={{
+                            height: 0,
+                            width: Dimensions.get('window').width,
+                        }}
                         renderTabBar={props =>
                             <TabBar
                                 {...props}
@@ -100,11 +106,11 @@ class AreasOfFocusScreen extends React.Component {
                     <View style={styles.bottomContainer}>
                         <Button
                             title={I18n.t('areasOfFocus.continue')}
-                        // onPress={}
+                            onPress={this.onContinue}
                         />
                     </View>
                 </Container>
-            </SafeAreaView >
+            </SafeAreaView>
         )
     }
 }
@@ -158,31 +164,8 @@ const styles = StyleSheet.create({
     tabBarIndicator: {
         backgroundColor: '#08C757'
     },
-    tabViewScene: {
-        flex: 1,
-        marginTop: 16,
-        flexDirection: 'row'
-    },
-    tabViewImage: {
-        width: 120
-    },
-    switchContainer: {
-        width: 48,
-        height: 24,
-        borderRadius: 12,
-        backgroundColor: '#3E3750',
-        padding: 4
-    },
-    switchCircle: {
-        width: 16,
-        height: 16,
-        borderRadius: 5,
-        backgroundColor: '#FFFFFF'
-    },
-    switchButton: {
-        transform: [
-            { rotate: '-45deg' }
-        ]
+    areasContainer: {
+        marginTop: 56
     },
     bottomContainer: {
         marginBottom: 16,

@@ -5,8 +5,7 @@ import {
     NavigationActions,
 } from 'react-navigation'
 import {
-    createStackNavigator,
-    Header
+    createStackNavigator
 } from 'react-navigation-stack';
 import React from 'react';
 
@@ -19,6 +18,12 @@ import PrivacyPolicyScreen from '../../terms-and-conditions/privacy-policy/Priva
 import TermsAndConditionsScreen from '../../terms-and-conditions/terms/TermsAndConditionsScreen';
 import WaterTrackerScreen from '../../water-tracker/WaterTrackerScreen';
 import AreasOfFocusScreen from '../../user-data-input/areas-of-focus/AreasOfFocusScreen';
+
+const HEADER_STYLE = {
+    backgroundColor: '#F3F4FA',
+    borderBottomWidth: 0,
+    elevation: 0
+}
 
 const HEADER_TITLE_STYLE = {
     fontFamily: 'Poppins-Bold',
@@ -44,17 +49,14 @@ const AppIntroStack = createStackNavigator(
         },
         PrivacyPolicy: PrivacyPolicyScreen,
         TermsAndConditions: TermsAndConditionsScreen,
-        ...WaterTrackerScreens,
-        ...UserDataInputScreens
+        ...UserDataInputScreens,
+        ...WaterTrackerScreens
     },
     {
         defaultNavigationOptions: () => ({
             headerBackImage: <HeaderBackButton />,
-            headerStyle: {
-                backgroundColor: '#F3F4FA',
-                borderBottomWidth: 0,
-                elevation: 0
-            },
+            headerStyle: HEADER_STYLE,
+            headerBackTitle: null,
             headerTitleStyle: HEADER_TITLE_STYLE
         })
     }
@@ -95,10 +97,6 @@ function navigate(route, params) {
     _navigator.dispatch(action);
 }
 
-function headerHeight() {
-    return Header.HEIGHT;
-}
-
 export {
     Route,
     InitialStoryboard,
@@ -106,5 +104,5 @@ export {
     setTopLevelNavigator,
     push,
     navigate,
-    headerHeight
+    HEADER_STYLE
 }

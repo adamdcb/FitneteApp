@@ -3,7 +3,7 @@ import { View, SafeAreaView, Text, TouchableOpacity, StyleSheet, Image } from 'r
 import Slider from 'react-native-slider-custom';
 import LinearGradient from 'react-native-linear-gradient';
 
-import { headerHeight } from '../utils/navigation/NavigationService';
+import { HEADER_STYLE } from '../utils/navigation/NavigationService';
 import I18n from '../utils/i18n/I18n';
 import Container from '../utils/components/Container';
 import FNIcon from '../utils/components/FNIcon';
@@ -324,6 +324,13 @@ const styles = StyleSheet.create({
         textAlign: "center",
         marginRight: 8
     }
+});
+
+WaterTrackerScreen.navigationOptions = () => ({
+    headerStyle: {
+        ...HEADER_STYLE,
+        backgroundColor: '#CEF9FC'
+    },
 });
 
 export default WaterTrackerScreen;
