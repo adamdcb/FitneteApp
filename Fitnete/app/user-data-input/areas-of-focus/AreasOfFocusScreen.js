@@ -71,15 +71,15 @@ class AreasOfFocusScreen extends React.Component {
                 <Container>
                     <View style={styles.progressContainer}>
                         <Text style={styles.stepTextLeft}>
-                            {I18n.t('areasOfFocus.stepCurrent', { step_number: 2 })}
+                            {I18n.t('dataCollection.stepCurrent', { step_number: 1 })}
                         </Text>
                         <ProgressIndicator
                             style={styles.progressIndicator}
                             count={4}
-                            activeIndex={1}
+                            activeIndex={0}
                         />
                         <Text style={styles.stepTextRight}>
-                            {I18n.t('areasOfFocus.stepTotal', { total: 4 })}
+                            {I18n.t('dataCollection.stepTotal', { total: 4 })}
                         </Text>
                     </View>
                     <Text style={styles.description}>
@@ -105,7 +105,7 @@ class AreasOfFocusScreen extends React.Component {
                     />
                     <View style={styles.bottomContainer}>
                         <Button
-                            title={I18n.t('areasOfFocus.continue')}
+                            title={I18n.t('dataCollection.continue')}
                             onPress={this.onContinue}
                         />
                     </View>
