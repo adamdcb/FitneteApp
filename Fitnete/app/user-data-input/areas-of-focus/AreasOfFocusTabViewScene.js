@@ -40,8 +40,8 @@ class AreasOfFocusTabViewScene extends React.Component {
                             <SwitchToggle
                                 containerStyle={styles.switchContainer}
                                 circleStyle={styles.switchCircle}
-                                circleColorOff='#FFFFFF'
-                                circleColorOn='#FFFFFF'
+                                circleColorOff='#FFFFFF00'
+                                circleColorOn='#FFFFFF00'
                                 buttonStyle={styles.switchButton}
                                 backgroundColorOn="#08C757"
                                 backgroundColorOff="#3E3750"
@@ -92,11 +92,13 @@ const styles = StyleSheet.create({
     },
     switchCircle: {
         width: 16,
-        height: 16,
-        borderRadius: 5,
-        backgroundColor: '#FFFFFF'
+        height: 16
     },
     switchButton: {
+        width: 16,
+        height: 16,
+        borderRadius: 5,
+        backgroundColor: '#FFFFFF',
         transform: [
             { rotate: '-45deg' }
         ]
