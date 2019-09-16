@@ -1,7 +1,6 @@
 import React from 'react';
 import { SafeAreaView, View, Text, StyleSheet, Dimensions } from 'react-native';
 import { TabView, SceneMap, TabBar } from 'react-native-tab-view';
-import SwitchToggle from 'react-native-switch-toggle';
 
 import I18n from '../../utils/i18n/I18n';
 import Container from '../../utils/components/Container';
@@ -85,20 +84,21 @@ class AreasOfFocusScreen extends React.Component {
             prev[current.key] = this.getScene;
             return prev;
         }, {});
+        const { step, stepsTotal } = this.props.navigation.state.params;
         return (
             <SafeAreaView style={styles.container}>
                 <Container>
                     <View style={styles.progressContainer}>
                         <Text style={styles.stepTextLeft}>
-                            {I18n.t('dataCollection.stepCurrent', { step_number: 1 })}
+                            {I18n.t('dataCollection.stepCurrent', { step_number: step })}
                         </Text>
                         <ProgressIndicator
                             style={styles.progressIndicator}
-                            count={4}
-                            activeIndex={0}
+                            count={stepsTotal}
+                            activeIndex={step - 1}
                         />
                         <Text style={styles.stepTextRight}>
-                            {I18n.t('dataCollection.stepTotal', { total: 4 })}
+                            {I18n.t('dataCollection.stepTotal', { total: stepsTotal })}
                         </Text>
                     </View>
                     <Text style={styles.description}>

@@ -207,7 +207,8 @@ const styles = StyleSheet.create({
     },
     bottomContainer: {
         flex: 1,
-        justifyContent: 'flex-end'
+        justifyContent: 'flex-end',
+        marginBottom: 16
     },
     checkBoxTextContainer: {
         flexDirection: 'row'

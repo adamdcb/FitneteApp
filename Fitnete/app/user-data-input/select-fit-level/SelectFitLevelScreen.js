@@ -71,20 +71,21 @@ class SelectFitLevelScreen extends React.Component {
         if (!level) {
             return this.getLoadingView();
         }
+        const { step, stepsTotal } = this.props.navigation.state.params;
         return (
             <SafeAreaView style={styles.container}>
                 <Container>
                     <View style={styles.progressContainer}>
                         <Text style={styles.stepTextLeft}>
-                            {I18n.t('dataCollection.stepCurrent', { step_number: 2 })}
+                            {I18n.t('dataCollection.stepCurrent', { step_number: step })}
                         </Text>
                         <ProgressIndicator
                             style={styles.progressIndicator}
-                            count={4}
-                            activeIndex={1}
+                            count={stepsTotal}
+                            activeIndex={step - 1}
                         />
                         <Text style={styles.stepTextRight}>
-                            {I18n.t('dataCollection.stepTotal', { total: 4 })}
+                            {I18n.t('dataCollection.stepTotal', { total: stepsTotal })}
                         </Text>
                     </View>
                     <Text style={styles.description}>
@@ -101,47 +102,45 @@ class SelectFitLevelScreen extends React.Component {
                             {this.getLevelDescription(level)}
                         </View>
                     </View>
-                    <View style={styles.sliderContainer}>
-                        <View>
-                            <Slider
-                                style={styles.slider}
-                                trackStyle={styles.sliderTrack}
-                                minimumValue={0}
-                                maximumValue={this.state.levelCount - 1}
-                                step={1}
-                                value={this.state.levelIndex}
-                                onValueChange={this.onSliderValueChange}
-                                minimumTrackTintColor={'transparent'}
-                                customMinimumTrack={(
-                                    <View style={styles.sliderCustomMinimumTrack}>
-                                        <DotSlider
-                                            style={styles.sliderCustomMinimumTrackSliderView}
-                                            count={this.state.levelIndex + 1}
-                                            activeIndex={this.state.levelIndex}
-                                        />
-                                    </View>
-                                )}
-                                maximumTrackTintColor={'transparent'}
-                                customMaximumTrack={(
-                                    <View style={styles.sliderCustomMaximumTrack}>
-                                        <DotSlider
-                                            style={styles.sliderCustomMaximumTrackSliderView}
-                                            count={this.state.levelCount}
-                                            activeIndex={this.state.levelIndex}
-                                        />
-                                    </View>
-                                )}
-                                customThumb={(
-                                    <View style={styles.sliderThumbOuterContainer}>
-                                        <View style={styles.sliderThumb} />
-                                    </View>
-                                )}
-                                thumbTouchSize={{
-                                    width: 64,
-                                    height: 64
-                                }}
-                            />
-                        </View>
+                    <View>
+                        <Slider
+                            style={styles.slider}
+                            trackStyle={styles.sliderTrack}
+                            minimumValue={0}
+                            maximumValue={this.state.levelCount - 1}
+                            step={1}
+                            value={this.state.levelIndex}
+                            onValueChange={this.onSliderValueChange}
+                            minimumTrackTintColor={'transparent'}
+                            customMinimumTrack={(
+                                <View style={styles.sliderCustomMinimumTrack}>
+                                    <DotSlider
+                                        style={styles.sliderCustomMinimumTrackSliderView}
+                                        count={this.state.levelIndex + 1}
+                                        activeIndex={this.state.levelIndex}
+                                    />
+                                </View>
+                            )}
+                            maximumTrackTintColor={'transparent'}
+                            customMaximumTrack={(
+                                <View style={styles.sliderCustomMaximumTrack}>
+                                    <DotSlider
+                                        style={styles.sliderCustomMaximumTrackSliderView}
+                                        count={this.state.levelCount}
+                                        activeIndex={this.state.levelIndex}
+                                    />
+                                </View>
+                            )}
+                            customThumb={(
+                                <View style={styles.sliderThumbOuterContainer}>
+                                    <View style={styles.sliderThumb} />
+                                </View>
+                            )}
+                            thumbTouchSize={{
+                                width: 64,
+                                height: 64
+                            }}
+                        />
                         <Text style={styles.sliderDescription}>
                             {I18n.t('selectFitLevel.sliderDescription')}
                         </Text>
@@ -192,7 +191,6 @@ const styles = StyleSheet.create({
         textAlign: 'center'
     },
     fitnessContainer: {
-        flex: 1,
         marginVertical: 24
     },
     fitnessLevelView: {
@@ -229,11 +227,9 @@ const styles = StyleSheet.create({
         textAlign: 'center'
     },
     bottomContainer: {
+        flex: 1,
         marginBottom: 16,
         justifyContent: 'flex-end'
-    },
-    sliderContainer: {
-        flex: 1
     },
     slider: {
         marginTop: -4,

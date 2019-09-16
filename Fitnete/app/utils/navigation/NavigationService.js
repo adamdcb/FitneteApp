@@ -33,8 +33,14 @@ const HEADER_TITLE_STYLE = {
 };
 
 const UserDataInputScreens = {
-    AreasOfFocus: AreasOfFocusScreen,
-    SelectFitLevel: SelectFitLevelScreen
+    AreasOfFocus: {
+        screen: AreasOfFocusScreen,
+        params: { step: 1, stepsTotal: 4 }
+    },
+    SelectFitLevel: {
+        screen: SelectFitLevelScreen,
+        params: { step: 2, stepsTotal: 4 }
+    }
 }
 
 const WaterTrackerScreens = {

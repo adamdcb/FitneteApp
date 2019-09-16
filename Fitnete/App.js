@@ -6,6 +6,9 @@ import {
 import { createAppNavigator, setTopLevelNavigator, navigate } from './app/utils/navigation/NavigationService';
 import AppPresenter from './AppPresenter';
 
+// Disable yellow boxes - use with caution!
+console.disableYellowBox = true;
+
 const AppContainer = createAppNavigator();
 
 class App extends React.PureComponent {
