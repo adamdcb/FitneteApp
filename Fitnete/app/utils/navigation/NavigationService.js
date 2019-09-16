@@ -18,6 +18,7 @@ import PrivacyPolicyScreen from '../../terms-and-conditions/privacy-policy/Priva
 import TermsAndConditionsScreen from '../../terms-and-conditions/terms/TermsAndConditionsScreen';
 import WaterTrackerScreen from '../../water-tracker/WaterTrackerScreen';
 import AreasOfFocusScreen from '../../user-data-input/areas-of-focus/AreasOfFocusScreen';
+import SelectFitLevelScreen from '../../user-data-input/select-fit-level/SelectFitLevelScreen';
 
 const HEADER_STYLE = {
     backgroundColor: '#F3F4FA',
@@ -32,7 +33,8 @@ const HEADER_TITLE_STYLE = {
 };
 
 const UserDataInputScreens = {
-    AreasOfFocus: AreasOfFocusScreen
+    AreasOfFocus: AreasOfFocusScreen,
+    SelectFitLevel: SelectFitLevelScreen
 }
 
 const WaterTrackerScreens = {

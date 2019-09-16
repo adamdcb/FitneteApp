@@ -36,7 +36,7 @@ class AreasOfFocusScreen extends React.Component {
     }
 
     onContinue() {
-        push(Route.WaterTracker);
+        push(Route.SelectFitLevel);
     }
 
     onIndexChange(index) {

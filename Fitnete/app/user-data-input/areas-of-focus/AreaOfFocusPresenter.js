@@ -22,16 +22,17 @@ export default class AreaOfFocusPresenter {
     }
 
     async didSelectGroup(index) {
+        if (this.data.selectedGroupIndex === index) {
+            return;
+        }
+        this.data.selectedGroupIndex = index;
         const data = {
             profile: {
                 gender: this.data.groups[index].type
             }
         };
-        const success = await this.dataSource.setUser(data);
-        if (success) {
-            this.data.selectedGroupIndex = index;
-            this.view.setTabViewData(this.data);
-        }
+        this.view.setTabViewData(this.data);
+        this.dataSource.setUser(data);
     }
 
     unmountView() {

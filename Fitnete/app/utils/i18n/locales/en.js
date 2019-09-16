@@ -37,5 +37,22 @@ export default {
         abdominals: 'Abdominals',
         armsAndBack: 'Arms & Back',
         legs: 'Legs'
+    },
+    selectFitLevel: {
+        title: 'Select your FIT level',
+        description: 'What is your fitness level?',
+        sliderDescription: 'Use this slider to set your level',
+        level1Title: 'Workout hero',
+        level1Description: 'I\'m used to less than 2 workouts per week',
+        level1DescriptionHighlight: 'less than 2',
+        level2Title: 'Workout hero',
+        level2Description: 'I\'m used to 2-3 workouts per week',
+        level2DescriptionHighlight: '2-3',
+        level3Title: 'Workout hero',
+        level3Description: 'I\'m used to 3-5 workouts per week',
+        level3DescriptionHighlight: '3-5',
+        level4Title: 'Workout hero',
+        level4Description: 'I\'m used to more than 5 workouts per week',
+        level4DescriptionHighlight: 'more than 5'
     }
 };
