@@ -36,7 +36,7 @@ class SelectFitLevelScreen extends React.Component {
     }
 
     onContinue() {
-        push(Route.WaterTracker);
+        push(Route.BodyParameters);
     }
 
     setFitnessLevelData(level, count, index) {

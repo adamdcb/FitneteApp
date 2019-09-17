@@ -3,6 +3,7 @@ const Route = {
     TermsAndConditions: 'TermsAndConditions',
     AreasOfFocus: 'AreasOfFocus',
     SelectFitLevel: 'SelectFitLevel',
+    BodyParameters: 'BodyParameters',
     WaterTracker: 'WaterTracker'
 }
 

@@ -54,5 +54,14 @@ export default {
         level4Title: 'Workout hero',
         level4Description: 'I\'m used to more than 5 workouts per week',
         level4DescriptionHighlight: 'more than 5'
+    },
+    bodyParameters: {
+        title: 'Body parameters',
+        description: 'Enter your body parameters to get your personalised workout & meal plan',
+        height: 'Your height',
+        weight: 'Your current weight',
+        targetWeight: 'Target weight',
+        foodPreferences: 'Food preferences',
+        add: 'Add'
     }
 };

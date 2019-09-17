@@ -19,6 +19,7 @@ import TermsAndConditionsScreen from '../../terms-and-conditions/terms/TermsAndC
 import WaterTrackerScreen from '../../water-tracker/WaterTrackerScreen';
 import AreasOfFocusScreen from '../../user-data-input/areas-of-focus/AreasOfFocusScreen';
 import SelectFitLevelScreen from '../../user-data-input/select-fit-level/SelectFitLevelScreen';
+import BodyParametersScreen from '../../user-data-input/body-parameters/BodyParametersScreen';
 
 const HEADER_STYLE = {
     backgroundColor: '#F3F4FA',
@@ -40,6 +41,10 @@ const UserDataInputScreens = {
     SelectFitLevel: {
         screen: SelectFitLevelScreen,
         params: { step: 2, stepsTotal: 4 }
+    },
+    BodyParameters: {
+        screen: BodyParametersScreen,
+        params: { step: 3, stepsTotal: 4 }
     }
 }
 
