@@ -7,20 +7,6 @@
   "ascent": 850,
   "glyphs": [
     {
-      "uid": "089ef2c872416f8ecf81a86b7ce84b3a",
-      "css": "close",
-      "code": 59395,
-      "src": "custom_icons",
-      "selected": true,
-      "svg": {
-        "path": "M909.9 34.9L965.1 90.1 555.2 500 965.1 909.9 909.9 965.1 499.9 555.2 90.1 965.1 34.9 909.9 444.8 500 34.9 90.1 90.1 34.9 499.9 444.8 909.9 34.9Z",
-        "width": 1000
-      },
-      "search": [
-        "close"
-      ]
-    },
-    {
       "uid": "8d8e8e4b8439b62c77e93272ac47f2f6",
       "css": "arrow-right",
       "code": 59396,
@@ -98,7 +84,7 @@
     },
     {
       "uid": "a11278c38594124e2027c7d0943e99cd",
-      "css": "target-weight",
+      "css": "target_weight",
       "code": 59399,
       "src": "custom_icons",
       "selected": true,
@@ -107,7 +93,7 @@
         "width": 1000
       },
       "search": [
-        "target-weight"
+        "target_weight"
       ]
     },
     {
@@ -122,6 +108,20 @@
       },
       "search": [
         "weight"
+      ]
+    },
+    {
+      "uid": "089ef2c872416f8ecf81a86b7ce84b3a",
+      "css": "close",
+      "code": 59395,
+      "src": "custom_icons",
+      "selected": true,
+      "svg": {
+        "path": "M909.9 34.9L965.1 90.1 555.2 500 965.1 909.9 909.9 965.1 499.9 555.2 90.1 965.1 34.9 909.9 444.8 500 34.9 90.1 90.1 34.9 499.9 444.8 909.9 34.9Z",
+        "width": 1000
+      },
+      "search": [
+        "close"
       ]
     }
   ]
