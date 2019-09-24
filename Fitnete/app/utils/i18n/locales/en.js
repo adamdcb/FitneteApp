@@ -69,11 +69,5 @@ export default {
         gluten_free: 'Gluten Free',
         vegetarian: 'Vegetarian',
         balanced_diet: 'Balanced Diet'
-    },
-    units: {
-        cm: 'cm',
-        ftIn: 'ft, in',
-        kg: 'kg',
-        lbs: 'lbs'
     }
 };

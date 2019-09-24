@@ -2,6 +2,13 @@ import I18n from '../../utils/i18n/I18n';
 import UserDataSource from '../../data/UserDataSource';
 import BodyParameterFactory from './params/BodyParameterFactory';
 
+const units = {
+    cm: 'cm',
+    ftIn: 'ft, in',
+    kg: 'kg',
+    lbs: 'lbs'
+};
+
 export default class BodyParametersPresenter {
     constructor(view) {
         this.view = view;
@@ -100,7 +107,7 @@ export default class BodyParametersPresenter {
                 title: I18n.t(`bodyParameters.${item.id}`),
                 iconName: item.id,
                 datasets: dataset.data.map(d => d.map(v => bodyParam.getValueStr(v))),
-                units: item.datasets.filter(ds => ds.unit).map(ds => I18n.t(`units.${ds.unit}`)),
+                units: item.datasets.filter(ds => ds.unit).map(ds => units[ds.unit]),
                 unitIndex: item.datasets.indexOf(dataset),
                 value: value,
                 displayValue: bodyParam.getFormattedValue(value, dataset.unit),
