@@ -11,6 +11,8 @@ class FNPicker extends React.Component {
         super(props);
         const { selectedValuesIndexes, selectedUnitIndex, data, units = [] } = props;
         this.state = {
+            data: data,
+            datasets: data.datasets,
             selectedValuesIndexes: selectedValuesIndexes || Array.from({ length: data.datasets.length }, () => 0),
             selectedUnitIndex: selectedUnitIndex
         };
@@ -20,6 +22,22 @@ class FNPicker extends React.Component {
         this.renderItem = this.renderItem.bind(this);
         this.onMomentumScrollEnd = this.onMomentumScrollEnd.bind(this);
         this.getItemLayout = this.getItemLayout.bind(this);
+    }
+
+    componentDidUpdate(prevProps) {
+        if (prevProps.data !== this.props.data) {
+            const { selectedValuesIndexes, selectedUnitIndex, data } = this.props;
+            this.setState({
+                data: data,
+                datasets: [],
+                selectedValuesIndexes: selectedValuesIndexes || Array.from({ length: data.datasets.length }, () => 0),
+                selectedUnitIndex: selectedUnitIndex
+            }, () => {
+                this.setState({
+                    datasets: data.datasets
+                })
+            })
+        }
     }
 
     onDismiss() {
@@ -37,6 +55,9 @@ class FNPicker extends React.Component {
 
     onSelectUnit(unitIndex) {
         this.setState({ selectedUnitIndex: unitIndex });
+        if (this.props.onSelectUnit) {
+            this.props.onSelectUnit(unitIndex);
+        }
     }
 
     onMomentumScrollEnd(event, index) {
@@ -53,10 +74,10 @@ class FNPicker extends React.Component {
         };
     }
 
-    _renderDatasets(datasets) {
-        const { selectedValuesIndexes } = this.state;
+    _renderDatasets() {
+        const { datasets, selectedValuesIndexes } = this.state;
         const views = [];
-        datasets.map((dataset, index) => {
+        datasets.forEach((dataset, index) => {
             const parentIndex = index;
             if (index > 0 && this.props.separator) {
                 const SeparatorView = <Text style={styles.separator} key={`${parentIndex}${this.props.separator}`}>{this.props.separator}</Text>;
@@ -70,8 +91,10 @@ class FNPicker extends React.Component {
                     <FlatList
                         style={styles.listView}
                         data={dataset}
+                        extraData={this.state}
                         initialScrollIndex={selectedValuesIndexes[index]}
                         keyExtractor={(item, index) => `${parentIndex}${item}${index}`}
+                        listKey={`${parentIndex}`}
                         renderItem={this.renderItem}
                         showsVerticalScrollIndicator={false}
                         decelerationRate="fast"
@@ -112,16 +135,16 @@ class FNPicker extends React.Component {
     }
 
     renderItem({ item }) {
-        const value = (item === -1 || item === '') ? '' : item;
         return (
             <View style={styles.rowItem}>
-                <Text>{value}</Text>
+                <Text>{item}</Text>
             </View>
         )
     }
 
     render() {
-        const { visible, data, units } = this.props;
+        const { visible, units } = this.props;
+        const { data } = this.state;
         if (!visible) {
             return null;
         }
@@ -151,7 +174,7 @@ class FNPicker extends React.Component {
                                 {this._renderUnits(units)}
                             </View>
                             <View style={styles.listViewOuterContainer}>
-                                {this._renderDatasets(data.datasets)}
+                                {this._renderDatasets()}
                                 <View pointerEvents="none" style={styles.listInactiveItemTop}></View>
                                 <View pointerEvents="none" style={styles.listInactiveItemBottom}></View>
                             </View>
