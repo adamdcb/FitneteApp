@@ -41,10 +41,8 @@ export default class SelectFitLevelPresenter {
 
     async _init(data) {
         const initialData = {
-            profile: {
-                fitness: {
-                    level: data.selectedLevelIndex
-                }
+            fitness: {
+                level: data.selectedLevelIndex
             }
         };
         this.dataSource.setUser(initialData);
