@@ -1,6 +1,7 @@
 export default {
     privacyPolicyTitle: 'Privacy Policy',
     termsAndConditionsTitle: 'Terms and Conditions',
+    save: 'Save',
     appIntro: {
         accept: 'accept',
         acceptTermsText1: 'Check this box to indicate that you have read and agree to the',
@@ -60,8 +61,19 @@ export default {
         description: 'Enter your body parameters to get your personalised workout & meal plan',
         height: 'Your height',
         weight: 'Your current weight',
-        targetWeight: 'Target weight',
-        foodPreferences: 'Food preferences',
-        add: 'Add'
+        target_weight: 'Target weight',
+        food: 'Food preferences',
+        add: 'Add',
+    },
+    foodOptions: {
+        gluten_free: 'Gluten Free',
+        vegetarian: 'Vegetarian',
+        balanced_diet: 'Balanced Diet'
+    },
+    units: {
+        cm: 'cm',
+        ftIn: 'ft, in',
+        kg: 'kg',
+        lbs: 'lbs'
     }
 };

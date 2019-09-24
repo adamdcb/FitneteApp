@@ -1,68 +1,213 @@
 import I18n from '../../utils/i18n/I18n';
 import UserDataSource from '../../data/UserDataSource';
+import BodyParameterFactory from './params/BodyParameterFactory';
 
 export default class BodyParametersPresenter {
     constructor(view) {
         this.view = view;
         this.dataSource = new UserDataSource();
+        this.rawData = [];
         this.data = [];
     }
 
     async loadData() {
         const user = await this.dataSource.getUser();
+        console.log(user);
         const bodyParams = ((user || {}).fitness || {}).bodyParams || {};
-        this.data = this._getData(bodyParams);
-        this.view.setData(this.data);
+        this.data = this._getUIData(bodyParams);
+        this.view.setData(this.data, true);
     }
 
-    // async didChangeLevel(levelIndex) {
-    //     if (this.data.selectedLevelIndex === levelIndex) {
-    //         return;
-    //     }
-    //     this.data.selectedLevelIndex = levelIndex;
-    //     const data = {
-    //         fitness: {
-    //             level: levelIndex
-    //         }
-    //     };
-    //     this.view.setFitnessLevelData(this.data.levels[this.data.selectedLevelIndex], this.data.levels.length, this.data.selectedLevelIndex);
-    //     this.dataSource.setUser(data);
-    // }
+    async didSelectUnit(bodyParam, unitIndex) {
+        const bParam = BodyParameterFactory.createParameter(bodyParam.type);
+        const param = {};
+        const id = bodyParam.id;
+        const dataset = this.rawData.find(d => d.id === bodyParam.id).datasets[unitIndex];
+        param[id] = {
+            displayUnit: dataset.unit
+        };
+        const data = {
+            fitness: {
+                bodyParams: {
+                    ...param
+                }
+            }
+        }
+        this.dataSource.setUser(data);
+        this.data = this.data.map((item) => {
+            if (item.id === id) {
+                return {
+                    ...item,
+                    datasets: dataset.data.map(d => d.map(v => bParam.getValueStr(v))),
+                    unitIndex: unitIndex,
+                    displayValue: bParam.getFormattedValue(bodyParam.value, dataset.unit),
+                    valueComponents: bParam.getValueComponents(bodyParam.value, dataset.unit).map((v, i) => dataset.data[i][v + 1])
+                }
+            }
+            return item;
+        });
+        this.view.setData(this.data, false);
+    }
+
+    async didSaveBodyParam(bodyParam, valuesIndexes) {
+        const bParam = BodyParameterFactory.createParameter(bodyParam.type);
+        const param = {};
+        const id = bodyParam.id;
+        const dataset = this.rawData.find(d => d.id === bodyParam.id).datasets[bodyParam.unitIndex];
+        const value = bParam.standardiseValueFromComponents(valuesIndexes.map((v, i) => dataset.data[i][v + 1]), dataset.unit);
+        param[id] = {
+            displayUnit: dataset.unit,
+            value: value
+        };
+        const data = {
+            fitness: {
+                bodyParams: {
+                    ...param
+                }
+            }
+        }
+        this.dataSource.setUser(data);
+        this.data = this.data.map((item) => {
+            if (item.id === id) {
+                return {
+                    ...item,
+                    value: value,
+                    displayValue: bParam.getFormattedValue(value, dataset.unit),
+                    valueComponents: valuesIndexes,
+                    isDefaultValue: false
+                }
+            }
+            return item;
+        });
+        this.view.setData(this.data, true);
+    }
 
     unmountView() {
         this.view = null;
     }
 
-    _getData(bodyParams) {
-        const data = [
+    _getUIData(bodyParams) {
+        this.rawData = this._getData();
+        return this.rawData.map((item) => {
+            const param = bodyParams[item.id] || {};
+            const { displayUnit } = param;
+            const dataset = item.datasets.find(ds => ds.unit === displayUnit) || item.datasets[0];
+            const value = param.value || dataset.defaultValue;
+            const bodyParam = BodyParameterFactory.createParameter(item.type);
+            return {
+                id: item.id,
+                type: item.type,
+                title: I18n.t(`bodyParameters.${item.id}`),
+                iconName: item.id,
+                datasets: dataset.data.map(d => d.map(v => bodyParam.getValueStr(v))),
+                units: item.datasets.filter(ds => ds.unit).map(ds => I18n.t(`units.${ds.unit}`)),
+                unitIndex: item.datasets.indexOf(dataset),
+                value: value,
+                displayValue: bodyParam.getFormattedValue(value, dataset.unit),
+                valueComponents: bodyParam.getValueComponents(value, dataset.unit).map((v, i) => dataset.data[i].indexOf(v) - 1),
+                isDefaultValue: !param.value,
+                separator: dataset.separator
+            }
+        });
+    }
+
+    _dataWithPadding(data, padding) {
+        data.unshift(padding);
+        data.push(padding);
+        return data;
+    }
+
+    _getData() {
+        return [
             {
                 id: 'height',
-                title: I18n.t('bodyParameters.height'),
-                iconName: 'height',
-                value: bodyParams.height || 0,
-                unit: bodyParams.heightUnit || ''
+                type: 'height',
+                datasets: [
+                    {
+                        unit: 'cm',
+                        defaultValue: 175.0,
+                        separator: '.',
+                        data: [
+                            this._dataWithPadding(Array.from({ length: 250 }, (v, i) => i), -1),
+                            this._dataWithPadding(Array.from({ length: 10 }, (v, i) => i), -1)
+                        ]
+                    },
+                    {
+                        unit: 'ftIn',
+                        defaultValue: 5.9,
+                        separator: '.',
+                        data: [
+                            this._dataWithPadding(Array.from({ length: 8 }, (v, i) => i), -1),
+                            this._dataWithPadding(Array.from({ length: 12 }, (v, i) => i), -1)
+                        ]
+                    }
+                ]
             },
             {
                 id: 'weight',
-                title: I18n.t('bodyParameters.weight'),
-                iconName: 'weight',
-                value: bodyParams.weight || 0,
-                unit: bodyParams.weightUnit || ''
+                type: 'weight',
+                datasets: [
+                    {
+                        unit: 'kg',
+                        defaultValue: 75,
+                        separator: '.',
+                        data: [
+                            this._dataWithPadding(Array.from({ length: 200 }, (v, i) => i), -1),
+                            this._dataWithPadding(Array.from({ length: 10 }, (v, i) => i), -1)
+                        ]
+                    },
+                    {
+                        unit: 'lbs',
+                        defaultValue: 150,
+                        separator: '.',
+                        data: [
+                            this._dataWithPadding(Array.from({ length: 440 }, (v, i) => i), -1),
+                            this._dataWithPadding(Array.from({ length: 10 }, (v, i) => i), -1)
+                        ]
+                    }
+                ]
             },
             {
                 id: 'target_weight',
-                title: I18n.t('bodyParameters.targetWeight'),
-                iconName: 'target-weight',
-                value: bodyParams.targetWeight || 0,
-                unit: bodyParams.weightUnit || ''
+                type: 'weight',
+                datasets: [
+                    {
+                        unit: 'kg',
+                        defaultValue: 75,
+                        separator: '.',
+                        data: [
+                            this._dataWithPadding(Array.from({ length: 200 }, (v, i) => i), -1),
+                            this._dataWithPadding(Array.from({ length: 10 }, (v, i) => i), -1)
+                        ]
+                    },
+                    {
+                        unit: 'lbs',
+                        defaultValue: 150,
+                        separator: '.',
+                        data: [
+                            this._dataWithPadding(Array.from({ length: 440 }, (v, i) => i), -1),
+                            this._dataWithPadding(Array.from({ length: 10 }, (v, i) => i), -1)
+                        ]
+                    }
+                ]
             },
             {
-                id: 'food_preference',
-                title: I18n.t('bodyParameters.foodPreferences'),
-                iconName: 'food',
-                value: bodyParams.foodPreference || ''
+                id: 'food',
+                type: 'food',
+                datasets: [
+                    {
+                        defaultValue: 'vegetarian',
+                        data: [
+                            this._dataWithPadding(
+                                [
+                                    'gluten_free',
+                                    'vegetarian',
+                                    'balanced_diet'
+                                ], '')
+                        ]
+                    }
+                ]
             }
         ];
-        return data;
     }
 }

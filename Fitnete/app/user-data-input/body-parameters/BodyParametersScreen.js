@@ -8,18 +8,24 @@ import Button from '../../utils/components/Button';
 import { push, Route } from '../../utils/navigation/NavigationService';
 import BodyParametersPresenter from './BodyParametersPresenter';
 import FNIcon from '../../utils/components/FNIcon';
+import FNPicker from '../../utils/components/FNPicker';
 
 class BodyParametersScreen extends React.Component {
     constructor(props) {
         super(props);
         this.presenter = new BodyParametersPresenter(this);
         this.state = {
-            data: null
+            data: null,
+            selectedItem: null
         };
         this.onContinue = this.onContinue.bind(this);
         this._renderItem = this._renderItem.bind(this);
         this._renderItemSeparator = this._renderItemSeparator.bind(this);
+        this._renderPicker = this._renderPicker.bind(this);
         this._onPress = this._onPress.bind(this);
+        this._onDismissPicker = this._onDismissPicker.bind(this);
+        this._onSave = this._onSave.bind(this);
+        this._onSelectUnit = this._onSelectUnit.bind(this);
     }
 
     componentDidMount() {
@@ -34,9 +40,11 @@ class BodyParametersScreen extends React.Component {
         push(Route.WaterTracker);
     }
 
-    setData(data) {
+    setData(data, dismissPicker) {
+        const { selectedItem } = this.state;
         this.setState({
-            data
+            data,
+            selectedItem: !dismissPicker && selectedItem ? data.find(item => item.id === selectedItem.id) : null
         });
     }
 
@@ -49,11 +57,27 @@ class BodyParametersScreen extends React.Component {
     }
 
     _onPress(item) {
+        this.setState({
+            selectedItem: item
+        });
+    }
 
+    _onDismissPicker() {
+        this.setState({
+            selectedItem: null
+        });
+    }
+
+    _onSave(values, units) {
+        this.presenter.didSaveBodyParam(this.state.selectedItem, values);
+    }
+
+    _onSelectUnit(unit) {
+        this.presenter.didSelectUnit(this.state.selectedItem, unit);
     }
 
     _renderItem({ item }) {
-        const RigthView = !item.value ? this._renderAddButton() : this._renderValue(item.value, item.unit)
+        const RigthView = item.isDefaultValue ? this._renderAddButton(item) : this._renderValue(item)
         return (
             <View
                 style={styles.listItemContainer}
@@ -75,9 +99,12 @@ class BodyParametersScreen extends React.Component {
         )
     }
 
-    _renderAddButton() {
+    _renderAddButton(item) {
         return (
-            <TouchableOpacity style={styles.addButtonContainer}>
+            <TouchableOpacity
+                style={styles.addButtonContainer}
+                onPress={() => this._onPress(item)}
+            >
                 <Text style={styles.addButtonText}>{I18n.t('bodyParameters.add')}</Text>
                 <View style={styles.addButton}>
                     <Text style={styles.addButtonPlus}>{'\uff0b'}</Text>
@@ -86,11 +113,14 @@ class BodyParametersScreen extends React.Component {
         )
     }
 
-    _renderValue(value, unit) {
+    _renderValue(item) {
         return (
             <View style={styles.listItemInnerContainer}>
-                <Text style={styles.listItemValue}>{`${value} ${unit}`}</Text>
-                <TouchableOpacity style={styles.listItemIconContainer}>
+                <Text style={styles.listItemValue}>{`${item.displayValue}`}</Text>
+                <TouchableOpacity
+                    style={styles.listItemIconContainer}
+                    onPress={() => this._onPress(item)}
+                >
                     <FNIcon
                         name="settings-outline"
                         size={20}
@@ -110,12 +140,31 @@ class BodyParametersScreen extends React.Component {
         )
     }
 
+    _renderPicker() {
+        const { selectedItem } = this.state;
+        if (!selectedItem) {
+            return null;
+        }
+
+        return (<FNPicker
+            visible={selectedItem !== null}
+            data={selectedItem}
+            units={selectedItem.units}
+            selectedValuesIndexes={selectedItem.valueComponents}
+            selectedUnitIndex={selectedItem.unitIndex}
+            separator={selectedItem.separator}
+            saveButtonTitle={I18n.t('save')}
+            onDismiss={this._onDismissPicker}
+            onSave={this._onSave}
+            onSelectUnit={this._onSelectUnit}
+        />)
+    }
+
     render() {
         const { data } = this.state;
         if (!data) {
             return this.getLoadingView();
         }
-        console.log(data);
         const { step, stepsTotal } = this.props.navigation.state.params;
         return (
             <SafeAreaView style={styles.container}>
@@ -149,6 +198,7 @@ class BodyParametersScreen extends React.Component {
                             onPress={this.onContinue}
                         />
                     </View>
+                    {this._renderPicker()}
                 </Container>
             </SafeAreaView>
         )
@@ -234,7 +284,7 @@ const styles = StyleSheet.create({
         },
         shadowOpacity: 0.22,
         shadowRadius: 2.22,
-        elevation: 3,
+        // elevation: 3,
     },
     addButtonPlus: {
         height: 20,
@@ -248,7 +298,7 @@ const styles = StyleSheet.create({
         textAlign: 'center'
     },
     listItemValue: {
-        marginRight: 4,
+        marginRight: 8,
         fontFamily: 'Poppins-Regular',
         fontSize: 15,
         color: '#B4B3B6',
