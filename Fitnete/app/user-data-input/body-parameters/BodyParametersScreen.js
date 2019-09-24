@@ -40,7 +40,7 @@ class BodyParametersScreen extends React.Component {
         push(Route.WaterTracker);
     }
 
-    setData(data, dismissPicker) {
+    setData(data, dismissPicker = true) {
         const { selectedItem } = this.state;
         this.setState({
             data,

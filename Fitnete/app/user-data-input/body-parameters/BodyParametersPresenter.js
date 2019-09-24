@@ -13,23 +13,23 @@ export default class BodyParametersPresenter {
     constructor(view) {
         this.view = view;
         this.dataSource = new UserDataSource();
-        this.rawData = [];
         this.data = [];
+        this.uiData = [];
     }
 
     async loadData() {
         const user = await this.dataSource.getUser();
-        console.log(user);
         const bodyParams = ((user || {}).fitness || {}).bodyParams || {};
-        this.data = this._getUIData(bodyParams);
-        this.view.setData(this.data, true);
+        this.data = this._getData();
+        this.uiData = this._getUIData(bodyParams);
+        this.view.setData(this.uiData);
     }
 
     async didSelectUnit(bodyParam, unitIndex) {
         const bParam = BodyParameterFactory.createParameter(bodyParam.type);
         const param = {};
         const id = bodyParam.id;
-        const dataset = this.rawData.find(d => d.id === bodyParam.id).datasets[unitIndex];
+        const dataset = this.data.find(d => d.id === id).datasets[unitIndex];
         param[id] = {
             displayUnit: dataset.unit
         };
@@ -41,7 +41,7 @@ export default class BodyParametersPresenter {
             }
         }
         this.dataSource.setUser(data);
-        this.data = this.data.map((item) => {
+        this.uiData = this.uiData.map((item) => {
             if (item.id === id) {
                 return {
                     ...item,
@@ -53,14 +53,14 @@ export default class BodyParametersPresenter {
             }
             return item;
         });
-        this.view.setData(this.data, false);
+        this.view.setData(this.uiData, false);
     }
 
     async didSaveBodyParam(bodyParam, valuesIndexes) {
         const bParam = BodyParameterFactory.createParameter(bodyParam.type);
         const param = {};
         const id = bodyParam.id;
-        const dataset = this.rawData.find(d => d.id === bodyParam.id).datasets[bodyParam.unitIndex];
+        const dataset = this.data.find(d => d.id === id).datasets[bodyParam.unitIndex];
         const value = bParam.standardiseValueFromComponents(valuesIndexes.map((v, i) => dataset.data[i][v + 1]), dataset.unit);
         param[id] = {
             displayUnit: dataset.unit,
@@ -74,7 +74,7 @@ export default class BodyParametersPresenter {
             }
         }
         this.dataSource.setUser(data);
-        this.data = this.data.map((item) => {
+        this.uiData = this.uiData.map((item) => {
             if (item.id === id) {
                 return {
                     ...item,
@@ -86,7 +86,7 @@ export default class BodyParametersPresenter {
             }
             return item;
         });
-        this.view.setData(this.data, true);
+        this.view.setData(this.uiData, true);
     }
 
     unmountView() {
@@ -94,8 +94,7 @@ export default class BodyParametersPresenter {
     }
 
     _getUIData(bodyParams) {
-        this.rawData = this._getData();
-        return this.rawData.map((item) => {
+        return this.data.map((item) => {
             const param = bodyParams[item.id] || {};
             const { displayUnit } = param;
             const dataset = item.datasets.find(ds => ds.unit === displayUnit) || item.datasets[0];
