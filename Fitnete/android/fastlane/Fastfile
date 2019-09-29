@@ -195,7 +195,7 @@ platform :android do
     )
   	# Add a git tag for this build
     add_git_tag(
-      tag: "#Fitnete-v#{ENV["VERSION_NAME"]}(#{ENV["BUILD_NUMBER"]})",
+      tag: "Fitnete-v#{ENV["VERSION_NAME"]}(#{ENV["BUILD_NUMBER"]})",
       force: true
     )
     # Push the new commit and tag back to your git remote
