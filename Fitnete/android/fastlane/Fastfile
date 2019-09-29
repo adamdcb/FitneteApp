@@ -54,7 +54,7 @@ platform :android do
     # Clean project
     clean_project()
     if !changelog_exists()
-      UI.error("Missing changelog!")
+      UI.error("Changelog cannot be empty!")
       exit 1
     end
     
@@ -203,7 +203,10 @@ platform :android do
   end
 
   after_all do |lane|
-    #... 
+    if lane == :build_and_deploy
+      # Clear changelog file
+      File.open("./changelog.txt", 'w') { |file| file.write("") }
+    end
   end
 
   error do |lane, exception|
