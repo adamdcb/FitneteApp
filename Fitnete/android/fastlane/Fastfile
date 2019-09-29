@@ -91,7 +91,7 @@ platform :android do
     # upload_to_play_store(
     #   package_name: "com.rierra.fitnete",
   	# 	track: track,
-    #   json_key: "./fastlane/Google-Play-json-key.json",
+    #   json_key: "./fastlane/Google-Play-Fitnete-json-key.json",
     #   metadata_path: "./fastlane/metadata/android",
   	# 	skip_upload_screenshots: true,
     # 	skip_upload_metadata: true,
