@@ -76,15 +76,15 @@ platform :android do
     # Commit version bump
     # commit_version()
 
-  	# Build the app
-    gradle(
-      task: 'bundle',
-      build_type: "Release",
-      properties: {
-        "versionCode" => build_number,
-        "versionName" => version_name,
-      }
-  	)
+  	# # Build the app
+    # gradle(
+    #   task: 'bundle',
+    #   build_type: "Release",
+    #   properties: {
+    #     "versionCode" => build_number,
+    #     "versionName" => version_name,
+    #   }
+  	# )
   		
     # Upload .aab to store
     # upload_to_play_store(
@@ -108,6 +108,7 @@ platform :android do
     FileUtils.remove_dir('../build') if File.directory?('../build')
     FileUtils.remove_dir('../fastlane/build') if File.directory?('../fastlane/build')
     FileUtils.remove_dir('../../node_modules') if File.directory?('../../node_modules')
+    File.delete('../../package-lock.json') if File.exists?('../../package-lock.json')
   end
 
   def changelog_exists()
