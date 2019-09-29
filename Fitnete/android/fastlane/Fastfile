@@ -75,7 +75,7 @@ platform :android do
     copy_changelog()
 
     # Commit version bump
-    # commit_version()
+    commit_version()
 
   	# # Build the app
     # gradle(
