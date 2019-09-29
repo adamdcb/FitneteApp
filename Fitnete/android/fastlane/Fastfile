@@ -138,7 +138,7 @@ platform :android do
       new_version_name = version_name
     end
     # Increment build number
-    new_build_number = build_number + 1
+    new_build_number = version_code + 1
 
     # Save new version information
     gradle_file[version_name_regex, 1] = new_version_name
