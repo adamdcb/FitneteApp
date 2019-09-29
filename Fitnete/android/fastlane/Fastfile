@@ -146,7 +146,7 @@ platform :android do
 
     # Write to gradle file
     gradle_file_w = File.new(gradle_path, 'w')
-    gradle_file_w.write(s)
+    gradle_file_w.write(gradle_file)
     gradle_file_w.close
 
     return new_version_name, new_build_number.to_s
