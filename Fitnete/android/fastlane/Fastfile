@@ -16,23 +16,196 @@
 default_platform(:android)
 
 platform :android do
+  before_all do
+    #... 
+  end
+
   desc "Runs all the tests"
   lane :test do
     gradle(task: "test")
   end
 
-  desc "Submit a new Beta Build to Crashlytics Beta"
-  lane :beta do
-    gradle(task: "clean assembleRelease")
-    crashlytics
-  
-    # sh "your_script.sh"
-    # You can also use other beta testing services here
+  desc "Build the android app and submit the .aab to Google Play"
+  lane :deploy do |options|
+    track = options[:track]
+    bump_type = options[:bump_type]
+    if track.nil? || bump_type.nil?
+      UI.error("Invalid deploy command! Please make sure you have set all necessary params!")
+    else
+      UI.header("Deploy checklist")
+      UI.important("1. are you on the release branch?")
+      UI.important("2. did you update the changelog file?")
+      confirm = UI.confirm("Please confirm")
+      if confirm
+        sh "fastlane build_and_deploy bump_type:#{bump_type} track:#{track}"
+      end
+    end
   end
 
-  desc "Deploy a new version to the Google Play"
-  lane :deploy do
-    gradle(task: "clean assembleRelease")
-    upload_to_play_store
+  lane :build_and_deploy do |options|
+    bump_type = options[:bump_type]
+    track = options[:track]
+
+    # Clean project
+    clean_project()
+    if !changelog_exists()
+      UI.error("Missing changelog!")
+      exit 1
+    end
+    # TODO: Enable ensure_git_branch
+    # ensure_git_branch(branch: "release/release")
+
+    ensure_git_status_clean()
+    
+    # Pull from remote
+    sh("git", "pull")
+    # Run npm install
+    npm_install()
+
+    ensure_git_status_clean()
+
+    # Get version info
+    version_name, build_number = get_version_info(bump_type)
+    UI.message("Prepare app v#{version_name} (#{build_number})")
+    ENV["VERSION_NAME"] = version_name
+    ENV["BUILD_NUMBER"] = build_number
+
+    # Copy release notes
+    copy_changelog()
+
+    # Commit version bump
+    # commit_version()
+
+  	# Build the app
+    gradle(
+      task: 'bundle',
+      build_type: "Release",
+      properties: {
+        "versionCode" => build_number,
+        "versionName" => version_name,
+      }
+  	)
+  		
+    # Upload .aab to store
+    # upload_to_play_store(
+    #   package_name: "com.rierra.fitnete",
+  	# 	track: track,
+    #   json_key: "./fastlane/Google-Play-json-key.json",
+    #   metadata_path: "./fastlane/metadata/android",
+  	# 	skip_upload_screenshots: true,
+    # 	skip_upload_metadata: true,
+    # 	skip_upload_images: true
+    # )
+  end 
+
+  def clean_project()
+    if(File.exist?('../../node_modules/react-native/react.gradle'))
+      gradle(
+        task: 'clean'
+      )
+    end
+    FileUtils.remove_dir('../app/build') if File.directory?('../app/build')
+    FileUtils.remove_dir('../build') if File.directory?('../build')
+    FileUtils.remove_dir('../fastlane/build') if File.directory?('../fastlane/build')
+    FileUtils.remove_dir('../../node_modules') if File.directory?('../../node_modules')
   end
+
+  def changelog_exists()
+    return File.exist?("./changelog.txt") && !File.zero?("./changelog.txt")
+  end
+
+  def npm_install()
+    Dir.chdir("..") do
+      sh("npm", "install")
+    end
+  end
+
+  # Get version info
+  def get_version_info(bump_type)
+    # Read version info
+    gradle_path = '../app/build.gradle'
+    version_name_regex = /versionName\s+"(.*)"/
+    version_code_regex = /versionCode\s+(\d+)/
+
+    gradle_file = File.read(gradle_path)
+    version_name = gradle_file[version_name_regex, 1]
+    version_code = gradle_file[version_code_regex, 1].to_i
+  
+    # Increment version name
+    if bump_type != "build"
+      new_version_name = increment_version_name(version_name, bump_type)
+    elsif
+      new_version_name = version_name
+    end
+    # Increment build number
+    new_build_number = build_number + 1
+
+    # Save new version information
+    gradle_file[version_name_regex, 1] = new_version_name
+    gradle_file[version_code_regex, 1] = new_build_number.to_s
+
+    # Write to gradle file
+    gradle_file_w = File.new(gradle_path, 'w')
+    gradle_file_w.write(s)
+    gradle_file_w.close
+
+    return new_version_name, new_build_number.to_s
+  end
+
+  def increment_version_name(old_version_name, bump_type)
+    version_components = old_version_name.split('.').map{|v| v.to_i}
+    if version_components[2].nil?
+      version_components[2] = 0
+    end
+    if bump_type == "major"
+      version_components[0] = version_components[0] + 1
+      version_components[1] =  0
+      version_components[2] =  0
+    elsif bump_type == "minor"
+      version_components[1] = version_components[1] + 1
+      version_components[2] =  0
+    elsif bump_type == "patch"
+      version_components[2] = version_components[2] + 1
+    end
+    version = "#{version_components[0]}.#{version_components[1]}"
+    if version_components[2] != 0
+      version = version + ".#{version_components[2]}"
+    end
+
+    return version
+  end
+
+  def copy_changelog()
+    src = "./changelog.txt"
+    dest_folder = "./metadata/android/en-GB/changelogs"
+    FileUtils.mkdir_p(dest_folder)
+    dest = "#{dest_folder}/#{ENV["BUILD_NUMBER"]}.txt"
+    FileUtils.cp(src, dest)
+  end
+
+  # Commit app version and build number information
+  def commit_version()
+  	# Commit the version bump
+  	git_commit(
+      path: ".",
+      message: "Release Android v#{ENV["VERSION_NAME"]}(#{ENV["BUILD_NUMBER"]})",
+      allow_nothing_to_commit: true
+    )
+  	# Add a git tag for this build
+    add_git_tag(
+      tag: "#Fitnete-v#{ENV["VERSION_NAME"]}(#{ENV["BUILD_NUMBER"]})",
+      force: true
+    )
+    # Push the new commit and tag back to your git remote
+    push_to_git_remote(force: true)
+  end
+
+  after_all do |lane|
+    #... 
+  end
+
+  error do |lane, exception|
+    #... 
+  end
+
 end
