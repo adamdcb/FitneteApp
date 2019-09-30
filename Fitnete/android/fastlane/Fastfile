@@ -77,26 +77,26 @@ platform :android do
     # Commit version bump
     commit_version()
 
-  	# # Build the app
-    # gradle(
-    #   task: 'bundle',
-    #   build_type: "Release",
-    #   properties: {
-    #     "versionCode" => build_number,
-    #     "versionName" => version_name,
-    #   }
-  	# )
+  	# Build the app
+    gradle(
+      task: 'bundle',
+      build_type: "Release",
+      properties: {
+        "versionCode" => build_number,
+        "versionName" => version_name,
+      }
+  	)
   		
     # Upload .aab to store
-    # upload_to_play_store(
-    #   package_name: "com.rierra.fitnete",
-  	# 	track: track,
-    #   json_key: "./fastlane/Google-Play-Fitnete-json-key.json",
-    #   metadata_path: "./fastlane/metadata/android",
-  	# 	skip_upload_screenshots: true,
-    # 	skip_upload_metadata: true,
-    # 	skip_upload_images: true
-    # )
+    upload_to_play_store(
+      package_name: "com.rierra.fitnete",
+  		track: track,
+      json_key: "./fastlane/Google-Play-Fitnete-json-key.json",
+      metadata_path: "./fastlane/metadata/android",
+  		skip_upload_screenshots: true,
+    	skip_upload_metadata: true,
+    	skip_upload_images: true
+    )
   end 
 
   def clean_project()
