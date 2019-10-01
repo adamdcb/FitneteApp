@@ -150,7 +150,7 @@ const styles = StyleSheet.create({
         flex: 1
     },
     title: {
-        marginTop: 112,
+        marginTop: 56,
         color: '#3E3750',
         fontFamily: 'Poppins-Bold',
         fontSize: 24,

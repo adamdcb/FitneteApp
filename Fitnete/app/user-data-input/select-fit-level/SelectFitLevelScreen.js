@@ -267,7 +267,7 @@ const styles = StyleSheet.create({
         borderRadius: 10
     },
     sliderDescription: {
-        marginTop: 24,
+        marginVertical: 24,
         fontFamily: 'Poppins',
         fontSize: 15,
         color: '#B4B3B6',

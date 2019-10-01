@@ -187,6 +187,8 @@ class BodyParametersScreen extends React.Component {
                     </Text>
                     <FlatList
                         style={{ flex: 1, marginTop: 40 }}
+                        showsVerticalScrollIndicator={false}
+                        bounces={false}
                         data={data}
                         keyExtractor={item => item.id}
                         renderItem={this._renderItem}
@@ -305,7 +307,6 @@ const styles = StyleSheet.create({
         textAlign: 'center'
     },
     bottomContainer: {
-        flex: 1,
         marginBottom: 16,
         justifyContent: 'flex-end'
     },

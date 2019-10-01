@@ -1,5 +1,5 @@
 import React from 'react';
-import { StyleSheet } from 'react-native';
+import { StyleSheet, ScrollView } from 'react-native';
 import LinearGradient from 'react-native-linear-gradient';
 
 class Container extends React.PureComponent {
@@ -12,7 +12,13 @@ class Container extends React.PureComponent {
                 colors={colors}
                 angle={angle}
             >
-                {this.props.children}
+                <ScrollView
+                    style={styles.scrollView}
+                    contentContainerStyle={styles.scrollViewContentContainer}
+                    bounces={false}
+                >
+                    {this.props.children}
+                </ScrollView>
             </LinearGradient>
         );
     }
@@ -20,9 +26,15 @@ class Container extends React.PureComponent {
 
 const styles = StyleSheet.create({
     linearGradient: {
+        flex: 1
+    },
+    scrollView: {
         flex: 1,
         paddingHorizontal: 20
     },
+    scrollViewContentContainer: {
+        flexGrow: 1
+    }
 });
 
 export default Container;

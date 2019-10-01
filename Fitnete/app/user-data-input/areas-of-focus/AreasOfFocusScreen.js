@@ -183,10 +183,8 @@ const styles = StyleSheet.create({
     tabBarIndicator: {
         backgroundColor: '#08C757'
     },
-    areasContainer: {
-        marginTop: 56
-    },
     bottomContainer: {
+        flex: 1,
         marginBottom: 16,
         justifyContent: 'flex-end'
     }

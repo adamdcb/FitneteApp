@@ -71,10 +71,11 @@ const styles = StyleSheet.create({
         flexDirection: 'row'
     },
     tabViewImage: {
-        width: 160
+        flex: 0.4
     },
     areasContainer: {
-        marginTop: 56
+        flex: 0.6,
+        marginTop: 24
     },
     areaItem: {
         marginTop: 24,

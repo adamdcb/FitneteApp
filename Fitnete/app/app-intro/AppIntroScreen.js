@@ -158,7 +158,7 @@ const styles = StyleSheet.create({
         flex: 1
     },
     swiper: {
-        height: 200,
+        height: 168,
         marginBottom: 4
     },
     slide: {
@@ -203,7 +203,8 @@ const styles = StyleSheet.create({
         color: '#4F4C57',
         fontFamily: 'Poppins-Regular',
         fontSize: 15,
-        textAlign: 'center'
+        textAlign: 'center',
+        marginBottom: 32
     },
     bottomContainer: {
         flex: 1,
