@@ -56,9 +56,10 @@ platform :ios do
 
     # Pull from remote
     sh("git", "pull")
-    # Run npm install
+    # Run npm install and cocoapods
     npm_install()
-
+    run_cocoapods()
+    
     ensure_git_status_clean()
 
     # Set version
@@ -83,7 +84,6 @@ platform :ios do
     # commit_version()
 
     # Build project
-    run_cocoapods()
     build_app(
       workspace: "Fitnete.xcworkspace",
       scheme: "Fitnete (#{configuration})",
