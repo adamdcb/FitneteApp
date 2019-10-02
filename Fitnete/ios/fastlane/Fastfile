@@ -64,7 +64,7 @@ platform :ios do
     # Set version
     if bump_type != "build"
       version_name = increment_version_number(
-        bump_type: bump_type
+        bump_type: bump_type,
         xcodeproj: "Fitnete.xcodeproj"
       )
     else
