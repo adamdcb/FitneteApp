@@ -16,10 +16,166 @@
 default_platform(:ios)
 
 platform :ios do
-  desc "Push a new beta build to TestFlight"
-  lane :beta do
-    increment_build_number(xcodeproj: "Fitnete.xcodeproj")
-    build_app(workspace: "Fitnete.xcworkspace", scheme: "Fitnete (Release)")
-    upload_to_testflight
+  before_all do
+    clean_build_artifacts()
   end
+
+  desc "Build iOS app and submit the .ipa to TestFlight"
+  lane :deploy do |options|
+    configuration = options[:configuration]
+    bump_type = options[:bump_type]
+    if configuration.nil? || bump_type.nil?
+      UI.error("Invalid deploy command! Please make sure you have set all necessary params!")
+    else
+      UI.header("Deploy checklist")
+      UI.important("1. are you on the release branch?")
+      UI.important("2. did you update the changelog file?")
+      confirm = UI.confirm("Please confirm")
+      if confirm
+        sh "fastlane build_and_deploy configuration:#{configuration} bump_type:#{bump_type} groups:#{options[:groups]}"
+      end
+    end
+  end
+
+  lane :build_and_deploy do |options|
+    # Get scheme config
+    configuration = options[:configuration]
+    bump_type = options[:bump_type]
+
+    # TODO: Enable ensure_git_branch
+    # ensure_git_branch(branch: "release/release")
+
+    ensure_git_status_clean()
+
+    # Clean project
+    clean_project(configuration)
+    if !changelog_exists()
+      UI.error("Missing changelog!")
+      exit 1
+    end
+
+    # Pull from remote
+    sh("git", "pull")
+    # Run npm install
+    npm_install()
+
+    ensure_git_status_clean()
+
+    # Set version
+    if bump_type != "build"
+      version_name = increment_version_number(
+        bump_type: bump_type
+        xcodeproj: "Fitnete.xcodeproj"
+      )
+    else
+      version_name = get_version_number(
+        xcodeproj: "Fitnete.xcodeproj"
+      )
+    end
+    build_number = increment_build_number(
+      xcodeproj: "Fitnete.xcodeproj"
+    )
+
+    UI.message("Prepare app v#{version_name} (#{build_number})")
+    ENV["VERSION_NAME"] = version_name
+    ENV["BUILD_NUMBER"] = build_number
+    
+    # commit_version()
+
+    # Build project
+    run_cocoapods()
+    build_app(
+      workspace: "Fitnete.xcworkspace",
+      scheme: "Fitnete (#{configuration})",
+      silent: true,
+  	  clean: true,
+		  include_bitcode: true,
+		  include_symbols: true,
+		  export_method: "app-store",
+		  output_directory: "./fastlane/build",
+		  output_name: "#Fitnete-#{configuration}",
+		  build_path: "./fastlane/build",
+		  archive_path: "./fastlane/build",
+		  derived_data_path: "./fastlane/build",
+		  buildlog_path: "./fastlane/build"
+    )
+    
+    # Upload to TestFlight
+    # upload_ipa_to_testflight(configuration, options[:groups])
+  end
+
+  def clean_project(configuration)
+    if(File.exist?('../Fitnete.xcodeproj'))
+      xcclean(
+        workspace: "./Fitnete.xcworkspace",
+        scheme: "Fitnete (#{configuration})"
+      )
+      clear_derived_data()
+      clean_cocoapods_cache()
+    end
+    FileUtils.remove_dir('./build') if File.directory?('./build')
+    File.delete('../build.xcarchive') if File.exist?('../build.xcarchive')
+    FileUtils.remove_dir('../Pods') if File.directory?('../Pods')
+    File.delete('../Podfile.lock') if File.exist?('../Podfile.lock')
+    FileUtils.remove_dir('../../node_modules') if File.directory?('../../node_modules')
+  end
+
+  def changelog_exists()
+    return File.exist?("./changelog.txt") && !File.zero?("./changelog.txt")
+  end
+
+  def npm_install()
+    Dir.chdir("..") do
+      sh("npm", "install")
+    end
+  end
+
+  # Commit app version and build numbers
+  def commit_version()
+    # Commit the version bump
+    git_commit(
+      path: ".",
+      message: "Release iOS v#{ENV["VERSION_NAME"]}(#{ENV["BUILD_NUMBER"]})",
+      allow_nothing_to_commit: true
+    )
+  	# Add a git tag for this build
+	  add_git_tag(
+		  tag: "Fitnete-v#{ENV["VERSION_NAME"]}(#{ENV["BUILD_NUMBER"]})",
+		  force: true
+	  )
+    # Push the new commit and tag back to your git remote
+    push_to_git_remote(force: true)
+  end
+
+  def run_cocoapods()
+  	cocoapods(
+		  use_bundle_exec: false,
+  		try_repo_update_on_error: true
+	  )
+  end
+
+  # Upload build to TestFlight
+  def upload_ipa_to_testflight(configuration, groups)
+    ipa_name = "Fitnete-#{configuration}.ipa"
+    changelog = File.read("./changelog.txt")
+    upload_to_testflight(
+      wait_for_uploaded_build: true,
+      ipa: "./fastlane/build/#{ipa_name}",
+      changelog: changelog,
+      groups: groups,
+      distribute_external: !groups.empty?
+    )
+  end
+
+  after_all do |lane|
+    if lane == :build_and_deploy
+      # Clear changelog file
+      File.open("./changelog.txt", 'w') { |file| file.write("") }
+    end
+  end
+
+  error do |lane, exception|
+    #... 
+  end
+
 end
