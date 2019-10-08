@@ -58,6 +58,7 @@ buck-out/
 */fastlane/build/
 */fastlane/build.xcarchive/
 */fastlane/sign/
+*/fastlane/.env
 
 # Bundle artifact
 *.jsbundle
