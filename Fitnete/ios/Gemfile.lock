@@ -211,6 +211,7 @@ PLATFORMS
 
 DEPENDENCIES
   cocoapods
+  dotenv
   fastlane
 
 BUNDLED WITH
