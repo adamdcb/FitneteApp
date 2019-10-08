@@ -55,6 +55,9 @@ buck-out/
 */fastlane/changelog.txt
 */fastlane/**/changelogs/
 */fastlane/Google-Play-Fitnete-json-key.json
+*/fastlane/build/
+*/fastlane/build.xcarchive/
+*/fastlane/sign/
 
 # Bundle artifact
 *.jsbundle

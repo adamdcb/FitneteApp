@@ -54,34 +54,43 @@ platform :ios do
       exit 1
     end
 
+    # Fetch signing certificate
+    download_signing_artefacts()
+
     # Pull from remote
     sh("git", "pull")
     # Run npm install and cocoapods
     npm_install()
     run_cocoapods()
-    
+
     ensure_git_status_clean()
 
-    # Set version
+    # Get current version name
+    version_name = get_info_plist_value(
+      path: "./Fitnete/Info.plist",
+      key: "CFBundleShortVersionString"
+    )
+    # Increment version name
+    new_version_name = version_name
     if bump_type != "build"
-      version_name = increment_version_number(
-        bump_type: bump_type,
-        xcodeproj: "Fitnete.xcodeproj"
-      )
-    else
-      version_name = get_version_number(
-        xcodeproj: "Fitnete.xcodeproj"
-      )
+      new_version_name = increment_version_name(version_name, bump_type)
     end
-    build_number = increment_build_number(
+
+    # Set version info
+    set_info_plist_value(
+      path: "./Fitnete/Info.plist",
+      key: "CFBundleShortVersionString",
+      value: new_version_name
+    )
+    new_build_number = increment_build_number(
       xcodeproj: "Fitnete.xcodeproj"
     )
 
-    UI.message("Prepare app v#{version_name} (#{build_number})")
-    ENV["VERSION_NAME"] = version_name
-    ENV["BUILD_NUMBER"] = build_number
+    UI.message("Prepare app v#{new_version_name} (#{new_build_number})")
+    ENV["VERSION_NAME"] = new_version_name
+    ENV["BUILD_NUMBER"] = new_build_number
     
-    # commit_version()
+    commit_version()
 
     # Build project
     build_app(
@@ -93,15 +102,15 @@ platform :ios do
 		  include_symbols: true,
 		  export_method: "app-store",
 		  output_directory: "./fastlane/build",
-		  output_name: "#Fitnete-#{configuration}",
+		  output_name: "Fitnete-#{configuration}",
 		  build_path: "./fastlane/build",
 		  archive_path: "./fastlane/build",
 		  derived_data_path: "./fastlane/build",
-		  buildlog_path: "./fastlane/build"
+      buildlog_path: "./fastlane/build"
     )
     
     # Upload to TestFlight
-    # upload_ipa_to_testflight(configuration, options[:groups])
+    upload_ipa_to_testflight(configuration, options[:groups])
   end
 
   def clean_project(configuration)
@@ -122,6 +131,27 @@ platform :ios do
 
   def changelog_exists()
     return File.exist?("./changelog.txt") && !File.zero?("./changelog.txt")
+  end
+
+  # Download signing artefacts
+  def download_signing_artefacts()
+  	get_certificates(
+      username: CredentialsManager::AppfileConfig.try_fetch_value(:apple_id),
+      team_id: CredentialsManager::AppfileConfig.try_fetch_value(:team_id),
+      team_name: "Rierra Inc.",
+      output_path: "./fastlane/sign"
+    )
+    get_provisioning_profile(
+      username: CredentialsManager::AppfileConfig.try_fetch_value(:apple_id),
+      team_id: CredentialsManager::AppfileConfig.try_fetch_value(:team_id),
+      provisioning_name: "Fitnete Production",
+      ignore_profiles_with_different_name: true,
+      filename: "Fitnete_App_Store.mobileprovision",
+      cert_id: CredentialsManager::AppfileConfig.try_fetch_value(:team_id),
+      cert_owner_name: CredentialsManager::AppfileConfig.try_fetch_value(:apple_id),
+      team_name: "Rierra Inc.",
+      output_path: "./fastlane/sign"
+    )
   end
 
   def npm_install()
@@ -152,6 +182,29 @@ platform :ios do
 		  use_bundle_exec: false,
   		try_repo_update_on_error: true
 	  )
+  end
+
+  def increment_version_name(old_version_name, bump_type)
+    version_components = old_version_name.split('.').map{|v| v.to_i}
+    if version_components[2].nil?
+      version_components[2] = 0
+    end
+    if bump_type == "major"
+      version_components[0] = version_components[0] + 1
+      version_components[1] =  0
+      version_components[2] =  0
+    elsif bump_type == "minor"
+      version_components[1] = version_components[1] + 1
+      version_components[2] =  0
+    elsif bump_type == "patch"
+      version_components[2] = version_components[2] + 1
+    end
+    version = "#{version_components[0]}.#{version_components[1]}"
+    if version_components[2] != 0
+      version = version + ".#{version_components[2]}"
+    end
+
+    return version
   end
 
   # Upload build to TestFlight
