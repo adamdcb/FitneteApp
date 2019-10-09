@@ -1,5 +1,5 @@
 import React from 'react';
-import { View, Text, StyleSheet } from 'react-native';
+import { View, Text, StyleSheet, Image } from 'react-native';
 import SwitchToggle from 'react-native-switch-toggle';
 import AreaOfFocusTabViewScenePresenter from './AreaOfFocusTabViewScenePresenter';
 
@@ -31,10 +31,11 @@ class AreasOfFocusTabViewScene extends React.Component {
 
     render() {
         return (
-            <View style={[styles.tabViewScene]}>
-                <View style={styles.tabViewImage}>
-
-                </View>
+            <View style={styles.tabViewScene}>
+                <Image
+                    style={styles.tabViewImage}
+                    source={{ uri: `area_${this.props.type}` }}
+                />
                 <View style={styles.areasContainer}>
                     {this.state.areas.map((area, index) => (
                         <View
@@ -71,11 +72,15 @@ const styles = StyleSheet.create({
         flexDirection: 'row'
     },
     tabViewImage: {
-        flex: 0.4
+        marginTop: 16,
+        width: 98,
+        height: 286,
+        resizeMode: 'contain'
     },
     areasContainer: {
-        flex: 0.6,
-        marginTop: 24
+        flex: 1,
+        marginLeft: 48,
+        marginTop: 40
     },
     areaItem: {
         marginTop: 24,

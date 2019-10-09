@@ -10,19 +10,19 @@ export default class AppIntroPresenter {
         const data = [
             {
                 id: '1',
-                imageName: 'Placeholder One',
+                imageName: 'exercise_1',
                 title: 'appIntro.page1Title',
                 description: 'appIntro.page1Description'
             },
             { 
                 id: '2',
-                imageName: 'Placeholder Two',
+                imageName: 'exercise_2',
                 title: 'appIntro.page2Title',
                 description: 'appIntro.page2Description'
             },
             {
                 id: '3',
-                imageName: 'Placeholder Three',
+                imageName: 'exercise_3',
                 title: 'appIntro.page3Title',
                 description: 'appIntro.page3Description'
             }

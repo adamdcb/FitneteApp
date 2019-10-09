@@ -1,5 +1,5 @@
 import React from 'react';
-import { SafeAreaView, View, Text, StyleSheet } from 'react-native';
+import { SafeAreaView, View, Text, StyleSheet, Image } from 'react-native';
 import Slider from 'react-native-slider-custom';
 
 import I18n from '../../utils/i18n/I18n';
@@ -93,9 +93,10 @@ class SelectFitLevelScreen extends React.Component {
                     </Text>
                     <View style={styles.fitnessContainer}>
                         <View style={styles.fitnessLevelView}>
-                            <View style={styles.fitnessLevelImage}>
-
-                            </View>
+                            <Image
+                                style={styles.fitnessLevelImage}
+                                source={{ uri: 'exercise_3' }}
+                            />
                             <Text style={styles.fitnessLevelTitle}>
                                 {level.title}
                             </Text>
@@ -201,9 +202,9 @@ const styles = StyleSheet.create({
         alignItems: 'center'
     },
     fitnessLevelImage: {
-        height: 126,
-        width: 187,
-        backgroundColor: '#F2F2F2'
+        width: 253,
+        height: 170,
+        resizeMode: 'contain'
     },
     fitnessLevelTitle: {
         marginTop: 16,

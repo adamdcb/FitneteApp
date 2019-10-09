@@ -1,5 +1,5 @@
 import React from 'react';
-import { View, SafeAreaView, Text, TouchableOpacity, StyleSheet } from 'react-native';
+import { View, SafeAreaView, Text, TouchableOpacity, StyleSheet, Image } from 'react-native';
 import Swiper from 'react-native-web-swiper';
 
 import { push, Route, navigate } from '../utils/navigation/NavigationService';
@@ -114,7 +114,10 @@ class AppIntroScreen extends React.Component {
                                 style={styles.slide}
                                 key={element.id}
                             >
-                                <Text style={styles.text}>{element.imageName}</Text>
+                                <Image
+                                    style={styles.slideImage}
+                                    source={{ uri: element.imageName }}
+                                />
                             </View>
                         ))}
                     </Swiper>
@@ -158,16 +161,18 @@ const styles = StyleSheet.create({
         flex: 1
     },
     swiper: {
-        height: 168,
+        height: 160,
         marginBottom: 4
     },
     slide: {
         flex: 1,
-        // marginHorizontal: 48,
-        // marginVertical: 48,
         justifyContent: 'center',
-        alignItems: 'center',
-        backgroundColor: '#F2F2F2'
+        alignItems: 'center'
+    },
+    slideImage: {
+        width: 253,
+        height: 170,
+        resizeMode: 'contain'
     },
     leftArrowContainer: {
         marginLeft: -20
@@ -186,17 +191,13 @@ const styles = StyleSheet.create({
     dotActiveStyle: {
         backgroundColor: '#08C757'
     },
-    text: { // TODO: Delete!
-        color: '#000',
-        fontSize: 30,
-        fontWeight: 'bold'
-    },
     pageTitle: {
         color: '#3E3750',
         fontFamily: 'Poppins-Bold',
         fontSize: 18,
         fontWeight: 'bold',
         textAlign: 'center',
+        marginTop: 8,
         marginBottom: 16
     },
     pageMessage: {

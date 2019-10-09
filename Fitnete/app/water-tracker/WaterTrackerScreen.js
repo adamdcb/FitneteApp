@@ -46,9 +46,10 @@ class WaterTrackerScreen extends React.Component {
                                 {I18n.t('waterTracker.totalWaterIntaker')}
                             </Text>
                         </View>
-                        <View style={styles.waterIntakeImage}>
-
-                        </View>
+                        <Image
+                            style={styles.waterIntakeImage}
+                            source={{ uri: 'daily_water' }}
+                        />
                         <View>
                             <Text style={[styles.waterIntakeValue, styles.rightText]}>
                                 2
@@ -176,12 +177,10 @@ const styles = StyleSheet.create({
         fontSize: 12
     },
     waterIntakeImage: {
-        height: 183,
-        width: 183,
+        flex: 1,
+        height: 258,
         marginTop: 8,
-        borderRadius: 91.5,
-        borderWidth: 1,
-        borderColor: '#30D87C'
+        resizeMode: 'contain'
     },
     rightText: {
         textAlign: 'right'
