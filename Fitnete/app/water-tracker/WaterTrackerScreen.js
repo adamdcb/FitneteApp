@@ -151,7 +151,7 @@ const styles = StyleSheet.create({
         flex: 1
     },
     title: {
-        marginTop: 56,
+        marginTop: 48,
         color: '#3E3750',
         fontFamily: 'Poppins-Bold',
         fontSize: 24,
@@ -178,7 +178,7 @@ const styles = StyleSheet.create({
     },
     waterIntakeImage: {
         flex: 1,
-        height: 258,
+        height: 200,
         marginTop: 8,
         resizeMode: 'contain'
     },
@@ -189,7 +189,7 @@ const styles = StyleSheet.create({
         textAlign: 'left'
     },
     sliderOuterContainer: {
-        marginTop: 24,
+        marginTop: 8,
         height: SLIDER_HEIGHT * 3,
         paddingBottom: SLIDER_HEIGHT / 2
     },

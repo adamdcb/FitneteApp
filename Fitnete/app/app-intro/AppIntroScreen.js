@@ -75,52 +75,53 @@ class AppIntroScreen extends React.Component {
         return (
             <SafeAreaView style={styles.container}>
                 <Container>
-                    <Swiper
-                        containerStyle={styles.swiper}
-                        minDistanceForAction={0.1}
-                        controlsProps={{
-                            nextPos: 'right',
-                            NextComponent: ({ onPress }) => (
-                                <TouchableOpacity
-                                    style={styles.rightArrowContainer}
-                                    onPress={onPress}
+                    <View style={styles.swiper}>
+                        <Swiper
+                            minDistanceForAction={0.1}
+                            controlsProps={{
+                                nextPos: 'right',
+                                NextComponent: ({ onPress }) => (
+                                    <TouchableOpacity
+                                        style={styles.rightArrowContainer}
+                                        onPress={onPress}
+                                    >
+                                        <Text style={styles.arrow}>
+                                            {'›'}
+                                        </Text>
+                                    </TouchableOpacity>
+                                ),
+                                prevPos: 'left',
+                                PrevComponent: ({ onPress }) => (
+                                    <TouchableOpacity
+                                        style={styles.leftArrowContainer}
+                                        onPress={onPress}
+                                    >
+                                        <Text style={styles.arrow}>
+                                            {'‹'}
+                                        </Text>
+                                    </TouchableOpacity>
+                                ),
+                                dotsTouchable: true,
+                                dotProps: {
+                                    badgeStyle: styles.dotStyle
+                                },
+                                dotActiveStyle: styles.dotActiveStyle
+                            }}
+                            onIndexChanged={this.onSwiperIndexChanged}
+                        >
+                            {this.data.map((element) => (
+                                <View
+                                    style={styles.slide}
+                                    key={element.id}
                                 >
-                                    <Text style={styles.arrow}>
-                                        {'›'}
-                                    </Text>
-                                </TouchableOpacity>
-                            ),
-                            prevPos: 'left',
-                            PrevComponent: ({ onPress }) => (
-                                <TouchableOpacity
-                                    style={styles.leftArrowContainer}
-                                    onPress={onPress}
-                                >
-                                    <Text style={styles.arrow}>
-                                        {'‹'}
-                                    </Text>
-                                </TouchableOpacity>
-                            ),
-                            dotsTouchable: true,
-                            dotProps: {
-                                badgeStyle: styles.dotStyle
-                            },
-                            dotActiveStyle: styles.dotActiveStyle
-                        }}
-                        onIndexChanged={this.onSwiperIndexChanged}
-                    >
-                        {this.data.map((element) => (
-                            <View
-                                style={styles.slide}
-                                key={element.id}
-                            >
-                                <Image
-                                    style={styles.slideImage}
-                                    source={{ uri: element.imageName }}
-                                />
-                            </View>
-                        ))}
-                    </Swiper>
+                                    <Image
+                                        style={styles.slideImage}
+                                        source={{ uri: element.imageName }}
+                                    />
+                                </View>
+                            ))}
+                        </Swiper>
+                    </View>
                     <Text style={styles.pageTitle}>
                         {this.state.title}
                     </Text>
@@ -161,11 +162,11 @@ const styles = StyleSheet.create({
         flex: 1
     },
     swiper: {
-        height: 160,
+        height: 216,
+        marginTop: 32,
         marginBottom: 4
     },
     slide: {
-        flex: 1,
         justifyContent: 'center',
         alignItems: 'center'
     },
@@ -181,7 +182,7 @@ const styles = StyleSheet.create({
         marginRight: -20
     },
     arrow: {
-        color: '#DBDBDE',
+        color: '#3E3750',
         fontSize: 40,
         fontWeight: '400'
     },

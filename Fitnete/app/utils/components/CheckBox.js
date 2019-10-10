@@ -1,5 +1,5 @@
 import React from 'react';
-import { TouchableOpacity, StyleSheet } from 'react-native';
+import { TouchableOpacity, StyleSheet, View } from 'react-native';
 import FNIcon from './FNIcon';
 
 
@@ -28,18 +28,27 @@ class CheckBox extends React.Component {
         const checkmarkColor = active ? '#FFFFFF' : 'transparent';
         const { style = {}} = this.props;
         return (
-            <TouchableOpacity onPress={this.onToggle} style={[boxStyle, style]}>
+            <TouchableOpacity style={styles.container} onPress={this.onToggle} >
+                <View style={[boxStyle, style]}>
                 <FNIcon
                     name="check"
                     color={checkmarkColor}
                     size={12}
                 />
+                </View>
             </TouchableOpacity>
         );
     }
 }
 
 const styles = StyleSheet.create({
+    container: {
+        marginLeft: -4,
+        height: 24,
+        width: 24,
+        justifyContent: 'center',
+        alignItems: 'center'
+    },
     box: {
         height: 16,
         width: 16,

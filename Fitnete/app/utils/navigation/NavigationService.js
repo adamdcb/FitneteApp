@@ -24,7 +24,8 @@ import BodyParametersScreen from '../../user-data-input/body-parameters/BodyPara
 const HEADER_STYLE = {
     backgroundColor: '#F3F4FA',
     borderBottomWidth: 0,
-    elevation: 0
+    elevation: 0,
+    shadowOpacity: 0
 }
 
 const HEADER_TITLE_STYLE = {
@@ -57,7 +58,11 @@ const AppIntroStack = createStackNavigator(
         AppIntro: {
             screen: AppIntroScreen,
             navigationOptions: () => ({
-                headerBackTitle: null
+                headerBackTitle: null,
+                headerStyle: {
+                    ...HEADER_STYLE,
+                    height: 0
+                }
             })
         },
         PrivacyPolicy: PrivacyPolicyScreen,
