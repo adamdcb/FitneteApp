@@ -37,7 +37,7 @@ class BodyParametersScreen extends React.Component {
     }
 
     onContinue() {
-        push(Route.WaterTracker);
+        push(Route.PrepareWorkoutPlan);
     }
 
     setData(data, dismissPicker = true) {

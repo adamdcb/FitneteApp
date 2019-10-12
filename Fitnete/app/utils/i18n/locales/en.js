@@ -69,5 +69,11 @@ export default {
         gluten_free: 'Gluten Free',
         vegetarian: 'Vegetarian',
         balanced_diet: 'Balanced Diet'
+    },
+    prepareWorkoutPlan: {
+        title: 'Preparing workout plan',
+        description1: 'Ge redy for your',
+        description2: 'personalized fitntess\njourney',
+        processing: 'Processing...'
     }
 };

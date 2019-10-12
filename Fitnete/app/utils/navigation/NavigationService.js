@@ -20,6 +20,7 @@ import WaterTrackerScreen from '../../water-tracker/WaterTrackerScreen';
 import AreasOfFocusScreen from '../../user-data-input/areas-of-focus/AreasOfFocusScreen';
 import SelectFitLevelScreen from '../../user-data-input/select-fit-level/SelectFitLevelScreen';
 import BodyParametersScreen from '../../user-data-input/body-parameters/BodyParametersScreen';
+import PrepareWorkoutPlanScreen from '../../user-data-input/prepare-workout/PrepareWorkoutPlanScreen';
 
 const HEADER_STYLE = {
     backgroundColor: '#F3F4FA',
@@ -46,6 +47,10 @@ const UserDataInputScreens = {
     BodyParameters: {
         screen: BodyParametersScreen,
         params: { step: 3, stepsTotal: 4 }
+    },
+    PrepareWorkoutPlan: {
+        screen: PrepareWorkoutPlanScreen,
+        params: { step: 4, stepsTotal: 4 }
     }
 }
 
