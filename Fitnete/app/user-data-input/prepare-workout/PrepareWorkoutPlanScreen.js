@@ -28,7 +28,7 @@ class PrepareWorkoutPlanScreen extends React.Component {
     }
 
     onContinue() {
-        push(Route.WaterTracker);
+        push(Route.WorkoutPlanReady);
     }
 
     setProgress(progress) {

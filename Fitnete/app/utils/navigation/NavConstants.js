@@ -5,6 +5,7 @@ const Route = {
     SelectFitLevel: 'SelectFitLevel',
     BodyParameters: 'BodyParameters',
     PrepareWorkoutPlan: 'PrepareWorkoutPlan',
+    WorkoutPlanReady: 'WorkoutPlanReady',
     WaterTracker: 'WaterTracker'
 }
 

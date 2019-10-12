@@ -72,8 +72,15 @@ export default {
     },
     prepareWorkoutPlan: {
         title: 'Preparing workout plan',
-        description1: 'Ge redy for your',
+        description1: 'Get ready for your',
         description2: 'personalized fitntess\njourney',
         processing: 'Processing...'
+    },
+    workoutPlanReady: {
+        title: 'Success!',
+        description1: 'Your fitness program is ready!',
+        description2: '28-days Plan',
+        description3: 'to Get In Shape',
+        getYourPlan: 'Get your plan'
     }
 };
