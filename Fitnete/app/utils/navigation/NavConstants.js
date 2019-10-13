@@ -6,6 +6,7 @@ const Route = {
     BodyParameters: 'BodyParameters',
     PrepareWorkoutPlan: 'PrepareWorkoutPlan',
     WorkoutPlanReady: 'WorkoutPlanReady',
+    NoPlanPurchased: 'NoPlanPurchased',
     WaterTracker: 'WaterTracker'
 }
 

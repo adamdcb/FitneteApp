@@ -22,6 +22,7 @@ import SelectFitLevelScreen from '../../user-data-input/select-fit-level/SelectF
 import BodyParametersScreen from '../../user-data-input/body-parameters/BodyParametersScreen';
 import PrepareWorkoutPlanScreen from '../../user-data-input/prepare-workout/PrepareWorkoutPlanScreen';
 import WorkoutPlanReadyScreen from '../../user-data-input/workout-plan-ready/WorkoutPlanReadyScreen';
+import NoPlanPurchasedScreen from '../../user-data-input/no-plan-purchased/NoPlanPurchasedScreen';
 
 const HEADER_STYLE = {
     backgroundColor: '#F3F4FA',
@@ -53,7 +54,8 @@ const UserDataInputScreens = {
         screen: PrepareWorkoutPlanScreen,
         params: { step: 4, stepsTotal: 4 }
     },
-    WorkoutPlanReady: WorkoutPlanReadyScreen
+    WorkoutPlanReady: WorkoutPlanReadyScreen,
+    NoPlanPurchased: NoPlanPurchasedScreen
 }
 
 const WaterTrackerScreens = {

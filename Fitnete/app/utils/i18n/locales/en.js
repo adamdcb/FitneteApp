@@ -2,6 +2,7 @@ export default {
     privacyPolicyTitle: 'Privacy Policy',
     termsAndConditionsTitle: 'Terms and Conditions',
     save: 'Save',
+    later: 'Later',
     appIntro: {
         accept: 'accept',
         acceptTermsText1: 'Check this box to indicate that you have read and agree to the',
@@ -82,5 +83,13 @@ export default {
         description2: '28-days Plan',
         description3: 'to Get In Shape',
         getYourPlan: 'Get your plan'
+    },
+    noPlanPurchased: {
+        description1: 'Not ready for the',
+        description2: 'full',
+        description3: 'Fitnete experience',
+        continue: 'Continue for free*',
+        goPremium: 'GO PREMIUM!',
+        continueForFreeDescription: '*Free for limited time. Some functionalities are only available for premium users.'
     }
 };

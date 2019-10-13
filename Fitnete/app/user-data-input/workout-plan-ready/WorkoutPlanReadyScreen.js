@@ -13,7 +13,7 @@ class WorkoutPlanReadyScreen extends React.Component {
     }
 
     goToPlan() {
-        push(Route.WaterTracker);
+        push(Route.NoPlanPurchased);
     }
 
     render() {
