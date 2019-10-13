@@ -75,7 +75,7 @@ const styles = StyleSheet.create({
         textDecorationColor: '#30D87C'
     },
     successImageContainer: {
-        marginTop: 64,
+        marginTop: 24,
         alignItems: 'center',
         justifyContent: 'center'
     },

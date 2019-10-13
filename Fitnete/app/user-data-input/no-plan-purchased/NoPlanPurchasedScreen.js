@@ -109,7 +109,7 @@ const styles = StyleSheet.create({
         textDecorationColor: '#30D87C'
     },
     imageContainer: {
-        marginTop: 64,
+        marginTop: 24,
         alignItems: 'center',
         justifyContent: 'center'
     },
@@ -167,6 +167,7 @@ const styles = StyleSheet.create({
     },
     continueForFreeDescription: {
         marginBottom: 36,
+        marginHorizontal: 16,
         fontFamily: 'Poppins',
         fontSize: 12,
         color: '#B4B3B6',
