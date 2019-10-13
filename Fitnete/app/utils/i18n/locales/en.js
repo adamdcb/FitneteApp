@@ -90,6 +90,14 @@ export default {
         description3: 'Fitnete experience',
         continue: 'Continue for free*',
         goPremium: 'GO PREMIUM!',
-        continueForFreeDescription: '*Free for limited time. Some functionalities are only available for premium users.'
+        continueForFreeDescription: '*Free for limited time. Some functionalities are only available for premium users'
+    },
+    continueForFree: {
+        description1: 'We still want to help you achieve your goals',
+        description2: 'completely',
+        description3: 'for free*',
+        continueForFreeDescription: '*Free for limited time. Some functionalities are only available for premium users',
+        readyText: 'Are you ready?',
+        continue: 'Yeah! Let\'s start'
     }
 };

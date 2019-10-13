@@ -18,7 +18,7 @@ class NoPlanPurchasedScreen extends React.Component {
     }
 
     continueForFree() {
-        push(Route.WaterTracker);
+        push(Route.ContinueForFree);
     }
 
     goPremium() {
@@ -171,7 +171,7 @@ const styles = StyleSheet.create({
         fontSize: 12,
         color: '#B4B3B6',
         textAlign: 'center'
-    },
+    }
 });
 
 NoPlanPurchasedScreen.navigationOptions = ({ navigation }) => ({
