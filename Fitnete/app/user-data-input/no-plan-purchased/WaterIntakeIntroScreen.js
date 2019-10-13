@@ -7,7 +7,7 @@ import Button from '../../utils/components/Button';
 import { push, Route } from '../../utils/navigation/NavigationService';
 import HeaderTextButton from '../../utils/components/HeaderTextButton';
 
-class ContinueForFreeScreen extends React.Component {
+class WaterIntakeIntroScreen extends React.Component {
     constructor(props) {
         super(props);
         this.continue = this.continue.bind(this);
@@ -16,7 +16,7 @@ class ContinueForFreeScreen extends React.Component {
     }
 
     continue() {
-        push(Route.WaterIntakeIntro);
+        push(Route.WaterTracker);
     }
 
     goToApp() {
@@ -28,12 +28,14 @@ class ContinueForFreeScreen extends React.Component {
             <SafeAreaView style={styles.container}>
                 <Container>
                     <Text style={styles.description}>
-                        {I18n.t('continueForFree.description1')}
+                        {I18n.t('waterIntakeIntro.description1')}
                     </Text>
-                    <Text style={styles.description2}>
-                        {I18n.t('continueForFree.description2')}{' '}
+                    <Text style={styles.descriptionBold}>
+                        <Text style={styles.description2}>
+                            {I18n.t('waterIntakeIntro.description2')}
+                        </Text>
                         <Text style={styles.description3}>
-                            {I18n.t('continueForFree.description3')}
+                            {' '}{I18n.t('waterIntakeIntro.description3')}
                         </Text>
                     </Text>
                     <View style={styles.imageContainer}>
@@ -42,15 +44,15 @@ class ContinueForFreeScreen extends React.Component {
                             source={{ uri: 'for_free' }}
                         />
                     </View>
-                    <Text style={styles.continueForFreeDescription}>
-                        {I18n.t('continueForFree.continueForFreeDescription')}
+                    <Text style={styles.dailyWaterIntakeText}>
+                        {I18n.t('waterIntakeIntro.dailyWaterIntake')}{' '}
+                        <Text style={styles.dailyWaterIntakeValue}>
+                            {`2500 ml`}
+                        </Text>
                     </Text>
                     <View style={styles.bottomContainer}>
-                        <Text style={styles.readyText}>
-                            {I18n.t('continueForFree.readyText')}
-                        </Text>
                         <Button
-                            title={I18n.t('continueForFree.continue')}
+                            title={I18n.t('waterIntakeIntro.continue')}
                             onPress={this.continue}
                         />
                     </View>
@@ -72,20 +74,26 @@ const styles = StyleSheet.create({
         color: '#4F4C57',
         textAlign: 'center'
     },
-    description2: {
+    descriptionBold: {
         marginTop: 4,
         fontFamily: 'Poppins-Bold',
         fontSize: 24,
         color: '#3E3750',
-        textAlign: 'center'
+        textAlign: 'center',
     },
-    description3: {
+    description2: {
         fontFamily: 'Poppins-Bold',
         fontSize: 24,
         color: '#3E3750',
         textAlign: 'center',
         textDecorationLine: 'underline',
         textDecorationColor: '#30D87C'
+    },
+    description3: {
+        fontFamily: 'Poppins-Bold',
+        fontSize: 24,
+        color: '#3E3750',
+        textAlign: 'center',
     },
     imageContainer: {
         marginTop: 24,
@@ -97,30 +105,27 @@ const styles = StyleSheet.create({
         height: 228,
         resizeMode: 'contain'
     },
-    continueForFreeDescription: {
-        width: 258,
-        alignSelf: 'center',
-        marginBottom: 16,
+    dailyWaterIntakeText: {
+        marginTop: 32,
         fontFamily: 'Poppins',
-        fontSize: 12,
-        color: '#B4B3B6',
+        fontSize: 15,
+        color: '#4F4C57',
+        textAlign: 'center'
+    },
+    dailyWaterIntakeValue: {
+        fontFamily: 'Poppins-Bold',
+        fontSize: 15,
+        color: '#3E3750',
         textAlign: 'center'
     },
     bottomContainer: {
         flex: 1,
         marginBottom: 16,
         justifyContent: 'flex-end'
-    },
-    readyText: {
-        marginBottom: 32,
-        fontFamily: 'Poppins-Bold',
-        fontSize: 24,
-        color: '#3E3750',
-        textAlign: 'center'
     }
 });
 
-ContinueForFreeScreen.navigationOptions = ({ navigation }) => ({
+WaterIntakeIntroScreen.navigationOptions = ({ navigation }) => ({
     headerRight:
         <HeaderTextButton
             text={I18n.t('later')}
@@ -128,4 +133,4 @@ ContinueForFreeScreen.navigationOptions = ({ navigation }) => ({
         />
 });
 
-export default ContinueForFreeScreen;
+export default WaterIntakeIntroScreen;

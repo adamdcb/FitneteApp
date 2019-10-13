@@ -99,5 +99,12 @@ export default {
         continueForFreeDescription: '*Free for limited time. Some functionalities are only available for premium users',
         readyText: 'Are you ready?',
         continue: 'Yeah! Let\'s start'
+    },
+    waterIntakeIntro: {
+        description1: 'Drink enough water daily to',
+        description2: 'stay hydrated',
+        description3: 'for your fitness goals',
+        dailyWaterIntake: 'Your perfect daily Water rate is:',
+        continue: 'Turn on Water Tracker'
     }
 };

@@ -8,6 +8,7 @@ const Route = {
     WorkoutPlanReady: 'WorkoutPlanReady',
     NoPlanPurchased: 'NoPlanPurchased',
     ContinueForFree: 'ContinueForFree',
+    WaterIntakeIntro: 'WaterIntakeIntro',
     WaterTracker: 'WaterTracker'
 }
 

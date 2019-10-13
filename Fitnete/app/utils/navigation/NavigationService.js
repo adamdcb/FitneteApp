@@ -24,6 +24,7 @@ import PrepareWorkoutPlanScreen from '../../user-data-input/prepare-workout/Prep
 import WorkoutPlanReadyScreen from '../../user-data-input/workout-plan-ready/WorkoutPlanReadyScreen';
 import NoPlanPurchasedScreen from '../../user-data-input/no-plan-purchased/NoPlanPurchasedScreen';
 import ContinueForFreeScreen from '../../user-data-input/no-plan-purchased/ContinueForFreeScreen';
+import WaterIntakeIntroScreen from '../../user-data-input/no-plan-purchased/WaterIntakeIntroScreen';
 
 const HEADER_STYLE = {
     backgroundColor: '#F3F4FA',
@@ -57,7 +58,8 @@ const UserDataInputScreens = {
     },
     WorkoutPlanReady: WorkoutPlanReadyScreen,
     NoPlanPurchased: NoPlanPurchasedScreen,
-    ContinueForFree: ContinueForFreeScreen
+    ContinueForFree: ContinueForFreeScreen,
+    WaterIntakeIntro: WaterIntakeIntroScreen
 }
 
 const WaterTrackerScreens = {
