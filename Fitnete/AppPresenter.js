@@ -9,15 +9,8 @@ export default class AppPresenter {
 
     async loadInitialStoryboard() {
         try {
-            const user = await this.dataSource.getUser();
-            if (user === null || !user.didAcceptTerms) {
-                this.view.setInitialStoryboard(InitialStoryboard.AppIntro);
-            } else if (!user.profile) {
-                this.view.setInitialStoryboard(InitialStoryboard.UserDataInput);
-            } else {
-                // TODO: implement logic here!
-                this.view.setInitialStoryboard(InitialStoryboard.UserDataInput);
-            }
+            this.view.setInitialStoryboard(InitialStoryboard.AppIntro);
+            // TODO: implement logic here!
         } catch (e) {
             this.view.setInitialStoryboard(InitialStoryboard.AppIntro);
         }
