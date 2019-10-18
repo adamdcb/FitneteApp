@@ -112,6 +112,7 @@ class SelectFitLevelScreen extends React.Component {
                             step={1}
                             value={this.state.levelIndex}
                             onValueChange={this.onSliderValueChange}
+                            onSlidingComplete={this.onSliderValueChange}
                             minimumTrackTintColor={'transparent'}
                             customMinimumTrack={(
                                 <View style={styles.sliderCustomMinimumTrack}>
