@@ -1,8 +1,28 @@
 diff --git a/node_modules/react-native-slider-custom/src/Slider.js b/node_modules/react-native-slider-custom/src/Slider.js
-index 87b3319..5e61c39 100644
+index 87b3319..0f6200b 100644
 --- a/node_modules/react-native-slider-custom/src/Slider.js
 +++ b/node_modules/react-native-slider-custom/src/Slider.js
-@@ -345,7 +345,8 @@ export default class Slider extends PureComponent {
+@@ -213,14 +213,13 @@ export default class Slider extends PureComponent {
+     });
+   }
+ 
+-  componentWillReceiveProps(nextProps) {
+-    var newValue = nextProps.value;
+-
+-    if (this.props.value !== newValue) {
++  componentDidUpdate(prevProps, prevState) {
++    var newValue = this.props.value;
++    if (prevProps.value !== newValue) {
+       if (this.props.animateTransitions) {
+-        this._setCurrentValueAnimated(newValue || this.props.value);
++        this._setCurrentValueAnimated(newValue);
+       } else {
+-        this._setCurrentValue(newValue || this.props.value);
++        this._setCurrentValue(newValue);
+       }
+     }
+   }
+@@ -345,7 +344,8 @@ export default class Slider extends PureComponent {
      e: Object /*gestureState: Object*/,
    ): boolean => {
      // Should we become active when the user presses down on the thumb?
@@ -12,7 +32,7 @@ index 87b3319..5e61c39 100644
    };
  
    _handleMoveShouldSetPanResponder(/*e: Object, gestureState: Object*/): boolean {
-@@ -353,8 +354,8 @@ export default class Slider extends PureComponent {
+@@ -353,8 +353,8 @@ export default class Slider extends PureComponent {
      return false;
    }
  
@@ -23,7 +43,7 @@ index 87b3319..5e61c39 100644
      this._fireChangeEvent('onSlidingStart');
    };
  
-@@ -461,6 +462,35 @@ export default class Slider extends PureComponent {
+@@ -461,6 +461,35 @@ export default class Slider extends PureComponent {
      }
    };
  
