@@ -49,7 +49,7 @@ export default class AreaOfFocusTabViewScenePresenter {
                 {
                     id: '3',
                     type: 'legs',
-                    name: I18n.t('areasOfFocus.legs'),
+                    name: I18n.t('areasOfFocus.legs_and_glutes'),
                     selected: false
                 }
             ],

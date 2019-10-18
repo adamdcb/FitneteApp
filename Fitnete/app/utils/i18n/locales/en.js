@@ -38,7 +38,8 @@ export default {
         armsAndChest: 'Arms and Chest',
         abdominals: 'Abdominals',
         armsAndBack: 'Arms & Back',
-        legs: 'Legs'
+        legs: 'Legs',
+        legs_and_glutes: 'Legs and Glutes'
     },
     selectFitLevel: {
         title: 'Select your FIT level',
@@ -69,6 +70,7 @@ export default {
     foodOptions: {
         gluten_free: 'Gluten Free',
         vegetarian: 'Vegetarian',
+        vegan: 'Vegan',
         balanced_diet: 'Balanced Diet'
     },
     prepareWorkoutPlan: {
