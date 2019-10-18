@@ -1,0 +1,61 @@
+diff --git a/node_modules/react-native-slider-custom/src/Slider.js b/node_modules/react-native-slider-custom/src/Slider.js
+index 87b3319..5e61c39 100644
+--- a/node_modules/react-native-slider-custom/src/Slider.js
++++ b/node_modules/react-native-slider-custom/src/Slider.js
+@@ -345,7 +345,8 @@ export default class Slider extends PureComponent {
+     e: Object /*gestureState: Object*/,
+   ): boolean => {
+     // Should we become active when the user presses down on the thumb?
+-    return this._thumbHitTest(e);
++    //return this._thumbHitTest(e);
++    return true;
+   };
+ 
+   _handleMoveShouldSetPanResponder(/*e: Object, gestureState: Object*/): boolean {
+@@ -353,8 +354,8 @@ export default class Slider extends PureComponent {
+     return false;
+   }
+ 
+-  _handlePanResponderGrant = (/*e: Object, gestureState: Object*/) => {
+-    this._previousLeft = this._getThumbLeft(this._getCurrentValue());
++  _handlePanResponderGrant = (e: Object, gestureState: Object) => {
++    this._previousLeft = this._getThumbLeft(this._getTouchValue(gestureState));
+     this._fireChangeEvent('onSlidingStart');
+   };
+ 
+@@ -461,6 +462,35 @@ export default class Slider extends PureComponent {
+     }
+   };
+ 
++  _getTouchValue = (gestureState: Object) => {
++    const { vertical, step, minimumValue, maximumValue } = this.props;
++    var length = this.state.containerSize.width - this.state.thumbSize.width;
++    var thumbLeft = vertical
++      ? gestureState.y0
++      : gestureState.x0;
++
++    var ratio = thumbLeft / length;
++
++    if (step) {
++      return Math.max(
++        minimumValue,
++        Math.min(
++          maximumValue,
++          minimumValue +
++            Math.round((ratio * (maximumValue - minimumValue)) / step) * step,
++        ),
++      );
++    } else {
++      return Math.max(
++        minimumValue,
++        Math.min(
++          maximumValue,
++          ratio * (maximumValue - minimumValue) + minimumValue,
++        ),
++      );
++    }
++  };
++
+   _getCurrentValue = () => {
+     return this.state.value.__getValue();
+   };
