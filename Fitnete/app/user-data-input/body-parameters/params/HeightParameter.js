@@ -3,11 +3,11 @@ const CM_INCH_COEFF = 2.54;
 const FEET_INCH_COEFF = 12;
 
 class HeightParameter {
-    standardiseValue(value, unit = 'cm') {
+    standardiseValue(value, unit = 'metric') {
         switch (unit) {
-            case 'cm':
+            case 'metric':
                 return value;
-            case 'ftIn': {
+            case 'imperial': {
                 const feet = Math.trunc(value);
                 const inches = Math.fround((value - feet) * 10);
                 const cm = Math.trunc((feet * FEET_INCH_COEFF + inches) * CM_INCH_COEFF * 10) / 10;
@@ -18,16 +18,16 @@ class HeightParameter {
         }
     }
 
-    standardiseValueFromComponents(comps, unit = 'cm') {
-        const value = comps[0] + (comps[1] / 10);
+    standardiseValueFromComponents(comps, unit = 'metric') {
+        const value = comps[0] + ((comps[1] || 0) / 10);
         return this.standardiseValue(value, unit);
     }
 
-    getFormattedValue(value, unit = 'cm') {
+    getFormattedValue(value, unit = 'metric') {
         switch (unit) {
-            case 'cm':
-                return `${value} CM`;
-            case 'ftIn': {
+            case 'metric':
+                return `${Math.round(value)} CM`;
+            case 'imperial': {
                 const inches = value / CM_INCH_COEFF;
                 const feet = Math.trunc(inches / FEET_INCH_COEFF);
                 const remainingInches = Math.round(inches - (feet * FEET_INCH_COEFF));
@@ -38,6 +38,14 @@ class HeightParameter {
         }
     }
 
+    getValueObj({ value, unit, defaultValue }) {
+        const isDefault = value === null || value === undefined;
+        return {
+            value: isDefault ? this.standardiseValue(defaultValue, unit) : value,
+            isDefault
+        }
+    }
+
     getValueStr(value) {
         if (value === -1) {
             return ''
@@ -45,15 +53,13 @@ class HeightParameter {
         return `${value}`;
     }
 
-    getValueComponents(value, unit = 'cm') {
+    getValueComponents(value, unit = 'metric') {
         switch (unit) {
-            case 'cm': {
-                const integral = Math.trunc(value);
-                const decimal = Math.fround(10 * (value - integral));
-                console.log([integral, decimal]);
-                return [integral, decimal];
+            case 'metric': {
+                const integral = Math.round(value);
+                return [integral];
             }
-            case 'ftIn': {
+            case 'imperial': {
                 const inches = value / CM_INCH_COEFF;
                 const feet = Math.trunc(inches / FEET_INCH_COEFF);
                 const remainingInches = Math.round(inches - (feet * FEET_INCH_COEFF));

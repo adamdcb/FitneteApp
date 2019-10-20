@@ -9,35 +9,16 @@ const ROW_HEIGHT = 40;
 class FNPicker extends React.Component {
     constructor(props) {
         super(props);
-        const { selectedValuesIndexes, selectedUnitIndex, data, units = [] } = props;
+        const { columns, initialScrollIndexes } = this.props;
         this.state = {
-            data: data,
-            datasets: data.datasets,
-            selectedValuesIndexes: selectedValuesIndexes || Array.from({ length: data.datasets.length }, () => 0),
-            selectedUnitIndex: selectedUnitIndex
+            columns,
+            scrollIndexes: initialScrollIndexes
         };
         this.onDismiss = this.onDismiss.bind(this);
         this.onSave = this.onSave.bind(this);
-        this.onSelectUnit = this.onSelectUnit.bind(this);
         this.renderItem = this.renderItem.bind(this);
         this.onMomentumScrollEnd = this.onMomentumScrollEnd.bind(this);
         this.getItemLayout = this.getItemLayout.bind(this);
-    }
-
-    componentDidUpdate(prevProps) {
-        if (prevProps.data !== this.props.data) {
-            const { selectedValuesIndexes, selectedUnitIndex, data } = this.props;
-            this.setState({
-                data: data,
-                datasets: [],
-                selectedValuesIndexes: selectedValuesIndexes || Array.from({ length: data.datasets.length }, () => 0),
-                selectedUnitIndex: selectedUnitIndex
-            }, () => {
-                this.setState({
-                    datasets: data.datasets
-                })
-            })
-        }
     }
 
     onDismiss() {
@@ -48,22 +29,15 @@ class FNPicker extends React.Component {
 
     onSave() {
         if (this.props.onSave) {
-            const { selectedValuesIndexes, selectedUnitIndex } = this.state;
-            this.props.onSave(selectedValuesIndexes, selectedUnitIndex);
-        }
-    }
-
-    onSelectUnit(unitIndex) {
-        this.setState({ selectedUnitIndex: unitIndex });
-        if (this.props.onSelectUnit) {
-            this.props.onSelectUnit(unitIndex);
+            const { scrollIndexes } = this.state;
+            this.props.onSave(scrollIndexes);
         }
     }
 
     onMomentumScrollEnd(event, index) {
-        const selectedValuesIndexes = [...this.state.selectedValuesIndexes];
-        selectedValuesIndexes[index] = event.nativeEvent.contentOffset.y / ROW_HEIGHT;
-        this.setState({ selectedValuesIndexes });
+        const scrollIndexes = [...this.state.scrollIndexes];
+        scrollIndexes[index] = event.nativeEvent.contentOffset.y / ROW_HEIGHT;
+        this.setState({ scrollIndexes });
     }
 
     getItemLayout(data, index) {
@@ -74,13 +48,13 @@ class FNPicker extends React.Component {
         };
     }
 
-    _renderDatasets() {
-        const { datasets, selectedValuesIndexes } = this.state;
+    _renderColumns() {
+        const { columns, scrollIndexes } = this.state;
         const views = [];
-        datasets.forEach((dataset, index) => {
+        columns.forEach((column, index) => {
             const parentIndex = index;
-            if (index > 0 && this.props.separator) {
-                const SeparatorView = <Text style={styles.separator} key={`${parentIndex}${this.props.separator}`}>{this.props.separator}</Text>;
+            if (this.props.columnLabels) {
+                const SeparatorView = <Text style={{ color: 'transparent' }} key={`${parentIndex}${this.props.separator}`}>{this.props.columnLabels[index]}</Text>;
                 views.push(SeparatorView);
             }
             const ListView =
@@ -90,9 +64,9 @@ class FNPicker extends React.Component {
                 >
                     <FlatList
                         style={styles.listView}
-                        data={dataset}
+                        data={column}
                         extraData={this.state}
-                        initialScrollIndex={selectedValuesIndexes[index]}
+                        initialScrollIndex={scrollIndexes[index]}
                         keyExtractor={(item, index) => `${parentIndex}${item}${index}`}
                         listKey={`${parentIndex}`}
                         renderItem={this.renderItem}
@@ -107,31 +81,12 @@ class FNPicker extends React.Component {
                     <View pointerEvents="none" style={styles.listIndicatorBottomBorder}></View>
                 </View>;
             views.push(ListView);
+            if (this.props.columnLabels) {
+                const SeparatorView = <Text style={styles.separator} key={`${parentIndex}${this.props.separator}`}>{this.props.columnLabels[index]}</Text>;
+                views.push(SeparatorView);
+            }
         })
         return views;
-    }
-
-    _renderUnits(units) {
-        if (!units) {
-            return null;
-        }
-        const { selectedUnitIndex } = this.state;
-        return units.map((unit, index) => (
-            <TouchableOpacity
-                style={index === selectedUnitIndex ? styles.unitButtonActive : styles.unitButton}
-                key={`${unit}${index}`}
-                onPress={() => this.onSelectUnit(index)}
-            >
-                <View style={styles.unitButtonInnerContainer}>
-                    <FNIcon
-                        size={12}
-                        name="check"
-                        color="#FFFFFF"
-                    />
-                    <Text style={index === selectedUnitIndex ? styles.unitTextActive : styles.unitText}>{unit}</Text>
-                </View>
-            </TouchableOpacity>
-        ))
     }
 
     renderItem({ item }) {
@@ -143,8 +98,7 @@ class FNPicker extends React.Component {
     }
 
     render() {
-        const { visible, units } = this.props;
-        const { data } = this.state;
+        const { visible, title } = this.props;
         if (!visible) {
             return null;
         }
@@ -169,12 +123,9 @@ class FNPicker extends React.Component {
                     </TouchableOpacity>
                     <View style={styles.modalInnerContainer}>
                         <View style={styles.modalView}>
-                            <Text style={styles.title}>{data.title || ''}</Text>
-                            <View style={styles.unitContainer}>
-                                {this._renderUnits(units)}
-                            </View>
+                            <Text style={styles.title}>{title || ''}</Text>
                             <View style={styles.listViewOuterContainer}>
-                                {this._renderDatasets()}
+                                {this._renderColumns()}
                                 <View pointerEvents="none" style={styles.listInactiveItemTop}></View>
                                 <View pointerEvents="none" style={styles.listInactiveItemBottom}></View>
                             </View>
@@ -221,47 +172,6 @@ const styles = StyleSheet.create({
         marginBottom: 16,
         marginRight: 8
     },
-    unitContainer: {
-        flexDirection: 'row',
-        alignItems: 'center',
-        marginTop: 24,
-        marginHorizontal: 40
-    },
-    unitButton: {
-        flex: 1,
-        height: 32,
-        borderRadius: 4,
-        borderWidth: 1,
-        borderColor: '#E2E2E2'
-    },
-    unitButtonActive: {
-        flex: 1,
-        height: 32,
-        borderRadius: 4,
-        backgroundColor: '#3E3750'
-    },
-    unitButtonInnerContainer: {
-        flex: 1,
-        flexDirection: 'row',
-        marginHorizontal: 16,
-        alignItems: 'center'
-    },
-    unitText: {
-        flex: 1,
-        marginRight: 16,
-        fontFamily: 'Poppins-SemiBold',
-        fontSize: 12,
-        color: '#3E3750',
-        textAlign: 'center'
-    },
-    unitTextActive: {
-        flex: 1,
-        marginRight: 16,
-        fontFamily: 'Poppins-SemiBold',
-        fontSize: 12,
-        color: '#FFFFFF',
-        textAlign: 'center'
-    },
     rowItem: {
         flex: 1,
         height: ROW_HEIGHT,
@@ -269,7 +179,6 @@ const styles = StyleSheet.create({
         justifyContent: 'center'
     },
     separator: {
-        width: 16,
         color: '#08C757',
         textAlign: 'center'
     },
@@ -282,7 +191,8 @@ const styles = StyleSheet.create({
     },
     listViewContainer: {
         flex: 1,
-        height: 3 * ROW_HEIGHT
+        height: 3 * ROW_HEIGHT,
+        marginHorizontal: 8
     },
     listView: {
         height: 3 * ROW_HEIGHT

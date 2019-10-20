@@ -1,6 +1,6 @@
 import I18n from '../../../utils/i18n/I18n';
 
-class FoodParameter {
+class UnitParameter {
     standardiseValue(value) {
         return value;
     }
@@ -11,19 +11,18 @@ class FoodParameter {
     }
 
     getFormattedValue(value) {
-        return I18n.t(`foodOptions.${value}`, { defaultValue: '' });
+        return I18n.t(`unit.${value}`, { defaultValue: '' });
     }
 
-    getValueObj({ value, defaultValue }) {
-        const isDefault = value === null || value === undefined;
+    getValueObj({ unit }) {
         return {
-            value: isDefault ? defaultValue : value,
-            isDefault
+            value: unit,
+            isDefault: false
         }
     }
 
     getValueStr(value) {
-        return I18n.t(`foodOptions.${value}`, { defaultValue: '' });
+        return I18n.t(`unit.${value}`, { defaultValue: '' });
     }
 
     getValueComponents(value) {
@@ -31,4 +30,4 @@ class FoodParameter {
     }
 }
 
-export default FoodParameter;
+export default UnitParameter;

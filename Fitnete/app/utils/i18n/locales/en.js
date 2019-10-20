@@ -65,6 +65,7 @@ export default {
         weight: 'Your current weight',
         target_weight: 'Target weight',
         food: 'Food preferences',
+        unit: 'Units',
         add: 'Add',
     },
     foodOptions: {
@@ -72,6 +73,10 @@ export default {
         vegetarian: 'Vegetarian',
         vegan: 'Vegan',
         balanced_diet: 'Balanced Diet'
+    },
+    unit: {
+        metric: 'CM & KG',
+        imperial: 'FT,IN & LBS'
     },
     prepareWorkoutPlan: {
         title: 'Preparing workout plan',

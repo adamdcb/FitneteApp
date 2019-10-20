@@ -1,11 +1,11 @@
 const KG_LBS_COEFF = 2.20462;
 
 class WeightParameter {
-    standardiseValue(value, unit = 'kg') {
+    standardiseValue(value, unit = 'metric') {
         switch (unit) {
-            case 'kg':
+            case 'metric':
                 return value;
-            case 'lbs': {
+            case 'imperial': {
                 const kg = Math.trunc((value / KG_LBS_COEFF) * 10) / 10;
                 return kg;
             }
@@ -14,21 +14,29 @@ class WeightParameter {
         }
     }
 
-    standardiseValueFromComponents(comps, unit = 'kg') {
-        const value = comps[0] + (comps[1] / 10);
+    standardiseValueFromComponents(comps, unit = 'metric') {
+        const value = comps[0] + ((comps[1] || 0) / 10);
         return this.standardiseValue(value, unit);
     }
 
-    getFormattedValue(value, unit = 'kg') {
+    getFormattedValue(value, unit = 'metric') {
         switch (unit) {
-            case 'kg':
-                return `${value} KG`;
-            case 'lbs': {
-                const lbs = Math.trunc(value * KG_LBS_COEFF * 10) / 10;
+            case 'metric':
+                return `${Math.round(value)} KG`;
+            case 'imperial': {
+                const lbs = Math.round(Math.trunc(value * KG_LBS_COEFF * 10) / 10);
                 return `${lbs} LBS`;
             }
             default:
                 return '';
+        }
+    }
+
+    getValueObj({ value, unit, defaultValue }) {
+        const isDefault = value === null || value === undefined;
+        return {
+            value: isDefault ? this.standardiseValue(defaultValue, unit) : value,
+            isDefault
         }
     }
 
@@ -39,18 +47,16 @@ class WeightParameter {
         return `${value}`;
     }
 
-    getValueComponents(value, unit = 'kg') {
+    getValueComponents(value, unit = 'metric') {
         switch (unit) {
-            case 'kg': {
-                const integral = Math.trunc(value);
-                const decimal =  Math.fround(10 * (value - integral));
-                return [integral, decimal];
+            case 'metric': {
+                const integral = Math.round(value);
+                return [integral];
             }
-            case 'lbs': {
+            case 'imperial': {
                 const lbs = value * KG_LBS_COEFF;
-                const integral = Math.trunc(lbs);
-                const decimal =  Math.trunc(10 * (lbs - integral));
-                return [integral, decimal];
+                const integral = Math.round(lbs);
+                return [integral];
             }
             default:
                 return [];

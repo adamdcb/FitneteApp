@@ -25,7 +25,6 @@ class BodyParametersScreen extends React.Component {
         this._onPress = this._onPress.bind(this);
         this._onDismissPicker = this._onDismissPicker.bind(this);
         this._onSave = this._onSave.bind(this);
-        this._onSelectUnit = this._onSelectUnit.bind(this);
     }
 
     componentDidMount() {
@@ -40,11 +39,10 @@ class BodyParametersScreen extends React.Component {
         push(Route.PrepareWorkoutPlan);
     }
 
-    setData(data, dismissPicker = true) {
-        const { selectedItem } = this.state;
+    setData(data) {
         this.setState({
             data,
-            selectedItem: !dismissPicker && selectedItem ? data.find(item => item.id === selectedItem.id) : null
+            selectedItem: null
         });
     }
 
@@ -68,12 +66,8 @@ class BodyParametersScreen extends React.Component {
         });
     }
 
-    _onSave(values, units) {
+    _onSave(values) {
         this.presenter.didSaveBodyParam(this.state.selectedItem, values);
-    }
-
-    _onSelectUnit(unit) {
-        this.presenter.didSelectUnit(this.state.selectedItem, unit);
     }
 
     _renderItem({ item }) {
@@ -148,15 +142,13 @@ class BodyParametersScreen extends React.Component {
 
         return (<FNPicker
             visible={selectedItem !== null}
-            data={selectedItem}
-            units={selectedItem.units}
-            selectedValuesIndexes={selectedItem.valueComponents}
-            selectedUnitIndex={selectedItem.unitIndex}
-            separator={selectedItem.separator}
+            title={selectedItem.title}
+            columns={selectedItem.datasets}
+            columnLabels={selectedItem.labels}
+            initialScrollIndexes={selectedItem.valueComponents}
             saveButtonTitle={I18n.t('save')}
             onDismiss={this._onDismissPicker}
             onSave={this._onSave}
-            onSelectUnit={this._onSelectUnit}
         />)
     }
 
