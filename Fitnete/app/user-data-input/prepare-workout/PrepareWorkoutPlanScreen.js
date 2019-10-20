@@ -167,15 +167,20 @@ const styles = StyleSheet.create({
         borderColor: '#EEEFF1'
     },
     progressViewChildrenInnerContainer: {
+        flex: 1,
+        margin: 8,
         justifyContent: 'center',
         alignItems: 'center'
     },
     progressImage: {
-        width: 132,
-        height: 150,
+        flex: 1,
+        width: null,
+        height: 132,
+        aspectRatio: 516 / 456,
         resizeMode: 'contain'
     },
     processingText: {
+        marginTop: 16,
         fontFamily: 'Poppins',
         fontSize: 12,
         fontWeight: "500",

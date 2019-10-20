@@ -193,9 +193,11 @@ const styles = StyleSheet.create({
         textAlign: 'center'
     },
     fitnessContainer: {
+        flex: 1,
         marginVertical: 24
     },
     fitnessLevelView: {
+        flex: 1,
         paddingVertical: 24,
         borderRadius: 16,
         borderWidth: 1,
@@ -203,8 +205,10 @@ const styles = StyleSheet.create({
         alignItems: 'center'
     },
     fitnessLevelImage: {
-        width: 253,
-        height: 170,
+        flex: 1,
+        width: null,
+        height: 126,
+        aspectRatio: 506 / 340,
         resizeMode: 'contain'
     },
     fitnessLevelTitle: {

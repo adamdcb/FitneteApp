@@ -32,10 +32,12 @@ class AreasOfFocusTabViewScene extends React.Component {
     render() {
         return (
             <View style={styles.tabViewScene}>
-                <Image
-                    style={styles.tabViewImage}
-                    source={{ uri: `area_${this.props.type}` }}
-                />
+                <View style={styles.tabViewImageContainer}>
+                    <Image
+                        style={styles.tabViewImage}
+                        source={{ uri: `area_${this.props.type}` }}
+                    />
+                </View>
                 <View style={styles.areasContainer}>
                     {this.state.areas.map((area, index) => (
                         <View
@@ -53,7 +55,9 @@ class AreasOfFocusTabViewScene extends React.Component {
                                 switchOn={area.selected}
                                 onPress={() => this.onToggleArea(index)}
                             />
-                            <Text style={styles.areaItemText}>
+                            <Text
+                                style={styles.areaItemText}
+                            >
                                 {area.name}
                             </Text>
                         </View>
@@ -68,24 +72,28 @@ class AreasOfFocusTabViewScene extends React.Component {
 const styles = StyleSheet.create({
     tabViewScene: {
         flex: 1,
-        marginTop: 16,
+        marginVertical: 16,
         flexDirection: 'row'
+    },
+    tabViewImageContainer: {
+        minHeight: 280
     },
     tabViewImage: {
         marginTop: 16,
-        width: 98,
-        height: 286,
+        flex: 1,
+        width: null,
+        height: null,
+        aspectRatio: 98 / 286,
         resizeMode: 'contain'
     },
     areasContainer: {
         flex: 1,
-        marginLeft: 48,
-        marginTop: 40
+        marginLeft: 24,
+        justifyContent: 'center'
     },
     areaItem: {
-        marginTop: 24,
-        flexDirection: 'row',
-        alignItems: 'center'
+        marginBottom: 24,
+        flexDirection: 'row'
     },
     areaItemText: {
         marginLeft: 16,

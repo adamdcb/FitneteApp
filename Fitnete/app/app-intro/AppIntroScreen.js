@@ -167,12 +167,17 @@ const styles = StyleSheet.create({
         marginBottom: 4
     },
     slide: {
+        flex: 1,
+        marginHorizontal: 40,
+        marginBottom: 40,
         justifyContent: 'center',
         alignItems: 'center'
     },
     slideImage: {
-        width: 253,
-        height: 170,
+        flex: 1,
+        width: null,
+        height: null,
+        aspectRatio: 253 / 170,
         resizeMode: 'contain'
     },
     leftArrowContainer: {

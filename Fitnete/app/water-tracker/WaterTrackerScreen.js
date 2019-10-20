@@ -159,6 +159,7 @@ const styles = StyleSheet.create({
         textAlign: 'center'
     },
     waterIntakeContainer: {
+        flex: 1,
         flexDirection: 'row',
         justifyContent: 'space-between',
         paddingVertical: 24
@@ -178,8 +179,9 @@ const styles = StyleSheet.create({
     },
     waterIntakeImage: {
         flex: 1,
-        height: 200,
-        marginTop: 8,
+        width: null,
+        height: null,
+        aspectRatio: 516 / 456,
         resizeMode: 'contain'
     },
     rightText: {

@@ -81,7 +81,7 @@ const styles = StyleSheet.create({
     },
     successImage: {
         width: 246,
-        height: 228,
+        height: 223,
         resizeMode: 'contain'
     },
     bottomContainer: {
