@@ -3,7 +3,7 @@ import { View, SafeAreaView, Text, TouchableOpacity, StyleSheet, Image } from 'r
 import Slider from 'react-native-slider-custom';
 import LinearGradient from 'react-native-linear-gradient';
 
-import { HEADER_STYLE } from '../utils/navigation/NavigationService';
+import { HEADER_STYLE, navigate, Route } from '../utils/navigation/NavigationService';
 import I18n from '../utils/i18n/I18n';
 import Container from '../utils/components/Container';
 import FNIcon from '../utils/components/FNIcon';
@@ -20,10 +20,15 @@ class WaterTrackerScreen extends React.Component {
             maximumValue: 2500
         };
         this.onSliderValueChange = this.onSliderValueChange.bind(this);
+        this.goToWorkouts = this.goToWorkouts.bind(this);
     }
 
     onSliderValueChange(value) {
         this.setState({ value });
+    }
+
+    goToWorkouts() {
+        navigate(Route.MainApp);
     }
 
     render() {
@@ -125,7 +130,10 @@ class WaterTrackerScreen extends React.Component {
                     <View style={styles.bottomContainer}>
                         <View style={styles.goToWorkoutsContainer}>
                             <View style={styles.divider} />
-                            <TouchableOpacity style={styles.goToWorkoutsLinkContainer} >
+                            <TouchableOpacity
+                                style={styles.goToWorkoutsLinkContainer}
+                                onPress={this.goToWorkouts}
+                            >
                                 <Text style={styles.goToWorkoutsLink}>
                                     {I18n.t('waterTracker.goToWorkouts')}
                                 </Text>

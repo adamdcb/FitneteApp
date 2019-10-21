@@ -7,10 +7,15 @@ import {
 import {
     createStackNavigator
 } from 'react-navigation-stack';
+import {
+    createBottomTabNavigator,
+    BottomTabBar
+} from 'react-navigation-tabs';
 import React from 'react';
 
 import { Route, InitialStoryboard } from './NavConstants';
 import HeaderBackButton from '../components/HeaderBackButton';
+import TabBarIcon from '../components/TabBarIcon';
 
 import LoadingScreen from '../../loading/LoadingScreen';
 import AppIntroScreen from '../../app-intro/AppIntroScreen';
@@ -25,6 +30,9 @@ import WorkoutPlanReadyScreen from '../../user-data-input/workout-plan-ready/Wor
 import NoPlanPurchasedScreen from '../../user-data-input/no-plan-purchased/NoPlanPurchasedScreen';
 import ContinueForFreeScreen from '../../user-data-input/no-plan-purchased/ContinueForFreeScreen';
 import WaterIntakeIntroScreen from '../../user-data-input/no-plan-purchased/WaterIntakeIntroScreen';
+import TrainingScreen from '../../training/TrainingScreen';
+import FoodScreen from '../../food/FoodScreen';
+import MoreScreen from '../../more/MoreScreen';
 
 const HEADER_STYLE = {
     backgroundColor: '#F3F4FA',
@@ -38,6 +46,14 @@ const HEADER_TITLE_STYLE = {
     fontSize: 18,
     color: '#3E3750'
 };
+
+const TAB_BAR_STYLE = {
+    height: 64,
+    backgroundColor: '#FFFFFF',
+    borderTopColor: 'transparent'
+};
+
+const TabBarComponent = props => <BottomTabBar {...props} />;
 
 const UserDataInputScreens = {
     AreasOfFocus: {
@@ -106,6 +122,91 @@ const UserDataInputStack = createStackNavigator(
     }
 );
 
+const TrainingStack = createStackNavigator(
+    {
+        Training: TrainingScreen
+    },
+    {
+        defaultNavigationOptions: () => ({
+            headerBackImage: <HeaderBackButton />,
+            headerStyle: HEADER_STYLE,
+            headerBackTitle: null,
+            headerTitleStyle: HEADER_TITLE_STYLE
+        })
+    }
+);
+
+const FoodStack = createStackNavigator(
+    {
+        Food: FoodScreen
+    },
+    {
+        defaultNavigationOptions: () => ({
+            headerBackImage: <HeaderBackButton />,
+            headerStyle: HEADER_STYLE,
+            headerBackTitle: null,
+            headerTitleStyle: HEADER_TITLE_STYLE
+        })
+    }
+);
+
+const WaterStack = createStackNavigator(
+    {
+        WaterTracker: WaterTrackerScreen
+    },
+    {
+        defaultNavigationOptions: () => ({
+            headerBackImage: <HeaderBackButton />,
+            headerStyle: HEADER_STYLE,
+            headerBackTitle: null,
+            headerTitleStyle: HEADER_TITLE_STYLE
+        })
+    }
+);
+
+const MoreStack = createStackNavigator(
+    {
+        More: MoreScreen
+    },
+    {
+        defaultNavigationOptions: () => ({
+            headerBackImage: <HeaderBackButton />,
+            headerStyle: HEADER_STYLE,
+            headerBackTitle: null,
+            headerTitleStyle: HEADER_TITLE_STYLE
+        })
+    }
+);
+
+const MainAppStack = createBottomTabNavigator(
+    {
+        Training: TrainingStack,
+        Food: FoodStack,
+        Water: WaterStack,
+        More: MoreStack
+    },
+    {
+        defaultNavigationOptions: ({ navigation }) => ({
+            tabBarIcon: ({ focused }) => {
+                const { routeName } = navigation.state;
+                const iconName = `tab_${routeName.toLowerCase()}${focused ? '_active' : ''}`;
+                return <TabBarIcon iconName={iconName} />;
+            }
+        }),
+        tabBarComponent: props => (
+            <TabBarComponent
+                {...props}
+                style={TAB_BAR_STYLE}
+            />
+        ),
+        backBehavior: 'none',
+        tabBarOptions: {
+            showLabel: false,
+            keyboardHidesTabBar: false
+        }
+    }
+);
+
 let _navigator;
 
 function setTopLevelNavigator(navigatorRef) {
@@ -117,7 +218,8 @@ function createAppNavigator(initialRoute = InitialStoryboard.Loading) {
         {
             Loading: LoadingScreen,
             AppIntro: AppIntroStack,
-            UserDataInput: UserDataInputStack
+            UserDataInput: UserDataInputStack,
+            MainApp: MainAppStack
         },
         {
             initialRouteName: initialRoute

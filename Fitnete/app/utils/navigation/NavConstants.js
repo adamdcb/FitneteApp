@@ -9,13 +9,15 @@ const Route = {
     NoPlanPurchased: 'NoPlanPurchased',
     ContinueForFree: 'ContinueForFree',
     WaterIntakeIntro: 'WaterIntakeIntro',
-    WaterTracker: 'WaterTracker'
+    WaterTracker: 'WaterTracker',
+    MainApp: 'MainApp'
 }
 
 const InitialStoryboard = {
     Loading: 'Loading',
     AppIntro: 'AppIntro',
-    UserDataInput: 'UserDataInput'
+    UserDataInput: 'UserDataInput',
+    MainApp: 'MainApp'
 }
 
 export {
