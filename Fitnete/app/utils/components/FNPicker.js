@@ -118,7 +118,7 @@ class FNPicker extends React.Component {
                         <FNIcon
                             name="close"
                             size={20}
-                            color="#000000"
+                            color="#FFFFFF"
                         />
                     </TouchableOpacity>
                     <View style={styles.modalInnerContainer}>
