@@ -32,11 +32,24 @@ class AreasOfFocusTabViewScene extends React.Component {
     render() {
         return (
             <View style={styles.tabViewScene}>
-                <View style={styles.tabViewImageContainer}>
+                <View>
                     <Image
                         style={styles.tabViewImage}
                         source={{ uri: `area_${this.props.type}` }}
                     />
+                    {this.state.areas.map((area) => {
+                        if (!area.selected) {
+                            return null;
+                        }
+                        return (<Image
+                            key={area.id}
+                            style={{
+                                ...styles.areaItemHighlightImage,
+                                ...area.highlight.position
+                            }}
+                            source={{ uri: area.highlight.iconName }}
+                        />)
+                    })}
                 </View>
                 <View style={styles.areasContainer}>
                     {this.state.areas.map((area, index) => (
@@ -75,15 +88,10 @@ const styles = StyleSheet.create({
         marginVertical: 16,
         flexDirection: 'row'
     },
-    tabViewImageContainer: {
-        minHeight: 280
-    },
     tabViewImage: {
         marginTop: 16,
-        flex: 1,
-        width: null,
-        height: null,
-        aspectRatio: 98 / 286,
+        width: 98,
+        height: 286,
         resizeMode: 'contain'
     },
     areasContainer: {
@@ -100,6 +108,11 @@ const styles = StyleSheet.create({
         fontFamily: 'Poppins',
         fontSize: 15,
         color: '#4F4C57'
+    },
+    areaItemHighlightImage: {
+        width: 27,
+        height: 27,
+        position: 'absolute'
     },
     switchContainer: {
         width: 48,
