@@ -75,7 +75,6 @@ class NoPlanPurchasedScreen extends React.Component {
                             {I18n.t('noPlanPurchased.continueForFreeDescription')}
                         </Text>
                     </LinearGradient>
-
                 </View>
             </View>
         )

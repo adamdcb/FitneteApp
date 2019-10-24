@@ -33,6 +33,8 @@ import WaterIntakeIntroScreen from '../../user-data-input/no-plan-purchased/Wate
 import TrainingScreen from '../../training/TrainingScreen';
 import FoodScreen from '../../food/FoodScreen';
 import MoreScreen from '../../more/MoreScreen';
+import DemoWorkoutIntroScreen from '../../training/demo/DemoWorkoutIntroScreen';
+import DemoWorkoutScreen from '../../training/demo/DemoWorkoutScreen';
 
 const HEADER_STYLE = {
     backgroundColor: '#F3F4FA',
@@ -124,7 +126,9 @@ const UserDataInputStack = createStackNavigator(
 
 const TrainingStack = createStackNavigator(
     {
-        Training: TrainingScreen
+        Training: TrainingScreen,
+        DemoWorkoutIntro: DemoWorkoutIntroScreen,
+        DemoWorkout: DemoWorkoutScreen
     },
     {
         defaultNavigationOptions: () => ({
@@ -236,6 +240,10 @@ function push(route, params) {
     _navigator.dispatch(action);
 }
 
+function pop() {
+    _navigator.dispatch(StackActions.pop());
+}
+
 function navigate(route, params) {
     const action = NavigationActions.navigate({
         routeName: route,
@@ -251,5 +259,6 @@ export {
     setTopLevelNavigator,
     push,
     navigate,
+    pop,
     HEADER_STYLE
 }

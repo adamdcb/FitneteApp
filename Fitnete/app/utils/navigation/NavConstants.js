@@ -10,7 +10,9 @@ const Route = {
     ContinueForFree: 'ContinueForFree',
     WaterIntakeIntro: 'WaterIntakeIntro',
     WaterTracker: 'WaterTracker',
-    MainApp: 'MainApp'
+    MainApp: 'MainApp',
+    DemoWorkoutIntro: 'DemoWorkoutIntro',
+    DemoWorkout: 'DemoWorkout' 
 }
 
 const InitialStoryboard = {

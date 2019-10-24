@@ -113,5 +113,12 @@ export default {
         description3: 'for your fitness goals',
         dailyWaterIntake: 'Your perfect daily Water rate is:',
         continue: 'Turn on Water Tracker'
+    },
+    demoWorkout: {
+        stepCurrent: 'Step %{step_number}',
+        stepTotal: 'out of %{total}',
+        title: 'Demo workout',
+        nextExercise: 'Next Exercise',
+        finish: 'Finish'
     }
 };

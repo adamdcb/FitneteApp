@@ -5,6 +5,7 @@ import LinearGradient from 'react-native-linear-gradient';
 
 import Container from '../utils/components/Container';
 import Button from '../utils/components/Button';
+import { push, Route } from '../utils/navigation/NavigationService';
 
 const SLIDER_ITEM_WIDTH_COEFF = 0.8;
 const CIRCLE_SIZE_COEFF = 6;
@@ -26,6 +27,11 @@ class TrainingScreen extends React.Component {
             ]
         };
         this._renderItem = this._renderItem.bind(this);
+        this._openProgram = this._openProgram.bind(this);
+    }
+
+    _openProgram() {
+        push(Route.DemoWorkoutIntro);
     }
 
     _renderItem({ item, index }) {
@@ -66,7 +72,7 @@ class TrainingScreen extends React.Component {
                             <Button
                                 style={{ paddingHorizontal: 16 }}
                                 title={'OPEN PROGRAM'}
-                            // onPress={this.onAcceptTerms}
+                                onPress={this._openProgram}
                             />
                         </View>
                     </View>
