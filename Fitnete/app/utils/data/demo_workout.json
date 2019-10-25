@@ -1,0 +1,50 @@
+{
+    "programs": [
+        {
+            "nameKey": "demoWorkout.demo.programName",
+            "descriptionKey": "demoWorkout.demo.programDescription",
+            "imageName": "for_free",
+            "workouts": [
+                {
+                    "nameKey": "demoWorkout.demo.workoutName_1",
+                    "descriptionKey": "demoWorkout.demo.workoutDescription_1",
+                    "durationImageName": "clock",
+                    "durationTitleKey": "demoWorkout.demo.duration",
+                    "duration": 195,
+                    "repeatImageName": "filter",
+                    "repeatTitleKey": "demoWorkout.demo.repeat",
+                    "repeat": 4,
+                    "gearImageName": "filter",
+                    "gearTitleKey": "demoWorkout.demo.gear",
+                    "gear": "None"
+                },
+                {
+                    "nameKey": "demoWorkout.demo.workoutName_1",
+                    "descriptionKey": "demoWorkout.demo.workoutDescription_1",
+                    "durationImageName": "clock",
+                    "durationTitleKey": "demoWorkout.demo.duration",
+                    "duration": 240,
+                    "repeatImageName": "filter",
+                    "repeatTitleKey": "demoWorkout.demo.repeat",
+                    "repeat": 3,
+                    "gearImageName": "filter",
+                    "gearTitleKey": "demoWorkout.demo.gear",
+                    "gear": "None"
+                },
+                {
+                    "nameKey": "demoWorkout.demo.workoutName_1",
+                    "descriptionKey": "demoWorkout.demo.workoutDescription_1",
+                    "durationImageName": "clock",
+                    "durationTitleKey": "demoWorkout.demo.duration",
+                    "duration": 210,
+                    "repeatImageName": "filter",
+                    "repeatTitleKey": "demoWorkout.demo.repeat",
+                    "repeat": 4,
+                    "gearImageName": "filter",
+                    "gearTitleKey": "demoWorkout.demo.gear",
+                    "gear": "None"
+                }
+            ]
+        }
+    ]
+}

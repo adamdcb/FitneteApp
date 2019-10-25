@@ -115,10 +115,23 @@ export default {
         continue: 'Turn on Water Tracker'
     },
     demoWorkout: {
+        introTitle: 'DEMO\nWORKOUT',
+        previewWorkout: 'Yes, preview this workout',
+        notReadyYet: 'No, I\'m not ready to train yet',
         stepCurrent: 'Step %{step_number}',
         stepTotal: 'out of %{total}',
         title: 'Demo workout',
         nextExercise: 'Next Exercise',
-        finish: 'Finish'
+        finish: 'Finish',
+        demo: {
+            duration: 'Duration',
+            repeat: 'Repeat',
+            gear: 'Gear needed?',
+            times: 'times',
+            programName: 'Toned arms and breasts',
+            programDescription: 'Program description. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.',
+            workoutName_1: 'Workout #1',
+            workoutDescription_1: 'Workout #1. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.'
+        }
     }
 };

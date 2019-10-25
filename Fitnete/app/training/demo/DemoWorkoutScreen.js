@@ -7,27 +7,32 @@ import Button from '../../utils/components/Button';
 import I18n from '../../utils/i18n/I18n';
 import ProgressIndicator from '../../utils/components/ProgressIndicator';
 import { push, Route } from '../../utils/navigation/NavigationService';
+import Utils from '../../utils/utils/Utils';
 
 class DemoWorkoutScreen extends React.Component {
     constructor(props) {
         super(props);
         this.state = {
-
+            step: this.props.navigation.state.params.step || 1
         };
         this._continue = this._continue.bind(this);
     }
 
     _continue() {
-        const { step, stepsTotal } = this.props.navigation.state.params;
-        if (step < stepsTotal) {
-            push(Route.DemoWorkout, { step: step + 1, stepsTotal });
+        const { workouts } = this.props.navigation.state.params;
+        const { step } = this.state;
+        if (step < workouts.length) {
+            push(Route.DemoWorkout, { step: step + 1, workouts });
         } else {
             // TODO
         }
     }
 
     render() {
-        const { step, stepsTotal } = this.props.navigation.state.params;
+        const { workouts } = this.props.navigation.state.params;
+        const { step } = this.state;
+        const stepsTotal = workouts.length;
+        const workout = workouts[step - 1] || {};
         const buttonTextKey = step === stepsTotal ? 'demoWorkout.finish' : 'demoWorkout.nextExercise';
         return (
             <SafeAreaView style={styles.container}>
@@ -58,33 +63,33 @@ class DemoWorkoutScreen extends React.Component {
                                 source={{ uri: 'for_free' }}
                             />
                         </LinearGradient>
-                        <Text style={styles.workoutTitle}>Toned arms and breasts</Text>
-                        <Text style={styles.workoutDescription}>Program description. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</Text>
+                        <Text style={styles.workoutTitle}>{I18n.t(workout.nameKey)}</Text>
+                        <Text style={styles.workoutDescription}>{I18n.t(workout.descriptionKey)}</Text>
                     </View>
                     <View style={styles.workoutDetailsOuterContainer}>
                         <View style={styles.detailsContainer}>
                             <Image
                                 style={styles.statusImage}
-                                source={{ uri: 'clock' }}
+                                source={{ uri: workout.durationImageName }}
                             />
-                            <Text style={styles.statusTitle}>Duration</Text>
-                            <Text style={styles.statusDetails}>3:15m</Text>
+                            <Text style={styles.statusTitle}>{I18n.t(workout.durationTitleKey)}</Text>
+                            <Text style={styles.statusDetails}>{Utils.secondsToMMSS(workout.duration)}</Text>
                         </View>
                         <View style={styles.detailsContainer}>
                             <Image
                                 style={styles.statusImage}
-                                source={{ uri: 'filter' }}
+                                source={{ uri: workout.repeatImageName }}
                             />
-                            <Text style={styles.statusTitle}>Repeat</Text>
-                            <Text style={styles.statusDetails}>4 times</Text>
+                            <Text style={styles.statusTitle}>{I18n.t(workout.repeatTitleKey)}</Text>
+                            <Text style={styles.statusDetails}>{`${workout.repeat} ${I18n.t('demoWorkout.demo.times')}`}</Text>
                         </View>
                         <View style={styles.detailsContainer}>
                             <Image
                                 style={styles.statusImage}
-                                source={{ uri: 'filter' }}
+                                source={{ uri: workout.gearImageName }}
                             />
-                            <Text style={styles.statusTitle}>Gear needed?</Text>
-                            <Text style={styles.statusDetails}>None</Text>
+                            <Text style={styles.statusTitle}>{I18n.t(workout.gearTitleKey)}</Text>
+                            <Text style={styles.statusDetails}>{workout.gear}</Text>
                         </View>
                     </View>
                     <View style={styles.bottomContainer}>
