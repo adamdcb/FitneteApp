@@ -22,7 +22,7 @@ class ButtonText extends React.PureComponent {
                             color="#0F7788"
                             size={11}
                         />
-                    </View> : null
+                    </View> : <View/>
                 }
 
             </TouchableOpacity>
@@ -32,7 +32,6 @@ class ButtonText extends React.PureComponent {
 
 const styles = StyleSheet.create({
     container: {
-        flex: 1,
         height: 40,
         flexDirection: 'row',
         justifyContent: 'center',
@@ -42,8 +41,7 @@ const styles = StyleSheet.create({
         color: '#0F7788',
         fontFamily: 'Poppins-Regular',
         fontSize: 15,
-        textAlign: "center",
-        marginRight: 8
+        textAlign: "center"
     },
     arrowContainer: {
         marginLeft: 8

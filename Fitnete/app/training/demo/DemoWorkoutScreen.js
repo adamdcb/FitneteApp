@@ -24,7 +24,7 @@ class DemoWorkoutScreen extends React.Component {
         if (step < workouts.length) {
             push(Route.DemoWorkout, { step: step + 1, workouts });
         } else {
-            // TODO
+           push(Route.DemoWorkoutDone);
         }
     }
 
@@ -64,7 +64,7 @@ class DemoWorkoutScreen extends React.Component {
                             />
                         </LinearGradient>
                         <Text style={styles.workoutTitle}>{I18n.t(workout.nameKey)}</Text>
-                        <Text style={styles.workoutDescription}>{I18n.t(workout.descriptionKey)}</Text>
+                        <Text style={styles.workoutDescription} numberOfLines={3}>{I18n.t(workout.descriptionKey)}</Text>
                     </View>
                     <View style={styles.workoutDetailsOuterContainer}>
                         <View style={styles.detailsContainer}>
@@ -132,6 +132,7 @@ const styles = StyleSheet.create({
     },
     workoutContainer: {
         justifyContent: 'center',
+        margin: 4,
         marginTop: 40,
         backgroundColor: '#FFFFFF',
         borderRadius: 12,
@@ -157,6 +158,7 @@ const styles = StyleSheet.create({
         resizeMode: 'contain'
     },
     workoutTitle: {
+        marginHorizontal: 8,
         marginTop: 16,
         fontFamily: 'Poppins-Bold',
         fontSize: 18,
@@ -165,6 +167,7 @@ const styles = StyleSheet.create({
     },
     workoutDescription: {
         marginTop: 8,
+        marginHorizontal: 8,
         marginBottom: 24,
         fontFamily: 'Poppins-Regular',
         fontSize: 12,

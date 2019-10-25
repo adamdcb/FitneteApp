@@ -34,7 +34,7 @@ class DemoWorkoutIntroScreen extends React.Component {
 
     _previewWorkout() {
         const { program } = this.state;
-        push(Route.DemoWorkout, { workouts: program.workouts  });
+        push(Route.DemoWorkout, { workouts: program.workouts });
     }
 
     getLoadingView() {
@@ -54,11 +54,13 @@ class DemoWorkoutIntroScreen extends React.Component {
             <View style={{ flex: 1 }}>
                 <SafeAreaView style={styles.container}>
                     <Container>
-                        <Image
-                            style={styles.demoImage}
-                            source={{ uri: program.imageName }}
-                        />
-                        <Text style={styles.demoWorkout}>{I18n.t('demoWorkout.introTitle')}</Text>
+                        <View style={styles.innerContainer}>
+                            <Image
+                                style={styles.demoImage}
+                                source={{ uri: program.imageName }}
+                            />
+                            <Text style={styles.demoWorkout}>{I18n.t('demoWorkout.introTitle')}</Text>
+                        </View>
                     </Container>
                 </SafeAreaView>
                 <View style={styles.bottomContainer}>
@@ -90,8 +92,11 @@ const styles = StyleSheet.create({
     container: {
         flex: 1
     },
+    innerContainer: {
+        flex: 1,
+        justifyContent: 'center'
+    },
     demoWorkout: {
-        marginTop: 136,
         lineHeight: 44,
         fontFamily: 'Poppins-Bold',
         fontSize: 40,
@@ -102,14 +107,10 @@ const styles = StyleSheet.create({
         top: 0,
         right: 0,
         width: 172,
-        height: 326,
+        height: '100%',
         resizeMode: 'contain'
     },
     bottomContainer: {
-        position: 'absolute',
-        bottom: 0,
-        left: 0,
-        right: 0,
         borderTopLeftRadius: 16,
         borderTopRightRadius: 16,
         shadowColor: "#000",
