@@ -12,7 +12,8 @@ const Route = {
     WaterTracker: 'WaterTracker',
     MainApp: 'MainApp',
     DemoWorkoutIntro: 'DemoWorkoutIntro',
-    DemoWorkout: 'DemoWorkout' 
+    DemoWorkout: 'DemoWorkout',
+    DemoWorkoutDone: 'DemoWorkoutDone' 
 }
 
 const InitialStoryboard = {

@@ -133,5 +133,11 @@ export default {
             workoutName_1: 'Workout #1',
             workoutDescription_1: 'Workout #1. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.'
         }
+    },
+    demoWorkoutDone: {
+        title: 'Congratulations!',
+        description1: 'Now you are ready to start your',
+        description2: 'positive transformation',
+        continue: 'Proceed to workout'
     }
 };
