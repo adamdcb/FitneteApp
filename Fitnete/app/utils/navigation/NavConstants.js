@@ -13,7 +13,8 @@ const Route = {
     MainApp: 'MainApp',
     DemoWorkoutIntro: 'DemoWorkoutIntro',
     DemoWorkout: 'DemoWorkout',
-    DemoWorkoutDone: 'DemoWorkoutDone' 
+    DemoWorkoutDone: 'DemoWorkoutDone',
+    Workout: 'Workout'
 }
 
 const InitialStoryboard = {

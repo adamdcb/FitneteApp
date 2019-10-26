@@ -13,7 +13,7 @@ class DemoWorkoutDoneScreen extends React.Component {
     }
 
     _continue() {
-        
+        push(Route.Workout);
     }
 
     render() {
