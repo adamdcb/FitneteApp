@@ -7,7 +7,6 @@ import Button from '../../utils/components/Button';
 import I18n from '../../utils/i18n/I18n';
 import ProgressIndicator from '../../utils/components/ProgressIndicator';
 import { push, Route } from '../../utils/navigation/NavigationService';
-import Utils from '../../utils/utils/Utils';
 
 class DemoWorkoutScreen extends React.Component {
     constructor(props) {
@@ -63,33 +62,33 @@ class DemoWorkoutScreen extends React.Component {
                                 source={{ uri: 'for_free' }}
                             />
                         </LinearGradient>
-                        <Text style={styles.workoutTitle}>{I18n.t(workout.nameKey)}</Text>
-                        <Text style={styles.workoutDescription} numberOfLines={3}>{I18n.t(workout.descriptionKey)}</Text>
+                        <Text style={styles.workoutTitle}>{workout.title}</Text>
+                        <Text style={styles.workoutDescription} numberOfLines={3}>{workout.description}</Text>
                     </View>
                     <View style={styles.workoutDetailsOuterContainer}>
                         <View style={styles.detailsContainer}>
                             <Image
                                 style={styles.statusImage}
-                                source={{ uri: workout.durationImageName }}
+                                source={{ uri: 'clock' }}
                             />
-                            <Text style={styles.statusTitle}>{I18n.t(workout.durationTitleKey)}</Text>
-                            <Text style={styles.statusDetails}>{Utils.secondsToMMSS(workout.duration)}</Text>
+                            <Text style={styles.statusTitle}>{workout.durationTitle}</Text>
+                            <Text style={styles.statusDetails}>{workout.durationText}</Text>
                         </View>
                         <View style={styles.detailsContainer}>
                             <Image
                                 style={styles.statusImage}
-                                source={{ uri: workout.repeatImageName }}
+                                source={{ uri: 'filter' }}
                             />
-                            <Text style={styles.statusTitle}>{I18n.t(workout.repeatTitleKey)}</Text>
-                            <Text style={styles.statusDetails}>{`${workout.repeat} ${I18n.t('demoWorkout.demo.times')}`}</Text>
+                            <Text style={styles.statusTitle}>{workout.repeatTitle}</Text>
+                            <Text style={styles.statusDetails}>{workout.repeatText}</Text>
                         </View>
                         <View style={styles.detailsContainer}>
                             <Image
                                 style={styles.statusImage}
-                                source={{ uri: workout.gearImageName }}
+                                source={{ uri: 'filter' }}
                             />
-                            <Text style={styles.statusTitle}>{I18n.t(workout.gearTitleKey)}</Text>
-                            <Text style={styles.statusDetails}>{workout.gear}</Text>
+                            <Text style={styles.statusTitle}>{workout.gearTitle}</Text>
+                            <Text style={styles.statusDetails}>{workout.gearText}</Text>
                         </View>
                     </View>
                     <View style={styles.bottomContainer}>
@@ -203,7 +202,7 @@ const styles = StyleSheet.create({
     },
     bottomContainer: {
         flex: 1,
-        marginBottom: 16,
+        marginVertical: 16,
         justifyContent: 'flex-end'
     }
 });

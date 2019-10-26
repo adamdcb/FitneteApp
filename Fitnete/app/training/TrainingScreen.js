@@ -6,6 +6,8 @@ import LinearGradient from 'react-native-linear-gradient';
 import Container from '../utils/components/Container';
 import Button from '../utils/components/Button';
 import { push, Route } from '../utils/navigation/NavigationService';
+import I18n from '../utils/i18n/I18n';
+import TrainingPresenter from './TrainingPresenter';
 
 const SLIDER_ITEM_WIDTH_COEFF = 0.8;
 const CIRCLE_SIZE_COEFF = 6;
@@ -17,21 +19,30 @@ class TrainingScreen extends React.Component {
         super(props);
         this.state = {
             screenWidth: Dimensions.get('window').width,
-            data: [
-                {
-                    title: 'One'
-                },
-                {
-                    title: 'Two'
-                }
-            ]
+            programs: null
         };
+        this.slideIndex = 0;
+        this.presenter = new TrainingPresenter(this);
         this._renderItem = this._renderItem.bind(this);
         this._openProgram = this._openProgram.bind(this);
+        this._onSnapToItem = this._onSnapToItem.bind(this);
+    }
+
+    componentDidMount() {
+        this.presenter.loadData();
+    }
+
+    componentWillUnmount() {
+        this.presenter.unmountView();
+    }
+
+    setData(data) {
+        this.setState({ programs: data });
     }
 
     _openProgram() {
-        push(Route.DemoWorkoutIntro);
+        const { programs } = this.state;
+        push(Route.DemoWorkoutIntro, { program: programs[this.slideIndex]});
     }
 
     _renderItem({ item, index }) {
@@ -48,8 +59,8 @@ class TrainingScreen extends React.Component {
                     angle={180}
                 >
                     <View style={styles.sliderItemBottomInnerContainer}>
-                        <Text style={styles.title}>Toned arms and breasts</Text>
-                        <Text style={styles.description}>Program description. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</Text>
+                        <Text style={styles.title}>{item.title}</Text>
+                        <Text style={styles.description}>{item.description}</Text>
                         <View style={styles.statusOuterContainer}>
                             <View style={styles.statusContainer}>
                                 <View style={styles.statusDurationContainer}>
@@ -57,21 +68,21 @@ class TrainingScreen extends React.Component {
                                         style={styles.statusImage}
                                         source={{ uri: 'clock' }}
                                     />
-                                    <Text style={styles.statusTitle}>Duration</Text>
-                                    <Text style={styles.statusDetails}>28 days</Text>
+                                    <Text style={styles.statusTitle}>{item.durationTitle}</Text>
+                                    <Text style={styles.statusDetails}>{item.durationText}</Text>
                                 </View>
                                 <View style={styles.statusProgressContainer}>
                                     <Image
                                         style={styles.statusImage}
                                         source={{ uri: 'filter' }}
                                     />
-                                    <Text style={styles.statusTitle}>Progress</Text>
-                                    <Text style={styles.statusDetails}>0 / 28</Text>
+                                    <Text style={styles.statusTitle}>{item.progressTitle}</Text>
+                                    <Text style={styles.statusDetails}>{item.progressText}</Text>
                                 </View>
                             </View>
                             <Button
                                 style={{ paddingHorizontal: 16 }}
-                                title={'OPEN PROGRAM'}
+                                title={I18n.t('training.openProgram')}
                                 onPress={this._openProgram}
                             />
                         </View>
@@ -91,9 +102,11 @@ class TrainingScreen extends React.Component {
                         width: screenWidth * SLIDER_ITEM_WIDTH_COEFF
                     }}>
                         <View style={styles.sliderItemTopHeaderView}>
-                            <Text style={styles.newText}>NEW</Text>
+                            {item.newText ?
+                                <Text style={styles.newText}>{item.newText}</Text>
+                                : <View />}
                             <View style={styles.difficultyContainer}>
-                                <Text style={styles.difficultyText}>EASY</Text>
+                                <Text style={styles.difficultyText}>{item.difficultyText}</Text>
                                 <View style={styles.difficultyIcon}></View>
                             </View>
                         </View>
@@ -107,19 +120,35 @@ class TrainingScreen extends React.Component {
         );
     }
 
+    _onSnapToItem(slideIndex) {
+        this.slideIndex = slideIndex;
+    }
+
+    getLoadingView() {
+        return (
+            <SafeAreaView style={styles.container}>
+                <Container />
+            </SafeAreaView>
+        );
+    }
+
     render() {
+        const { programs } = this.state;
+        if (programs === null) {
+            return this.getLoadingView();
+        }
         return (
             <SafeAreaView style={styles.container}>
                 <Container>
                     <View style={styles.sliderContainer}>
                         <Carousel
-                            data={this.state.data}
+                            data={this.state.programs}
                             renderItem={this._renderItem}
                             sliderWidth={this.state.screenWidth}
                             itemWidth={this.state.screenWidth * SLIDER_ITEM_WIDTH_COEFF}
                             activeSlideAlignment='start'
                             inactiveSlideOpacity={0.34}
-                            loop
+                            onSnapToItem={this._onSnapToItem}
                         />
                     </View>
                 </Container>
@@ -155,7 +184,9 @@ const styles = StyleSheet.create({
         position: 'absolute',
         justifyContent: 'flex-end',
         alignItems: 'center',
-        backgroundColor: '#FFFFFF'
+        backgroundColor: '#FFFFFF',
+        borderColor: '#FFFFFF',
+        borderWidth: 1
     },
     sliderItemTopHeaderView: {
         justifyContent: 'space-between',

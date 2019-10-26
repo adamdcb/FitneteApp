@@ -7,25 +7,12 @@ import Button from '../../utils/components/Button';
 import ButtonText from '../../utils/components/ButtonText';
 import { pop, push, Route } from '../../utils/navigation/NavigationService';
 import I18n from '../../utils/i18n/I18n';
-import DemoWorkoutPresenter from './DemoWorkoutPresenter';
 
 class DemoWorkoutIntroScreen extends React.Component {
     constructor(props) {
         super(props);
-        this.state = {
-            program: null
-        };
-        this.presenter = new DemoWorkoutPresenter(this);
         this._notReady = this._notReady.bind(this);
         this._previewWorkout = this._previewWorkout.bind(this);
-    }
-
-    componentDidMount() {
-        this.presenter.loadData();
-    }
-
-    setData(data) {
-        this.setState({ program: data });
     }
 
     _notReady() {
@@ -33,23 +20,12 @@ class DemoWorkoutIntroScreen extends React.Component {
     }
 
     _previewWorkout() {
-        const { program } = this.state;
+        const { program } = this.props.navigation.state.params;
         push(Route.DemoWorkout, { workouts: program.workouts });
     }
 
-    getLoadingView() {
-        return (
-            <SafeAreaView style={styles.container}>
-                <Container />
-            </SafeAreaView>
-        );
-    }
-
     render() {
-        const { program } = this.state;
-        if (!program) {
-            return this.getLoadingView();
-        }
+        const { program } = this.props.navigation.state.params;
         return (
             <View style={{ flex: 1 }}>
                 <SafeAreaView style={styles.container}>
@@ -57,7 +33,7 @@ class DemoWorkoutIntroScreen extends React.Component {
                         <View style={styles.innerContainer}>
                             <Image
                                 style={styles.demoImage}
-                                source={{ uri: program.imageName }}
+                                source={{ uri: program.image }}
                             />
                             <Text style={styles.demoWorkout}>{I18n.t('demoWorkout.introTitle')}</Text>
                         </View>
@@ -69,8 +45,8 @@ class DemoWorkoutIntroScreen extends React.Component {
                         colors={['#FFFFFF', '#FAFAFA']}
                         angle={0}
                     >
-                        <Text style={styles.title}>{I18n.t(program.nameKey)}</Text>
-                        <Text style={styles.description}>{I18n.t(program.descriptionKey)}</Text>
+                        <Text style={styles.title}>{program.title}</Text>
+                        <Text style={styles.description}>{program.description}</Text>
                         <Button
                             title={I18n.t('demoWorkout.previewWorkout')}
                             onPress={this._previewWorkout}

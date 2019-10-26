@@ -1,47 +1,53 @@
 {
     "programs": [
         {
-            "nameKey": "demoWorkout.demo.programName",
-            "descriptionKey": "demoWorkout.demo.programDescription",
-            "imageName": "for_free",
+            "name": "tonedArmsAndBreasts",
+            "duration": 28,
+            "difficulty": "easy",
+            "progress": 0,
             "workouts": [
                 {
-                    "nameKey": "demoWorkout.demo.workoutName_1",
-                    "descriptionKey": "demoWorkout.demo.workoutDescription_1",
-                    "durationImageName": "clock",
-                    "durationTitleKey": "demoWorkout.demo.duration",
+                    "name": "workout1",
                     "duration": 195,
-                    "repeatImageName": "filter",
-                    "repeatTitleKey": "demoWorkout.demo.repeat",
                     "repeat": 4,
-                    "gearImageName": "filter",
-                    "gearTitleKey": "demoWorkout.demo.gear",
                     "gear": "None"
                 },
                 {
-                    "nameKey": "demoWorkout.demo.workoutName_1",
-                    "descriptionKey": "demoWorkout.demo.workoutDescription_1",
-                    "durationImageName": "clock",
-                    "durationTitleKey": "demoWorkout.demo.duration",
+                    "name": "workout2",
                     "duration": 240,
-                    "repeatImageName": "filter",
-                    "repeatTitleKey": "demoWorkout.demo.repeat",
                     "repeat": 3,
-                    "gearImageName": "filter",
-                    "gearTitleKey": "demoWorkout.demo.gear",
                     "gear": "None"
                 },
                 {
-                    "nameKey": "demoWorkout.demo.workoutName_1",
-                    "descriptionKey": "demoWorkout.demo.workoutDescription_1",
-                    "durationImageName": "clock",
-                    "durationTitleKey": "demoWorkout.demo.duration",
+                    "name": "workout3",
                     "duration": 210,
-                    "repeatImageName": "filter",
-                    "repeatTitleKey": "demoWorkout.demo.repeat",
                     "repeat": 4,
-                    "gearImageName": "filter",
-                    "gearTitleKey": "demoWorkout.demo.gear",
+                    "gear": "None"
+                }
+            ]
+        },
+        {
+            "name": "tonedArmsAndBreasts",
+            "duration": 28,
+            "difficulty": "easy",
+            "progress": 3,
+            "workouts": [
+                {
+                    "name": "workout1",
+                    "duration": 195,
+                    "repeat": 4,
+                    "gear": "None"
+                },
+                {
+                    "name": "workout2",
+                    "duration": 240,
+                    "repeat": 3,
+                    "gear": "None"
+                },
+                {
+                    "name": "workout3",
+                    "duration": 210,
+                    "repeat": 4,
                     "gear": "None"
                 }
             ]

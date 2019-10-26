@@ -114,6 +114,29 @@ export default {
         dailyWaterIntake: 'Your perfect daily Water rate is:',
         continue: 'Turn on Water Tracker'
     },
+    training: {
+        tonedArmsAndBreastsTitle: 'Toned arms and breasts',
+        tonedArmsAndBreastsDescription: 'Program description. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.',
+        
+        workout1Title: 'Workout #1',
+        workout1Description: 'Workout #1 description. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.',
+        workout2Title: 'Workout #2',
+        workout2Description: 'Workout #2 description. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.',
+        workout3Title: 'Workout #3',
+        workout3Description: 'Workout #3 description. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.',
+
+        new: 'new',
+        easy: 'easy',
+
+        openProgram: 'Open program',
+        days: 'days',
+
+        duration: 'Duration',
+        repeat: 'Repeat',
+        gear: 'Gear needed?',
+        progress: 'Progress',
+        times: 'times'
+    },
     demoWorkout: {
         introTitle: 'DEMO\nWORKOUT',
         previewWorkout: 'Yes, preview this workout',
@@ -122,17 +145,7 @@ export default {
         stepTotal: 'out of %{total}',
         title: 'Demo workout',
         nextExercise: 'Next Exercise',
-        finish: 'Finish',
-        demo: {
-            duration: 'Duration',
-            repeat: 'Repeat',
-            gear: 'Gear needed?',
-            times: 'times',
-            programName: 'Toned arms and breasts',
-            programDescription: 'Program description. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.',
-            workoutName_1: 'Workout #1',
-            workoutDescription_1: 'Workout #1. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.'
-        }
+        finish: 'Finish'
     },
     demoWorkoutDone: {
         title: 'Congratulations!',
