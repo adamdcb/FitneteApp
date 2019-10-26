@@ -36,3 +36,7 @@ allprojects {
         jcenter()
     }
 }
+
+project.ext {
+    excludeAppGlideModule = true
+}
