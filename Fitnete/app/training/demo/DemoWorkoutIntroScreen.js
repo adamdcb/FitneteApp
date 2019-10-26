@@ -21,7 +21,7 @@ class DemoWorkoutIntroScreen extends React.Component {
 
     _previewWorkout() {
         const { program } = this.props.navigation.state.params;
-        push(Route.DemoWorkout, { workouts: program.workouts });
+        push(Route.DemoWorkout, { program: program });
     }
 
     render() {

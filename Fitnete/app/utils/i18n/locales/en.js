@@ -130,6 +130,7 @@ export default {
 
         openProgram: 'Open program',
         days: 'days',
+        day: 'day',
 
         duration: 'Duration',
         repeat: 'Repeat',
@@ -152,5 +153,9 @@ export default {
         description1: 'Now you are ready to start your',
         description2: 'positive transformation',
         continue: 'Proceed to workout'
+    },
+    dayProgram: {
+        startWorkout: 'Start workout',
+        showExerciseList: 'Show exercise list'
     }
 };

@@ -13,7 +13,8 @@ class DemoWorkoutDoneScreen extends React.Component {
     }
 
     _continue() {
-        push(Route.Workout);
+        const { program } = this.props.navigation.state.params;
+        push(Route.TrainingProgram, { program });
     }
 
     render() {

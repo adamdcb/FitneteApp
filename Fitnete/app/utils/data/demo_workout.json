@@ -24,6 +24,26 @@
                     "repeat": 4,
                     "gear": "None"
                 }
+            ],
+            "demo": [
+                {
+                    "name": "workout1",
+                    "duration": 195,
+                    "repeat": 4,
+                    "gear": "None"
+                },
+                {
+                    "name": "workout2",
+                    "duration": 240,
+                    "repeat": 3,
+                    "gear": "None"
+                },
+                {
+                    "name": "workout3",
+                    "duration": 210,
+                    "repeat": 4,
+                    "gear": "None"
+                }
             ]
         },
         {
@@ -32,6 +52,26 @@
             "difficulty": "easy",
             "progress": 3,
             "workouts": [
+                {
+                    "name": "workout1",
+                    "duration": 195,
+                    "repeat": 4,
+                    "gear": "None"
+                },
+                {
+                    "name": "workout2",
+                    "duration": 240,
+                    "repeat": 3,
+                    "gear": "None"
+                },
+                {
+                    "name": "workout3",
+                    "duration": 210,
+                    "repeat": 4,
+                    "gear": "None"
+                }
+            ],
+            "demo": [
                 {
                     "name": "workout1",
                     "duration": 195,

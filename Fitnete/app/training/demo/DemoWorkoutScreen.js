@@ -18,20 +18,20 @@ class DemoWorkoutScreen extends React.Component {
     }
 
     _continue() {
-        const { workouts } = this.props.navigation.state.params;
+        const { program, program: { demo } } = this.props.navigation.state.params;
         const { step } = this.state;
-        if (step < workouts.length) {
-            push(Route.DemoWorkout, { step: step + 1, workouts });
+        if (step < demo.length) {
+            push(Route.DemoWorkout, { step: step + 1, program });
         } else {
-           push(Route.DemoWorkoutDone);
+            push(Route.DemoWorkoutDone, { program });
         }
     }
 
     render() {
-        const { workouts } = this.props.navigation.state.params;
+        const { program: { demo } } = this.props.navigation.state.params;
         const { step } = this.state;
-        const stepsTotal = workouts.length;
-        const workout = workouts[step - 1] || {};
+        const stepsTotal = demo.length;
+        const workout = demo[step - 1] || {};
         const buttonTextKey = step === stepsTotal ? 'demoWorkout.finish' : 'demoWorkout.nextExercise';
         return (
             <SafeAreaView style={styles.container}>

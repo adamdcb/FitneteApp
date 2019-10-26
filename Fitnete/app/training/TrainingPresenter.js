@@ -28,6 +28,17 @@ export default class TrainingPresenter {
                 repeatText: `${workout.repeat} ${I18n.t('training.times')}`,
                 gearTitle: I18n.t('training.gear'),
                 gearText: workout.gear
+            })),
+            demo: program.demo.map((demo) => ({
+                title: I18n.t(`training.${demo.name}Title`),
+                description: I18n.t(`training.${demo.name}Description`),
+                image: this._getWorkoutImage(demo.name),
+                durationTitle: I18n.t('training.duration'),
+                durationText: Utils.secondsToMMSS(demo.duration),
+                repeatTitle: I18n.t('training.repeat'),
+                repeatText: `${demo.repeat} ${I18n.t('training.times')}`,
+                gearTitle: I18n.t('training.gear'),
+                gearText: demo.gear
             }))
         }));
         if (this.view) {

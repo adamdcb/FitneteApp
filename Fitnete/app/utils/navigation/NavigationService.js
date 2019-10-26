@@ -36,6 +36,7 @@ import MoreScreen from '../../more/MoreScreen';
 import DemoWorkoutIntroScreen from '../../training/demo/DemoWorkoutIntroScreen';
 import DemoWorkoutScreen from '../../training/demo/DemoWorkoutScreen';
 import DemoWorkoutDoneScreen from '../../training/demo/DemoWorkoutDoneScreen';
+import TrainingProgramScreen from '../../training/program/TrainingProgramScreen';
 import WorkoutScreen from '../../training/WorkoutScreen';
 
 const HEADER_STYLE = {
@@ -132,6 +133,7 @@ const TrainingStack = createStackNavigator(
         DemoWorkoutIntro: DemoWorkoutIntroScreen,
         DemoWorkout: DemoWorkoutScreen,
         DemoWorkoutDone: DemoWorkoutDoneScreen,
+        TrainingProgram: TrainingProgramScreen,
         Workout: WorkoutScreen
     },
     {
