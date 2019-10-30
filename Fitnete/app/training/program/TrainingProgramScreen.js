@@ -1,12 +1,12 @@
 import React from 'react';
-import { SafeAreaView, Text, View, Image, StyleSheet, Dimensions } from 'react-native';
+import { SafeAreaView, ScrollView, Text, View, Image, StyleSheet, Dimensions } from 'react-native';
 import Carousel from 'react-native-snap-carousel';
+import LinearGradient from 'react-native-linear-gradient';
 
-import Container from '../../utils/components/Container';
 import I18n from '../../utils/i18n/I18n';
 import Button from '../../utils/components/Button';
 import ButtonText from '../../utils/components/ButtonText';
-import { push, Route, HEADER_STYLE } from '../../utils/navigation/NavigationService';
+import { push, Route } from '../../utils/navigation/NavigationService';
 
 const SLIDER_ITEM_WIDTH_COEFF = 0.8;
 
@@ -28,7 +28,7 @@ class TrainingProgramScreen extends React.Component {
     }
 
     _startWorkout() {
-        push(Route.Workout);
+        push(Route.Countdown);
     }
 
     _showExerciseList() {
@@ -99,44 +99,53 @@ class TrainingProgramScreen extends React.Component {
         const { program } = this.props.navigation.state.params;
         return (
             <SafeAreaView style={styles.container}>
-                <Container
+                <LinearGradient
+                    style={{ flex: 1 }}
                     colors={['#FFFFFF', '#94E4F1', '#0F7788', '#3E3750']}
                     locations={[0, 0.2344, 0.6377, 1]}
                     angle={335}
-                    useAngle
+                    start={{ x: 0.73, y: 0.5 }}
+                    end={{ x: 0.5, y: 0 }}
                 >
-                    <View style={styles.headerContainer}>
-                        <Text style={styles.title}>{program.title}</Text>
-                        <View style={styles.statusOuterContainer}>
-                            <View style={styles.statusContainer}>
-                                <Image
-                                    style={styles.statusImage}
-                                    source={{ uri: 'clock' }}
-                                />
-                                <Text style={styles.statusDetails}>{program.durationText}</Text>
-                            </View>
-                            <View style={styles.statusContainer}>
-                                <Image
-                                    style={styles.statusImage}
-                                    source={{ uri: 'filter' }}
-                                />
-                                <Text style={styles.statusDetails}>{program.progressText}</Text>
+                    <ScrollView
+                        style={styles.scrollView}
+                        contentContainerStyle={styles.scrollViewContentContainer}
+                        bounces={false}
+                    >
+                        <View style={styles.headerContainer}>
+                            <Text style={styles.title}>{program.title}</Text>
+                            <View style={styles.statusOuterContainer}>
+                                <View style={styles.statusContainer}>
+                                    <Image
+                                        style={styles.statusImage}
+                                        source={{ uri: 'clock' }}
+                                    />
+                                    <Text style={styles.statusDetails}>{program.durationText}</Text>
+                                </View>
+                                <View style={styles.statusContainer}>
+                                    <Image
+                                        style={styles.statusImage}
+                                        source={{ uri: 'filter' }}
+                                    />
+                                    <Text style={styles.statusDetails}>{program.progressText}</Text>
+                                </View>
                             </View>
                         </View>
-                    </View>
-                    <View style={styles.sliderContainer}>
-                        <Carousel
-                            removeClippedSubviews={false}
-                            data={program.workouts}
-                            renderItem={this._renderItem}
-                            sliderWidth={this.state.screenWidth}
-                            itemWidth={this.state.screenWidth * SLIDER_ITEM_WIDTH_COEFF}
-                            activeSlideAlignment='start'
-                            inactiveSlideOpacity={0.34}
-                            onSnapToItem={this._onSnapToItem}
-                        />
-                    </View>
-                </Container>
+                        <View style={styles.sliderContainer}>
+                            <Carousel
+                                removeClippedSubviews={false}
+                                data={program.workouts}
+                                renderItem={this._renderItem}
+                                sliderWidth={this.state.screenWidth}
+                                itemWidth={this.state.screenWidth * SLIDER_ITEM_WIDTH_COEFF}
+                                activeSlideAlignment='start'
+                                inactiveSlideOpacity={0.34}
+                                onSnapToItem={this._onSnapToItem}
+                                slideStyle={styles.slideStyle}
+                            />
+                        </View>
+                    </ScrollView>
+                </LinearGradient>
             </SafeAreaView>
         );
     }
@@ -146,8 +155,16 @@ const styles = StyleSheet.create({
     container: {
         flex: 1
     },
+    scrollView: {
+        flex: 1,
+        paddingHorizontal: 20
+    },
+    scrollViewContentContainer: {
+        flexGrow: 1
+    },
     sliderContainer: {
-        flex: 1
+        flex: 1,
+        marginBottom: 8
     },
     headerContainer: {
         flexDirection: 'row',
@@ -163,10 +180,11 @@ const styles = StyleSheet.create({
     },
     sliderItemView: {
         flex: 1,
-        margin: 4,
         backgroundColor: '#FFFFFF',
-        overflow: 'hidden',
         borderRadius: 12,
+    },
+    slideStyle: {
+        margin: 4,
         shadowColor: "#000",
         shadowOffset: {
             width: 0,
@@ -271,10 +289,9 @@ const styles = StyleSheet.create({
 });
 
 TrainingProgramScreen.navigationOptions = () => ({
-    headerBackTitle: null,
+    headerTransparent: true,
+    headerBackground: <View style={{ flex: 1, backgroundColor: '#3E3750' }} />,
     headerStyle: {
-        ...HEADER_STYLE,
-        backgroundColor: '#3E3750',
         height: 0
     }
 });
