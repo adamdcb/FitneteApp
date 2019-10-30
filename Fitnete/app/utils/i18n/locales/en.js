@@ -157,5 +157,8 @@ export default {
     dayProgram: {
         startWorkout: 'Start workout',
         showExerciseList: 'Show exercise list'
+    },
+    countdown: {
+        start: 'START!'
     }
 };

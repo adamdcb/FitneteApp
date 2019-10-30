@@ -15,6 +15,7 @@ const Route = {
     DemoWorkout: 'DemoWorkout',
     DemoWorkoutDone: 'DemoWorkoutDone',
     TrainingProgram: 'TrainingProgram',
+    Countdown: 'Countdown',
     Workout: 'Workout'
 }
 

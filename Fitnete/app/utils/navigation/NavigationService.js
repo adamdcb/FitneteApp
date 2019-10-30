@@ -37,6 +37,7 @@ import DemoWorkoutIntroScreen from '../../training/demo/DemoWorkoutIntroScreen';
 import DemoWorkoutScreen from '../../training/demo/DemoWorkoutScreen';
 import DemoWorkoutDoneScreen from '../../training/demo/DemoWorkoutDoneScreen';
 import TrainingProgramScreen from '../../training/program/TrainingProgramScreen';
+import CountdownScreen from '../../training/countdown/CountdownScreen';
 import WorkoutScreen from '../../training/WorkoutScreen';
 
 const HEADER_STYLE = {
@@ -57,6 +58,14 @@ const TAB_BAR_STYLE = {
     backgroundColor: '#FFFFFF',
     borderTopColor: 'transparent'
 };
+
+const NO_TAB_BAR_ROUTES = [
+    Route.Countdown
+];
+
+const _shouldDisplayTabBar = (routeName) => {
+    return !NO_TAB_BAR_ROUTES.includes(routeName);
+}
 
 const TabBarComponent = props => <BottomTabBar {...props} />;
 
@@ -134,9 +143,16 @@ const TrainingStack = createStackNavigator(
         DemoWorkout: DemoWorkoutScreen,
         DemoWorkoutDone: DemoWorkoutDoneScreen,
         TrainingProgram: TrainingProgramScreen,
+        Countdown: CountdownScreen,
         Workout: WorkoutScreen
     },
     {
+        navigationOptions: ({ navigation }) => {
+            const { routeName } = navigation.state.routes[navigation.state.index];
+            return {
+                tabBarVisible: _shouldDisplayTabBar(routeName)
+            }
+        },
         defaultNavigationOptions: () => ({
             headerBackImage: <HeaderBackButton />,
             headerStyle: HEADER_STYLE,
@@ -258,6 +274,14 @@ function navigate(route, params) {
     _navigator.dispatch(action);
 }
 
+function replace(route, params) {
+    const action = StackActions.replace({
+        routeName: route,
+        params: params
+    });
+    _navigator.dispatch(action);
+}
+
 export {
     Route,
     InitialStoryboard,
@@ -266,5 +290,6 @@ export {
     push,
     navigate,
     pop,
+    replace,
     HEADER_STYLE
 }

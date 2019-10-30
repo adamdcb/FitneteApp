@@ -5,7 +5,7 @@ import LinearGradient from 'react-native-linear-gradient';
 
 import Container from '../utils/components/Container';
 import Button from '../utils/components/Button';
-import { push, Route, HEADER_STYLE } from '../utils/navigation/NavigationService';
+import { push, Route } from '../utils/navigation/NavigationService';
 import I18n from '../utils/i18n/I18n';
 import TrainingPresenter from './TrainingPresenter';
 
