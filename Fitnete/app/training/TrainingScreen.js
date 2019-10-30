@@ -150,6 +150,7 @@ class TrainingScreen extends React.Component {
                             activeSlideAlignment='start'
                             inactiveSlideOpacity={0.34}
                             onSnapToItem={this._onSnapToItem}
+                            slideStyle={styles.slideStyle}
                         />
                     </View>
                 </Container>
@@ -164,15 +165,16 @@ const styles = StyleSheet.create({
     },
     sliderContainer: {
         flex: 1,
-        marginTop: 32,
         marginBottom: 40
     },
     sliderItemView: {
         flex: 1,
-        margin: SLIDER_ITEM_MARGIN,
         backgroundColor: '#FFFFFF',
-        overflow: 'hidden',
         borderRadius: 12,
+        overflow: 'hidden'
+    },
+    slideStyle: {
+        margin: SLIDER_ITEM_MARGIN,
         shadowColor: "#000",
         shadowOffset: {
             width: 0,
@@ -283,10 +285,7 @@ const styles = StyleSheet.create({
 });
 
 TrainingScreen.navigationOptions = () => ({
-    headerStyle: {
-        ...HEADER_STYLE,
-        height: 0
-    }
+
 });
 
 export default TrainingScreen;
