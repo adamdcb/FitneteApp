@@ -4,7 +4,7 @@ import { SafeAreaView, Text, View, Image, StyleSheet } from 'react-native';
 import Container from '../../utils/components/Container';
 import Button from '../../utils/components/Button';
 import I18n from '../../utils/i18n/I18n';
-import { push, Route } from '../../utils/navigation/NavigationService';
+import { Route, navigate } from '../../utils/navigation/NavigationService';
 
 class DemoWorkoutDoneScreen extends React.Component {
     constructor(props) {
@@ -14,7 +14,7 @@ class DemoWorkoutDoneScreen extends React.Component {
 
     _continue() {
         const { program } = this.props.navigation.state.params;
-        push(Route.TrainingProgram, { program });
+        navigate(Route.TrainingProgram, { program });
     }
 
     render() {

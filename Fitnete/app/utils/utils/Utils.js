@@ -7,5 +7,12 @@ export default {
         } else {
             return `${min}m`;
         }
+    },
+    secondsToPlainMMSS(seconds) {
+        const min = Math.trunc(seconds / 60);
+        const sec = seconds - (min * 60);
+        const minStr = `${min}`.padStart(2, '0');
+        const secStr = `${sec}`.padStart(2, '0');
+        return `${minStr}:${secStr}`;
     }
 }

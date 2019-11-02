@@ -5,7 +5,7 @@ import LinearGradient from 'react-native-linear-gradient';
 import Container from '../../utils/components/Container';
 import Button from '../../utils/components/Button';
 import ButtonText from '../../utils/components/ButtonText';
-import { pop, push, Route } from '../../utils/navigation/NavigationService';
+import { push, Route, navigate } from '../../utils/navigation/NavigationService';
 import I18n from '../../utils/i18n/I18n';
 
 class DemoWorkoutIntroScreen extends React.Component {
@@ -16,7 +16,7 @@ class DemoWorkoutIntroScreen extends React.Component {
     }
 
     _notReady() {
-        pop();
+        navigate(Route.Training);
     }
 
     _previewWorkout() {
@@ -122,7 +122,7 @@ const styles = StyleSheet.create({
 });
 
 DemoWorkoutIntroScreen.navigationOptions = () => ({
-
+    
 });
 
 export default DemoWorkoutIntroScreen;

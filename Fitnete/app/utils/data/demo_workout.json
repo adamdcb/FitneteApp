@@ -10,19 +10,61 @@
                     "name": "workout1",
                     "duration": 195,
                     "repeat": 4,
-                    "gear": "None"
+                    "gear": "None",
+                    "exercises": [
+                        {
+                            "name": "exercise1",
+                            "duration": 45
+                        },
+                        {
+                            "name": "exercise2",
+                            "duration": 30
+                        },
+                        {
+                            "name": "exercise3",
+                            "duration": 60
+                        }
+                    ]
                 },
                 {
                     "name": "workout2",
                     "duration": 240,
                     "repeat": 3,
-                    "gear": "None"
+                    "gear": "None",
+                    "exercises": [
+                        {
+                            "name": "exercise1",
+                            "duration": 45
+                        },
+                        {
+                            "name": "exercise1",
+                            "duration": 45
+                        },
+                        {
+                            "name": "exercise1",
+                            "duration": 45
+                        }
+                    ]
                 },
                 {
                     "name": "workout3",
                     "duration": 210,
                     "repeat": 4,
-                    "gear": "None"
+                    "gear": "None",
+                    "exercises": [
+                        {
+                            "name": "exercise1",
+                            "duration": 45
+                        },
+                        {
+                            "name": "exercise1",
+                            "duration": 45
+                        },
+                        {
+                            "name": "exercise1",
+                            "duration": 45
+                        }
+                    ]
                 }
             ],
             "demo": [
@@ -30,19 +72,61 @@
                     "name": "workout1",
                     "duration": 195,
                     "repeat": 4,
-                    "gear": "None"
+                    "gear": "None",
+                    "exercises": [
+                        {
+                            "name": "exercise1",
+                            "duration": 45
+                        },
+                        {
+                            "name": "exercise1",
+                            "duration": 45
+                        },
+                        {
+                            "name": "exercise1",
+                            "duration": 45
+                        }
+                    ]
                 },
                 {
                     "name": "workout2",
                     "duration": 240,
                     "repeat": 3,
-                    "gear": "None"
+                    "gear": "None",
+                    "exercises": [
+                        {
+                            "name": "exercise1",
+                            "duration": 45
+                        },
+                        {
+                            "name": "exercise1",
+                            "duration": 45
+                        },
+                        {
+                            "name": "exercise1",
+                            "duration": 45
+                        }
+                    ]
                 },
                 {
                     "name": "workout3",
                     "duration": 210,
                     "repeat": 4,
-                    "gear": "None"
+                    "gear": "None",
+                    "exercises": [
+                        {
+                            "name": "exercise1",
+                            "duration": 45
+                        },
+                        {
+                            "name": "exercise1",
+                            "duration": 45
+                        },
+                        {
+                            "name": "exercise1",
+                            "duration": 45
+                        }
+                    ]
                 }
             ]
         },
@@ -56,19 +140,61 @@
                     "name": "workout1",
                     "duration": 195,
                     "repeat": 4,
-                    "gear": "None"
+                    "gear": "None",
+                    "exercises": [
+                        {
+                            "name": "exercise1",
+                            "duration": 45
+                        },
+                        {
+                            "name": "exercise1",
+                            "duration": 45
+                        },
+                        {
+                            "name": "exercise1",
+                            "duration": 45
+                        }
+                    ]
                 },
                 {
                     "name": "workout2",
                     "duration": 240,
                     "repeat": 3,
-                    "gear": "None"
+                    "gear": "None",
+                    "exercises": [
+                        {
+                            "name": "exercise1",
+                            "duration": 45
+                        },
+                        {
+                            "name": "exercise1",
+                            "duration": 45
+                        },
+                        {
+                            "name": "exercise1",
+                            "duration": 45
+                        }
+                    ]
                 },
                 {
                     "name": "workout3",
                     "duration": 210,
                     "repeat": 4,
-                    "gear": "None"
+                    "gear": "None",
+                    "exercises": [
+                        {
+                            "name": "exercise1",
+                            "duration": 45
+                        },
+                        {
+                            "name": "exercise1",
+                            "duration": 45
+                        },
+                        {
+                            "name": "exercise1",
+                            "duration": 45
+                        }
+                    ]
                 }
             ],
             "demo": [
@@ -76,19 +202,61 @@
                     "name": "workout1",
                     "duration": 195,
                     "repeat": 4,
-                    "gear": "None"
+                    "gear": "None",
+                    "exercises": [
+                        {
+                            "name": "exercise1",
+                            "duration": 45
+                        },
+                        {
+                            "name": "exercise1",
+                            "duration": 45
+                        },
+                        {
+                            "name": "exercise1",
+                            "duration": 45
+                        }
+                    ]
                 },
                 {
                     "name": "workout2",
                     "duration": 240,
                     "repeat": 3,
-                    "gear": "None"
+                    "gear": "None",
+                    "exercises": [
+                        {
+                            "name": "exercise1",
+                            "duration": 45
+                        },
+                        {
+                            "name": "exercise1",
+                            "duration": 45
+                        },
+                        {
+                            "name": "exercise1",
+                            "duration": 45
+                        }
+                    ]
                 },
                 {
                     "name": "workout3",
                     "duration": 210,
                     "repeat": 4,
-                    "gear": "None"
+                    "gear": "None",
+                    "exercises": [
+                        {
+                            "name": "exercise1",
+                            "duration": 45
+                        },
+                        {
+                            "name": "exercise1",
+                            "duration": 45
+                        },
+                        {
+                            "name": "exercise1",
+                            "duration": 45
+                        }
+                    ]
                 }
             ]
         }

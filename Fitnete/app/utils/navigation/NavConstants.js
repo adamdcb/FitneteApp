@@ -11,6 +11,7 @@ const Route = {
     WaterIntakeIntro: 'WaterIntakeIntro',
     WaterTracker: 'WaterTracker',
     MainApp: 'MainApp',
+    Training: 'Training',
     DemoWorkoutIntro: 'DemoWorkoutIntro',
     DemoWorkout: 'DemoWorkout',
     DemoWorkoutDone: 'DemoWorkoutDone',

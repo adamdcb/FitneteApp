@@ -38,14 +38,14 @@ import DemoWorkoutScreen from '../../training/demo/DemoWorkoutScreen';
 import DemoWorkoutDoneScreen from '../../training/demo/DemoWorkoutDoneScreen';
 import TrainingProgramScreen from '../../training/program/TrainingProgramScreen';
 import CountdownScreen from '../../training/countdown/CountdownScreen';
-import WorkoutScreen from '../../training/WorkoutScreen';
+import WorkoutScreen from '../../training/workout/WorkoutScreen';
 
 const HEADER_STYLE = {
     backgroundColor: '#F3F4FA',
     borderBottomWidth: 0,
     elevation: 0,
     shadowOpacity: 0
-}
+};
 
 const HEADER_TITLE_STYLE = {
     fontFamily: 'Poppins-Bold',
@@ -60,7 +60,7 @@ const TAB_BAR_STYLE = {
 };
 
 const NO_TAB_BAR_ROUTES = [
-    Route.Countdown
+    'WorkoutPlanStack'
 ];
 
 const _shouldDisplayTabBar = (routeName) => {
@@ -136,15 +136,59 @@ const UserDataInputStack = createStackNavigator(
     }
 );
 
-const TrainingStack = createStackNavigator(
+const TrainingPlanStack = createStackNavigator(
     {
-        Training: TrainingScreen,
+        Training: TrainingScreen
+    },
+    {
+        headerMode: 'none'
+    }
+);
+
+const WorkoutDemoStack = createStackNavigator(
+    {
         DemoWorkoutIntro: DemoWorkoutIntroScreen,
         DemoWorkout: DemoWorkoutScreen,
-        DemoWorkoutDone: DemoWorkoutDoneScreen,
-        TrainingProgram: TrainingProgramScreen,
+        DemoWorkoutDone: DemoWorkoutDoneScreen
+    },
+    {
+        defaultNavigationOptions: () => ({
+            headerBackImage: <HeaderBackButton />,
+            headerStyle: HEADER_STYLE,
+            headerBackTitle: null,
+            headerTitleStyle: HEADER_TITLE_STYLE
+        }),
+        navigationOptions: () => ({
+            tabBarVisible: false
+        })
+    }
+);
+
+const TrainingProgramStack = createStackNavigator(
+    {
+        TrainingProgram: TrainingProgramScreen
+    },
+    {
+        headerMode: 'none'
+    }
+);
+
+const WorkoutStack = createStackNavigator(
+    {
         Countdown: CountdownScreen,
         Workout: WorkoutScreen
+    },
+    {
+        headerMode: 'none'
+    }
+);
+
+const TrainingStack = createSwitchNavigator(
+    {
+        TrainingPlanStack: TrainingPlanStack,
+        TrainingProgramStack: TrainingProgramStack,
+        WorkoutDemoStack: WorkoutDemoStack,
+        WorkoutPlanStack: WorkoutStack
     },
     {
         navigationOptions: ({ navigation }) => {
@@ -152,13 +196,7 @@ const TrainingStack = createStackNavigator(
             return {
                 tabBarVisible: _shouldDisplayTabBar(routeName)
             }
-        },
-        defaultNavigationOptions: () => ({
-            headerBackImage: <HeaderBackButton />,
-            headerStyle: HEADER_STYLE,
-            headerBackTitle: null,
-            headerTitleStyle: HEADER_TITLE_STYLE
-        })
+        }
     }
 );
 
@@ -199,8 +237,8 @@ const MoreStack = createStackNavigator(
             headerBackImage: <HeaderBackButton />,
             headerStyle: HEADER_STYLE,
             headerBackTitle: null,
-            headerTitleStyle: HEADER_TITLE_STYLE
-        })
+            headerTitleStyle: HEADER_TITLE_STYLE,
+        }),
     }
 );
 

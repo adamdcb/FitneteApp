@@ -125,6 +125,15 @@ export default {
         workout3Title: 'Workout #3',
         workout3Description: 'Workout #3 description. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.',
 
+        exercise1Title: 'Basic squats',
+        exercise1Description: 'Basic squats: Pellentesque ornare sem lacinia quam venenatis vestibulum',
+
+        exercise2Title: 'Plank',
+        exercise2Description: 'Plank: Pellentesque ornare sem lacinia quam venenatis vestibulum',
+
+        exercise3Title: 'Farmer\'s Walk',
+        exercise3Description: 'Farmer\'s Walk: Pellentesque ornare sem lacinia quam venenatis vestibulum',
+
         new: 'new',
         easy: 'easy',
 
@@ -160,5 +169,13 @@ export default {
     },
     countdown: {
         start: 'START!'
+    },
+    workout: {
+        stepCurrent: 'Step %{step_number}',
+        stepTotal: 'out of %{total}',
+        skipToNextExercise: 'Skip to next exercise',
+        pause: 'Pause',
+        resume: 'Resume',
+        nextExercise: 'Next exercise:'
     }
 };

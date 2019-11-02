@@ -35,13 +35,20 @@ class CountdownScreen extends React.Component {
     }
 
     onCountdownDidEnd() {
-        replace(Route.Workout);
+        const { workout } = this.props.navigation.state.params;
+        replace(Route.Workout, { workout });
     }
 
     render() {
         const { count, progress } = this.state;
         return (
-            <View style={styles.container}>
+            <LinearGradient
+                style={styles.container}
+                colors={['#89F8AD', '#73F9E0']}
+                locations={[0, 1]}
+                angle={270}
+                useAngle >
+                <View style={styles.backgroundView} />
                 <Image
                     style={styles.backgroundImage}
                     source={{ uri: 'startup' }}
@@ -68,7 +75,7 @@ class CountdownScreen extends React.Component {
                         }
                     </AnimatedCircularProgress>
                 </View>
-            </View>
+            </LinearGradient >
         );
     }
 }
@@ -81,6 +88,14 @@ const styles = StyleSheet.create({
         position: 'absolute',
         width: '100%',
         height: '100%'
+    },
+    backgroundView: {
+        position: 'absolute',
+        bottom: 0,
+        left: 0,
+        height: '50%',
+        width: '100%',
+        backgroundColor: '#FFFFFF'
     },
     progressViewContainer: {
         flex: 1,
@@ -113,22 +128,7 @@ const styles = StyleSheet.create({
 });
 
 CountdownScreen.navigationOptions = ({ navigation }) => ({
-    headerTransparent: true,
-    headerBackground: <LinearGradient
-        style={{
-            flex: 1
-        }}
-        colors={['#89F8AD', '#73F9E0']}
-        locations={[0, 1]}
-        angle={270}
-        useAngle />,
-    headerTitle: <Image
-        style={{
-            width: 40,
-            height: 40
-        }}
-        resizeMode='contain'
-        source={{ uri: 'ic_launcher' }} />,
+
 });
 
 export default CountdownScreen;

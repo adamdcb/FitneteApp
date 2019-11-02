@@ -5,7 +5,7 @@ import LinearGradient from 'react-native-linear-gradient';
 
 import Container from '../utils/components/Container';
 import Button from '../utils/components/Button';
-import { push, Route } from '../utils/navigation/NavigationService';
+import { Route, navigate } from '../utils/navigation/NavigationService';
 import I18n from '../utils/i18n/I18n';
 import TrainingPresenter from './TrainingPresenter';
 
@@ -42,7 +42,7 @@ class TrainingScreen extends React.Component {
 
     _openProgram() {
         const { programs } = this.state;
-        push(Route.DemoWorkoutIntro, { program: programs[this.slideIndex] });
+        navigate(Route.DemoWorkoutIntro, { program: programs[this.slideIndex] });
     }
 
     _renderItem({ item, index }) {
@@ -161,10 +161,12 @@ class TrainingScreen extends React.Component {
 
 const styles = StyleSheet.create({
     container: {
-        flex: 1
+        flex: 1,
+        backgroundColor: '#F3F4FA'
     },
     sliderContainer: {
         flex: 1,
+        marginTop: 32,
         marginBottom: 40
     },
     sliderItemView: {

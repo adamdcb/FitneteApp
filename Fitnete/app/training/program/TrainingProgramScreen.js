@@ -6,7 +6,7 @@ import LinearGradient from 'react-native-linear-gradient';
 import I18n from '../../utils/i18n/I18n';
 import Button from '../../utils/components/Button';
 import ButtonText from '../../utils/components/ButtonText';
-import { push, Route } from '../../utils/navigation/NavigationService';
+import { Route, navigate } from '../../utils/navigation/NavigationService';
 
 const SLIDER_ITEM_WIDTH_COEFF = 0.8;
 
@@ -23,12 +23,9 @@ class TrainingProgramScreen extends React.Component {
         this._onSnapToItem = this._onSnapToItem.bind(this);
     }
 
-    componentDidMount() {
-        this.props.navigation.setParams({});
-    }
-
     _startWorkout() {
-        push(Route.Countdown);
+        const { program } = this.props.navigation.state.params;
+        navigate(Route.Countdown, { workout: program.workouts[this.slideIndex] });
     }
 
     _showExerciseList() {
@@ -98,15 +95,15 @@ class TrainingProgramScreen extends React.Component {
     render() {
         const { program } = this.props.navigation.state.params;
         return (
-            <SafeAreaView style={styles.container}>
-                <LinearGradient
-                    style={{ flex: 1 }}
-                    colors={['#FFFFFF', '#94E4F1', '#0F7788', '#3E3750']}
-                    locations={[0, 0.2344, 0.6377, 1]}
-                    angle={335}
-                    start={{ x: 0.73, y: 0.5 }}
-                    end={{ x: 0.5, y: 0 }}
-                >
+            <LinearGradient
+                style={styles.container}
+                colors={['#FFFFFF', '#94E4F1', '#0F7788', '#3E3750']}
+                locations={[0, 0.2344, 0.6377, 1]}
+                angle={335}
+                start={{ x: 0.73, y: 0.5 }}
+                end={{ x: 0.5, y: 0 }}
+            >
+                <SafeAreaView style={styles.container}>
                     <ScrollView
                         style={styles.scrollView}
                         contentContainerStyle={styles.scrollViewContentContainer}
@@ -145,8 +142,8 @@ class TrainingProgramScreen extends React.Component {
                             />
                         </View>
                     </ScrollView>
-                </LinearGradient>
-            </SafeAreaView>
+                </SafeAreaView>
+            </LinearGradient>
         );
     }
 }
@@ -289,11 +286,7 @@ const styles = StyleSheet.create({
 });
 
 TrainingProgramScreen.navigationOptions = () => ({
-    headerTransparent: true,
-    headerBackground: <View style={{ flex: 1, backgroundColor: '#3E3750' }} />,
-    headerStyle: {
-        height: 0
-    }
+
 });
 
 export default TrainingProgramScreen;

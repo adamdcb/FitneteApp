@@ -27,7 +27,13 @@ export default class TrainingPresenter {
                 repeatTitle: I18n.t('training.repeat'),
                 repeatText: `${workout.repeat} ${I18n.t('training.times')}`,
                 gearTitle: I18n.t('training.gear'),
-                gearText: workout.gear
+                gearText: workout.gear,
+                exercises: workout.exercises.map((exercise) => ({
+                    title: I18n.t(`training.${exercise.name}Title`),
+                    description: I18n.t(`training.${exercise.name}Description`),
+                    duration: exercise.duration,
+                    durationText: Utils.secondsToPlainMMSS(exercise.duration),
+                }))
             })),
             demo: program.demo.map((demo) => ({
                 title: I18n.t(`training.${demo.name}Title`),
@@ -38,7 +44,13 @@ export default class TrainingPresenter {
                 repeatTitle: I18n.t('training.repeat'),
                 repeatText: `${demo.repeat} ${I18n.t('training.times')}`,
                 gearTitle: I18n.t('training.gear'),
-                gearText: demo.gear
+                gearText: demo.gear,
+                exercises: demo.exercises.map((exercise) => ({
+                    title: I18n.t(`training.${exercise.name}Title`),
+                    description: I18n.t(`training.${exercise.name}Description`),
+                    duration: exercise.duration,
+                    durationText: Utils.secondsToPlainMMSS(exercise.duration),
+                }))
             }))
         }));
         if (this.view) {
