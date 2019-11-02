@@ -17,7 +17,8 @@ const Route = {
     DemoWorkoutDone: 'DemoWorkoutDone',
     TrainingProgram: 'TrainingProgram',
     Countdown: 'Countdown',
-    Workout: 'Workout'
+    Workout: 'Workout',
+    Pause: 'Pause'
 }
 
 const InitialStoryboard = {

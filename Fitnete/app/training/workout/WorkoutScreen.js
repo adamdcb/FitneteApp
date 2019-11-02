@@ -10,6 +10,7 @@ import Button from '../../utils/components/Button';
 import I18n from '../../utils/i18n/I18n';
 import CountdownProgressBar from '../../utils/components/CountdownProgressBar';
 import WorkoutPresenter from './WorkoutPresenter';
+import { push, Route } from '../../utils/navigation/NavigationService';
 
 class WorkoutScreen extends React.Component {
     constructor(props) {
@@ -23,6 +24,8 @@ class WorkoutScreen extends React.Component {
         this.presenter = new WorkoutPresenter(this, workout);
         this._didTapPauseButton = this._didTapPauseButton.bind(this);
         this._didTapSkipButton = this._didTapSkipButton.bind(this);
+        this.resumeExercise = this.resumeExercise.bind(this);
+        this.restartExercise = this.restartExercise.bind(this);
     }
 
     componentDidMount() {
@@ -38,17 +41,28 @@ class WorkoutScreen extends React.Component {
     }
 
     _didTapPauseButton() {
-        this.presenter.toggleWorkoutRunningState();
+        this.presenter.pauseWorkout();
+        push(Route.Pause, {
+            resumeExercise: this.resumeExercise,
+            restartExercise: this.restartExercise
+        });
     }
 
     _didTapSkipButton() {
         this.presenter.goToNextExercise();
     }
 
+    resumeExercise() {
+        this.presenter.resumeWorkout();
+    }
+
+    restartExercise() {
+        this.presenter.startWorkout();
+    }
+
     render() {
         const { countdownText,
             countdownPercentage,
-            runningText,
             step,
             totalSteps,
             title,
@@ -107,7 +121,7 @@ class WorkoutScreen extends React.Component {
                             />
                             <Button
                                 style={styles.pauseButton}
-                                title={runningText}
+                                title={I18n.t('workout.pause')}
                                 onPress={this._didTapPauseButton}
                             />
                         </View>

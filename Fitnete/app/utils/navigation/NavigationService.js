@@ -39,6 +39,7 @@ import DemoWorkoutDoneScreen from '../../training/demo/DemoWorkoutDoneScreen';
 import TrainingProgramScreen from '../../training/program/TrainingProgramScreen';
 import CountdownScreen from '../../training/countdown/CountdownScreen';
 import WorkoutScreen from '../../training/workout/WorkoutScreen';
+import PauseScreen from '../../training/pause/PauseScreen';
 
 const HEADER_STYLE = {
     backgroundColor: '#F3F4FA',
@@ -50,7 +51,8 @@ const HEADER_STYLE = {
 const HEADER_TITLE_STYLE = {
     fontFamily: 'Poppins-Bold',
     fontSize: 18,
-    color: '#3E3750'
+    color: '#3E3750',
+    textAlign: 'center'
 };
 
 const TAB_BAR_STYLE = {
@@ -176,7 +178,8 @@ const TrainingProgramStack = createStackNavigator(
 const WorkoutStack = createStackNavigator(
     {
         Countdown: CountdownScreen,
-        Workout: WorkoutScreen
+        Workout: WorkoutScreen,
+        Pause: PauseScreen
     },
     {
         headerMode: 'none'
@@ -329,5 +332,6 @@ export {
     navigate,
     pop,
     replace,
-    HEADER_STYLE
+    HEADER_STYLE,
+    HEADER_TITLE_STYLE
 }

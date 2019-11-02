@@ -10,7 +10,6 @@ export default class WorkoutPresenter {
         this.exerciseIndex = 0;
         this._onTick = this._onTick.bind(this);
         this._onComplete = this._onComplete.bind(this);
-        this.isRunning = false;
     }
 
     startWorkout() {
@@ -25,30 +24,23 @@ export default class WorkoutPresenter {
             countdownPercentage: 100,
             repeatTitle: this.workout.repeatTitle,
             repeatText: this.workout.repeatText,
-            nextExerciseText: nextExercise ? `${I18n.t('workout.nextExercise')} ${nextExercise.title}` : '',
-            runningText: I18n.t('workout.pause')
+            nextExerciseText: nextExercise ? `${I18n.t('workout.nextExercise')} ${nextExercise.title}` : ''
 
         });
         this.countdownTimer = new CountdownTimer(exercise.duration, this._onTick, this._onComplete);
-        this.isRunning = true;
         this.countdownTimer.start();
     }
 
-    toggleWorkoutRunningState() {
-        this.isRunning = !this.isRunning;
-        if (!this.isRunning) {
-            this.countdownTimer.pause();
-        } else {
-            this.countdownTimer.resume();
-        }
-        this.view.setData({
-            runningText: this.isRunning ? I18n.t('workout.pause') : I18n.t('workout.resume')
-        });
+    pauseWorkout() {
+        this.countdownTimer.pause();
+    }
+
+    resumeWorkout() {
+        this.countdownTimer.resume();
     }
 
     goToNextExercise() {
         this.countdownTimer.stop();
-        this.isRunning = false;
         if (this.exerciseIndex < this.workout.exercises.length - 1) {
             this.exerciseIndex = this.exerciseIndex + 1;
             this.startWorkout();

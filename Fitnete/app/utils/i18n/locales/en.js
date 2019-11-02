@@ -175,7 +175,13 @@ export default {
         stepTotal: 'out of %{total}',
         skipToNextExercise: 'Skip to next exercise',
         pause: 'Pause',
-        resume: 'Resume',
         nextExercise: 'Next exercise:'
+    },
+    pause: {
+        title: 'Pause',
+        description: 'Remember - it’s perfectly fine to take a short rest if you feel like it',
+        continue: 'Continue your training',
+        restartExercise: 'Restart this exercise',
+        quitExercise: 'Quit'
     }
 };
