@@ -51,7 +51,7 @@ class PauseScreen extends React.Component {
                 useAngle
             >
                 <SafeAreaView style={styles.container}>
-                    <View style={{ flex: 1, marginHorizontal: 20 }}>
+                    <View style={styles.content}>
                         <Text style={HEADER_TITLE_STYLE}>{I18n.t('pause.title')}</Text>
                         <Text style={styles.description}>{I18n.t('pause.description')}</Text>
                         <ButtonInverted
@@ -80,6 +80,10 @@ class PauseScreen extends React.Component {
 const styles = StyleSheet.create({
     container: {
         flex: 1
+    },
+    content: {
+        flex: 1,
+        marginHorizontal: 20
     },
     description: {
         marginTop: 64,

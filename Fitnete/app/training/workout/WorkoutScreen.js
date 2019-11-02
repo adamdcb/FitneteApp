@@ -26,6 +26,7 @@ class WorkoutScreen extends React.Component {
         this._didTapSkipButton = this._didTapSkipButton.bind(this);
         this.resumeExercise = this.resumeExercise.bind(this);
         this.restartExercise = this.restartExercise.bind(this);
+        this.skipRest = this.skipRest.bind(this);
     }
 
     componentDidMount() {
@@ -58,6 +59,14 @@ class WorkoutScreen extends React.Component {
 
     restartExercise() {
         this.presenter.startWorkout();
+    }
+
+    goToRestScreen(exercise, nextExercise) {
+        push(Route.Rest, { skipRest: this.skipRest, exercise, nextExercise });
+    }
+
+    skipRest() {
+        this.presenter.goToNextExercise();
     }
 
     render() {

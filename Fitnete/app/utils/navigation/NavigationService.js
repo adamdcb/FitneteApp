@@ -40,6 +40,7 @@ import TrainingProgramScreen from '../../training/program/TrainingProgramScreen'
 import CountdownScreen from '../../training/countdown/CountdownScreen';
 import WorkoutScreen from '../../training/workout/WorkoutScreen';
 import PauseScreen from '../../training/pause/PauseScreen';
+import RestScreen from '../../training/rest/RestScreen';
 
 const HEADER_STYLE = {
     backgroundColor: '#F3F4FA',
@@ -179,7 +180,8 @@ const WorkoutStack = createStackNavigator(
     {
         Countdown: CountdownScreen,
         Workout: WorkoutScreen,
-        Pause: PauseScreen
+        Pause: PauseScreen,
+        Rest: RestScreen
     },
     {
         headerMode: 'none'

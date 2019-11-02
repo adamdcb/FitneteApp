@@ -25,7 +25,6 @@ export default class WorkoutPresenter {
             repeatTitle: this.workout.repeatTitle,
             repeatText: this.workout.repeatText,
             nextExerciseText: nextExercise ? `${I18n.t('workout.nextExercise')} ${nextExercise.title}` : ''
-
         });
         this.countdownTimer = new CountdownTimer(exercise.duration, this._onTick, this._onComplete);
         this.countdownTimer.start();
@@ -44,6 +43,8 @@ export default class WorkoutPresenter {
         if (this.exerciseIndex < this.workout.exercises.length - 1) {
             this.exerciseIndex = this.exerciseIndex + 1;
             this.startWorkout();
+        } else {
+            
         }
     }
 
@@ -60,7 +61,13 @@ export default class WorkoutPresenter {
             countdownText: Utils.secondsToPlainMMSS(0),
             countdownPercentage: 0
         });
-        // this.view.goToRestScreen();
+        const exercise = this.workout.exercises[this.exerciseIndex];
+        const nextExercise = this.workout.exercises[this.exerciseIndex + 1];
+        if (nextExercise) {
+            this.view.goToRestScreen(exercise, nextExercise);
+        } else {
+
+        }
     }
 
     unmountView() {

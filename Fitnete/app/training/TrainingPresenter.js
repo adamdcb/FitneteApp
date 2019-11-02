@@ -33,6 +33,7 @@ export default class TrainingPresenter {
                     description: I18n.t(`training.${exercise.name}Description`),
                     duration: exercise.duration,
                     durationText: Utils.secondsToPlainMMSS(exercise.duration),
+                    restTime: exercise.restTime
                 }))
             })),
             demo: program.demo.map((demo) => ({
@@ -50,6 +51,7 @@ export default class TrainingPresenter {
                     description: I18n.t(`training.${exercise.name}Description`),
                     duration: exercise.duration,
                     durationText: Utils.secondsToPlainMMSS(exercise.duration),
+                    restTime: exercise.restTime
                 }))
             }))
         }));

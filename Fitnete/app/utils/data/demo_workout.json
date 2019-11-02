@@ -14,15 +14,18 @@
                     "exercises": [
                         {
                             "name": "exercise1",
-                            "duration": 45
+                            "duration": 45,
+                            "restTime": 15
                         },
                         {
                             "name": "exercise2",
-                            "duration": 30
+                            "duration": 30,
+                            "restTime": 15
                         },
                         {
                             "name": "exercise3",
-                            "duration": 60
+                            "duration": 60,
+                            "restTime": 15
                         }
                     ]
                 },
@@ -34,15 +37,18 @@
                     "exercises": [
                         {
                             "name": "exercise1",
-                            "duration": 45
+                            "duration": 45,
+                            "restTime": 15
                         },
                         {
                             "name": "exercise1",
-                            "duration": 45
+                            "duration": 45,
+                            "restTime": 15
                         },
                         {
                             "name": "exercise1",
-                            "duration": 45
+                            "duration": 45,
+                            "restTime": 15
                         }
                     ]
                 },
@@ -54,15 +60,18 @@
                     "exercises": [
                         {
                             "name": "exercise1",
-                            "duration": 45
+                            "duration": 45,
+                            "restTime": 15
                         },
                         {
                             "name": "exercise1",
-                            "duration": 45
+                            "duration": 45,
+                            "restTime": 15
                         },
                         {
                             "name": "exercise1",
-                            "duration": 45
+                            "duration": 45,
+                            "restTime": 15
                         }
                     ]
                 }
@@ -76,15 +85,18 @@
                     "exercises": [
                         {
                             "name": "exercise1",
-                            "duration": 45
+                            "duration": 45,
+                            "restTime": 15
                         },
                         {
                             "name": "exercise1",
-                            "duration": 45
+                            "duration": 45,
+                            "restTime": 15
                         },
                         {
                             "name": "exercise1",
-                            "duration": 45
+                            "duration": 45,
+                            "restTime": 15
                         }
                     ]
                 },
@@ -96,15 +108,18 @@
                     "exercises": [
                         {
                             "name": "exercise1",
-                            "duration": 45
+                            "duration": 45,
+                            "restTime": 15
                         },
                         {
                             "name": "exercise1",
-                            "duration": 45
+                            "duration": 45,
+                            "restTime": 15
                         },
                         {
                             "name": "exercise1",
-                            "duration": 45
+                            "duration": 45,
+                            "restTime": 15
                         }
                     ]
                 },
@@ -116,15 +131,18 @@
                     "exercises": [
                         {
                             "name": "exercise1",
-                            "duration": 45
+                            "duration": 45,
+                            "restTime": 15
                         },
                         {
                             "name": "exercise1",
-                            "duration": 45
+                            "duration": 45,
+                            "restTime": 15
                         },
                         {
                             "name": "exercise1",
-                            "duration": 45
+                            "duration": 45,
+                            "restTime": 15
                         }
                     ]
                 }
@@ -144,15 +162,18 @@
                     "exercises": [
                         {
                             "name": "exercise1",
-                            "duration": 45
+                            "duration": 45,
+                            "restTime": 15
                         },
                         {
                             "name": "exercise1",
-                            "duration": 45
+                            "duration": 45,
+                            "restTime": 15
                         },
                         {
                             "name": "exercise1",
-                            "duration": 45
+                            "duration": 45,
+                            "restTime": 15
                         }
                     ]
                 },
@@ -164,15 +185,18 @@
                     "exercises": [
                         {
                             "name": "exercise1",
-                            "duration": 45
+                            "duration": 45,
+                            "restTime": 15
                         },
                         {
                             "name": "exercise1",
-                            "duration": 45
+                            "duration": 45,
+                            "restTime": 15
                         },
                         {
                             "name": "exercise1",
-                            "duration": 45
+                            "duration": 45,
+                            "restTime": 15
                         }
                     ]
                 },
@@ -184,15 +208,18 @@
                     "exercises": [
                         {
                             "name": "exercise1",
-                            "duration": 45
+                            "duration": 45,
+                            "restTime": 15
                         },
                         {
                             "name": "exercise1",
-                            "duration": 45
+                            "duration": 45,
+                            "restTime": 15
                         },
                         {
                             "name": "exercise1",
-                            "duration": 45
+                            "duration": 45,
+                            "restTime": 15
                         }
                     ]
                 }
@@ -206,15 +233,18 @@
                     "exercises": [
                         {
                             "name": "exercise1",
-                            "duration": 45
+                            "duration": 45,
+                            "restTime": 15
                         },
                         {
                             "name": "exercise1",
-                            "duration": 45
+                            "duration": 45,
+                            "restTime": 15
                         },
                         {
                             "name": "exercise1",
-                            "duration": 45
+                            "duration": 45,
+                            "restTime": 15
                         }
                     ]
                 },
@@ -226,15 +256,18 @@
                     "exercises": [
                         {
                             "name": "exercise1",
-                            "duration": 45
+                            "duration": 45,
+                            "restTime": 15
                         },
                         {
                             "name": "exercise1",
-                            "duration": 45
+                            "duration": 45,
+                            "restTime": 15
                         },
                         {
                             "name": "exercise1",
-                            "duration": 45
+                            "duration": 45,
+                            "restTime": 15
                         }
                     ]
                 },
@@ -246,15 +279,18 @@
                     "exercises": [
                         {
                             "name": "exercise1",
-                            "duration": 45
+                            "duration": 45,
+                            "restTime": 15
                         },
                         {
                             "name": "exercise1",
-                            "duration": 45
+                            "duration": 45,
+                            "restTime": 15
                         },
                         {
                             "name": "exercise1",
-                            "duration": 45
+                            "duration": 45,
+                            "restTime": 15
                         }
                     ]
                 }

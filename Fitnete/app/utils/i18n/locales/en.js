@@ -183,5 +183,10 @@ export default {
         continue: 'Continue your training',
         restartExercise: 'Restart this exercise',
         quitExercise: 'Quit'
+    },
+    rest: {
+        title: 'Rest Time',
+        skip: 'Skip Rest',
+        nextExercise: 'Next exercise:'
     }
 };
