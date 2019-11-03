@@ -44,7 +44,7 @@ export default class WorkoutPresenter {
             this.exerciseIndex = this.exerciseIndex + 1;
             this.startWorkout();
         } else {
-            
+            this.view.didCompleteWorkout();
         }
     }
 
@@ -66,7 +66,7 @@ export default class WorkoutPresenter {
         if (nextExercise) {
             this.view.goToRestScreen(exercise, nextExercise);
         } else {
-
+            this.view.didCompleteWorkout();
         }
     }
 

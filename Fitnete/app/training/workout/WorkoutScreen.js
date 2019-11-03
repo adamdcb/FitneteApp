@@ -65,6 +65,10 @@ class WorkoutScreen extends React.Component {
         push(Route.Rest, { skipRest: this.skipRest, exercise, nextExercise });
     }
 
+    didCompleteWorkout() {
+        push(Route.WorkoutComplete);
+    }
+
     skipRest() {
         this.presenter.goToNextExercise();
     }
@@ -80,28 +84,26 @@ class WorkoutScreen extends React.Component {
             repeatText,
             nextExerciseText } = this.state;
         return (
-            <View style={styles.outerContainer}>
+            <Container scrollViewStyle={{ paddingHorizontal: 0 }}>
                 <SafeAreaView style={styles.container}>
-                    <Container>
-                        <View style={styles.progressContainer}>
-                            <Text style={styles.stepTextLeft}>
-                                {I18n.t('workout.stepCurrent', { step_number: step })}
-                            </Text>
-                            <CountdownProgressBar percentage={countdownPercentage} />
-                            <Text style={styles.stepTextRight}>
-                                {I18n.t('workout.stepTotal', { total: totalSteps })}
-                            </Text>
-                        </View>
-                        <Text style={styles.title}>{title}</Text>
-                        <View style={{ flex: 1 }}>
-                            <FastImage
-                                style={{ height: '100%', width: '100%' }}
-                                source={DemoWebP}
-                                resizeMode={FastImage.resizeMode.contain}
-                            />
-                        </View>
-                        <Text style={styles.timeText}>{countdownText}</Text>
-                    </Container>
+                    <View style={styles.progressContainer}>
+                        <Text style={styles.stepTextLeft}>
+                            {I18n.t('workout.stepCurrent', { step_number: step })}
+                        </Text>
+                        <CountdownProgressBar percentage={countdownPercentage} />
+                        <Text style={styles.stepTextRight}>
+                            {I18n.t('workout.stepTotal', { total: totalSteps })}
+                        </Text>
+                    </View>
+                    <Text style={styles.title}>{title}</Text>
+                    <View style={{ flex: 1 }}>
+                        <FastImage
+                            style={{ height: '100%', width: '100%' }}
+                            source={DemoWebP}
+                            resizeMode={FastImage.resizeMode.contain}
+                        />
+                    </View>
+                    <Text style={styles.timeText}>{countdownText}</Text>
                 </SafeAreaView>
                 <View style={styles.bottomContainer}>
                     <LinearGradient
@@ -136,18 +138,15 @@ class WorkoutScreen extends React.Component {
                         </View>
                     </LinearGradient>
                 </View>
-            </View>
+            </Container>
         );
     }
 }
 
 const styles = StyleSheet.create({
-    outerContainer: {
-        flex: 1,
-        backgroundColor: '#F3F4FA'
-    },
     container: {
-        flex: 1
+        flex: 1,
+        marginHorizontal: 20
     },
     progressContainer: {
         flexDirection: 'row',
@@ -237,7 +236,7 @@ const styles = StyleSheet.create({
     },
     buttonContainer: {
         flexDirection: 'row',
-        marginVertical: 24,
+        marginTop: 24,
         justifyContent: 'space-between'
     },
     skipButton: {

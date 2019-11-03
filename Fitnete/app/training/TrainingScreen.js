@@ -138,8 +138,8 @@ class TrainingScreen extends React.Component {
             return this.getLoadingView();
         }
         return (
-            <SafeAreaView style={styles.container}>
-                <Container>
+            <Container>
+                <SafeAreaView style={styles.container}>
                     <View style={styles.sliderContainer}>
                         <Carousel
                             removeClippedSubviews={false}
@@ -153,16 +153,15 @@ class TrainingScreen extends React.Component {
                             slideStyle={styles.slideStyle}
                         />
                     </View>
-                </Container>
-            </SafeAreaView>
+                </SafeAreaView>
+            </Container>
         );
     }
 }
 
 const styles = StyleSheet.create({
     container: {
-        flex: 1,
-        backgroundColor: '#F3F4FA'
+        flex: 1
     },
     sliderContainer: {
         flex: 1,

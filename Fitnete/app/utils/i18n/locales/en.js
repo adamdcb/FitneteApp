@@ -188,5 +188,11 @@ export default {
         title: 'Rest Time',
         skip: 'Skip Rest',
         nextExercise: 'Next exercise:'
+    },
+    workoutComplete: {
+        title: 'Congratulations!',
+        description1: 'Congratulations',
+        description2: 'Workout complete!',
+        goToMainScreen: 'Go to main screen'
     }
 };

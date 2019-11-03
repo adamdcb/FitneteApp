@@ -41,6 +41,7 @@ import CountdownScreen from '../../training/countdown/CountdownScreen';
 import WorkoutScreen from '../../training/workout/WorkoutScreen';
 import PauseScreen from '../../training/pause/PauseScreen';
 import RestScreen from '../../training/rest/RestScreen';
+import WorkoutCompleteScreen from '../../training/workout-complete/WorkoutCompleteScreen';
 
 const HEADER_STYLE = {
     backgroundColor: '#F3F4FA',
@@ -50,7 +51,7 @@ const HEADER_STYLE = {
 };
 
 const HEADER_TITLE_STYLE = {
-    fontFamily: 'Poppins-Bold',
+    fontFamily: 'Poppins-SemiBold',
     fontSize: 18,
     color: '#3E3750',
     textAlign: 'center'
@@ -181,7 +182,8 @@ const WorkoutStack = createStackNavigator(
         Countdown: CountdownScreen,
         Workout: WorkoutScreen,
         Pause: PauseScreen,
-        Rest: RestScreen
+        Rest: RestScreen,
+        WorkoutComplete: WorkoutCompleteScreen
     },
     {
         headerMode: 'none'

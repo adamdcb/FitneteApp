@@ -4,7 +4,7 @@ import LinearGradient from 'react-native-linear-gradient';
 
 class Container extends React.PureComponent {
     render() {
-        const { locations = [0, 0.5, 1], colors = ['#F3F4FA', '#F9FEFF', '#FFFFFF'], angle = 180, useAngle = false, style = {} } = this.props;
+        const { locations = [0, 0.5, 1], colors = ['#F3F4FA', '#F9FEFF', '#FFFFFF'], angle = 180, useAngle = false, style = {}, scrollViewStyle = {} } = this.props;
         return (
             <LinearGradient
                 style={[styles.linearGradient, style]}
@@ -14,7 +14,7 @@ class Container extends React.PureComponent {
                 useAngle={useAngle}
             >
                 <ScrollView
-                    style={styles.scrollView}
+                    style={[styles.scrollView, scrollViewStyle]}
                     contentContainerStyle={styles.scrollViewContentContainer}
                     bounces={false}
                 >
