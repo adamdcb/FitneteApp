@@ -12,6 +12,7 @@ import {
     BottomTabBar
 } from 'react-navigation-tabs';
 import React from 'react';
+import { Platform } from 'react-native';
 
 import { Route, InitialStoryboard } from './NavConstants';
 import HeaderBackButton from '../components/HeaderBackButton';
@@ -54,7 +55,10 @@ const HEADER_TITLE_STYLE = {
     fontFamily: 'Poppins-SemiBold',
     fontSize: 18,
     color: '#3E3750',
-    textAlign: 'center'
+    textAlign: Platform.select({
+        ios: 'center',
+        android: 'left'
+    })
 };
 
 const TAB_BAR_STYLE = {

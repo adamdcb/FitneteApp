@@ -178,7 +178,7 @@ const styles = StyleSheet.create({
     sliderItemView: {
         flex: 1,
         backgroundColor: '#FFFFFF',
-        borderRadius: 12,
+        borderRadius: 12
     },
     slideStyle: {
         margin: 4,

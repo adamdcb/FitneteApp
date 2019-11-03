@@ -52,7 +52,7 @@ class CountdownScreen extends React.Component {
                 <Image
                     style={styles.backgroundImage}
                     source={{ uri: 'startup' }}
-                    resizeMode='contain'
+                    resizeMode='stretch'
                 />
                 <View style={styles.progressViewContainer}>
                     <AnimatedCircularProgress
