@@ -10,36 +10,51 @@
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
         <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
         <view contentMode="scaleToFill" id="iN0-l3-epB">
-            <rect key="frame" x="0.0" y="0.0" width="480" height="480"/>
+            <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
-                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="launcher_background" translatesAutoresizingMaskIntoConstraints="NO" id="czg-Rj-R22">
-                    <rect key="frame" x="0.0" y="0.0" width="480" height="480"/>
+                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="startup_top" translatesAutoresizingMaskIntoConstraints="NO" id="9tP-Qh-XUi">
+                    <rect key="frame" x="0.0" y="0.0" width="414" height="532"/>
                 </imageView>
-                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ic_launcher" translatesAutoresizingMaskIntoConstraints="NO" id="1Ed-cu-Rd3">
-                    <rect key="frame" x="205.5" y="218" width="69" height="44"/>
+                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="startup_bottom" translatesAutoresizingMaskIntoConstraints="NO" id="QKJ-ZX-u7N">
+                    <rect key="frame" x="0.0" y="750" width="414" height="146"/>
+                </imageView>
+                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="startup_circle" translatesAutoresizingMaskIntoConstraints="NO" id="qvG-Fp-T4k">
+                    <rect key="frame" x="-55" y="210.5" width="524" height="475"/>
+                </imageView>
+                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="logo" translatesAutoresizingMaskIntoConstraints="NO" id="1Ed-cu-Rd3">
+                    <rect key="frame" x="147" y="388" width="120" height="120"/>
                     <constraints>
-                        <constraint firstAttribute="width" constant="69" id="K6l-r4-nAe"/>
-                        <constraint firstAttribute="height" constant="44" id="fWp-du-LIh"/>
+                        <constraint firstAttribute="width" constant="120" id="K6l-r4-nAe"/>
+                        <constraint firstAttribute="height" constant="120" id="fWp-du-LIh"/>
                     </constraints>
                 </imageView>
             </subviews>
-            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <color key="backgroundColor" red="0.24313725490196078" green="0.21568627450980393" blue="0.31372549019607843" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
             <constraints>
-                <constraint firstItem="czg-Rj-R22" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="ODt-4y-VUc"/>
+                <constraint firstAttribute="trailing" secondItem="9tP-Qh-XUi" secondAttribute="trailing" id="1VT-7f-HgF"/>
+                <constraint firstAttribute="bottom" secondItem="QKJ-ZX-u7N" secondAttribute="bottom" id="Kp3-Vl-EYk"/>
+                <constraint firstAttribute="trailing" secondItem="QKJ-ZX-u7N" secondAttribute="trailing" id="Qx7-CR-LkW"/>
                 <constraint firstItem="1Ed-cu-Rd3" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="RGG-z0-zA2"/>
-                <constraint firstAttribute="trailing" secondItem="czg-Rj-R22" secondAttribute="trailing" id="UA3-Gz-YHO"/>
-                <constraint firstAttribute="bottom" secondItem="czg-Rj-R22" secondAttribute="bottom" id="jtj-Mn-edm"/>
+                <constraint firstItem="QKJ-ZX-u7N" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="Vwx-lT-zix"/>
+                <constraint firstItem="qvG-Fp-T4k" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="d5G-p0-Ygh"/>
+                <constraint firstItem="QKJ-ZX-u7N" firstAttribute="width" secondItem="9tP-Qh-XUi" secondAttribute="height" multiplier="375:482" id="e2X-Np-BG1"/>
+                <constraint firstItem="9tP-Qh-XUi" firstAttribute="width" secondItem="qvG-Fp-T4k" secondAttribute="height" multiplier="75:86" id="eAY-Ht-KGv"/>
+                <constraint firstAttribute="trailing" secondItem="qvG-Fp-T4k" secondAttribute="trailing" constant="-55" id="h7a-ei-Ir0"/>
+                <constraint firstItem="9tP-Qh-XUi" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="jXt-9T-Bs9"/>
                 <constraint firstItem="1Ed-cu-Rd3" firstAttribute="centerY" secondItem="iN0-l3-epB" secondAttribute="centerY" id="l0d-rN-JcY"/>
-                <constraint firstItem="czg-Rj-R22" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="vdp-UG-hRd"/>
+                <constraint firstItem="qvG-Fp-T4k" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="-55" id="qWO-8d-Z1u"/>
+                <constraint firstItem="9tP-Qh-XUi" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="sY4-cr-l0i"/>
+                <constraint firstItem="qvG-Fp-T4k" firstAttribute="centerY" secondItem="iN0-l3-epB" secondAttribute="centerY" id="xHF-FX-HEr"/>
             </constraints>
             <nil key="simulatedStatusBarMetrics"/>
-            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
-            <point key="canvasLocation" x="547.82608695652175" y="454.6875"/>
+            <point key="canvasLocation" x="403.19999999999999" y="537.48125937031489"/>
         </view>
     </objects>
     <resources>
-        <image name="ic_launcher" width="69" height="44"/>
-        <image name="launcher_background" width="54" height="54"/>
+        <image name="logo" width="120" height="120"/>
+        <image name="startup_bottom" width="375" height="146"/>
+        <image name="startup_circle" width="430" height="430"/>
+        <image name="startup_top" width="375" height="482"/>
     </resources>
 </document>
