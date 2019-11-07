@@ -41,7 +41,7 @@ class WaterIntakeIntroScreen extends React.Component {
                     <View style={styles.imageContainer}>
                         <Image
                             style={styles.image}
-                            source={{ uri: 'for_free' }}
+                            source={{ uri: 'water_tracker_intro' }}
                         />
                     </View>
                     <Text style={styles.dailyWaterIntakeText}>

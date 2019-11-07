@@ -32,7 +32,7 @@ class WorkoutPlanReadyScreen extends React.Component {
                     <View style={styles.successImageContainer}>
                         <Image
                             style={styles.successImage}
-                            source={{ uri: 'processing_success' }}
+                            source={{ uri: 'plan_ready' }}
                         />
                     </View>
                     <View style={styles.bottomContainer}>
