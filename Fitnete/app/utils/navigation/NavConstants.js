@@ -1,4 +1,6 @@
 const Route = {
+    AppIntro: 'AppIntro',
+    Startup: 'Startup',
     PrivacyPolicy: 'PrivacyPolicy',
     TermsAndConditions: 'TermsAndConditions',
     AreasOfFocus: 'AreasOfFocus',

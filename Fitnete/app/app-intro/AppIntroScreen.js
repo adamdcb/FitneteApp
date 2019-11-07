@@ -73,8 +73,8 @@ class AppIntroScreen extends React.Component {
         const { isTermsAndCondtionsCheckBoxActive, isPrivacyPolicyCheckBoxActive } = this.state;
         const isAcceptEnabled = isTermsAndCondtionsCheckBoxActive && isPrivacyPolicyCheckBoxActive;
         return (
-            <SafeAreaView style={styles.container}>
-                <Container>
+            <Container style={styles.container}>
+                <SafeAreaView style={styles.container}>
                     <View style={styles.swiper}>
                         <Swiper
                             minDistanceForAction={0.1}
@@ -151,8 +151,8 @@ class AppIntroScreen extends React.Component {
                             onPress={this.onAcceptTerms}
                         />
                     </View>
-                </Container>
-            </SafeAreaView>
+                </SafeAreaView>
+            </Container>
         );
     }
 }

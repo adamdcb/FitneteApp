@@ -43,6 +43,7 @@ import WorkoutScreen from '../../training/workout/WorkoutScreen';
 import PauseScreen from '../../training/pause/PauseScreen';
 import RestScreen from '../../training/rest/RestScreen';
 import WorkoutCompleteScreen from '../../training/workout-complete/WorkoutCompleteScreen';
+import StartupScreen from '../../app-intro/StartupScreen';
 
 const HEADER_STYLE = {
     backgroundColor: '#F3F4FA',
@@ -106,26 +107,13 @@ const WaterTrackerScreens = {
 
 const AppIntroStack = createStackNavigator(
     {
-        AppIntro: {
-            screen: AppIntroScreen,
-            navigationOptions: () => ({
-                headerBackTitle: null,
-                headerStyle: {
-                    ...HEADER_STYLE,
-                    height: 0
-                }
-            })
-        },
+        Startup: StartupScreen,
+        AppIntro: AppIntroScreen,
         PrivacyPolicy: PrivacyPolicyScreen,
         TermsAndConditions: TermsAndConditionsScreen
     },
     {
-        defaultNavigationOptions: () => ({
-            headerBackImage: <HeaderBackButton />,
-            headerStyle: HEADER_STYLE,
-            headerBackTitle: null,
-            headerTitleStyle: HEADER_TITLE_STYLE
-        })
+        headerMode: 'none'
     }
 );
 
