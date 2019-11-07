@@ -7,6 +7,7 @@ import Button from '../../utils/components/Button';
 import I18n from '../../utils/i18n/I18n';
 import ProgressIndicator from '../../utils/components/ProgressIndicator';
 import { push, Route } from '../../utils/navigation/NavigationService';
+import FNIcon from '../../utils/components/FNIcon';
 
 class DemoWorkoutScreen extends React.Component {
     constructor(props) {
@@ -67,26 +68,35 @@ class DemoWorkoutScreen extends React.Component {
                     </View>
                     <View style={styles.workoutDetailsOuterContainer}>
                         <View style={styles.detailsContainer}>
-                            <Image
-                                style={styles.statusImage}
-                                source={{ uri: 'clock' }}
-                            />
+                            <View style={styles.statusImage}>
+                                <FNIcon
+                                    name='clock'
+                                    size={18}
+                                    color="#008FA6"
+                                />
+                            </View>
                             <Text style={styles.statusTitle}>{workout.durationTitle}</Text>
                             <Text style={styles.statusDetails}>{workout.durationText}</Text>
                         </View>
                         <View style={styles.detailsContainer}>
-                            <Image
-                                style={styles.statusImage}
-                                source={{ uri: 'filter' }}
-                            />
+                            <View style={styles.statusImage}>
+                                <FNIcon
+                                    name='filters'
+                                    size={18}
+                                    color="#008FA6"
+                                />
+                            </View>
                             <Text style={styles.statusTitle}>{workout.repeatTitle}</Text>
                             <Text style={styles.statusDetails}>{workout.repeatText}</Text>
                         </View>
                         <View style={styles.detailsContainer}>
-                            <Image
-                                style={styles.statusImage}
-                                source={{ uri: 'filter' }}
-                            />
+                            <View style={styles.statusImage}>
+                                <FNIcon
+                                    name='note'
+                                    size={18}
+                                    color="#008FA6"
+                                />
+                            </View>
                             <Text style={styles.statusTitle}>{workout.gearTitle}</Text>
                             <Text style={styles.statusDetails}>{workout.gearText}</Text>
                         </View>
@@ -183,10 +193,7 @@ const styles = StyleSheet.create({
         alignItems: 'center'
     },
     statusImage: {
-        marginBottom: 4,
-        width: 16,
-        height: 16,
-        resizeMode: 'contain'
+        marginBottom: 4
     },
     statusTitle: {
         fontFamily: 'Poppins-Regular',

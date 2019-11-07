@@ -8,6 +8,7 @@ import Button from '../utils/components/Button';
 import { Route, navigate } from '../utils/navigation/NavigationService';
 import I18n from '../utils/i18n/I18n';
 import TrainingPresenter from './TrainingPresenter';
+import FNIcon from '../utils/components/FNIcon';
 
 const SLIDER_ITEM_WIDTH_COEFF = 0.8;
 const CIRCLE_SIZE_COEFF = 6;
@@ -64,17 +65,19 @@ class TrainingScreen extends React.Component {
                         <View style={styles.statusOuterContainer}>
                             <View style={styles.statusContainer}>
                                 <View style={styles.statusDurationContainer}>
-                                    <Image
-                                        style={styles.statusImage}
-                                        source={{ uri: 'clock' }}
+                                    <FNIcon
+                                        name='clock'
+                                        size={18}
+                                        color="#008FA6"
                                     />
                                     <Text style={styles.statusTitle}>{item.durationTitle}</Text>
                                     <Text style={styles.statusDetails}>{item.durationText}</Text>
                                 </View>
                                 <View style={styles.statusProgressContainer}>
-                                    <Image
-                                        style={styles.statusImage}
-                                        source={{ uri: 'filter' }}
+                                    <FNIcon
+                                        name='filters'
+                                        size={18}
+                                        color="#008FA6"
                                     />
                                     <Text style={styles.statusTitle}>{item.progressTitle}</Text>
                                     <Text style={styles.statusDetails}>{item.progressText}</Text>

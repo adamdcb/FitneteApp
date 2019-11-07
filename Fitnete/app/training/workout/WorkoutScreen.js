@@ -11,6 +11,7 @@ import I18n from '../../utils/i18n/I18n';
 import CountdownProgressBar from '../../utils/components/CountdownProgressBar';
 import WorkoutPresenter from './WorkoutPresenter';
 import { push, Route } from '../../utils/navigation/NavigationService';
+import FNIcon from '../../utils/components/FNIcon';
 
 class WorkoutScreen extends React.Component {
     constructor(props) {
@@ -112,10 +113,13 @@ class WorkoutScreen extends React.Component {
                         angle={0}
                     >
                         <View style={styles.infoContainer}>
-                            <Image
-                                style={styles.infoImage}
-                                source={{ uri: 'filter' }}
-                            />
+                            <View style={styles.infoImage}>
+                                <FNIcon
+                                    name='filters'
+                                    size={18}
+                                    color="#008FA6"
+                                />
+                            </View>
                             <Text style={styles.infoTitle}>{repeatTitle}</Text>
                             <Text style={styles.infoDetails}>{repeatText}</Text>
                         </View>
@@ -202,10 +206,7 @@ const styles = StyleSheet.create({
         alignItems: 'center'
     },
     infoImage: {
-        marginRight: 4,
-        width: 16,
-        height: 16,
-        resizeMode: 'contain'
+        marginRight: 4
     },
     infoTitle: {
         marginRight: 4,

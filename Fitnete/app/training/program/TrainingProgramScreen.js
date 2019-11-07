@@ -7,6 +7,7 @@ import I18n from '../../utils/i18n/I18n';
 import Button from '../../utils/components/Button';
 import ButtonText from '../../utils/components/ButtonText';
 import { Route, navigate } from '../../utils/navigation/NavigationService';
+import FNIcon from '../../utils/components/FNIcon';
 
 const SLIDER_ITEM_WIDTH_COEFF = 0.8;
 
@@ -48,26 +49,33 @@ class TrainingProgramScreen extends React.Component {
                 <Text style={styles.dayProgramDescription} numberOfLines={3}>{item.description}</Text>
                 <View style={styles.dayProgramOuterContainer}>
                     <View style={styles.dayProgramContainer}>
-                        <Image
-                            style={styles.dayStatusImage}
-                            source={{ uri: 'clock' }}
+                        <FNIcon
+                            name='clock'
+                            size={18}
+                            color="#008FA6"
                         />
                         <Text style={styles.dayStatusTitle}>{item.durationTitle}</Text>
                         <Text style={styles.dayStatusDetails}>{item.durationText}</Text>
                     </View>
                     <View style={styles.dayProgramContainer}>
-                        <Image
-                            style={styles.dayStatusImage}
-                            source={{ uri: 'filter' }}
-                        />
+                        <View style={styles.dayStatusImage}>
+                            <FNIcon
+                                name='filters'
+                                size={18}
+                                color="#008FA6"
+                            />
+                        </View>
                         <Text style={styles.dayStatusTitle}>{item.repeatTitle}</Text>
                         <Text style={styles.dayStatusDetails}>{item.repeatText}</Text>
                     </View>
                     <View style={styles.dayProgramContainer}>
-                        <Image
-                            style={styles.dayStatusImage}
-                            source={{ uri: 'filter' }}
-                        />
+                        <View style={styles.dayStatusImage}>
+                            <FNIcon
+                                name='note'
+                                size={18}
+                                color="#008FA6"
+                            />
+                        </View>
                         <Text style={styles.dayStatusTitle}>{item.gearTitle}</Text>
                         <Text style={styles.dayStatusDetails}>{item.gearText}</Text>
                     </View>
@@ -113,17 +121,23 @@ class TrainingProgramScreen extends React.Component {
                             <Text style={styles.title}>{program.title}</Text>
                             <View style={styles.statusOuterContainer}>
                                 <View style={styles.statusContainer}>
-                                    <Image
-                                        style={styles.statusImage}
-                                        source={{ uri: 'clock' }}
-                                    />
+                                    <View style={styles.statusImage}>
+                                        <FNIcon
+                                            name='clock'
+                                            size={18}
+                                            color="#08C757"
+                                        />
+                                    </View>
                                     <Text style={styles.statusDetails}>{program.durationText}</Text>
                                 </View>
                                 <View style={styles.statusContainer}>
-                                    <Image
-                                        style={styles.statusImage}
-                                        source={{ uri: 'filter' }}
-                                    />
+                                    <View style={styles.statusImage}>
+                                        <FNIcon
+                                            name='filters'
+                                            size={18}
+                                            color="#08C757"
+                                        />
+                                    </View>
                                     <Text style={styles.statusDetails}>{program.progressText}</Text>
                                 </View>
                             </View>
@@ -200,10 +214,7 @@ const styles = StyleSheet.create({
         flexDirection: 'row'
     },
     statusImage: {
-        marginRight: 4,
-        width: 16,
-        height: 16,
-        resizeMode: 'contain'
+        marginRight: 4
     },
     statusDetails: {
         fontFamily: 'Poppins-SemiBold',
@@ -261,10 +272,7 @@ const styles = StyleSheet.create({
         alignItems: 'center'
     },
     dayStatusImage: {
-        marginBottom: 4,
-        width: 16,
-        height: 16,
-        resizeMode: 'contain'
+        marginBottom: 4
     },
     dayStatusTitle: {
         fontFamily: 'Poppins-Regular',
