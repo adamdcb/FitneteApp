@@ -347,6 +347,7 @@
 					};
 					13B07F861A680F5B00A75B9A = {
 						DevelopmentTeam = MU6C2DGFBK;
+						LastSwiftMigration = 1100;
 					};
 					2D02E47A1E0B4A5D006451C7 = {
 						CreatedOnToolsVersion = 8.2.1;
@@ -737,6 +738,7 @@
 			baseConfigurationReference = A272A220F2C879EAD3A2F08B /* Pods-Fitnete.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				CURRENT_PROJECT_VERSION = 12;
 				DEAD_CODE_STRIPPING = NO;
 				DEVELOPMENT_TEAM = MU6C2DGFBK;
@@ -751,6 +753,9 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.rierra.fitnete;
 				PRODUCT_NAME = Fitnete;
+				SWIFT_OBJC_BRIDGING_HEADER = "Components/Fitnete-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
 				VERSIONING_SYSTEM = "apple-generic";
 			};
 			name = Debug;
@@ -760,6 +765,7 @@
 			baseConfigurationReference = 8527D5118183311F5AFF062D /* Pods-Fitnete.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				CURRENT_PROJECT_VERSION = 12;
 				DEVELOPMENT_TEAM = MU6C2DGFBK;
 				INFOPLIST_FILE = Fitnete/Info.plist;
@@ -773,6 +779,8 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.rierra.fitnete;
 				PRODUCT_NAME = Fitnete;
+				SWIFT_OBJC_BRIDGING_HEADER = "Components/Fitnete-Bridging-Header.h";
+				SWIFT_VERSION = 5.0;
 				VERSIONING_SYSTEM = "apple-generic";
 			};
 			name = Release;

@@ -13,14 +13,8 @@
             <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
-                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="startup_top" translatesAutoresizingMaskIntoConstraints="NO" id="9tP-Qh-XUi">
-                    <rect key="frame" x="0.0" y="0.0" width="414" height="532"/>
-                </imageView>
-                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="startup_bottom" translatesAutoresizingMaskIntoConstraints="NO" id="QKJ-ZX-u7N">
-                    <rect key="frame" x="0.0" y="750" width="414" height="146"/>
-                </imageView>
-                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="startup_circle" translatesAutoresizingMaskIntoConstraints="NO" id="qvG-Fp-T4k">
-                    <rect key="frame" x="-55" y="210.5" width="524" height="475"/>
+                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="startup" translatesAutoresizingMaskIntoConstraints="NO" id="XMI-N4-DA1">
+                    <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                 </imageView>
                 <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="logo" translatesAutoresizingMaskIntoConstraints="NO" id="1Ed-cu-Rd3">
                     <rect key="frame" x="147" y="388" width="120" height="120"/>
@@ -32,29 +26,20 @@
             </subviews>
             <color key="backgroundColor" red="0.24313725490196078" green="0.21568627450980393" blue="0.31372549019607843" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
             <constraints>
-                <constraint firstAttribute="trailing" secondItem="9tP-Qh-XUi" secondAttribute="trailing" id="1VT-7f-HgF"/>
-                <constraint firstAttribute="bottom" secondItem="QKJ-ZX-u7N" secondAttribute="bottom" id="Kp3-Vl-EYk"/>
-                <constraint firstAttribute="trailing" secondItem="QKJ-ZX-u7N" secondAttribute="trailing" id="Qx7-CR-LkW"/>
+                <constraint firstItem="XMI-N4-DA1" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="Alh-2z-zne"/>
+                <constraint firstAttribute="trailing" secondItem="XMI-N4-DA1" secondAttribute="trailing" id="J5g-ut-uIj"/>
                 <constraint firstItem="1Ed-cu-Rd3" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="RGG-z0-zA2"/>
-                <constraint firstItem="QKJ-ZX-u7N" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="Vwx-lT-zix"/>
-                <constraint firstItem="qvG-Fp-T4k" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="d5G-p0-Ygh"/>
-                <constraint firstItem="QKJ-ZX-u7N" firstAttribute="width" secondItem="9tP-Qh-XUi" secondAttribute="height" multiplier="375:482" id="e2X-Np-BG1"/>
-                <constraint firstItem="9tP-Qh-XUi" firstAttribute="width" secondItem="qvG-Fp-T4k" secondAttribute="height" multiplier="75:86" id="eAY-Ht-KGv"/>
-                <constraint firstAttribute="trailing" secondItem="qvG-Fp-T4k" secondAttribute="trailing" constant="-55" id="h7a-ei-Ir0"/>
-                <constraint firstItem="9tP-Qh-XUi" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="jXt-9T-Bs9"/>
+                <constraint firstItem="XMI-N4-DA1" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="VhC-VJ-HNG"/>
                 <constraint firstItem="1Ed-cu-Rd3" firstAttribute="centerY" secondItem="iN0-l3-epB" secondAttribute="centerY" id="l0d-rN-JcY"/>
-                <constraint firstItem="qvG-Fp-T4k" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="-55" id="qWO-8d-Z1u"/>
-                <constraint firstItem="9tP-Qh-XUi" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="sY4-cr-l0i"/>
-                <constraint firstItem="qvG-Fp-T4k" firstAttribute="centerY" secondItem="iN0-l3-epB" secondAttribute="centerY" id="xHF-FX-HEr"/>
+                <constraint firstItem="XMI-N4-DA1" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="qAZ-Iq-0CV"/>
+                <constraint firstItem="XMI-N4-DA1" firstAttribute="centerY" secondItem="iN0-l3-epB" secondAttribute="centerY" id="uHu-GB-Td0"/>
             </constraints>
             <nil key="simulatedStatusBarMetrics"/>
-            <point key="canvasLocation" x="403.19999999999999" y="537.48125937031489"/>
+            <point key="canvasLocation" x="402.89855072463769" y="537.05357142857144"/>
         </view>
     </objects>
     <resources>
         <image name="logo" width="120" height="120"/>
-        <image name="startup_bottom" width="375" height="146"/>
-        <image name="startup_circle" width="430" height="430"/>
-        <image name="startup_top" width="375" height="482"/>
+        <image name="startup" width="375" height="667"/>
     </resources>
 </document>

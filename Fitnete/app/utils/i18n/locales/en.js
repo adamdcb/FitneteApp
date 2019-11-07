@@ -3,6 +3,10 @@ export default {
     termsAndConditionsTitle: 'Terms and Conditions',
     save: 'Save',
     later: 'Later',
+    startup: {
+        welcome: 'Welcome to',
+        start: 'Start!'
+    },
     appIntro: {
         accept: 'accept',
         acceptTermsText1: 'Check this box to indicate that you have read and agree to the',
