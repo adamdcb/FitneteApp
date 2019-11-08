@@ -1,4 +1,4 @@
-import React, { Fragment } from 'react';
+import React from 'react';
 import {
   StatusBar,
 } from 'react-native';
@@ -31,12 +31,12 @@ class App extends React.PureComponent {
 
   render() {
     return (
-      <Fragment>
+      <>
         <StatusBar barStyle="dark-content" />
         <AppContainer
           ref={(nav) => setTopLevelNavigator(nav)}
         />
-      </Fragment>
+      </>
     );
   }
 }
