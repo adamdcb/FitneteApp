@@ -244,7 +244,6 @@ const MoreStack = createStackNavigator(
 const MainAppStack = createBottomTabNavigator(
     {
         Training: TrainingStack,
-        Food: FoodStack,
         Water: WaterStack,
         More: MoreStack
     },

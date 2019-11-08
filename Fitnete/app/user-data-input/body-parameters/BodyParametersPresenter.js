@@ -188,23 +188,7 @@ export default class BodyParametersPresenter {
                     this._dataWithPadding(Array.from({ length: 361 }, (v, i) => i + 40), -1)
                 ]
             }]
-        },
-        {
-            id: 'food',
-            type: 'food',
-            datasets: [{
-                defaultValue: 'vegetarian',
-                data: [
-                    this._dataWithPadding(
-                        [
-                            'gluten_free',
-                            'vegetarian',
-                            'vegan',
-                            'balanced_diet'
-                        ], '')
-                ]
-            }
-            ]
-        }];
+        }
+        ];
     }
 }
