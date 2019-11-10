@@ -32,7 +32,7 @@ export default class AppIntroPresenter {
 
     async didAcceptTerms() {
         const data = {
-            didAcceptTerms: true
+            termsAccepted: true
         };
         const success = await this.dataSource.setUser(data);
         if (success) {

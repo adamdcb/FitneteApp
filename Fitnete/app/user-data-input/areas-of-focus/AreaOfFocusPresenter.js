@@ -11,7 +11,7 @@ export default class AreaOfFocusPresenter {
     async loadData() {
         const data = this._getDefaultData();
         const user = await this.dataSource.getUser();
-        const gender = ((user || {}).profile || {}).gender;
+        const { gender } = user;
         if (gender) {
             data.selectedGroupIndex = data.groups.findIndex(g => g.type === gender)
         } else {
@@ -27,9 +27,7 @@ export default class AreaOfFocusPresenter {
         }
         this.data.selectedGroupIndex = index;
         const data = {
-            profile: {
-                gender: this.data.groups[index].type
-            }
+            gender: this.data.groups[index].type
         };
         this.view.setTabViewData(this.data);
         this.dataSource.setUser(data);
@@ -41,9 +39,7 @@ export default class AreaOfFocusPresenter {
 
     async _init(data) {
         const initialData = {
-            profile: {
-                gender: data.groups[data.selectedGroupIndex].type
-            }
+            gender: data.groups[data.selectedGroupIndex].type
         };
         this.dataSource.setUser(initialData);
     }

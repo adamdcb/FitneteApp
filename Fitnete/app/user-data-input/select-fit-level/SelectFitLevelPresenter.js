@@ -11,7 +11,7 @@ export default class SelectFitLevelPresenter {
     async loadData() {
         const data = this._getDefaultData();
         const user = await this.dataSource.getUser();
-        const level = ((user || {}).fitness || {}).level;
+        const level = user.fitnessLevel;
         if (level) {
             data.selectedLevelIndex = level
         } else {
@@ -27,9 +27,7 @@ export default class SelectFitLevelPresenter {
         }
         this.data.selectedLevelIndex = levelIndex;
         const data = {
-            fitness: {
-                level: levelIndex
-            }
+            fitnessLevel: levelIndex
         };
         this.view.setFitnessLevelData(this.data.levels[this.data.selectedLevelIndex], this.data.levels.length, this.data.selectedLevelIndex);
         this.dataSource.setUser(data);
@@ -41,9 +39,7 @@ export default class SelectFitLevelPresenter {
 
     async _init(data) {
         const initialData = {
-            fitness: {
-                level: data.selectedLevelIndex
-            }
+            fitnessLevel: data.selectedLevelIndex
         };
         this.dataSource.setUser(initialData);
     }

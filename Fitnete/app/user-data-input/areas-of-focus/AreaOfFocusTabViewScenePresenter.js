@@ -12,7 +12,7 @@ export default class AreaOfFocusTabViewScenePresenter {
     async loadData() {
         const data = this._getDefaultData();
         const user = await this.dataSource.getUser();
-        const areasOfFocus = ((user || {}).fitness || {}).areasOfFocus;
+        const areasOfFocus = user.areasOfFocus;
         if (areasOfFocus) {
             const areas = data[this.type];
             areas.forEach(a => {
@@ -144,9 +144,7 @@ export default class AreaOfFocusTabViewScenePresenter {
         const area = areas[index];
         area.selected = !area.selected;
         const data = {
-            fitness: {
-                areasOfFocus: areas.filter(a => a.selected).map(a => a.type).join(',')
-            }
+            areasOfFocus: areas.filter(a => a.selected).map(a => a.type)
         };
         const success = await this.dataSource.setUser(data);
         if (success) {

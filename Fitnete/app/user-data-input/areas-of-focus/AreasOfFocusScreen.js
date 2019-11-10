@@ -9,7 +9,6 @@ import Button from '../../utils/components/Button';
 import AreaOfFocusPresenter from './AreaOfFocusPresenter';
 import { push, Route } from '../../utils/navigation/NavigationService';
 import AreasOfFocusTabViewScene from './AreasOfFocusTabViewScene';
-import UserDataSource from '../../data/UserDataSource';
 
 class AreasOfFocusScreen extends React.Component {
     constructor(props) {
@@ -25,9 +24,6 @@ class AreasOfFocusScreen extends React.Component {
 
     async componentDidMount() {
         this.presenter.loadData();
-        const userDS = new UserDataSource();
-        const user = await userDS.getUser();
-        console.log(user);
     }
 
     componentWillUnmount() {

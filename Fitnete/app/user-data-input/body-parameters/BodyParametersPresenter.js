@@ -13,14 +13,9 @@ export default class BodyParametersPresenter {
 
     async loadData() {
         const user = await this.dataSource.getUser();
-        this.unit = ((user || {}).settings || {}).unit;
-        if (!this.unit) {
-            this.unit = 'metric'
-            await this._setUnit(this.unit);
-        }
-        const bodyParams = ((user || {}).fitness || {}).bodyParams || {};
+        this.unit = user.unit;
         this.data = this._getData();
-        this.uiData = this._getUIData(bodyParams);
+        this.uiData = this._getUIData(user);
         this.view.setData(this.uiData);
     }
 
@@ -42,21 +37,14 @@ export default class BodyParametersPresenter {
         this.unit = value;
         await this._setUnit(value);
         const user = await this.dataSource.getUser();
-        const bodyParams = ((user || {}).fitness || {}).bodyParams || {};
-        return this._getUIData(bodyParams);
+        return this._getUIData(user);
     }
 
     async _saveBodyParam(id, value, displayValue, valueComponents) {
         const param = {};
-        param[id] = {
-            value
-        };
+        param[id] = value;
         const data = {
-            fitness: {
-                bodyParams: {
-                    ...param
-                }
-            }
+            ...param
         }
         await this.dataSource.setUser(data);
         return this.uiData.map((item) => {
@@ -79,25 +67,23 @@ export default class BodyParametersPresenter {
 
     async _setUnit(unit) {
         await this.dataSource.setUser({
-            settings: {
-                unit
-            }
+            unit
         });
         return true;
     }
 
-    _getUIData(bodyParams) {
+    _getUIData(user) {
         return this.data.map((item) => {
-            const param = bodyParams[item.id] || {};
+            const paramValue = user[item.id];
             const dataset = item.datasets.find(ds => ds.unit === this.unit) || item.datasets[0];
             const bParam = BodyParameterFactory.createParameter(item.type);
-            const valueObj = bParam.getValueObj({ value: param.value, defaultValue: dataset.defaultValue, unit: this.unit });
+            const valueObj = bParam.getValueObj({ value: paramValue, defaultValue: dataset.defaultValue, unit: this.unit });
             const value = valueObj.value;
             return {
                 id: item.id,
                 type: item.type,
                 title: I18n.t(`bodyParameters.${item.id}`),
-                iconName: item.id,
+                iconName: item.id.replace(/([a-zA-Z])(?=[A-Z])/g, '$1_').toLowerCase(),
                 datasets: dataset.data.map(d => d.map(v => bParam.getValueStr(v))),
                 labels: dataset.dataLabels,
                 displayValue: bParam.getFormattedValue(value, this.unit),
@@ -170,7 +156,7 @@ export default class BodyParametersPresenter {
             }]
         },
         {
-            id: 'target_weight',
+            id: 'targetWeight',
             type: 'weight',
             datasets: [{
                 unit: 'metric',
