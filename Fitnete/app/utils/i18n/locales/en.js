@@ -26,7 +26,7 @@ export default {
         title: 'Daily Water Intake',
         totalWaterIntaker: 'Total water intake',
         completedGoals: 'Completed goals',
-        sliderInfo: 'Move this handle to set value, or tap for input',
+        sliderInfo: 'Move this handle to set a custom water amount you drank, then tap to input. Or, simply tap the water bottle to enter %{default_amount}',
         goToWorkouts: 'Go to workouts'
     },
     dataCollection: {
@@ -67,7 +67,7 @@ export default {
         description: 'Enter your body parameters to get your personalised workout & meal plan',
         height: 'Your height',
         weight: 'Your current weight',
-        target_weight: 'Target weight',
+        targetWeight: 'Target weight',
         food: 'Food preferences',
         unit: 'Units',
         add: 'Add',

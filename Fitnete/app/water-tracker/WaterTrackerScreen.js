@@ -7,24 +7,36 @@ import { HEADER_STYLE, navigate, Route } from '../utils/navigation/NavigationSer
 import I18n from '../utils/i18n/I18n';
 import Container from '../utils/components/Container';
 import FNIcon from '../utils/components/FNIcon';
-
-const SLIDER_STEP_SIZE = 100;
+import WaterTrackerPresenter from './WaterTrackerPresenter';
 
 class WaterTrackerScreen extends React.Component {
     constructor(props) {
         super(props);
-        // this.presenter = new AppIntroPresenter(this);
-        this.state = {
-            value: 0,
-            minimumValue: 0,
-            maximumValue: 2500
-        };
+        this.state = {};
+        this.presenter = new WaterTrackerPresenter(this);
         this.onSliderValueChange = this.onSliderValueChange.bind(this);
         this.goToWorkouts = this.goToWorkouts.bind(this);
+        this.drinkWater = this.drinkWater.bind(this);
+    }
+
+    componentDidMount() {
+        this.presenter.loadData();
+    }
+
+    componentWillUnmount() {
+        this.presenter.unmountView();
+    }
+
+    setData(data) {
+        this.setState({ ...data });
     }
 
     onSliderValueChange(value) {
-        this.setState({ value });
+        this.presenter.updateDrinkSize(value);
+    }
+
+    drinkWater() {
+        this.presenter.drinkWater();
     }
 
     goToWorkouts() {
@@ -32,7 +44,12 @@ class WaterTrackerScreen extends React.Component {
     }
 
     render() {
-        const { minimumValue, maximumValue } = this.state;
+        const { drinkSize = 0,
+            drinkSizeText = '',
+            drinkStepSize = 0,
+            totalWaterIntake = 0,
+            customDrinkSizeBounds = {}
+        } = this.state;
         return (
             <SafeAreaView style={styles.container}>
                 <Container
@@ -45,16 +62,20 @@ class WaterTrackerScreen extends React.Component {
                     <View style={styles.waterIntakeContainer}>
                         <View>
                             <Text style={[styles.waterIntakeValue, styles.leftText]}>
-                                1.5 L
+                                {totalWaterIntake}
                             </Text>
                             <Text style={[styles.waterIntakeDescription, styles.leftText]}>
                                 {I18n.t('waterTracker.totalWaterIntaker')}
                             </Text>
                         </View>
-                        <Image
-                            style={styles.waterIntakeImage}
-                            source={{ uri: 'daily_water' }}
-                        />
+                        <TouchableOpacity
+                            onPress={this.drinkWater}
+                        >
+                            <Image
+                                style={styles.waterIntakeImage}
+                                source={{ uri: 'daily_water' }}
+                            />
+                        </TouchableOpacity>
                         <View>
                             <Text style={[styles.waterIntakeValue, styles.rightText]}>
                                 2
@@ -78,24 +99,25 @@ class WaterTrackerScreen extends React.Component {
                                 pointerEvents="none"
                             />
                         </View>
-
                         <Slider
                             style={styles.slider}
                             trackStyle={styles.sliderTrack}
-                            minimumValue={minimumValue}
-                            maximumValue={maximumValue}
-                            step={SLIDER_STEP_SIZE}
-                            value={this.state.value}
+                            minimumValue={customDrinkSizeBounds.min}
+                            maximumValue={customDrinkSizeBounds.max}
+                            step={drinkStepSize}
+                            value={drinkSize}
                             onValueChange={this.onSliderValueChange}
                             minimumTrackTintColor={'transparent'}
                             customMinimumTrack={(
-                                <LinearGradient
-                                    style={styles.sliderCustomMinimumTrack}
-                                    colors={['#09D4E3', '#13B6D1']}
-                                    useAngle
-                                    angle={135}
-                                    angleCenter={{ x: 0.5, y: 0.5 }}
-                                />
+                                <View style={styles.sliderCustomMinimumTrackContainer}>
+                                    <LinearGradient
+                                        style={styles.sliderCustomMinimumTrack}
+                                        colors={['#09D4E3', '#13B6D1']}
+                                        useAngle
+                                        angle={135}
+                                        angleCenter={{ x: 0.5, y: 0.5 }}
+                                    />
+                                </View>
                             )}
                             maximumTrackTintColor={'transparent'}
                             customThumb={(
@@ -123,9 +145,8 @@ class WaterTrackerScreen extends React.Component {
                             </View>
                         </View>
                     </View>
-                    <Text>{this.state.value}</Text>
                     <Text style={styles.sliderInfo} >
-                        {I18n.t('waterTracker.sliderInfo')}
+                        {I18n.t('waterTracker.sliderInfo', { default_amount: drinkSizeText })}
                     </Text>
                     <View style={styles.bottomContainer}>
                         <View style={styles.goToWorkoutsContainer}>
@@ -180,7 +201,7 @@ const styles = StyleSheet.create({
         fontWeight: "bold"
     },
     waterIntakeDescription: {
-        width: 69,
+        maxWidth: 72,
         color: '#B4B3B6',
         fontFamily: 'Poppins-Regular',
         fontSize: 12
@@ -243,10 +264,14 @@ const styles = StyleSheet.create({
         marginLeft: SLIDER_PADDING,
         height: SLIDER_HEIGHT
     },
+    sliderCustomMinimumTrackContainer: {
+        flex: 1,
+        borderRadius: 8,
+        overflow: 'hidden'
+    },
     sliderCustomMinimumTrack: {
         flex: 1,
-        marginRight: SLIDER_PADDING,
-        borderRadius: 8
+        marginRight: SLIDER_PADDING
     },
     sliderThumbOuterContainer: {
         height: SLIDER_HEIGHT * 2.25,
