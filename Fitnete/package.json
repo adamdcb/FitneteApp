@@ -34,7 +34,8 @@
     "react-native-web-swiper": "2.0.5",
     "react-navigation": "4.0.10",
     "react-navigation-stack": "1.9.4",
-    "react-navigation-tabs": "2.5.6"
+    "react-navigation-tabs": "2.5.6",
+    "realm": "3.3.0"
   },
   "devDependencies": {
     "@babel/core": "7.6.2",

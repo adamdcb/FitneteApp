@@ -165,6 +165,7 @@ android {
 }
 
 dependencies {
+    implementation project(':realm')
     implementation fileTree(dir: "libs", include: ["*.jar"])
     implementation "com.facebook.react:react-native:+"  // From node_modules
     implementation "com.zlc.glide:webpdecoder:1.6.4.10.0"
