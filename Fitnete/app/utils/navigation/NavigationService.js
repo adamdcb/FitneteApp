@@ -102,7 +102,10 @@ const UserDataInputScreens = {
 }
 
 const WaterTrackerScreens = {
-    WaterTracker: WaterTrackerScreen
+    WaterTracker: {
+        screen: WaterTrackerScreen,
+        params: { showWorkoutsLink: true }
+    }
 };
 
 const AppIntroStack = createStackNavigator(
@@ -215,7 +218,10 @@ const FoodStack = createStackNavigator(
 
 const WaterStack = createStackNavigator(
     {
-        WaterTracker: WaterTrackerScreen
+        WaterTracker: {
+            screen: WaterTrackerScreen,
+            params: { showWorkoutsLink: false }
+        }
     },
     {
         defaultNavigationOptions: () => ({

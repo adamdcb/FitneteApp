@@ -1,10 +1,12 @@
 import User from './schema/User';
 import WaterIntake from './schema/WaterIntake';
+import WaterIntakeGoal from './schema/WaterIntakeGoal';
 
-const DB_SCHEMA_VERSION = 1;
+const DB_SCHEMA_VERSION = 2;
 const DB_SCHEMA = [
     User,
-    WaterIntake
+    WaterIntake,
+    WaterIntakeGoal
 ];
 let database = null;
 

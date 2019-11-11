@@ -48,8 +48,10 @@ class WaterTrackerScreen extends React.Component {
             drinkSizeText = '',
             drinkStepSize = 0,
             totalWaterIntake = 0,
-            customDrinkSizeBounds = {}
+            customDrinkSizeBounds = {},
+            goals = 0
         } = this.state;
+        const { showWorkoutsLink } = this.props.navigation.state.params;
         return (
             <SafeAreaView style={styles.container}>
                 <Container
@@ -78,7 +80,7 @@ class WaterTrackerScreen extends React.Component {
                         </TouchableOpacity>
                         <View>
                             <Text style={[styles.waterIntakeValue, styles.rightText]}>
-                                2
+                                {goals}
                             </Text>
                             <Text style={[styles.waterIntakeDescription, styles.rightText]}>
                                 {I18n.t('waterTracker.completedGoals')}
@@ -148,24 +150,27 @@ class WaterTrackerScreen extends React.Component {
                     <Text style={styles.sliderInfo} >
                         {I18n.t('waterTracker.sliderInfo', { default_amount: drinkSizeText })}
                     </Text>
-                    <View style={styles.bottomContainer}>
-                        <View style={styles.goToWorkoutsContainer}>
-                            <View style={styles.divider} />
-                            <TouchableOpacity
-                                style={styles.goToWorkoutsLinkContainer}
-                                onPress={this.goToWorkouts}
-                            >
-                                <Text style={styles.goToWorkoutsLink}>
-                                    {I18n.t('waterTracker.goToWorkouts')}
-                                </Text>
-                                <FNIcon
-                                    name="arrow-right"
-                                    color="#0F7788"
-                                    size={11}
-                                />
-                            </TouchableOpacity>
-                        </View>
-                    </View>
+                    {
+                        showWorkoutsLink ?
+                            <View style={styles.bottomContainer}>
+                                <View style={styles.goToWorkoutsContainer}>
+                                    <View style={styles.divider} />
+                                    <TouchableOpacity
+                                        style={styles.goToWorkoutsLinkContainer}
+                                        onPress={this.goToWorkouts}
+                                    >
+                                        <Text style={styles.goToWorkoutsLink}>
+                                            {I18n.t('waterTracker.goToWorkouts')}
+                                        </Text>
+                                        <FNIcon
+                                            name="arrow-right"
+                                            color="#0F7788"
+                                            size={11}
+                                        />
+                                    </TouchableOpacity>
+                                </View>
+                            </View> : null
+                    }
                 </Container>
             </SafeAreaView>
         );
@@ -188,7 +193,6 @@ const styles = StyleSheet.create({
         textAlign: 'center'
     },
     waterIntakeContainer: {
-        flex: 1,
         flexDirection: 'row',
         justifyContent: 'space-between',
         paddingVertical: 24
@@ -207,9 +211,8 @@ const styles = StyleSheet.create({
         fontSize: 12
     },
     waterIntakeImage: {
-        flex: 1,
-        width: null,
-        height: null,
+        width: 183,
+        height: 183,
         aspectRatio: 516 / 456,
         resizeMode: 'contain'
     },
@@ -324,7 +327,7 @@ const styles = StyleSheet.create({
         backgroundColor: '#00000016'
     },
     sliderInfo: {
-        marginTop: 16,
+        marginVertical: 16,
         color: '#4F4C57',
         fontFamily: 'Poppins-Regular',
         fontSize: 15,
