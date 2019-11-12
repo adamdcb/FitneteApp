@@ -33,7 +33,7 @@ import ContinueForFreeScreen from '../../user-data-input/no-plan-purchased/Conti
 import WaterIntakeIntroScreen from '../../user-data-input/no-plan-purchased/WaterIntakeIntroScreen';
 import TrainingScreen from '../../training/TrainingScreen';
 import FoodScreen from '../../food/FoodScreen';
-import MoreScreen from '../../more/MoreScreen';
+import UserProfileScreen from '../../user-profile/UserProfileScreen';
 import DemoWorkoutIntroScreen from '../../training/demo/DemoWorkoutIntroScreen';
 import DemoWorkoutScreen from '../../training/demo/DemoWorkoutScreen';
 import DemoWorkoutDoneScreen from '../../training/demo/DemoWorkoutDoneScreen';
@@ -233,9 +233,9 @@ const WaterStack = createStackNavigator(
     }
 );
 
-const MoreStack = createStackNavigator(
+const UserProfileStack = createStackNavigator(
     {
-        More: MoreScreen
+        UserProfile: UserProfileScreen
     },
     {
         defaultNavigationOptions: () => ({
@@ -251,7 +251,7 @@ const MainAppStack = createBottomTabNavigator(
     {
         Training: TrainingStack,
         Water: WaterStack,
-        More: MoreStack
+        UserProfile: UserProfileStack
     },
     {
         defaultNavigationOptions: ({ navigation }) => ({
