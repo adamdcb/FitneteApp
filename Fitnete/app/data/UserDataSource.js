@@ -1,37 +1,43 @@
 import FNDatabase from './local-storage/FNDatabase';
+import AsyncWrapper from '../utils/utils/AsyncWrapper';
 
 export default class UserDataSource {
 
-    async getUser() {
-        const db = await this._getDatabase();
-        const user = db.objectForPrimaryKey('User', 1) || null;
-        return {
-            id: user.id,
-            termsAccepted: user.termsAccepted,
-            gender: user.gender,
-            height: user.height,
-            weight: user.weight,
-            targetWeight: user.targetWeight,
-            fitnessLevel: user.fitnessLevel,
-            areasOfFocus: user.areasOfFocus.map(area => area),
-            unit: user.unit
-        };
+    getUser() {
+        return AsyncWrapper.makeAsync(async (resolve, reject) => {
+            const db = await this._getDatabase();
+            const user = db.objectForPrimaryKey('User', 1);
+            const userObj = user ? {
+                id: user.id,
+                termsAccepted: user.termsAccepted,
+                gender: user.gender,
+                height: user.height,
+                weight: user.weight,
+                targetWeight: user.targetWeight,
+                fitnessLevel: user.fitnessLevel,
+                areasOfFocus: user.areasOfFocus.map(area => area),
+                unit: user.unit
+            } : null;
+            resolve(userObj);
+        });
     }
 
-    async setUser(userData) {
-        const db = await this._getDatabase();
-        try {
-            db.write(() => {
-                db.create('User', {
-                    id: 1,
-                    ...userData
-                }, true);
-            });
-            return true;
-        } catch (e) {
-            console.log('setUser()', e);
-            return false;
-        }
+    setUser(userData) {
+        return AsyncWrapper.makeAsync(async (resolve, reject) => {
+            const db = await this._getDatabase();
+            try {
+                db.write(() => {
+                    db.create('User', {
+                        id: 1,
+                        ...userData
+                    }, true);
+                });
+                resolve(true);
+            } catch (e) {
+                console.log('setUser()', e);
+                resolve(false);
+            }
+        });
     }
 
     async _getDatabase() {

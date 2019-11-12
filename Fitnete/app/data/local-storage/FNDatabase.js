@@ -14,8 +14,8 @@ export default {
     async open() {
         if (!database) {
             database = await this._openDB();
+            console.log('Realm path: ', database.path);
         }
-        console.log('Realm path: ', database ? database.path : 'NULL');
         return database;
     },
 

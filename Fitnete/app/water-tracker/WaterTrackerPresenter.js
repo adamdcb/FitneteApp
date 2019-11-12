@@ -58,7 +58,7 @@ export default class WaterTrackerPresenter {
             totalWaterIntake: Volume.getFormattedValue(this.totalWaterIntakeAmount, this.unit)
         }
         await this.waterIntakeDataSource.saveWaterIntake(this.drinkSize);
-        if (this.totalWaterIntakeAmount === 0) {
+        if (Math.trunc(this.totalWaterIntakeAmount * 1000) === 0) {
             const isGoalAchieved = await this.waterIntakeDataSource.isGoalAchieved(today.start);
             if (!isGoalAchieved) {
                 this.waterIntakeDataSource.saveWaterIntakeGoal(today.start);
