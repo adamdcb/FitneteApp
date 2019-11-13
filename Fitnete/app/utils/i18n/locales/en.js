@@ -82,6 +82,19 @@ export default {
         metric: 'CM & KG',
         imperial: 'FT,IN & LBS'
     },
+    areasOfFocus: {
+        arms_and_chest: 'Arms and Chest',
+        abdominals: 'Abdominals',
+        arms_and_back: 'Arms & Back',
+        legs: 'Legs',
+        legs_and_glutes: 'Legs and Glutes'
+    },
+    fitnessLevel: {
+        level1: 'Beginner',
+        level2: 'Intermediate',
+        level3: 'Expert',
+        level4: 'Workout hero'
+    },
     prepareWorkoutPlan: {
         title: 'Preparing workout plan',
         description1: 'Get ready for your',
@@ -198,5 +211,18 @@ export default {
         description1: 'Congratulations',
         description2: 'Workout complete!',
         goToMainScreen: 'Go to main screen'
+    },
+    userProfile: {
+        params: {
+            unit: 'Unit',
+            height: 'Your height',
+            weight: 'Start weight',
+            targetWeight: 'Target weight',
+            areasOfFocus: 'Areas of Focus',
+            fitnessLevel: 'Physical Activity'
+        },
+        yourParameters: 'Your parameters',
+        greeting: 'Hello',
+        changePhoto: 'Change photo'
     }
 };

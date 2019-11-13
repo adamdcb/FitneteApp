@@ -238,12 +238,7 @@ const UserProfileStack = createStackNavigator(
         UserProfile: UserProfileScreen
     },
     {
-        defaultNavigationOptions: () => ({
-            headerBackImage: <HeaderBackButton />,
-            headerStyle: HEADER_STYLE,
-            headerBackTitle: null,
-            headerTitleStyle: HEADER_TITLE_STYLE,
-        }),
+       headerMode: 'none'
     }
 );
 
