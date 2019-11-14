@@ -6,6 +6,7 @@ import Container from '../../utils/components/Container';
 import FNIcon from '../../utils/components/FNIcon';
 import I18n from '../../utils/i18n/I18n';
 import SettingsPresenter from './SettingsPresenter';
+import ListViewItemSeparator from '../../utils/components/ListViewItemSeparator';
 
 class SettingsScreen extends React.Component {
     constructor(props) {
@@ -15,7 +16,6 @@ class SettingsScreen extends React.Component {
         };
         this.presenter = new SettingsPresenter(this);
         this._renderItem = this._renderItem.bind(this);
-        this._renderItemSeparator = this._renderItemSeparator.bind(this);
     }
 
     componentDidMount() {
@@ -50,15 +50,6 @@ class SettingsScreen extends React.Component {
                     color="#B4B3B6"
                 />
             </TouchableOpacity>
-        )
-    }
-
-    _renderItemSeparator() {
-        return (
-            <View style={{
-                height: 1,
-                backgroundColor: '#EEEFF1'
-            }} />
         )
     }
 
@@ -112,7 +103,7 @@ class SettingsScreen extends React.Component {
                         data={data}
                         keyExtractor={item => item.id}
                         renderItem={this._renderItem}
-                        ItemSeparatorComponent={this._renderItemSeparator}
+                        ItemSeparatorComponent={ListViewItemSeparator}
                     />
                 </Container>
             </SafeAreaView>

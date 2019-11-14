@@ -6,6 +6,7 @@ import FNIcon from '../utils/components/FNIcon';
 import UserProfilePresenter from './UserProfilePresenter';
 import I18n from '../utils/i18n/I18n';
 import { push, Route } from '../utils/navigation/NavigationService';
+import ListViewItemSeparator from '../utils/components/ListViewItemSeparator';
 
 class UserProfileScreen extends React.Component {
     constructor(props) {
@@ -16,7 +17,6 @@ class UserProfileScreen extends React.Component {
         };
         this.presenter = new UserProfilePresenter(this);
         this._renderItem = this._renderItem.bind(this);
-        this._renderItemSeparator = this._renderItemSeparator.bind(this);
         this._openSettings = this._openSettings.bind(this);
         this.props.navigation.setParams({
             openSettings: this._openSettings
@@ -69,15 +69,6 @@ class UserProfileScreen extends React.Component {
         )
     }
 
-    _renderItemSeparator() {
-        return (
-            <View style={{
-                height: 1,
-                backgroundColor: '#EEEFF1'
-            }} />
-        )
-    }
-
     render() {
         const { data, pageWidth } = this.state;
         const photoSize = pageWidth * PHOTO_SIZE_COEFF;
@@ -124,7 +115,7 @@ class UserProfileScreen extends React.Component {
                         data={data}
                         keyExtractor={item => item.id}
                         renderItem={this._renderItem}
-                        ItemSeparatorComponent={this._renderItemSeparator}
+                        ItemSeparatorComponent={ListViewItemSeparator}
                     />
                 </Container>
             </SafeAreaView>

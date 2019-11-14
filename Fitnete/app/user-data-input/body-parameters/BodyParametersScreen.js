@@ -9,6 +9,7 @@ import { push, Route } from '../../utils/navigation/NavigationService';
 import BodyParametersPresenter from './BodyParametersPresenter';
 import FNIcon from '../../utils/components/FNIcon';
 import FNPicker from '../../utils/components/FNPicker';
+import ListViewItemSeparator from '../../utils/components/ListViewItemSeparator';
 
 class BodyParametersScreen extends React.Component {
     constructor(props) {
@@ -20,7 +21,6 @@ class BodyParametersScreen extends React.Component {
         };
         this.onContinue = this.onContinue.bind(this);
         this._renderItem = this._renderItem.bind(this);
-        this._renderItemSeparator = this._renderItemSeparator.bind(this);
         this._renderPicker = this._renderPicker.bind(this);
         this._onPress = this._onPress.bind(this);
         this._onDismissPicker = this._onDismissPicker.bind(this);
@@ -125,15 +125,6 @@ class BodyParametersScreen extends React.Component {
         )
     }
 
-    _renderItemSeparator() {
-        return (
-            <View style={{
-                height: 1,
-                backgroundColor: '#EEEFF1'
-            }} />
-        )
-    }
-
     _renderPicker() {
         const { selectedItem } = this.state;
         if (!selectedItem) {
@@ -184,7 +175,7 @@ class BodyParametersScreen extends React.Component {
                         data={data}
                         keyExtractor={item => item.id}
                         renderItem={this._renderItem}
-                        ItemSeparatorComponent={this._renderItemSeparator}
+                        ItemSeparatorComponent={ListViewItemSeparator}
                     />
                     <View style={styles.bottomContainer}>
                         <Button
