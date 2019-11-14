@@ -5,7 +5,7 @@ import Container from '../utils/components/Container';
 import FNIcon from '../utils/components/FNIcon';
 import UserProfilePresenter from './UserProfilePresenter';
 import I18n from '../utils/i18n/I18n';
-import { HEADER_STYLE } from '../utils/navigation/NavigationService';
+import { push, Route } from '../utils/navigation/NavigationService';
 
 class UserProfileScreen extends React.Component {
     constructor(props) {
@@ -17,6 +17,10 @@ class UserProfileScreen extends React.Component {
         this.presenter = new UserProfilePresenter(this);
         this._renderItem = this._renderItem.bind(this);
         this._renderItemSeparator = this._renderItemSeparator.bind(this);
+        this._openSettings = this._openSettings.bind(this);
+        this.props.navigation.setParams({
+            openSettings: this._openSettings
+        });
     }
 
     componentDidMount() {
@@ -37,6 +41,10 @@ class UserProfileScreen extends React.Component {
                 <Container />
             </SafeAreaView>
         );
+    }
+
+    _openSettings() {
+        push(Route.Settings);
     }
 
     _renderItem({ item }) {
@@ -107,14 +115,6 @@ class UserProfileScreen extends React.Component {
                                 <Text style={styles.changePhoto}>{I18n.t('userProfile.changePhoto')}</Text>
                             </TouchableOpacity>
                         </View>
-                        <TouchableOpacity
-                            style={styles.settingsButton}>
-                            <FNIcon
-                                name="settings"
-                                size={24}
-                                color="#FFFFFF"
-                            />
-                        </TouchableOpacity>
                     </View>
                 </View>
                 <Container useScroll={false}>
@@ -237,14 +237,23 @@ const styles = StyleSheet.create({
         textAlign: 'center',
     },
     settingsButton: {
-        position: 'absolute',
-        width: 24,
-        height: 24,
-        right: 16
+        justifyContent: 'center',
+        marginRight: 16
     }
 });
 
-UserProfileScreen.navigationOptions = () => ({
+UserProfileScreen.navigationOptions = ({ navigation }) => ({
+    headerRight:
+        <TouchableOpacity
+            style={styles.settingsButton}
+            onPress={navigation.getParam('openSettings')}
+        >
+            <FNIcon
+                name="settings"
+                size={24}
+                color="#FFFFFF"
+            />
+        </TouchableOpacity>
 });
 
 export default UserProfileScreen;
