@@ -22,7 +22,8 @@ const Route = {
     Workout: 'Workout',
     Pause: 'Pause',
     Rest: 'Rest',
-    WorkoutComplete: 'WorkoutComplete'
+    WorkoutComplete: 'WorkoutComplete',
+    Settings: 'Settings'
 }
 
 const InitialStoryboard = {

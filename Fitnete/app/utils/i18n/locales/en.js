@@ -224,5 +224,20 @@ export default {
         yourParameters: 'Your parameters',
         greeting: 'Hello',
         changePhoto: 'Change photo'
+    },
+    settings: {
+        title: 'Settings',
+        status: 'Fitnete status',
+        proStatus: 'Fitnete Pro Status',
+        pro: 'Pro:',
+        getFullAccess: 'Get Full Access',
+        option: {
+            stopDataCollection: 'Stop Data Collection',
+            appFeedback: 'App Feedback',
+            aboutUs: 'About Us',
+            termsAndConditions: 'Terms & Conditions',
+            privacyPolicy: 'Privacy Policy',
+            billingTerms: 'Billing Terms'
+        }
     }
 };

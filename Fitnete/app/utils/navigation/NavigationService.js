@@ -44,6 +44,7 @@ import PauseScreen from '../../training/pause/PauseScreen';
 import RestScreen from '../../training/rest/RestScreen';
 import WorkoutCompleteScreen from '../../training/workout-complete/WorkoutCompleteScreen';
 import StartupScreen from '../../app-intro/StartupScreen';
+import SettingsScreen from '../../user-profile/settings/SettingsScreen';
 
 const HEADER_STYLE = {
     backgroundColor: '#F3F4FA',
@@ -235,10 +236,16 @@ const WaterStack = createStackNavigator(
 
 const UserProfileStack = createStackNavigator(
     {
-        UserProfile: UserProfileScreen
+        UserProfile: UserProfileScreen,
+        Settings: SettingsScreen
     },
     {
-       headerMode: 'none'
+        defaultNavigationOptions: () => ({
+            headerBackImage: <HeaderBackButton />,
+            headerTransparent: true,
+            headerBackTitle: null,
+            headerTitleStyle: HEADER_TITLE_STYLE
+        })
     }
 );
 
