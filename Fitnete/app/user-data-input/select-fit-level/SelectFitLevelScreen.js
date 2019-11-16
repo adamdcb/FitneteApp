@@ -9,6 +9,7 @@ import Button from '../../utils/components/Button';
 import { push, Route } from '../../utils/navigation/NavigationService';
 import DotSlider from '../../utils/components/DotSlider';
 import SelectFitLevelPresenter from './SelectFitLevelPresenter';
+import LoadingView from '../../utils/components/LoadingView';
 
 class SelectFitLevelScreen extends React.Component {
     constructor(props) {
@@ -46,15 +47,7 @@ class SelectFitLevelScreen extends React.Component {
             levelIndex: index
         })
     }
-
-    getLoadingView() {
-        return (
-            <SafeAreaView style={styles.container}>
-                <Container />
-            </SafeAreaView>
-        );
-    }
-
+    
     getLevelDescription(level) {
         const highlightStartIndex = level.description.indexOf(level.descriptionHighlight);
         return (
@@ -69,7 +62,7 @@ class SelectFitLevelScreen extends React.Component {
     render() {
         const { level } = this.state;
         if (!level) {
-            return this.getLoadingView();
+            return (<LoadingView />);
         }
         const { step, stepsTotal } = this.props.navigation.state.params;
         return (

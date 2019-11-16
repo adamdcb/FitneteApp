@@ -37,14 +37,6 @@ class PrepareWorkoutPlanScreen extends React.Component {
         })
     }
 
-    getLoadingView() {
-        return (
-            <SafeAreaView style={styles.container}>
-                <Container />
-            </SafeAreaView>
-        );
-    }
-
     render() {
         const { step, stepsTotal } = this.props.navigation.state.params;
         return (

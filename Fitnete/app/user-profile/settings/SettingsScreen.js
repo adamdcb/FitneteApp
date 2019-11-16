@@ -7,6 +7,7 @@ import FNIcon from '../../utils/components/FNIcon';
 import I18n from '../../utils/i18n/I18n';
 import SettingsPresenter from './SettingsPresenter';
 import ListViewItemSeparator from '../../utils/components/ListViewItemSeparator';
+import LoadingView from '../../utils/components/LoadingView';
 
 class SettingsScreen extends React.Component {
     constructor(props) {
@@ -30,14 +31,6 @@ class SettingsScreen extends React.Component {
         this.setState({ data });
     }
 
-    getLoadingView() {
-        return (
-            <SafeAreaView style={styles.container}>
-                <Container />
-            </SafeAreaView>
-        );
-    }
-
     _renderItem({ item }) {
         return (
             <TouchableOpacity
@@ -56,7 +49,7 @@ class SettingsScreen extends React.Component {
     render() {
         const { data } = this.state;
         if (!data) {
-            return this.getLoadingView();
+            return (<LoadingView />);
         }
         return (
             <SafeAreaView style={styles.container}>

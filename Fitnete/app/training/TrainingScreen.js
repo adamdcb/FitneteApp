@@ -9,6 +9,7 @@ import { Route, navigate } from '../utils/navigation/NavigationService';
 import I18n from '../utils/i18n/I18n';
 import TrainingPresenter from './TrainingPresenter';
 import FNIcon from '../utils/components/FNIcon';
+import LoadingView from '../utils/components/LoadingView';
 
 const SLIDER_ITEM_WIDTH_COEFF = 0.8;
 const CIRCLE_SIZE_COEFF = 6;
@@ -127,18 +128,10 @@ class TrainingScreen extends React.Component {
         this.slideIndex = slideIndex;
     }
 
-    getLoadingView() {
-        return (
-            <SafeAreaView style={styles.container}>
-                <Container />
-            </SafeAreaView>
-        );
-    }
-
     render() {
         const { programs } = this.state;
         if (programs === null) {
-            return this.getLoadingView();
+            return (<LoadingView />);
         }
         return (
             <Container>

@@ -10,6 +10,7 @@ import BodyParametersPresenter from './BodyParametersPresenter';
 import FNIcon from '../../utils/components/FNIcon';
 import FNPicker from '../../utils/components/FNPicker';
 import ListViewItemSeparator from '../../utils/components/ListViewItemSeparator';
+import LoadingView from '../../utils/components/LoadingView';
 
 class BodyParametersScreen extends React.Component {
     constructor(props) {
@@ -44,14 +45,6 @@ class BodyParametersScreen extends React.Component {
             data,
             selectedItem: null
         });
-    }
-
-    getLoadingView() {
-        return (
-            <SafeAreaView style={styles.container}>
-                <Container />
-            </SafeAreaView>
-        );
     }
 
     _onPress(item) {
@@ -146,7 +139,7 @@ class BodyParametersScreen extends React.Component {
     render() {
         const { data } = this.state;
         if (!data) {
-            return this.getLoadingView();
+            return (<LoadingView />);
         }
         const { step, stepsTotal } = this.props.navigation.state.params;
         return (

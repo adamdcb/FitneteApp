@@ -9,6 +9,7 @@ import Button from '../../utils/components/Button';
 import AreaOfFocusPresenter from './AreaOfFocusPresenter';
 import { push, Route } from '../../utils/navigation/NavigationService';
 import AreasOfFocusTabViewScene from './AreasOfFocusTabViewScene';
+import LoadingView from '../../utils/components/LoadingView';
 
 class AreasOfFocusScreen extends React.Component {
     constructor(props) {
@@ -62,18 +63,10 @@ class AreasOfFocusScreen extends React.Component {
         };
     }
 
-    getLoadingView() {
-        return (
-            <SafeAreaView style={styles.container}>
-                <Container />
-            </SafeAreaView>
-        );
-    }
-
     render() {
         const { tabView } = this.state;
         if (!tabView) {
-            return this.getLoadingView();
+            return (<LoadingView />);
         }
         const { routes } = tabView;
         const scenes = routes.reduce((prev, current) => {

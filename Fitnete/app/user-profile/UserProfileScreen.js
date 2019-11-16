@@ -7,6 +7,7 @@ import UserProfilePresenter from './UserProfilePresenter';
 import I18n from '../utils/i18n/I18n';
 import { push, Route } from '../utils/navigation/NavigationService';
 import ListViewItemSeparator from '../utils/components/ListViewItemSeparator';
+import LoadingView from '../utils/components/LoadingView';
 
 class UserProfileScreen extends React.Component {
     constructor(props) {
@@ -33,14 +34,6 @@ class UserProfileScreen extends React.Component {
 
     setData(data) {
         this.setState({ data });
-    }
-
-    getLoadingView() {
-        return (
-            <SafeAreaView style={styles.container}>
-                <Container />
-            </SafeAreaView>
-        );
     }
 
     _openSettings() {
@@ -73,7 +66,7 @@ class UserProfileScreen extends React.Component {
         const { data, pageWidth } = this.state;
         const photoSize = pageWidth * PHOTO_SIZE_COEFF;
         if (!data) {
-            return this.getLoadingView();
+            return (<LoadingView />);
         }
         return (
             <SafeAreaView style={styles.container}>
