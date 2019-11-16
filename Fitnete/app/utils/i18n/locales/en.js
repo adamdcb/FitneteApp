@@ -82,7 +82,7 @@ export default {
         metric: 'CM & KG',
         imperial: 'FT,IN & LBS'
     },
-    areasOfFocus: {
+    areasOfFocusOptions: {
         arms_and_chest: 'Arms and Chest',
         abdominals: 'Abdominals',
         arms_and_back: 'Arms & Back',

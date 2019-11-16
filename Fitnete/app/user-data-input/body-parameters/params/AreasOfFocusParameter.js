@@ -13,7 +13,7 @@ class AreasOfFocusParameter {
         if (values && values.length) {
             const value = values[0];
             const other = values.length > 1 ? `, + ${values.length - 1}` : '';
-            return `${I18n.t(`areasOfFocus.${value}`, { defaultValue: '' })}${other}`;
+            return `${I18n.t(`areasOfFocusOptions.${value}`, { defaultValue: '' })}${other}`;
         }
         return '';
     }
@@ -26,7 +26,7 @@ class AreasOfFocusParameter {
     }
 
     getValueStr(value) {
-        return I18n.t(`areasOfFocus.${value}`);
+        return I18n.t(`areasOfFocusOptions.${value}`);
     }
 
     getValueComponents() {
