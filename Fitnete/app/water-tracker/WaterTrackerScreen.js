@@ -1,5 +1,5 @@
 import React from 'react';
-import { View, SafeAreaView, Text, TouchableOpacity, StyleSheet, Image } from 'react-native';
+import { View, SafeAreaView, Text, TouchableOpacity, StyleSheet, Image, Dimensions } from 'react-native';
 import Slider from 'react-native-slider-custom';
 import LinearGradient from 'react-native-linear-gradient';
 
@@ -12,7 +12,9 @@ import WaterTrackerPresenter from './WaterTrackerPresenter';
 class WaterTrackerScreen extends React.Component {
     constructor(props) {
         super(props);
-        this.state = {};
+        this.state = {
+            pageWidth: Dimensions.get('window').width
+        };
         this.presenter = new WaterTrackerPresenter(this);
         this.onSliderValueChange = this.onSliderValueChange.bind(this);
         this.goToWorkouts = this.goToWorkouts.bind(this);
@@ -49,8 +51,10 @@ class WaterTrackerScreen extends React.Component {
             drinkStepSize = 0,
             totalWaterIntake = 0,
             customDrinkSizeBounds = {},
-            goals = 0
+            goals = 0,
+            pageWidth
         } = this.state;
+        const waterTrackerImageMaxWidth = (pageWidth - 40) * 0.42;
         const { showWorkoutsLink } = this.props.navigation.state.params;
         return (
             <SafeAreaView style={styles.container}>
@@ -74,7 +78,10 @@ class WaterTrackerScreen extends React.Component {
                             onPress={this.drinkWater}
                         >
                             <Image
-                                style={styles.waterIntakeImage}
+                                style={[styles.waterIntakeImage, {
+                                    width: waterTrackerImageMaxWidth,
+                                    height: waterTrackerImageMaxWidth
+                                }]}
                                 source={{ uri: 'daily_water' }}
                             />
                         </TouchableOpacity>
@@ -211,8 +218,6 @@ const styles = StyleSheet.create({
         fontSize: 12
     },
     waterIntakeImage: {
-        width: 183,
-        height: 183,
         aspectRatio: 516 / 456,
         resizeMode: 'contain'
     },
