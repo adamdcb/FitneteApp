@@ -30,7 +30,7 @@ import PrepareWorkoutPlanScreen from '../../user-data-input/prepare-workout/Prep
 import WorkoutPlanReadyScreen from '../../user-data-input/workout-plan-ready/WorkoutPlanReadyScreen';
 import NoPlanPurchasedScreen from '../../user-data-input/no-plan-purchased/NoPlanPurchasedScreen';
 import ContinueForFreeScreen from '../../user-data-input/no-plan-purchased/ContinueForFreeScreen';
-import WaterIntakeIntroScreen from '../../user-data-input/no-plan-purchased/WaterIntakeIntroScreen';
+import WaterIntakeIntroScreen from '../../user-data-input/no-plan-purchased/water-tracker/WaterIntakeIntroScreen';
 import TrainingScreen from '../../training/TrainingScreen';
 import FoodScreen from '../../food/FoodScreen';
 import UserProfileScreen from '../../user-profile/UserProfileScreen';

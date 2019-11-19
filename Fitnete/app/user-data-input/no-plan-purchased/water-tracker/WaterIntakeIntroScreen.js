@@ -1,18 +1,35 @@
 import React from 'react';
 import { SafeAreaView, View, Text, StyleSheet, Image } from 'react-native';
 
-import I18n from '../../utils/i18n/I18n';
-import Container from '../../utils/components/Container';
-import Button from '../../utils/components/Button';
-import { push, Route } from '../../utils/navigation/NavigationService';
-import HeaderTextButton from '../../utils/components/HeaderTextButton';
+import I18n from '../../../utils/i18n/I18n';
+import Container from '../../../utils/components/Container';
+import Button from '../../../utils/components/Button';
+import { push, Route } from '../../../utils/navigation/NavigationService';
+import HeaderTextButton from '../../../utils/components/HeaderTextButton';
+import WaterTrackerIntroPresenter from './WaterTrackerIntroPresenter';
 
 class WaterIntakeIntroScreen extends React.Component {
     constructor(props) {
         super(props);
+        this.state = {
+            waterIntakeAmount: ''
+        }
         this.continue = this.continue.bind(this);
         this.goToApp = this.goToApp.bind(this);
+        this.presenter = new WaterTrackerIntroPresenter(this);
         this.props.navigation.setParams({ goToApp: this.goToApp });
+    }
+
+    componentDidMount() {
+        this.presenter.loadData();
+    }
+
+    componentWillUnmount() {
+        this.presenter.unmountView();
+    }
+
+    setData(data) {
+        this.setState({ ...data });
     }
 
     continue() {
@@ -24,6 +41,7 @@ class WaterIntakeIntroScreen extends React.Component {
     }
 
     render() {
+        const { waterIntakeAmount } = this.state;
         return (
             <SafeAreaView style={styles.container}>
                 <Container>
@@ -47,7 +65,7 @@ class WaterIntakeIntroScreen extends React.Component {
                     <Text style={styles.dailyWaterIntakeText}>
                         {I18n.t('waterIntakeIntro.dailyWaterIntake')}{' '}
                         <Text style={styles.dailyWaterIntakeValue}>
-                            {`2500 ml`}
+                            {waterIntakeAmount}
                         </Text>
                     </Text>
                     <View style={styles.bottomContainer}>
