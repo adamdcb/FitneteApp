@@ -17,3 +17,5 @@
   **[] $VALUES;
   public *;
 }
+# Realm
+-keep class io.realm.react.util.SSLHelper
