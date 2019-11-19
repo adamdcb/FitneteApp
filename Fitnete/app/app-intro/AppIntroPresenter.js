@@ -1,5 +1,7 @@
 import UserDataSource from "../data/UserDataSource";
 
+const NO_OF_SLIDES = 3;
+
 export default class AppIntroPresenter {
     constructor(view) {
         this.view = view;
@@ -7,27 +9,15 @@ export default class AppIntroPresenter {
     }
 
     getData() {
-        const data = [
-            {
-                id: '1',
-                imageName: 'exercise_1',
-                title: 'appIntro.page1Title',
-                description: 'appIntro.page1Description'
-            },
-            { 
-                id: '2',
-                imageName: 'exercise_2',
-                title: 'appIntro.page2Title',
-                description: 'appIntro.page2Description'
-            },
-            {
-                id: '3',
-                imageName: 'exercise_3',
-                title: 'appIntro.page3Title',
-                description: 'appIntro.page3Description'
+        return Array.from({ length: NO_OF_SLIDES }).map((value, index) => {
+            const page = index + 1;
+            return {
+                id: `${page}`,
+                imageName: `exercise_${page}`,
+                title: `appIntro.page${page}Title`,
+                description: `appIntro.page${page}Description`
             }
-        ]
-        return data;
+        });
     }
 
     async didAcceptTerms() {

@@ -1,5 +1,45 @@
 import I18n from '../../utils/i18n/I18n';
 import UserDataSource from '../../data/UserDataSource';
+import areasOfFocus from '../../data/local-storage/content/areasOfFocus';
+
+const HIGHLIGHT_ICON_POSITIONS = {
+    male: {
+        arms_and_chest: {
+            top: 68,
+            left: 18
+        },
+        abdominals: {
+            top: 108,
+            left: 35
+        },
+        arms_and_back: {
+            top: 56,
+            right: 12
+        },
+        legs: {
+            top: 172,
+            right: 22
+        }
+    },
+    female: {
+        arms_and_chest: {
+            top: 68,
+            left: 18
+        },
+        abdominals: {
+            top: 108,
+            left: 35
+        },
+        arms_and_back: {
+            top: 58,
+            right: 14
+        },
+        legs: {
+            top: 156,
+            right: 22
+        }
+    }
+};
 
 export default class AreaOfFocusTabViewScenePresenter {
     constructor(view, type) {
@@ -26,116 +66,19 @@ export default class AreaOfFocusTabViewScenePresenter {
     }
 
     _getDefaultData() {
-        const data = {
-            female: [
-                {
-                    id: '0',
-                    type: 'arms_and_chest',
-                    name: I18n.t('areasOfFocus.armsAndChest'),
-                    selected: false,
-                    highlight: {
-                        iconName: 'area_highlight',
-                        position: {
-                            top: 68,
-                            left: 18
-                        }
-                    }
-                },
-                {
-                    id: '1',
-                    type: 'abdominals',
-                    name: I18n.t('areasOfFocus.abdominals'),
-                    selected: false,
-                    highlight: {
-                        iconName: 'area_highlight',
-                        position: {
-                            top: 108,
-                            left: 35
-                        }
-                    }
-                },
-                {
-                    id: '2',
-                    type: 'arms_and_back',
-                    name: I18n.t('areasOfFocus.armsAndBack'),
-                    selected: false,
-                    highlight: {
-                        iconName: 'area_highlight',
-                        position: {
-                            top: 58,
-                            right: 14
-                        }
-                    }
-                },
-                {
-                    id: '3',
-                    type: 'legs',
-                    name: I18n.t('areasOfFocus.legs_and_glutes'),
-                    selected: false,
-                    highlight: {
-                        iconName: 'area_highlight',
-                        position: {
-                            top: 156,
-                            right: 22
-                        }
-                    }
+        const data = {};
+        areasOfFocus.forEach(item => {
+            data[item.type] = item.areas.map(area => ({
+                id: area.id,
+                type: area.type,
+                name: I18n.t(`areasOfFocus.${area.name}`),
+                selected: false,
+                highlight: {
+                    iconName: 'area_highlight',
+                    position: this._getHighlightIconPosition(item.type, area.type)
                 }
-            ],
-            male: [
-                {
-                    id: '0',
-                    type: 'arms_and_chest',
-                    name: I18n.t('areasOfFocus.armsAndChest'),
-                    selected: false,
-                    highlight: {
-                        iconName: 'area_highlight',
-                        position: {
-                            top: 68,
-                            left: 18
-                        }
-                    }
-                },
-                {
-                    id: '1',
-                    type: 'abdominals',
-                    name: I18n.t('areasOfFocus.abdominals'),
-                    selected: false,
-                    highlight: {
-                        iconName: 'area_highlight',
-                        position: {
-                            top: 108,
-                            left: 35
-                        }
-                    }
-                },
-                {
-                    id: '2',
-                    type: 'arms_and_back',
-                    name: I18n.t('areasOfFocus.armsAndBack'),
-                    selected: false,
-                    highlight: {
-                        iconName: 'area_highlight',
-                        position: {
-                            top: 56,
-                            right: 12
-                        }
-                    }
-                },
-                {
-                    id: '3',
-                    type: 'legs',
-                    name: I18n.t('areasOfFocus.legs'),
-                    selected: false,
-                    highlight: {
-                        iconName: 'area_highlight',
-                        position: {
-                            top: 172,
-                            right: 22
-                        }
-                    }
-                }
-            ]
-        };
+            }))
+        })
         return data;
     }
 
@@ -155,4 +98,11 @@ export default class AreaOfFocusTabViewScenePresenter {
     unmountView() {
         this.view = null;
     }
+
+    _getHighlightIconPosition(gender, area) {
+        return HIGHLIGHT_ICON_POSITIONS[gender][area] || {
+            top: 0,
+            left: 0
+        }
+    }  
 }

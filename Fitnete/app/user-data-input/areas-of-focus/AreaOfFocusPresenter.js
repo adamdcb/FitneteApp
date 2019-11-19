@@ -1,5 +1,6 @@
 import I18n from '../../utils/i18n/I18n';
 import UserDataSource from '../../data/UserDataSource';
+import areasOfFocus from '../../data/local-storage/content/areasOfFocus';
 
 export default class AreaOfFocusPresenter {
     constructor(view) {
@@ -47,18 +48,11 @@ export default class AreaOfFocusPresenter {
     _getDefaultData() {
         const data = {
             selectedGroupIndex: 0,
-            groups: [
-                {
-                    id: 'female',
-                    type: 'female',
-                    name: I18n.t('areasOfFocus.female')
-                },
-                {
-                    id: 'male',
-                    type: 'male',
-                    name: I18n.t('areasOfFocus.male')
-                }
-            ]
+            groups: areasOfFocus.map((item) => ({
+                id: item.id,
+                type: item.type,
+                name: I18n.t(`areasOfFocus.${item.type}`)
+            }))
         };
         return data;
     }
