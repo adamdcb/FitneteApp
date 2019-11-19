@@ -1,6 +1,8 @@
 import I18n from '../../utils/i18n/I18n';
 import UserDataSource from '../../data/UserDataSource';
 
+const NO_OF_LEVELS = 4;
+
 export default class SelectFitLevelPresenter {
     constructor(view) {
         this.view = view;
@@ -47,32 +49,15 @@ export default class SelectFitLevelPresenter {
     _getDefaultData() {
         const data = {
             selectedLevelIndex: 0,
-            levels: [
-                {
-                    id: 'level_1',
-                    title: I18n.t('selectFitLevel.level1Title'),
-                    description: I18n.t('selectFitLevel.level1Description'),
-                    descriptionHighlight: I18n.t('selectFitLevel.level1DescriptionHighlight')
-                },
-                {
-                    id: 'level_2',
-                    title: I18n.t('selectFitLevel.level2Title'),
-                    description: I18n.t('selectFitLevel.level2Description'),
-                    descriptionHighlight: I18n.t('selectFitLevel.level2DescriptionHighlight')
-                },
-                {
-                    id: 'level_3',
-                    title: I18n.t('selectFitLevel.level3Title'),
-                    description: I18n.t('selectFitLevel.level3Description'),
-                    descriptionHighlight: I18n.t('selectFitLevel.level3DescriptionHighlight')
-                },
-                {
-                    id: 'level_4',
-                    title: I18n.t('selectFitLevel.level4Title'),
-                    description: I18n.t('selectFitLevel.level4Description'),
-                    descriptionHighlight: I18n.t('selectFitLevel.level4DescriptionHighlight')
+            levels: Array.from({ length: NO_OF_LEVELS }).map((value, index) => {
+                const level = index + 1;
+                return {
+                    id: `level_${level}`,
+                    title: I18n.t(`selectFitLevel.level${level}Title`),
+                    description: I18n.t(`selectFitLevel.level${level}Description`),
+                    descriptionHighlight: I18n.t(`selectFitLevel.level${level}DescriptionHighlight`)
                 }
-            ]
+            })
         };
         return data;
     }
