@@ -79,7 +79,7 @@ class SettingsScreen extends React.Component {
                                         <View style={styles.star}>
                                             <FNIcon
                                                 name="star"
-                                                size={16}
+                                                size={15}
                                                 color="#DFB63E"
                                             />
                                         </View>
