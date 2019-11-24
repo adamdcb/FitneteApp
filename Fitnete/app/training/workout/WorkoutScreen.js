@@ -1,5 +1,5 @@
 import React from 'react';
-import { SafeAreaView, Text, View, Image, StyleSheet } from 'react-native';
+import { SafeAreaView, Text, View, StyleSheet } from 'react-native';
 import LinearGradient from 'react-native-linear-gradient';
 import FastImage from 'react-native-fast-image';
 
@@ -11,7 +11,6 @@ import I18n from '../../utils/i18n/I18n';
 import CountdownProgressBar from '../../utils/components/CountdownProgressBar';
 import WorkoutPresenter from './WorkoutPresenter';
 import { push, Route } from '../../utils/navigation/NavigationService';
-import FNIcon from '../../utils/components/FNIcon';
 
 class WorkoutScreen extends React.Component {
     constructor(props) {
@@ -81,11 +80,16 @@ class WorkoutScreen extends React.Component {
             totalSteps,
             title,
             description,
-            repeatTitle,
-            repeatText,
             nextExerciseText } = this.state;
+        const { workout: { background } } = this.props.navigation.state.params;
         return (
-            <Container scrollViewStyle={{ paddingHorizontal: 0 }}>
+            <Container
+                colors={background.colors}
+                locations={background.locations}
+                angle={background.angle}
+                useAngle
+                scrollViewStyle={{ paddingHorizontal: 0 }}
+            >
                 <SafeAreaView style={styles.container}>
                     <View style={styles.progressContainer}>
                         <Text style={styles.stepTextLeft}>
@@ -112,17 +116,6 @@ class WorkoutScreen extends React.Component {
                         colors={['#FFFFFF', '#FAFAFA']}
                         angle={0}
                     >
-                        <View style={styles.infoContainer}>
-                            <View style={styles.infoImage}>
-                                <FNIcon
-                                    name='filters'
-                                    size={18}
-                                    color="#008FA6"
-                                />
-                            </View>
-                            <Text style={styles.infoTitle}>{repeatTitle}</Text>
-                            <Text style={styles.infoDetails}>{repeatText}</Text>
-                        </View>
                         <Text style={styles.infoDescription}>{description}</Text>
                         {
                             nextExerciseText ? <Text style={styles.infoNextExercise}>{nextExerciseText}</Text> : null
@@ -200,29 +193,7 @@ const styles = StyleSheet.create({
         borderTopLeftRadius: 16,
         borderTopRightRadius: 16
     },
-    infoContainer: {
-        flexDirection: 'row',
-        justifyContent: 'center',
-        alignItems: 'center'
-    },
-    infoImage: {
-        marginRight: 4
-    },
-    infoTitle: {
-        marginRight: 4,
-        fontFamily: 'Poppins-Regular',
-        fontSize: 15,
-        color: '#4F4C57',
-        textAlign: 'center'
-    },
-    infoDetails: {
-        fontFamily: 'Poppins-SemiBold',
-        fontSize: 15,
-        color: '#3E3750',
-        textAlign: 'center'
-    },
     infoDescription: {
-        marginTop: 16,
         fontFamily: 'Poppins-Regular',
         fontSize: 15,
         color: '#4F4C57',

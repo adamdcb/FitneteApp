@@ -34,7 +34,6 @@ class TrainingProgramScreen extends React.Component {
     }
 
     _renderItem({ item, index }) {
-        const { program } = this.props.navigation.state.params;
         return (
             <View style={styles.sliderItemView}>
                 <Image
@@ -42,7 +41,7 @@ class TrainingProgramScreen extends React.Component {
                     source={{ uri: 'for_free' }}
                 />
                 <View style={styles.difficultyContainer}>
-                    <Text style={styles.difficultyText}>{program.difficultyText}</Text>
+                    <Text style={styles.difficultyText}>{item.difficultyText}</Text>
                     <View style={styles.difficultyIcon} />
                 </View>
                 <Text style={styles.dayProgramTitle}>{item.title}</Text>
@@ -195,7 +194,7 @@ const styles = StyleSheet.create({
         borderRadius: 12
     },
     slideStyle: {
-        margin: 4,
+        padding: 4,
         shadowColor: "#000",
         shadowOffset: {
             width: 0,
@@ -268,7 +267,7 @@ const styles = StyleSheet.create({
         justifyContent: 'space-around'
     },
     dayProgramContainer: {
-        justifyContent: 'center',
+        justifyContent: 'space-around',
         alignItems: 'center'
     },
     dayStatusImage: {

@@ -14,5 +14,13 @@ export default {
         const minStr = `${min}`.padStart(2, '0');
         const secStr = `${sec}`.padStart(2, '0');
         return `${minStr}:${secStr}`;
+    },
+    snakeCaseToCamelCase(str) {
+        return str.replace(
+            /([-_][a-z])/g,
+            (group) => group.toUpperCase()
+                .replace('-', '')
+                .replace('_', '')
+        );
     }
 }

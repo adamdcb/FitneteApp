@@ -132,33 +132,16 @@ export default {
         continue: 'Turn on Water Tracker'
     },
     training: {
-        tonedArmsAndBreastsTitle: 'Toned arms and breasts',
-        tonedArmsAndBreastsDescription: 'Program description. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.',
-        
-        workout1Title: 'Workout #1',
-        workout1Description: 'Workout #1 description. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.',
-        workout2Title: 'Workout #2',
-        workout2Description: 'Workout #2 description. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.',
-        workout3Title: 'Workout #3',
-        workout3Description: 'Workout #3 description. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.',
-
-        exercise1Title: 'Basic squats',
-        exercise1Description: 'Basic squats: Pellentesque ornare sem lacinia quam venenatis vestibulum',
-
-        exercise2Title: 'Plank',
-        exercise2Description: 'Plank: Pellentesque ornare sem lacinia quam venenatis vestibulum',
-
-        exercise3Title: 'Farmer\'s Walk',
-        exercise3Description: 'Farmer\'s Walk: Pellentesque ornare sem lacinia quam venenatis vestibulum',
-
         new: 'new',
-        easy: 'easy',
-
+        
         openProgram: 'Open program',
         days: 'days',
         day: 'day',
+        Day: 'Day',
 
         duration: 'Duration',
+        exercises: 'Exercises',
+        rests: 'Rests',
         repeat: 'Repeat',
         gear: 'Gear needed?',
         progress: 'Progress',
@@ -239,5 +222,91 @@ export default {
             privacyPolicy: 'Privacy Policy',
             billingTerms: 'Billing Terms'
         }
+    },
+
+    trainingPrograms: {
+        legsName: 'Legs & Glutes',
+        abdominalsName: 'Abdominals',
+        armsAndBackName: 'Arms & Back',
+        armsAndChestName: 'Arms & Chest'
+    },
+
+    workoutDifficulty: {
+        easy: 'easy',
+        medium: 'medium',
+        hard: 'hard'
+    },
+
+    workoutGear: {
+        none: 'None'
+    },
+
+    exercises: {
+        squatsName: 'Squats',
+        legSwingRightLegName: 'Leg Swing - Right Leg',
+        legSwingLeftLegName: 'Leg Swing - Left Leg',
+        gluteBridgeName: 'Glute Bridge',
+        innerThighLiftRightLegName: 'Inner Thigh Lift - Right Leg',
+        innerThighLiftLeftLegName: 'Inner Thigh Lift - Left Leg',
+        sideLegLiftRightLegName: 'Side Leg Lift - Right Leg',
+        sideLegLiftLeftLegName: 'Side Leg Lift - Left Leg',
+        gluteKickbacksRightLegName: 'Glute Kickbacks - Right Leg',
+        gluteKickbacksLeftLegName: 'Glute Kickbacks - Left Leg',
+        pulsingLungesLeftLegName: 'Pulsing Lunges - Left Leg',
+        pulsingLungesRightLegName: 'Pulsing Lunges - Right Leg',
+        marchingHipName: 'Marching Hip',
+        singleLegHipThrustersRightLegName: 'Single Leg Hip Thrusters - Right Leg',
+        singleLegHipThrustersLeftLegName: 'Single Leg Hip Thrusters - Left Leg',
+        oneLegBridgeRightLegName: 'One Leg Bridge - Right Leg',
+        oneLegBridgeLeftLegName: 'One Leg Bridge - Left Leg',
+        singleLegDeadliftRightLegName: 'Single Leg Deadlift - Right Leg',
+        singleLegDeadliftLeftLegName: 'Single Leg Deadlift - Left Leg',
+
+        plankName: 'Plank',
+        basicCrunchesName: 'Basic Crunches',
+        mountainClimbersName: 'Mountain Climbers',
+        rollupName: 'Rollup',
+        windshieldName: 'Windshield',
+        reverseCrunchStraightName: 'Reverse Crunch Straight',
+        plankHipDipsName: 'Plank Hip Dips',
+        commandosName: 'Commandos',
+        doubleLegLiftName: 'Double Leg Lift',
+        doubleLegReachName: 'Double Leg Reach',
+        armPlankwithKneesName: 'Arm Plank with Knees',
+        boatposeName: 'Boat pose',
+        jackKnivesName: 'Jack Knives',
+
+        cobraPushUpName: 'Cobra Push Up',
+        oneArmPushUpRightArmName: 'One Arm Push Up - Right Arm',
+        oneArmPushUpLeftArmName: 'One Arm Push Up - Left Arm',
+        handPlankReachesName: 'Hand Plank Reaches',
+        plankRightSideName: 'Plank - Right Side',
+        plankLeftSideName: 'Plank - Left Side',
+        kneePushUpsName: 'Knee Push Ups',
+        shouldPushUpsName: 'Should Push Ups',
+        bentOverRowName: 'Bent Over Row',
+        lateralRaisesName: 'Lateral Raises',
+        tricepExtensionName: 'Tricep Extension',
+        dumbellSwingName: 'Dumbell Swing',
+        squatandCurlName: 'Squat and Curl',
+        tricepKickbackName: 'Tricep Kickback',
+        plankHipDipsName: 'Plank Hip Dips',
+
+        crabWalkName: 'Crab Walk',
+        spineStretchName: 'Spine Stretch',
+        lyingKneeHugName: 'Lying Knee Hug',
+        woodpeckerName: 'Woodpecker',
+        rollingoverName: 'Rolling over',
+        runnersCrunchName: 'Runner\'s Crunch',
+        theFounderName: 'The Founder',
+        kneelingObliqueCrunchName: 'Kneeling Oblique Crunch',
+        mcGillCurlUpName: 'McGill Curl Up',
+        birdDogName: 'Bird Dog',
+
+        pushUpName: 'Push Up',
+        tricepDipName: 'Tricep Dip',
+        wallSitName: 'Wall Sit',
+        jumpingJacksName: 'Jumping Jacks',
+        burpeesName: 'Burpees'
     }
 };
