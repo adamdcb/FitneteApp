@@ -1,0 +1,3369 @@
+{
+    "id": "programAbdominals",
+    "type": "abdominals",
+    "weeks": [
+        {
+            "id": "programAbdominalsWeek0",
+            "days": [
+                {
+                    "id": "programAbdominalsWeek0Day0",
+                    "difficulty": 0,
+                    "exercises": [
+                        {
+                            "id": "exercisePlank",
+                            "name": "plank",
+                            "reps": -1,
+                            "time": 45,
+                            "completed": false
+                        },
+                        {
+                            "id": "exerciseBasicCrunches",
+                            "name": "basicCrunches",
+                            "reps": 5,
+                            "time": -1,
+                            "completed": false
+                        },
+                        {
+                            "id": "exerciseMountainClimbers",
+                            "name": "mountainClimbers",
+                            "reps": 5,
+                            "time": -1,
+                            "completed": false
+                        },
+                        {
+                            "id": "exerciseRollup",
+                            "name": "rollup",
+                            "reps": 5,
+                            "time": -1,
+                            "completed": false
+                        },
+                        {
+                            "id": "exerciseWindshield",
+                            "name": "windshield",
+                            "reps": 5,
+                            "time": -1,
+                            "completed": false
+                        },
+                        {
+                            "id": "exerciseReverseCrunchStraight",
+                            "name": "reverseCrunchStraight",
+                            "reps": 5,
+                            "time": -1,
+                            "completed": false
+                        },
+                        {
+                            "id": "exercisePlankHipDips",
+                            "name": "plankHipDips",
+                            "reps": 5,
+                            "time": -1,
+                            "completed": false
+                        }
+                    ]
+                },
+                {
+                    "id": "programAbdominalsWeek0Day1",
+                    "difficulty": 0,
+                    "exercises": [
+                        {
+                            "id": "exerciseCommandos",
+                            "name": "commandos",
+                            "reps": 5,
+                            "time": -1,
+                            "completed": false
+                        },
+                        {
+                            "id": "exerciseDoubleLegLift",
+                            "name": "doubleLegLift",
+                            "reps": 5,
+                            "time": -1,
+                            "completed": false
+                        },
+                        {
+                            "id": "exerciseDoubleLegReach",
+                            "name": "doubleLegReach",
+                            "reps": 5,
+                            "time": -1,
+                            "completed": false
+                        },
+                        {
+                            "id": "exerciseArmPlankWithKnees",
+                            "name": "armPlankWithKnees",
+                            "reps": 5,
+                            "time": -1,
+                            "completed": false
+                        },
+                        {
+                            "id": "exerciseBoatPose",
+                            "name": "boatPose",
+                            "reps": -1,
+                            "time": 45,
+                            "completed": false
+                        },
+                        {
+                            "id": "exerciseJackKnives",
+                            "name": "reverseJackKnives",
+                            "reps": 5,
+                            "time": -1,
+                            "completed": false
+                        }
+                    ]
+                },
+                {
+                    "id": "programAbdominalsWeek0Day2",
+                    "difficulty": 0,
+                    "exercises": [
+                        {
+                            "id": "exerciseRollup",
+                            "name": "rollup",
+                            "reps": 5,
+                            "time": -1,
+                            "completed": false
+                        },
+                        {
+                            "id": "exerciseWindshield",
+                            "name": "windshield",
+                            "reps": 5,
+                            "time": -1,
+                            "completed": false
+                        },
+                        {
+                            "id": "exerciseReverseCrunchStraight",
+                            "name": "reverseCrunchStraight",
+                            "reps": 5,
+                            "time": -1,
+                            "completed": false
+                        },
+                        {
+                            "id": "exercisePlankHipDips",
+                            "name": "plankHipDips",
+                            "reps": 5,
+                            "time": -1,
+                            "completed": false
+                        },
+                        {
+                            "id": "exerciseCommandos",
+                            "name": "commandos",
+                            "reps": 5,
+                            "time": -1,
+                            "completed": false
+                        },
+                        {
+                            "id": "exerciseDoubleLegLift",
+                            "name": "doubleLegLift",
+                            "reps": 5,
+                            "time": -1,
+                            "completed": false
+                        },
+                        {
+                            "id": "exerciseDoubleLegReach",
+                            "name": "doubleLegReach",
+                            "reps": 5,
+                            "time": -1,
+                            "completed": false
+                        }
+                    ]
+                },
+                {
+                    "id": "programAbdominalsWeek0Day3",
+                    "difficulty": 0,
+                    "exercises": [
+                        {
+                            "id": "exercisePlank",
+                            "name": "plank",
+                            "reps": -1,
+                            "time": 45,
+                            "completed": false
+                        },
+                        {
+                            "id": "exerciseBasicCrunches",
+                            "name": "basicCrunches",
+                            "reps": 5,
+                            "time": -1,
+                            "completed": false
+                        },
+                        {
+                            "id": "exerciseMountainClimbers",
+                            "name": "mountainClimbers",
+                            "reps": 5,
+                            "time": -1,
+                            "completed": false
+                        },
+                        {
+                            "id": "exerciseRollup",
+                            "name": "rollup",
+                            "reps": 5,
+                            "time": -1,
+                            "completed": false
+                        },
+                        {
+                            "id": "exerciseWindshield",
+                            "name": "windshield",
+                            "reps": 5,
+                            "time": -1,
+                            "completed": false
+                        },
+                        {
+                            "id": "exerciseReverseCrunchStraight",
+                            "name": "reverseCrunchStraight",
+                            "reps": 5,
+                            "time": -1,
+                            "completed": false
+                        },
+                        {
+                            "id": "exercisePlankHipDips",
+                            "name": "plankHipDips",
+                            "reps": 5,
+                            "time": -1,
+                            "completed": false
+                        }
+                    ]
+                },
+                {
+                    "id": "programAbdominalsWeek0Day4",
+                    "difficulty": 0,
+                    "exercises": [
+                        {
+                            "id": "exerciseCommandos",
+                            "name": "commandos",
+                            "reps": 5,
+                            "time": -1,
+                            "completed": false
+                        },
+                        {
+                            "id": "exerciseDoubleLegLift",
+                            "name": "doubleLegLift",
+                            "reps": 5,
+                            "time": -1,
+                            "completed": false
+                        },
+                        {
+                            "id": "exerciseDoubleLegReach",
+                            "name": "doubleLegReach",
+                            "reps": 5,
+                            "time": -1,
+                            "completed": false
+                        },
+                        {
+                            "id": "exerciseArmPlankWithKnees",
+                            "name": "armPlankWithKnees",
+                            "reps": 5,
+                            "time": -1,
+                            "completed": false
+                        },
+                        {
+                            "id": "exerciseBoatPose",
+                            "name": "boatPose",
+                            "reps": -1,
+                            "time": 45,
+                            "completed": false
+                        },
+                        {
+                            "id": "exerciseJackKnives",
+                            "name": "reverseJackKnives",
+                            "reps": 5,
+                            "time": -1,
+                            "completed": false
+                        }
+                    ]
+                },
+                {
+                    "id": "programAbdominalsWeek0Day5",
+                    "difficulty": 0,
+                    "exercises": [
+                        {
+                            "id": "exerciseRollup",
+                            "name": "rollup",
+                            "reps": 5,
+                            "time": -1,
+                            "completed": false
+                        },
+                        {
+                            "id": "exerciseWindshield",
+                            "name": "windshield",
+                            "reps": 5,
+                            "time": -1,
+                            "completed": false
+                        },
+                        {
+                            "id": "exerciseReverseCrunchStraight",
+                            "name": "reverseCrunchStraight",
+                            "reps": 5,
+                            "time": -1,
+                            "completed": false
+                        },
+                        {
+                            "id": "exercisePlankHipDips",
+                            "name": "plankHipDips",
+                            "reps": 5,
+                            "time": -1,
+                            "completed": false
+                        },
+                        {
+                            "id": "exerciseCommandos",
+                            "name": "commandos",
+                            "reps": 5,
+                            "time": -1,
+                            "completed": false
+                        },
+                        {
+                            "id": "exerciseDoubleLegLift",
+                            "name": "doubleLegLift",
+                            "reps": 5,
+                            "time": -1,
+                            "completed": false
+                        },
+                        {
+                            "id": "exerciseDoubleLegReach",
+                            "name": "doubleLegReach",
+                            "reps": 5,
+                            "time": -1,
+                            "completed": false
+                        }
+                    ]
+                },
+                {
+                    "id": "programAbdominalsWeek0Day6",
+                    "difficulty": 0,
+                    "exercises": [
+                        {
+                            "id": "exercisePlank",
+                            "name": "plank",
+                            "reps": -1,
+                            "time": 45,
+                            "completed": false
+                        },
+                        {
+                            "id": "exerciseBasicCrunches",
+                            "name": "basicCrunches",
+                            "reps": 5,
+                            "time": -1,
+                            "completed": false
+                        },
+                        {
+                            "id": "exerciseMountainClimbers",
+                            "name": "mountainClimbers",
+                            "reps": 5,
+                            "time": -1,
+                            "completed": false
+                        },
+                        {
+                            "id": "exerciseRollup",
+                            "name": "rollup",
+                            "reps": 5,
+                            "time": -1,
+                            "completed": false
+                        },
+                        {
+                            "id": "exerciseWindshield",
+                            "name": "windshield",
+                            "reps": 5,
+                            "time": -1,
+                            "completed": false
+                        },
+                        {
+                            "id": "exerciseReverseCrunchStraight",
+                            "name": "reverseCrunchStraight",
+                            "reps": 5,
+                            "time": -1,
+                            "completed": false
+                        },
+                        {
+                            "id": "exercisePlankHipDips",
+                            "name": "plankHipDips",
+                            "reps": 5,
+                            "time": -1,
+                            "completed": false
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "id": "programAbdominalsWeek1",
+            "days": [
+                {
+                    "id": "programAbdominalsWeek1Day0",
+                    "difficulty": 0,
+                    "exercises": [
+                        {
+                            "id": "exerciseCommandos",
+                            "name": "commandos",
+                            "reps": 7,
+                            "time": -1,
+                            "completed": false
+                        },
+                        {
+                            "id": "exerciseDoubleLegLift",
+                            "name": "doubleLegLift",
+                            "reps": 7,
+                            "time": -1,
+                            "completed": false
+                        },
+                        {
+                            "id": "exerciseDoubleLegReach",
+                            "name": "doubleLegReach",
+                            "reps": 7,
+                            "time": -1,
+                            "completed": false
+                        },
+                        {
+                            "id": "exerciseArmPlankWithKnees",
+                            "name": "armPlankWithKnees",
+                            "reps": 7,
+                            "time": -1,
+                            "completed": false
+                        },
+                        {
+                            "id": "exerciseBoatPose",
+                            "name": "boatPose",
+                            "reps": -1,
+                            "time": 45,
+                            "completed": false
+                        },
+                        {
+                            "id": "exerciseJackKnives",
+                            "name": "reverseJackKnives",
+                            "reps": 7,
+                            "time": -1,
+                            "completed": false
+                        }
+                    ]
+                },
+                {
+                    "id": "programAbdominalsWeek1Day1",
+                    "difficulty": 0,
+                    "exercises": [
+                        {
+                            "id": "exerciseRollup",
+                            "name": "rollup",
+                            "reps": 7,
+                            "time": -1,
+                            "completed": false
+                        },
+                        {
+                            "id": "exerciseWindshield",
+                            "name": "windshield",
+                            "reps": 7,
+                            "time": -1,
+                            "completed": false
+                        },
+                        {
+                            "id": "exerciseReverseCrunchStraight",
+                            "name": "reverseCrunchStraight",
+                            "reps": 7,
+                            "time": -1,
+                            "completed": false
+                        },
+                        {
+                            "id": "exercisePlankHipDips",
+                            "name": "plankHipDips",
+                            "reps": 7,
+                            "time": -1,
+                            "completed": false
+                        },
+                        {
+                            "id": "exerciseCommandos",
+                            "name": "commandos",
+                            "reps": 7,
+                            "time": -1,
+                            "completed": false
+                        },
+                        {
+                            "id": "exerciseDoubleLegLift",
+                            "name": "doubleLegLift",
+                            "reps": 7,
+                            "time": -1,
+                            "completed": false
+                        },
+                        {
+                            "id": "exerciseDoubleLegReach",
+                            "name": "doubleLegReach",
+                            "reps": 7,
+                            "time": -1,
+                            "completed": false
+                        }
+                    ]
+                },
+                {
+                    "id": "programAbdominalsWeek1Day2",
+                    "difficulty": 0,
+                    "exercises": [
+                        {
+                            "id": "exercisePlank",
+                            "name": "plank",
+                            "reps": -1,
+                            "time": 45,
+                            "completed": false
+                        },
+                        {
+                            "id": "exerciseBasicCrunches",
+                            "name": "basicCrunches",
+                            "reps": 7,
+                            "time": -1,
+                            "completed": false
+                        },
+                        {
+                            "id": "exerciseMountainClimbers",
+                            "name": "mountainClimbers",
+                            "reps": 7,
+                            "time": -1,
+                            "completed": false
+                        },
+                        {
+                            "id": "exerciseRollup",
+                            "name": "rollup",
+                            "reps": 7,
+                            "time": -1,
+                            "completed": false
+                        },
+                        {
+                            "id": "exerciseWindshield",
+                            "name": "windshield",
+                            "reps": 7,
+                            "time": -1,
+                            "completed": false
+                        },
+                        {
+                            "id": "exerciseReverseCrunchStraight",
+                            "name": "reverseCrunchStraight",
+                            "reps": 7,
+                            "time": -1,
+                            "completed": false
+                        },
+                        {
+                            "id": "exercisePlankHipDips",
+                            "name": "plankHipDips",
+                            "reps": 7,
+                            "time": -1,
+                            "completed": false
+                        }
+                    ]
+                },
+                {
+                    "id": "programAbdominalsWeek1Day3",
+                    "difficulty": 0,
+                    "exercises": [
+                        {
+                            "id": "exerciseCommandos",
+                            "name": "commandos",
+                            "reps": 7,
+                            "time": -1,
+                            "completed": false
+                        },
+                        {
+                            "id": "exerciseDoubleLegLift",
+                            "name": "doubleLegLift",
+                            "reps": 7,
+                            "time": -1,
+                            "completed": false
+                        },
+                        {
+                            "id": "exerciseDoubleLegReach",
+                            "name": "doubleLegReach",
+                            "reps": 7,
+                            "time": -1,
+                            "completed": false
+                        },
+                        {
+                            "id": "exerciseArmPlankWithKnees",
+                            "name": "armPlankWithKnees",
+                            "reps": 7,
+                            "time": -1,
+                            "completed": false
+                        },
+                        {
+                            "id": "exerciseBoatPose",
+                            "name": "boatPose",
+                            "reps": -1,
+                            "time": 45,
+                            "completed": false
+                        },
+                        {
+                            "id": "exerciseJackKnives",
+                            "name": "reverseJackKnives",
+                            "reps": 7,
+                            "time": -1,
+                            "completed": false
+                        }
+                    ]
+                },
+                {
+                    "id": "programAbdominalsWeek1Day4",
+                    "difficulty": 0,
+                    "exercises": [
+                        {
+                            "id": "exerciseRollup",
+                            "name": "rollup",
+                            "reps": 7,
+                            "time": -1,
+                            "completed": false
+                        },
+                        {
+                            "id": "exerciseWindshield",
+                            "name": "windshield",
+                            "reps": 7,
+                            "time": -1,
+                            "completed": false
+                        },
+                        {
+                            "id": "exerciseReverseCrunchStraight",
+                            "name": "reverseCrunchStraight",
+                            "reps": 7,
+                            "time": -1,
+                            "completed": false
+                        },
+                        {
+                            "id": "exercisePlankHipDips",
+                            "name": "plankHipDips",
+                            "reps": 7,
+                            "time": -1,
+                            "completed": false
+                        },
+                        {
+                            "id": "exerciseCommandos",
+                            "name": "commandos",
+                            "reps": 7,
+                            "time": -1,
+                            "completed": false
+                        },
+                        {
+                            "id": "exerciseDoubleLegLift",
+                            "name": "doubleLegLift",
+                            "reps": 7,
+                            "time": -1,
+                            "completed": false
+                        },
+                        {
+                            "id": "exerciseDoubleLegReach",
+                            "name": "doubleLegReach",
+                            "reps": 7,
+                            "time": -1,
+                            "completed": false
+                        }
+                    ]
+                },
+                {
+                    "id": "programAbdominalsWeek1Day5",
+                    "difficulty": 0,
+                    "exercises": [
+                        {
+                            "id": "exercisePlank",
+                            "name": "plank",
+                            "reps": -1,
+                            "time": 45,
+                            "completed": false
+                        },
+                        {
+                            "id": "exerciseBasicCrunches",
+                            "name": "basicCrunches",
+                            "reps": 7,
+                            "time": -1,
+                            "completed": false
+                        },
+                        {
+                            "id": "exerciseMountainClimbers",
+                            "name": "mountainClimbers",
+                            "reps": 7,
+                            "time": -1,
+                            "completed": false
+                        },
+                        {
+                            "id": "exerciseRollup",
+                            "name": "rollup",
+                            "reps": 7,
+                            "time": -1,
+                            "completed": false
+                        },
+                        {
+                            "id": "exerciseWindshield",
+                            "name": "windshield",
+                            "reps": 7,
+                            "time": -1,
+                            "completed": false
+                        },
+                        {
+                            "id": "exerciseReverseCrunchStraight",
+                            "name": "reverseCrunchStraight",
+                            "reps": 7,
+                            "time": -1,
+                            "completed": false
+                        },
+                        {
+                            "id": "exercisePlankHipDips",
+                            "name": "plankHipDips",
+                            "reps": 7,
+                            "time": -1,
+                            "completed": false
+                        }
+                    ]
+                },
+                {
+                    "id": "programAbdominalsWeek1Day6",
+                    "difficulty": 0,
+                    "exercises": [
+                        {
+                            "id": "exerciseCommandos",
+                            "name": "commandos",
+                            "reps": 7,
+                            "time": -1,
+                            "completed": false
+                        },
+                        {
+                            "id": "exerciseDoubleLegLift",
+                            "name": "doubleLegLift",
+                            "reps": 7,
+                            "time": -1,
+                            "completed": false
+                        },
+                        {
+                            "id": "exerciseDoubleLegReach",
+                            "name": "doubleLegReach",
+                            "reps": 7,
+                            "time": -1,
+                            "completed": false
+                        },
+                        {
+                            "id": "exerciseArmPlankWithKnees",
+                            "name": "armPlankWithKnees",
+                            "reps": 7,
+                            "time": -1,
+                            "completed": false
+                        },
+                        {
+                            "id": "exerciseBoatPose",
+                            "name": "boatPose",
+                            "reps": -1,
+                            "time": 45,
+                            "completed": false
+                        },
+                        {
+                            "id": "exerciseJackKnives",
+                            "name": "reverseJackKnives",
+                            "reps": 7,
+                            "time": -1,
+                            "completed": false
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "id": "programAbdominalsWeek2",
+            "days": [
+                {
+                    "id": "programAbdominalsWeek2Day0",
+                    "difficulty": 0,
+                    "exercises": [
+                        {
+                            "id": "exerciseRollup",
+                            "name": "rollup",
+                            "reps": 7,
+                            "time": -1,
+                            "completed": false
+                        },
+                        {
+                            "id": "exerciseWindshield",
+                            "name": "windshield",
+                            "reps": 7,
+                            "time": -1,
+                            "completed": false
+                        },
+                        {
+                            "id": "exerciseReverseCrunchStraight",
+                            "name": "reverseCrunchStraight",
+                            "reps": 7,
+                            "time": -1,
+                            "completed": false
+                        },
+                        {
+                            "id": "exercisePlankHipDips",
+                            "name": "plankHipDips",
+                            "reps": 7,
+                            "time": -1,
+                            "completed": false
+                        },
+                        {
+                            "id": "exerciseCommandos",
+                            "name": "commandos",
+                            "reps": 7,
+                            "time": -1,
+                            "completed": false
+                        },
+                        {
+                            "id": "exerciseDoubleLegLift",
+                            "name": "doubleLegLift",
+                            "reps": 7,
+                            "time": -1,
+                            "completed": false
+                        },
+                        {
+                            "id": "exerciseDoubleLegReach",
+                            "name": "doubleLegReach",
+                            "reps": 7,
+                            "time": -1,
+                            "completed": false
+                        }
+                    ]
+                },
+                {
+                    "id": "programAbdominalsWeek2Day1",
+                    "difficulty": 0,
+                    "exercises": [
+                        {
+                            "id": "exercisePlank",
+                            "name": "plank",
+                            "reps": -1,
+                            "time": 45,
+                            "completed": false
+                        },
+                        {
+                            "id": "exerciseBasicCrunches",
+                            "name": "basicCrunches",
+                            "reps": 7,
+                            "time": -1,
+                            "completed": false
+                        },
+                        {
+                            "id": "exerciseMountainClimbers",
+                            "name": "mountainClimbers",
+                            "reps": 7,
+                            "time": -1,
+                            "completed": false
+                        },
+                        {
+                            "id": "exerciseRollup",
+                            "name": "rollup",
+                            "reps": 7,
+                            "time": -1,
+                            "completed": false
+                        },
+                        {
+                            "id": "exerciseWindshield",
+                            "name": "windshield",
+                            "reps": 7,
+                            "time": -1,
+                            "completed": false
+                        },
+                        {
+                            "id": "exerciseReverseCrunchStraight",
+                            "name": "reverseCrunchStraight",
+                            "reps": 7,
+                            "time": -1,
+                            "completed": false
+                        },
+                        {
+                            "id": "exercisePlankHipDips",
+                            "name": "plankHipDips",
+                            "reps": 7,
+                            "time": -1,
+                            "completed": false
+                        }
+                    ]
+                },
+                {
+                    "id": "programAbdominalsWeek2Day2",
+                    "difficulty": 0,
+                    "exercises": [
+                        {
+                            "id": "exerciseCommandos",
+                            "name": "commandos",
+                            "reps": 8,
+                            "time": -1,
+                            "completed": false
+                        },
+                        {
+                            "id": "exerciseDoubleLegLift",
+                            "name": "doubleLegLift",
+                            "reps": 8,
+                            "time": -1,
+                            "completed": false
+                        },
+                        {
+                            "id": "exerciseDoubleLegReach",
+                            "name": "doubleLegReach",
+                            "reps": 8,
+                            "time": -1,
+                            "completed": false
+                        },
+                        {
+                            "id": "exerciseArmPlankWithKnees",
+                            "name": "armPlankWithKnees",
+                            "reps": 8,
+                            "time": -1,
+                            "completed": false
+                        },
+                        {
+                            "id": "exerciseBoatPose",
+                            "name": "boatPose",
+                            "reps": -1,
+                            "time": 45,
+                            "completed": false
+                        },
+                        {
+                            "id": "exerciseJackKnives",
+                            "name": "reverseJackKnives",
+                            "reps": 8,
+                            "time": -1,
+                            "completed": false
+                        }
+                    ]
+                },
+                {
+                    "id": "programAbdominalsWeek2Day3",
+                    "difficulty": 0,
+                    "exercises": [
+                        {
+                            "id": "exerciseRollup",
+                            "name": "rollup",
+                            "reps": 8,
+                            "time": -1,
+                            "completed": false
+                        },
+                        {
+                            "id": "exerciseWindshield",
+                            "name": "windshield",
+                            "reps": 8,
+                            "time": -1,
+                            "completed": false
+                        },
+                        {
+                            "id": "exerciseReverseCrunchStraight",
+                            "name": "reverseCrunchStraight",
+                            "reps": 8,
+                            "time": -1,
+                            "completed": false
+                        },
+                        {
+                            "id": "exercisePlankHipDips",
+                            "name": "plankHipDips",
+                            "reps": 8,
+                            "time": -1,
+                            "completed": false
+                        },
+                        {
+                            "id": "exerciseCommandos",
+                            "name": "commandos",
+                            "reps": 8,
+                            "time": -1,
+                            "completed": false
+                        },
+                        {
+                            "id": "exerciseDoubleLegLift",
+                            "name": "doubleLegLift",
+                            "reps": 8,
+                            "time": -1,
+                            "completed": false
+                        },
+                        {
+                            "id": "exerciseDoubleLegReach",
+                            "name": "doubleLegReach",
+                            "reps": 8,
+                            "time": -1,
+                            "completed": false
+                        }
+                    ]
+                },
+                {
+                    "id": "programAbdominalsWeek2Day4",
+                    "difficulty": 0,
+                    "exercises": [
+                        {
+                            "id": "exercisePlank",
+                            "name": "plank",
+                            "reps": -1,
+                            "time": 45,
+                            "completed": false
+                        },
+                        {
+                            "id": "exerciseBasicCrunches",
+                            "name": "basicCrunches",
+                            "reps": 8,
+                            "time": -1,
+                            "completed": false
+                        },
+                        {
+                            "id": "exerciseMountainClimbers",
+                            "name": "mountainClimbers",
+                            "reps": 8,
+                            "time": -1,
+                            "completed": false
+                        },
+                        {
+                            "id": "exerciseRollup",
+                            "name": "rollup",
+                            "reps": 8,
+                            "time": -1,
+                            "completed": false
+                        },
+                        {
+                            "id": "exerciseWindshield",
+                            "name": "windshield",
+                            "reps": 8,
+                            "time": -1,
+                            "completed": false
+                        },
+                        {
+                            "id": "exerciseReverseCrunchStraight",
+                            "name": "reverseCrunchStraight",
+                            "reps": 8,
+                            "time": -1,
+                            "completed": false
+                        },
+                        {
+                            "id": "exercisePlankHipDips",
+                            "name": "plankHipDips",
+                            "reps": 8,
+                            "time": -1,
+                            "completed": false
+                        }
+                    ]
+                },
+                {
+                    "id": "programAbdominalsWeek2Day5",
+                    "difficulty": 0,
+                    "exercises": [
+                        {
+                            "id": "exerciseCommandos",
+                            "name": "commandos",
+                            "reps": 10,
+                            "time": -1,
+                            "completed": false
+                        },
+                        {
+                            "id": "exerciseDoubleLegLift",
+                            "name": "doubleLegLift",
+                            "reps": 10,
+                            "time": -1,
+                            "completed": false
+                        },
+                        {
+                            "id": "exerciseDoubleLegReach",
+                            "name": "doubleLegReach",
+                            "reps": 10,
+                            "time": -1,
+                            "completed": false
+                        },
+                        {
+                            "id": "exerciseArmPlankWithKnees",
+                            "name": "armPlankWithKnees",
+                            "reps": 10,
+                            "time": -1,
+                            "completed": false
+                        },
+                        {
+                            "id": "exerciseBoatPose",
+                            "name": "boatPose",
+                            "reps": -1,
+                            "time": 45,
+                            "completed": false
+                        },
+                        {
+                            "id": "exerciseJackKnives",
+                            "name": "reverseJackKnives",
+                            "reps": 10,
+                            "time": -1,
+                            "completed": false
+                        }
+                    ]
+                },
+                {
+                    "id": "programAbdominalsWeek2Day6",
+                    "difficulty": 0,
+                    "exercises": [
+                        {
+                            "id": "exerciseRollup",
+                            "name": "rollup",
+                            "reps": 10,
+                            "time": -1,
+                            "completed": false
+                        },
+                        {
+                            "id": "exerciseWindshield",
+                            "name": "windshield",
+                            "reps": 10,
+                            "time": -1,
+                            "completed": false
+                        },
+                        {
+                            "id": "exerciseReverseCrunchStraight",
+                            "name": "reverseCrunchStraight",
+                            "reps": 10,
+                            "time": -1,
+                            "completed": false
+                        },
+                        {
+                            "id": "exercisePlankHipDips",
+                            "name": "plankHipDips",
+                            "reps": 10,
+                            "time": -1,
+                            "completed": false
+                        },
+                        {
+                            "id": "exerciseCommandos",
+                            "name": "commandos",
+                            "reps": 10,
+                            "time": -1,
+                            "completed": false
+                        },
+                        {
+                            "id": "exerciseDoubleLegLift",
+                            "name": "doubleLegLift",
+                            "reps": 10,
+                            "time": -1,
+                            "completed": false
+                        },
+                        {
+                            "id": "exerciseDoubleLegReach",
+                            "name": "doubleLegReach",
+                            "reps": 10,
+                            "time": -1,
+                            "completed": false
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "id": "programAbdominalsWeek3",
+            "days": [
+                {
+                    "id": "programAbdominalsWeek3Day0",
+                    "difficulty": 1,
+                    "exercises": [
+                        {
+                            "id": "exercisePlank",
+                            "name": "plank",
+                            "reps": -1,
+                            "time": 90,
+                            "completed": false
+                        },
+                        {
+                            "id": "exerciseBasicCrunches",
+                            "name": "basicCrunches",
+                            "reps": 10,
+                            "time": -1,
+                            "completed": false
+                        },
+                        {
+                            "id": "exerciseMountainClimbers",
+                            "name": "mountainClimbers",
+                            "reps": 10,
+                            "time": -1,
+                            "completed": false
+                        },
+                        {
+                            "id": "exerciseRollup",
+                            "name": "rollup",
+                            "reps": 10,
+                            "time": -1,
+                            "completed": false
+                        },
+                        {
+                            "id": "exerciseWindshield",
+                            "name": "windshield",
+                            "reps": 10,
+                            "time": -1,
+                            "completed": false
+                        },
+                        {
+                            "id": "exerciseReverseCrunchStraight",
+                            "name": "reverseCrunchStraight",
+                            "reps": 10,
+                            "time": -1,
+                            "completed": false
+                        },
+                        {
+                            "id": "exercisePlankHipDips",
+                            "name": "plankHipDips",
+                            "reps": 10,
+                            "time": -1,
+                            "completed": false
+                        }
+                    ]
+                },
+                {
+                    "id": "programAbdominalsWeek3Day1",
+                    "difficulty": 1,
+                    "exercises": [
+                        {
+                            "id": "exerciseCommandos",
+                            "name": "commandos",
+                            "reps": 10,
+                            "time": -1,
+                            "completed": false
+                        },
+                        {
+                            "id": "exerciseDoubleLegLift",
+                            "name": "doubleLegLift",
+                            "reps": 10,
+                            "time": -1,
+                            "completed": false
+                        },
+                        {
+                            "id": "exerciseDoubleLegReach",
+                            "name": "doubleLegReach",
+                            "reps": 10,
+                            "time": -1,
+                            "completed": false
+                        },
+                        {
+                            "id": "exerciseArmPlankWithKnees",
+                            "name": "armPlankWithKnees",
+                            "reps": 10,
+                            "time": -1,
+                            "completed": false
+                        },
+                        {
+                            "id": "exerciseBoatPose",
+                            "name": "boatPose",
+                            "reps": -1,
+                            "time": 90,
+                            "completed": false
+                        },
+                        {
+                            "id": "exerciseJackKnives",
+                            "name": "reverseJackKnives",
+                            "reps": 10,
+                            "time": -1,
+                            "completed": false
+                        }
+                    ]
+                },
+                {
+                    "id": "programAbdominalsWeek3Day2",
+                    "difficulty": 1,
+                    "exercises": [
+                        {
+                            "id": "exerciseRollup",
+                            "name": "rollup",
+                            "reps": 10,
+                            "time": -1,
+                            "completed": false
+                        },
+                        {
+                            "id": "exerciseWindshield",
+                            "name": "windshield",
+                            "reps": 10,
+                            "time": -1,
+                            "completed": false
+                        },
+                        {
+                            "id": "exerciseReverseCrunchStraight",
+                            "name": "reverseCrunchStraight",
+                            "reps": 10,
+                            "time": -1,
+                            "completed": false
+                        },
+                        {
+                            "id": "exercisePlankHipDips",
+                            "name": "plankHipDips",
+                            "reps": 10,
+                            "time": -1,
+                            "completed": false
+                        },
+                        {
+                            "id": "exerciseCommandos",
+                            "name": "commandos",
+                            "reps": 10,
+                            "time": -1,
+                            "completed": false
+                        },
+                        {
+                            "id": "exerciseDoubleLegLift",
+                            "name": "doubleLegLift",
+                            "reps": 10,
+                            "time": -1,
+                            "completed": false
+                        },
+                        {
+                            "id": "exerciseDoubleLegReach",
+                            "name": "doubleLegReach",
+                            "reps": 10,
+                            "time": -1,
+                            "completed": false
+                        }
+                    ]
+                },
+                {
+                    "id": "programAbdominalsWeek3Day3",
+                    "difficulty": 1,
+                    "exercises": [
+                        {
+                            "id": "exercisePlank",
+                            "name": "plank",
+                            "reps": -1,
+                            "time": 90,
+                            "completed": false
+                        },
+                        {
+                            "id": "exerciseBasicCrunches",
+                            "name": "basicCrunches",
+                            "reps": 10,
+                            "time": -1,
+                            "completed": false
+                        },
+                        {
+                            "id": "exerciseMountainClimbers",
+                            "name": "mountainClimbers",
+                            "reps": 10,
+                            "time": -1,
+                            "completed": false
+                        },
+                        {
+                            "id": "exerciseRollup",
+                            "name": "rollup",
+                            "reps": 10,
+                            "time": -1,
+                            "completed": false
+                        },
+                        {
+                            "id": "exerciseWindshield",
+                            "name": "windshield",
+                            "reps": 10,
+                            "time": -1,
+                            "completed": false
+                        },
+                        {
+                            "id": "exerciseReverseCrunchStraight",
+                            "name": "reverseCrunchStraight",
+                            "reps": 10,
+                            "time": -1,
+                            "completed": false
+                        },
+                        {
+                            "id": "exercisePlankHipDips",
+                            "name": "plankHipDips",
+                            "reps": 10,
+                            "time": -1,
+                            "completed": false
+                        }
+                    ]
+                },
+                {
+                    "id": "programAbdominalsWeek3Day4",
+                    "difficulty": 1,
+                    "exercises": [
+                        {
+                            "id": "exerciseCommandos",
+                            "name": "commandos",
+                            "reps": 10,
+                            "time": -1,
+                            "completed": false
+                        },
+                        {
+                            "id": "exerciseDoubleLegLift",
+                            "name": "doubleLegLift",
+                            "reps": 10,
+                            "time": -1,
+                            "completed": false
+                        },
+                        {
+                            "id": "exerciseDoubleLegReach",
+                            "name": "doubleLegReach",
+                            "reps": 10,
+                            "time": -1,
+                            "completed": false
+                        },
+                        {
+                            "id": "exerciseArmPlankWithKnees",
+                            "name": "armPlankWithKnees",
+                            "reps": 10,
+                            "time": -1,
+                            "completed": false
+                        },
+                        {
+                            "id": "exerciseBoatPose",
+                            "name": "boatPose",
+                            "reps": -1,
+                            "time": 90,
+                            "completed": false
+                        },
+                        {
+                            "id": "exerciseJackKnives",
+                            "name": "reverseJackKnives",
+                            "reps": 10,
+                            "time": -1,
+                            "completed": false
+                        }
+                    ]
+                },
+                {
+                    "id": "programAbdominalsWeek3Day5",
+                    "difficulty": 1,
+                    "exercises": [
+                        {
+                            "id": "exerciseRollup",
+                            "name": "rollup",
+                            "reps": 10,
+                            "time": -1,
+                            "completed": false
+                        },
+                        {
+                            "id": "exerciseWindshield",
+                            "name": "windshield",
+                            "reps": 10,
+                            "time": -1,
+                            "completed": false
+                        },
+                        {
+                            "id": "exerciseReverseCrunchStraight",
+                            "name": "reverseCrunchStraight",
+                            "reps": 10,
+                            "time": -1,
+                            "completed": false
+                        },
+                        {
+                            "id": "exercisePlankHipDips",
+                            "name": "plankHipDips",
+                            "reps": 10,
+                            "time": -1,
+                            "completed": false
+                        },
+                        {
+                            "id": "exerciseCommandos",
+                            "name": "commandos",
+                            "reps": 10,
+                            "time": -1,
+                            "completed": false
+                        },
+                        {
+                            "id": "exerciseDoubleLegLift",
+                            "name": "doubleLegLift",
+                            "reps": 10,
+                            "time": -1,
+                            "completed": false
+                        },
+                        {
+                            "id": "exerciseDoubleLegReach",
+                            "name": "doubleLegReach",
+                            "reps": 10,
+                            "time": -1,
+                            "completed": false
+                        }
+                    ]
+                },
+                {
+                    "id": "programAbdominalsWeek3Day6",
+                    "difficulty": 1,
+                    "exercises": [
+                        {
+                            "id": "exercisePlank",
+                            "name": "plank",
+                            "reps": -1,
+                            "time": 90,
+                            "completed": false
+                        },
+                        {
+                            "id": "exerciseBasicCrunches",
+                            "name": "basicCrunches",
+                            "reps": 10,
+                            "time": -1,
+                            "completed": false
+                        },
+                        {
+                            "id": "exerciseMountainClimbers",
+                            "name": "mountainClimbers",
+                            "reps": 10,
+                            "time": -1,
+                            "completed": false
+                        },
+                        {
+                            "id": "exerciseRollup",
+                            "name": "rollup",
+                            "reps": 10,
+                            "time": -1,
+                            "completed": false
+                        },
+                        {
+                            "id": "exerciseWindshield",
+                            "name": "windshield",
+                            "reps": 10,
+                            "time": -1,
+                            "completed": false
+                        },
+                        {
+                            "id": "exerciseReverseCrunchStraight",
+                            "name": "reverseCrunchStraight",
+                            "reps": 10,
+                            "time": -1,
+                            "completed": false
+                        },
+                        {
+                            "id": "exercisePlankHipDips",
+                            "name": "plankHipDips",
+                            "reps": 10,
+                            "time": -1,
+                            "completed": false
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "id": "programAbdominalsWeek4",
+            "days": [
+                {
+                    "id": "programAbdominalsWeek4Day0",
+                    "difficulty": 1,
+                    "exercises": [
+                        {
+                            "id": "exerciseCommandos",
+                            "name": "commandos",
+                            "reps": 14,
+                            "time": -1,
+                            "completed": false
+                        },
+                        {
+                            "id": "exerciseDoubleLegLift",
+                            "name": "doubleLegLift",
+                            "reps": 14,
+                            "time": -1,
+                            "completed": false
+                        },
+                        {
+                            "id": "exerciseDoubleLegReach",
+                            "name": "doubleLegReach",
+                            "reps": 14,
+                            "time": -1,
+                            "completed": false
+                        },
+                        {
+                            "id": "exerciseArmPlankWithKnees",
+                            "name": "armPlankWithKnees",
+                            "reps": 14,
+                            "time": -1,
+                            "completed": false
+                        },
+                        {
+                            "id": "exerciseBoatPose",
+                            "name": "boatPose",
+                            "reps": -1,
+                            "time": 90,
+                            "completed": false
+                        },
+                        {
+                            "id": "exerciseJackKnives",
+                            "name": "reverseJackKnives",
+                            "reps": 14,
+                            "time": -1,
+                            "completed": false
+                        }
+                    ]
+                },
+                {
+                    "id": "programAbdominalsWeek4Day1",
+                    "difficulty": 1,
+                    "exercises": [
+                        {
+                            "id": "exerciseRollup",
+                            "name": "rollup",
+                            "reps": 14,
+                            "time": -1,
+                            "completed": false
+                        },
+                        {
+                            "id": "exerciseWindshield",
+                            "name": "windshield",
+                            "reps": 14,
+                            "time": -1,
+                            "completed": false
+                        },
+                        {
+                            "id": "exerciseReverseCrunchStraight",
+                            "name": "reverseCrunchStraight",
+                            "reps": 14,
+                            "time": -1,
+                            "completed": false
+                        },
+                        {
+                            "id": "exercisePlankHipDips",
+                            "name": "plankHipDips",
+                            "reps": 14,
+                            "time": -1,
+                            "completed": false
+                        },
+                        {
+                            "id": "exerciseCommandos",
+                            "name": "commandos",
+                            "reps": 14,
+                            "time": -1,
+                            "completed": false
+                        },
+                        {
+                            "id": "exerciseDoubleLegLift",
+                            "name": "doubleLegLift",
+                            "reps": 14,
+                            "time": -1,
+                            "completed": false
+                        },
+                        {
+                            "id": "exerciseDoubleLegReach",
+                            "name": "doubleLegReach",
+                            "reps": 14,
+                            "time": -1,
+                            "completed": false
+                        }
+                    ]
+                },
+                {
+                    "id": "programAbdominalsWeek4Day2",
+                    "difficulty": 1,
+                    "exercises": [
+                        {
+                            "id": "exercisePlank",
+                            "name": "plank",
+                            "reps": -1,
+                            "time": 90,
+                            "completed": false
+                        },
+                        {
+                            "id": "exerciseBasicCrunches",
+                            "name": "basicCrunches",
+                            "reps": 14,
+                            "time": -1,
+                            "completed": false
+                        },
+                        {
+                            "id": "exerciseMountainClimbers",
+                            "name": "mountainClimbers",
+                            "reps": 14,
+                            "time": -1,
+                            "completed": false
+                        },
+                        {
+                            "id": "exerciseRollup",
+                            "name": "rollup",
+                            "reps": 14,
+                            "time": -1,
+                            "completed": false
+                        },
+                        {
+                            "id": "exerciseWindshield",
+                            "name": "windshield",
+                            "reps": 14,
+                            "time": -1,
+                            "completed": false
+                        },
+                        {
+                            "id": "exerciseReverseCrunchStraight",
+                            "name": "reverseCrunchStraight",
+                            "reps": 14,
+                            "time": -1,
+                            "completed": false
+                        },
+                        {
+                            "id": "exercisePlankHipDips",
+                            "name": "plankHipDips",
+                            "reps": 14,
+                            "time": -1,
+                            "completed": false
+                        }
+                    ]
+                },
+                {
+                    "id": "programAbdominalsWeek4Day3",
+                    "difficulty": 1,
+                    "exercises": [
+                        {
+                            "id": "exerciseCommandos",
+                            "name": "commandos",
+                            "reps": 14,
+                            "time": -1,
+                            "completed": false
+                        },
+                        {
+                            "id": "exerciseDoubleLegLift",
+                            "name": "doubleLegLift",
+                            "reps": 14,
+                            "time": -1,
+                            "completed": false
+                        },
+                        {
+                            "id": "exerciseDoubleLegReach",
+                            "name": "doubleLegReach",
+                            "reps": 14,
+                            "time": -1,
+                            "completed": false
+                        },
+                        {
+                            "id": "exerciseArmPlankWithKnees",
+                            "name": "armPlankWithKnees",
+                            "reps": 14,
+                            "time": -1,
+                            "completed": false
+                        },
+                        {
+                            "id": "exerciseBoatPose",
+                            "name": "boatPose",
+                            "reps": -1,
+                            "time": 90,
+                            "completed": false
+                        },
+                        {
+                            "id": "exerciseJackKnives",
+                            "name": "reverseJackKnives",
+                            "reps": 14,
+                            "time": -1,
+                            "completed": false
+                        }
+                    ]
+                },
+                {
+                    "id": "programAbdominalsWeek4Day4",
+                    "difficulty": 1,
+                    "exercises": [
+                        {
+                            "id": "exerciseRollup",
+                            "name": "rollup",
+                            "reps": 14,
+                            "time": -1,
+                            "completed": false
+                        },
+                        {
+                            "id": "exerciseWindshield",
+                            "name": "windshield",
+                            "reps": 14,
+                            "time": -1,
+                            "completed": false
+                        },
+                        {
+                            "id": "exerciseReverseCrunchStraight",
+                            "name": "reverseCrunchStraight",
+                            "reps": 14,
+                            "time": -1,
+                            "completed": false
+                        },
+                        {
+                            "id": "exercisePlankHipDips",
+                            "name": "plankHipDips",
+                            "reps": 14,
+                            "time": -1,
+                            "completed": false
+                        },
+                        {
+                            "id": "exerciseCommandos",
+                            "name": "commandos",
+                            "reps": 14,
+                            "time": -1,
+                            "completed": false
+                        },
+                        {
+                            "id": "exerciseDoubleLegLift",
+                            "name": "doubleLegLift",
+                            "reps": 14,
+                            "time": -1,
+                            "completed": false
+                        },
+                        {
+                            "id": "exerciseDoubleLegReach",
+                            "name": "doubleLegReach",
+                            "reps": 14,
+                            "time": -1,
+                            "completed": false
+                        }
+                    ]
+                },
+                {
+                    "id": "programAbdominalsWeek4Day5",
+                    "difficulty": 1,
+                    "exercises": [
+                        {
+                            "id": "exercisePlank",
+                            "name": "plank",
+                            "reps": -1,
+                            "time": 90,
+                            "completed": false
+                        },
+                        {
+                            "id": "exerciseBasicCrunches",
+                            "name": "basicCrunches",
+                            "reps": 14,
+                            "time": -1,
+                            "completed": false
+                        },
+                        {
+                            "id": "exerciseMountainClimbers",
+                            "name": "mountainClimbers",
+                            "reps": 14,
+                            "time": -1,
+                            "completed": false
+                        },
+                        {
+                            "id": "exerciseRollup",
+                            "name": "rollup",
+                            "reps": 14,
+                            "time": -1,
+                            "completed": false
+                        },
+                        {
+                            "id": "exerciseWindshield",
+                            "name": "windshield",
+                            "reps": 14,
+                            "time": -1,
+                            "completed": false
+                        },
+                        {
+                            "id": "exerciseReverseCrunchStraight",
+                            "name": "reverseCrunchStraight",
+                            "reps": 14,
+                            "time": -1,
+                            "completed": false
+                        },
+                        {
+                            "id": "exercisePlankHipDips",
+                            "name": "plankHipDips",
+                            "reps": 14,
+                            "time": -1,
+                            "completed": false
+                        }
+                    ]
+                },
+                {
+                    "id": "programAbdominalsWeek4Day6",
+                    "difficulty": 1,
+                    "exercises": [
+                        {
+                            "id": "exerciseCommandos",
+                            "name": "commandos",
+                            "reps": 14,
+                            "time": -1,
+                            "completed": false
+                        },
+                        {
+                            "id": "exerciseDoubleLegLift",
+                            "name": "doubleLegLift",
+                            "reps": 14,
+                            "time": -1,
+                            "completed": false
+                        },
+                        {
+                            "id": "exerciseDoubleLegReach",
+                            "name": "doubleLegReach",
+                            "reps": 14,
+                            "time": -1,
+                            "completed": false
+                        },
+                        {
+                            "id": "exerciseArmPlankWithKnees",
+                            "name": "armPlankWithKnees",
+                            "reps": 14,
+                            "time": -1,
+                            "completed": false
+                        },
+                        {
+                            "id": "exerciseBoatPose",
+                            "name": "boatPose",
+                            "reps": -1,
+                            "time": 90,
+                            "completed": false
+                        },
+                        {
+                            "id": "exerciseJackKnives",
+                            "name": "reverseJackKnives",
+                            "reps": 14,
+                            "time": -1,
+                            "completed": false
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "id": "programAbdominalsWeek5",
+            "days": [
+                {
+                    "id": "programAbdominalsWeek5Day0",
+                    "difficulty": 1,
+                    "exercises": [
+                        {
+                            "id": "exerciseRollup",
+                            "name": "rollup",
+                            "reps": 14,
+                            "time": -1,
+                            "completed": false
+                        },
+                        {
+                            "id": "exerciseWindshield",
+                            "name": "windshield",
+                            "reps": 14,
+                            "time": -1,
+                            "completed": false
+                        },
+                        {
+                            "id": "exerciseReverseCrunchStraight",
+                            "name": "reverseCrunchStraight",
+                            "reps": 14,
+                            "time": -1,
+                            "completed": false
+                        },
+                        {
+                            "id": "exercisePlankHipDips",
+                            "name": "plankHipDips",
+                            "reps": 14,
+                            "time": -1,
+                            "completed": false
+                        },
+                        {
+                            "id": "exerciseCommandos",
+                            "name": "commandos",
+                            "reps": 14,
+                            "time": -1,
+                            "completed": false
+                        },
+                        {
+                            "id": "exerciseDoubleLegLift",
+                            "name": "doubleLegLift",
+                            "reps": 14,
+                            "time": -1,
+                            "completed": false
+                        },
+                        {
+                            "id": "exerciseDoubleLegReach",
+                            "name": "doubleLegReach",
+                            "reps": 14,
+                            "time": -1,
+                            "completed": false
+                        }
+                    ]
+                },
+                {
+                    "id": "programAbdominalsWeek5Day1",
+                    "difficulty": 1,
+                    "exercises": [
+                        {
+                            "id": "exercisePlank",
+                            "name": "plank",
+                            "reps": -1,
+                            "time": 90,
+                            "completed": false
+                        },
+                        {
+                            "id": "exerciseBasicCrunches",
+                            "name": "basicCrunches",
+                            "reps": 14,
+                            "time": -1,
+                            "completed": false
+                        },
+                        {
+                            "id": "exerciseMountainClimbers",
+                            "name": "mountainClimbers",
+                            "reps": 14,
+                            "time": -1,
+                            "completed": false
+                        },
+                        {
+                            "id": "exerciseRollup",
+                            "name": "rollup",
+                            "reps": 14,
+                            "time": -1,
+                            "completed": false
+                        },
+                        {
+                            "id": "exerciseWindshield",
+                            "name": "windshield",
+                            "reps": 14,
+                            "time": -1,
+                            "completed": false
+                        },
+                        {
+                            "id": "exerciseReverseCrunchStraight",
+                            "name": "reverseCrunchStraight",
+                            "reps": 14,
+                            "time": -1,
+                            "completed": false
+                        },
+                        {
+                            "id": "exercisePlankHipDips",
+                            "name": "plankHipDips",
+                            "reps": 14,
+                            "time": -1,
+                            "completed": false
+                        }
+                    ]
+                },
+                {
+                    "id": "programAbdominalsWeek5Day2",
+                    "difficulty": 1,
+                    "exercises": [
+                        {
+                            "id": "exerciseCommandos",
+                            "name": "commandos",
+                            "reps": 16,
+                            "time": -1,
+                            "completed": false
+                        },
+                        {
+                            "id": "exerciseDoubleLegLift",
+                            "name": "doubleLegLift",
+                            "reps": 16,
+                            "time": -1,
+                            "completed": false
+                        },
+                        {
+                            "id": "exerciseDoubleLegReach",
+                            "name": "doubleLegReach",
+                            "reps": 16,
+                            "time": -1,
+                            "completed": false
+                        },
+                        {
+                            "id": "exerciseArmPlankWithKnees",
+                            "name": "armPlankWithKnees",
+                            "reps": 16,
+                            "time": -1,
+                            "completed": false
+                        },
+                        {
+                            "id": "exerciseBoatPose",
+                            "name": "boatPose",
+                            "reps": -1,
+                            "time": 90,
+                            "completed": false
+                        },
+                        {
+                            "id": "exerciseJackKnives",
+                            "name": "reverseJackKnives",
+                            "reps": 16,
+                            "time": -1,
+                            "completed": false
+                        }
+                    ]
+                },
+                {
+                    "id": "programAbdominalsWeek5Day3",
+                    "difficulty": 1,
+                    "exercises": [
+                        {
+                            "id": "exerciseRollup",
+                            "name": "rollup",
+                            "reps": 16,
+                            "time": -1,
+                            "completed": false
+                        },
+                        {
+                            "id": "exerciseWindshield",
+                            "name": "windshield",
+                            "reps": 16,
+                            "time": -1,
+                            "completed": false
+                        },
+                        {
+                            "id": "exerciseReverseCrunchStraight",
+                            "name": "reverseCrunchStraight",
+                            "reps": 16,
+                            "time": -1,
+                            "completed": false
+                        },
+                        {
+                            "id": "exercisePlankHipDips",
+                            "name": "plankHipDips",
+                            "reps": 16,
+                            "time": -1,
+                            "completed": false
+                        },
+                        {
+                            "id": "exerciseCommandos",
+                            "name": "commandos",
+                            "reps": 16,
+                            "time": -1,
+                            "completed": false
+                        },
+                        {
+                            "id": "exerciseDoubleLegLift",
+                            "name": "doubleLegLift",
+                            "reps": 16,
+                            "time": -1,
+                            "completed": false
+                        },
+                        {
+                            "id": "exerciseDoubleLegReach",
+                            "name": "doubleLegReach",
+                            "reps": 16,
+                            "time": -1,
+                            "completed": false
+                        }
+                    ]
+                },
+                {
+                    "id": "programAbdominalsWeek5Day4",
+                    "difficulty": 1,
+                    "exercises": [
+                        {
+                            "id": "exercisePlank",
+                            "name": "plank",
+                            "reps": -1,
+                            "time": 90,
+                            "completed": false
+                        },
+                        {
+                            "id": "exerciseBasicCrunches",
+                            "name": "basicCrunches",
+                            "reps": 16,
+                            "time": -1,
+                            "completed": false
+                        },
+                        {
+                            "id": "exerciseMountainClimbers",
+                            "name": "mountainClimbers",
+                            "reps": 16,
+                            "time": -1,
+                            "completed": false
+                        },
+                        {
+                            "id": "exerciseRollup",
+                            "name": "rollup",
+                            "reps": 16,
+                            "time": -1,
+                            "completed": false
+                        },
+                        {
+                            "id": "exerciseWindshield",
+                            "name": "windshield",
+                            "reps": 16,
+                            "time": -1,
+                            "completed": false
+                        },
+                        {
+                            "id": "exerciseReverseCrunchStraight",
+                            "name": "reverseCrunchStraight",
+                            "reps": 16,
+                            "time": -1,
+                            "completed": false
+                        },
+                        {
+                            "id": "exercisePlankHipDips",
+                            "name": "plankHipDips",
+                            "reps": 16,
+                            "time": -1,
+                            "completed": false
+                        }
+                    ]
+                },
+                {
+                    "id": "programAbdominalsWeek5Day5",
+                    "difficulty": 1,
+                    "exercises": [
+                        {
+                            "id": "exerciseCommandos",
+                            "name": "commandos",
+                            "reps": 20,
+                            "time": -1,
+                            "completed": false
+                        },
+                        {
+                            "id": "exerciseDoubleLegLift",
+                            "name": "doubleLegLift",
+                            "reps": 20,
+                            "time": -1,
+                            "completed": false
+                        },
+                        {
+                            "id": "exerciseDoubleLegReach",
+                            "name": "doubleLegReach",
+                            "reps": 20,
+                            "time": -1,
+                            "completed": false
+                        },
+                        {
+                            "id": "exerciseArmPlankWithKnees",
+                            "name": "armPlankWithKnees",
+                            "reps": 20,
+                            "time": -1,
+                            "completed": false
+                        },
+                        {
+                            "id": "exerciseBoatPose",
+                            "name": "boatPose",
+                            "reps": -1,
+                            "time": 90,
+                            "completed": false
+                        },
+                        {
+                            "id": "exerciseJackKnives",
+                            "name": "reverseJackKnives",
+                            "reps": 20,
+                            "time": -1,
+                            "completed": false
+                        }
+                    ]
+                },
+                {
+                    "id": "programAbdominalsWeek5Day6",
+                    "difficulty": 1,
+                    "exercises": [
+                        {
+                            "id": "exerciseRollup",
+                            "name": "rollup",
+                            "reps": 20,
+                            "time": -1,
+                            "completed": false
+                        },
+                        {
+                            "id": "exerciseWindshield",
+                            "name": "windshield",
+                            "reps": 20,
+                            "time": -1,
+                            "completed": false
+                        },
+                        {
+                            "id": "exerciseReverseCrunchStraight",
+                            "name": "reverseCrunchStraight",
+                            "reps": 20,
+                            "time": -1,
+                            "completed": false
+                        },
+                        {
+                            "id": "exercisePlankHipDips",
+                            "name": "plankHipDips",
+                            "reps": 20,
+                            "time": -1,
+                            "completed": false
+                        },
+                        {
+                            "id": "exerciseCommandos",
+                            "name": "commandos",
+                            "reps": 20,
+                            "time": -1,
+                            "completed": false
+                        },
+                        {
+                            "id": "exerciseDoubleLegLift",
+                            "name": "doubleLegLift",
+                            "reps": 20,
+                            "time": -1,
+                            "completed": false
+                        },
+                        {
+                            "id": "exerciseDoubleLegReach",
+                            "name": "doubleLegReach",
+                            "reps": 20,
+                            "time": -1,
+                            "completed": false
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "id": "programAbdominalsWeek6",
+            "days": [
+                {
+                    "id": "programAbdominalsWeek6Day0",
+                    "difficulty": 2,
+                    "exercises": [
+                        {
+                            "id": "exercisePlank",
+                            "name": "plank",
+                            "reps": -1,
+                            "time": 180,
+                            "completed": false
+                        },
+                        {
+                            "id": "exerciseBasicCrunches",
+                            "name": "basicCrunches",
+                            "reps": 20,
+                            "time": -1,
+                            "completed": false
+                        },
+                        {
+                            "id": "exerciseMountainClimbers",
+                            "name": "mountainClimbers",
+                            "reps": 20,
+                            "time": -1,
+                            "completed": false
+                        },
+                        {
+                            "id": "exerciseRollup",
+                            "name": "rollup",
+                            "reps": 20,
+                            "time": -1,
+                            "completed": false
+                        },
+                        {
+                            "id": "exerciseWindshield",
+                            "name": "windshield",
+                            "reps": 20,
+                            "time": -1,
+                            "completed": false
+                        },
+                        {
+                            "id": "exerciseReverseCrunchStraight",
+                            "name": "reverseCrunchStraight",
+                            "reps": 20,
+                            "time": -1,
+                            "completed": false
+                        },
+                        {
+                            "id": "exercisePlankHipDips",
+                            "name": "plankHipDips",
+                            "reps": 20,
+                            "time": -1,
+                            "completed": false
+                        }
+                    ]
+                },
+                {
+                    "id": "programAbdominalsWeek6Day1",
+                    "difficulty": 2,
+                    "exercises": [
+                        {
+                            "id": "exerciseCommandos",
+                            "name": "commandos",
+                            "reps": 20,
+                            "time": -1,
+                            "completed": false
+                        },
+                        {
+                            "id": "exerciseDoubleLegLift",
+                            "name": "doubleLegLift",
+                            "reps": 20,
+                            "time": -1,
+                            "completed": false
+                        },
+                        {
+                            "id": "exerciseDoubleLegReach",
+                            "name": "doubleLegReach",
+                            "reps": 20,
+                            "time": -1,
+                            "completed": false
+                        },
+                        {
+                            "id": "exerciseArmPlankWithKnees",
+                            "name": "armPlankWithKnees",
+                            "reps": 20,
+                            "time": -1,
+                            "completed": false
+                        },
+                        {
+                            "id": "exerciseBoatPose",
+                            "name": "boatPose",
+                            "reps": -1,
+                            "time": 180,
+                            "completed": false
+                        },
+                        {
+                            "id": "exerciseJackKnives",
+                            "name": "reverseJackKnives",
+                            "reps": 20,
+                            "time": -1,
+                            "completed": false
+                        }
+                    ]
+                },
+                {
+                    "id": "programAbdominalsWeek6Day2",
+                    "difficulty": 2,
+                    "exercises": [
+                        {
+                            "id": "exerciseRollup",
+                            "name": "rollup",
+                            "reps": 20,
+                            "time": -1,
+                            "completed": false
+                        },
+                        {
+                            "id": "exerciseWindshield",
+                            "name": "windshield",
+                            "reps": 20,
+                            "time": -1,
+                            "completed": false
+                        },
+                        {
+                            "id": "exerciseReverseCrunchStraight",
+                            "name": "reverseCrunchStraight",
+                            "reps": 20,
+                            "time": -1,
+                            "completed": false
+                        },
+                        {
+                            "id": "exercisePlankHipDips",
+                            "name": "plankHipDips",
+                            "reps": 20,
+                            "time": -1,
+                            "completed": false
+                        },
+                        {
+                            "id": "exerciseCommandos",
+                            "name": "commandos",
+                            "reps": 20,
+                            "time": -1,
+                            "completed": false
+                        },
+                        {
+                            "id": "exerciseDoubleLegLift",
+                            "name": "doubleLegLift",
+                            "reps": 20,
+                            "time": -1,
+                            "completed": false
+                        },
+                        {
+                            "id": "exerciseDoubleLegReach",
+                            "name": "doubleLegReach",
+                            "reps": 20,
+                            "time": -1,
+                            "completed": false
+                        }
+                    ]
+                },
+                {
+                    "id": "programAbdominalsWeek6Day3",
+                    "difficulty": 2,
+                    "exercises": [
+                        {
+                            "id": "exercisePlank",
+                            "name": "plank",
+                            "reps": -1,
+                            "time": 180,
+                            "completed": false
+                        },
+                        {
+                            "id": "exerciseBasicCrunches",
+                            "name": "basicCrunches",
+                            "reps": 20,
+                            "time": -1,
+                            "completed": false
+                        },
+                        {
+                            "id": "exerciseMountainClimbers",
+                            "name": "mountainClimbers",
+                            "reps": 20,
+                            "time": -1,
+                            "completed": false
+                        },
+                        {
+                            "id": "exerciseRollup",
+                            "name": "rollup",
+                            "reps": 20,
+                            "time": -1,
+                            "completed": false
+                        },
+                        {
+                            "id": "exerciseWindshield",
+                            "name": "windshield",
+                            "reps": 20,
+                            "time": -1,
+                            "completed": false
+                        },
+                        {
+                            "id": "exerciseReverseCrunchStraight",
+                            "name": "reverseCrunchStraight",
+                            "reps": 20,
+                            "time": -1,
+                            "completed": false
+                        },
+                        {
+                            "id": "exercisePlankHipDips",
+                            "name": "plankHipDips",
+                            "reps": 20,
+                            "time": -1,
+                            "completed": false
+                        }
+                    ]
+                },
+                {
+                    "id": "programAbdominalsWeek6Day4",
+                    "difficulty": 2,
+                    "exercises": [
+                        {
+                            "id": "exerciseCommandos",
+                            "name": "commandos",
+                            "reps": 20,
+                            "time": -1,
+                            "completed": false
+                        },
+                        {
+                            "id": "exerciseDoubleLegLift",
+                            "name": "doubleLegLift",
+                            "reps": 20,
+                            "time": -1,
+                            "completed": false
+                        },
+                        {
+                            "id": "exerciseDoubleLegReach",
+                            "name": "doubleLegReach",
+                            "reps": 20,
+                            "time": -1,
+                            "completed": false
+                        },
+                        {
+                            "id": "exerciseArmPlankWithKnees",
+                            "name": "armPlankWithKnees",
+                            "reps": 20,
+                            "time": -1,
+                            "completed": false
+                        },
+                        {
+                            "id": "exerciseBoatPose",
+                            "name": "boatPose",
+                            "reps": -1,
+                            "time": 180,
+                            "completed": false
+                        },
+                        {
+                            "id": "exerciseJackKnives",
+                            "name": "reverseJackKnives",
+                            "reps": 20,
+                            "time": -1,
+                            "completed": false
+                        }
+                    ]
+                },
+                {
+                    "id": "programAbdominalsWeek6Day5",
+                    "difficulty": 2,
+                    "exercises": [
+                        {
+                            "id": "exerciseRollup",
+                            "name": "rollup",
+                            "reps": 20,
+                            "time": -1,
+                            "completed": false
+                        },
+                        {
+                            "id": "exerciseWindshield",
+                            "name": "windshield",
+                            "reps": 20,
+                            "time": -1,
+                            "completed": false
+                        },
+                        {
+                            "id": "exerciseReverseCrunchStraight",
+                            "name": "reverseCrunchStraight",
+                            "reps": 20,
+                            "time": -1,
+                            "completed": false
+                        },
+                        {
+                            "id": "exercisePlankHipDips",
+                            "name": "plankHipDips",
+                            "reps": 20,
+                            "time": -1,
+                            "completed": false
+                        },
+                        {
+                            "id": "exerciseCommandos",
+                            "name": "commandos",
+                            "reps": 20,
+                            "time": -1,
+                            "completed": false
+                        },
+                        {
+                            "id": "exerciseDoubleLegLift",
+                            "name": "doubleLegLift",
+                            "reps": 20,
+                            "time": -1,
+                            "completed": false
+                        },
+                        {
+                            "id": "exerciseDoubleLegReach",
+                            "name": "doubleLegReach",
+                            "reps": 20,
+                            "time": -1,
+                            "completed": false
+                        }
+                    ]
+                },
+                {
+                    "id": "programAbdominalsWeek6Day6",
+                    "difficulty": 2,
+                    "exercises": [
+                        {
+                            "id": "exercisePlank",
+                            "name": "plank",
+                            "reps": -1,
+                            "time": 180,
+                            "completed": false
+                        },
+                        {
+                            "id": "exerciseBasicCrunches",
+                            "name": "basicCrunches",
+                            "reps": 20,
+                            "time": -1,
+                            "completed": false
+                        },
+                        {
+                            "id": "exerciseMountainClimbers",
+                            "name": "mountainClimbers",
+                            "reps": 20,
+                            "time": -1,
+                            "completed": false
+                        },
+                        {
+                            "id": "exerciseRollup",
+                            "name": "rollup",
+                            "reps": 20,
+                            "time": -1,
+                            "completed": false
+                        },
+                        {
+                            "id": "exerciseWindshield",
+                            "name": "windshield",
+                            "reps": 20,
+                            "time": -1,
+                            "completed": false
+                        },
+                        {
+                            "id": "exerciseReverseCrunchStraight",
+                            "name": "reverseCrunchStraight",
+                            "reps": 20,
+                            "time": -1,
+                            "completed": false
+                        },
+                        {
+                            "id": "exercisePlankHipDips",
+                            "name": "plankHipDips",
+                            "reps": 20,
+                            "time": -1,
+                            "completed": false
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "id": "programAbdominalsWeek7",
+            "days": [
+                {
+                    "id": "programAbdominalsWeek7Day0",
+                    "difficulty": 2,
+                    "exercises": [
+                        {
+                            "id": "exerciseCommandos",
+                            "name": "commandos",
+                            "reps": 28,
+                            "time": -1,
+                            "completed": false
+                        },
+                        {
+                            "id": "exerciseDoubleLegLift",
+                            "name": "doubleLegLift",
+                            "reps": 28,
+                            "time": -1,
+                            "completed": false
+                        },
+                        {
+                            "id": "exerciseDoubleLegReach",
+                            "name": "doubleLegReach",
+                            "reps": 28,
+                            "time": -1,
+                            "completed": false
+                        },
+                        {
+                            "id": "exerciseArmPlankWithKnees",
+                            "name": "armPlankWithKnees",
+                            "reps": 28,
+                            "time": -1,
+                            "completed": false
+                        },
+                        {
+                            "id": "exerciseBoatPose",
+                            "name": "boatPose",
+                            "reps": -1,
+                            "time": 180,
+                            "completed": false
+                        },
+                        {
+                            "id": "exerciseJackKnives",
+                            "name": "reverseJackKnives",
+                            "reps": 28,
+                            "time": -1,
+                            "completed": false
+                        }
+                    ]
+                },
+                {
+                    "id": "programAbdominalsWeek7Day1",
+                    "difficulty": 2,
+                    "exercises": [
+                        {
+                            "id": "exerciseRollup",
+                            "name": "rollup",
+                            "reps": 28,
+                            "time": -1,
+                            "completed": false
+                        },
+                        {
+                            "id": "exerciseWindshield",
+                            "name": "windshield",
+                            "reps": 28,
+                            "time": -1,
+                            "completed": false
+                        },
+                        {
+                            "id": "exerciseReverseCrunchStraight",
+                            "name": "reverseCrunchStraight",
+                            "reps": 28,
+                            "time": -1,
+                            "completed": false
+                        },
+                        {
+                            "id": "exercisePlankHipDips",
+                            "name": "plankHipDips",
+                            "reps": 28,
+                            "time": -1,
+                            "completed": false
+                        },
+                        {
+                            "id": "exerciseCommandos",
+                            "name": "commandos",
+                            "reps": 28,
+                            "time": -1,
+                            "completed": false
+                        },
+                        {
+                            "id": "exerciseDoubleLegLift",
+                            "name": "doubleLegLift",
+                            "reps": 28,
+                            "time": -1,
+                            "completed": false
+                        },
+                        {
+                            "id": "exerciseDoubleLegReach",
+                            "name": "doubleLegReach",
+                            "reps": 28,
+                            "time": -1,
+                            "completed": false
+                        }
+                    ]
+                },
+                {
+                    "id": "programAbdominalsWeek7Day2",
+                    "difficulty": 2,
+                    "exercises": [
+                        {
+                            "id": "exercisePlank",
+                            "name": "plank",
+                            "reps": -1,
+                            "time": 180,
+                            "completed": false
+                        },
+                        {
+                            "id": "exerciseBasicCrunches",
+                            "name": "basicCrunches",
+                            "reps": 28,
+                            "time": -1,
+                            "completed": false
+                        },
+                        {
+                            "id": "exerciseMountainClimbers",
+                            "name": "mountainClimbers",
+                            "reps": 28,
+                            "time": -1,
+                            "completed": false
+                        },
+                        {
+                            "id": "exerciseRollup",
+                            "name": "rollup",
+                            "reps": 28,
+                            "time": -1,
+                            "completed": false
+                        },
+                        {
+                            "id": "exerciseWindshield",
+                            "name": "windshield",
+                            "reps": 28,
+                            "time": -1,
+                            "completed": false
+                        },
+                        {
+                            "id": "exerciseReverseCrunchStraight",
+                            "name": "reverseCrunchStraight",
+                            "reps": 28,
+                            "time": -1,
+                            "completed": false
+                        },
+                        {
+                            "id": "exercisePlankHipDips",
+                            "name": "plankHipDips",
+                            "reps": 28,
+                            "time": -1,
+                            "completed": false
+                        }
+                    ]
+                },
+                {
+                    "id": "programAbdominalsWeek7Day3",
+                    "difficulty": 2,
+                    "exercises": [
+                        {
+                            "id": "exerciseCommandos",
+                            "name": "commandos",
+                            "reps": 28,
+                            "time": -1,
+                            "completed": false
+                        },
+                        {
+                            "id": "exerciseDoubleLegLift",
+                            "name": "doubleLegLift",
+                            "reps": 28,
+                            "time": -1,
+                            "completed": false
+                        },
+                        {
+                            "id": "exerciseDoubleLegReach",
+                            "name": "doubleLegReach",
+                            "reps": 28,
+                            "time": -1,
+                            "completed": false
+                        },
+                        {
+                            "id": "exerciseArmPlankWithKnees",
+                            "name": "armPlankWithKnees",
+                            "reps": 28,
+                            "time": -1,
+                            "completed": false
+                        },
+                        {
+                            "id": "exerciseBoatPose",
+                            "name": "boatPose",
+                            "reps": -1,
+                            "time": 180,
+                            "completed": false
+                        },
+                        {
+                            "id": "exerciseJackKnives",
+                            "name": "reverseJackKnives",
+                            "reps": 28,
+                            "time": -1,
+                            "completed": false
+                        }
+                    ]
+                },
+                {
+                    "id": "programAbdominalsWeek7Day4",
+                    "difficulty": 2,
+                    "exercises": [
+                        {
+                            "id": "exerciseRollup",
+                            "name": "rollup",
+                            "reps": 28,
+                            "time": -1,
+                            "completed": false
+                        },
+                        {
+                            "id": "exerciseWindshield",
+                            "name": "windshield",
+                            "reps": 28,
+                            "time": -1,
+                            "completed": false
+                        },
+                        {
+                            "id": "exerciseReverseCrunchStraight",
+                            "name": "reverseCrunchStraight",
+                            "reps": 28,
+                            "time": -1,
+                            "completed": false
+                        },
+                        {
+                            "id": "exercisePlankHipDips",
+                            "name": "plankHipDips",
+                            "reps": 28,
+                            "time": -1,
+                            "completed": false
+                        },
+                        {
+                            "id": "exerciseCommandos",
+                            "name": "commandos",
+                            "reps": 28,
+                            "time": -1,
+                            "completed": false
+                        },
+                        {
+                            "id": "exerciseDoubleLegLift",
+                            "name": "doubleLegLift",
+                            "reps": 28,
+                            "time": -1,
+                            "completed": false
+                        },
+                        {
+                            "id": "exerciseDoubleLegReach",
+                            "name": "doubleLegReach",
+                            "reps": 28,
+                            "time": -1,
+                            "completed": false
+                        }
+                    ]
+                },
+                {
+                    "id": "programAbdominalsWeek7Day5",
+                    "difficulty": 2,
+                    "exercises": [
+                        {
+                            "id": "exercisePlank",
+                            "name": "plank",
+                            "reps": -1,
+                            "time": 180,
+                            "completed": false
+                        },
+                        {
+                            "id": "exerciseBasicCrunches",
+                            "name": "basicCrunches",
+                            "reps": 28,
+                            "time": -1,
+                            "completed": false
+                        },
+                        {
+                            "id": "exerciseMountainClimbers",
+                            "name": "mountainClimbers",
+                            "reps": 28,
+                            "time": -1,
+                            "completed": false
+                        },
+                        {
+                            "id": "exerciseRollup",
+                            "name": "rollup",
+                            "reps": 28,
+                            "time": -1,
+                            "completed": false
+                        },
+                        {
+                            "id": "exerciseWindshield",
+                            "name": "windshield",
+                            "reps": 28,
+                            "time": -1,
+                            "completed": false
+                        },
+                        {
+                            "id": "exerciseReverseCrunchStraight",
+                            "name": "reverseCrunchStraight",
+                            "reps": 28,
+                            "time": -1,
+                            "completed": false
+                        },
+                        {
+                            "id": "exercisePlankHipDips",
+                            "name": "plankHipDips",
+                            "reps": 28,
+                            "time": -1,
+                            "completed": false
+                        }
+                    ]
+                },
+                {
+                    "id": "programAbdominalsWeek7Day6",
+                    "difficulty": 2,
+                    "exercises": [
+                        {
+                            "id": "exerciseCommandos",
+                            "name": "commandos",
+                            "reps": 28,
+                            "time": -1,
+                            "completed": false
+                        },
+                        {
+                            "id": "exerciseDoubleLegLift",
+                            "name": "doubleLegLift",
+                            "reps": 28,
+                            "time": -1,
+                            "completed": false
+                        },
+                        {
+                            "id": "exerciseDoubleLegReach",
+                            "name": "doubleLegReach",
+                            "reps": 28,
+                            "time": -1,
+                            "completed": false
+                        },
+                        {
+                            "id": "exerciseArmPlankWithKnees",
+                            "name": "armPlankWithKnees",
+                            "reps": 28,
+                            "time": -1,
+                            "completed": false
+                        },
+                        {
+                            "id": "exerciseBoatPose",
+                            "name": "boatPose",
+                            "reps": -1,
+                            "time": 180,
+                            "completed": false
+                        },
+                        {
+                            "id": "exerciseJackKnives",
+                            "name": "reverseJackKnives",
+                            "reps": 28,
+                            "time": -1,
+                            "completed": false
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "id": "programAbdominalsWeek8",
+            "days": [
+                {
+                    "id": "programAbdominalsWeek8Day0",
+                    "difficulty": 2,
+                    "exercises": [
+                        {
+                            "id": "exerciseRollup",
+                            "name": "rollup",
+                            "reps": 28,
+                            "time": -1,
+                            "completed": false
+                        },
+                        {
+                            "id": "exerciseWindshield",
+                            "name": "windshield",
+                            "reps": 28,
+                            "time": -1,
+                            "completed": false
+                        },
+                        {
+                            "id": "exerciseReverseCrunchStraight",
+                            "name": "reverseCrunchStraight",
+                            "reps": 28,
+                            "time": -1,
+                            "completed": false
+                        },
+                        {
+                            "id": "exercisePlankHipDips",
+                            "name": "plankHipDips",
+                            "reps": 28,
+                            "time": -1,
+                            "completed": false
+                        },
+                        {
+                            "id": "exerciseCommandos",
+                            "name": "commandos",
+                            "reps": 28,
+                            "time": -1,
+                            "completed": false
+                        },
+                        {
+                            "id": "exerciseDoubleLegLift",
+                            "name": "doubleLegLift",
+                            "reps": 28,
+                            "time": -1,
+                            "completed": false
+                        },
+                        {
+                            "id": "exerciseDoubleLegReach",
+                            "name": "doubleLegReach",
+                            "reps": 28,
+                            "time": -1,
+                            "completed": false
+                        }
+                    ]
+                },
+                {
+                    "id": "programAbdominalsWeek8Day1",
+                    "difficulty": 2,
+                    "exercises": [
+                        {
+                            "id": "exercisePlank",
+                            "name": "plank",
+                            "reps": -1,
+                            "time": 180,
+                            "completed": false
+                        },
+                        {
+                            "id": "exerciseBasicCrunches",
+                            "name": "basicCrunches",
+                            "reps": 28,
+                            "time": -1,
+                            "completed": false
+                        },
+                        {
+                            "id": "exerciseMountainClimbers",
+                            "name": "mountainClimbers",
+                            "reps": 28,
+                            "time": -1,
+                            "completed": false
+                        },
+                        {
+                            "id": "exerciseRollup",
+                            "name": "rollup",
+                            "reps": 28,
+                            "time": -1,
+                            "completed": false
+                        },
+                        {
+                            "id": "exerciseWindshield",
+                            "name": "windshield",
+                            "reps": 28,
+                            "time": -1,
+                            "completed": false
+                        },
+                        {
+                            "id": "exerciseReverseCrunchStraight",
+                            "name": "reverseCrunchStraight",
+                            "reps": 28,
+                            "time": -1,
+                            "completed": false
+                        },
+                        {
+                            "id": "exercisePlankHipDips",
+                            "name": "plankHipDips",
+                            "reps": 28,
+                            "time": -1,
+                            "completed": false
+                        }
+                    ]
+                },
+                {
+                    "id": "programAbdominalsWeek8Day2",
+                    "difficulty": 2,
+                    "exercises": [
+                        {
+                            "id": "exerciseCommandos",
+                            "name": "commandos",
+                            "reps": 32,
+                            "time": -1,
+                            "completed": false
+                        },
+                        {
+                            "id": "exerciseDoubleLegLift",
+                            "name": "doubleLegLift",
+                            "reps": 32,
+                            "time": -1,
+                            "completed": false
+                        },
+                        {
+                            "id": "exerciseDoubleLegReach",
+                            "name": "doubleLegReach",
+                            "reps": 32,
+                            "time": -1,
+                            "completed": false
+                        },
+                        {
+                            "id": "exerciseArmPlankWithKnees",
+                            "name": "armPlankWithKnees",
+                            "reps": 32,
+                            "time": -1,
+                            "completed": false
+                        },
+                        {
+                            "id": "exerciseBoatPose",
+                            "name": "boatPose",
+                            "reps": -1,
+                            "time": 180,
+                            "completed": false
+                        },
+                        {
+                            "id": "exerciseJackKnives",
+                            "name": "reverseJackKnives",
+                            "reps": 32,
+                            "time": -1,
+                            "completed": false
+                        }
+                    ]
+                },
+                {
+                    "id": "programAbdominalsWeek8Day3",
+                    "difficulty": 2,
+                    "exercises": [
+                        {
+                            "id": "exerciseRollup",
+                            "name": "rollup",
+                            "reps": 32,
+                            "time": -1,
+                            "completed": false
+                        },
+                        {
+                            "id": "exerciseWindshield",
+                            "name": "windshield",
+                            "reps": 32,
+                            "time": -1,
+                            "completed": false
+                        },
+                        {
+                            "id": "exerciseReverseCrunchStraight",
+                            "name": "reverseCrunchStraight",
+                            "reps": 32,
+                            "time": -1,
+                            "completed": false
+                        },
+                        {
+                            "id": "exercisePlankHipDips",
+                            "name": "plankHipDips",
+                            "reps": 32,
+                            "time": -1,
+                            "completed": false
+                        },
+                        {
+                            "id": "exerciseCommandos",
+                            "name": "commandos",
+                            "reps": 32,
+                            "time": -1,
+                            "completed": false
+                        },
+                        {
+                            "id": "exerciseDoubleLegLift",
+                            "name": "doubleLegLift",
+                            "reps": 32,
+                            "time": -1,
+                            "completed": false
+                        },
+                        {
+                            "id": "exerciseDoubleLegReach",
+                            "name": "doubleLegReach",
+                            "reps": 32,
+                            "time": -1,
+                            "completed": false
+                        }
+                    ]
+                },
+                {
+                    "id": "programAbdominalsWeek8Day4",
+                    "difficulty": 2,
+                    "exercises": [
+                        {
+                            "id": "exercisePlank",
+                            "name": "plank",
+                            "reps": -1,
+                            "time": 180,
+                            "completed": false
+                        },
+                        {
+                            "id": "exerciseBasicCrunches",
+                            "name": "basicCrunches",
+                            "reps": 32,
+                            "time": -1,
+                            "completed": false
+                        },
+                        {
+                            "id": "exerciseMountainClimbers",
+                            "name": "mountainClimbers",
+                            "reps": 32,
+                            "time": -1,
+                            "completed": false
+                        },
+                        {
+                            "id": "exerciseRollup",
+                            "name": "rollup",
+                            "reps": 32,
+                            "time": -1,
+                            "completed": false
+                        },
+                        {
+                            "id": "exerciseWindshield",
+                            "name": "windshield",
+                            "reps": 32,
+                            "time": -1,
+                            "completed": false
+                        },
+                        {
+                            "id": "exerciseReverseCrunchStraight",
+                            "name": "reverseCrunchStraight",
+                            "reps": 32,
+                            "time": -1,
+                            "completed": false
+                        },
+                        {
+                            "id": "exercisePlankHipDips",
+                            "name": "plankHipDips",
+                            "reps": 32,
+                            "time": -1,
+                            "completed": false
+                        }
+                    ]
+                },
+                {
+                    "id": "programAbdominalsWeek8Day5",
+                    "difficulty": 2,
+                    "exercises": [
+                        {
+                            "id": "exerciseCommandos",
+                            "name": "commandos",
+                            "reps": 40,
+                            "time": -1,
+                            "completed": false
+                        },
+                        {
+                            "id": "exerciseDoubleLegLift",
+                            "name": "doubleLegLift",
+                            "reps": 40,
+                            "time": -1,
+                            "completed": false
+                        },
+                        {
+                            "id": "exerciseDoubleLegReach",
+                            "name": "doubleLegReach",
+                            "reps": 40,
+                            "time": -1,
+                            "completed": false
+                        },
+                        {
+                            "id": "exerciseArmPlankWithKnees",
+                            "name": "armPlankWithKnees",
+                            "reps": 40,
+                            "time": -1,
+                            "completed": false
+                        },
+                        {
+                            "id": "exerciseBoatPose",
+                            "name": "boatPose",
+                            "reps": -1,
+                            "time": 180,
+                            "completed": false
+                        },
+                        {
+                            "id": "exerciseJackKnives",
+                            "name": "reverseJackKnives",
+                            "reps": 40,
+                            "time": -1,
+                            "completed": false
+                        }
+                    ]
+                },
+                {
+                    "id": "programAbdominalsWeek8Day6",
+                    "difficulty": 2,
+                    "exercises": [
+                        {
+                            "id": "exerciseRollup",
+                            "name": "rollup",
+                            "reps": 40,
+                            "time": -1,
+                            "completed": false
+                        },
+                        {
+                            "id": "exerciseWindshield",
+                            "name": "windshield",
+                            "reps": 40,
+                            "time": -1,
+                            "completed": false
+                        },
+                        {
+                            "id": "exerciseReverseCrunchStraight",
+                            "name": "reverseCrunchStraight",
+                            "reps": 40,
+                            "time": -1,
+                            "completed": false
+                        },
+                        {
+                            "id": "exercisePlankHipDips",
+                            "name": "plankHipDips",
+                            "reps": 40,
+                            "time": -1,
+                            "completed": false
+                        },
+                        {
+                            "id": "exerciseCommandos",
+                            "name": "commandos",
+                            "reps": 40,
+                            "time": -1,
+                            "completed": false
+                        },
+                        {
+                            "id": "exerciseDoubleLegLift",
+                            "name": "doubleLegLift",
+                            "reps": 40,
+                            "time": -1,
+                            "completed": false
+                        },
+                        {
+                            "id": "exerciseDoubleLegReach",
+                            "name": "doubleLegReach",
+                            "reps": 40,
+                            "time": -1,
+                            "completed": false
+                        }
+                    ]
+                }
+            ]
+        }
+    ]
+}

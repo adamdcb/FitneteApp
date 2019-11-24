@@ -1,0 +1,4419 @@
+{
+    "id": "programLegs",
+    "type": "legs",
+    "weeks": [
+        {
+            "id": "programLegsWeek0",
+            "days": [
+                {
+                    "id": "programLegsWeek0Day0",
+                    "difficulty": 0,
+                    "exercises": [
+                        {
+                            "id": "exerciseSquats",
+                            "name": "squats",
+                            "reps": 5,
+                            "time": -1,
+                            "completed": false
+                        },
+                        {
+                            "id": "exerciseLegSwingRightLeg",
+                            "name": "legSwingRightLeg",
+                            "reps": 5,
+                            "time": -1,
+                            "completed": false
+                        },
+                        {
+                            "id": "exerciseLegSwingLeftLeg",
+                            "name": "legSwingLeftLeg",
+                            "reps": 5,
+                            "time": -1,
+                            "completed": false
+                        },
+                        {
+                            "id": "exerciseGluteBridge",
+                            "name": "gluteBridge",
+                            "reps": 5,
+                            "time": -1,
+                            "completed": false
+                        },
+                        {
+                            "id": "exerciseInnerThighLiftRightLeg",
+                            "name": "innerThighLiftRightLeg",
+                            "reps": 5,
+                            "time": -1,
+                            "completed": false
+                        },
+                        {
+                            "id": "exerciseInnerThighLiftLeftLeg",
+                            "name": "innerThighLiftLeftLeg",
+                            "reps": 5,
+                            "time": -1,
+                            "completed": false
+                        }
+                    ]
+                },
+                {
+                    "id": "programLegsWeek0Day1",
+                    "difficulty": 0,
+                    "exercises": [
+                        {
+                            "id": "exerciseSquats",
+                            "name": "squats",
+                            "reps": 5,
+                            "time": -1,
+                            "completed": false
+                        },
+                        {
+                            "id": "exerciseLegSwingRightLeg",
+                            "name": "legSwingRightLeg",
+                            "reps": 5,
+                            "time": -1,
+                            "completed": false
+                        },
+                        {
+                            "id": "exerciseLegSwingLeftLeg",
+                            "name": "legSwingLeftLeg",
+                            "reps": 5,
+                            "time": -1,
+                            "completed": false
+                        },
+                        {
+                            "id": "exerciseGluteBridge",
+                            "name": "gluteBridge",
+                            "reps": 5,
+                            "time": -1,
+                            "completed": false
+                        },
+                        {
+                            "id": "exerciseInnerThighLiftRightLeg",
+                            "name": "innerThighLiftRightLeg",
+                            "reps": 5,
+                            "time": -1,
+                            "completed": false
+                        },
+                        {
+                            "id": "exerciseInnerThighLiftLeftLeg",
+                            "name": "innerThighLiftLeftLeg",
+                            "reps": 5,
+                            "time": -1,
+                            "completed": false
+                        }
+                    ]
+                },
+                {
+                    "id": "programLegsWeek0Day2",
+                    "difficulty": 0,
+                    "exercises": [
+                        {
+                            "id": "exerciseSquats",
+                            "name": "squats",
+                            "reps": 5,
+                            "time": -1,
+                            "completed": false
+                        },
+                        {
+                            "id": "exerciseLegSwingRightLeg",
+                            "name": "legSwingRightLeg",
+                            "reps": 5,
+                            "time": -1,
+                            "completed": false
+                        },
+                        {
+                            "id": "exerciseLegSwingLeftLeg",
+                            "name": "legSwingLeftLeg",
+                            "reps": 5,
+                            "time": -1,
+                            "completed": false
+                        },
+                        {
+                            "id": "exerciseGluteBridge",
+                            "name": "gluteBridge",
+                            "reps": 5,
+                            "time": -1,
+                            "completed": false
+                        },
+                        {
+                            "id": "exerciseInnerThighLiftRightLeg",
+                            "name": "innerThighLiftRightLeg",
+                            "reps": 5,
+                            "time": -1,
+                            "completed": false
+                        },
+                        {
+                            "id": "exerciseInnerThighLiftLeftLeg",
+                            "name": "innerThighLiftLeftLeg",
+                            "reps": 5,
+                            "time": -1,
+                            "completed": false
+                        },
+                        {
+                            "id": "exerciseSideLegLiftRightLeg",
+                            "name": "sideLegLiftRightLeg",
+                            "reps": 5,
+                            "time": -1,
+                            "completed": false
+                        },
+                        {
+                            "id": "exerciseSideLegLiftLeftLeg",
+                            "name": "sideLegLiftLeftLeg",
+                            "reps": 5,
+                            "time": -1,
+                            "completed": false
+                        }
+                    ]
+                },
+                {
+                    "id": "programLegsWeek0Day3",
+                    "difficulty": 0,
+                    "exercises": [
+                        {
+                            "id": "exercisePulsingLungesLeftLeg",
+                            "name": "pulsingLungesLeftLeg",
+                            "reps": 5,
+                            "time": -1,
+                            "completed": false
+                        },
+                        {
+                            "id": "exercisePulsingLungesRightLeg",
+                            "name": "pulsingLungesRightLeg",
+                            "reps": 5,
+                            "time": -1,
+                            "completed": false
+                        },
+                        {
+                            "id": "exerciseMarchingHip",
+                            "name": "marchingHip",
+                            "reps": 5,
+                            "time": -1,
+                            "completed": false
+                        },
+                        {
+                            "id": "exerciseSingleLegHipThrustersRightLeg",
+                            "name": "singleLegHipThrustersRightLeg",
+                            "reps": 5,
+                            "time": -1,
+                            "completed": false
+                        },
+                        {
+                            "id": "exerciseSingleLegHipThrustersLeftLeg",
+                            "name": "singleLegHipThrustersLeftLeg",
+                            "reps": 5,
+                            "time": -1,
+                            "completed": false
+                        },
+                        {
+                            "id": "exerciseOneLegBridgeRightLeg",
+                            "name": "oneLegBridgeRightLeg",
+                            "reps": 5,
+                            "time": -1,
+                            "completed": false
+                        },
+                        {
+                            "id": "exerciseOneLegBridgeLeftLeg",
+                            "name": "oneLegBridgeLeftLeg",
+                            "reps": 5,
+                            "time": -1,
+                            "completed": false
+                        },
+                        {
+                            "id": "exerciseSingleLegDeadliftRightLeg",
+                            "name": "singleLegDeadliftRightLeg",
+                            "reps": 5,
+                            "time": -1,
+                            "completed": false
+                        },
+                        {
+                            "id": "exerciseSingleLegDeadliftLeftLeg",
+                            "name": "singleLegDeadliftLeftLeg",
+                            "reps": 5,
+                            "time": -1,
+                            "completed": false
+                        }
+                    ]
+                },
+                {
+                    "id": "programLegsWeek0Day4",
+                    "difficulty": 0,
+                    "exercises": [
+                        {
+                            "id": "exercisePulsingLungesLeftLeg",
+                            "name": "pulsingLungesLeftLeg",
+                            "reps": 5,
+                            "time": -1,
+                            "completed": false
+                        },
+                        {
+                            "id": "exercisePulsingLungesRightLeg",
+                            "name": "pulsingLungesRightLeg",
+                            "reps": 5,
+                            "time": -1,
+                            "completed": false
+                        },
+                        {
+                            "id": "exerciseMarchingHip",
+                            "name": "marchingHip",
+                            "reps": 5,
+                            "time": -1,
+                            "completed": false
+                        },
+                        {
+                            "id": "exerciseSingleLegHipThrustersRightLeg",
+                            "name": "singleLegHipThrustersRightLeg",
+                            "reps": 5,
+                            "time": -1,
+                            "completed": false
+                        },
+                        {
+                            "id": "exerciseSingleLegHipThrustersLeftLeg",
+                            "name": "singleLegHipThrustersLeftLeg",
+                            "reps": 5,
+                            "time": -1,
+                            "completed": false
+                        },
+                        {
+                            "id": "exerciseOneLegBridgeRightLeg",
+                            "name": "oneLegBridgeRightLeg",
+                            "reps": 5,
+                            "time": -1,
+                            "completed": false
+                        },
+                        {
+                            "id": "exerciseOneLegBridgeLeftLeg",
+                            "name": "oneLegBridgeLeftLeg",
+                            "reps": 5,
+                            "time": -1,
+                            "completed": false
+                        },
+                        {
+                            "id": "exerciseSingleLegDeadliftRightLeg",
+                            "name": "singleLegDeadliftRightLeg",
+                            "reps": 5,
+                            "time": -1,
+                            "completed": false
+                        },
+                        {
+                            "id": "exerciseSingleLegDeadliftLeftLeg",
+                            "name": "singleLegDeadliftLeftLeg",
+                            "reps": 5,
+                            "time": -1,
+                            "completed": false
+                        }
+                    ]
+                },
+                {
+                    "id": "programLegsWeek0Day5",
+                    "difficulty": 0,
+                    "exercises": [
+                        {
+                            "id": "exercisePulsingLungesLeftLeg",
+                            "name": "pulsingLungesLeftLeg",
+                            "reps": 5,
+                            "time": -1,
+                            "completed": false
+                        },
+                        {
+                            "id": "exercisePulsingLungesRightLeg",
+                            "name": "pulsingLungesRightLeg",
+                            "reps": 5,
+                            "time": -1,
+                            "completed": false
+                        },
+                        {
+                            "id": "exerciseMarchingHip",
+                            "name": "marchingHip",
+                            "reps": 5,
+                            "time": -1,
+                            "completed": false
+                        },
+                        {
+                            "id": "exerciseSingleLegHipThrustersRightLeg",
+                            "name": "singleLegHipThrustersRightLeg",
+                            "reps": 5,
+                            "time": -1,
+                            "completed": false
+                        },
+                        {
+                            "id": "exerciseSingleLegHipThrustersLeftLeg",
+                            "name": "singleLegHipThrustersLeftLeg",
+                            "reps": 5,
+                            "time": -1,
+                            "completed": false
+                        },
+                        {
+                            "id": "exerciseOneLegBridgeRightLeg",
+                            "name": "oneLegBridgeRightLeg",
+                            "reps": 5,
+                            "time": -1,
+                            "completed": false
+                        },
+                        {
+                            "id": "exerciseOneLegBridgeLeftLeg",
+                            "name": "oneLegBridgeLeftLeg",
+                            "reps": 5,
+                            "time": -1,
+                            "completed": false
+                        },
+                        {
+                            "id": "exerciseSingleLegDeadliftRightLeg",
+                            "name": "singleLegDeadliftRightLeg",
+                            "reps": 5,
+                            "time": -1,
+                            "completed": false
+                        },
+                        {
+                            "id": "exerciseSingleLegDeadliftLeftLeg",
+                            "name": "singleLegDeadliftLeftLeg",
+                            "reps": 5,
+                            "time": -1,
+                            "completed": false
+                        }
+                    ]
+                },
+                {
+                    "id": "programLegsWeek0Day6",
+                    "difficulty": 0,
+                    "exercises": [
+                        {
+                            "id": "exerciseSquats",
+                            "name": "squats",
+                            "reps": 5,
+                            "time": -1,
+                            "completed": false
+                        },
+                        {
+                            "id": "exerciseLegSwingRightLeg",
+                            "name": "legSwingRightLeg",
+                            "reps": 5,
+                            "time": -1,
+                            "completed": false
+                        },
+                        {
+                            "id": "exerciseLegSwingLeftLeg",
+                            "name": "legSwingLeftLeg",
+                            "reps": 5,
+                            "time": -1,
+                            "completed": false
+                        },
+                        {
+                            "id": "exerciseGluteBridge",
+                            "name": "gluteBridge",
+                            "reps": 5,
+                            "time": -1,
+                            "completed": false
+                        },
+                        {
+                            "id": "exerciseInnerThighLiftRightLeg",
+                            "name": "innerThighLiftRightLeg",
+                            "reps": 5,
+                            "time": -1,
+                            "completed": false
+                        },
+                        {
+                            "id": "exerciseInnerThighLiftLeftLeg",
+                            "name": "innerThighLiftLeftLeg",
+                            "reps": 5,
+                            "time": -1,
+                            "completed": false
+                        },
+                        {
+                            "id": "exerciseGluteKickbacksRightLeg",
+                            "name": "gluteKickbacksRightLeg",
+                            "reps": 5,
+                            "time": -1,
+                            "completed": false
+                        },
+                        {
+                            "id": "exerciseGluteKickbacksLeftLeg",
+                            "name": "gluteKickbacksLeftLeg",
+                            "reps": 5,
+                            "time": -1,
+                            "completed": false
+                        },
+                        {
+                            "id": "exercisePulsingLungesLeftLeg",
+                            "name": "pulsingLungesLeftLeg",
+                            "reps": 5,
+                            "time": -1,
+                            "completed": false
+                        },
+                        {
+                            "id": "exercisePulsingLungesRightLeg",
+                            "name": "pulsingLungesRightLeg",
+                            "reps": 5,
+                            "time": -1,
+                            "completed": false
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "id": "programLegsWeek1",
+            "days": [
+                {
+                    "id": "programLegsWeek1Day0",
+                    "difficulty": 0,
+                    "exercises": [
+                        {
+                            "id": "exerciseSquats",
+                            "name": "squats",
+                            "reps": 7,
+                            "time": -1,
+                            "completed": false
+                        },
+                        {
+                            "id": "exerciseLegSwingRightLeg",
+                            "name": "legSwingRightLeg",
+                            "reps": 7,
+                            "time": -1,
+                            "completed": false
+                        },
+                        {
+                            "id": "exerciseLegSwingLeftLeg",
+                            "name": "legSwingLeftLeg",
+                            "reps": 7,
+                            "time": -1,
+                            "completed": false
+                        },
+                        {
+                            "id": "exerciseGluteBridge",
+                            "name": "gluteBridge",
+                            "reps": 7,
+                            "time": -1,
+                            "completed": false
+                        },
+                        {
+                            "id": "exerciseInnerThighLiftRightLeg",
+                            "name": "innerThighLiftRightLeg",
+                            "reps": 7,
+                            "time": -1,
+                            "completed": false
+                        },
+                        {
+                            "id": "exerciseInnerThighLiftLeftLeg",
+                            "name": "innerThighLiftLeftLeg",
+                            "reps": 7,
+                            "time": -1,
+                            "completed": false
+                        },
+                        {
+                            "id": "exerciseGluteKickbacksRightLeg",
+                            "name": "gluteKickbacksRightLeg",
+                            "reps": 7,
+                            "time": -1,
+                            "completed": false
+                        },
+                        {
+                            "id": "exerciseGluteKickbacksLeftLeg",
+                            "name": "gluteKickbacksLeftLeg",
+                            "reps": 7,
+                            "time": -1,
+                            "completed": false
+                        },
+                        {
+                            "id": "exercisePulsingLungesLeftLeg",
+                            "name": "pulsingLungesLeftLeg",
+                            "reps": 7,
+                            "time": -1,
+                            "completed": false
+                        },
+                        {
+                            "id": "exercisePulsingLungesRightLeg",
+                            "name": "pulsingLungesRightLeg",
+                            "reps": 7,
+                            "time": -1,
+                            "completed": false
+                        }
+                    ]
+                },
+                {
+                    "id": "programLegsWeek1Day1",
+                    "difficulty": 0,
+                    "exercises": [
+                        {
+                            "id": "exerciseSquats",
+                            "name": "squats",
+                            "reps": 7,
+                            "time": -1,
+                            "completed": false
+                        },
+                        {
+                            "id": "exerciseLegSwingRightLeg",
+                            "name": "legSwingRightLeg",
+                            "reps": 7,
+                            "time": -1,
+                            "completed": false
+                        },
+                        {
+                            "id": "exerciseLegSwingLeftLeg",
+                            "name": "legSwingLeftLeg",
+                            "reps": 7,
+                            "time": -1,
+                            "completed": false
+                        },
+                        {
+                            "id": "exerciseGluteBridge",
+                            "name": "gluteBridge",
+                            "reps": 7,
+                            "time": -1,
+                            "completed": false
+                        },
+                        {
+                            "id": "exerciseInnerThighLiftRightLeg",
+                            "name": "innerThighLiftRightLeg",
+                            "reps": 7,
+                            "time": -1,
+                            "completed": false
+                        },
+                        {
+                            "id": "exerciseInnerThighLiftLeftLeg",
+                            "name": "innerThighLiftLeftLeg",
+                            "reps": 7,
+                            "time": -1,
+                            "completed": false
+                        },
+                        {
+                            "id": "exerciseGluteKickbacksRightLeg",
+                            "name": "gluteKickbacksRightLeg",
+                            "reps": 7,
+                            "time": -1,
+                            "completed": false
+                        },
+                        {
+                            "id": "exerciseGluteKickbacksLeftLeg",
+                            "name": "gluteKickbacksLeftLeg",
+                            "reps": 7,
+                            "time": -1,
+                            "completed": false
+                        },
+                        {
+                            "id": "exercisePulsingLungesLeftLeg",
+                            "name": "pulsingLungesLeftLeg",
+                            "reps": 7,
+                            "time": -1,
+                            "completed": false
+                        },
+                        {
+                            "id": "exercisePulsingLungesRightLeg",
+                            "name": "pulsingLungesRightLeg",
+                            "reps": 7,
+                            "time": -1,
+                            "completed": false
+                        }
+                    ]
+                },
+                {
+                    "id": "programLegsWeek1Day2",
+                    "difficulty": 0,
+                    "exercises": [
+                        {
+                            "id": "exerciseSquats",
+                            "name": "squats",
+                            "reps": 7,
+                            "time": -1,
+                            "completed": false
+                        },
+                        {
+                            "id": "exerciseLegSwingRightLeg",
+                            "name": "legSwingRightLeg",
+                            "reps": 7,
+                            "time": -1,
+                            "completed": false
+                        },
+                        {
+                            "id": "exerciseLegSwingLeftLeg",
+                            "name": "legSwingLeftLeg",
+                            "reps": 7,
+                            "time": -1,
+                            "completed": false
+                        },
+                        {
+                            "id": "exerciseGluteBridge",
+                            "name": "gluteBridge",
+                            "reps": 7,
+                            "time": -1,
+                            "completed": false
+                        },
+                        {
+                            "id": "exerciseInnerThighLiftRightLeg",
+                            "name": "innerThighLiftRightLeg",
+                            "reps": 7,
+                            "time": -1,
+                            "completed": false
+                        },
+                        {
+                            "id": "exerciseInnerThighLiftLeftLeg",
+                            "name": "innerThighLiftLeftLeg",
+                            "reps": 7,
+                            "time": -1,
+                            "completed": false
+                        },
+                        {
+                            "id": "exerciseGluteKickbacksRightLeg",
+                            "name": "gluteKickbacksRightLeg",
+                            "reps": 7,
+                            "time": -1,
+                            "completed": false
+                        },
+                        {
+                            "id": "exerciseGluteKickbacksLeftLeg",
+                            "name": "gluteKickbacksLeftLeg",
+                            "reps": 7,
+                            "time": -1,
+                            "completed": false
+                        },
+                        {
+                            "id": "exercisePulsingLungesLeftLeg",
+                            "name": "pulsingLungesLeftLeg",
+                            "reps": 7,
+                            "time": -1,
+                            "completed": false
+                        },
+                        {
+                            "id": "exercisePulsingLungesRightLeg",
+                            "name": "pulsingLungesRightLeg",
+                            "reps": 7,
+                            "time": -1,
+                            "completed": false
+                        }
+                    ]
+                },
+                {
+                    "id": "programLegsWeek1Day3",
+                    "difficulty": 0,
+                    "exercises": [
+                        {
+                            "id": "exercisePulsingLungesLeftLeg",
+                            "name": "pulsingLungesLeftLeg",
+                            "reps": 7,
+                            "time": -1,
+                            "completed": false
+                        },
+                        {
+                            "id": "exercisePulsingLungesRightLeg",
+                            "name": "pulsingLungesRightLeg",
+                            "reps": 7,
+                            "time": -1,
+                            "completed": false
+                        },
+                        {
+                            "id": "exerciseMarchingHip",
+                            "name": "marchingHip",
+                            "reps": 7,
+                            "time": -1,
+                            "completed": false
+                        },
+                        {
+                            "id": "exerciseSingleLegHipThrustersRightLeg",
+                            "name": "singleLegHipThrustersRightLeg",
+                            "reps": 7,
+                            "time": -1,
+                            "completed": false
+                        },
+                        {
+                            "id": "exerciseSingleLegHipThrustersLeftLeg",
+                            "name": "singleLegHipThrustersLeftLeg",
+                            "reps": 7,
+                            "time": -1,
+                            "completed": false
+                        },
+                        {
+                            "id": "exerciseOneLegBridgeRightLeg",
+                            "name": "oneLegBridgeRightLeg",
+                            "reps": 7,
+                            "time": -1,
+                            "completed": false
+                        },
+                        {
+                            "id": "exerciseOneLegBridgeLeftLeg",
+                            "name": "oneLegBridgeLeftLeg",
+                            "reps": 7,
+                            "time": -1,
+                            "completed": false
+                        }
+                    ]
+                },
+                {
+                    "id": "programLegsWeek1Day4",
+                    "difficulty": 0,
+                    "exercises": [
+                        {
+                            "id": "exercisePulsingLungesLeftLeg",
+                            "name": "pulsingLungesLeftLeg",
+                            "reps": 7,
+                            "time": -1,
+                            "completed": false
+                        },
+                        {
+                            "id": "exercisePulsingLungesRightLeg",
+                            "name": "pulsingLungesRightLeg",
+                            "reps": 7,
+                            "time": -1,
+                            "completed": false
+                        },
+                        {
+                            "id": "exerciseMarchingHip",
+                            "name": "marchingHip",
+                            "reps": 7,
+                            "time": -1,
+                            "completed": false
+                        },
+                        {
+                            "id": "exerciseSingleLegHipThrustersRightLeg",
+                            "name": "singleLegHipThrustersRightLeg",
+                            "reps": 7,
+                            "time": -1,
+                            "completed": false
+                        },
+                        {
+                            "id": "exerciseSingleLegHipThrustersLeftLeg",
+                            "name": "singleLegHipThrustersLeftLeg",
+                            "reps": 7,
+                            "time": -1,
+                            "completed": false
+                        },
+                        {
+                            "id": "exerciseOneLegBridgeRightLeg",
+                            "name": "oneLegBridgeRightLeg",
+                            "reps": 7,
+                            "time": -1,
+                            "completed": false
+                        },
+                        {
+                            "id": "exerciseOneLegBridgeLeftLeg",
+                            "name": "oneLegBridgeLeftLeg",
+                            "reps": 7,
+                            "time": -1,
+                            "completed": false
+                        },
+                        {
+                            "id": "exerciseSingleLegDeadliftRightLeg",
+                            "name": "singleLegDeadliftRightLeg",
+                            "reps": 7,
+                            "time": -1,
+                            "completed": false
+                        },
+                        {
+                            "id": "exerciseSingleLegDeadliftLeftLeg",
+                            "name": "singleLegDeadliftLeftLeg",
+                            "reps": 7,
+                            "time": -1,
+                            "completed": false
+                        }
+                    ]
+                },
+                {
+                    "id": "programLegsWeek1Day5",
+                    "difficulty": 0,
+                    "exercises": [
+                        {
+                            "id": "exercisePulsingLungesLeftLeg",
+                            "name": "pulsingLungesLeftLeg",
+                            "reps": 7,
+                            "time": -1,
+                            "completed": false
+                        },
+                        {
+                            "id": "exercisePulsingLungesRightLeg",
+                            "name": "pulsingLungesRightLeg",
+                            "reps": 7,
+                            "time": -1,
+                            "completed": false
+                        },
+                        {
+                            "id": "exerciseMarchingHip",
+                            "name": "marchingHip",
+                            "reps": 7,
+                            "time": -1,
+                            "completed": false
+                        },
+                        {
+                            "id": "exerciseSingleLegHipThrustersRightLeg",
+                            "name": "singleLegHipThrustersRightLeg",
+                            "reps": 7,
+                            "time": -1,
+                            "completed": false
+                        },
+                        {
+                            "id": "exerciseSingleLegHipThrustersLeftLeg",
+                            "name": "singleLegHipThrustersLeftLeg",
+                            "reps": 7,
+                            "time": -1,
+                            "completed": false
+                        },
+                        {
+                            "id": "exerciseOneLegBridgeRightLeg",
+                            "name": "oneLegBridgeRightLeg",
+                            "reps": 7,
+                            "time": -1,
+                            "completed": false
+                        },
+                        {
+                            "id": "exerciseOneLegBridgeLeftLeg",
+                            "name": "oneLegBridgeLeftLeg",
+                            "reps": 7,
+                            "time": -1,
+                            "completed": false
+                        }
+                    ]
+                },
+                {
+                    "id": "programLegsWeek1Day6",
+                    "difficulty": 0,
+                    "exercises": [
+                        {
+                            "id": "exerciseLegSwingRightLeg",
+                            "name": "legSwingRightLeg",
+                            "reps": 7,
+                            "time": -1,
+                            "completed": false
+                        },
+                        {
+                            "id": "exerciseLegSwingLeftLeg",
+                            "name": "legSwingLeftLeg",
+                            "reps": 7,
+                            "time": -1,
+                            "completed": false
+                        },
+                        {
+                            "id": "exerciseGluteBridge",
+                            "name": "gluteBridge",
+                            "reps": 7,
+                            "time": -1,
+                            "completed": false
+                        },
+                        {
+                            "id": "exerciseInnerThighLiftRightLeg",
+                            "name": "innerThighLiftRightLeg",
+                            "reps": 7,
+                            "time": -1,
+                            "completed": false
+                        },
+                        {
+                            "id": "exerciseInnerThighLiftLeftLeg",
+                            "name": "innerThighLiftLeftLeg",
+                            "reps": 7,
+                            "time": -1,
+                            "completed": false
+                        },
+                        {
+                            "id": "exerciseGluteKickbacksRightLeg",
+                            "name": "gluteKickbacksRightLeg",
+                            "reps": 7,
+                            "time": -1,
+                            "completed": false
+                        },
+                        {
+                            "id": "exerciseGluteKickbacksLeftLeg",
+                            "name": "gluteKickbacksLeftLeg",
+                            "reps": 7,
+                            "time": -1,
+                            "completed": false
+                        },
+                        {
+                            "id": "exercisePulsingLungesLeftLeg",
+                            "name": "pulsingLungesLeftLeg",
+                            "reps": 7,
+                            "time": -1,
+                            "completed": false
+                        },
+                        {
+                            "id": "exercisePulsingLungesRightLeg",
+                            "name": "pulsingLungesRightLeg",
+                            "reps": 7,
+                            "time": -1,
+                            "completed": false
+                        },
+                        {
+                            "id": "exerciseMarchingHip",
+                            "name": "marchingHip",
+                            "reps": 7,
+                            "time": -1,
+                            "completed": false
+                        },
+                        {
+                            "id": "exerciseSingleLegHipThrustersRightLeg",
+                            "name": "singleLegHipThrustersRightLeg",
+                            "reps": 7,
+                            "time": -1,
+                            "completed": false
+                        },
+                        {
+                            "id": "exerciseSingleLegHipThrustersLeftLeg",
+                            "name": "singleLegHipThrustersLeftLeg",
+                            "reps": 7,
+                            "time": -1,
+                            "completed": false
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "id": "programLegsWeek2",
+            "days": [
+                {
+                    "id": "programLegsWeek2Day0",
+                    "difficulty": 0,
+                    "exercises": [
+                        {
+                            "id": "exerciseLegSwingRightLeg",
+                            "name": "legSwingRightLeg",
+                            "reps": 8,
+                            "time": -1,
+                            "completed": false
+                        },
+                        {
+                            "id": "exerciseLegSwingLeftLeg",
+                            "name": "legSwingLeftLeg",
+                            "reps": 8,
+                            "time": -1,
+                            "completed": false
+                        },
+                        {
+                            "id": "exerciseGluteBridge",
+                            "name": "gluteBridge",
+                            "reps": 8,
+                            "time": -1,
+                            "completed": false
+                        },
+                        {
+                            "id": "exerciseInnerThighLiftRightLeg",
+                            "name": "innerThighLiftRightLeg",
+                            "reps": 8,
+                            "time": -1,
+                            "completed": false
+                        },
+                        {
+                            "id": "exerciseInnerThighLiftLeftLeg",
+                            "name": "innerThighLiftLeftLeg",
+                            "reps": 8,
+                            "time": -1,
+                            "completed": false
+                        },
+                        {
+                            "id": "exerciseSideLegLiftRightLeg",
+                            "name": "sideLegLiftRightLeg",
+                            "reps": 8,
+                            "time": -1,
+                            "completed": false
+                        },
+                        {
+                            "id": "exerciseSideLegLiftLeftLeg",
+                            "name": "sideLegLiftLeftLeg",
+                            "reps": 8,
+                            "time": -1,
+                            "completed": false
+                        },
+                        {
+                            "id": "exerciseGluteKickbacksRightLeg",
+                            "name": "gluteKickbacksRightLeg",
+                            "reps": 8,
+                            "time": -1,
+                            "completed": false
+                        },
+                        {
+                            "id": "exerciseGluteKickbacksLeftLeg",
+                            "name": "gluteKickbacksLeftLeg",
+                            "reps": 8,
+                            "time": -1,
+                            "completed": false
+                        }
+                    ]
+                },
+                {
+                    "id": "programLegsWeek2Day1",
+                    "difficulty": 0,
+                    "exercises": [
+                        {
+                            "id": "exerciseLegSwingRightLeg",
+                            "name": "legSwingRightLeg",
+                            "reps": 8,
+                            "time": -1,
+                            "completed": false
+                        },
+                        {
+                            "id": "exerciseLegSwingLeftLeg",
+                            "name": "legSwingLeftLeg",
+                            "reps": 8,
+                            "time": -1,
+                            "completed": false
+                        },
+                        {
+                            "id": "exerciseGluteBridge",
+                            "name": "gluteBridge",
+                            "reps": 8,
+                            "time": -1,
+                            "completed": false
+                        },
+                        {
+                            "id": "exerciseInnerThighLiftRightLeg",
+                            "name": "innerThighLiftRightLeg",
+                            "reps": 8,
+                            "time": -1,
+                            "completed": false
+                        },
+                        {
+                            "id": "exerciseInnerThighLiftLeftLeg",
+                            "name": "innerThighLiftLeftLeg",
+                            "reps": 8,
+                            "time": -1,
+                            "completed": false
+                        },
+                        {
+                            "id": "exerciseSideLegLiftRightLeg",
+                            "name": "sideLegLiftRightLeg",
+                            "reps": 8,
+                            "time": -1,
+                            "completed": false
+                        },
+                        {
+                            "id": "exerciseSideLegLiftLeftLeg",
+                            "name": "sideLegLiftLeftLeg",
+                            "reps": 8,
+                            "time": -1,
+                            "completed": false
+                        },
+                        {
+                            "id": "exerciseGluteKickbacksRightLeg",
+                            "name": "gluteKickbacksRightLeg",
+                            "reps": 8,
+                            "time": -1,
+                            "completed": false
+                        },
+                        {
+                            "id": "exerciseGluteKickbacksLeftLeg",
+                            "name": "gluteKickbacksLeftLeg",
+                            "reps": 8,
+                            "time": -1,
+                            "completed": false
+                        }
+                    ]
+                },
+                {
+                    "id": "programLegsWeek2Day2",
+                    "difficulty": 0,
+                    "exercises": [
+                        {
+                            "id": "exerciseLegSwingRightLeg",
+                            "name": "legSwingRightLeg",
+                            "reps": 8,
+                            "time": -1,
+                            "completed": false
+                        },
+                        {
+                            "id": "exerciseLegSwingLeftLeg",
+                            "name": "legSwingLeftLeg",
+                            "reps": 8,
+                            "time": -1,
+                            "completed": false
+                        },
+                        {
+                            "id": "exerciseGluteBridge",
+                            "name": "gluteBridge",
+                            "reps": 8,
+                            "time": -1,
+                            "completed": false
+                        },
+                        {
+                            "id": "exerciseInnerThighLiftRightLeg",
+                            "name": "innerThighLiftRightLeg",
+                            "reps": 8,
+                            "time": -1,
+                            "completed": false
+                        },
+                        {
+                            "id": "exerciseInnerThighLiftLeftLeg",
+                            "name": "innerThighLiftLeftLeg",
+                            "reps": 8,
+                            "time": -1,
+                            "completed": false
+                        },
+                        {
+                            "id": "exerciseGluteKickbacksRightLeg",
+                            "name": "gluteKickbacksRightLeg",
+                            "reps": 8,
+                            "time": -1,
+                            "completed": false
+                        },
+                        {
+                            "id": "exerciseGluteKickbacksLeftLeg",
+                            "name": "gluteKickbacksLeftLeg",
+                            "reps": 8,
+                            "time": -1,
+                            "completed": false
+                        },
+                        {
+                            "id": "exerciseMarchingHip",
+                            "name": "marchingHip",
+                            "reps": 8,
+                            "time": -1,
+                            "completed": false
+                        },
+                        {
+                            "id": "exerciseSingleLegHipThrustersRightLeg",
+                            "name": "singleLegHipThrustersRightLeg",
+                            "reps": 8,
+                            "time": -1,
+                            "completed": false
+                        },
+                        {
+                            "id": "exerciseSingleLegHipThrustersLeftLeg",
+                            "name": "singleLegHipThrustersLeftLeg",
+                            "reps": 8,
+                            "time": -1,
+                            "completed": false
+                        },
+                        {
+                            "id": "exerciseOneLegBridgeRightLeg",
+                            "name": "oneLegBridgeRightLeg",
+                            "reps": 8,
+                            "time": -1,
+                            "completed": false
+                        },
+                        {
+                            "id": "exerciseOneLegBridgeLeftLeg",
+                            "name": "oneLegBridgeLeftLeg",
+                            "reps": 8,
+                            "time": -1,
+                            "completed": false
+                        },
+                        {
+                            "id": "exerciseSingleLegDeadliftRightLeg",
+                            "name": "singleLegDeadliftRightLeg",
+                            "reps": 8,
+                            "time": -1,
+                            "completed": false
+                        },
+                        {
+                            "id": "exerciseSingleLegDeadliftLeftLeg",
+                            "name": "singleLegDeadliftLeftLeg",
+                            "reps": 8,
+                            "time": -1,
+                            "completed": false
+                        }
+                    ]
+                },
+                {
+                    "id": "programLegsWeek2Day3",
+                    "difficulty": 0,
+                    "exercises": [
+                        {
+                            "id": "exerciseGluteKickbacksRightLeg",
+                            "name": "gluteKickbacksRightLeg",
+                            "reps": 8,
+                            "time": -1,
+                            "completed": false
+                        },
+                        {
+                            "id": "exerciseGluteKickbacksLeftLeg",
+                            "name": "gluteKickbacksLeftLeg",
+                            "reps": 8,
+                            "time": -1,
+                            "completed": false
+                        },
+                        {
+                            "id": "exerciseMarchingHip",
+                            "name": "marchingHip",
+                            "reps": 8,
+                            "time": -1,
+                            "completed": false
+                        },
+                        {
+                            "id": "exerciseSingleLegHipThrustersRightLeg",
+                            "name": "singleLegHipThrustersRightLeg",
+                            "reps": 8,
+                            "time": -1,
+                            "completed": false
+                        },
+                        {
+                            "id": "exerciseSingleLegHipThrustersLeftLeg",
+                            "name": "singleLegHipThrustersLeftLeg",
+                            "reps": 8,
+                            "time": -1,
+                            "completed": false
+                        },
+                        {
+                            "id": "exerciseOneLegBridgeRightLeg",
+                            "name": "oneLegBridgeRightLeg",
+                            "reps": 8,
+                            "time": -1,
+                            "completed": false
+                        },
+                        {
+                            "id": "exerciseOneLegBridgeLeftLeg",
+                            "name": "oneLegBridgeLeftLeg",
+                            "reps": 8,
+                            "time": -1,
+                            "completed": false
+                        },
+                        {
+                            "id": "exerciseSingleLegDeadliftRightLeg",
+                            "name": "singleLegDeadliftRightLeg",
+                            "reps": 8,
+                            "time": -1,
+                            "completed": false
+                        },
+                        {
+                            "id": "exerciseSingleLegDeadliftLeftLeg",
+                            "name": "singleLegDeadliftLeftLeg",
+                            "reps": 8,
+                            "time": -1,
+                            "completed": false
+                        }
+                    ]
+                },
+                {
+                    "id": "programLegsWeek2Day4",
+                    "difficulty": 0,
+                    "exercises": [
+                        {
+                            "id": "exerciseLegSwingRightLeg",
+                            "name": "legSwingRightLeg",
+                            "reps": 10,
+                            "time": -1,
+                            "completed": false
+                        },
+                        {
+                            "id": "exerciseLegSwingLeftLeg",
+                            "name": "legSwingLeftLeg",
+                            "reps": 10,
+                            "time": -1,
+                            "completed": false
+                        },
+                        {
+                            "id": "exerciseGluteBridge",
+                            "name": "gluteBridge",
+                            "reps": 10,
+                            "time": -1,
+                            "completed": false
+                        },
+                        {
+                            "id": "exerciseInnerThighLiftRightLeg",
+                            "name": "innerThighLiftRightLeg",
+                            "reps": 10,
+                            "time": -1,
+                            "completed": false
+                        },
+                        {
+                            "id": "exerciseInnerThighLiftLeftLeg",
+                            "name": "innerThighLiftLeftLeg",
+                            "reps": 10,
+                            "time": -1,
+                            "completed": false
+                        },
+                        {
+                            "id": "exerciseSideLegLiftRightLeg",
+                            "name": "sideLegLiftRightLeg",
+                            "reps": 7,
+                            "time": -1,
+                            "completed": false
+                        },
+                        {
+                            "id": "exerciseSideLegLiftLeftLeg",
+                            "name": "sideLegLiftLeftLeg",
+                            "reps": 7,
+                            "time": -1,
+                            "completed": false
+                        },
+                        {
+                            "id": "exerciseGluteKickbacksRightLeg",
+                            "name": "gluteKickbacksRightLeg",
+                            "reps": 10,
+                            "time": -1,
+                            "completed": false
+                        },
+                        {
+                            "id": "exerciseGluteKickbacksLeftLeg",
+                            "name": "gluteKickbacksLeftLeg",
+                            "reps": 10,
+                            "time": -1,
+                            "completed": false
+                        }
+                    ]
+                },
+                {
+                    "id": "programLegsWeek2Day5",
+                    "difficulty": 0,
+                    "exercises": [
+                        {
+                            "id": "exerciseLegSwingRightLeg",
+                            "name": "legSwingRightLeg",
+                            "reps": 10,
+                            "time": -1,
+                            "completed": false
+                        },
+                        {
+                            "id": "exerciseLegSwingLeftLeg",
+                            "name": "legSwingLeftLeg",
+                            "reps": 10,
+                            "time": -1,
+                            "completed": false
+                        },
+                        {
+                            "id": "exerciseGluteBridge",
+                            "name": "gluteBridge",
+                            "reps": 10,
+                            "time": -1,
+                            "completed": false
+                        },
+                        {
+                            "id": "exerciseInnerThighLiftRightLeg",
+                            "name": "innerThighLiftRightLeg",
+                            "reps": 10,
+                            "time": -1,
+                            "completed": false
+                        },
+                        {
+                            "id": "exerciseInnerThighLiftLeftLeg",
+                            "name": "innerThighLiftLeftLeg",
+                            "reps": 10,
+                            "time": -1,
+                            "completed": false
+                        },
+                        {
+                            "id": "exerciseSideLegLiftRightLeg",
+                            "name": "sideLegLiftRightLeg",
+                            "reps": 7,
+                            "time": -1,
+                            "completed": false
+                        },
+                        {
+                            "id": "exerciseSideLegLiftLeftLeg",
+                            "name": "sideLegLiftLeftLeg",
+                            "reps": 7,
+                            "time": -1,
+                            "completed": false
+                        },
+                        {
+                            "id": "exerciseGluteKickbacksRightLeg",
+                            "name": "gluteKickbacksRightLeg",
+                            "reps": 10,
+                            "time": -1,
+                            "completed": false
+                        },
+                        {
+                            "id": "exerciseGluteKickbacksLeftLeg",
+                            "name": "gluteKickbacksLeftLeg",
+                            "reps": 10,
+                            "time": -1,
+                            "completed": false
+                        },
+                        {
+                            "id": "exerciseMarchingHip",
+                            "name": "marchingHip",
+                            "reps": 10,
+                            "time": -1,
+                            "completed": false
+                        }
+                    ]
+                },
+                {
+                    "id": "programLegsWeek2Day6",
+                    "difficulty": 0,
+                    "exercises": [
+                        {
+                            "id": "exerciseLegSwingRightLeg",
+                            "name": "legSwingRightLeg",
+                            "reps": 10,
+                            "time": -1,
+                            "completed": false
+                        },
+                        {
+                            "id": "exerciseLegSwingLeftLeg",
+                            "name": "legSwingLeftLeg",
+                            "reps": 10,
+                            "time": -1,
+                            "completed": false
+                        },
+                        {
+                            "id": "exerciseGluteBridge",
+                            "name": "gluteBridge",
+                            "reps": 10,
+                            "time": -1,
+                            "completed": false
+                        },
+                        {
+                            "id": "exerciseInnerThighLiftRightLeg",
+                            "name": "innerThighLiftRightLeg",
+                            "reps": 10,
+                            "time": -1,
+                            "completed": false
+                        },
+                        {
+                            "id": "exerciseInnerThighLiftLeftLeg",
+                            "name": "innerThighLiftLeftLeg",
+                            "reps": 10,
+                            "time": -1,
+                            "completed": false
+                        },
+                        {
+                            "id": "exerciseGluteKickbacksRightLeg",
+                            "name": "gluteKickbacksRightLeg",
+                            "reps": 10,
+                            "time": -1,
+                            "completed": false
+                        },
+                        {
+                            "id": "exerciseGluteKickbacksLeftLeg",
+                            "name": "gluteKickbacksLeftLeg",
+                            "reps": 10,
+                            "time": -1,
+                            "completed": false
+                        },
+                        {
+                            "id": "exerciseMarchingHip",
+                            "name": "marchingHip",
+                            "reps": 10,
+                            "time": -1,
+                            "completed": false
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "id": "programLegsWeek3",
+            "days": [
+                {
+                    "id": "programLegsWeek3Day0",
+                    "difficulty": 1,
+                    "exercises": [
+                        {
+                            "id": "exerciseSquats",
+                            "name": "squats",
+                            "reps": 10,
+                            "time": -1,
+                            "completed": false
+                        },
+                        {
+                            "id": "exerciseLegSwingRightLeg",
+                            "name": "legSwingRightLeg",
+                            "reps": 10,
+                            "time": -1,
+                            "completed": false
+                        },
+                        {
+                            "id": "exerciseLegSwingLeftLeg",
+                            "name": "legSwingLeftLeg",
+                            "reps": 10,
+                            "time": -1,
+                            "completed": false
+                        },
+                        {
+                            "id": "exerciseGluteBridge",
+                            "name": "gluteBridge",
+                            "reps": 10,
+                            "time": -1,
+                            "completed": false
+                        },
+                        {
+                            "id": "exerciseInnerThighLiftRightLeg",
+                            "name": "innerThighLiftRightLeg",
+                            "reps": 10,
+                            "time": -1,
+                            "completed": false
+                        },
+                        {
+                            "id": "exerciseInnerThighLiftLeftLeg",
+                            "name": "innerThighLiftLeftLeg",
+                            "reps": 10,
+                            "time": -1,
+                            "completed": false
+                        }
+                    ]
+                },
+                {
+                    "id": "programLegsWeek3Day1",
+                    "difficulty": 1,
+                    "exercises": [
+                        {
+                            "id": "exerciseSquats",
+                            "name": "squats",
+                            "reps": 10,
+                            "time": -1,
+                            "completed": false
+                        },
+                        {
+                            "id": "exerciseLegSwingRightLeg",
+                            "name": "legSwingRightLeg",
+                            "reps": 10,
+                            "time": -1,
+                            "completed": false
+                        },
+                        {
+                            "id": "exerciseLegSwingLeftLeg",
+                            "name": "legSwingLeftLeg",
+                            "reps": 10,
+                            "time": -1,
+                            "completed": false
+                        },
+                        {
+                            "id": "exerciseGluteBridge",
+                            "name": "gluteBridge",
+                            "reps": 10,
+                            "time": -1,
+                            "completed": false
+                        },
+                        {
+                            "id": "exerciseInnerThighLiftRightLeg",
+                            "name": "innerThighLiftRightLeg",
+                            "reps": 10,
+                            "time": -1,
+                            "completed": false
+                        },
+                        {
+                            "id": "exerciseInnerThighLiftLeftLeg",
+                            "name": "innerThighLiftLeftLeg",
+                            "reps": 10,
+                            "time": -1,
+                            "completed": false
+                        }
+                    ]
+                },
+                {
+                    "id": "programLegsWeek3Day2",
+                    "difficulty": 1,
+                    "exercises": [
+                        {
+                            "id": "exerciseSquats",
+                            "name": "squats",
+                            "reps": 10,
+                            "time": -1,
+                            "completed": false
+                        },
+                        {
+                            "id": "exerciseLegSwingRightLeg",
+                            "name": "legSwingRightLeg",
+                            "reps": 10,
+                            "time": -1,
+                            "completed": false
+                        },
+                        {
+                            "id": "exerciseLegSwingLeftLeg",
+                            "name": "legSwingLeftLeg",
+                            "reps": 10,
+                            "time": -1,
+                            "completed": false
+                        },
+                        {
+                            "id": "exerciseGluteBridge",
+                            "name": "gluteBridge",
+                            "reps": 10,
+                            "time": -1,
+                            "completed": false
+                        },
+                        {
+                            "id": "exerciseInnerThighLiftRightLeg",
+                            "name": "innerThighLiftRightLeg",
+                            "reps": 10,
+                            "time": -1,
+                            "completed": false
+                        },
+                        {
+                            "id": "exerciseInnerThighLiftLeftLeg",
+                            "name": "innerThighLiftLeftLeg",
+                            "reps": 10,
+                            "time": -1,
+                            "completed": false
+                        },
+                        {
+                            "id": "exerciseSideLegLiftRightLeg",
+                            "name": "sideLegLiftRightLeg",
+                            "reps": 10,
+                            "time": -1,
+                            "completed": false
+                        },
+                        {
+                            "id": "exerciseSideLegLiftLeftLeg",
+                            "name": "sideLegLiftLeftLeg",
+                            "reps": 10,
+                            "time": -1,
+                            "completed": false
+                        }
+                    ]
+                },
+                {
+                    "id": "programLegsWeek3Day3",
+                    "difficulty": 1,
+                    "exercises": [
+                        {
+                            "id": "exercisePulsingLungesLeftLeg",
+                            "name": "pulsingLungesLeftLeg",
+                            "reps": 10,
+                            "time": -1,
+                            "completed": false
+                        },
+                        {
+                            "id": "exercisePulsingLungesRightLeg",
+                            "name": "pulsingLungesRightLeg",
+                            "reps": 10,
+                            "time": -1,
+                            "completed": false
+                        },
+                        {
+                            "id": "exerciseMarchingHip",
+                            "name": "marchingHip",
+                            "reps": 10,
+                            "time": -1,
+                            "completed": false
+                        },
+                        {
+                            "id": "exerciseSingleLegHipThrustersRightLeg",
+                            "name": "singleLegHipThrustersRightLeg",
+                            "reps": 10,
+                            "time": -1,
+                            "completed": false
+                        },
+                        {
+                            "id": "exerciseSingleLegHipThrustersLeftLeg",
+                            "name": "singleLegHipThrustersLeftLeg",
+                            "reps": 10,
+                            "time": -1,
+                            "completed": false
+                        },
+                        {
+                            "id": "exerciseOneLegBridgeRightLeg",
+                            "name": "oneLegBridgeRightLeg",
+                            "reps": 10,
+                            "time": -1,
+                            "completed": false
+                        },
+                        {
+                            "id": "exerciseOneLegBridgeLeftLeg",
+                            "name": "oneLegBridgeLeftLeg",
+                            "reps": 10,
+                            "time": -1,
+                            "completed": false
+                        },
+                        {
+                            "id": "exerciseSingleLegDeadliftRightLeg",
+                            "name": "singleLegDeadliftRightLeg",
+                            "reps": 10,
+                            "time": -1,
+                            "completed": false
+                        },
+                        {
+                            "id": "exerciseSingleLegDeadliftLeftLeg",
+                            "name": "singleLegDeadliftLeftLeg",
+                            "reps": 10,
+                            "time": -1,
+                            "completed": false
+                        }
+                    ]
+                },
+                {
+                    "id": "programLegsWeek3Day4",
+                    "difficulty": 1,
+                    "exercises": [
+                        {
+                            "id": "exercisePulsingLungesLeftLeg",
+                            "name": "pulsingLungesLeftLeg",
+                            "reps": 10,
+                            "time": -1,
+                            "completed": false
+                        },
+                        {
+                            "id": "exercisePulsingLungesRightLeg",
+                            "name": "pulsingLungesRightLeg",
+                            "reps": 10,
+                            "time": -1,
+                            "completed": false
+                        },
+                        {
+                            "id": "exerciseMarchingHip",
+                            "name": "marchingHip",
+                            "reps": 10,
+                            "time": -1,
+                            "completed": false
+                        },
+                        {
+                            "id": "exerciseSingleLegHipThrustersRightLeg",
+                            "name": "singleLegHipThrustersRightLeg",
+                            "reps": 10,
+                            "time": -1,
+                            "completed": false
+                        },
+                        {
+                            "id": "exerciseSingleLegHipThrustersLeftLeg",
+                            "name": "singleLegHipThrustersLeftLeg",
+                            "reps": 10,
+                            "time": -1,
+                            "completed": false
+                        },
+                        {
+                            "id": "exerciseOneLegBridgeRightLeg",
+                            "name": "oneLegBridgeRightLeg",
+                            "reps": 10,
+                            "time": -1,
+                            "completed": false
+                        },
+                        {
+                            "id": "exerciseOneLegBridgeLeftLeg",
+                            "name": "oneLegBridgeLeftLeg",
+                            "reps": 10,
+                            "time": -1,
+                            "completed": false
+                        },
+                        {
+                            "id": "exerciseSingleLegDeadliftRightLeg",
+                            "name": "singleLegDeadliftRightLeg",
+                            "reps": 10,
+                            "time": -1,
+                            "completed": false
+                        },
+                        {
+                            "id": "exerciseSingleLegDeadliftLeftLeg",
+                            "name": "singleLegDeadliftLeftLeg",
+                            "reps": 10,
+                            "time": -1,
+                            "completed": false
+                        }
+                    ]
+                },
+                {
+                    "id": "programLegsWeek3Day5",
+                    "difficulty": 1,
+                    "exercises": [
+                        {
+                            "id": "exercisePulsingLungesLeftLeg",
+                            "name": "pulsingLungesLeftLeg",
+                            "reps": 10,
+                            "time": -1,
+                            "completed": false
+                        },
+                        {
+                            "id": "exercisePulsingLungesRightLeg",
+                            "name": "pulsingLungesRightLeg",
+                            "reps": 10,
+                            "time": -1,
+                            "completed": false
+                        },
+                        {
+                            "id": "exerciseMarchingHip",
+                            "name": "marchingHip",
+                            "reps": 10,
+                            "time": -1,
+                            "completed": false
+                        },
+                        {
+                            "id": "exerciseSingleLegHipThrustersRightLeg",
+                            "name": "singleLegHipThrustersRightLeg",
+                            "reps": 10,
+                            "time": -1,
+                            "completed": false
+                        },
+                        {
+                            "id": "exerciseSingleLegHipThrustersLeftLeg",
+                            "name": "singleLegHipThrustersLeftLeg",
+                            "reps": 10,
+                            "time": -1,
+                            "completed": false
+                        },
+                        {
+                            "id": "exerciseOneLegBridgeRightLeg",
+                            "name": "oneLegBridgeRightLeg",
+                            "reps": 10,
+                            "time": -1,
+                            "completed": false
+                        },
+                        {
+                            "id": "exerciseOneLegBridgeLeftLeg",
+                            "name": "oneLegBridgeLeftLeg",
+                            "reps": 10,
+                            "time": -1,
+                            "completed": false
+                        },
+                        {
+                            "id": "exerciseSingleLegDeadliftRightLeg",
+                            "name": "singleLegDeadliftRightLeg",
+                            "reps": 10,
+                            "time": -1,
+                            "completed": false
+                        },
+                        {
+                            "id": "exerciseSingleLegDeadliftLeftLeg",
+                            "name": "singleLegDeadliftLeftLeg",
+                            "reps": 10,
+                            "time": -1,
+                            "completed": false
+                        }
+                    ]
+                },
+                {
+                    "id": "programLegsWeek3Day6",
+                    "difficulty": 1,
+                    "exercises": [
+                        {
+                            "id": "exerciseSquats",
+                            "name": "squats",
+                            "reps": 10,
+                            "time": -1,
+                            "completed": false
+                        },
+                        {
+                            "id": "exerciseLegSwingRightLeg",
+                            "name": "legSwingRightLeg",
+                            "reps": 10,
+                            "time": -1,
+                            "completed": false
+                        },
+                        {
+                            "id": "exerciseLegSwingLeftLeg",
+                            "name": "legSwingLeftLeg",
+                            "reps": 10,
+                            "time": -1,
+                            "completed": false
+                        },
+                        {
+                            "id": "exerciseGluteBridge",
+                            "name": "gluteBridge",
+                            "reps": 10,
+                            "time": -1,
+                            "completed": false
+                        },
+                        {
+                            "id": "exerciseInnerThighLiftRightLeg",
+                            "name": "innerThighLiftRightLeg",
+                            "reps": 10,
+                            "time": -1,
+                            "completed": false
+                        },
+                        {
+                            "id": "exerciseInnerThighLiftLeftLeg",
+                            "name": "innerThighLiftLeftLeg",
+                            "reps": 10,
+                            "time": -1,
+                            "completed": false
+                        },
+                        {
+                            "id": "exerciseGluteKickbacksRightLeg",
+                            "name": "gluteKickbacksRightLeg",
+                            "reps": 10,
+                            "time": -1,
+                            "completed": false
+                        },
+                        {
+                            "id": "exerciseGluteKickbacksLeftLeg",
+                            "name": "gluteKickbacksLeftLeg",
+                            "reps": 10,
+                            "time": -1,
+                            "completed": false
+                        },
+                        {
+                            "id": "exercisePulsingLungesLeftLeg",
+                            "name": "pulsingLungesLeftLeg",
+                            "reps": 10,
+                            "time": -1,
+                            "completed": false
+                        },
+                        {
+                            "id": "exercisePulsingLungesRightLeg",
+                            "name": "pulsingLungesRightLeg",
+                            "reps": 10,
+                            "time": -1,
+                            "completed": false
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "id": "programLegsWeek4",
+            "days": [
+                {
+                    "id": "programLegsWeek4Day0",
+                    "difficulty": 1,
+                    "exercises": [
+                        {
+                            "id": "exerciseSquats",
+                            "name": "squats",
+                            "reps": 14,
+                            "time": -1,
+                            "completed": false
+                        },
+                        {
+                            "id": "exerciseLegSwingRightLeg",
+                            "name": "legSwingRightLeg",
+                            "reps": 14,
+                            "time": -1,
+                            "completed": false
+                        },
+                        {
+                            "id": "exerciseLegSwingLeftLeg",
+                            "name": "legSwingLeftLeg",
+                            "reps": 14,
+                            "time": -1,
+                            "completed": false
+                        },
+                        {
+                            "id": "exerciseGluteBridge",
+                            "name": "gluteBridge",
+                            "reps": 14,
+                            "time": -1,
+                            "completed": false
+                        },
+                        {
+                            "id": "exerciseInnerThighLiftRightLeg",
+                            "name": "innerThighLiftRightLeg",
+                            "reps": 14,
+                            "time": -1,
+                            "completed": false
+                        },
+                        {
+                            "id": "exerciseInnerThighLiftLeftLeg",
+                            "name": "innerThighLiftLeftLeg",
+                            "reps": 14,
+                            "time": -1,
+                            "completed": false
+                        },
+                        {
+                            "id": "exerciseGluteKickbacksRightLeg",
+                            "name": "gluteKickbacksRightLeg",
+                            "reps": 14,
+                            "time": -1,
+                            "completed": false
+                        },
+                        {
+                            "id": "exerciseGluteKickbacksLeftLeg",
+                            "name": "gluteKickbacksLeftLeg",
+                            "reps": 14,
+                            "time": -1,
+                            "completed": false
+                        },
+                        {
+                            "id": "exercisePulsingLungesLeftLeg",
+                            "name": "pulsingLungesLeftLeg",
+                            "reps": 14,
+                            "time": -1,
+                            "completed": false
+                        },
+                        {
+                            "id": "exercisePulsingLungesRightLeg",
+                            "name": "pulsingLungesRightLeg",
+                            "reps": 14,
+                            "time": -1,
+                            "completed": false
+                        }
+                    ]
+                },
+                {
+                    "id": "programLegsWeek4Day1",
+                    "difficulty": 1,
+                    "exercises": [
+                        {
+                            "id": "exerciseSquats",
+                            "name": "squats",
+                            "reps": 14,
+                            "time": -1,
+                            "completed": false
+                        },
+                        {
+                            "id": "exerciseLegSwingRightLeg",
+                            "name": "legSwingRightLeg",
+                            "reps": 14,
+                            "time": -1,
+                            "completed": false
+                        },
+                        {
+                            "id": "exerciseLegSwingLeftLeg",
+                            "name": "legSwingLeftLeg",
+                            "reps": 14,
+                            "time": -1,
+                            "completed": false
+                        },
+                        {
+                            "id": "exerciseGluteBridge",
+                            "name": "gluteBridge",
+                            "reps": 14,
+                            "time": -1,
+                            "completed": false
+                        },
+                        {
+                            "id": "exerciseInnerThighLiftRightLeg",
+                            "name": "innerThighLiftRightLeg",
+                            "reps": 14,
+                            "time": -1,
+                            "completed": false
+                        },
+                        {
+                            "id": "exerciseInnerThighLiftLeftLeg",
+                            "name": "innerThighLiftLeftLeg",
+                            "reps": 14,
+                            "time": -1,
+                            "completed": false
+                        },
+                        {
+                            "id": "exerciseGluteKickbacksRightLeg",
+                            "name": "gluteKickbacksRightLeg",
+                            "reps": 14,
+                            "time": -1,
+                            "completed": false
+                        },
+                        {
+                            "id": "exerciseGluteKickbacksLeftLeg",
+                            "name": "gluteKickbacksLeftLeg",
+                            "reps": 14,
+                            "time": -1,
+                            "completed": false
+                        },
+                        {
+                            "id": "exercisePulsingLungesLeftLeg",
+                            "name": "pulsingLungesLeftLeg",
+                            "reps": 14,
+                            "time": -1,
+                            "completed": false
+                        },
+                        {
+                            "id": "exercisePulsingLungesRightLeg",
+                            "name": "pulsingLungesRightLeg",
+                            "reps": 14,
+                            "time": -1,
+                            "completed": false
+                        }
+                    ]
+                },
+                {
+                    "id": "programLegsWeek4Day2",
+                    "difficulty": 1,
+                    "exercises": [
+                        {
+                            "id": "exerciseSquats",
+                            "name": "squats",
+                            "reps": 14,
+                            "time": -1,
+                            "completed": false
+                        },
+                        {
+                            "id": "exerciseLegSwingRightLeg",
+                            "name": "legSwingRightLeg",
+                            "reps": 14,
+                            "time": -1,
+                            "completed": false
+                        },
+                        {
+                            "id": "exerciseLegSwingLeftLeg",
+                            "name": "legSwingLeftLeg",
+                            "reps": 14,
+                            "time": -1,
+                            "completed": false
+                        },
+                        {
+                            "id": "exerciseGluteBridge",
+                            "name": "gluteBridge",
+                            "reps": 14,
+                            "time": -1,
+                            "completed": false
+                        },
+                        {
+                            "id": "exerciseInnerThighLiftRightLeg",
+                            "name": "innerThighLiftRightLeg",
+                            "reps": 14,
+                            "time": -1,
+                            "completed": false
+                        },
+                        {
+                            "id": "exerciseInnerThighLiftLeftLeg",
+                            "name": "innerThighLiftLeftLeg",
+                            "reps": 14,
+                            "time": -1,
+                            "completed": false
+                        },
+                        {
+                            "id": "exerciseGluteKickbacksRightLeg",
+                            "name": "gluteKickbacksRightLeg",
+                            "reps": 14,
+                            "time": -1,
+                            "completed": false
+                        },
+                        {
+                            "id": "exerciseGluteKickbacksLeftLeg",
+                            "name": "gluteKickbacksLeftLeg",
+                            "reps": 14,
+                            "time": -1,
+                            "completed": false
+                        },
+                        {
+                            "id": "exercisePulsingLungesLeftLeg",
+                            "name": "pulsingLungesLeftLeg",
+                            "reps": 14,
+                            "time": -1,
+                            "completed": false
+                        },
+                        {
+                            "id": "exercisePulsingLungesRightLeg",
+                            "name": "pulsingLungesRightLeg",
+                            "reps": 14,
+                            "time": -1,
+                            "completed": false
+                        }
+                    ]
+                },
+                {
+                    "id": "programLegsWeek4Day3",
+                    "difficulty": 1,
+                    "exercises": [
+                        {
+                            "id": "exercisePulsingLungesLeftLeg",
+                            "name": "pulsingLungesLeftLeg",
+                            "reps": 14,
+                            "time": -1,
+                            "completed": false
+                        },
+                        {
+                            "id": "exercisePulsingLungesRightLeg",
+                            "name": "pulsingLungesRightLeg",
+                            "reps": 14,
+                            "time": -1,
+                            "completed": false
+                        },
+                        {
+                            "id": "exerciseMarchingHip",
+                            "name": "marchingHip",
+                            "reps": 14,
+                            "time": -1,
+                            "completed": false
+                        },
+                        {
+                            "id": "exerciseSingleLegHipThrustersRightLeg",
+                            "name": "singleLegHipThrustersRightLeg",
+                            "reps": 14,
+                            "time": -1,
+                            "completed": false
+                        },
+                        {
+                            "id": "exerciseSingleLegHipThrustersLeftLeg",
+                            "name": "singleLegHipThrustersLeftLeg",
+                            "reps": 14,
+                            "time": -1,
+                            "completed": false
+                        },
+                        {
+                            "id": "exerciseOneLegBridgeRightLeg",
+                            "name": "oneLegBridgeRightLeg",
+                            "reps": 14,
+                            "time": -1,
+                            "completed": false
+                        },
+                        {
+                            "id": "exerciseOneLegBridgeLeftLeg",
+                            "name": "oneLegBridgeLeftLeg",
+                            "reps": 14,
+                            "time": -1,
+                            "completed": false
+                        }
+                    ]
+                },
+                {
+                    "id": "programLegsWeek4Day4",
+                    "difficulty": 1,
+                    "exercises": [
+                        {
+                            "id": "exercisePulsingLungesLeftLeg",
+                            "name": "pulsingLungesLeftLeg",
+                            "reps": 14,
+                            "time": -1,
+                            "completed": false
+                        },
+                        {
+                            "id": "exercisePulsingLungesRightLeg",
+                            "name": "pulsingLungesRightLeg",
+                            "reps": 14,
+                            "time": -1,
+                            "completed": false
+                        },
+                        {
+                            "id": "exerciseMarchingHip",
+                            "name": "marchingHip",
+                            "reps": 14,
+                            "time": -1,
+                            "completed": false
+                        },
+                        {
+                            "id": "exerciseSingleLegHipThrustersRightLeg",
+                            "name": "singleLegHipThrustersRightLeg",
+                            "reps": 14,
+                            "time": -1,
+                            "completed": false
+                        },
+                        {
+                            "id": "exerciseSingleLegHipThrustersLeftLeg",
+                            "name": "singleLegHipThrustersLeftLeg",
+                            "reps": 14,
+                            "time": -1,
+                            "completed": false
+                        },
+                        {
+                            "id": "exerciseOneLegBridgeRightLeg",
+                            "name": "oneLegBridgeRightLeg",
+                            "reps": 14,
+                            "time": -1,
+                            "completed": false
+                        },
+                        {
+                            "id": "exerciseOneLegBridgeLeftLeg",
+                            "name": "oneLegBridgeLeftLeg",
+                            "reps": 14,
+                            "time": -1,
+                            "completed": false
+                        },
+                        {
+                            "id": "exerciseSingleLegDeadliftRightLeg",
+                            "name": "singleLegDeadliftRightLeg",
+                            "reps": 14,
+                            "time": -1,
+                            "completed": false
+                        },
+                        {
+                            "id": "exerciseSingleLegDeadliftLeftLeg",
+                            "name": "singleLegDeadliftLeftLeg",
+                            "reps": 14,
+                            "time": -1,
+                            "completed": false
+                        }
+                    ]
+                },
+                {
+                    "id": "programLegsWeek4Day5",
+                    "difficulty": 1,
+                    "exercises": [
+                        {
+                            "id": "exercisePulsingLungesLeftLeg",
+                            "name": "pulsingLungesLeftLeg",
+                            "reps": 14,
+                            "time": -1,
+                            "completed": false
+                        },
+                        {
+                            "id": "exercisePulsingLungesRightLeg",
+                            "name": "pulsingLungesRightLeg",
+                            "reps": 14,
+                            "time": -1,
+                            "completed": false
+                        },
+                        {
+                            "id": "exerciseMarchingHip",
+                            "name": "marchingHip",
+                            "reps": 14,
+                            "time": -1,
+                            "completed": false
+                        },
+                        {
+                            "id": "exerciseSingleLegHipThrustersRightLeg",
+                            "name": "singleLegHipThrustersRightLeg",
+                            "reps": 14,
+                            "time": -1,
+                            "completed": false
+                        },
+                        {
+                            "id": "exerciseSingleLegHipThrustersLeftLeg",
+                            "name": "singleLegHipThrustersLeftLeg",
+                            "reps": 14,
+                            "time": -1,
+                            "completed": false
+                        },
+                        {
+                            "id": "exerciseOneLegBridgeRightLeg",
+                            "name": "oneLegBridgeRightLeg",
+                            "reps": 14,
+                            "time": -1,
+                            "completed": false
+                        },
+                        {
+                            "id": "exerciseOneLegBridgeLeftLeg",
+                            "name": "oneLegBridgeLeftLeg",
+                            "reps": 14,
+                            "time": -1,
+                            "completed": false
+                        }
+                    ]
+                },
+                {
+                    "id": "programLegsWeek4Day6",
+                    "difficulty": 1,
+                    "exercises": [
+                        {
+                            "id": "exerciseLegSwingRightLeg",
+                            "name": "legSwingRightLeg",
+                            "reps": 14,
+                            "time": -1,
+                            "completed": false
+                        },
+                        {
+                            "id": "exerciseLegSwingLeftLeg",
+                            "name": "legSwingLeftLeg",
+                            "reps": 14,
+                            "time": -1,
+                            "completed": false
+                        },
+                        {
+                            "id": "exerciseGluteBridge",
+                            "name": "gluteBridge",
+                            "reps": 14,
+                            "time": -1,
+                            "completed": false
+                        },
+                        {
+                            "id": "exerciseInnerThighLiftRightLeg",
+                            "name": "innerThighLiftRightLeg",
+                            "reps": 14,
+                            "time": -1,
+                            "completed": false
+                        },
+                        {
+                            "id": "exerciseInnerThighLiftLeftLeg",
+                            "name": "innerThighLiftLeftLeg",
+                            "reps": 14,
+                            "time": -1,
+                            "completed": false
+                        },
+                        {
+                            "id": "exerciseGluteKickbacksRightLeg",
+                            "name": "gluteKickbacksRightLeg",
+                            "reps": 14,
+                            "time": -1,
+                            "completed": false
+                        },
+                        {
+                            "id": "exerciseGluteKickbacksLeftLeg",
+                            "name": "gluteKickbacksLeftLeg",
+                            "reps": 14,
+                            "time": -1,
+                            "completed": false
+                        },
+                        {
+                            "id": "exercisePulsingLungesLeftLeg",
+                            "name": "pulsingLungesLeftLeg",
+                            "reps": 14,
+                            "time": -1,
+                            "completed": false
+                        },
+                        {
+                            "id": "exercisePulsingLungesRightLeg",
+                            "name": "pulsingLungesRightLeg",
+                            "reps": 14,
+                            "time": -1,
+                            "completed": false
+                        },
+                        {
+                            "id": "exerciseMarchingHip",
+                            "name": "marchingHip",
+                            "reps": 14,
+                            "time": -1,
+                            "completed": false
+                        },
+                        {
+                            "id": "exerciseSingleLegHipThrustersRightLeg",
+                            "name": "singleLegHipThrustersRightLeg",
+                            "reps": 14,
+                            "time": -1,
+                            "completed": false
+                        },
+                        {
+                            "id": "exerciseSingleLegHipThrustersLeftLeg",
+                            "name": "singleLegHipThrustersLeftLeg",
+                            "reps": 14,
+                            "time": -1,
+                            "completed": false
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "id": "programLegsWeek5",
+            "days": [
+                {
+                    "id": "programLegsWeek5Day0",
+                    "difficulty": 1,
+                    "exercises": [
+                        {
+                            "id": "exerciseLegSwingRightLeg",
+                            "name": "legSwingRightLeg",
+                            "reps": 16,
+                            "time": -1,
+                            "completed": false
+                        },
+                        {
+                            "id": "exerciseLegSwingLeftLeg",
+                            "name": "legSwingLeftLeg",
+                            "reps": 16,
+                            "time": -1,
+                            "completed": false
+                        },
+                        {
+                            "id": "exerciseGluteBridge",
+                            "name": "gluteBridge",
+                            "reps": 16,
+                            "time": -1,
+                            "completed": false
+                        },
+                        {
+                            "id": "exerciseInnerThighLiftRightLeg",
+                            "name": "innerThighLiftRightLeg",
+                            "reps": 16,
+                            "time": -1,
+                            "completed": false
+                        },
+                        {
+                            "id": "exerciseInnerThighLiftLeftLeg",
+                            "name": "innerThighLiftLeftLeg",
+                            "reps": 16,
+                            "time": -1,
+                            "completed": false
+                        },
+                        {
+                            "id": "exerciseSideLegLiftRightLeg",
+                            "name": "sideLegLiftRightLeg",
+                            "reps": 16,
+                            "time": -1,
+                            "completed": false
+                        },
+                        {
+                            "id": "exerciseSideLegLiftLeftLeg",
+                            "name": "sideLegLiftLeftLeg",
+                            "reps": 16,
+                            "time": -1,
+                            "completed": false
+                        },
+                        {
+                            "id": "exerciseGluteKickbacksRightLeg",
+                            "name": "gluteKickbacksRightLeg",
+                            "reps": 16,
+                            "time": -1,
+                            "completed": false
+                        },
+                        {
+                            "id": "exerciseGluteKickbacksLeftLeg",
+                            "name": "gluteKickbacksLeftLeg",
+                            "reps": 16,
+                            "time": -1,
+                            "completed": false
+                        }
+                    ]
+                },
+                {
+                    "id": "programLegsWeek5Day1",
+                    "difficulty": 1,
+                    "exercises": [
+                        {
+                            "id": "exerciseLegSwingRightLeg",
+                            "name": "legSwingRightLeg",
+                            "reps": 16,
+                            "time": -1,
+                            "completed": false
+                        },
+                        {
+                            "id": "exerciseLegSwingLeftLeg",
+                            "name": "legSwingLeftLeg",
+                            "reps": 16,
+                            "time": -1,
+                            "completed": false
+                        },
+                        {
+                            "id": "exerciseGluteBridge",
+                            "name": "gluteBridge",
+                            "reps": 16,
+                            "time": -1,
+                            "completed": false
+                        },
+                        {
+                            "id": "exerciseInnerThighLiftRightLeg",
+                            "name": "innerThighLiftRightLeg",
+                            "reps": 16,
+                            "time": -1,
+                            "completed": false
+                        },
+                        {
+                            "id": "exerciseInnerThighLiftLeftLeg",
+                            "name": "innerThighLiftLeftLeg",
+                            "reps": 16,
+                            "time": -1,
+                            "completed": false
+                        },
+                        {
+                            "id": "exerciseSideLegLiftRightLeg",
+                            "name": "sideLegLiftRightLeg",
+                            "reps": 16,
+                            "time": -1,
+                            "completed": false
+                        },
+                        {
+                            "id": "exerciseSideLegLiftLeftLeg",
+                            "name": "sideLegLiftLeftLeg",
+                            "reps": 16,
+                            "time": -1,
+                            "completed": false
+                        },
+                        {
+                            "id": "exerciseGluteKickbacksRightLeg",
+                            "name": "gluteKickbacksRightLeg",
+                            "reps": 16,
+                            "time": -1,
+                            "completed": false
+                        },
+                        {
+                            "id": "exerciseGluteKickbacksLeftLeg",
+                            "name": "gluteKickbacksLeftLeg",
+                            "reps": 16,
+                            "time": -1,
+                            "completed": false
+                        }
+                    ]
+                },
+                {
+                    "id": "programLegsWeek5Day2",
+                    "difficulty": 1,
+                    "exercises": [
+                        {
+                            "id": "exerciseLegSwingRightLeg",
+                            "name": "legSwingRightLeg",
+                            "reps": 16,
+                            "time": -1,
+                            "completed": false
+                        },
+                        {
+                            "id": "exerciseLegSwingLeftLeg",
+                            "name": "legSwingLeftLeg",
+                            "reps": 16,
+                            "time": -1,
+                            "completed": false
+                        },
+                        {
+                            "id": "exerciseGluteBridge",
+                            "name": "gluteBridge",
+                            "reps": 16,
+                            "time": -1,
+                            "completed": false
+                        },
+                        {
+                            "id": "exerciseInnerThighLiftRightLeg",
+                            "name": "innerThighLiftRightLeg",
+                            "reps": 16,
+                            "time": -1,
+                            "completed": false
+                        },
+                        {
+                            "id": "exerciseInnerThighLiftLeftLeg",
+                            "name": "innerThighLiftLeftLeg",
+                            "reps": 16,
+                            "time": -1,
+                            "completed": false
+                        },
+                        {
+                            "id": "exerciseGluteKickbacksRightLeg",
+                            "name": "gluteKickbacksRightLeg",
+                            "reps": 16,
+                            "time": -1,
+                            "completed": false
+                        },
+                        {
+                            "id": "exerciseGluteKickbacksLeftLeg",
+                            "name": "gluteKickbacksLeftLeg",
+                            "reps": 16,
+                            "time": -1,
+                            "completed": false
+                        },
+                        {
+                            "id": "exerciseMarchingHip",
+                            "name": "marchingHip",
+                            "reps": 16,
+                            "time": -1,
+                            "completed": false
+                        },
+                        {
+                            "id": "exerciseSingleLegHipThrustersRightLeg",
+                            "name": "singleLegHipThrustersRightLeg",
+                            "reps": 16,
+                            "time": -1,
+                            "completed": false
+                        },
+                        {
+                            "id": "exerciseSingleLegHipThrustersLeftLeg",
+                            "name": "singleLegHipThrustersLeftLeg",
+                            "reps": 16,
+                            "time": -1,
+                            "completed": false
+                        },
+                        {
+                            "id": "exerciseOneLegBridgeRightLeg",
+                            "name": "oneLegBridgeRightLeg",
+                            "reps": 16,
+                            "time": -1,
+                            "completed": false
+                        },
+                        {
+                            "id": "exerciseOneLegBridgeLeftLeg",
+                            "name": "oneLegBridgeLeftLeg",
+                            "reps": 16,
+                            "time": -1,
+                            "completed": false
+                        },
+                        {
+                            "id": "exerciseSingleLegDeadliftRightLeg",
+                            "name": "singleLegDeadliftRightLeg",
+                            "reps": 16,
+                            "time": -1,
+                            "completed": false
+                        },
+                        {
+                            "id": "exerciseSingleLegDeadliftLeftLeg",
+                            "name": "singleLegDeadliftLeftLeg",
+                            "reps": 16,
+                            "time": -1,
+                            "completed": false
+                        }
+                    ]
+                },
+                {
+                    "id": "programLegsWeek5Day3",
+                    "difficulty": 1,
+                    "exercises": [
+                        {
+                            "id": "exerciseGluteKickbacksRightLeg",
+                            "name": "gluteKickbacksRightLeg",
+                            "reps": 16,
+                            "time": -1,
+                            "completed": false
+                        },
+                        {
+                            "id": "exerciseGluteKickbacksLeftLeg",
+                            "name": "gluteKickbacksLeftLeg",
+                            "reps": 16,
+                            "time": -1,
+                            "completed": false
+                        },
+                        {
+                            "id": "exerciseMarchingHip",
+                            "name": "marchingHip",
+                            "reps": 16,
+                            "time": -1,
+                            "completed": false
+                        },
+                        {
+                            "id": "exerciseSingleLegHipThrustersRightLeg",
+                            "name": "singleLegHipThrustersRightLeg",
+                            "reps": 16,
+                            "time": -1,
+                            "completed": false
+                        },
+                        {
+                            "id": "exerciseSingleLegHipThrustersLeftLeg",
+                            "name": "singleLegHipThrustersLeftLeg",
+                            "reps": 16,
+                            "time": -1,
+                            "completed": false
+                        },
+                        {
+                            "id": "exerciseOneLegBridgeRightLeg",
+                            "name": "oneLegBridgeRightLeg",
+                            "reps": 16,
+                            "time": -1,
+                            "completed": false
+                        },
+                        {
+                            "id": "exerciseOneLegBridgeLeftLeg",
+                            "name": "oneLegBridgeLeftLeg",
+                            "reps": 16,
+                            "time": -1,
+                            "completed": false
+                        },
+                        {
+                            "id": "exerciseSingleLegDeadliftRightLeg",
+                            "name": "singleLegDeadliftRightLeg",
+                            "reps": 16,
+                            "time": -1,
+                            "completed": false
+                        },
+                        {
+                            "id": "exerciseSingleLegDeadliftLeftLeg",
+                            "name": "singleLegDeadliftLeftLeg",
+                            "reps": 16,
+                            "time": -1,
+                            "completed": false
+                        }
+                    ]
+                },
+                {
+                    "id": "programLegsWeek5Day4",
+                    "difficulty": 1,
+                    "exercises": [
+                        {
+                            "id": "exerciseLegSwingRightLeg",
+                            "name": "legSwingRightLeg",
+                            "reps": 20,
+                            "time": -1,
+                            "completed": false
+                        },
+                        {
+                            "id": "exerciseLegSwingLeftLeg",
+                            "name": "legSwingLeftLeg",
+                            "reps": 20,
+                            "time": -1,
+                            "completed": false
+                        },
+                        {
+                            "id": "exerciseGluteBridge",
+                            "name": "gluteBridge",
+                            "reps": 20,
+                            "time": -1,
+                            "completed": false
+                        },
+                        {
+                            "id": "exerciseInnerThighLiftRightLeg",
+                            "name": "innerThighLiftRightLeg",
+                            "reps": 20,
+                            "time": -1,
+                            "completed": false
+                        },
+                        {
+                            "id": "exerciseInnerThighLiftLeftLeg",
+                            "name": "innerThighLiftLeftLeg",
+                            "reps": 20,
+                            "time": -1,
+                            "completed": false
+                        },
+                        {
+                            "id": "exerciseSideLegLiftRightLeg",
+                            "name": "sideLegLiftRightLeg",
+                            "reps": 14,
+                            "time": -1,
+                            "completed": false
+                        },
+                        {
+                            "id": "exerciseSideLegLiftLeftLeg",
+                            "name": "sideLegLiftLeftLeg",
+                            "reps": 14,
+                            "time": -1,
+                            "completed": false
+                        },
+                        {
+                            "id": "exerciseGluteKickbacksRightLeg",
+                            "name": "gluteKickbacksRightLeg",
+                            "reps": 20,
+                            "time": -1,
+                            "completed": false
+                        },
+                        {
+                            "id": "exerciseGluteKickbacksLeftLeg",
+                            "name": "gluteKickbacksLeftLeg",
+                            "reps": 20,
+                            "time": -1,
+                            "completed": false
+                        }
+                    ]
+                },
+                {
+                    "id": "programLegsWeek5Day5",
+                    "difficulty": 1,
+                    "exercises": [
+                        {
+                            "id": "exerciseLegSwingRightLeg",
+                            "name": "legSwingRightLeg",
+                            "reps": 20,
+                            "time": -1,
+                            "completed": false
+                        },
+                        {
+                            "id": "exerciseLegSwingLeftLeg",
+                            "name": "legSwingLeftLeg",
+                            "reps": 20,
+                            "time": -1,
+                            "completed": false
+                        },
+                        {
+                            "id": "exerciseGluteBridge",
+                            "name": "gluteBridge",
+                            "reps": 20,
+                            "time": -1,
+                            "completed": false
+                        },
+                        {
+                            "id": "exerciseInnerThighLiftRightLeg",
+                            "name": "innerThighLiftRightLeg",
+                            "reps": 20,
+                            "time": -1,
+                            "completed": false
+                        },
+                        {
+                            "id": "exerciseInnerThighLiftLeftLeg",
+                            "name": "innerThighLiftLeftLeg",
+                            "reps": 20,
+                            "time": -1,
+                            "completed": false
+                        },
+                        {
+                            "id": "exerciseSideLegLiftRightLeg",
+                            "name": "sideLegLiftRightLeg",
+                            "reps": 14,
+                            "time": -1,
+                            "completed": false
+                        },
+                        {
+                            "id": "exerciseSideLegLiftLeftLeg",
+                            "name": "sideLegLiftLeftLeg",
+                            "reps": 14,
+                            "time": -1,
+                            "completed": false
+                        },
+                        {
+                            "id": "exerciseGluteKickbacksRightLeg",
+                            "name": "gluteKickbacksRightLeg",
+                            "reps": 20,
+                            "time": -1,
+                            "completed": false
+                        },
+                        {
+                            "id": "exerciseGluteKickbacksLeftLeg",
+                            "name": "gluteKickbacksLeftLeg",
+                            "reps": 20,
+                            "time": -1,
+                            "completed": false
+                        },
+                        {
+                            "id": "exerciseMarchingHip",
+                            "name": "marchingHip",
+                            "reps": 20,
+                            "time": -1,
+                            "completed": false
+                        }
+                    ]
+                },
+                {
+                    "id": "programLegsWeek5Day6",
+                    "difficulty": 1,
+                    "exercises": [
+                        {
+                            "id": "exerciseLegSwingRightLeg",
+                            "name": "legSwingRightLeg",
+                            "reps": 20,
+                            "time": -1,
+                            "completed": false
+                        },
+                        {
+                            "id": "exerciseLegSwingLeftLeg",
+                            "name": "legSwingLeftLeg",
+                            "reps": 20,
+                            "time": -1,
+                            "completed": false
+                        },
+                        {
+                            "id": "exerciseGluteBridge",
+                            "name": "gluteBridge",
+                            "reps": 20,
+                            "time": -1,
+                            "completed": false
+                        },
+                        {
+                            "id": "exerciseInnerThighLiftRightLeg",
+                            "name": "innerThighLiftRightLeg",
+                            "reps": 20,
+                            "time": -1,
+                            "completed": false
+                        },
+                        {
+                            "id": "exerciseInnerThighLiftLeftLeg",
+                            "name": "innerThighLiftLeftLeg",
+                            "reps": 20,
+                            "time": -1,
+                            "completed": false
+                        },
+                        {
+                            "id": "exerciseGluteKickbacksRightLeg",
+                            "name": "gluteKickbacksRightLeg",
+                            "reps": 20,
+                            "time": -1,
+                            "completed": false
+                        },
+                        {
+                            "id": "exerciseGluteKickbacksLeftLeg",
+                            "name": "gluteKickbacksLeftLeg",
+                            "reps": 20,
+                            "time": -1,
+                            "completed": false
+                        },
+                        {
+                            "id": "exerciseMarchingHip",
+                            "name": "marchingHip",
+                            "reps": 20,
+                            "time": -1,
+                            "completed": false
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "id": "programLegsWeek6",
+            "days": [
+                {
+                    "id": "programLegsWeek6Day0",
+                    "difficulty": 2,
+                    "exercises": [
+                        {
+                            "id": "exerciseSquats",
+                            "name": "squats",
+                            "reps": 20,
+                            "time": -1,
+                            "completed": false
+                        },
+                        {
+                            "id": "exerciseLegSwingRightLeg",
+                            "name": "legSwingRightLeg",
+                            "reps": 20,
+                            "time": -1,
+                            "completed": false
+                        },
+                        {
+                            "id": "exerciseLegSwingLeftLeg",
+                            "name": "legSwingLeftLeg",
+                            "reps": 20,
+                            "time": -1,
+                            "completed": false
+                        },
+                        {
+                            "id": "exerciseGluteBridge",
+                            "name": "gluteBridge",
+                            "reps": 20,
+                            "time": -1,
+                            "completed": false
+                        },
+                        {
+                            "id": "exerciseInnerThighLiftRightLeg",
+                            "name": "innerThighLiftRightLeg",
+                            "reps": 20,
+                            "time": -1,
+                            "completed": false
+                        },
+                        {
+                            "id": "exerciseInnerThighLiftLeftLeg",
+                            "name": "innerThighLiftLeftLeg",
+                            "reps": 20,
+                            "time": -1,
+                            "completed": false
+                        }
+                    ]
+                },
+                {
+                    "id": "programLegsWeek6Day1",
+                    "difficulty": 2,
+                    "exercises": [
+                        {
+                            "id": "exerciseSquats",
+                            "name": "squats",
+                            "reps": 20,
+                            "time": -1,
+                            "completed": false
+                        },
+                        {
+                            "id": "exerciseLegSwingRightLeg",
+                            "name": "legSwingRightLeg",
+                            "reps": 20,
+                            "time": -1,
+                            "completed": false
+                        },
+                        {
+                            "id": "exerciseLegSwingLeftLeg",
+                            "name": "legSwingLeftLeg",
+                            "reps": 20,
+                            "time": -1,
+                            "completed": false
+                        },
+                        {
+                            "id": "exerciseGluteBridge",
+                            "name": "gluteBridge",
+                            "reps": 20,
+                            "time": -1,
+                            "completed": false
+                        },
+                        {
+                            "id": "exerciseInnerThighLiftRightLeg",
+                            "name": "innerThighLiftRightLeg",
+                            "reps": 20,
+                            "time": -1,
+                            "completed": false
+                        },
+                        {
+                            "id": "exerciseInnerThighLiftLeftLeg",
+                            "name": "innerThighLiftLeftLeg",
+                            "reps": 20,
+                            "time": -1,
+                            "completed": false
+                        }
+                    ]
+                },
+                {
+                    "id": "programLegsWeek6Day2",
+                    "difficulty": 2,
+                    "exercises": [
+                        {
+                            "id": "exerciseSquats",
+                            "name": "squats",
+                            "reps": 20,
+                            "time": -1,
+                            "completed": false
+                        },
+                        {
+                            "id": "exerciseLegSwingRightLeg",
+                            "name": "legSwingRightLeg",
+                            "reps": 20,
+                            "time": -1,
+                            "completed": false
+                        },
+                        {
+                            "id": "exerciseLegSwingLeftLeg",
+                            "name": "legSwingLeftLeg",
+                            "reps": 20,
+                            "time": -1,
+                            "completed": false
+                        },
+                        {
+                            "id": "exerciseGluteBridge",
+                            "name": "gluteBridge",
+                            "reps": 20,
+                            "time": -1,
+                            "completed": false
+                        },
+                        {
+                            "id": "exerciseInnerThighLiftRightLeg",
+                            "name": "innerThighLiftRightLeg",
+                            "reps": 20,
+                            "time": -1,
+                            "completed": false
+                        },
+                        {
+                            "id": "exerciseInnerThighLiftLeftLeg",
+                            "name": "innerThighLiftLeftLeg",
+                            "reps": 20,
+                            "time": -1,
+                            "completed": false
+                        },
+                        {
+                            "id": "exerciseSideLegLiftRightLeg",
+                            "name": "sideLegLiftRightLeg",
+                            "reps": 20,
+                            "time": -1,
+                            "completed": false
+                        },
+                        {
+                            "id": "exerciseSideLegLiftLeftLeg",
+                            "name": "sideLegLiftLeftLeg",
+                            "reps": 20,
+                            "time": -1,
+                            "completed": false
+                        }
+                    ]
+                },
+                {
+                    "id": "programLegsWeek6Day3",
+                    "difficulty": 2,
+                    "exercises": [
+                        {
+                            "id": "exercisePulsingLungesLeftLeg",
+                            "name": "pulsingLungesLeftLeg",
+                            "reps": 20,
+                            "time": -1,
+                            "completed": false
+                        },
+                        {
+                            "id": "exercisePulsingLungesRightLeg",
+                            "name": "pulsingLungesRightLeg",
+                            "reps": 20,
+                            "time": -1,
+                            "completed": false
+                        },
+                        {
+                            "id": "exerciseMarchingHip",
+                            "name": "marchingHip",
+                            "reps": 20,
+                            "time": -1,
+                            "completed": false
+                        },
+                        {
+                            "id": "exerciseSingleLegHipThrustersRightLeg",
+                            "name": "singleLegHipThrustersRightLeg",
+                            "reps": 20,
+                            "time": -1,
+                            "completed": false
+                        },
+                        {
+                            "id": "exerciseSingleLegHipThrustersLeftLeg",
+                            "name": "singleLegHipThrustersLeftLeg",
+                            "reps": 20,
+                            "time": -1,
+                            "completed": false
+                        },
+                        {
+                            "id": "exerciseOneLegBridgeRightLeg",
+                            "name": "oneLegBridgeRightLeg",
+                            "reps": 20,
+                            "time": -1,
+                            "completed": false
+                        },
+                        {
+                            "id": "exerciseOneLegBridgeLeftLeg",
+                            "name": "oneLegBridgeLeftLeg",
+                            "reps": 20,
+                            "time": -1,
+                            "completed": false
+                        },
+                        {
+                            "id": "exerciseSingleLegDeadliftRightLeg",
+                            "name": "singleLegDeadliftRightLeg",
+                            "reps": 20,
+                            "time": -1,
+                            "completed": false
+                        },
+                        {
+                            "id": "exerciseSingleLegDeadliftLeftLeg",
+                            "name": "singleLegDeadliftLeftLeg",
+                            "reps": 20,
+                            "time": -1,
+                            "completed": false
+                        }
+                    ]
+                },
+                {
+                    "id": "programLegsWeek6Day4",
+                    "difficulty": 2,
+                    "exercises": [
+                        {
+                            "id": "exercisePulsingLungesLeftLeg",
+                            "name": "pulsingLungesLeftLeg",
+                            "reps": 20,
+                            "time": -1,
+                            "completed": false
+                        },
+                        {
+                            "id": "exercisePulsingLungesRightLeg",
+                            "name": "pulsingLungesRightLeg",
+                            "reps": 20,
+                            "time": -1,
+                            "completed": false
+                        },
+                        {
+                            "id": "exerciseMarchingHip",
+                            "name": "marchingHip",
+                            "reps": 20,
+                            "time": -1,
+                            "completed": false
+                        },
+                        {
+                            "id": "exerciseSingleLegHipThrustersRightLeg",
+                            "name": "singleLegHipThrustersRightLeg",
+                            "reps": 20,
+                            "time": -1,
+                            "completed": false
+                        },
+                        {
+                            "id": "exerciseSingleLegHipThrustersLeftLeg",
+                            "name": "singleLegHipThrustersLeftLeg",
+                            "reps": 20,
+                            "time": -1,
+                            "completed": false
+                        },
+                        {
+                            "id": "exerciseOneLegBridgeRightLeg",
+                            "name": "oneLegBridgeRightLeg",
+                            "reps": 20,
+                            "time": -1,
+                            "completed": false
+                        },
+                        {
+                            "id": "exerciseOneLegBridgeLeftLeg",
+                            "name": "oneLegBridgeLeftLeg",
+                            "reps": 20,
+                            "time": -1,
+                            "completed": false
+                        },
+                        {
+                            "id": "exerciseSingleLegDeadliftRightLeg",
+                            "name": "singleLegDeadliftRightLeg",
+                            "reps": 20,
+                            "time": -1,
+                            "completed": false
+                        },
+                        {
+                            "id": "exerciseSingleLegDeadliftLeftLeg",
+                            "name": "singleLegDeadliftLeftLeg",
+                            "reps": 20,
+                            "time": -1,
+                            "completed": false
+                        }
+                    ]
+                },
+                {
+                    "id": "programLegsWeek6Day5",
+                    "difficulty": 2,
+                    "exercises": [
+                        {
+                            "id": "exercisePulsingLungesLeftLeg",
+                            "name": "pulsingLungesLeftLeg",
+                            "reps": 20,
+                            "time": -1,
+                            "completed": false
+                        },
+                        {
+                            "id": "exercisePulsingLungesRightLeg",
+                            "name": "pulsingLungesRightLeg",
+                            "reps": 20,
+                            "time": -1,
+                            "completed": false
+                        },
+                        {
+                            "id": "exerciseMarchingHip",
+                            "name": "marchingHip",
+                            "reps": 20,
+                            "time": -1,
+                            "completed": false
+                        },
+                        {
+                            "id": "exerciseSingleLegHipThrustersRightLeg",
+                            "name": "singleLegHipThrustersRightLeg",
+                            "reps": 20,
+                            "time": -1,
+                            "completed": false
+                        },
+                        {
+                            "id": "exerciseSingleLegHipThrustersLeftLeg",
+                            "name": "singleLegHipThrustersLeftLeg",
+                            "reps": 20,
+                            "time": -1,
+                            "completed": false
+                        },
+                        {
+                            "id": "exerciseOneLegBridgeRightLeg",
+                            "name": "oneLegBridgeRightLeg",
+                            "reps": 20,
+                            "time": -1,
+                            "completed": false
+                        },
+                        {
+                            "id": "exerciseOneLegBridgeLeftLeg",
+                            "name": "oneLegBridgeLeftLeg",
+                            "reps": 20,
+                            "time": -1,
+                            "completed": false
+                        },
+                        {
+                            "id": "exerciseSingleLegDeadliftRightLeg",
+                            "name": "singleLegDeadliftRightLeg",
+                            "reps": 20,
+                            "time": -1,
+                            "completed": false
+                        },
+                        {
+                            "id": "exerciseSingleLegDeadliftLeftLeg",
+                            "name": "singleLegDeadliftLeftLeg",
+                            "reps": 20,
+                            "time": -1,
+                            "completed": false
+                        }
+                    ]
+                },
+                {
+                    "id": "programLegsWeek6Day6",
+                    "difficulty": 2,
+                    "exercises": [
+                        {
+                            "id": "exerciseSquats",
+                            "name": "squats",
+                            "reps": 20,
+                            "time": -1,
+                            "completed": false
+                        },
+                        {
+                            "id": "exerciseLegSwingRightLeg",
+                            "name": "legSwingRightLeg",
+                            "reps": 20,
+                            "time": -1,
+                            "completed": false
+                        },
+                        {
+                            "id": "exerciseLegSwingLeftLeg",
+                            "name": "legSwingLeftLeg",
+                            "reps": 20,
+                            "time": -1,
+                            "completed": false
+                        },
+                        {
+                            "id": "exerciseGluteBridge",
+                            "name": "gluteBridge",
+                            "reps": 20,
+                            "time": -1,
+                            "completed": false
+                        },
+                        {
+                            "id": "exerciseInnerThighLiftRightLeg",
+                            "name": "innerThighLiftRightLeg",
+                            "reps": 20,
+                            "time": -1,
+                            "completed": false
+                        },
+                        {
+                            "id": "exerciseInnerThighLiftLeftLeg",
+                            "name": "innerThighLiftLeftLeg",
+                            "reps": 20,
+                            "time": -1,
+                            "completed": false
+                        },
+                        {
+                            "id": "exerciseGluteKickbacksRightLeg",
+                            "name": "gluteKickbacksRightLeg",
+                            "reps": 20,
+                            "time": -1,
+                            "completed": false
+                        },
+                        {
+                            "id": "exerciseGluteKickbacksLeftLeg",
+                            "name": "gluteKickbacksLeftLeg",
+                            "reps": 20,
+                            "time": -1,
+                            "completed": false
+                        },
+                        {
+                            "id": "exercisePulsingLungesLeftLeg",
+                            "name": "pulsingLungesLeftLeg",
+                            "reps": 20,
+                            "time": -1,
+                            "completed": false
+                        },
+                        {
+                            "id": "exercisePulsingLungesRightLeg",
+                            "name": "pulsingLungesRightLeg",
+                            "reps": 20,
+                            "time": -1,
+                            "completed": false
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "id": "programLegsWeek7",
+            "days": [
+                {
+                    "id": "programLegsWeek7Day0",
+                    "difficulty": 2,
+                    "exercises": [
+                        {
+                            "id": "exerciseSquats",
+                            "name": "squats",
+                            "reps": 28,
+                            "time": -1,
+                            "completed": false
+                        },
+                        {
+                            "id": "exerciseLegSwingRightLeg",
+                            "name": "legSwingRightLeg",
+                            "reps": 28,
+                            "time": -1,
+                            "completed": false
+                        },
+                        {
+                            "id": "exerciseLegSwingLeftLeg",
+                            "name": "legSwingLeftLeg",
+                            "reps": 28,
+                            "time": -1,
+                            "completed": false
+                        },
+                        {
+                            "id": "exerciseGluteBridge",
+                            "name": "gluteBridge",
+                            "reps": 28,
+                            "time": -1,
+                            "completed": false
+                        },
+                        {
+                            "id": "exerciseInnerThighLiftRightLeg",
+                            "name": "innerThighLiftRightLeg",
+                            "reps": 28,
+                            "time": -1,
+                            "completed": false
+                        },
+                        {
+                            "id": "exerciseInnerThighLiftLeftLeg",
+                            "name": "innerThighLiftLeftLeg",
+                            "reps": 28,
+                            "time": -1,
+                            "completed": false
+                        },
+                        {
+                            "id": "exerciseGluteKickbacksRightLeg",
+                            "name": "gluteKickbacksRightLeg",
+                            "reps": 28,
+                            "time": -1,
+                            "completed": false
+                        },
+                        {
+                            "id": "exerciseGluteKickbacksLeftLeg",
+                            "name": "gluteKickbacksLeftLeg",
+                            "reps": 28,
+                            "time": -1,
+                            "completed": false
+                        },
+                        {
+                            "id": "exercisePulsingLungesLeftLeg",
+                            "name": "pulsingLungesLeftLeg",
+                            "reps": 28,
+                            "time": -1,
+                            "completed": false
+                        },
+                        {
+                            "id": "exercisePulsingLungesRightLeg",
+                            "name": "pulsingLungesRightLeg",
+                            "reps": 28,
+                            "time": -1,
+                            "completed": false
+                        }
+                    ]
+                },
+                {
+                    "id": "programLegsWeek7Day1",
+                    "difficulty": 2,
+                    "exercises": [
+                        {
+                            "id": "exerciseSquats",
+                            "name": "squats",
+                            "reps": 28,
+                            "time": -1,
+                            "completed": false
+                        },
+                        {
+                            "id": "exerciseLegSwingRightLeg",
+                            "name": "legSwingRightLeg",
+                            "reps": 28,
+                            "time": -1,
+                            "completed": false
+                        },
+                        {
+                            "id": "exerciseLegSwingLeftLeg",
+                            "name": "legSwingLeftLeg",
+                            "reps": 28,
+                            "time": -1,
+                            "completed": false
+                        },
+                        {
+                            "id": "exerciseGluteBridge",
+                            "name": "gluteBridge",
+                            "reps": 28,
+                            "time": -1,
+                            "completed": false
+                        },
+                        {
+                            "id": "exerciseInnerThighLiftRightLeg",
+                            "name": "innerThighLiftRightLeg",
+                            "reps": 28,
+                            "time": -1,
+                            "completed": false
+                        },
+                        {
+                            "id": "exerciseInnerThighLiftLeftLeg",
+                            "name": "innerThighLiftLeftLeg",
+                            "reps": 28,
+                            "time": -1,
+                            "completed": false
+                        },
+                        {
+                            "id": "exerciseGluteKickbacksRightLeg",
+                            "name": "gluteKickbacksRightLeg",
+                            "reps": 28,
+                            "time": -1,
+                            "completed": false
+                        },
+                        {
+                            "id": "exerciseGluteKickbacksLeftLeg",
+                            "name": "gluteKickbacksLeftLeg",
+                            "reps": 28,
+                            "time": -1,
+                            "completed": false
+                        },
+                        {
+                            "id": "exercisePulsingLungesLeftLeg",
+                            "name": "pulsingLungesLeftLeg",
+                            "reps": 28,
+                            "time": -1,
+                            "completed": false
+                        },
+                        {
+                            "id": "exercisePulsingLungesRightLeg",
+                            "name": "pulsingLungesRightLeg",
+                            "reps": 28,
+                            "time": -1,
+                            "completed": false
+                        }
+                    ]
+                },
+                {
+                    "id": "programLegsWeek7Day2",
+                    "difficulty": 2,
+                    "exercises": [
+                        {
+                            "id": "exerciseSquats",
+                            "name": "squats",
+                            "reps": 28,
+                            "time": -1,
+                            "completed": false
+                        },
+                        {
+                            "id": "exerciseLegSwingRightLeg",
+                            "name": "legSwingRightLeg",
+                            "reps": 28,
+                            "time": -1,
+                            "completed": false
+                        },
+                        {
+                            "id": "exerciseLegSwingLeftLeg",
+                            "name": "legSwingLeftLeg",
+                            "reps": 28,
+                            "time": -1,
+                            "completed": false
+                        },
+                        {
+                            "id": "exerciseGluteBridge",
+                            "name": "gluteBridge",
+                            "reps": 28,
+                            "time": -1,
+                            "completed": false
+                        },
+                        {
+                            "id": "exerciseInnerThighLiftRightLeg",
+                            "name": "innerThighLiftRightLeg",
+                            "reps": 28,
+                            "time": -1,
+                            "completed": false
+                        },
+                        {
+                            "id": "exerciseInnerThighLiftLeftLeg",
+                            "name": "innerThighLiftLeftLeg",
+                            "reps": 28,
+                            "time": -1,
+                            "completed": false
+                        },
+                        {
+                            "id": "exerciseGluteKickbacksRightLeg",
+                            "name": "gluteKickbacksRightLeg",
+                            "reps": 28,
+                            "time": -1,
+                            "completed": false
+                        },
+                        {
+                            "id": "exerciseGluteKickbacksLeftLeg",
+                            "name": "gluteKickbacksLeftLeg",
+                            "reps": 28,
+                            "time": -1,
+                            "completed": false
+                        },
+                        {
+                            "id": "exercisePulsingLungesLeftLeg",
+                            "name": "pulsingLungesLeftLeg",
+                            "reps": 28,
+                            "time": -1,
+                            "completed": false
+                        },
+                        {
+                            "id": "exercisePulsingLungesRightLeg",
+                            "name": "pulsingLungesRightLeg",
+                            "reps": 28,
+                            "time": -1,
+                            "completed": false
+                        }
+                    ]
+                },
+                {
+                    "id": "programLegsWeek7Day3",
+                    "difficulty": 2,
+                    "exercises": [
+                        {
+                            "id": "exercisePulsingLungesLeftLeg",
+                            "name": "pulsingLungesLeftLeg",
+                            "reps": 28,
+                            "time": -1,
+                            "completed": false
+                        },
+                        {
+                            "id": "exercisePulsingLungesRightLeg",
+                            "name": "pulsingLungesRightLeg",
+                            "reps": 28,
+                            "time": -1,
+                            "completed": false
+                        },
+                        {
+                            "id": "exerciseMarchingHip",
+                            "name": "marchingHip",
+                            "reps": 28,
+                            "time": -1,
+                            "completed": false
+                        },
+                        {
+                            "id": "exerciseSingleLegHipThrustersRightLeg",
+                            "name": "singleLegHipThrustersRightLeg",
+                            "reps": 28,
+                            "time": -1,
+                            "completed": false
+                        },
+                        {
+                            "id": "exerciseSingleLegHipThrustersLeftLeg",
+                            "name": "singleLegHipThrustersLeftLeg",
+                            "reps": 28,
+                            "time": -1,
+                            "completed": false
+                        },
+                        {
+                            "id": "exerciseOneLegBridgeRightLeg",
+                            "name": "oneLegBridgeRightLeg",
+                            "reps": 28,
+                            "time": -1,
+                            "completed": false
+                        },
+                        {
+                            "id": "exerciseOneLegBridgeLeftLeg",
+                            "name": "oneLegBridgeLeftLeg",
+                            "reps": 28,
+                            "time": -1,
+                            "completed": false
+                        }
+                    ]
+                },
+                {
+                    "id": "programLegsWeek7Day4",
+                    "difficulty": 2,
+                    "exercises": [
+                        {
+                            "id": "exercisePulsingLungesLeftLeg",
+                            "name": "pulsingLungesLeftLeg",
+                            "reps": 28,
+                            "time": -1,
+                            "completed": false
+                        },
+                        {
+                            "id": "exercisePulsingLungesRightLeg",
+                            "name": "pulsingLungesRightLeg",
+                            "reps": 28,
+                            "time": -1,
+                            "completed": false
+                        },
+                        {
+                            "id": "exerciseMarchingHip",
+                            "name": "marchingHip",
+                            "reps": 28,
+                            "time": -1,
+                            "completed": false
+                        },
+                        {
+                            "id": "exerciseSingleLegHipThrustersRightLeg",
+                            "name": "singleLegHipThrustersRightLeg",
+                            "reps": 28,
+                            "time": -1,
+                            "completed": false
+                        },
+                        {
+                            "id": "exerciseSingleLegHipThrustersLeftLeg",
+                            "name": "singleLegHipThrustersLeftLeg",
+                            "reps": 28,
+                            "time": -1,
+                            "completed": false
+                        },
+                        {
+                            "id": "exerciseOneLegBridgeRightLeg",
+                            "name": "oneLegBridgeRightLeg",
+                            "reps": 28,
+                            "time": -1,
+                            "completed": false
+                        },
+                        {
+                            "id": "exerciseOneLegBridgeLeftLeg",
+                            "name": "oneLegBridgeLeftLeg",
+                            "reps": 28,
+                            "time": -1,
+                            "completed": false
+                        },
+                        {
+                            "id": "exerciseSingleLegDeadliftRightLeg",
+                            "name": "singleLegDeadliftRightLeg",
+                            "reps": 28,
+                            "time": -1,
+                            "completed": false
+                        },
+                        {
+                            "id": "exerciseSingleLegDeadliftLeftLeg",
+                            "name": "singleLegDeadliftLeftLeg",
+                            "reps": 28,
+                            "time": -1,
+                            "completed": false
+                        }
+                    ]
+                },
+                {
+                    "id": "programLegsWeek7Day5",
+                    "difficulty": 2,
+                    "exercises": [
+                        {
+                            "id": "exercisePulsingLungesLeftLeg",
+                            "name": "pulsingLungesLeftLeg",
+                            "reps": 28,
+                            "time": -1,
+                            "completed": false
+                        },
+                        {
+                            "id": "exercisePulsingLungesRightLeg",
+                            "name": "pulsingLungesRightLeg",
+                            "reps": 28,
+                            "time": -1,
+                            "completed": false
+                        },
+                        {
+                            "id": "exerciseMarchingHip",
+                            "name": "marchingHip",
+                            "reps": 28,
+                            "time": -1,
+                            "completed": false
+                        },
+                        {
+                            "id": "exerciseSingleLegHipThrustersRightLeg",
+                            "name": "singleLegHipThrustersRightLeg",
+                            "reps": 28,
+                            "time": -1,
+                            "completed": false
+                        },
+                        {
+                            "id": "exerciseSingleLegHipThrustersLeftLeg",
+                            "name": "singleLegHipThrustersLeftLeg",
+                            "reps": 28,
+                            "time": -1,
+                            "completed": false
+                        },
+                        {
+                            "id": "exerciseOneLegBridgeRightLeg",
+                            "name": "oneLegBridgeRightLeg",
+                            "reps": 28,
+                            "time": -1,
+                            "completed": false
+                        },
+                        {
+                            "id": "exerciseOneLegBridgeLeftLeg",
+                            "name": "oneLegBridgeLeftLeg",
+                            "reps": 28,
+                            "time": -1,
+                            "completed": false
+                        }
+                    ]
+                },
+                {
+                    "id": "programLegsWeek7Day6",
+                    "difficulty": 2,
+                    "exercises": [
+                        {
+                            "id": "exerciseLegSwingRightLeg",
+                            "name": "legSwingRightLeg",
+                            "reps": 28,
+                            "time": -1,
+                            "completed": false
+                        },
+                        {
+                            "id": "exerciseLegSwingLeftLeg",
+                            "name": "legSwingLeftLeg",
+                            "reps": 28,
+                            "time": -1,
+                            "completed": false
+                        },
+                        {
+                            "id": "exerciseGluteBridge",
+                            "name": "gluteBridge",
+                            "reps": 28,
+                            "time": -1,
+                            "completed": false
+                        },
+                        {
+                            "id": "exerciseInnerThighLiftRightLeg",
+                            "name": "innerThighLiftRightLeg",
+                            "reps": 28,
+                            "time": -1,
+                            "completed": false
+                        },
+                        {
+                            "id": "exerciseInnerThighLiftLeftLeg",
+                            "name": "innerThighLiftLeftLeg",
+                            "reps": 28,
+                            "time": -1,
+                            "completed": false
+                        },
+                        {
+                            "id": "exerciseGluteKickbacksRightLeg",
+                            "name": "gluteKickbacksRightLeg",
+                            "reps": 28,
+                            "time": -1,
+                            "completed": false
+                        },
+                        {
+                            "id": "exerciseGluteKickbacksLeftLeg",
+                            "name": "gluteKickbacksLeftLeg",
+                            "reps": 28,
+                            "time": -1,
+                            "completed": false
+                        },
+                        {
+                            "id": "exercisePulsingLungesLeftLeg",
+                            "name": "pulsingLungesLeftLeg",
+                            "reps": 28,
+                            "time": -1,
+                            "completed": false
+                        },
+                        {
+                            "id": "exercisePulsingLungesRightLeg",
+                            "name": "pulsingLungesRightLeg",
+                            "reps": 28,
+                            "time": -1,
+                            "completed": false
+                        },
+                        {
+                            "id": "exerciseMarchingHip",
+                            "name": "marchingHip",
+                            "reps": 28,
+                            "time": -1,
+                            "completed": false
+                        },
+                        {
+                            "id": "exerciseSingleLegHipThrustersRightLeg",
+                            "name": "singleLegHipThrustersRightLeg",
+                            "reps": 28,
+                            "time": -1,
+                            "completed": false
+                        },
+                        {
+                            "id": "exerciseSingleLegHipThrustersLeftLeg",
+                            "name": "singleLegHipThrustersLeftLeg",
+                            "reps": 28,
+                            "time": -1,
+                            "completed": false
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "id": "programLegsWeek8",
+            "days": [
+                {
+                    "id": "programLegsWeek8Day0",
+                    "difficulty": 2,
+                    "exercises": [
+                        {
+                            "id": "exerciseLegSwingRightLeg",
+                            "name": "legSwingRightLeg",
+                            "reps": 32,
+                            "time": -1,
+                            "completed": false
+                        },
+                        {
+                            "id": "exerciseLegSwingLeftLeg",
+                            "name": "legSwingLeftLeg",
+                            "reps": 32,
+                            "time": -1,
+                            "completed": false
+                        },
+                        {
+                            "id": "exerciseGluteBridge",
+                            "name": "gluteBridge",
+                            "reps": 32,
+                            "time": -1,
+                            "completed": false
+                        },
+                        {
+                            "id": "exerciseInnerThighLiftRightLeg",
+                            "name": "innerThighLiftRightLeg",
+                            "reps": 32,
+                            "time": -1,
+                            "completed": false
+                        },
+                        {
+                            "id": "exerciseInnerThighLiftLeftLeg",
+                            "name": "innerThighLiftLeftLeg",
+                            "reps": 32,
+                            "time": -1,
+                            "completed": false
+                        },
+                        {
+                            "id": "exerciseSideLegLiftRightLeg",
+                            "name": "sideLegLiftRightLeg",
+                            "reps": 32,
+                            "time": -1,
+                            "completed": false
+                        },
+                        {
+                            "id": "exerciseSideLegLiftLeftLeg",
+                            "name": "sideLegLiftLeftLeg",
+                            "reps": 32,
+                            "time": -1,
+                            "completed": false
+                        },
+                        {
+                            "id": "exerciseGluteKickbacksRightLeg",
+                            "name": "gluteKickbacksRightLeg",
+                            "reps": 32,
+                            "time": -1,
+                            "completed": false
+                        },
+                        {
+                            "id": "exerciseGluteKickbacksLeftLeg",
+                            "name": "gluteKickbacksLeftLeg",
+                            "reps": 32,
+                            "time": -1,
+                            "completed": false
+                        }
+                    ]
+                },
+                {
+                    "id": "programLegsWeek8Day1",
+                    "difficulty": 2,
+                    "exercises": [
+                        {
+                            "id": "exerciseLegSwingRightLeg",
+                            "name": "legSwingRightLeg",
+                            "reps": 32,
+                            "time": -1,
+                            "completed": false
+                        },
+                        {
+                            "id": "exerciseLegSwingLeftLeg",
+                            "name": "legSwingLeftLeg",
+                            "reps": 32,
+                            "time": -1,
+                            "completed": false
+                        },
+                        {
+                            "id": "exerciseGluteBridge",
+                            "name": "gluteBridge",
+                            "reps": 32,
+                            "time": -1,
+                            "completed": false
+                        },
+                        {
+                            "id": "exerciseInnerThighLiftRightLeg",
+                            "name": "innerThighLiftRightLeg",
+                            "reps": 32,
+                            "time": -1,
+                            "completed": false
+                        },
+                        {
+                            "id": "exerciseInnerThighLiftLeftLeg",
+                            "name": "innerThighLiftLeftLeg",
+                            "reps": 32,
+                            "time": -1,
+                            "completed": false
+                        },
+                        {
+                            "id": "exerciseSideLegLiftRightLeg",
+                            "name": "sideLegLiftRightLeg",
+                            "reps": 32,
+                            "time": -1,
+                            "completed": false
+                        },
+                        {
+                            "id": "exerciseSideLegLiftLeftLeg",
+                            "name": "sideLegLiftLeftLeg",
+                            "reps": 32,
+                            "time": -1,
+                            "completed": false
+                        },
+                        {
+                            "id": "exerciseGluteKickbacksRightLeg",
+                            "name": "gluteKickbacksRightLeg",
+                            "reps": 32,
+                            "time": -1,
+                            "completed": false
+                        },
+                        {
+                            "id": "exerciseGluteKickbacksLeftLeg",
+                            "name": "gluteKickbacksLeftLeg",
+                            "reps": 32,
+                            "time": -1,
+                            "completed": false
+                        }
+                    ]
+                },
+                {
+                    "id": "programLegsWeek8Day2",
+                    "difficulty": 2,
+                    "exercises": [
+                        {
+                            "id": "exerciseLegSwingRightLeg",
+                            "name": "legSwingRightLeg",
+                            "reps": 32,
+                            "time": -1,
+                            "completed": false
+                        },
+                        {
+                            "id": "exerciseLegSwingLeftLeg",
+                            "name": "legSwingLeftLeg",
+                            "reps": 32,
+                            "time": -1,
+                            "completed": false
+                        },
+                        {
+                            "id": "exerciseGluteBridge",
+                            "name": "gluteBridge",
+                            "reps": 32,
+                            "time": -1,
+                            "completed": false
+                        },
+                        {
+                            "id": "exerciseInnerThighLiftRightLeg",
+                            "name": "innerThighLiftRightLeg",
+                            "reps": 32,
+                            "time": -1,
+                            "completed": false
+                        },
+                        {
+                            "id": "exerciseInnerThighLiftLeftLeg",
+                            "name": "innerThighLiftLeftLeg",
+                            "reps": 32,
+                            "time": -1,
+                            "completed": false
+                        },
+                        {
+                            "id": "exerciseGluteKickbacksRightLeg",
+                            "name": "gluteKickbacksRightLeg",
+                            "reps": 32,
+                            "time": -1,
+                            "completed": false
+                        },
+                        {
+                            "id": "exerciseGluteKickbacksLeftLeg",
+                            "name": "gluteKickbacksLeftLeg",
+                            "reps": 32,
+                            "time": -1,
+                            "completed": false
+                        },
+                        {
+                            "id": "exerciseMarchingHip",
+                            "name": "marchingHip",
+                            "reps": 32,
+                            "time": -1,
+                            "completed": false
+                        },
+                        {
+                            "id": "exerciseSingleLegHipThrustersRightLeg",
+                            "name": "singleLegHipThrustersRightLeg",
+                            "reps": 32,
+                            "time": -1,
+                            "completed": false
+                        },
+                        {
+                            "id": "exerciseSingleLegHipThrustersLeftLeg",
+                            "name": "singleLegHipThrustersLeftLeg",
+                            "reps": 32,
+                            "time": -1,
+                            "completed": false
+                        },
+                        {
+                            "id": "exerciseOneLegBridgeRightLeg",
+                            "name": "oneLegBridgeRightLeg",
+                            "reps": 32,
+                            "time": -1,
+                            "completed": false
+                        },
+                        {
+                            "id": "exerciseOneLegBridgeLeftLeg",
+                            "name": "oneLegBridgeLeftLeg",
+                            "reps": 32,
+                            "time": -1,
+                            "completed": false
+                        },
+                        {
+                            "id": "exerciseSingleLegDeadliftRightLeg",
+                            "name": "singleLegDeadliftRightLeg",
+                            "reps": 32,
+                            "time": -1,
+                            "completed": false
+                        },
+                        {
+                            "id": "exerciseSingleLegDeadliftLeftLeg",
+                            "name": "singleLegDeadliftLeftLeg",
+                            "reps": 32,
+                            "time": -1,
+                            "completed": false
+                        }
+                    ]
+                },
+                {
+                    "id": "programLegsWeek8Day3",
+                    "difficulty": 2,
+                    "exercises": [
+                        {
+                            "id": "exerciseGluteKickbacksRightLeg",
+                            "name": "gluteKickbacksRightLeg",
+                            "reps": 32,
+                            "time": -1,
+                            "completed": false
+                        },
+                        {
+                            "id": "exerciseGluteKickbacksLeftLeg",
+                            "name": "gluteKickbacksLeftLeg",
+                            "reps": 32,
+                            "time": -1,
+                            "completed": false
+                        },
+                        {
+                            "id": "exerciseMarchingHip",
+                            "name": "marchingHip",
+                            "reps": 32,
+                            "time": -1,
+                            "completed": false
+                        },
+                        {
+                            "id": "exerciseSingleLegHipThrustersRightLeg",
+                            "name": "singleLegHipThrustersRightLeg",
+                            "reps": 32,
+                            "time": -1,
+                            "completed": false
+                        },
+                        {
+                            "id": "exerciseSingleLegHipThrustersLeftLeg",
+                            "name": "singleLegHipThrustersLeftLeg",
+                            "reps": 32,
+                            "time": -1,
+                            "completed": false
+                        },
+                        {
+                            "id": "exerciseOneLegBridgeRightLeg",
+                            "name": "oneLegBridgeRightLeg",
+                            "reps": 32,
+                            "time": -1,
+                            "completed": false
+                        },
+                        {
+                            "id": "exerciseOneLegBridgeLeftLeg",
+                            "name": "oneLegBridgeLeftLeg",
+                            "reps": 32,
+                            "time": -1,
+                            "completed": false
+                        },
+                        {
+                            "id": "exerciseSingleLegDeadliftRightLeg",
+                            "name": "singleLegDeadliftRightLeg",
+                            "reps": 32,
+                            "time": -1,
+                            "completed": false
+                        },
+                        {
+                            "id": "exerciseSingleLegDeadliftLeftLeg",
+                            "name": "singleLegDeadliftLeftLeg",
+                            "reps": 32,
+                            "time": -1,
+                            "completed": false
+                        }
+                    ]
+                },
+                {
+                    "id": "programLegsWeek8Day4",
+                    "difficulty": 2,
+                    "exercises": [
+                        {
+                            "id": "exerciseLegSwingRightLeg",
+                            "name": "legSwingRightLeg",
+                            "reps": 40,
+                            "time": -1,
+                            "completed": false
+                        },
+                        {
+                            "id": "exerciseLegSwingLeftLeg",
+                            "name": "legSwingLeftLeg",
+                            "reps": 40,
+                            "time": -1,
+                            "completed": false
+                        },
+                        {
+                            "id": "exerciseGluteBridge",
+                            "name": "gluteBridge",
+                            "reps": 40,
+                            "time": -1,
+                            "completed": false
+                        },
+                        {
+                            "id": "exerciseInnerThighLiftRightLeg",
+                            "name": "innerThighLiftRightLeg",
+                            "reps": 40,
+                            "time": -1,
+                            "completed": false
+                        },
+                        {
+                            "id": "exerciseInnerThighLiftLeftLeg",
+                            "name": "innerThighLiftLeftLeg",
+                            "reps": 40,
+                            "time": -1,
+                            "completed": false
+                        },
+                        {
+                            "id": "exerciseSideLegLiftRightLeg",
+                            "name": "sideLegLiftRightLeg",
+                            "reps": 28,
+                            "time": -1,
+                            "completed": false
+                        },
+                        {
+                            "id": "exerciseSideLegLiftLeftLeg",
+                            "name": "sideLegLiftLeftLeg",
+                            "reps": 28,
+                            "time": -1,
+                            "completed": false
+                        },
+                        {
+                            "id": "exerciseGluteKickbacksRightLeg",
+                            "name": "gluteKickbacksRightLeg",
+                            "reps": 40,
+                            "time": -1,
+                            "completed": false
+                        },
+                        {
+                            "id": "exerciseGluteKickbacksLeftLeg",
+                            "name": "gluteKickbacksLeftLeg",
+                            "reps": 40,
+                            "time": -1,
+                            "completed": false
+                        }
+                    ]
+                },
+                {
+                    "id": "programLegsWeek8Day5",
+                    "difficulty": 2,
+                    "exercises": [
+                        {
+                            "id": "exerciseLegSwingRightLeg",
+                            "name": "legSwingRightLeg",
+                            "reps": 40,
+                            "time": -1,
+                            "completed": false
+                        },
+                        {
+                            "id": "exerciseLegSwingLeftLeg",
+                            "name": "legSwingLeftLeg",
+                            "reps": 40,
+                            "time": -1,
+                            "completed": false
+                        },
+                        {
+                            "id": "exerciseGluteBridge",
+                            "name": "gluteBridge",
+                            "reps": 40,
+                            "time": -1,
+                            "completed": false
+                        },
+                        {
+                            "id": "exerciseInnerThighLiftRightLeg",
+                            "name": "innerThighLiftRightLeg",
+                            "reps": 40,
+                            "time": -1,
+                            "completed": false
+                        },
+                        {
+                            "id": "exerciseInnerThighLiftLeftLeg",
+                            "name": "innerThighLiftLeftLeg",
+                            "reps": 40,
+                            "time": -1,
+                            "completed": false
+                        },
+                        {
+                            "id": "exerciseSideLegLiftRightLeg",
+                            "name": "sideLegLiftRightLeg",
+                            "reps": 28,
+                            "time": -1,
+                            "completed": false
+                        },
+                        {
+                            "id": "exerciseSideLegLiftLeftLeg",
+                            "name": "sideLegLiftLeftLeg",
+                            "reps": 28,
+                            "time": -1,
+                            "completed": false
+                        },
+                        {
+                            "id": "exerciseGluteKickbacksRightLeg",
+                            "name": "gluteKickbacksRightLeg",
+                            "reps": 40,
+                            "time": -1,
+                            "completed": false
+                        },
+                        {
+                            "id": "exerciseGluteKickbacksLeftLeg",
+                            "name": "gluteKickbacksLeftLeg",
+                            "reps": 40,
+                            "time": -1,
+                            "completed": false
+                        },
+                        {
+                            "id": "exerciseMarchingHip",
+                            "name": "marchingHip",
+                            "reps": 40,
+                            "time": -1,
+                            "completed": false
+                        }
+                    ]
+                },
+                {
+                    "id": "programLegsWeek8Day6",
+                    "difficulty": 2,
+                    "exercises": [
+                        {
+                            "id": "exerciseLegSwingRightLeg",
+                            "name": "legSwingRightLeg",
+                            "reps": 40,
+                            "time": -1,
+                            "completed": false
+                        },
+                        {
+                            "id": "exerciseLegSwingLeftLeg",
+                            "name": "legSwingLeftLeg",
+                            "reps": 40,
+                            "time": -1,
+                            "completed": false
+                        },
+                        {
+                            "id": "exerciseGluteBridge",
+                            "name": "gluteBridge",
+                            "reps": 40,
+                            "time": -1,
+                            "completed": false
+                        },
+                        {
+                            "id": "exerciseInnerThighLiftRightLeg",
+                            "name": "innerThighLiftRightLeg",
+                            "reps": 40,
+                            "time": -1,
+                            "completed": false
+                        },
+                        {
+                            "id": "exerciseInnerThighLiftLeftLeg",
+                            "name": "innerThighLiftLeftLeg",
+                            "reps": 40,
+                            "time": -1,
+                            "completed": false
+                        },
+                        {
+                            "id": "exerciseGluteKickbacksRightLeg",
+                            "name": "gluteKickbacksRightLeg",
+                            "reps": 40,
+                            "time": -1,
+                            "completed": false
+                        },
+                        {
+                            "id": "exerciseGluteKickbacksLeftLeg",
+                            "name": "gluteKickbacksLeftLeg",
+                            "reps": 40,
+                            "time": -1,
+                            "completed": false
+                        },
+                        {
+                            "id": "exerciseMarchingHip",
+                            "name": "marchingHip",
+                            "reps": 40,
+                            "time": -1,
+                            "completed": false
+                        }
+                    ]
+                }
+            ]
+        }
+    ]
+}

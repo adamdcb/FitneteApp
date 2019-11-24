@@ -1,0 +1,3327 @@
+{
+    "id": "programArmsAndChest",
+    "type": "armsAndChest",
+    "weeks": [
+        {
+            "id": "programArmsAndChestWeek0",
+            "days": [
+                {
+                    "id": "programArmsAndChestWeek0Day0",
+                    "difficulty": 0,
+                    "exercises": [
+                        {
+                            "id": "exerciseCobraPushUp",
+                            "name": "cobraPushUp",
+                            "reps": 5,
+                            "time": -1,
+                            "completed": false
+                        },
+                        {
+                            "id": "exerciseOneArmPushUpRightArm",
+                            "name": "oneArmPushUpRightArm",
+                            "reps": 2,
+                            "time": -1,
+                            "completed": false
+                        },
+                        {
+                            "id": "exerciseOneArmPushUpLeftArm",
+                            "name": "oneArmPushUpLeftArm",
+                            "reps": 2,
+                            "time": -1,
+                            "completed": false
+                        },
+                        {
+                            "id": "exerciseHandPlankReaches",
+                            "name": "handPlankReaches",
+                            "reps": 5,
+                            "time": -1,
+                            "completed": false
+                        },
+                        {
+                            "id": "exercisePlankRightSide",
+                            "name": "plankRightSide",
+                            "reps": -1,
+                            "time": 30,
+                            "completed": false
+                        },
+                        {
+                            "id": "exercisePlankLeftSide",
+                            "name": "plankLeftSide",
+                            "reps": -1,
+                            "time": 30,
+                            "completed": false
+                        },
+                        {
+                            "id": "exerciseBentOverRow",
+                            "name": "bentOverRow",
+                            "reps": 5,
+                            "time": -1,
+                            "completed": false
+                        },
+                        {
+                            "id": "exerciseLateralRaises",
+                            "name": "lateralRaises",
+                            "reps": 5,
+                            "time": -1,
+                            "completed": false
+                        }
+                    ]
+                },
+                {
+                    "id": "programArmsAndChestWeek0Day1",
+                    "difficulty": 0,
+                    "exercises": [
+                        {
+                            "id": "exerciseKneePushUps",
+                            "name": "kneePushUps",
+                            "reps": 5,
+                            "time": -1,
+                            "completed": false
+                        },
+                        {
+                            "id": "exerciseShouldPushUps",
+                            "name": "shouldPushUps",
+                            "reps": 5,
+                            "time": -1,
+                            "completed": false
+                        },
+                        {
+                            "id": "exerciseTricepExtension",
+                            "name": "tricepExtension",
+                            "reps": 5,
+                            "time": -1,
+                            "completed": false
+                        },
+                        {
+                            "id": "exerciseDumbellSwing",
+                            "name": "dumbellSwing",
+                            "reps": 5,
+                            "time": -1,
+                            "completed": false
+                        },
+                        {
+                            "id": "exerciseSquatAndCurl",
+                            "name": "squatAndCurl",
+                            "reps": 5,
+                            "time": -1,
+                            "completed": false
+                        },
+                        {
+                            "id": "exerciseTricepKickback",
+                            "name": "tricepKickback",
+                            "reps": 5,
+                            "time": -1,
+                            "completed": false
+                        },
+                        {
+                            "id": "exercisePlankHipDips",
+                            "name": "plankHipDips",
+                            "reps": 5,
+                            "time": -1,
+                            "completed": false
+                        }
+                    ]
+                },
+                {
+                    "id": "programArmsAndChestWeek0Day2",
+                    "difficulty": 0,
+                    "exercises": [
+                        {
+                            "id": "exerciseKneePushUps",
+                            "name": "kneePushUps",
+                            "reps": 5,
+                            "time": -1,
+                            "completed": false
+                        },
+                        {
+                            "id": "exerciseShouldPushUps",
+                            "name": "shouldPushUps",
+                            "reps": 5,
+                            "time": -1,
+                            "completed": false
+                        },
+                        {
+                            "id": "exerciseTricepExtension",
+                            "name": "tricepExtension",
+                            "reps": 5,
+                            "time": -1,
+                            "completed": false
+                        },
+                        {
+                            "id": "exerciseDumbellSwing",
+                            "name": "dumbellSwing",
+                            "reps": 5,
+                            "time": -1,
+                            "completed": false
+                        },
+                        {
+                            "id": "exerciseSquatAndCurl",
+                            "name": "squatAndCurl",
+                            "reps": 5,
+                            "time": -1,
+                            "completed": false
+                        },
+                        {
+                            "id": "exerciseTricepKickback",
+                            "name": "tricepKickback",
+                            "reps": 5,
+                            "time": -1,
+                            "completed": false
+                        },
+                        {
+                            "id": "exercisePlankHipDips",
+                            "name": "plankHipDips",
+                            "reps": 5,
+                            "time": -1,
+                            "completed": false
+                        }
+                    ]
+                },
+                {
+                    "id": "programArmsAndChestWeek0Day3",
+                    "difficulty": 0,
+                    "exercises": [
+                        {
+                            "id": "exerciseCobraPushUp",
+                            "name": "cobraPushUp",
+                            "reps": 5,
+                            "time": -1,
+                            "completed": false
+                        },
+                        {
+                            "id": "exerciseOneArmPushUpRightArm",
+                            "name": "oneArmPushUpRightArm",
+                            "reps": 2,
+                            "time": -1,
+                            "completed": false
+                        },
+                        {
+                            "id": "exerciseOneArmPushUpLeftArm",
+                            "name": "oneArmPushUpLeftArm",
+                            "reps": 2,
+                            "time": -1,
+                            "completed": false
+                        },
+                        {
+                            "id": "exerciseHandPlankReaches",
+                            "name": "handPlankReaches",
+                            "reps": 5,
+                            "time": -1,
+                            "completed": false
+                        },
+                        {
+                            "id": "exercisePlankRightSide",
+                            "name": "plankRightSide",
+                            "reps": -1,
+                            "time": 30,
+                            "completed": false
+                        },
+                        {
+                            "id": "exercisePlankLeftSide",
+                            "name": "plankLeftSide",
+                            "reps": -1,
+                            "time": 30,
+                            "completed": false
+                        },
+                        {
+                            "id": "exerciseBentOverRow",
+                            "name": "bentOverRow",
+                            "reps": 5,
+                            "time": -1,
+                            "completed": false
+                        },
+                        {
+                            "id": "exerciseLateralRaises",
+                            "name": "lateralRaises",
+                            "reps": 5,
+                            "time": -1,
+                            "completed": false
+                        }
+                    ]
+                },
+                {
+                    "id": "programArmsAndChestWeek0Day4",
+                    "difficulty": 0,
+                    "exercises": [
+                        {
+                            "id": "exerciseKneePushUps",
+                            "name": "kneePushUps",
+                            "reps": 5,
+                            "time": -1,
+                            "completed": false
+                        },
+                        {
+                            "id": "exerciseShouldPushUps",
+                            "name": "shouldPushUps",
+                            "reps": 5,
+                            "time": -1,
+                            "completed": false
+                        },
+                        {
+                            "id": "exerciseTricepExtension",
+                            "name": "tricepExtension",
+                            "reps": 5,
+                            "time": -1,
+                            "completed": false
+                        },
+                        {
+                            "id": "exerciseDumbellSwing",
+                            "name": "dumbellSwing",
+                            "reps": 5,
+                            "time": -1,
+                            "completed": false
+                        },
+                        {
+                            "id": "exerciseSquatAndCurl",
+                            "name": "squatAndCurl",
+                            "reps": 5,
+                            "time": -1,
+                            "completed": false
+                        },
+                        {
+                            "id": "exerciseTricepKickback",
+                            "name": "tricepKickback",
+                            "reps": 5,
+                            "time": -1,
+                            "completed": false
+                        },
+                        {
+                            "id": "exercisePlankHipDips",
+                            "name": "plankHipDips",
+                            "reps": 5,
+                            "time": -1,
+                            "completed": false
+                        }
+                    ]
+                },
+                {
+                    "id": "programArmsAndChestWeek0Day5",
+                    "difficulty": 0,
+                    "exercises": [
+                        {
+                            "id": "exerciseKneePushUps",
+                            "name": "kneePushUps",
+                            "reps": 5,
+                            "time": -1,
+                            "completed": false
+                        },
+                        {
+                            "id": "exerciseShouldPushUps",
+                            "name": "shouldPushUps",
+                            "reps": 5,
+                            "time": -1,
+                            "completed": false
+                        },
+                        {
+                            "id": "exerciseTricepExtension",
+                            "name": "tricepExtension",
+                            "reps": 5,
+                            "time": -1,
+                            "completed": false
+                        },
+                        {
+                            "id": "exerciseDumbellSwing",
+                            "name": "dumbellSwing",
+                            "reps": 5,
+                            "time": -1,
+                            "completed": false
+                        },
+                        {
+                            "id": "exerciseSquatAndCurl",
+                            "name": "squatAndCurl",
+                            "reps": 5,
+                            "time": -1,
+                            "completed": false
+                        },
+                        {
+                            "id": "exerciseTricepKickback",
+                            "name": "tricepKickback",
+                            "reps": 5,
+                            "time": -1,
+                            "completed": false
+                        },
+                        {
+                            "id": "exercisePlankHipDips",
+                            "name": "plankHipDips",
+                            "reps": 5,
+                            "time": -1,
+                            "completed": false
+                        }
+                    ]
+                },
+                {
+                    "id": "programArmsAndChestWeek0Day6",
+                    "difficulty": 0,
+                    "exercises": [
+                        {
+                            "id": "exerciseCobraPushUp",
+                            "name": "cobraPushUp",
+                            "reps": 5,
+                            "time": -1,
+                            "completed": false
+                        },
+                        {
+                            "id": "exerciseOneArmPushUpRightArm",
+                            "name": "oneArmPushUpRightArm",
+                            "reps": 2,
+                            "time": -1,
+                            "completed": false
+                        },
+                        {
+                            "id": "exerciseOneArmPushUpLeftArm",
+                            "name": "oneArmPushUpLeftArm",
+                            "reps": 2,
+                            "time": -1,
+                            "completed": false
+                        },
+                        {
+                            "id": "exerciseHandPlankReaches",
+                            "name": "handPlankReaches",
+                            "reps": 5,
+                            "time": -1,
+                            "completed": false
+                        },
+                        {
+                            "id": "exercisePlankRightSide",
+                            "name": "plankRightSide",
+                            "reps": -1,
+                            "time": 30,
+                            "completed": false
+                        },
+                        {
+                            "id": "exercisePlankLeftSide",
+                            "name": "plankLeftSide",
+                            "reps": -1,
+                            "time": 30,
+                            "completed": false
+                        },
+                        {
+                            "id": "exerciseBentOverRow",
+                            "name": "bentOverRow",
+                            "reps": 5,
+                            "time": -1,
+                            "completed": false
+                        },
+                        {
+                            "id": "exerciseLateralRaises",
+                            "name": "lateralRaises",
+                            "reps": 5,
+                            "time": -1,
+                            "completed": false
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "id": "programArmsAndChestWeek1",
+            "days": [
+                {
+                    "id": "programArmsAndChestWeek1Day0",
+                    "difficulty": 0,
+                    "exercises": [
+                        {
+                            "id": "exerciseKneePushUps",
+                            "name": "kneePushUps",
+                            "reps": 7,
+                            "time": -1,
+                            "completed": false
+                        },
+                        {
+                            "id": "exerciseShouldPushUps",
+                            "name": "shouldPushUps",
+                            "reps": 7,
+                            "time": -1,
+                            "completed": false
+                        },
+                        {
+                            "id": "exerciseTricepExtension",
+                            "name": "tricepExtension",
+                            "reps": 7,
+                            "time": -1,
+                            "completed": false
+                        },
+                        {
+                            "id": "exerciseDumbellSwing",
+                            "name": "dumbellSwing",
+                            "reps": 7,
+                            "time": -1,
+                            "completed": false
+                        }
+                    ]
+                },
+                {
+                    "id": "programArmsAndChestWeek1Day1",
+                    "difficulty": 0,
+                    "exercises": [
+                        {
+                            "id": "exerciseKneePushUps",
+                            "name": "kneePushUps",
+                            "reps": 7,
+                            "time": -1,
+                            "completed": false
+                        },
+                        {
+                            "id": "exerciseShouldPushUps",
+                            "name": "shouldPushUps",
+                            "reps": 7,
+                            "time": -1,
+                            "completed": false
+                        },
+                        {
+                            "id": "exerciseTricepExtension",
+                            "name": "tricepExtension",
+                            "reps": 7,
+                            "time": -1,
+                            "completed": false
+                        },
+                        {
+                            "id": "exerciseDumbellSwing",
+                            "name": "dumbellSwing",
+                            "reps": 7,
+                            "time": -1,
+                            "completed": false
+                        }
+                    ]
+                },
+                {
+                    "id": "programArmsAndChestWeek1Day2",
+                    "difficulty": 0,
+                    "exercises": [
+                        {
+                            "id": "exerciseCobraPushUp",
+                            "name": "cobraPushUp",
+                            "reps": 5,
+                            "time": -1,
+                            "completed": false
+                        },
+                        {
+                            "id": "exerciseOneArmPushUpRightArm",
+                            "name": "oneArmPushUpRightArm",
+                            "reps": 2,
+                            "time": -1,
+                            "completed": false
+                        },
+                        {
+                            "id": "exerciseOneArmPushUpLeftArm",
+                            "name": "oneArmPushUpLeftArm",
+                            "reps": 2,
+                            "time": -1,
+                            "completed": false
+                        },
+                        {
+                            "id": "exerciseHandPlankReaches",
+                            "name": "handPlankReaches",
+                            "reps": 5,
+                            "time": -1,
+                            "completed": false
+                        },
+                        {
+                            "id": "exercisePlankRightSide",
+                            "name": "plankRightSide",
+                            "reps": -1,
+                            "time": 30,
+                            "completed": false
+                        },
+                        {
+                            "id": "exercisePlankLeftSide",
+                            "name": "plankLeftSide",
+                            "reps": -1,
+                            "time": 30,
+                            "completed": false
+                        },
+                        {
+                            "id": "exerciseBentOverRow",
+                            "name": "bentOverRow",
+                            "reps": 5,
+                            "time": -1,
+                            "completed": false
+                        },
+                        {
+                            "id": "exerciseLateralRaises",
+                            "name": "lateralRaises",
+                            "reps": 5,
+                            "time": -1,
+                            "completed": false
+                        }
+                    ]
+                },
+                {
+                    "id": "programArmsAndChestWeek1Day3",
+                    "difficulty": 0,
+                    "exercises": [
+                        {
+                            "id": "exerciseKneePushUps",
+                            "name": "kneePushUps",
+                            "reps": 7,
+                            "time": -1,
+                            "completed": false
+                        },
+                        {
+                            "id": "exerciseShouldPushUps",
+                            "name": "shouldPushUps",
+                            "reps": 7,
+                            "time": -1,
+                            "completed": false
+                        },
+                        {
+                            "id": "exerciseTricepExtension",
+                            "name": "tricepExtension",
+                            "reps": 7,
+                            "time": -1,
+                            "completed": false
+                        },
+                        {
+                            "id": "exerciseDumbellSwing",
+                            "name": "dumbellSwing",
+                            "reps": 7,
+                            "time": -1,
+                            "completed": false
+                        },
+                        {
+                            "id": "exerciseSquatAndCurl",
+                            "name": "squatAndCurl",
+                            "reps": 7,
+                            "time": -1,
+                            "completed": false
+                        }
+                    ]
+                },
+                {
+                    "id": "programArmsAndChestWeek1Day4",
+                    "difficulty": 0,
+                    "exercises": [
+                        {
+                            "id": "exerciseKneePushUps",
+                            "name": "kneePushUps",
+                            "reps": 7,
+                            "time": -1,
+                            "completed": false
+                        },
+                        {
+                            "id": "exerciseShouldPushUps",
+                            "name": "shouldPushUps",
+                            "reps": 7,
+                            "time": -1,
+                            "completed": false
+                        },
+                        {
+                            "id": "exerciseTricepExtension",
+                            "name": "tricepExtension",
+                            "reps": 7,
+                            "time": -1,
+                            "completed": false
+                        },
+                        {
+                            "id": "exerciseDumbellSwing",
+                            "name": "dumbellSwing",
+                            "reps": 7,
+                            "time": -1,
+                            "completed": false
+                        },
+                        {
+                            "id": "exerciseSquatAndCurl",
+                            "name": "squatAndCurl",
+                            "reps": 7,
+                            "time": -1,
+                            "completed": false
+                        }
+                    ]
+                },
+                {
+                    "id": "programArmsAndChestWeek1Day5",
+                    "difficulty": 0,
+                    "exercises": [
+                        {
+                            "id": "exerciseCobraPushUp",
+                            "name": "cobraPushUp",
+                            "reps": 7,
+                            "time": -1,
+                            "completed": false
+                        },
+                        {
+                            "id": "exerciseOneArmPushUpRightArm",
+                            "name": "oneArmPushUpRightArm",
+                            "reps": 3,
+                            "time": -1,
+                            "completed": false
+                        },
+                        {
+                            "id": "exerciseOneArmPushUpLeftArm",
+                            "name": "oneArmPushUpLeftArm",
+                            "reps": 3,
+                            "time": -1,
+                            "completed": false
+                        },
+                        {
+                            "id": "exerciseHandPlankReaches",
+                            "name": "handPlankReaches",
+                            "reps": 7,
+                            "time": -1,
+                            "completed": false
+                        },
+                        {
+                            "id": "exercisePlankRightSide",
+                            "name": "plankRightSide",
+                            "reps": -1,
+                            "time": 30,
+                            "completed": false
+                        },
+                        {
+                            "id": "exercisePlankLeftSide",
+                            "name": "plankLeftSide",
+                            "reps": -1,
+                            "time": 30,
+                            "completed": false
+                        },
+                        {
+                            "id": "exerciseBentOverRow",
+                            "name": "bentOverRow",
+                            "reps": 7,
+                            "time": -1,
+                            "completed": false
+                        },
+                        {
+                            "id": "exerciseLateralRaises",
+                            "name": "lateralRaises",
+                            "reps": 7,
+                            "time": -1,
+                            "completed": false
+                        }
+                    ]
+                },
+                {
+                    "id": "programArmsAndChestWeek1Day6",
+                    "difficulty": 0,
+                    "exercises": [
+                        {
+                            "id": "exerciseKneePushUps",
+                            "name": "kneePushUps",
+                            "reps": 7,
+                            "time": -1,
+                            "completed": false
+                        },
+                        {
+                            "id": "exerciseShouldPushUps",
+                            "name": "shouldPushUps",
+                            "reps": 7,
+                            "time": -1,
+                            "completed": false
+                        },
+                        {
+                            "id": "exerciseTricepExtension",
+                            "name": "tricepExtension",
+                            "reps": 7,
+                            "time": -1,
+                            "completed": false
+                        },
+                        {
+                            "id": "exerciseDumbellSwing",
+                            "name": "dumbellSwing",
+                            "reps": 7,
+                            "time": -1,
+                            "completed": false
+                        },
+                        {
+                            "id": "exerciseSquatAndCurl",
+                            "name": "squatAndCurl",
+                            "reps": 7,
+                            "time": -1,
+                            "completed": false
+                        },
+                        {
+                            "id": "exercisePlankHipDips",
+                            "name": "plankHipDips",
+                            "reps": 7,
+                            "time": -1,
+                            "completed": false
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "id": "programArmsAndChestWeek2",
+            "days": [
+                {
+                    "id": "programArmsAndChestWeek2Day0",
+                    "difficulty": 0,
+                    "exercises": [
+                        {
+                            "id": "exerciseKneePushUps",
+                            "name": "kneePushUps",
+                            "reps": 7,
+                            "time": -1,
+                            "completed": false
+                        },
+                        {
+                            "id": "exerciseShouldPushUps",
+                            "name": "shouldPushUps",
+                            "reps": 7,
+                            "time": -1,
+                            "completed": false
+                        },
+                        {
+                            "id": "exerciseTricepExtension",
+                            "name": "tricepExtension",
+                            "reps": 7,
+                            "time": -1,
+                            "completed": false
+                        },
+                        {
+                            "id": "exerciseDumbellSwing",
+                            "name": "dumbellSwing",
+                            "reps": 7,
+                            "time": -1,
+                            "completed": false
+                        },
+                        {
+                            "id": "exerciseSquatAndCurl",
+                            "name": "squatAndCurl",
+                            "reps": 7,
+                            "time": -1,
+                            "completed": false
+                        },
+                        {
+                            "id": "exercisePlankHipDips",
+                            "name": "plankHipDips",
+                            "reps": 7,
+                            "time": -1,
+                            "completed": false
+                        }
+                    ]
+                },
+                {
+                    "id": "programArmsAndChestWeek2Day1",
+                    "difficulty": 0,
+                    "exercises": [
+                        {
+                            "id": "exerciseCobraPushUp",
+                            "name": "cobraPushUp",
+                            "reps": 7,
+                            "time": -1,
+                            "completed": false
+                        },
+                        {
+                            "id": "exerciseOneArmPushUpRightArm",
+                            "name": "oneArmPushUpRightArm",
+                            "reps": 3,
+                            "time": -1,
+                            "completed": false
+                        },
+                        {
+                            "id": "exerciseOneArmPushUpLeftArm",
+                            "name": "oneArmPushUpLeftArm",
+                            "reps": 3,
+                            "time": -1,
+                            "completed": false
+                        },
+                        {
+                            "id": "exerciseHandPlankReaches",
+                            "name": "handPlankReaches",
+                            "reps": 7,
+                            "time": -1,
+                            "completed": false
+                        },
+                        {
+                            "id": "exercisePlankRightSide",
+                            "name": "plankRightSide",
+                            "reps": -1,
+                            "time": 30,
+                            "completed": false
+                        },
+                        {
+                            "id": "exercisePlankLeftSide",
+                            "name": "plankLeftSide",
+                            "reps": -1,
+                            "time": 30,
+                            "completed": false
+                        },
+                        {
+                            "id": "exerciseBentOverRow",
+                            "name": "bentOverRow",
+                            "reps": 7,
+                            "time": -1,
+                            "completed": false
+                        },
+                        {
+                            "id": "exerciseLateralRaises",
+                            "name": "lateralRaises",
+                            "reps": 7,
+                            "time": -1,
+                            "completed": false
+                        }
+                    ]
+                },
+                {
+                    "id": "programArmsAndChestWeek2Day2",
+                    "difficulty": 0,
+                    "exercises": [
+                        {
+                            "id": "exerciseKneePushUps",
+                            "name": "kneePushUps",
+                            "reps": 7,
+                            "time": -1,
+                            "completed": false
+                        },
+                        {
+                            "id": "exerciseShouldPushUps",
+                            "name": "shouldPushUps",
+                            "reps": 7,
+                            "time": -1,
+                            "completed": false
+                        },
+                        {
+                            "id": "exerciseTricepExtension",
+                            "name": "tricepExtension",
+                            "reps": 7,
+                            "time": -1,
+                            "completed": false
+                        },
+                        {
+                            "id": "exerciseDumbellSwing",
+                            "name": "dumbellSwing",
+                            "reps": 7,
+                            "time": -1,
+                            "completed": false
+                        },
+                        {
+                            "id": "exerciseSquatAndCurl",
+                            "name": "squatAndCurl",
+                            "reps": 7,
+                            "time": -1,
+                            "completed": false
+                        },
+                        {
+                            "id": "exerciseTricepKickback",
+                            "name": "tricepKickback",
+                            "reps": 7,
+                            "time": -1,
+                            "completed": false
+                        }
+                    ]
+                },
+                {
+                    "id": "programArmsAndChestWeek2Day3",
+                    "difficulty": 0,
+                    "exercises": [
+                        {
+                            "id": "exerciseKneePushUps",
+                            "name": "kneePushUps",
+                            "reps": 7,
+                            "time": -1,
+                            "completed": false
+                        },
+                        {
+                            "id": "exerciseShouldPushUps",
+                            "name": "shouldPushUps",
+                            "reps": 7,
+                            "time": -1,
+                            "completed": false
+                        },
+                        {
+                            "id": "exerciseTricepExtension",
+                            "name": "tricepExtension",
+                            "reps": 7,
+                            "time": -1,
+                            "completed": false
+                        },
+                        {
+                            "id": "exerciseDumbellSwing",
+                            "name": "dumbellSwing",
+                            "reps": 7,
+                            "time": -1,
+                            "completed": false
+                        },
+                        {
+                            "id": "exerciseSquatAndCurl",
+                            "name": "squatAndCurl",
+                            "reps": 7,
+                            "time": -1,
+                            "completed": false
+                        },
+                        {
+                            "id": "exerciseTricepKickback",
+                            "name": "tricepKickback",
+                            "reps": 7,
+                            "time": -1,
+                            "completed": false
+                        }
+                    ]
+                },
+                {
+                    "id": "programArmsAndChestWeek2Day4",
+                    "difficulty": 0,
+                    "exercises": [
+                        {
+                            "id": "exerciseCobraPushUp",
+                            "name": "cobraPushUp",
+                            "reps": 8,
+                            "time": -1,
+                            "completed": false
+                        },
+                        {
+                            "id": "exerciseOneArmPushUpRightArm",
+                            "name": "oneArmPushUpRightArm",
+                            "reps": 4,
+                            "time": -1,
+                            "completed": false
+                        },
+                        {
+                            "id": "exerciseOneArmPushUpLeftArm",
+                            "name": "oneArmPushUpLeftArm",
+                            "reps": 4,
+                            "time": -1,
+                            "completed": false
+                        },
+                        {
+                            "id": "exerciseHandPlankReaches",
+                            "name": "handPlankReaches",
+                            "reps": 8,
+                            "time": -1,
+                            "completed": false
+                        },
+                        {
+                            "id": "exercisePlankRightSide",
+                            "name": "plankRightSide",
+                            "reps": -1,
+                            "time": 30,
+                            "completed": false
+                        },
+                        {
+                            "id": "exercisePlankLeftSide",
+                            "name": "plankLeftSide",
+                            "reps": -1,
+                            "time": 30,
+                            "completed": false
+                        },
+                        {
+                            "id": "exerciseBentOverRow",
+                            "name": "bentOverRow",
+                            "reps": 8,
+                            "time": -1,
+                            "completed": false
+                        },
+                        {
+                            "id": "exerciseLateralRaises",
+                            "name": "lateralRaises",
+                            "reps": 8,
+                            "time": -1,
+                            "completed": false
+                        }
+                    ]
+                },
+                {
+                    "id": "programArmsAndChestWeek2Day5",
+                    "difficulty": 0,
+                    "exercises": [
+                        {
+                            "id": "exerciseKneePushUps",
+                            "name": "kneePushUps",
+                            "reps": 8,
+                            "time": -1,
+                            "completed": false
+                        },
+                        {
+                            "id": "exerciseShouldPushUps",
+                            "name": "shouldPushUps",
+                            "reps": 8,
+                            "time": -1,
+                            "completed": false
+                        },
+                        {
+                            "id": "exerciseTricepExtension",
+                            "name": "tricepExtension",
+                            "reps": 8,
+                            "time": -1,
+                            "completed": false
+                        },
+                        {
+                            "id": "exerciseDumbellSwing",
+                            "name": "dumbellSwing",
+                            "reps": 8,
+                            "time": -1,
+                            "completed": false
+                        },
+                        {
+                            "id": "exerciseSquatAndCurl",
+                            "name": "squatAndCurl",
+                            "reps": 8,
+                            "time": -1,
+                            "completed": false
+                        },
+                        {
+                            "id": "exerciseTricepKickback",
+                            "name": "tricepKickback",
+                            "reps": 8,
+                            "time": -1,
+                            "completed": false
+                        }
+                    ]
+                },
+                {
+                    "id": "programArmsAndChestWeek2Day6",
+                    "difficulty": 0,
+                    "exercises": [
+                        {
+                            "id": "exerciseKneePushUps",
+                            "name": "kneePushUps",
+                            "reps": 8,
+                            "time": -1,
+                            "completed": false
+                        },
+                        {
+                            "id": "exerciseShouldPushUps",
+                            "name": "shouldPushUps",
+                            "reps": 8,
+                            "time": -1,
+                            "completed": false
+                        },
+                        {
+                            "id": "exerciseTricepExtension",
+                            "name": "tricepExtension",
+                            "reps": 8,
+                            "time": -1,
+                            "completed": false
+                        },
+                        {
+                            "id": "exerciseDumbellSwing",
+                            "name": "dumbellSwing",
+                            "reps": 8,
+                            "time": -1,
+                            "completed": false
+                        },
+                        {
+                            "id": "exerciseSquatAndCurl",
+                            "name": "squatAndCurl",
+                            "reps": 8,
+                            "time": -1,
+                            "completed": false
+                        },
+                        {
+                            "id": "exerciseTricepKickback",
+                            "name": "tricepKickback",
+                            "reps": 8,
+                            "time": -1,
+                            "completed": false
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "id": "programArmsAndChestWeek3",
+            "days": [
+                {
+                    "id": "programArmsAndChestWeek3Day0",
+                    "difficulty": 1,
+                    "exercises": [
+                        {
+                            "id": "exerciseCobraPushUp",
+                            "name": "cobraPushUp",
+                            "reps": 10,
+                            "time": -1,
+                            "completed": false
+                        },
+                        {
+                            "id": "exerciseOneArmPushUpRightArm",
+                            "name": "oneArmPushUpRightArm",
+                            "reps": 4,
+                            "time": -1,
+                            "completed": false
+                        },
+                        {
+                            "id": "exerciseOneArmPushUpLeftArm",
+                            "name": "oneArmPushUpLeftArm",
+                            "reps": 4,
+                            "time": -1,
+                            "completed": false
+                        },
+                        {
+                            "id": "exerciseHandPlankReaches",
+                            "name": "handPlankReaches",
+                            "reps": 10,
+                            "time": -1,
+                            "completed": false
+                        },
+                        {
+                            "id": "exercisePlankRightSide",
+                            "name": "plankRightSide",
+                            "reps": -1,
+                            "time": 60,
+                            "completed": false
+                        },
+                        {
+                            "id": "exercisePlankLeftSide",
+                            "name": "plankLeftSide",
+                            "reps": -1,
+                            "time": 60,
+                            "completed": false
+                        },
+                        {
+                            "id": "exerciseBentOverRow",
+                            "name": "bentOverRow",
+                            "reps": 10,
+                            "time": -1,
+                            "completed": false
+                        },
+                        {
+                            "id": "exerciseLateralRaises",
+                            "name": "lateralRaises",
+                            "reps": 10,
+                            "time": -1,
+                            "completed": false
+                        }
+                    ]
+                },
+                {
+                    "id": "programArmsAndChestWeek3Day1",
+                    "difficulty": 1,
+                    "exercises": [
+                        {
+                            "id": "exerciseKneePushUps",
+                            "name": "kneePushUps",
+                            "reps": 10,
+                            "time": -1,
+                            "completed": false
+                        },
+                        {
+                            "id": "exerciseShouldPushUps",
+                            "name": "shouldPushUps",
+                            "reps": 10,
+                            "time": -1,
+                            "completed": false
+                        },
+                        {
+                            "id": "exerciseTricepExtension",
+                            "name": "tricepExtension",
+                            "reps": 10,
+                            "time": -1,
+                            "completed": false
+                        },
+                        {
+                            "id": "exerciseDumbellSwing",
+                            "name": "dumbellSwing",
+                            "reps": 10,
+                            "time": -1,
+                            "completed": false
+                        },
+                        {
+                            "id": "exerciseSquatAndCurl",
+                            "name": "squatAndCurl",
+                            "reps": 10,
+                            "time": -1,
+                            "completed": false
+                        },
+                        {
+                            "id": "exerciseTricepKickback",
+                            "name": "tricepKickback",
+                            "reps": 10,
+                            "time": -1,
+                            "completed": false
+                        },
+                        {
+                            "id": "exercisePlankHipDips",
+                            "name": "plankHipDips",
+                            "reps": 10,
+                            "time": -1,
+                            "completed": false
+                        }
+                    ]
+                },
+                {
+                    "id": "programArmsAndChestWeek3Day2",
+                    "difficulty": 1,
+                    "exercises": [
+                        {
+                            "id": "exerciseKneePushUps",
+                            "name": "kneePushUps",
+                            "reps": 10,
+                            "time": -1,
+                            "completed": false
+                        },
+                        {
+                            "id": "exerciseShouldPushUps",
+                            "name": "shouldPushUps",
+                            "reps": 10,
+                            "time": -1,
+                            "completed": false
+                        },
+                        {
+                            "id": "exerciseTricepExtension",
+                            "name": "tricepExtension",
+                            "reps": 10,
+                            "time": -1,
+                            "completed": false
+                        },
+                        {
+                            "id": "exerciseDumbellSwing",
+                            "name": "dumbellSwing",
+                            "reps": 10,
+                            "time": -1,
+                            "completed": false
+                        },
+                        {
+                            "id": "exerciseSquatAndCurl",
+                            "name": "squatAndCurl",
+                            "reps": 10,
+                            "time": -1,
+                            "completed": false
+                        },
+                        {
+                            "id": "exerciseTricepKickback",
+                            "name": "tricepKickback",
+                            "reps": 10,
+                            "time": -1,
+                            "completed": false
+                        },
+                        {
+                            "id": "exercisePlankHipDips",
+                            "name": "plankHipDips",
+                            "reps": 10,
+                            "time": -1,
+                            "completed": false
+                        }
+                    ]
+                },
+                {
+                    "id": "programArmsAndChestWeek3Day3",
+                    "difficulty": 1,
+                    "exercises": [
+                        {
+                            "id": "exerciseCobraPushUp",
+                            "name": "cobraPushUp",
+                            "reps": 10,
+                            "time": -1,
+                            "completed": false
+                        },
+                        {
+                            "id": "exerciseOneArmPushUpRightArm",
+                            "name": "oneArmPushUpRightArm",
+                            "reps": 4,
+                            "time": -1,
+                            "completed": false
+                        },
+                        {
+                            "id": "exerciseOneArmPushUpLeftArm",
+                            "name": "oneArmPushUpLeftArm",
+                            "reps": 4,
+                            "time": -1,
+                            "completed": false
+                        },
+                        {
+                            "id": "exerciseHandPlankReaches",
+                            "name": "handPlankReaches",
+                            "reps": 10,
+                            "time": -1,
+                            "completed": false
+                        },
+                        {
+                            "id": "exercisePlankRightSide",
+                            "name": "plankRightSide",
+                            "reps": -1,
+                            "time": 60,
+                            "completed": false
+                        },
+                        {
+                            "id": "exercisePlankLeftSide",
+                            "name": "plankLeftSide",
+                            "reps": -1,
+                            "time": 60,
+                            "completed": false
+                        },
+                        {
+                            "id": "exerciseBentOverRow",
+                            "name": "bentOverRow",
+                            "reps": 10,
+                            "time": -1,
+                            "completed": false
+                        },
+                        {
+                            "id": "exerciseLateralRaises",
+                            "name": "lateralRaises",
+                            "reps": 10,
+                            "time": -1,
+                            "completed": false
+                        }
+                    ]
+                },
+                {
+                    "id": "programArmsAndChestWeek3Day4",
+                    "difficulty": 1,
+                    "exercises": [
+                        {
+                            "id": "exerciseKneePushUps",
+                            "name": "kneePushUps",
+                            "reps": 10,
+                            "time": -1,
+                            "completed": false
+                        },
+                        {
+                            "id": "exerciseShouldPushUps",
+                            "name": "shouldPushUps",
+                            "reps": 10,
+                            "time": -1,
+                            "completed": false
+                        },
+                        {
+                            "id": "exerciseTricepExtension",
+                            "name": "tricepExtension",
+                            "reps": 10,
+                            "time": -1,
+                            "completed": false
+                        },
+                        {
+                            "id": "exerciseDumbellSwing",
+                            "name": "dumbellSwing",
+                            "reps": 10,
+                            "time": -1,
+                            "completed": false
+                        },
+                        {
+                            "id": "exerciseSquatAndCurl",
+                            "name": "squatAndCurl",
+                            "reps": 10,
+                            "time": -1,
+                            "completed": false
+                        },
+                        {
+                            "id": "exerciseTricepKickback",
+                            "name": "tricepKickback",
+                            "reps": 10,
+                            "time": -1,
+                            "completed": false
+                        },
+                        {
+                            "id": "exercisePlankHipDips",
+                            "name": "plankHipDips",
+                            "reps": 10,
+                            "time": -1,
+                            "completed": false
+                        }
+                    ]
+                },
+                {
+                    "id": "programArmsAndChestWeek3Day5",
+                    "difficulty": 1,
+                    "exercises": [
+                        {
+                            "id": "exerciseKneePushUps",
+                            "name": "kneePushUps",
+                            "reps": 10,
+                            "time": -1,
+                            "completed": false
+                        },
+                        {
+                            "id": "exerciseShouldPushUps",
+                            "name": "shouldPushUps",
+                            "reps": 10,
+                            "time": -1,
+                            "completed": false
+                        },
+                        {
+                            "id": "exerciseTricepExtension",
+                            "name": "tricepExtension",
+                            "reps": 10,
+                            "time": -1,
+                            "completed": false
+                        },
+                        {
+                            "id": "exerciseDumbellSwing",
+                            "name": "dumbellSwing",
+                            "reps": 10,
+                            "time": -1,
+                            "completed": false
+                        },
+                        {
+                            "id": "exerciseSquatAndCurl",
+                            "name": "squatAndCurl",
+                            "reps": 10,
+                            "time": -1,
+                            "completed": false
+                        },
+                        {
+                            "id": "exerciseTricepKickback",
+                            "name": "tricepKickback",
+                            "reps": 10,
+                            "time": -1,
+                            "completed": false
+                        },
+                        {
+                            "id": "exercisePlankHipDips",
+                            "name": "plankHipDips",
+                            "reps": 10,
+                            "time": -1,
+                            "completed": false
+                        }
+                    ]
+                },
+                {
+                    "id": "programArmsAndChestWeek3Day6",
+                    "difficulty": 1,
+                    "exercises": [
+                        {
+                            "id": "exerciseCobraPushUp",
+                            "name": "cobraPushUp",
+                            "reps": 10,
+                            "time": -1,
+                            "completed": false
+                        },
+                        {
+                            "id": "exerciseOneArmPushUpRightArm",
+                            "name": "oneArmPushUpRightArm",
+                            "reps": 4,
+                            "time": -1,
+                            "completed": false
+                        },
+                        {
+                            "id": "exerciseOneArmPushUpLeftArm",
+                            "name": "oneArmPushUpLeftArm",
+                            "reps": 4,
+                            "time": -1,
+                            "completed": false
+                        },
+                        {
+                            "id": "exerciseHandPlankReaches",
+                            "name": "handPlankReaches",
+                            "reps": 10,
+                            "time": -1,
+                            "completed": false
+                        },
+                        {
+                            "id": "exercisePlankRightSide",
+                            "name": "plankRightSide",
+                            "reps": -1,
+                            "time": 60,
+                            "completed": false
+                        },
+                        {
+                            "id": "exercisePlankLeftSide",
+                            "name": "plankLeftSide",
+                            "reps": -1,
+                            "time": 60,
+                            "completed": false
+                        },
+                        {
+                            "id": "exerciseBentOverRow",
+                            "name": "bentOverRow",
+                            "reps": 10,
+                            "time": -1,
+                            "completed": false
+                        },
+                        {
+                            "id": "exerciseLateralRaises",
+                            "name": "lateralRaises",
+                            "reps": 10,
+                            "time": -1,
+                            "completed": false
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "id": "programArmsAndChestWeek4",
+            "days": [
+                {
+                    "id": "programArmsAndChestWeek4Day0",
+                    "difficulty": 1,
+                    "exercises": [
+                        {
+                            "id": "exerciseKneePushUps",
+                            "name": "kneePushUps",
+                            "reps": 14,
+                            "time": -1,
+                            "completed": false
+                        },
+                        {
+                            "id": "exerciseShouldPushUps",
+                            "name": "shouldPushUps",
+                            "reps": 14,
+                            "time": -1,
+                            "completed": false
+                        },
+                        {
+                            "id": "exerciseTricepExtension",
+                            "name": "tricepExtension",
+                            "reps": 14,
+                            "time": -1,
+                            "completed": false
+                        },
+                        {
+                            "id": "exerciseDumbellSwing",
+                            "name": "dumbellSwing",
+                            "reps": 14,
+                            "time": -1,
+                            "completed": false
+                        }
+                    ]
+                },
+                {
+                    "id": "programArmsAndChestWeek4Day1",
+                    "difficulty": 1,
+                    "exercises": [
+                        {
+                            "id": "exerciseKneePushUps",
+                            "name": "kneePushUps",
+                            "reps": 14,
+                            "time": -1,
+                            "completed": false
+                        },
+                        {
+                            "id": "exerciseShouldPushUps",
+                            "name": "shouldPushUps",
+                            "reps": 14,
+                            "time": -1,
+                            "completed": false
+                        },
+                        {
+                            "id": "exerciseTricepExtension",
+                            "name": "tricepExtension",
+                            "reps": 14,
+                            "time": -1,
+                            "completed": false
+                        },
+                        {
+                            "id": "exerciseDumbellSwing",
+                            "name": "dumbellSwing",
+                            "reps": 14,
+                            "time": -1,
+                            "completed": false
+                        }
+                    ]
+                },
+                {
+                    "id": "programArmsAndChestWeek4Day2",
+                    "difficulty": 1,
+                    "exercises": [
+                        {
+                            "id": "exerciseCobraPushUp",
+                            "name": "cobraPushUp",
+                            "reps": 10,
+                            "time": -1,
+                            "completed": false
+                        },
+                        {
+                            "id": "exerciseOneArmPushUpRightArm",
+                            "name": "oneArmPushUpRightArm",
+                            "reps": 4,
+                            "time": -1,
+                            "completed": false
+                        },
+                        {
+                            "id": "exerciseOneArmPushUpLeftArm",
+                            "name": "oneArmPushUpLeftArm",
+                            "reps": 4,
+                            "time": -1,
+                            "completed": false
+                        },
+                        {
+                            "id": "exerciseHandPlankReaches",
+                            "name": "handPlankReaches",
+                            "reps": 10,
+                            "time": -1,
+                            "completed": false
+                        },
+                        {
+                            "id": "exercisePlankRightSide",
+                            "name": "plankRightSide",
+                            "reps": -1,
+                            "time": 60,
+                            "completed": false
+                        },
+                        {
+                            "id": "exercisePlankLeftSide",
+                            "name": "plankLeftSide",
+                            "reps": -1,
+                            "time": 60,
+                            "completed": false
+                        },
+                        {
+                            "id": "exerciseBentOverRow",
+                            "name": "bentOverRow",
+                            "reps": 10,
+                            "time": -1,
+                            "completed": false
+                        },
+                        {
+                            "id": "exerciseLateralRaises",
+                            "name": "lateralRaises",
+                            "reps": 10,
+                            "time": -1,
+                            "completed": false
+                        }
+                    ]
+                },
+                {
+                    "id": "programArmsAndChestWeek4Day3",
+                    "difficulty": 1,
+                    "exercises": [
+                        {
+                            "id": "exerciseKneePushUps",
+                            "name": "kneePushUps",
+                            "reps": 14,
+                            "time": -1,
+                            "completed": false
+                        },
+                        {
+                            "id": "exerciseShouldPushUps",
+                            "name": "shouldPushUps",
+                            "reps": 14,
+                            "time": -1,
+                            "completed": false
+                        },
+                        {
+                            "id": "exerciseTricepExtension",
+                            "name": "tricepExtension",
+                            "reps": 14,
+                            "time": -1,
+                            "completed": false
+                        },
+                        {
+                            "id": "exerciseDumbellSwing",
+                            "name": "dumbellSwing",
+                            "reps": 14,
+                            "time": -1,
+                            "completed": false
+                        },
+                        {
+                            "id": "exerciseSquatAndCurl",
+                            "name": "squatAndCurl",
+                            "reps": 14,
+                            "time": -1,
+                            "completed": false
+                        }
+                    ]
+                },
+                {
+                    "id": "programArmsAndChestWeek4Day4",
+                    "difficulty": 1,
+                    "exercises": [
+                        {
+                            "id": "exerciseKneePushUps",
+                            "name": "kneePushUps",
+                            "reps": 14,
+                            "time": -1,
+                            "completed": false
+                        },
+                        {
+                            "id": "exerciseShouldPushUps",
+                            "name": "shouldPushUps",
+                            "reps": 14,
+                            "time": -1,
+                            "completed": false
+                        },
+                        {
+                            "id": "exerciseTricepExtension",
+                            "name": "tricepExtension",
+                            "reps": 14,
+                            "time": -1,
+                            "completed": false
+                        },
+                        {
+                            "id": "exerciseDumbellSwing",
+                            "name": "dumbellSwing",
+                            "reps": 14,
+                            "time": -1,
+                            "completed": false
+                        },
+                        {
+                            "id": "exerciseSquatAndCurl",
+                            "name": "squatAndCurl",
+                            "reps": 14,
+                            "time": -1,
+                            "completed": false
+                        }
+                    ]
+                },
+                {
+                    "id": "programArmsAndChestWeek4Day5",
+                    "difficulty": 1,
+                    "exercises": [
+                        {
+                            "id": "exerciseCobraPushUp",
+                            "name": "cobraPushUp",
+                            "reps": 14,
+                            "time": -1,
+                            "completed": false
+                        },
+                        {
+                            "id": "exerciseOneArmPushUpRightArm",
+                            "name": "oneArmPushUpRightArm",
+                            "reps": 6,
+                            "time": -1,
+                            "completed": false
+                        },
+                        {
+                            "id": "exerciseOneArmPushUpLeftArm",
+                            "name": "oneArmPushUpLeftArm",
+                            "reps": 6,
+                            "time": -1,
+                            "completed": false
+                        },
+                        {
+                            "id": "exerciseHandPlankReaches",
+                            "name": "handPlankReaches",
+                            "reps": 14,
+                            "time": -1,
+                            "completed": false
+                        },
+                        {
+                            "id": "exercisePlankRightSide",
+                            "name": "plankRightSide",
+                            "reps": -1,
+                            "time": 60,
+                            "completed": false
+                        },
+                        {
+                            "id": "exercisePlankLeftSide",
+                            "name": "plankLeftSide",
+                            "reps": -1,
+                            "time": 60,
+                            "completed": false
+                        },
+                        {
+                            "id": "exerciseBentOverRow",
+                            "name": "bentOverRow",
+                            "reps": 14,
+                            "time": -1,
+                            "completed": false
+                        },
+                        {
+                            "id": "exerciseLateralRaises",
+                            "name": "lateralRaises",
+                            "reps": 14,
+                            "time": -1,
+                            "completed": false
+                        }
+                    ]
+                },
+                {
+                    "id": "programArmsAndChestWeek4Day6",
+                    "difficulty": 1,
+                    "exercises": [
+                        {
+                            "id": "exerciseKneePushUps",
+                            "name": "kneePushUps",
+                            "reps": 14,
+                            "time": -1,
+                            "completed": false
+                        },
+                        {
+                            "id": "exerciseShouldPushUps",
+                            "name": "shouldPushUps",
+                            "reps": 14,
+                            "time": -1,
+                            "completed": false
+                        },
+                        {
+                            "id": "exerciseTricepExtension",
+                            "name": "tricepExtension",
+                            "reps": 14,
+                            "time": -1,
+                            "completed": false
+                        },
+                        {
+                            "id": "exerciseDumbellSwing",
+                            "name": "dumbellSwing",
+                            "reps": 14,
+                            "time": -1,
+                            "completed": false
+                        },
+                        {
+                            "id": "exerciseSquatAndCurl",
+                            "name": "squatAndCurl",
+                            "reps": 14,
+                            "time": -1,
+                            "completed": false
+                        },
+                        {
+                            "id": "exercisePlankHipDips",
+                            "name": "plankHipDips",
+                            "reps": 14,
+                            "time": -1,
+                            "completed": false
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "id": "programArmsAndChestWeek5",
+            "days": [
+                {
+                    "id": "programArmsAndChestWeek5Day0",
+                    "difficulty": 1,
+                    "exercises": [
+                        {
+                            "id": "exerciseKneePushUps",
+                            "name": "kneePushUps",
+                            "reps": 14,
+                            "time": -1,
+                            "completed": false
+                        },
+                        {
+                            "id": "exerciseShouldPushUps",
+                            "name": "shouldPushUps",
+                            "reps": 14,
+                            "time": -1,
+                            "completed": false
+                        },
+                        {
+                            "id": "exerciseTricepExtension",
+                            "name": "tricepExtension",
+                            "reps": 14,
+                            "time": -1,
+                            "completed": false
+                        },
+                        {
+                            "id": "exerciseDumbellSwing",
+                            "name": "dumbellSwing",
+                            "reps": 14,
+                            "time": -1,
+                            "completed": false
+                        },
+                        {
+                            "id": "exerciseSquatAndCurl",
+                            "name": "squatAndCurl",
+                            "reps": 14,
+                            "time": -1,
+                            "completed": false
+                        },
+                        {
+                            "id": "exercisePlankHipDips",
+                            "name": "plankHipDips",
+                            "reps": 14,
+                            "time": -1,
+                            "completed": false
+                        }
+                    ]
+                },
+                {
+                    "id": "programArmsAndChestWeek5Day1",
+                    "difficulty": 1,
+                    "exercises": [
+                        {
+                            "id": "exerciseCobraPushUp",
+                            "name": "cobraPushUp",
+                            "reps": 14,
+                            "time": -1,
+                            "completed": false
+                        },
+                        {
+                            "id": "exerciseOneArmPushUpRightArm",
+                            "name": "oneArmPushUpRightArm",
+                            "reps": 6,
+                            "time": -1,
+                            "completed": false
+                        },
+                        {
+                            "id": "exerciseOneArmPushUpLeftArm",
+                            "name": "oneArmPushUpLeftArm",
+                            "reps": 6,
+                            "time": -1,
+                            "completed": false
+                        },
+                        {
+                            "id": "exerciseHandPlankReaches",
+                            "name": "handPlankReaches",
+                            "reps": 14,
+                            "time": -1,
+                            "completed": false
+                        },
+                        {
+                            "id": "exercisePlankRightSide",
+                            "name": "plankRightSide",
+                            "reps": -1,
+                            "time": 60,
+                            "completed": false
+                        },
+                        {
+                            "id": "exercisePlankLeftSide",
+                            "name": "plankLeftSide",
+                            "reps": -1,
+                            "time": 60,
+                            "completed": false
+                        },
+                        {
+                            "id": "exerciseBentOverRow",
+                            "name": "bentOverRow",
+                            "reps": 14,
+                            "time": -1,
+                            "completed": false
+                        },
+                        {
+                            "id": "exerciseLateralRaises",
+                            "name": "lateralRaises",
+                            "reps": 14,
+                            "time": -1,
+                            "completed": false
+                        }
+                    ]
+                },
+                {
+                    "id": "programArmsAndChestWeek5Day2",
+                    "difficulty": 1,
+                    "exercises": [
+                        {
+                            "id": "exerciseKneePushUps",
+                            "name": "kneePushUps",
+                            "reps": 14,
+                            "time": -1,
+                            "completed": false
+                        },
+                        {
+                            "id": "exerciseShouldPushUps",
+                            "name": "shouldPushUps",
+                            "reps": 14,
+                            "time": -1,
+                            "completed": false
+                        },
+                        {
+                            "id": "exerciseTricepExtension",
+                            "name": "tricepExtension",
+                            "reps": 14,
+                            "time": -1,
+                            "completed": false
+                        },
+                        {
+                            "id": "exerciseDumbellSwing",
+                            "name": "dumbellSwing",
+                            "reps": 14,
+                            "time": -1,
+                            "completed": false
+                        },
+                        {
+                            "id": "exerciseSquatAndCurl",
+                            "name": "squatAndCurl",
+                            "reps": 14,
+                            "time": -1,
+                            "completed": false
+                        },
+                        {
+                            "id": "exerciseTricepKickback",
+                            "name": "tricepKickback",
+                            "reps": 14,
+                            "time": -1,
+                            "completed": false
+                        }
+                    ]
+                },
+                {
+                    "id": "programArmsAndChestWeek5Day3",
+                    "difficulty": 1,
+                    "exercises": [
+                        {
+                            "id": "exerciseKneePushUps",
+                            "name": "kneePushUps",
+                            "reps": 14,
+                            "time": -1,
+                            "completed": false
+                        },
+                        {
+                            "id": "exerciseShouldPushUps",
+                            "name": "shouldPushUps",
+                            "reps": 14,
+                            "time": -1,
+                            "completed": false
+                        },
+                        {
+                            "id": "exerciseTricepExtension",
+                            "name": "tricepExtension",
+                            "reps": 14,
+                            "time": -1,
+                            "completed": false
+                        },
+                        {
+                            "id": "exerciseDumbellSwing",
+                            "name": "dumbellSwing",
+                            "reps": 14,
+                            "time": -1,
+                            "completed": false
+                        },
+                        {
+                            "id": "exerciseSquatAndCurl",
+                            "name": "squatAndCurl",
+                            "reps": 14,
+                            "time": -1,
+                            "completed": false
+                        },
+                        {
+                            "id": "exerciseTricepKickback",
+                            "name": "tricepKickback",
+                            "reps": 14,
+                            "time": -1,
+                            "completed": false
+                        }
+                    ]
+                },
+                {
+                    "id": "programArmsAndChestWeek5Day4",
+                    "difficulty": 1,
+                    "exercises": [
+                        {
+                            "id": "exerciseCobraPushUp",
+                            "name": "cobraPushUp",
+                            "reps": 16,
+                            "time": -1,
+                            "completed": false
+                        },
+                        {
+                            "id": "exerciseOneArmPushUpRightArm",
+                            "name": "oneArmPushUpRightArm",
+                            "reps": 8,
+                            "time": -1,
+                            "completed": false
+                        },
+                        {
+                            "id": "exerciseOneArmPushUpLeftArm",
+                            "name": "oneArmPushUpLeftArm",
+                            "reps": 8,
+                            "time": -1,
+                            "completed": false
+                        },
+                        {
+                            "id": "exerciseHandPlankReaches",
+                            "name": "handPlankReaches",
+                            "reps": 16,
+                            "time": -1,
+                            "completed": false
+                        },
+                        {
+                            "id": "exercisePlankRightSide",
+                            "name": "plankRightSide",
+                            "reps": -1,
+                            "time": 60,
+                            "completed": false
+                        },
+                        {
+                            "id": "exercisePlankLeftSide",
+                            "name": "plankLeftSide",
+                            "reps": -1,
+                            "time": 60,
+                            "completed": false
+                        },
+                        {
+                            "id": "exerciseBentOverRow",
+                            "name": "bentOverRow",
+                            "reps": 16,
+                            "time": -1,
+                            "completed": false
+                        },
+                        {
+                            "id": "exerciseLateralRaises",
+                            "name": "lateralRaises",
+                            "reps": 16,
+                            "time": -1,
+                            "completed": false
+                        }
+                    ]
+                },
+                {
+                    "id": "programArmsAndChestWeek5Day5",
+                    "difficulty": 1,
+                    "exercises": [
+                        {
+                            "id": "exerciseKneePushUps",
+                            "name": "kneePushUps",
+                            "reps": 16,
+                            "time": -1,
+                            "completed": false
+                        },
+                        {
+                            "id": "exerciseShouldPushUps",
+                            "name": "shouldPushUps",
+                            "reps": 16,
+                            "time": -1,
+                            "completed": false
+                        },
+                        {
+                            "id": "exerciseTricepExtension",
+                            "name": "tricepExtension",
+                            "reps": 16,
+                            "time": -1,
+                            "completed": false
+                        },
+                        {
+                            "id": "exerciseDumbellSwing",
+                            "name": "dumbellSwing",
+                            "reps": 16,
+                            "time": -1,
+                            "completed": false
+                        },
+                        {
+                            "id": "exerciseSquatAndCurl",
+                            "name": "squatAndCurl",
+                            "reps": 16,
+                            "time": -1,
+                            "completed": false
+                        },
+                        {
+                            "id": "exerciseTricepKickback",
+                            "name": "tricepKickback",
+                            "reps": 16,
+                            "time": -1,
+                            "completed": false
+                        }
+                    ]
+                },
+                {
+                    "id": "programArmsAndChestWeek5Day6",
+                    "difficulty": 1,
+                    "exercises": [
+                        {
+                            "id": "exerciseKneePushUps",
+                            "name": "kneePushUps",
+                            "reps": 16,
+                            "time": -1,
+                            "completed": false
+                        },
+                        {
+                            "id": "exerciseShouldPushUps",
+                            "name": "shouldPushUps",
+                            "reps": 16,
+                            "time": -1,
+                            "completed": false
+                        },
+                        {
+                            "id": "exerciseTricepExtension",
+                            "name": "tricepExtension",
+                            "reps": 16,
+                            "time": -1,
+                            "completed": false
+                        },
+                        {
+                            "id": "exerciseDumbellSwing",
+                            "name": "dumbellSwing",
+                            "reps": 16,
+                            "time": -1,
+                            "completed": false
+                        },
+                        {
+                            "id": "exerciseSquatAndCurl",
+                            "name": "squatAndCurl",
+                            "reps": 16,
+                            "time": -1,
+                            "completed": false
+                        },
+                        {
+                            "id": "exerciseTricepKickback",
+                            "name": "tricepKickback",
+                            "reps": 16,
+                            "time": -1,
+                            "completed": false
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "id": "programArmsAndChestWeek6",
+            "days": [
+                {
+                    "id": "programArmsAndChestWeek6Day0",
+                    "difficulty": 2,
+                    "exercises": [
+                        {
+                            "id": "exerciseCobraPushUp",
+                            "name": "cobraPushUp",
+                            "reps": 20,
+                            "time": -1,
+                            "completed": false
+                        },
+                        {
+                            "id": "exerciseOneArmPushUpRightArm",
+                            "name": "oneArmPushUpRightArm",
+                            "reps": 8,
+                            "time": -1,
+                            "completed": false
+                        },
+                        {
+                            "id": "exerciseOneArmPushUpLeftArm",
+                            "name": "oneArmPushUpLeftArm",
+                            "reps": 8,
+                            "time": -1,
+                            "completed": false
+                        },
+                        {
+                            "id": "exerciseHandPlankReaches",
+                            "name": "handPlankReaches",
+                            "reps": 20,
+                            "time": -1,
+                            "completed": false
+                        },
+                        {
+                            "id": "exercisePlankRightSide",
+                            "name": "plankRightSide",
+                            "reps": -1,
+                            "time": 120,
+                            "completed": false
+                        },
+                        {
+                            "id": "exercisePlankLeftSide",
+                            "name": "plankLeftSide",
+                            "reps": -1,
+                            "time": 120,
+                            "completed": false
+                        },
+                        {
+                            "id": "exerciseBentOverRow",
+                            "name": "bentOverRow",
+                            "reps": 20,
+                            "time": -1,
+                            "completed": false
+                        },
+                        {
+                            "id": "exerciseLateralRaises",
+                            "name": "lateralRaises",
+                            "reps": 20,
+                            "time": -1,
+                            "completed": false
+                        }
+                    ]
+                },
+                {
+                    "id": "programArmsAndChestWeek6Day1",
+                    "difficulty": 2,
+                    "exercises": [
+                        {
+                            "id": "exerciseKneePushUps",
+                            "name": "kneePushUps",
+                            "reps": 20,
+                            "time": -1,
+                            "completed": false
+                        },
+                        {
+                            "id": "exerciseShouldPushUps",
+                            "name": "shouldPushUps",
+                            "reps": 20,
+                            "time": -1,
+                            "completed": false
+                        },
+                        {
+                            "id": "exerciseTricepExtension",
+                            "name": "tricepExtension",
+                            "reps": 20,
+                            "time": -1,
+                            "completed": false
+                        },
+                        {
+                            "id": "exerciseDumbellSwing",
+                            "name": "dumbellSwing",
+                            "reps": 20,
+                            "time": -1,
+                            "completed": false
+                        },
+                        {
+                            "id": "exerciseSquatAndCurl",
+                            "name": "squatAndCurl",
+                            "reps": 20,
+                            "time": -1,
+                            "completed": false
+                        },
+                        {
+                            "id": "exerciseTricepKickback",
+                            "name": "tricepKickback",
+                            "reps": 20,
+                            "time": -1,
+                            "completed": false
+                        },
+                        {
+                            "id": "exercisePlankHipDips",
+                            "name": "plankHipDips",
+                            "reps": 20,
+                            "time": -1,
+                            "completed": false
+                        }
+                    ]
+                },
+                {
+                    "id": "programArmsAndChestWeek6Day2",
+                    "difficulty": 2,
+                    "exercises": [
+                        {
+                            "id": "exerciseKneePushUps",
+                            "name": "kneePushUps",
+                            "reps": 20,
+                            "time": -1,
+                            "completed": false
+                        },
+                        {
+                            "id": "exerciseShouldPushUps",
+                            "name": "shouldPushUps",
+                            "reps": 20,
+                            "time": -1,
+                            "completed": false
+                        },
+                        {
+                            "id": "exerciseTricepExtension",
+                            "name": "tricepExtension",
+                            "reps": 20,
+                            "time": -1,
+                            "completed": false
+                        },
+                        {
+                            "id": "exerciseDumbellSwing",
+                            "name": "dumbellSwing",
+                            "reps": 20,
+                            "time": -1,
+                            "completed": false
+                        },
+                        {
+                            "id": "exerciseSquatAndCurl",
+                            "name": "squatAndCurl",
+                            "reps": 20,
+                            "time": -1,
+                            "completed": false
+                        },
+                        {
+                            "id": "exerciseTricepKickback",
+                            "name": "tricepKickback",
+                            "reps": 20,
+                            "time": -1,
+                            "completed": false
+                        },
+                        {
+                            "id": "exercisePlankHipDips",
+                            "name": "plankHipDips",
+                            "reps": 20,
+                            "time": -1,
+                            "completed": false
+                        }
+                    ]
+                },
+                {
+                    "id": "programArmsAndChestWeek6Day3",
+                    "difficulty": 2,
+                    "exercises": [
+                        {
+                            "id": "exerciseCobraPushUp",
+                            "name": "cobraPushUp",
+                            "reps": 20,
+                            "time": -1,
+                            "completed": false
+                        },
+                        {
+                            "id": "exerciseOneArmPushUpRightArm",
+                            "name": "oneArmPushUpRightArm",
+                            "reps": 8,
+                            "time": -1,
+                            "completed": false
+                        },
+                        {
+                            "id": "exerciseOneArmPushUpLeftArm",
+                            "name": "oneArmPushUpLeftArm",
+                            "reps": 8,
+                            "time": -1,
+                            "completed": false
+                        },
+                        {
+                            "id": "exerciseHandPlankReaches",
+                            "name": "handPlankReaches",
+                            "reps": 20,
+                            "time": -1,
+                            "completed": false
+                        },
+                        {
+                            "id": "exercisePlankRightSide",
+                            "name": "plankRightSide",
+                            "reps": -1,
+                            "time": 120,
+                            "completed": false
+                        },
+                        {
+                            "id": "exercisePlankLeftSide",
+                            "name": "plankLeftSide",
+                            "reps": -1,
+                            "time": 120,
+                            "completed": false
+                        },
+                        {
+                            "id": "exerciseBentOverRow",
+                            "name": "bentOverRow",
+                            "reps": 20,
+                            "time": -1,
+                            "completed": false
+                        },
+                        {
+                            "id": "exerciseLateralRaises",
+                            "name": "lateralRaises",
+                            "reps": 20,
+                            "time": -1,
+                            "completed": false
+                        }
+                    ]
+                },
+                {
+                    "id": "programArmsAndChestWeek6Day4",
+                    "difficulty": 2,
+                    "exercises": [
+                        {
+                            "id": "exerciseKneePushUps",
+                            "name": "kneePushUps",
+                            "reps": 20,
+                            "time": -1,
+                            "completed": false
+                        },
+                        {
+                            "id": "exerciseShouldPushUps",
+                            "name": "shouldPushUps",
+                            "reps": 20,
+                            "time": -1,
+                            "completed": false
+                        },
+                        {
+                            "id": "exerciseTricepExtension",
+                            "name": "tricepExtension",
+                            "reps": 20,
+                            "time": -1,
+                            "completed": false
+                        },
+                        {
+                            "id": "exerciseDumbellSwing",
+                            "name": "dumbellSwing",
+                            "reps": 20,
+                            "time": -1,
+                            "completed": false
+                        },
+                        {
+                            "id": "exerciseSquatAndCurl",
+                            "name": "squatAndCurl",
+                            "reps": 20,
+                            "time": -1,
+                            "completed": false
+                        },
+                        {
+                            "id": "exerciseTricepKickback",
+                            "name": "tricepKickback",
+                            "reps": 20,
+                            "time": -1,
+                            "completed": false
+                        },
+                        {
+                            "id": "exercisePlankHipDips",
+                            "name": "plankHipDips",
+                            "reps": 20,
+                            "time": -1,
+                            "completed": false
+                        }
+                    ]
+                },
+                {
+                    "id": "programArmsAndChestWeek6Day5",
+                    "difficulty": 2,
+                    "exercises": [
+                        {
+                            "id": "exerciseKneePushUps",
+                            "name": "kneePushUps",
+                            "reps": 20,
+                            "time": -1,
+                            "completed": false
+                        },
+                        {
+                            "id": "exerciseShouldPushUps",
+                            "name": "shouldPushUps",
+                            "reps": 20,
+                            "time": -1,
+                            "completed": false
+                        },
+                        {
+                            "id": "exerciseTricepExtension",
+                            "name": "tricepExtension",
+                            "reps": 20,
+                            "time": -1,
+                            "completed": false
+                        },
+                        {
+                            "id": "exerciseDumbellSwing",
+                            "name": "dumbellSwing",
+                            "reps": 20,
+                            "time": -1,
+                            "completed": false
+                        },
+                        {
+                            "id": "exerciseSquatAndCurl",
+                            "name": "squatAndCurl",
+                            "reps": 20,
+                            "time": -1,
+                            "completed": false
+                        },
+                        {
+                            "id": "exerciseTricepKickback",
+                            "name": "tricepKickback",
+                            "reps": 20,
+                            "time": -1,
+                            "completed": false
+                        },
+                        {
+                            "id": "exercisePlankHipDips",
+                            "name": "plankHipDips",
+                            "reps": 20,
+                            "time": -1,
+                            "completed": false
+                        }
+                    ]
+                },
+                {
+                    "id": "programArmsAndChestWeek6Day6",
+                    "difficulty": 2,
+                    "exercises": [
+                        {
+                            "id": "exerciseCobraPushUp",
+                            "name": "cobraPushUp",
+                            "reps": 20,
+                            "time": -1,
+                            "completed": false
+                        },
+                        {
+                            "id": "exerciseOneArmPushUpRightArm",
+                            "name": "oneArmPushUpRightArm",
+                            "reps": 8,
+                            "time": -1,
+                            "completed": false
+                        },
+                        {
+                            "id": "exerciseOneArmPushUpLeftArm",
+                            "name": "oneArmPushUpLeftArm",
+                            "reps": 8,
+                            "time": -1,
+                            "completed": false
+                        },
+                        {
+                            "id": "exerciseHandPlankReaches",
+                            "name": "handPlankReaches",
+                            "reps": 20,
+                            "time": -1,
+                            "completed": false
+                        },
+                        {
+                            "id": "exercisePlankRightSide",
+                            "name": "plankRightSide",
+                            "reps": -1,
+                            "time": 120,
+                            "completed": false
+                        },
+                        {
+                            "id": "exercisePlankLeftSide",
+                            "name": "plankLeftSide",
+                            "reps": -1,
+                            "time": 120,
+                            "completed": false
+                        },
+                        {
+                            "id": "exerciseBentOverRow",
+                            "name": "bentOverRow",
+                            "reps": 20,
+                            "time": -1,
+                            "completed": false
+                        },
+                        {
+                            "id": "exerciseLateralRaises",
+                            "name": "lateralRaises",
+                            "reps": 20,
+                            "time": -1,
+                            "completed": false
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "id": "programArmsAndChestWeek7",
+            "days": [
+                {
+                    "id": "programArmsAndChestWeek7Day0",
+                    "difficulty": 2,
+                    "exercises": [
+                        {
+                            "id": "exerciseKneePushUps",
+                            "name": "kneePushUps",
+                            "reps": 28,
+                            "time": -1,
+                            "completed": false
+                        },
+                        {
+                            "id": "exerciseShouldPushUps",
+                            "name": "shouldPushUps",
+                            "reps": 28,
+                            "time": -1,
+                            "completed": false
+                        },
+                        {
+                            "id": "exerciseTricepExtension",
+                            "name": "tricepExtension",
+                            "reps": 28,
+                            "time": -1,
+                            "completed": false
+                        },
+                        {
+                            "id": "exerciseDumbellSwing",
+                            "name": "dumbellSwing",
+                            "reps": 28,
+                            "time": -1,
+                            "completed": false
+                        }
+                    ]
+                },
+                {
+                    "id": "programArmsAndChestWeek7Day1",
+                    "difficulty": 2,
+                    "exercises": [
+                        {
+                            "id": "exerciseKneePushUps",
+                            "name": "kneePushUps",
+                            "reps": 28,
+                            "time": -1,
+                            "completed": false
+                        },
+                        {
+                            "id": "exerciseShouldPushUps",
+                            "name": "shouldPushUps",
+                            "reps": 28,
+                            "time": -1,
+                            "completed": false
+                        },
+                        {
+                            "id": "exerciseTricepExtension",
+                            "name": "tricepExtension",
+                            "reps": 28,
+                            "time": -1,
+                            "completed": false
+                        },
+                        {
+                            "id": "exerciseDumbellSwing",
+                            "name": "dumbellSwing",
+                            "reps": 28,
+                            "time": -1,
+                            "completed": false
+                        }
+                    ]
+                },
+                {
+                    "id": "programArmsAndChestWeek7Day2",
+                    "difficulty": 2,
+                    "exercises": [
+                        {
+                            "id": "exerciseCobraPushUp",
+                            "name": "cobraPushUp",
+                            "reps": 20,
+                            "time": -1,
+                            "completed": false
+                        },
+                        {
+                            "id": "exerciseOneArmPushUpRightArm",
+                            "name": "oneArmPushUpRightArm",
+                            "reps": 8,
+                            "time": -1,
+                            "completed": false
+                        },
+                        {
+                            "id": "exerciseOneArmPushUpLeftArm",
+                            "name": "oneArmPushUpLeftArm",
+                            "reps": 8,
+                            "time": -1,
+                            "completed": false
+                        },
+                        {
+                            "id": "exerciseHandPlankReaches",
+                            "name": "handPlankReaches",
+                            "reps": 20,
+                            "time": -1,
+                            "completed": false
+                        },
+                        {
+                            "id": "exercisePlankRightSide",
+                            "name": "plankRightSide",
+                            "reps": -1,
+                            "time": 120,
+                            "completed": false
+                        },
+                        {
+                            "id": "exercisePlankLeftSide",
+                            "name": "plankLeftSide",
+                            "reps": -1,
+                            "time": 120,
+                            "completed": false
+                        },
+                        {
+                            "id": "exerciseBentOverRow",
+                            "name": "bentOverRow",
+                            "reps": 20,
+                            "time": -1,
+                            "completed": false
+                        },
+                        {
+                            "id": "exerciseLateralRaises",
+                            "name": "lateralRaises",
+                            "reps": 20,
+                            "time": -1,
+                            "completed": false
+                        }
+                    ]
+                },
+                {
+                    "id": "programArmsAndChestWeek7Day3",
+                    "difficulty": 2,
+                    "exercises": [
+                        {
+                            "id": "exerciseKneePushUps",
+                            "name": "kneePushUps",
+                            "reps": 28,
+                            "time": -1,
+                            "completed": false
+                        },
+                        {
+                            "id": "exerciseShouldPushUps",
+                            "name": "shouldPushUps",
+                            "reps": 28,
+                            "time": -1,
+                            "completed": false
+                        },
+                        {
+                            "id": "exerciseTricepExtension",
+                            "name": "tricepExtension",
+                            "reps": 28,
+                            "time": -1,
+                            "completed": false
+                        },
+                        {
+                            "id": "exerciseDumbellSwing",
+                            "name": "dumbellSwing",
+                            "reps": 28,
+                            "time": -1,
+                            "completed": false
+                        },
+                        {
+                            "id": "exerciseSquatAndCurl",
+                            "name": "squatAndCurl",
+                            "reps": 28,
+                            "time": -1,
+                            "completed": false
+                        }
+                    ]
+                },
+                {
+                    "id": "programArmsAndChestWeek7Day4",
+                    "difficulty": 2,
+                    "exercises": [
+                        {
+                            "id": "exerciseKneePushUps",
+                            "name": "kneePushUps",
+                            "reps": 28,
+                            "time": -1,
+                            "completed": false
+                        },
+                        {
+                            "id": "exerciseShouldPushUps",
+                            "name": "shouldPushUps",
+                            "reps": 28,
+                            "time": -1,
+                            "completed": false
+                        },
+                        {
+                            "id": "exerciseTricepExtension",
+                            "name": "tricepExtension",
+                            "reps": 28,
+                            "time": -1,
+                            "completed": false
+                        },
+                        {
+                            "id": "exerciseDumbellSwing",
+                            "name": "dumbellSwing",
+                            "reps": 28,
+                            "time": -1,
+                            "completed": false
+                        },
+                        {
+                            "id": "exerciseSquatAndCurl",
+                            "name": "squatAndCurl",
+                            "reps": 28,
+                            "time": -1,
+                            "completed": false
+                        }
+                    ]
+                },
+                {
+                    "id": "programArmsAndChestWeek7Day5",
+                    "difficulty": 2,
+                    "exercises": [
+                        {
+                            "id": "exerciseCobraPushUp",
+                            "name": "cobraPushUp",
+                            "reps": 28,
+                            "time": -1,
+                            "completed": false
+                        },
+                        {
+                            "id": "exerciseOneArmPushUpRightArm",
+                            "name": "oneArmPushUpRightArm",
+                            "reps": 12,
+                            "time": -1,
+                            "completed": false
+                        },
+                        {
+                            "id": "exerciseOneArmPushUpLeftArm",
+                            "name": "oneArmPushUpLeftArm",
+                            "reps": 12,
+                            "time": -1,
+                            "completed": false
+                        },
+                        {
+                            "id": "exerciseHandPlankReaches",
+                            "name": "handPlankReaches",
+                            "reps": 28,
+                            "time": -1,
+                            "completed": false
+                        },
+                        {
+                            "id": "exercisePlankRightSide",
+                            "name": "plankRightSide",
+                            "reps": -1,
+                            "time": 120,
+                            "completed": false
+                        },
+                        {
+                            "id": "exercisePlankLeftSide",
+                            "name": "plankLeftSide",
+                            "reps": -1,
+                            "time": 120,
+                            "completed": false
+                        },
+                        {
+                            "id": "exerciseBentOverRow",
+                            "name": "bentOverRow",
+                            "reps": 28,
+                            "time": -1,
+                            "completed": false
+                        },
+                        {
+                            "id": "exerciseLateralRaises",
+                            "name": "lateralRaises",
+                            "reps": 28,
+                            "time": -1,
+                            "completed": false
+                        }
+                    ]
+                },
+                {
+                    "id": "programArmsAndChestWeek7Day6",
+                    "difficulty": 2,
+                    "exercises": [
+                        {
+                            "id": "exerciseKneePushUps",
+                            "name": "kneePushUps",
+                            "reps": 28,
+                            "time": -1,
+                            "completed": false
+                        },
+                        {
+                            "id": "exerciseShouldPushUps",
+                            "name": "shouldPushUps",
+                            "reps": 28,
+                            "time": -1,
+                            "completed": false
+                        },
+                        {
+                            "id": "exerciseTricepExtension",
+                            "name": "tricepExtension",
+                            "reps": 28,
+                            "time": -1,
+                            "completed": false
+                        },
+                        {
+                            "id": "exerciseDumbellSwing",
+                            "name": "dumbellSwing",
+                            "reps": 28,
+                            "time": -1,
+                            "completed": false
+                        },
+                        {
+                            "id": "exerciseSquatAndCurl",
+                            "name": "squatAndCurl",
+                            "reps": 28,
+                            "time": -1,
+                            "completed": false
+                        },
+                        {
+                            "id": "exercisePlankHipDips",
+                            "name": "plankHipDips",
+                            "reps": 28,
+                            "time": -1,
+                            "completed": false
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "id": "programArmsAndChestWeek8",
+            "days": [
+                {
+                    "id": "programArmsAndChestWeek8Day0",
+                    "difficulty": 2,
+                    "exercises": [
+                        {
+                            "id": "exerciseKneePushUps",
+                            "name": "kneePushUps",
+                            "reps": 28,
+                            "time": -1,
+                            "completed": false
+                        },
+                        {
+                            "id": "exerciseShouldPushUps",
+                            "name": "shouldPushUps",
+                            "reps": 28,
+                            "time": -1,
+                            "completed": false
+                        },
+                        {
+                            "id": "exerciseTricepExtension",
+                            "name": "tricepExtension",
+                            "reps": 28,
+                            "time": -1,
+                            "completed": false
+                        },
+                        {
+                            "id": "exerciseDumbellSwing",
+                            "name": "dumbellSwing",
+                            "reps": 28,
+                            "time": -1,
+                            "completed": false
+                        },
+                        {
+                            "id": "exerciseSquatAndCurl",
+                            "name": "squatAndCurl",
+                            "reps": 28,
+                            "time": -1,
+                            "completed": false
+                        },
+                        {
+                            "id": "exercisePlankHipDips",
+                            "name": "plankHipDips",
+                            "reps": 28,
+                            "time": -1,
+                            "completed": false
+                        }
+                    ]
+                },
+                {
+                    "id": "programArmsAndChestWeek8Day1",
+                    "difficulty": 2,
+                    "exercises": [
+                        {
+                            "id": "exerciseCobraPushUp",
+                            "name": "cobraPushUp",
+                            "reps": 28,
+                            "time": -1,
+                            "completed": false
+                        },
+                        {
+                            "id": "exerciseOneArmPushUpRightArm",
+                            "name": "oneArmPushUpRightArm",
+                            "reps": 12,
+                            "time": -1,
+                            "completed": false
+                        },
+                        {
+                            "id": "exerciseOneArmPushUpLeftArm",
+                            "name": "oneArmPushUpLeftArm",
+                            "reps": 12,
+                            "time": -1,
+                            "completed": false
+                        },
+                        {
+                            "id": "exerciseHandPlankReaches",
+                            "name": "handPlankReaches",
+                            "reps": 28,
+                            "time": -1,
+                            "completed": false
+                        },
+                        {
+                            "id": "exercisePlankRightSide",
+                            "name": "plankRightSide",
+                            "reps": -1,
+                            "time": 120,
+                            "completed": false
+                        },
+                        {
+                            "id": "exercisePlankLeftSide",
+                            "name": "plankLeftSide",
+                            "reps": -1,
+                            "time": 120,
+                            "completed": false
+                        },
+                        {
+                            "id": "exerciseBentOverRow",
+                            "name": "bentOverRow",
+                            "reps": 28,
+                            "time": -1,
+                            "completed": false
+                        },
+                        {
+                            "id": "exerciseLateralRaises",
+                            "name": "lateralRaises",
+                            "reps": 28,
+                            "time": -1,
+                            "completed": false
+                        }
+                    ]
+                },
+                {
+                    "id": "programArmsAndChestWeek8Day2",
+                    "difficulty": 2,
+                    "exercises": [
+                        {
+                            "id": "exerciseKneePushUps",
+                            "name": "kneePushUps",
+                            "reps": 28,
+                            "time": -1,
+                            "completed": false
+                        },
+                        {
+                            "id": "exerciseShouldPushUps",
+                            "name": "shouldPushUps",
+                            "reps": 28,
+                            "time": -1,
+                            "completed": false
+                        },
+                        {
+                            "id": "exerciseTricepExtension",
+                            "name": "tricepExtension",
+                            "reps": 28,
+                            "time": -1,
+                            "completed": false
+                        },
+                        {
+                            "id": "exerciseDumbellSwing",
+                            "name": "dumbellSwing",
+                            "reps": 28,
+                            "time": -1,
+                            "completed": false
+                        },
+                        {
+                            "id": "exerciseSquatAndCurl",
+                            "name": "squatAndCurl",
+                            "reps": 28,
+                            "time": -1,
+                            "completed": false
+                        },
+                        {
+                            "id": "exerciseTricepKickback",
+                            "name": "tricepKickback",
+                            "reps": 28,
+                            "time": -1,
+                            "completed": false
+                        }
+                    ]
+                },
+                {
+                    "id": "programArmsAndChestWeek8Day3",
+                    "difficulty": 2,
+                    "exercises": [
+                        {
+                            "id": "exerciseKneePushUps",
+                            "name": "kneePushUps",
+                            "reps": 28,
+                            "time": -1,
+                            "completed": false
+                        },
+                        {
+                            "id": "exerciseShouldPushUps",
+                            "name": "shouldPushUps",
+                            "reps": 28,
+                            "time": -1,
+                            "completed": false
+                        },
+                        {
+                            "id": "exerciseTricepExtension",
+                            "name": "tricepExtension",
+                            "reps": 28,
+                            "time": -1,
+                            "completed": false
+                        },
+                        {
+                            "id": "exerciseDumbellSwing",
+                            "name": "dumbellSwing",
+                            "reps": 28,
+                            "time": -1,
+                            "completed": false
+                        },
+                        {
+                            "id": "exerciseSquatAndCurl",
+                            "name": "squatAndCurl",
+                            "reps": 28,
+                            "time": -1,
+                            "completed": false
+                        },
+                        {
+                            "id": "exerciseTricepKickback",
+                            "name": "tricepKickback",
+                            "reps": 28,
+                            "time": -1,
+                            "completed": false
+                        }
+                    ]
+                },
+                {
+                    "id": "programArmsAndChestWeek8Day4",
+                    "difficulty": 2,
+                    "exercises": [
+                        {
+                            "id": "exerciseCobraPushUp",
+                            "name": "cobraPushUp",
+                            "reps": 32,
+                            "time": -1,
+                            "completed": false
+                        },
+                        {
+                            "id": "exerciseOneArmPushUpRightArm",
+                            "name": "oneArmPushUpRightArm",
+                            "reps": 16,
+                            "time": -1,
+                            "completed": false
+                        },
+                        {
+                            "id": "exerciseOneArmPushUpLeftArm",
+                            "name": "oneArmPushUpLeftArm",
+                            "reps": 16,
+                            "time": -1,
+                            "completed": false
+                        },
+                        {
+                            "id": "exerciseHandPlankReaches",
+                            "name": "handPlankReaches",
+                            "reps": 32,
+                            "time": -1,
+                            "completed": false
+                        },
+                        {
+                            "id": "exercisePlankRightSide",
+                            "name": "plankRightSide",
+                            "reps": -1,
+                            "time": 120,
+                            "completed": false
+                        },
+                        {
+                            "id": "exercisePlankLeftSide",
+                            "name": "plankLeftSide",
+                            "reps": -1,
+                            "time": 120,
+                            "completed": false
+                        },
+                        {
+                            "id": "exerciseBentOverRow",
+                            "name": "bentOverRow",
+                            "reps": 32,
+                            "time": -1,
+                            "completed": false
+                        },
+                        {
+                            "id": "exerciseLateralRaises",
+                            "name": "lateralRaises",
+                            "reps": 32,
+                            "time": -1,
+                            "completed": false
+                        }
+                    ]
+                },
+                {
+                    "id": "programArmsAndChestWeek8Day5",
+                    "difficulty": 2,
+                    "exercises": [
+                        {
+                            "id": "exerciseKneePushUps",
+                            "name": "kneePushUps",
+                            "reps": 32,
+                            "time": -1,
+                            "completed": false
+                        },
+                        {
+                            "id": "exerciseShouldPushUps",
+                            "name": "shouldPushUps",
+                            "reps": 32,
+                            "time": -1,
+                            "completed": false
+                        },
+                        {
+                            "id": "exerciseTricepExtension",
+                            "name": "tricepExtension",
+                            "reps": 32,
+                            "time": -1,
+                            "completed": false
+                        },
+                        {
+                            "id": "exerciseDumbellSwing",
+                            "name": "dumbellSwing",
+                            "reps": 32,
+                            "time": -1,
+                            "completed": false
+                        },
+                        {
+                            "id": "exerciseSquatAndCurl",
+                            "name": "squatAndCurl",
+                            "reps": 32,
+                            "time": -1,
+                            "completed": false
+                        },
+                        {
+                            "id": "exerciseTricepKickback",
+                            "name": "tricepKickback",
+                            "reps": 32,
+                            "time": -1,
+                            "completed": false
+                        }
+                    ]
+                },
+                {
+                    "id": "programArmsAndChestWeek8Day6",
+                    "difficulty": 2,
+                    "exercises": [
+                        {
+                            "id": "exerciseKneePushUps",
+                            "name": "kneePushUps",
+                            "reps": 32,
+                            "time": -1,
+                            "completed": false
+                        },
+                        {
+                            "id": "exerciseShouldPushUps",
+                            "name": "shouldPushUps",
+                            "reps": 32,
+                            "time": -1,
+                            "completed": false
+                        },
+                        {
+                            "id": "exerciseTricepExtension",
+                            "name": "tricepExtension",
+                            "reps": 32,
+                            "time": -1,
+                            "completed": false
+                        },
+                        {
+                            "id": "exerciseDumbellSwing",
+                            "name": "dumbellSwing",
+                            "reps": 32,
+                            "time": -1,
+                            "completed": false
+                        },
+                        {
+                            "id": "exerciseSquatAndCurl",
+                            "name": "squatAndCurl",
+                            "reps": 32,
+                            "time": -1,
+                            "completed": false
+                        },
+                        {
+                            "id": "exerciseTricepKickback",
+                            "name": "tricepKickback",
+                            "reps": 32,
+                            "time": -1,
+                            "completed": false
+                        }
+                    ]
+                }
+            ]
+        }
+    ]
+}

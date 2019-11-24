@@ -1,0 +1,2214 @@
+{
+    "id": "programGeneral",
+    "type": "general",
+    "weeks": [
+        {
+            "id": "programGeneralWeek0",
+            "days": [
+                {
+                    "id": "programGeneralWeek0Day0",
+                    "difficulty": 0,
+                    "exercises": [
+                        {
+                            "id": "exercisePushUp",
+                            "name": "pushUp",
+                            "reps": 5,
+                            "time": -1,
+                            "completed": false
+                        },
+                        {
+                            "id": "exerciseTricepDip",
+                            "name": "tricepDip",
+                            "reps": 5,
+                            "time": -1,
+                            "completed": false
+                        },
+                        {
+                            "id": "exerciseWallSit",
+                            "name": "wallSit",
+                            "reps": -1,
+                            "time": 45,
+                            "completed": false
+                        },
+                        {
+                            "id": "exerciseJumpingJacks",
+                            "name": "jumpingJacks",
+                            "reps": 5,
+                            "time": -1,
+                            "completed": false
+                        },
+                        {
+                            "id": "exerciseBurpees",
+                            "name": "burpees",
+                            "reps": 5,
+                            "time": -1,
+                            "completed": false
+                        }
+                    ]
+                },
+                {
+                    "id": "programGeneralWeek0Day1",
+                    "difficulty": 0,
+                    "exercises": [
+                        {
+                            "id": "exercisePushUp",
+                            "name": "pushUp",
+                            "reps": 7,
+                            "time": -1,
+                            "completed": false
+                        },
+                        {
+                            "id": "exerciseTricepDip",
+                            "name": "tricepDip",
+                            "reps": 7,
+                            "time": -1,
+                            "completed": false
+                        },
+                        {
+                            "id": "exerciseJumpingJacks",
+                            "name": "jumpingJacks",
+                            "reps": 10,
+                            "time": -1,
+                            "completed": false
+                        }
+                    ]
+                },
+                {
+                    "id": "programGeneralWeek0Day2",
+                    "difficulty": 0,
+                    "exercises": [
+                        {
+                            "id": "exercisePushUp",
+                            "name": "pushUp",
+                            "reps": 5,
+                            "time": -1,
+                            "completed": false
+                        },
+                        {
+                            "id": "exerciseTricepDip",
+                            "name": "tricepDip",
+                            "reps": 5,
+                            "time": -1,
+                            "completed": false
+                        },
+                        {
+                            "id": "exerciseWallSit",
+                            "name": "wallSit",
+                            "reps": -1,
+                            "time": 45,
+                            "completed": false
+                        },
+                        {
+                            "id": "exerciseJumpingJacks",
+                            "name": "jumpingJacks",
+                            "reps": 5,
+                            "time": -1,
+                            "completed": false
+                        },
+                        {
+                            "id": "exerciseBurpees",
+                            "name": "burpees",
+                            "reps": 5,
+                            "time": -1,
+                            "completed": false
+                        }
+                    ]
+                },
+                {
+                    "id": "programGeneralWeek0Day3",
+                    "difficulty": 0,
+                    "exercises": [
+                        {
+                            "id": "exercisePushUp",
+                            "name": "pushUp",
+                            "reps": 7,
+                            "time": -1,
+                            "completed": false
+                        },
+                        {
+                            "id": "exerciseTricepDip",
+                            "name": "tricepDip",
+                            "reps": 7,
+                            "time": -1,
+                            "completed": false
+                        },
+                        {
+                            "id": "exerciseJumpingJacks",
+                            "name": "jumpingJacks",
+                            "reps": 10,
+                            "time": -1,
+                            "completed": false
+                        }
+                    ]
+                },
+                {
+                    "id": "programGeneralWeek0Day4",
+                    "difficulty": 0,
+                    "exercises": [
+                        {
+                            "id": "exercisePushUp",
+                            "name": "pushUp",
+                            "reps": 5,
+                            "time": -1,
+                            "completed": false
+                        },
+                        {
+                            "id": "exerciseTricepDip",
+                            "name": "tricepDip",
+                            "reps": 5,
+                            "time": -1,
+                            "completed": false
+                        },
+                        {
+                            "id": "exerciseWallSit",
+                            "name": "wallSit",
+                            "reps": -1,
+                            "time": 45,
+                            "completed": false
+                        },
+                        {
+                            "id": "exerciseJumpingJacks",
+                            "name": "jumpingJacks",
+                            "reps": 5,
+                            "time": -1,
+                            "completed": false
+                        },
+                        {
+                            "id": "exerciseBurpees",
+                            "name": "burpees",
+                            "reps": 5,
+                            "time": -1,
+                            "completed": false
+                        }
+                    ]
+                },
+                {
+                    "id": "programGeneralWeek0Day5",
+                    "difficulty": 0,
+                    "exercises": [
+                        {
+                            "id": "exercisePushUp",
+                            "name": "pushUp",
+                            "reps": 7,
+                            "time": -1,
+                            "completed": false
+                        },
+                        {
+                            "id": "exerciseTricepDip",
+                            "name": "tricepDip",
+                            "reps": 7,
+                            "time": -1,
+                            "completed": false
+                        },
+                        {
+                            "id": "exerciseJumpingJacks",
+                            "name": "jumpingJacks",
+                            "reps": 10,
+                            "time": -1,
+                            "completed": false
+                        }
+                    ]
+                },
+                {
+                    "id": "programGeneralWeek0Day6",
+                    "difficulty": 0,
+                    "exercises": [
+                        {
+                            "id": "exercisePushUp",
+                            "name": "pushUp",
+                            "reps": 5,
+                            "time": -1,
+                            "completed": false
+                        },
+                        {
+                            "id": "exerciseTricepDip",
+                            "name": "tricepDip",
+                            "reps": 5,
+                            "time": -1,
+                            "completed": false
+                        },
+                        {
+                            "id": "exerciseWallSit",
+                            "name": "wallSit",
+                            "reps": -1,
+                            "time": 45,
+                            "completed": false
+                        },
+                        {
+                            "id": "exerciseJumpingJacks",
+                            "name": "jumpingJacks",
+                            "reps": 5,
+                            "time": -1,
+                            "completed": false
+                        },
+                        {
+                            "id": "exerciseBurpees",
+                            "name": "burpees",
+                            "reps": 5,
+                            "time": -1,
+                            "completed": false
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "id": "programGeneralWeek1",
+            "days": [
+                {
+                    "id": "programGeneralWeek1Day0",
+                    "difficulty": 0,
+                    "exercises": [
+                        {
+                            "id": "exercisePushUp",
+                            "name": "pushUp",
+                            "reps": 7,
+                            "time": -1,
+                            "completed": false
+                        },
+                        {
+                            "id": "exerciseTricepDip",
+                            "name": "tricepDip",
+                            "reps": 7,
+                            "time": -1,
+                            "completed": false
+                        },
+                        {
+                            "id": "exerciseJumpingJacks",
+                            "name": "jumpingJacks",
+                            "reps": 10,
+                            "time": -1,
+                            "completed": false
+                        }
+                    ]
+                },
+                {
+                    "id": "programGeneralWeek1Day1",
+                    "difficulty": 0,
+                    "exercises": [
+                        {
+                            "id": "exercisePushUp",
+                            "name": "pushUp",
+                            "reps": 7,
+                            "time": -1,
+                            "completed": false
+                        },
+                        {
+                            "id": "exerciseTricepDip",
+                            "name": "tricepDip",
+                            "reps": 7,
+                            "time": -1,
+                            "completed": false
+                        },
+                        {
+                            "id": "exerciseWallSit",
+                            "name": "wallSit",
+                            "reps": -1,
+                            "time": 45,
+                            "completed": false
+                        },
+                        {
+                            "id": "exerciseJumpingJacks",
+                            "name": "jumpingJacks",
+                            "reps": 5,
+                            "time": -1,
+                            "completed": false
+                        },
+                        {
+                            "id": "exerciseBurpees",
+                            "name": "burpees",
+                            "reps": 5,
+                            "time": -1,
+                            "completed": false
+                        }
+                    ]
+                },
+                {
+                    "id": "programGeneralWeek1Day2",
+                    "difficulty": 0,
+                    "exercises": [
+                        {
+                            "id": "exercisePushUp",
+                            "name": "pushUp",
+                            "reps": 7,
+                            "time": -1,
+                            "completed": false
+                        },
+                        {
+                            "id": "exerciseTricepDip",
+                            "name": "tricepDip",
+                            "reps": 7,
+                            "time": -1,
+                            "completed": false
+                        },
+                        {
+                            "id": "exerciseJumpingJacks",
+                            "name": "jumpingJacks",
+                            "reps": 10,
+                            "time": -1,
+                            "completed": false
+                        }
+                    ]
+                },
+                {
+                    "id": "programGeneralWeek1Day3",
+                    "difficulty": 0,
+                    "exercises": [
+                        {
+                            "id": "exercisePushUp",
+                            "name": "pushUp",
+                            "reps": 7,
+                            "time": -1,
+                            "completed": false
+                        },
+                        {
+                            "id": "exerciseTricepDip",
+                            "name": "tricepDip",
+                            "reps": 7,
+                            "time": -1,
+                            "completed": false
+                        },
+                        {
+                            "id": "exerciseWallSit",
+                            "name": "wallSit",
+                            "reps": -1,
+                            "time": 45,
+                            "completed": false
+                        },
+                        {
+                            "id": "exerciseJumpingJacks",
+                            "name": "jumpingJacks",
+                            "reps": 5,
+                            "time": -1,
+                            "completed": false
+                        },
+                        {
+                            "id": "exerciseBurpees",
+                            "name": "burpees",
+                            "reps": 5,
+                            "time": -1,
+                            "completed": false
+                        }
+                    ]
+                },
+                {
+                    "id": "programGeneralWeek1Day4",
+                    "difficulty": 0,
+                    "exercises": [
+                        {
+                            "id": "exercisePushUp",
+                            "name": "pushUp",
+                            "reps": 7,
+                            "time": -1,
+                            "completed": false
+                        },
+                        {
+                            "id": "exerciseTricepDip",
+                            "name": "tricepDip",
+                            "reps": 7,
+                            "time": -1,
+                            "completed": false
+                        },
+                        {
+                            "id": "exerciseJumpingJacks",
+                            "name": "jumpingJacks",
+                            "reps": 10,
+                            "time": -1,
+                            "completed": false
+                        }
+                    ]
+                },
+                {
+                    "id": "programGeneralWeek1Day5",
+                    "difficulty": 0,
+                    "exercises": [
+                        {
+                            "id": "exercisePushUp",
+                            "name": "pushUp",
+                            "reps": 7,
+                            "time": -1,
+                            "completed": false
+                        },
+                        {
+                            "id": "exerciseTricepDip",
+                            "name": "tricepDip",
+                            "reps": 7,
+                            "time": -1,
+                            "completed": false
+                        },
+                        {
+                            "id": "exerciseWallSit",
+                            "name": "wallSit",
+                            "reps": -1,
+                            "time": 45,
+                            "completed": false
+                        },
+                        {
+                            "id": "exerciseJumpingJacks",
+                            "name": "jumpingJacks",
+                            "reps": 5,
+                            "time": -1,
+                            "completed": false
+                        },
+                        {
+                            "id": "exerciseBurpees",
+                            "name": "burpees",
+                            "reps": 5,
+                            "time": -1,
+                            "completed": false
+                        }
+                    ]
+                },
+                {
+                    "id": "programGeneralWeek1Day6",
+                    "difficulty": 0,
+                    "exercises": [
+                        {
+                            "id": "exercisePushUp",
+                            "name": "pushUp",
+                            "reps": 7,
+                            "time": -1,
+                            "completed": false
+                        },
+                        {
+                            "id": "exerciseTricepDip",
+                            "name": "tricepDip",
+                            "reps": 7,
+                            "time": -1,
+                            "completed": false
+                        },
+                        {
+                            "id": "exerciseJumpingJacks",
+                            "name": "jumpingJacks",
+                            "reps": 10,
+                            "time": -1,
+                            "completed": false
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "id": "programGeneralWeek2",
+            "days": [
+                {
+                    "id": "programGeneralWeek2Day0",
+                    "difficulty": 0,
+                    "exercises": [
+                        {
+                            "id": "exercisePushUp",
+                            "name": "pushUp",
+                            "reps": 7,
+                            "time": -1,
+                            "completed": false
+                        },
+                        {
+                            "id": "exerciseTricepDip",
+                            "name": "tricepDip",
+                            "reps": 7,
+                            "time": -1,
+                            "completed": false
+                        },
+                        {
+                            "id": "exerciseWallSit",
+                            "name": "wallSit",
+                            "reps": -1,
+                            "time": 45,
+                            "completed": false
+                        },
+                        {
+                            "id": "exerciseJumpingJacks",
+                            "name": "jumpingJacks",
+                            "reps": 7,
+                            "time": -1,
+                            "completed": false
+                        },
+                        {
+                            "id": "exerciseBurpees",
+                            "name": "burpees",
+                            "reps": 7,
+                            "time": -1,
+                            "completed": false
+                        }
+                    ]
+                },
+                {
+                    "id": "programGeneralWeek2Day1",
+                    "difficulty": 0,
+                    "exercises": [
+                        {
+                            "id": "exercisePushUp",
+                            "name": "pushUp",
+                            "reps": 8,
+                            "time": -1,
+                            "completed": false
+                        },
+                        {
+                            "id": "exerciseTricepDip",
+                            "name": "tricepDip",
+                            "reps": 8,
+                            "time": -1,
+                            "completed": false
+                        },
+                        {
+                            "id": "exerciseJumpingJacks",
+                            "name": "jumpingJacks",
+                            "reps": 12,
+                            "time": -1,
+                            "completed": false
+                        }
+                    ]
+                },
+                {
+                    "id": "programGeneralWeek2Day2",
+                    "difficulty": 0,
+                    "exercises": [
+                        {
+                            "id": "exercisePushUp",
+                            "name": "pushUp",
+                            "reps": 7,
+                            "time": -1,
+                            "completed": false
+                        },
+                        {
+                            "id": "exerciseTricepDip",
+                            "name": "tricepDip",
+                            "reps": 7,
+                            "time": -1,
+                            "completed": false
+                        },
+                        {
+                            "id": "exerciseWallSit",
+                            "name": "wallSit",
+                            "reps": -1,
+                            "time": 45,
+                            "completed": false
+                        },
+                        {
+                            "id": "exerciseJumpingJacks",
+                            "name": "jumpingJacks",
+                            "reps": 7,
+                            "time": -1,
+                            "completed": false
+                        },
+                        {
+                            "id": "exerciseBurpees",
+                            "name": "burpees",
+                            "reps": 7,
+                            "time": -1,
+                            "completed": false
+                        }
+                    ]
+                },
+                {
+                    "id": "programGeneralWeek2Day3",
+                    "difficulty": 0,
+                    "exercises": [
+                        {
+                            "id": "exercisePushUp",
+                            "name": "pushUp",
+                            "reps": 8,
+                            "time": -1,
+                            "completed": false
+                        },
+                        {
+                            "id": "exerciseTricepDip",
+                            "name": "tricepDip",
+                            "reps": 8,
+                            "time": -1,
+                            "completed": false
+                        },
+                        {
+                            "id": "exerciseJumpingJacks",
+                            "name": "jumpingJacks",
+                            "reps": 12,
+                            "time": -1,
+                            "completed": false
+                        }
+                    ]
+                },
+                {
+                    "id": "programGeneralWeek2Day4",
+                    "difficulty": 0,
+                    "exercises": [
+                        {
+                            "id": "exercisePushUp",
+                            "name": "pushUp",
+                            "reps": 10,
+                            "time": -1,
+                            "completed": false
+                        },
+                        {
+                            "id": "exerciseTricepDip",
+                            "name": "tricepDip",
+                            "reps": 10,
+                            "time": -1,
+                            "completed": false
+                        },
+                        {
+                            "id": "exerciseWallSit",
+                            "name": "wallSit",
+                            "reps": -1,
+                            "time": 45,
+                            "completed": false
+                        },
+                        {
+                            "id": "exerciseJumpingJacks",
+                            "name": "jumpingJacks",
+                            "reps": 8,
+                            "time": -1,
+                            "completed": false
+                        },
+                        {
+                            "id": "exerciseBurpees",
+                            "name": "burpees",
+                            "reps": 8,
+                            "time": -1,
+                            "completed": false
+                        }
+                    ]
+                },
+                {
+                    "id": "programGeneralWeek2Day5",
+                    "difficulty": 0,
+                    "exercises": [
+                        {
+                            "id": "exercisePushUp",
+                            "name": "pushUp",
+                            "reps": 10,
+                            "time": -1,
+                            "completed": false
+                        },
+                        {
+                            "id": "exerciseTricepDip",
+                            "name": "tricepDip",
+                            "reps": 10,
+                            "time": -1,
+                            "completed": false
+                        },
+                        {
+                            "id": "exerciseJumpingJacks",
+                            "name": "jumpingJacks",
+                            "reps": 12,
+                            "time": -1,
+                            "completed": false
+                        }
+                    ]
+                },
+                {
+                    "id": "programGeneralWeek2Day6",
+                    "difficulty": 0,
+                    "exercises": [
+                        {
+                            "id": "exercisePushUp",
+                            "name": "pushUp",
+                            "reps": 10,
+                            "time": -1,
+                            "completed": false
+                        },
+                        {
+                            "id": "exerciseTricepDip",
+                            "name": "tricepDip",
+                            "reps": 10,
+                            "time": -1,
+                            "completed": false
+                        },
+                        {
+                            "id": "exerciseWallSit",
+                            "name": "wallSit",
+                            "reps": -1,
+                            "time": 45,
+                            "completed": false
+                        },
+                        {
+                            "id": "exerciseJumpingJacks",
+                            "name": "jumpingJacks",
+                            "reps": 10,
+                            "time": -1,
+                            "completed": false
+                        },
+                        {
+                            "id": "exerciseBurpees",
+                            "name": "burpees",
+                            "reps": 10,
+                            "time": -1,
+                            "completed": false
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "id": "programGeneralWeek3",
+            "days": [
+                {
+                    "id": "programGeneralWeek3Day0",
+                    "difficulty": 1,
+                    "exercises": [
+                        {
+                            "id": "exercisePushUp",
+                            "name": "pushUp",
+                            "reps": 10,
+                            "time": -1,
+                            "completed": false
+                        },
+                        {
+                            "id": "exerciseTricepDip",
+                            "name": "tricepDip",
+                            "reps": 10,
+                            "time": -1,
+                            "completed": false
+                        },
+                        {
+                            "id": "exerciseWallSit",
+                            "name": "wallSit",
+                            "reps": -1,
+                            "time": 90,
+                            "completed": false
+                        },
+                        {
+                            "id": "exerciseJumpingJacks",
+                            "name": "jumpingJacks",
+                            "reps": 10,
+                            "time": -1,
+                            "completed": false
+                        },
+                        {
+                            "id": "exerciseBurpees",
+                            "name": "burpees",
+                            "reps": 10,
+                            "time": -1,
+                            "completed": false
+                        }
+                    ]
+                },
+                {
+                    "id": "programGeneralWeek3Day1",
+                    "difficulty": 1,
+                    "exercises": [
+                        {
+                            "id": "exercisePushUp",
+                            "name": "pushUp",
+                            "reps": 14,
+                            "time": -1,
+                            "completed": false
+                        },
+                        {
+                            "id": "exerciseTricepDip",
+                            "name": "tricepDip",
+                            "reps": 14,
+                            "time": -1,
+                            "completed": false
+                        },
+                        {
+                            "id": "exerciseJumpingJacks",
+                            "name": "jumpingJacks",
+                            "reps": 20,
+                            "time": -1,
+                            "completed": false
+                        }
+                    ]
+                },
+                {
+                    "id": "programGeneralWeek3Day2",
+                    "difficulty": 1,
+                    "exercises": [
+                        {
+                            "id": "exercisePushUp",
+                            "name": "pushUp",
+                            "reps": 10,
+                            "time": -1,
+                            "completed": false
+                        },
+                        {
+                            "id": "exerciseTricepDip",
+                            "name": "tricepDip",
+                            "reps": 10,
+                            "time": -1,
+                            "completed": false
+                        },
+                        {
+                            "id": "exerciseWallSit",
+                            "name": "wallSit",
+                            "reps": -1,
+                            "time": 90,
+                            "completed": false
+                        },
+                        {
+                            "id": "exerciseJumpingJacks",
+                            "name": "jumpingJacks",
+                            "reps": 10,
+                            "time": -1,
+                            "completed": false
+                        },
+                        {
+                            "id": "exerciseBurpees",
+                            "name": "burpees",
+                            "reps": 10,
+                            "time": -1,
+                            "completed": false
+                        }
+                    ]
+                },
+                {
+                    "id": "programGeneralWeek3Day3",
+                    "difficulty": 1,
+                    "exercises": [
+                        {
+                            "id": "exercisePushUp",
+                            "name": "pushUp",
+                            "reps": 14,
+                            "time": -1,
+                            "completed": false
+                        },
+                        {
+                            "id": "exerciseTricepDip",
+                            "name": "tricepDip",
+                            "reps": 14,
+                            "time": -1,
+                            "completed": false
+                        },
+                        {
+                            "id": "exerciseJumpingJacks",
+                            "name": "jumpingJacks",
+                            "reps": 20,
+                            "time": -1,
+                            "completed": false
+                        }
+                    ]
+                },
+                {
+                    "id": "programGeneralWeek3Day4",
+                    "difficulty": 1,
+                    "exercises": [
+                        {
+                            "id": "exercisePushUp",
+                            "name": "pushUp",
+                            "reps": 10,
+                            "time": -1,
+                            "completed": false
+                        },
+                        {
+                            "id": "exerciseTricepDip",
+                            "name": "tricepDip",
+                            "reps": 10,
+                            "time": -1,
+                            "completed": false
+                        },
+                        {
+                            "id": "exerciseWallSit",
+                            "name": "wallSit",
+                            "reps": -1,
+                            "time": 90,
+                            "completed": false
+                        },
+                        {
+                            "id": "exerciseJumpingJacks",
+                            "name": "jumpingJacks",
+                            "reps": 10,
+                            "time": -1,
+                            "completed": false
+                        },
+                        {
+                            "id": "exerciseBurpees",
+                            "name": "burpees",
+                            "reps": 10,
+                            "time": -1,
+                            "completed": false
+                        }
+                    ]
+                },
+                {
+                    "id": "programGeneralWeek3Day5",
+                    "difficulty": 1,
+                    "exercises": [
+                        {
+                            "id": "exercisePushUp",
+                            "name": "pushUp",
+                            "reps": 14,
+                            "time": -1,
+                            "completed": false
+                        },
+                        {
+                            "id": "exerciseTricepDip",
+                            "name": "tricepDip",
+                            "reps": 14,
+                            "time": -1,
+                            "completed": false
+                        },
+                        {
+                            "id": "exerciseJumpingJacks",
+                            "name": "jumpingJacks",
+                            "reps": 20,
+                            "time": -1,
+                            "completed": false
+                        }
+                    ]
+                },
+                {
+                    "id": "programGeneralWeek3Day6",
+                    "difficulty": 1,
+                    "exercises": [
+                        {
+                            "id": "exercisePushUp",
+                            "name": "pushUp",
+                            "reps": 10,
+                            "time": -1,
+                            "completed": false
+                        },
+                        {
+                            "id": "exerciseTricepDip",
+                            "name": "tricepDip",
+                            "reps": 10,
+                            "time": -1,
+                            "completed": false
+                        },
+                        {
+                            "id": "exerciseWallSit",
+                            "name": "wallSit",
+                            "reps": -1,
+                            "time": 90,
+                            "completed": false
+                        },
+                        {
+                            "id": "exerciseJumpingJacks",
+                            "name": "jumpingJacks",
+                            "reps": 10,
+                            "time": -1,
+                            "completed": false
+                        },
+                        {
+                            "id": "exerciseBurpees",
+                            "name": "burpees",
+                            "reps": 10,
+                            "time": -1,
+                            "completed": false
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "id": "programGeneralWeek4",
+            "days": [
+                {
+                    "id": "programGeneralWeek4Day0",
+                    "difficulty": 1,
+                    "exercises": [
+                        {
+                            "id": "exercisePushUp",
+                            "name": "pushUp",
+                            "reps": 14,
+                            "time": -1,
+                            "completed": false
+                        },
+                        {
+                            "id": "exerciseTricepDip",
+                            "name": "tricepDip",
+                            "reps": 14,
+                            "time": -1,
+                            "completed": false
+                        },
+                        {
+                            "id": "exerciseJumpingJacks",
+                            "name": "jumpingJacks",
+                            "reps": 20,
+                            "time": -1,
+                            "completed": false
+                        }
+                    ]
+                },
+                {
+                    "id": "programGeneralWeek4Day1",
+                    "difficulty": 1,
+                    "exercises": [
+                        {
+                            "id": "exercisePushUp",
+                            "name": "pushUp",
+                            "reps": 14,
+                            "time": -1,
+                            "completed": false
+                        },
+                        {
+                            "id": "exerciseTricepDip",
+                            "name": "tricepDip",
+                            "reps": 14,
+                            "time": -1,
+                            "completed": false
+                        },
+                        {
+                            "id": "exerciseWallSit",
+                            "name": "wallSit",
+                            "reps": -1,
+                            "time": 90,
+                            "completed": false
+                        },
+                        {
+                            "id": "exerciseJumpingJacks",
+                            "name": "jumpingJacks",
+                            "reps": 10,
+                            "time": -1,
+                            "completed": false
+                        },
+                        {
+                            "id": "exerciseBurpees",
+                            "name": "burpees",
+                            "reps": 10,
+                            "time": -1,
+                            "completed": false
+                        }
+                    ]
+                },
+                {
+                    "id": "programGeneralWeek4Day2",
+                    "difficulty": 1,
+                    "exercises": [
+                        {
+                            "id": "exercisePushUp",
+                            "name": "pushUp",
+                            "reps": 14,
+                            "time": -1,
+                            "completed": false
+                        },
+                        {
+                            "id": "exerciseTricepDip",
+                            "name": "tricepDip",
+                            "reps": 14,
+                            "time": -1,
+                            "completed": false
+                        },
+                        {
+                            "id": "exerciseJumpingJacks",
+                            "name": "jumpingJacks",
+                            "reps": 10,
+                            "time": -1,
+                            "completed": false
+                        }
+                    ]
+                },
+                {
+                    "id": "programGeneralWeek4Day3",
+                    "difficulty": 1,
+                    "exercises": [
+                        {
+                            "id": "exercisePushUp",
+                            "name": "pushUp",
+                            "reps": 14,
+                            "time": -1,
+                            "completed": false
+                        },
+                        {
+                            "id": "exerciseTricepDip",
+                            "name": "tricepDip",
+                            "reps": 14,
+                            "time": -1,
+                            "completed": false
+                        },
+                        {
+                            "id": "exerciseWallSit",
+                            "name": "wallSit",
+                            "reps": -1,
+                            "time": 90,
+                            "completed": false
+                        },
+                        {
+                            "id": "exerciseJumpingJacks",
+                            "name": "jumpingJacks",
+                            "reps": 10,
+                            "time": -1,
+                            "completed": false
+                        },
+                        {
+                            "id": "exerciseBurpees",
+                            "name": "burpees",
+                            "reps": 10,
+                            "time": -1,
+                            "completed": false
+                        }
+                    ]
+                },
+                {
+                    "id": "programGeneralWeek4Day4",
+                    "difficulty": 1,
+                    "exercises": [
+                        {
+                            "id": "exercisePushUp",
+                            "name": "pushUp",
+                            "reps": 14,
+                            "time": -1,
+                            "completed": false
+                        },
+                        {
+                            "id": "exerciseTricepDip",
+                            "name": "tricepDip",
+                            "reps": 14,
+                            "time": -1,
+                            "completed": false
+                        },
+                        {
+                            "id": "exerciseJumpingJacks",
+                            "name": "jumpingJacks",
+                            "reps": 10,
+                            "time": -1,
+                            "completed": false
+                        }
+                    ]
+                },
+                {
+                    "id": "programGeneralWeek4Day5",
+                    "difficulty": 1,
+                    "exercises": [
+                        {
+                            "id": "exercisePushUp",
+                            "name": "pushUp",
+                            "reps": 14,
+                            "time": -1,
+                            "completed": false
+                        },
+                        {
+                            "id": "exerciseTricepDip",
+                            "name": "tricepDip",
+                            "reps": 14,
+                            "time": -1,
+                            "completed": false
+                        },
+                        {
+                            "id": "exerciseWallSit",
+                            "name": "wallSit",
+                            "reps": -1,
+                            "time": 90,
+                            "completed": false
+                        },
+                        {
+                            "id": "exerciseJumpingJacks",
+                            "name": "jumpingJacks",
+                            "reps": 10,
+                            "time": -1,
+                            "completed": false
+                        },
+                        {
+                            "id": "exerciseBurpees",
+                            "name": "burpees",
+                            "reps": 10,
+                            "time": -1,
+                            "completed": false
+                        }
+                    ]
+                },
+                {
+                    "id": "programGeneralWeek4Day6",
+                    "difficulty": 1,
+                    "exercises": [
+                        {
+                            "id": "exercisePushUp",
+                            "name": "pushUp",
+                            "reps": 14,
+                            "time": -1,
+                            "completed": false
+                        },
+                        {
+                            "id": "exerciseTricepDip",
+                            "name": "tricepDip",
+                            "reps": 14,
+                            "time": -1,
+                            "completed": false
+                        },
+                        {
+                            "id": "exerciseJumpingJacks",
+                            "name": "jumpingJacks",
+                            "reps": 10,
+                            "time": -1,
+                            "completed": false
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "id": "programGeneralWeek5",
+            "days": [
+                {
+                    "id": "programGeneralWeek5Day0",
+                    "difficulty": 1,
+                    "exercises": [
+                        {
+                            "id": "exercisePushUp",
+                            "name": "pushUp",
+                            "reps": 14,
+                            "time": -1,
+                            "completed": false
+                        },
+                        {
+                            "id": "exerciseTricepDip",
+                            "name": "tricepDip",
+                            "reps": 14,
+                            "time": -1,
+                            "completed": false
+                        },
+                        {
+                            "id": "exerciseWallSit",
+                            "name": "wallSit",
+                            "reps": -1,
+                            "time": 90,
+                            "completed": false
+                        },
+                        {
+                            "id": "exerciseJumpingJacks",
+                            "name": "jumpingJacks",
+                            "reps": 14,
+                            "time": -1,
+                            "completed": false
+                        },
+                        {
+                            "id": "exerciseBurpees",
+                            "name": "burpees",
+                            "reps": 14,
+                            "time": -1,
+                            "completed": false
+                        }
+                    ]
+                },
+                {
+                    "id": "programGeneralWeek5Day1",
+                    "difficulty": 1,
+                    "exercises": [
+                        {
+                            "id": "exercisePushUp",
+                            "name": "pushUp",
+                            "reps": 16,
+                            "time": -1,
+                            "completed": false
+                        },
+                        {
+                            "id": "exerciseTricepDip",
+                            "name": "tricepDip",
+                            "reps": 16,
+                            "time": -1,
+                            "completed": false
+                        },
+                        {
+                            "id": "exerciseJumpingJacks",
+                            "name": "jumpingJacks",
+                            "reps": 24,
+                            "time": -1,
+                            "completed": false
+                        }
+                    ]
+                },
+                {
+                    "id": "programGeneralWeek5Day2",
+                    "difficulty": 1,
+                    "exercises": [
+                        {
+                            "id": "exercisePushUp",
+                            "name": "pushUp",
+                            "reps": 14,
+                            "time": -1,
+                            "completed": false
+                        },
+                        {
+                            "id": "exerciseTricepDip",
+                            "name": "tricepDip",
+                            "reps": 14,
+                            "time": -1,
+                            "completed": false
+                        },
+                        {
+                            "id": "exerciseWallSit",
+                            "name": "wallSit",
+                            "reps": -1,
+                            "time": 90,
+                            "completed": false
+                        },
+                        {
+                            "id": "exerciseJumpingJacks",
+                            "name": "jumpingJacks",
+                            "reps": 14,
+                            "time": -1,
+                            "completed": false
+                        },
+                        {
+                            "id": "exerciseBurpees",
+                            "name": "burpees",
+                            "reps": 14,
+                            "time": -1,
+                            "completed": false
+                        }
+                    ]
+                },
+                {
+                    "id": "programGeneralWeek5Day3",
+                    "difficulty": 1,
+                    "exercises": [
+                        {
+                            "id": "exercisePushUp",
+                            "name": "pushUp",
+                            "reps": 16,
+                            "time": -1,
+                            "completed": false
+                        },
+                        {
+                            "id": "exerciseTricepDip",
+                            "name": "tricepDip",
+                            "reps": 16,
+                            "time": -1,
+                            "completed": false
+                        },
+                        {
+                            "id": "exerciseJumpingJacks",
+                            "name": "jumpingJacks",
+                            "reps": 24,
+                            "time": -1,
+                            "completed": false
+                        }
+                    ]
+                },
+                {
+                    "id": "programGeneralWeek5Day4",
+                    "difficulty": 1,
+                    "exercises": [
+                        {
+                            "id": "exercisePushUp",
+                            "name": "pushUp",
+                            "reps": 20,
+                            "time": -1,
+                            "completed": false
+                        },
+                        {
+                            "id": "exerciseTricepDip",
+                            "name": "tricepDip",
+                            "reps": 20,
+                            "time": -1,
+                            "completed": false
+                        },
+                        {
+                            "id": "exerciseWallSit",
+                            "name": "wallSit",
+                            "reps": -1,
+                            "time": 90,
+                            "completed": false
+                        },
+                        {
+                            "id": "exerciseJumpingJacks",
+                            "name": "jumpingJacks",
+                            "reps": 16,
+                            "time": -1,
+                            "completed": false
+                        },
+                        {
+                            "id": "exerciseBurpees",
+                            "name": "burpees",
+                            "reps": 16,
+                            "time": -1,
+                            "completed": false
+                        }
+                    ]
+                },
+                {
+                    "id": "programGeneralWeek5Day5",
+                    "difficulty": 1,
+                    "exercises": [
+                        {
+                            "id": "exercisePushUp",
+                            "name": "pushUp",
+                            "reps": 20,
+                            "time": -1,
+                            "completed": false
+                        },
+                        {
+                            "id": "exerciseTricepDip",
+                            "name": "tricepDip",
+                            "reps": 20,
+                            "time": -1,
+                            "completed": false
+                        },
+                        {
+                            "id": "exerciseJumpingJacks",
+                            "name": "jumpingJacks",
+                            "reps": 24,
+                            "time": -1,
+                            "completed": false
+                        }
+                    ]
+                },
+                {
+                    "id": "programGeneralWeek5Day6",
+                    "difficulty": 1,
+                    "exercises": [
+                        {
+                            "id": "exercisePushUp",
+                            "name": "pushUp",
+                            "reps": 20,
+                            "time": -1,
+                            "completed": false
+                        },
+                        {
+                            "id": "exerciseTricepDip",
+                            "name": "tricepDip",
+                            "reps": 20,
+                            "time": -1,
+                            "completed": false
+                        },
+                        {
+                            "id": "exerciseWallSit",
+                            "name": "wallSit",
+                            "reps": -1,
+                            "time": 90,
+                            "completed": false
+                        },
+                        {
+                            "id": "exerciseJumpingJacks",
+                            "name": "jumpingJacks",
+                            "reps": 20,
+                            "time": -1,
+                            "completed": false
+                        },
+                        {
+                            "id": "exerciseBurpees",
+                            "name": "burpees",
+                            "reps": 20,
+                            "time": -1,
+                            "completed": false
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "id": "programGeneralWeek6",
+            "days": [
+                {
+                    "id": "programGeneralWeek6Day0",
+                    "difficulty": 2,
+                    "exercises": [
+                        {
+                            "id": "exercisePushUp",
+                            "name": "pushUp",
+                            "reps": 20,
+                            "time": -1,
+                            "completed": false
+                        },
+                        {
+                            "id": "exerciseTricepDip",
+                            "name": "tricepDip",
+                            "reps": 20,
+                            "time": -1,
+                            "completed": false
+                        },
+                        {
+                            "id": "exerciseWallSit",
+                            "name": "wallSit",
+                            "reps": -1,
+                            "time": 180,
+                            "completed": false
+                        },
+                        {
+                            "id": "exerciseJumpingJacks",
+                            "name": "jumpingJacks",
+                            "reps": 20,
+                            "time": -1,
+                            "completed": false
+                        },
+                        {
+                            "id": "exerciseBurpees",
+                            "name": "burpees",
+                            "reps": 20,
+                            "time": -1,
+                            "completed": false
+                        }
+                    ]
+                },
+                {
+                    "id": "programGeneralWeek6Day1",
+                    "difficulty": 2,
+                    "exercises": [
+                        {
+                            "id": "exercisePushUp",
+                            "name": "pushUp",
+                            "reps": 28,
+                            "time": -1,
+                            "completed": false
+                        },
+                        {
+                            "id": "exerciseTricepDip",
+                            "name": "tricepDip",
+                            "reps": 28,
+                            "time": -1,
+                            "completed": false
+                        },
+                        {
+                            "id": "exerciseJumpingJacks",
+                            "name": "jumpingJacks",
+                            "reps": 40,
+                            "time": -1,
+                            "completed": false
+                        }
+                    ]
+                },
+                {
+                    "id": "programGeneralWeek6Day2",
+                    "difficulty": 2,
+                    "exercises": [
+                        {
+                            "id": "exercisePushUp",
+                            "name": "pushUp",
+                            "reps": 20,
+                            "time": -1,
+                            "completed": false
+                        },
+                        {
+                            "id": "exerciseTricepDip",
+                            "name": "tricepDip",
+                            "reps": 20,
+                            "time": -1,
+                            "completed": false
+                        },
+                        {
+                            "id": "exerciseWallSit",
+                            "name": "wallSit",
+                            "reps": -1,
+                            "time": 180,
+                            "completed": false
+                        },
+                        {
+                            "id": "exerciseJumpingJacks",
+                            "name": "jumpingJacks",
+                            "reps": 20,
+                            "time": -1,
+                            "completed": false
+                        },
+                        {
+                            "id": "exerciseBurpees",
+                            "name": "burpees",
+                            "reps": 20,
+                            "time": -1,
+                            "completed": false
+                        }
+                    ]
+                },
+                {
+                    "id": "programGeneralWeek6Day3",
+                    "difficulty": 2,
+                    "exercises": [
+                        {
+                            "id": "exercisePushUp",
+                            "name": "pushUp",
+                            "reps": 28,
+                            "time": -1,
+                            "completed": false
+                        },
+                        {
+                            "id": "exerciseTricepDip",
+                            "name": "tricepDip",
+                            "reps": 28,
+                            "time": -1,
+                            "completed": false
+                        },
+                        {
+                            "id": "exerciseJumpingJacks",
+                            "name": "jumpingJacks",
+                            "reps": 40,
+                            "time": -1,
+                            "completed": false
+                        }
+                    ]
+                },
+                {
+                    "id": "programGeneralWeek6Day4",
+                    "difficulty": 2,
+                    "exercises": [
+                        {
+                            "id": "exercisePushUp",
+                            "name": "pushUp",
+                            "reps": 20,
+                            "time": -1,
+                            "completed": false
+                        },
+                        {
+                            "id": "exerciseTricepDip",
+                            "name": "tricepDip",
+                            "reps": 20,
+                            "time": -1,
+                            "completed": false
+                        },
+                        {
+                            "id": "exerciseWallSit",
+                            "name": "wallSit",
+                            "reps": -1,
+                            "time": 180,
+                            "completed": false
+                        },
+                        {
+                            "id": "exerciseJumpingJacks",
+                            "name": "jumpingJacks",
+                            "reps": 20,
+                            "time": -1,
+                            "completed": false
+                        },
+                        {
+                            "id": "exerciseBurpees",
+                            "name": "burpees",
+                            "reps": 20,
+                            "time": -1,
+                            "completed": false
+                        }
+                    ]
+                },
+                {
+                    "id": "programGeneralWeek6Day5",
+                    "difficulty": 2,
+                    "exercises": [
+                        {
+                            "id": "exercisePushUp",
+                            "name": "pushUp",
+                            "reps": 28,
+                            "time": -1,
+                            "completed": false
+                        },
+                        {
+                            "id": "exerciseTricepDip",
+                            "name": "tricepDip",
+                            "reps": 28,
+                            "time": -1,
+                            "completed": false
+                        },
+                        {
+                            "id": "exerciseJumpingJacks",
+                            "name": "jumpingJacks",
+                            "reps": 40,
+                            "time": -1,
+                            "completed": false
+                        }
+                    ]
+                },
+                {
+                    "id": "programGeneralWeek6Day6",
+                    "difficulty": 2,
+                    "exercises": [
+                        {
+                            "id": "exercisePushUp",
+                            "name": "pushUp",
+                            "reps": 20,
+                            "time": -1,
+                            "completed": false
+                        },
+                        {
+                            "id": "exerciseTricepDip",
+                            "name": "tricepDip",
+                            "reps": 20,
+                            "time": -1,
+                            "completed": false
+                        },
+                        {
+                            "id": "exerciseWallSit",
+                            "name": "wallSit",
+                            "reps": -1,
+                            "time": 180,
+                            "completed": false
+                        },
+                        {
+                            "id": "exerciseJumpingJacks",
+                            "name": "jumpingJacks",
+                            "reps": 20,
+                            "time": -1,
+                            "completed": false
+                        },
+                        {
+                            "id": "exerciseBurpees",
+                            "name": "burpees",
+                            "reps": 20,
+                            "time": -1,
+                            "completed": false
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "id": "programGeneralWeek7",
+            "days": [
+                {
+                    "id": "programGeneralWeek7Day0",
+                    "difficulty": 2,
+                    "exercises": [
+                        {
+                            "id": "exercisePushUp",
+                            "name": "pushUp",
+                            "reps": 28,
+                            "time": -1,
+                            "completed": false
+                        },
+                        {
+                            "id": "exerciseTricepDip",
+                            "name": "tricepDip",
+                            "reps": 28,
+                            "time": -1,
+                            "completed": false
+                        },
+                        {
+                            "id": "exerciseJumpingJacks",
+                            "name": "jumpingJacks",
+                            "reps": 40,
+                            "time": -1,
+                            "completed": false
+                        }
+                    ]
+                },
+                {
+                    "id": "programGeneralWeek7Day1",
+                    "difficulty": 2,
+                    "exercises": [
+                        {
+                            "id": "exercisePushUp",
+                            "name": "pushUp",
+                            "reps": 28,
+                            "time": -1,
+                            "completed": false
+                        },
+                        {
+                            "id": "exerciseTricepDip",
+                            "name": "tricepDip",
+                            "reps": 28,
+                            "time": -1,
+                            "completed": false
+                        },
+                        {
+                            "id": "exerciseWallSit",
+                            "name": "wallSit",
+                            "reps": -1,
+                            "time": 180,
+                            "completed": false
+                        },
+                        {
+                            "id": "exerciseJumpingJacks",
+                            "name": "jumpingJacks",
+                            "reps": 20,
+                            "time": -1,
+                            "completed": false
+                        },
+                        {
+                            "id": "exerciseBurpees",
+                            "name": "burpees",
+                            "reps": 20,
+                            "time": -1,
+                            "completed": false
+                        }
+                    ]
+                },
+                {
+                    "id": "programGeneralWeek7Day2",
+                    "difficulty": 2,
+                    "exercises": [
+                        {
+                            "id": "exercisePushUp",
+                            "name": "pushUp",
+                            "reps": 28,
+                            "time": -1,
+                            "completed": false
+                        },
+                        {
+                            "id": "exerciseTricepDip",
+                            "name": "tricepDip",
+                            "reps": 28,
+                            "time": -1,
+                            "completed": false
+                        },
+                        {
+                            "id": "exerciseJumpingJacks",
+                            "name": "jumpingJacks",
+                            "reps": 20,
+                            "time": -1,
+                            "completed": false
+                        }
+                    ]
+                },
+                {
+                    "id": "programGeneralWeek7Day3",
+                    "difficulty": 2,
+                    "exercises": [
+                        {
+                            "id": "exercisePushUp",
+                            "name": "pushUp",
+                            "reps": 28,
+                            "time": -1,
+                            "completed": false
+                        },
+                        {
+                            "id": "exerciseTricepDip",
+                            "name": "tricepDip",
+                            "reps": 28,
+                            "time": -1,
+                            "completed": false
+                        },
+                        {
+                            "id": "exerciseWallSit",
+                            "name": "wallSit",
+                            "reps": -1,
+                            "time": 180,
+                            "completed": false
+                        },
+                        {
+                            "id": "exerciseJumpingJacks",
+                            "name": "jumpingJacks",
+                            "reps": 20,
+                            "time": -1,
+                            "completed": false
+                        },
+                        {
+                            "id": "exerciseBurpees",
+                            "name": "burpees",
+                            "reps": 20,
+                            "time": -1,
+                            "completed": false
+                        }
+                    ]
+                },
+                {
+                    "id": "programGeneralWeek7Day4",
+                    "difficulty": 2,
+                    "exercises": [
+                        {
+                            "id": "exercisePushUp",
+                            "name": "pushUp",
+                            "reps": 28,
+                            "time": -1,
+                            "completed": false
+                        },
+                        {
+                            "id": "exerciseTricepDip",
+                            "name": "tricepDip",
+                            "reps": 28,
+                            "time": -1,
+                            "completed": false
+                        },
+                        {
+                            "id": "exerciseJumpingJacks",
+                            "name": "jumpingJacks",
+                            "reps": 20,
+                            "time": -1,
+                            "completed": false
+                        }
+                    ]
+                },
+                {
+                    "id": "programGeneralWeek7Day5",
+                    "difficulty": 2,
+                    "exercises": [
+                        {
+                            "id": "exercisePushUp",
+                            "name": "pushUp",
+                            "reps": 28,
+                            "time": -1,
+                            "completed": false
+                        },
+                        {
+                            "id": "exerciseTricepDip",
+                            "name": "tricepDip",
+                            "reps": 28,
+                            "time": -1,
+                            "completed": false
+                        },
+                        {
+                            "id": "exerciseWallSit",
+                            "name": "wallSit",
+                            "reps": -1,
+                            "time": 180,
+                            "completed": false
+                        },
+                        {
+                            "id": "exerciseJumpingJacks",
+                            "name": "jumpingJacks",
+                            "reps": 20,
+                            "time": -1,
+                            "completed": false
+                        },
+                        {
+                            "id": "exerciseBurpees",
+                            "name": "burpees",
+                            "reps": 20,
+                            "time": -1,
+                            "completed": false
+                        }
+                    ]
+                },
+                {
+                    "id": "programGeneralWeek7Day6",
+                    "difficulty": 2,
+                    "exercises": [
+                        {
+                            "id": "exercisePushUp",
+                            "name": "pushUp",
+                            "reps": 28,
+                            "time": -1,
+                            "completed": false
+                        },
+                        {
+                            "id": "exerciseTricepDip",
+                            "name": "tricepDip",
+                            "reps": 28,
+                            "time": -1,
+                            "completed": false
+                        },
+                        {
+                            "id": "exerciseJumpingJacks",
+                            "name": "jumpingJacks",
+                            "reps": 20,
+                            "time": -1,
+                            "completed": false
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "id": "programGeneralWeek8",
+            "days": [
+                {
+                    "id": "programGeneralWeek8Day0",
+                    "difficulty": 2,
+                    "exercises": [
+                        {
+                            "id": "exercisePushUp",
+                            "name": "pushUp",
+                            "reps": 28,
+                            "time": -1,
+                            "completed": false
+                        },
+                        {
+                            "id": "exerciseTricepDip",
+                            "name": "tricepDip",
+                            "reps": 28,
+                            "time": -1,
+                            "completed": false
+                        },
+                        {
+                            "id": "exerciseWallSit",
+                            "name": "wallSit",
+                            "reps": -1,
+                            "time": 180,
+                            "completed": false
+                        },
+                        {
+                            "id": "exerciseJumpingJacks",
+                            "name": "jumpingJacks",
+                            "reps": 28,
+                            "time": -1,
+                            "completed": false
+                        },
+                        {
+                            "id": "exerciseBurpees",
+                            "name": "burpees",
+                            "reps": 28,
+                            "time": -1,
+                            "completed": false
+                        }
+                    ]
+                },
+                {
+                    "id": "programGeneralWeek8Day1",
+                    "difficulty": 2,
+                    "exercises": [
+                        {
+                            "id": "exercisePushUp",
+                            "name": "pushUp",
+                            "reps": 32,
+                            "time": -1,
+                            "completed": false
+                        },
+                        {
+                            "id": "exerciseTricepDip",
+                            "name": "tricepDip",
+                            "reps": 32,
+                            "time": -1,
+                            "completed": false
+                        },
+                        {
+                            "id": "exerciseJumpingJacks",
+                            "name": "jumpingJacks",
+                            "reps": 48,
+                            "time": -1,
+                            "completed": false
+                        }
+                    ]
+                },
+                {
+                    "id": "programGeneralWeek8Day2",
+                    "difficulty": 2,
+                    "exercises": [
+                        {
+                            "id": "exercisePushUp",
+                            "name": "pushUp",
+                            "reps": 28,
+                            "time": -1,
+                            "completed": false
+                        },
+                        {
+                            "id": "exerciseTricepDip",
+                            "name": "tricepDip",
+                            "reps": 28,
+                            "time": -1,
+                            "completed": false
+                        },
+                        {
+                            "id": "exerciseWallSit",
+                            "name": "wallSit",
+                            "reps": -1,
+                            "time": 180,
+                            "completed": false
+                        },
+                        {
+                            "id": "exerciseJumpingJacks",
+                            "name": "jumpingJacks",
+                            "reps": 28,
+                            "time": -1,
+                            "completed": false
+                        },
+                        {
+                            "id": "exerciseBurpees",
+                            "name": "burpees",
+                            "reps": 28,
+                            "time": -1,
+                            "completed": false
+                        }
+                    ]
+                },
+                {
+                    "id": "programGeneralWeek8Day3",
+                    "difficulty": 2,
+                    "exercises": [
+                        {
+                            "id": "exercisePushUp",
+                            "name": "pushUp",
+                            "reps": 32,
+                            "time": -1,
+                            "completed": false
+                        },
+                        {
+                            "id": "exerciseTricepDip",
+                            "name": "tricepDip",
+                            "reps": 32,
+                            "time": -1,
+                            "completed": false
+                        },
+                        {
+                            "id": "exerciseJumpingJacks",
+                            "name": "jumpingJacks",
+                            "reps": 48,
+                            "time": -1,
+                            "completed": false
+                        }
+                    ]
+                },
+                {
+                    "id": "programGeneralWeek8Day4",
+                    "difficulty": 2,
+                    "exercises": [
+                        {
+                            "id": "exercisePushUp",
+                            "name": "pushUp",
+                            "reps": 40,
+                            "time": -1,
+                            "completed": false
+                        },
+                        {
+                            "id": "exerciseTricepDip",
+                            "name": "tricepDip",
+                            "reps": 40,
+                            "time": -1,
+                            "completed": false
+                        },
+                        {
+                            "id": "exerciseWallSit",
+                            "name": "wallSit",
+                            "reps": -1,
+                            "time": 180,
+                            "completed": false
+                        },
+                        {
+                            "id": "exerciseJumpingJacks",
+                            "name": "jumpingJacks",
+                            "reps": 32,
+                            "time": -1,
+                            "completed": false
+                        },
+                        {
+                            "id": "exerciseBurpees",
+                            "name": "burpees",
+                            "reps": 32,
+                            "time": -1,
+                            "completed": false
+                        }
+                    ]
+                },
+                {
+                    "id": "programGeneralWeek8Day5",
+                    "difficulty": 2,
+                    "exercises": [
+                        {
+                            "id": "exercisePushUp",
+                            "name": "pushUp",
+                            "reps": 40,
+                            "time": -1,
+                            "completed": false
+                        },
+                        {
+                            "id": "exerciseTricepDip",
+                            "name": "tricepDip",
+                            "reps": 40,
+                            "time": -1,
+                            "completed": false
+                        },
+                        {
+                            "id": "exerciseJumpingJacks",
+                            "name": "jumpingJacks",
+                            "reps": 48,
+                            "time": -1,
+                            "completed": false
+                        }
+                    ]
+                },
+                {
+                    "id": "programGeneralWeek8Day6",
+                    "difficulty": 2,
+                    "exercises": [
+                        {
+                            "id": "exercisePushUp",
+                            "name": "pushUp",
+                            "reps": 40,
+                            "time": -1,
+                            "completed": false
+                        },
+                        {
+                            "id": "exerciseTricepDip",
+                            "name": "tricepDip",
+                            "reps": 40,
+                            "time": -1,
+                            "completed": false
+                        },
+                        {
+                            "id": "exerciseWallSit",
+                            "name": "wallSit",
+                            "reps": -1,
+                            "time": 180,
+                            "completed": false
+                        },
+                        {
+                            "id": "exerciseJumpingJacks",
+                            "name": "jumpingJacks",
+                            "reps": 40,
+                            "time": -1,
+                            "completed": false
+                        },
+                        {
+                            "id": "exerciseBurpees",
+                            "name": "burpees",
+                            "reps": 40,
+                            "time": -1,
+                            "completed": false
+                        }
+                    ]
+                }
+            ]
+        }
+    ]
+}

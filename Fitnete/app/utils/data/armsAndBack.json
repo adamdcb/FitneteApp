@@ -1,0 +1,2634 @@
+{
+    "id": "programArmsAndBack",
+    "type": "armsAndBack",
+    "weeks": [
+        {
+            "id": "programArmsAndBackWeek0",
+            "days": [
+                {
+                    "id": "programArmsAndBackWeek0Day0",
+                    "difficulty": 0,
+                    "exercises": [
+                        {
+                            "id": "exerciseCrabWalk",
+                            "name": "crabWalk",
+                            "reps": 5,
+                            "time": -1,
+                            "completed": false
+                        },
+                        {
+                            "id": "exerciseSpineStretch",
+                            "name": "spineStretch",
+                            "reps": 5,
+                            "time": -1,
+                            "completed": false
+                        },
+                        {
+                            "id": "exerciseLyingKneeHug",
+                            "name": "lyingKneeHug",
+                            "reps": 5,
+                            "time": -1,
+                            "completed": false
+                        },
+                        {
+                            "id": "exerciseWoodpecker",
+                            "name": "woodpecker",
+                            "reps": 5,
+                            "time": -1,
+                            "completed": false
+                        },
+                        {
+                            "id": "exerciseRollingOver",
+                            "name": "rollingOver",
+                            "reps": 5,
+                            "time": -1,
+                            "completed": false
+                        }
+                    ]
+                },
+                {
+                    "id": "programArmsAndBackWeek0Day1",
+                    "difficulty": 0,
+                    "exercises": [
+                        {
+                            "id": "exerciseRunnersCrunch",
+                            "name": "runnersCrunch",
+                            "reps": 5,
+                            "time": -1,
+                            "completed": false
+                        },
+                        {
+                            "id": "exerciseTheFounder",
+                            "name": "theFounder",
+                            "reps": 5,
+                            "time": -1,
+                            "completed": false
+                        },
+                        {
+                            "id": "exerciseKneelingObliqueCrunch",
+                            "name": "kneelingObliqueCrunch",
+                            "reps": 5,
+                            "time": -1,
+                            "completed": false
+                        },
+                        {
+                            "id": "exerciseMcGillCurlUp",
+                            "name": "mcGillCurlUp",
+                            "reps": 5,
+                            "time": -1,
+                            "completed": false
+                        },
+                        {
+                            "id": "exerciseBirdDog",
+                            "name": "birdDog",
+                            "reps": 5,
+                            "time": -1,
+                            "completed": false
+                        }
+                    ]
+                },
+                {
+                    "id": "programArmsAndBackWeek0Day2",
+                    "difficulty": 0,
+                    "exercises": [
+                        {
+                            "id": "exerciseCrabWalk",
+                            "name": "crabWalk",
+                            "reps": 5,
+                            "time": -1,
+                            "completed": false
+                        },
+                        {
+                            "id": "exerciseSpineStretch",
+                            "name": "spineStretch",
+                            "reps": 5,
+                            "time": -1,
+                            "completed": false
+                        },
+                        {
+                            "id": "exerciseLyingKneeHug",
+                            "name": "lyingKneeHug",
+                            "reps": 5,
+                            "time": -1,
+                            "completed": false
+                        },
+                        {
+                            "id": "exerciseWoodpecker",
+                            "name": "woodpecker",
+                            "reps": 5,
+                            "time": -1,
+                            "completed": false
+                        },
+                        {
+                            "id": "exerciseRollingOver",
+                            "name": "rollingOver",
+                            "reps": 5,
+                            "time": -1,
+                            "completed": false
+                        }
+                    ]
+                },
+                {
+                    "id": "programArmsAndBackWeek0Day3",
+                    "difficulty": 0,
+                    "exercises": [
+                        {
+                            "id": "exerciseRunnersCrunch",
+                            "name": "runnersCrunch",
+                            "reps": 5,
+                            "time": -1,
+                            "completed": false
+                        },
+                        {
+                            "id": "exerciseTheFounder",
+                            "name": "theFounder",
+                            "reps": 5,
+                            "time": -1,
+                            "completed": false
+                        },
+                        {
+                            "id": "exerciseKneelingObliqueCrunch",
+                            "name": "kneelingObliqueCrunch",
+                            "reps": 5,
+                            "time": -1,
+                            "completed": false
+                        },
+                        {
+                            "id": "exerciseMcGillCurlUp",
+                            "name": "mcGillCurlUp",
+                            "reps": 5,
+                            "time": -1,
+                            "completed": false
+                        },
+                        {
+                            "id": "exerciseBirdDog",
+                            "name": "birdDog",
+                            "reps": 5,
+                            "time": -1,
+                            "completed": false
+                        }
+                    ]
+                },
+                {
+                    "id": "programArmsAndBackWeek0Day4",
+                    "difficulty": 0,
+                    "exercises": [
+                        {
+                            "id": "exerciseCrabWalk",
+                            "name": "crabWalk",
+                            "reps": 5,
+                            "time": -1,
+                            "completed": false
+                        },
+                        {
+                            "id": "exerciseSpineStretch",
+                            "name": "spineStretch",
+                            "reps": 5,
+                            "time": -1,
+                            "completed": false
+                        },
+                        {
+                            "id": "exerciseLyingKneeHug",
+                            "name": "lyingKneeHug",
+                            "reps": 5,
+                            "time": -1,
+                            "completed": false
+                        },
+                        {
+                            "id": "exerciseWoodpecker",
+                            "name": "woodpecker",
+                            "reps": 5,
+                            "time": -1,
+                            "completed": false
+                        },
+                        {
+                            "id": "exerciseRollingOver",
+                            "name": "rollingOver",
+                            "reps": 5,
+                            "time": -1,
+                            "completed": false
+                        }
+                    ]
+                },
+                {
+                    "id": "programArmsAndBackWeek0Day5",
+                    "difficulty": 0,
+                    "exercises": [
+                        {
+                            "id": "exerciseRunnersCrunch",
+                            "name": "runnersCrunch",
+                            "reps": 5,
+                            "time": -1,
+                            "completed": false
+                        },
+                        {
+                            "id": "exerciseTheFounder",
+                            "name": "theFounder",
+                            "reps": 5,
+                            "time": -1,
+                            "completed": false
+                        },
+                        {
+                            "id": "exerciseKneelingObliqueCrunch",
+                            "name": "kneelingObliqueCrunch",
+                            "reps": 5,
+                            "time": -1,
+                            "completed": false
+                        },
+                        {
+                            "id": "exerciseMcGillCurlUp",
+                            "name": "mcGillCurlUp",
+                            "reps": 5,
+                            "time": -1,
+                            "completed": false
+                        },
+                        {
+                            "id": "exerciseBirdDog",
+                            "name": "birdDog",
+                            "reps": 5,
+                            "time": -1,
+                            "completed": false
+                        }
+                    ]
+                },
+                {
+                    "id": "programArmsAndBackWeek0Day6",
+                    "difficulty": 0,
+                    "exercises": [
+                        {
+                            "id": "exerciseCrabWalk",
+                            "name": "crabWalk",
+                            "reps": 5,
+                            "time": -1,
+                            "completed": false
+                        },
+                        {
+                            "id": "exerciseSpineStretch",
+                            "name": "spineStretch",
+                            "reps": 5,
+                            "time": -1,
+                            "completed": false
+                        },
+                        {
+                            "id": "exerciseLyingKneeHug",
+                            "name": "lyingKneeHug",
+                            "reps": 5,
+                            "time": -1,
+                            "completed": false
+                        },
+                        {
+                            "id": "exerciseWoodpecker",
+                            "name": "woodpecker",
+                            "reps": 5,
+                            "time": -1,
+                            "completed": false
+                        },
+                        {
+                            "id": "exerciseRollingOver",
+                            "name": "rollingOver",
+                            "reps": 5,
+                            "time": -1,
+                            "completed": false
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "id": "programArmsAndBackWeek1",
+            "days": [
+                {
+                    "id": "programArmsAndBackWeek1Day0",
+                    "difficulty": 0,
+                    "exercises": [
+                        {
+                            "id": "exerciseRunnersCrunch",
+                            "name": "runnersCrunch",
+                            "reps": 7,
+                            "time": -1,
+                            "completed": false
+                        },
+                        {
+                            "id": "exerciseTheFounder",
+                            "name": "theFounder",
+                            "reps": 7,
+                            "time": -1,
+                            "completed": false
+                        },
+                        {
+                            "id": "exerciseKneelingObliqueCrunch",
+                            "name": "kneelingObliqueCrunch",
+                            "reps": 7,
+                            "time": -1,
+                            "completed": false
+                        },
+                        {
+                            "id": "exerciseMcGillCurlUp",
+                            "name": "mcGillCurlUp",
+                            "reps": 7,
+                            "time": -1,
+                            "completed": false
+                        },
+                        {
+                            "id": "exerciseBirdDog",
+                            "name": "birdDog",
+                            "reps": 7,
+                            "time": -1,
+                            "completed": false
+                        }
+                    ]
+                },
+                {
+                    "id": "programArmsAndBackWeek1Day1",
+                    "difficulty": 0,
+                    "exercises": [
+                        {
+                            "id": "exerciseCrabWalk",
+                            "name": "crabWalk",
+                            "reps": 7,
+                            "time": -1,
+                            "completed": false
+                        },
+                        {
+                            "id": "exerciseSpineStretch",
+                            "name": "spineStretch",
+                            "reps": 7,
+                            "time": -1,
+                            "completed": false
+                        },
+                        {
+                            "id": "exerciseLyingKneeHug",
+                            "name": "lyingKneeHug",
+                            "reps": 7,
+                            "time": -1,
+                            "completed": false
+                        },
+                        {
+                            "id": "exerciseWoodpecker",
+                            "name": "woodpecker",
+                            "reps": 7,
+                            "time": -1,
+                            "completed": false
+                        },
+                        {
+                            "id": "exerciseRollingOver",
+                            "name": "rollingOver",
+                            "reps": 7,
+                            "time": -1,
+                            "completed": false
+                        }
+                    ]
+                },
+                {
+                    "id": "programArmsAndBackWeek1Day2",
+                    "difficulty": 0,
+                    "exercises": [
+                        {
+                            "id": "exerciseRunnersCrunch",
+                            "name": "runnersCrunch",
+                            "reps": 7,
+                            "time": -1,
+                            "completed": false
+                        },
+                        {
+                            "id": "exerciseTheFounder",
+                            "name": "theFounder",
+                            "reps": 7,
+                            "time": -1,
+                            "completed": false
+                        },
+                        {
+                            "id": "exerciseKneelingObliqueCrunch",
+                            "name": "kneelingObliqueCrunch",
+                            "reps": 7,
+                            "time": -1,
+                            "completed": false
+                        },
+                        {
+                            "id": "exerciseMcGillCurlUp",
+                            "name": "mcGillCurlUp",
+                            "reps": 7,
+                            "time": -1,
+                            "completed": false
+                        },
+                        {
+                            "id": "exerciseBirdDog",
+                            "name": "birdDog",
+                            "reps": 7,
+                            "time": -1,
+                            "completed": false
+                        }
+                    ]
+                },
+                {
+                    "id": "programArmsAndBackWeek1Day3",
+                    "difficulty": 0,
+                    "exercises": [
+                        {
+                            "id": "exerciseCrabWalk",
+                            "name": "crabWalk",
+                            "reps": 7,
+                            "time": -1,
+                            "completed": false
+                        },
+                        {
+                            "id": "exerciseSpineStretch",
+                            "name": "spineStretch",
+                            "reps": 7,
+                            "time": -1,
+                            "completed": false
+                        },
+                        {
+                            "id": "exerciseLyingKneeHug",
+                            "name": "lyingKneeHug",
+                            "reps": 7,
+                            "time": -1,
+                            "completed": false
+                        },
+                        {
+                            "id": "exerciseWoodpecker",
+                            "name": "woodpecker",
+                            "reps": 7,
+                            "time": -1,
+                            "completed": false
+                        },
+                        {
+                            "id": "exerciseRollingOver",
+                            "name": "rollingOver",
+                            "reps": 7,
+                            "time": -1,
+                            "completed": false
+                        }
+                    ]
+                },
+                {
+                    "id": "programArmsAndBackWeek1Day4",
+                    "difficulty": 0,
+                    "exercises": [
+                        {
+                            "id": "exerciseRunnersCrunch",
+                            "name": "runnersCrunch",
+                            "reps": 7,
+                            "time": -1,
+                            "completed": false
+                        },
+                        {
+                            "id": "exerciseTheFounder",
+                            "name": "theFounder",
+                            "reps": 7,
+                            "time": -1,
+                            "completed": false
+                        },
+                        {
+                            "id": "exerciseKneelingObliqueCrunch",
+                            "name": "kneelingObliqueCrunch",
+                            "reps": 7,
+                            "time": -1,
+                            "completed": false
+                        },
+                        {
+                            "id": "exerciseMcGillCurlUp",
+                            "name": "mcGillCurlUp",
+                            "reps": 7,
+                            "time": -1,
+                            "completed": false
+                        },
+                        {
+                            "id": "exerciseBirdDog",
+                            "name": "birdDog",
+                            "reps": 7,
+                            "time": -1,
+                            "completed": false
+                        }
+                    ]
+                },
+                {
+                    "id": "programArmsAndBackWeek1Day5",
+                    "difficulty": 0,
+                    "exercises": [
+                        {
+                            "id": "exerciseCrabWalk",
+                            "name": "crabWalk",
+                            "reps": 7,
+                            "time": -1,
+                            "completed": false
+                        },
+                        {
+                            "id": "exerciseSpineStretch",
+                            "name": "spineStretch",
+                            "reps": 7,
+                            "time": -1,
+                            "completed": false
+                        },
+                        {
+                            "id": "exerciseLyingKneeHug",
+                            "name": "lyingKneeHug",
+                            "reps": 7,
+                            "time": -1,
+                            "completed": false
+                        },
+                        {
+                            "id": "exerciseWoodpecker",
+                            "name": "woodpecker",
+                            "reps": 7,
+                            "time": -1,
+                            "completed": false
+                        },
+                        {
+                            "id": "exerciseRollingOver",
+                            "name": "rollingOver",
+                            "reps": 7,
+                            "time": -1,
+                            "completed": false
+                        }
+                    ]
+                },
+                {
+                    "id": "programArmsAndBackWeek1Day6",
+                    "difficulty": 0,
+                    "exercises": [
+                        {
+                            "id": "exerciseRunnersCrunch",
+                            "name": "runnersCrunch",
+                            "reps": 7,
+                            "time": -1,
+                            "completed": false
+                        },
+                        {
+                            "id": "exerciseTheFounder",
+                            "name": "theFounder",
+                            "reps": 7,
+                            "time": -1,
+                            "completed": false
+                        },
+                        {
+                            "id": "exerciseKneelingObliqueCrunch",
+                            "name": "kneelingObliqueCrunch",
+                            "reps": 7,
+                            "time": -1,
+                            "completed": false
+                        },
+                        {
+                            "id": "exerciseMcGillCurlUp",
+                            "name": "mcGillCurlUp",
+                            "reps": 7,
+                            "time": -1,
+                            "completed": false
+                        },
+                        {
+                            "id": "exerciseBirdDog",
+                            "name": "birdDog",
+                            "reps": 7,
+                            "time": -1,
+                            "completed": false
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "id": "programArmsAndBackWeek2",
+            "days": [
+                {
+                    "id": "programArmsAndBackWeek2Day0",
+                    "difficulty": 0,
+                    "exercises": [
+                        {
+                            "id": "exerciseCrabWalk",
+                            "name": "crabWalk",
+                            "reps": 7,
+                            "time": -1,
+                            "completed": false
+                        },
+                        {
+                            "id": "exerciseSpineStretch",
+                            "name": "spineStretch",
+                            "reps": 7,
+                            "time": -1,
+                            "completed": false
+                        },
+                        {
+                            "id": "exerciseLyingKneeHug",
+                            "name": "lyingKneeHug",
+                            "reps": 7,
+                            "time": -1,
+                            "completed": false
+                        },
+                        {
+                            "id": "exerciseWoodpecker",
+                            "name": "woodpecker",
+                            "reps": 7,
+                            "time": -1,
+                            "completed": false
+                        },
+                        {
+                            "id": "exerciseRollingOver",
+                            "name": "rollingOver",
+                            "reps": 7,
+                            "time": -1,
+                            "completed": false
+                        }
+                    ]
+                },
+                {
+                    "id": "programArmsAndBackWeek2Day1",
+                    "difficulty": 0,
+                    "exercises": [
+                        {
+                            "id": "exerciseRunnersCrunch",
+                            "name": "runnersCrunch",
+                            "reps": 8,
+                            "time": -1,
+                            "completed": false
+                        },
+                        {
+                            "id": "exerciseTheFounder",
+                            "name": "theFounder",
+                            "reps": 8,
+                            "time": -1,
+                            "completed": false
+                        },
+                        {
+                            "id": "exerciseKneelingObliqueCrunch",
+                            "name": "kneelingObliqueCrunch",
+                            "reps": 8,
+                            "time": -1,
+                            "completed": false
+                        },
+                        {
+                            "id": "exerciseMcGillCurlUp",
+                            "name": "mcGillCurlUp",
+                            "reps": 8,
+                            "time": -1,
+                            "completed": false
+                        },
+                        {
+                            "id": "exerciseBirdDog",
+                            "name": "birdDog",
+                            "reps": 8,
+                            "time": -1,
+                            "completed": false
+                        }
+                    ]
+                },
+                {
+                    "id": "programArmsAndBackWeek2Day2",
+                    "difficulty": 0,
+                    "exercises": [
+                        {
+                            "id": "exerciseCrabWalk",
+                            "name": "crabWalk",
+                            "reps": 8,
+                            "time": -1,
+                            "completed": false
+                        },
+                        {
+                            "id": "exerciseSpineStretch",
+                            "name": "spineStretch",
+                            "reps": 8,
+                            "time": -1,
+                            "completed": false
+                        },
+                        {
+                            "id": "exerciseLyingKneeHug",
+                            "name": "lyingKneeHug",
+                            "reps": 8,
+                            "time": -1,
+                            "completed": false
+                        },
+                        {
+                            "id": "exerciseWoodpecker",
+                            "name": "woodpecker",
+                            "reps": 8,
+                            "time": -1,
+                            "completed": false
+                        },
+                        {
+                            "id": "exerciseRollingOver",
+                            "name": "rollingOver",
+                            "reps": 8,
+                            "time": -1,
+                            "completed": false
+                        }
+                    ]
+                },
+                {
+                    "id": "programArmsAndBackWeek2Day3",
+                    "difficulty": 0,
+                    "exercises": [
+                        {
+                            "id": "exerciseRunnersCrunch",
+                            "name": "runnersCrunch",
+                            "reps": 8,
+                            "time": -1,
+                            "completed": false
+                        },
+                        {
+                            "id": "exerciseTheFounder",
+                            "name": "theFounder",
+                            "reps": 8,
+                            "time": -1,
+                            "completed": false
+                        },
+                        {
+                            "id": "exerciseKneelingObliqueCrunch",
+                            "name": "kneelingObliqueCrunch",
+                            "reps": 8,
+                            "time": -1,
+                            "completed": false
+                        },
+                        {
+                            "id": "exerciseMcGillCurlUp",
+                            "name": "mcGillCurlUp",
+                            "reps": 8,
+                            "time": -1,
+                            "completed": false
+                        },
+                        {
+                            "id": "exerciseBirdDog",
+                            "name": "birdDog",
+                            "reps": 8,
+                            "time": -1,
+                            "completed": false
+                        }
+                    ]
+                },
+                {
+                    "id": "programArmsAndBackWeek2Day4",
+                    "difficulty": 0,
+                    "exercises": [
+                        {
+                            "id": "exerciseCrabWalk",
+                            "name": "crabWalk",
+                            "reps": 8,
+                            "time": -1,
+                            "completed": false
+                        },
+                        {
+                            "id": "exerciseSpineStretch",
+                            "name": "spineStretch",
+                            "reps": 8,
+                            "time": -1,
+                            "completed": false
+                        },
+                        {
+                            "id": "exerciseLyingKneeHug",
+                            "name": "lyingKneeHug",
+                            "reps": 8,
+                            "time": -1,
+                            "completed": false
+                        },
+                        {
+                            "id": "exerciseWoodpecker",
+                            "name": "woodpecker",
+                            "reps": 8,
+                            "time": -1,
+                            "completed": false
+                        },
+                        {
+                            "id": "exerciseRollingOver",
+                            "name": "rollingOver",
+                            "reps": 8,
+                            "time": -1,
+                            "completed": false
+                        }
+                    ]
+                },
+                {
+                    "id": "programArmsAndBackWeek2Day5",
+                    "difficulty": 0,
+                    "exercises": [
+                        {
+                            "id": "exerciseRunnersCrunch",
+                            "name": "runnersCrunch",
+                            "reps": 10,
+                            "time": -1,
+                            "completed": false
+                        },
+                        {
+                            "id": "exerciseTheFounder",
+                            "name": "theFounder",
+                            "reps": 10,
+                            "time": -1,
+                            "completed": false
+                        },
+                        {
+                            "id": "exerciseKneelingObliqueCrunch",
+                            "name": "kneelingObliqueCrunch",
+                            "reps": 10,
+                            "time": -1,
+                            "completed": false
+                        },
+                        {
+                            "id": "exerciseMcGillCurlUp",
+                            "name": "mcGillCurlUp",
+                            "reps": 10,
+                            "time": -1,
+                            "completed": false
+                        },
+                        {
+                            "id": "exerciseBirdDog",
+                            "name": "birdDog",
+                            "reps": 10,
+                            "time": -1,
+                            "completed": false
+                        }
+                    ]
+                },
+                {
+                    "id": "programArmsAndBackWeek2Day6",
+                    "difficulty": 0,
+                    "exercises": [
+                        {
+                            "id": "exerciseCrabWalk",
+                            "name": "crabWalk",
+                            "reps": 10,
+                            "time": -1,
+                            "completed": false
+                        },
+                        {
+                            "id": "exerciseSpineStretch",
+                            "name": "spineStretch",
+                            "reps": 10,
+                            "time": -1,
+                            "completed": false
+                        },
+                        {
+                            "id": "exerciseLyingKneeHug",
+                            "name": "lyingKneeHug",
+                            "reps": 10,
+                            "time": -1,
+                            "completed": false
+                        },
+                        {
+                            "id": "exerciseWoodpecker",
+                            "name": "woodpecker",
+                            "reps": 10,
+                            "time": -1,
+                            "completed": false
+                        },
+                        {
+                            "id": "exerciseRollingOver",
+                            "name": "rollingOver",
+                            "reps": 10,
+                            "time": -1,
+                            "completed": false
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "id": "programArmsAndBackWeek3",
+            "days": [
+                {
+                    "id": "programArmsAndBackWeek3Day0",
+                    "difficulty": 1,
+                    "exercises": [
+                        {
+                            "id": "exerciseCrabWalk",
+                            "name": "crabWalk",
+                            "reps": 10,
+                            "time": -1,
+                            "completed": false
+                        },
+                        {
+                            "id": "exerciseSpineStretch",
+                            "name": "spineStretch",
+                            "reps": 10,
+                            "time": -1,
+                            "completed": false
+                        },
+                        {
+                            "id": "exerciseLyingKneeHug",
+                            "name": "lyingKneeHug",
+                            "reps": 10,
+                            "time": -1,
+                            "completed": false
+                        },
+                        {
+                            "id": "exerciseWoodpecker",
+                            "name": "woodpecker",
+                            "reps": 10,
+                            "time": -1,
+                            "completed": false
+                        },
+                        {
+                            "id": "exerciseRollingOver",
+                            "name": "rollingOver",
+                            "reps": 10,
+                            "time": -1,
+                            "completed": false
+                        }
+                    ]
+                },
+                {
+                    "id": "programArmsAndBackWeek3Day1",
+                    "difficulty": 1,
+                    "exercises": [
+                        {
+                            "id": "exerciseRunnersCrunch",
+                            "name": "runnersCrunch",
+                            "reps": 10,
+                            "time": -1,
+                            "completed": false
+                        },
+                        {
+                            "id": "exerciseTheFounder",
+                            "name": "theFounder",
+                            "reps": 10,
+                            "time": -1,
+                            "completed": false
+                        },
+                        {
+                            "id": "exerciseKneelingObliqueCrunch",
+                            "name": "kneelingObliqueCrunch",
+                            "reps": 10,
+                            "time": -1,
+                            "completed": false
+                        },
+                        {
+                            "id": "exerciseMcGillCurlUp",
+                            "name": "mcGillCurlUp",
+                            "reps": 10,
+                            "time": -1,
+                            "completed": false
+                        },
+                        {
+                            "id": "exerciseBirdDog",
+                            "name": "birdDog",
+                            "reps": 10,
+                            "time": -1,
+                            "completed": false
+                        }
+                    ]
+                },
+                {
+                    "id": "programArmsAndBackWeek3Day2",
+                    "difficulty": 1,
+                    "exercises": [
+                        {
+                            "id": "exerciseCrabWalk",
+                            "name": "crabWalk",
+                            "reps": 10,
+                            "time": -1,
+                            "completed": false
+                        },
+                        {
+                            "id": "exerciseSpineStretch",
+                            "name": "spineStretch",
+                            "reps": 10,
+                            "time": -1,
+                            "completed": false
+                        },
+                        {
+                            "id": "exerciseLyingKneeHug",
+                            "name": "lyingKneeHug",
+                            "reps": 10,
+                            "time": -1,
+                            "completed": false
+                        },
+                        {
+                            "id": "exerciseWoodpecker",
+                            "name": "woodpecker",
+                            "reps": 10,
+                            "time": -1,
+                            "completed": false
+                        },
+                        {
+                            "id": "exerciseRollingOver",
+                            "name": "rollingOver",
+                            "reps": 10,
+                            "time": -1,
+                            "completed": false
+                        }
+                    ]
+                },
+                {
+                    "id": "programArmsAndBackWeek3Day3",
+                    "difficulty": 1,
+                    "exercises": [
+                        {
+                            "id": "exerciseRunnersCrunch",
+                            "name": "runnersCrunch",
+                            "reps": 10,
+                            "time": -1,
+                            "completed": false
+                        },
+                        {
+                            "id": "exerciseTheFounder",
+                            "name": "theFounder",
+                            "reps": 10,
+                            "time": -1,
+                            "completed": false
+                        },
+                        {
+                            "id": "exerciseKneelingObliqueCrunch",
+                            "name": "kneelingObliqueCrunch",
+                            "reps": 10,
+                            "time": -1,
+                            "completed": false
+                        },
+                        {
+                            "id": "exerciseMcGillCurlUp",
+                            "name": "mcGillCurlUp",
+                            "reps": 10,
+                            "time": -1,
+                            "completed": false
+                        },
+                        {
+                            "id": "exerciseBirdDog",
+                            "name": "birdDog",
+                            "reps": 10,
+                            "time": -1,
+                            "completed": false
+                        }
+                    ]
+                },
+                {
+                    "id": "programArmsAndBackWeek3Day4",
+                    "difficulty": 1,
+                    "exercises": [
+                        {
+                            "id": "exerciseCrabWalk",
+                            "name": "crabWalk",
+                            "reps": 10,
+                            "time": -1,
+                            "completed": false
+                        },
+                        {
+                            "id": "exerciseSpineStretch",
+                            "name": "spineStretch",
+                            "reps": 10,
+                            "time": -1,
+                            "completed": false
+                        },
+                        {
+                            "id": "exerciseLyingKneeHug",
+                            "name": "lyingKneeHug",
+                            "reps": 10,
+                            "time": -1,
+                            "completed": false
+                        },
+                        {
+                            "id": "exerciseWoodpecker",
+                            "name": "woodpecker",
+                            "reps": 10,
+                            "time": -1,
+                            "completed": false
+                        },
+                        {
+                            "id": "exerciseRollingOver",
+                            "name": "rollingOver",
+                            "reps": 10,
+                            "time": -1,
+                            "completed": false
+                        }
+                    ]
+                },
+                {
+                    "id": "programArmsAndBackWeek3Day5",
+                    "difficulty": 1,
+                    "exercises": [
+                        {
+                            "id": "exerciseRunnersCrunch",
+                            "name": "runnersCrunch",
+                            "reps": 10,
+                            "time": -1,
+                            "completed": false
+                        },
+                        {
+                            "id": "exerciseTheFounder",
+                            "name": "theFounder",
+                            "reps": 10,
+                            "time": -1,
+                            "completed": false
+                        },
+                        {
+                            "id": "exerciseKneelingObliqueCrunch",
+                            "name": "kneelingObliqueCrunch",
+                            "reps": 10,
+                            "time": -1,
+                            "completed": false
+                        },
+                        {
+                            "id": "exerciseMcGillCurlUp",
+                            "name": "mcGillCurlUp",
+                            "reps": 10,
+                            "time": -1,
+                            "completed": false
+                        },
+                        {
+                            "id": "exerciseBirdDog",
+                            "name": "birdDog",
+                            "reps": 10,
+                            "time": -1,
+                            "completed": false
+                        }
+                    ]
+                },
+                {
+                    "id": "programArmsAndBackWeek3Day6",
+                    "difficulty": 1,
+                    "exercises": [
+                        {
+                            "id": "exerciseCrabWalk",
+                            "name": "crabWalk",
+                            "reps": 10,
+                            "time": -1,
+                            "completed": false
+                        },
+                        {
+                            "id": "exerciseSpineStretch",
+                            "name": "spineStretch",
+                            "reps": 10,
+                            "time": -1,
+                            "completed": false
+                        },
+                        {
+                            "id": "exerciseLyingKneeHug",
+                            "name": "lyingKneeHug",
+                            "reps": 10,
+                            "time": -1,
+                            "completed": false
+                        },
+                        {
+                            "id": "exerciseWoodpecker",
+                            "name": "woodpecker",
+                            "reps": 10,
+                            "time": -1,
+                            "completed": false
+                        },
+                        {
+                            "id": "exerciseRollingOver",
+                            "name": "rollingOver",
+                            "reps": 10,
+                            "time": -1,
+                            "completed": false
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "id": "programArmsAndBackWeek4",
+            "days": [
+                {
+                    "id": "programArmsAndBackWeek4Day0",
+                    "difficulty": 1,
+                    "exercises": [
+                        {
+                            "id": "exerciseRunnersCrunch",
+                            "name": "runnersCrunch",
+                            "reps": 14,
+                            "time": -1,
+                            "completed": false
+                        },
+                        {
+                            "id": "exerciseTheFounder",
+                            "name": "theFounder",
+                            "reps": 14,
+                            "time": -1,
+                            "completed": false
+                        },
+                        {
+                            "id": "exerciseKneelingObliqueCrunch",
+                            "name": "kneelingObliqueCrunch",
+                            "reps": 14,
+                            "time": -1,
+                            "completed": false
+                        },
+                        {
+                            "id": "exerciseMcGillCurlUp",
+                            "name": "mcGillCurlUp",
+                            "reps": 14,
+                            "time": -1,
+                            "completed": false
+                        },
+                        {
+                            "id": "exerciseBirdDog",
+                            "name": "birdDog",
+                            "reps": 14,
+                            "time": -1,
+                            "completed": false
+                        }
+                    ]
+                },
+                {
+                    "id": "programArmsAndBackWeek4Day1",
+                    "difficulty": 1,
+                    "exercises": [
+                        {
+                            "id": "exerciseCrabWalk",
+                            "name": "crabWalk",
+                            "reps": 14,
+                            "time": -1,
+                            "completed": false
+                        },
+                        {
+                            "id": "exerciseSpineStretch",
+                            "name": "spineStretch",
+                            "reps": 14,
+                            "time": -1,
+                            "completed": false
+                        },
+                        {
+                            "id": "exerciseLyingKneeHug",
+                            "name": "lyingKneeHug",
+                            "reps": 14,
+                            "time": -1,
+                            "completed": false
+                        },
+                        {
+                            "id": "exerciseWoodpecker",
+                            "name": "woodpecker",
+                            "reps": 14,
+                            "time": -1,
+                            "completed": false
+                        },
+                        {
+                            "id": "exerciseRollingOver",
+                            "name": "rollingOver",
+                            "reps": 14,
+                            "time": -1,
+                            "completed": false
+                        }
+                    ]
+                },
+                {
+                    "id": "programArmsAndBackWeek4Day2",
+                    "difficulty": 1,
+                    "exercises": [
+                        {
+                            "id": "exerciseRunnersCrunch",
+                            "name": "runnersCrunch",
+                            "reps": 14,
+                            "time": -1,
+                            "completed": false
+                        },
+                        {
+                            "id": "exerciseTheFounder",
+                            "name": "theFounder",
+                            "reps": 14,
+                            "time": -1,
+                            "completed": false
+                        },
+                        {
+                            "id": "exerciseKneelingObliqueCrunch",
+                            "name": "kneelingObliqueCrunch",
+                            "reps": 14,
+                            "time": -1,
+                            "completed": false
+                        },
+                        {
+                            "id": "exerciseMcGillCurlUp",
+                            "name": "mcGillCurlUp",
+                            "reps": 14,
+                            "time": -1,
+                            "completed": false
+                        },
+                        {
+                            "id": "exerciseBirdDog",
+                            "name": "birdDog",
+                            "reps": 14,
+                            "time": -1,
+                            "completed": false
+                        }
+                    ]
+                },
+                {
+                    "id": "programArmsAndBackWeek4Day3",
+                    "difficulty": 1,
+                    "exercises": [
+                        {
+                            "id": "exerciseCrabWalk",
+                            "name": "crabWalk",
+                            "reps": 14,
+                            "time": -1,
+                            "completed": false
+                        },
+                        {
+                            "id": "exerciseSpineStretch",
+                            "name": "spineStretch",
+                            "reps": 14,
+                            "time": -1,
+                            "completed": false
+                        },
+                        {
+                            "id": "exerciseLyingKneeHug",
+                            "name": "lyingKneeHug",
+                            "reps": 14,
+                            "time": -1,
+                            "completed": false
+                        },
+                        {
+                            "id": "exerciseWoodpecker",
+                            "name": "woodpecker",
+                            "reps": 14,
+                            "time": -1,
+                            "completed": false
+                        },
+                        {
+                            "id": "exerciseRollingOver",
+                            "name": "rollingOver",
+                            "reps": 14,
+                            "time": -1,
+                            "completed": false
+                        }
+                    ]
+                },
+                {
+                    "id": "programArmsAndBackWeek4Day4",
+                    "difficulty": 1,
+                    "exercises": [
+                        {
+                            "id": "exerciseRunnersCrunch",
+                            "name": "runnersCrunch",
+                            "reps": 14,
+                            "time": -1,
+                            "completed": false
+                        },
+                        {
+                            "id": "exerciseTheFounder",
+                            "name": "theFounder",
+                            "reps": 14,
+                            "time": -1,
+                            "completed": false
+                        },
+                        {
+                            "id": "exerciseKneelingObliqueCrunch",
+                            "name": "kneelingObliqueCrunch",
+                            "reps": 14,
+                            "time": -1,
+                            "completed": false
+                        },
+                        {
+                            "id": "exerciseMcGillCurlUp",
+                            "name": "mcGillCurlUp",
+                            "reps": 14,
+                            "time": -1,
+                            "completed": false
+                        },
+                        {
+                            "id": "exerciseBirdDog",
+                            "name": "birdDog",
+                            "reps": 14,
+                            "time": -1,
+                            "completed": false
+                        }
+                    ]
+                },
+                {
+                    "id": "programArmsAndBackWeek4Day5",
+                    "difficulty": 1,
+                    "exercises": [
+                        {
+                            "id": "exerciseCrabWalk",
+                            "name": "crabWalk",
+                            "reps": 14,
+                            "time": -1,
+                            "completed": false
+                        },
+                        {
+                            "id": "exerciseSpineStretch",
+                            "name": "spineStretch",
+                            "reps": 14,
+                            "time": -1,
+                            "completed": false
+                        },
+                        {
+                            "id": "exerciseLyingKneeHug",
+                            "name": "lyingKneeHug",
+                            "reps": 14,
+                            "time": -1,
+                            "completed": false
+                        },
+                        {
+                            "id": "exerciseWoodpecker",
+                            "name": "woodpecker",
+                            "reps": 14,
+                            "time": -1,
+                            "completed": false
+                        },
+                        {
+                            "id": "exerciseRollingOver",
+                            "name": "rollingOver",
+                            "reps": 14,
+                            "time": -1,
+                            "completed": false
+                        }
+                    ]
+                },
+                {
+                    "id": "programArmsAndBackWeek4Day6",
+                    "difficulty": 1,
+                    "exercises": [
+                        {
+                            "id": "exerciseRunnersCrunch",
+                            "name": "runnersCrunch",
+                            "reps": 14,
+                            "time": -1,
+                            "completed": false
+                        },
+                        {
+                            "id": "exerciseTheFounder",
+                            "name": "theFounder",
+                            "reps": 14,
+                            "time": -1,
+                            "completed": false
+                        },
+                        {
+                            "id": "exerciseKneelingObliqueCrunch",
+                            "name": "kneelingObliqueCrunch",
+                            "reps": 14,
+                            "time": -1,
+                            "completed": false
+                        },
+                        {
+                            "id": "exerciseMcGillCurlUp",
+                            "name": "mcGillCurlUp",
+                            "reps": 14,
+                            "time": -1,
+                            "completed": false
+                        },
+                        {
+                            "id": "exerciseBirdDog",
+                            "name": "birdDog",
+                            "reps": 14,
+                            "time": -1,
+                            "completed": false
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "id": "programArmsAndBackWeek5",
+            "days": [
+                {
+                    "id": "programArmsAndBackWeek5Day0",
+                    "difficulty": 1,
+                    "exercises": [
+                        {
+                            "id": "exerciseCrabWalk",
+                            "name": "crabWalk",
+                            "reps": 14,
+                            "time": -1,
+                            "completed": false
+                        },
+                        {
+                            "id": "exerciseSpineStretch",
+                            "name": "spineStretch",
+                            "reps": 14,
+                            "time": -1,
+                            "completed": false
+                        },
+                        {
+                            "id": "exerciseLyingKneeHug",
+                            "name": "lyingKneeHug",
+                            "reps": 14,
+                            "time": -1,
+                            "completed": false
+                        },
+                        {
+                            "id": "exerciseWoodpecker",
+                            "name": "woodpecker",
+                            "reps": 14,
+                            "time": -1,
+                            "completed": false
+                        },
+                        {
+                            "id": "exerciseRollingOver",
+                            "name": "rollingOver",
+                            "reps": 14,
+                            "time": -1,
+                            "completed": false
+                        }
+                    ]
+                },
+                {
+                    "id": "programArmsAndBackWeek5Day1",
+                    "difficulty": 1,
+                    "exercises": [
+                        {
+                            "id": "exerciseRunnersCrunch",
+                            "name": "runnersCrunch",
+                            "reps": 16,
+                            "time": -1,
+                            "completed": false
+                        },
+                        {
+                            "id": "exerciseTheFounder",
+                            "name": "theFounder",
+                            "reps": 16,
+                            "time": -1,
+                            "completed": false
+                        },
+                        {
+                            "id": "exerciseKneelingObliqueCrunch",
+                            "name": "kneelingObliqueCrunch",
+                            "reps": 16,
+                            "time": -1,
+                            "completed": false
+                        },
+                        {
+                            "id": "exerciseMcGillCurlUp",
+                            "name": "mcGillCurlUp",
+                            "reps": 16,
+                            "time": -1,
+                            "completed": false
+                        },
+                        {
+                            "id": "exerciseBirdDog",
+                            "name": "birdDog",
+                            "reps": 16,
+                            "time": -1,
+                            "completed": false
+                        }
+                    ]
+                },
+                {
+                    "id": "programArmsAndBackWeek5Day2",
+                    "difficulty": 1,
+                    "exercises": [
+                        {
+                            "id": "exerciseCrabWalk",
+                            "name": "crabWalk",
+                            "reps": 16,
+                            "time": -1,
+                            "completed": false
+                        },
+                        {
+                            "id": "exerciseSpineStretch",
+                            "name": "spineStretch",
+                            "reps": 16,
+                            "time": -1,
+                            "completed": false
+                        },
+                        {
+                            "id": "exerciseLyingKneeHug",
+                            "name": "lyingKneeHug",
+                            "reps": 16,
+                            "time": -1,
+                            "completed": false
+                        },
+                        {
+                            "id": "exerciseWoodpecker",
+                            "name": "woodpecker",
+                            "reps": 16,
+                            "time": -1,
+                            "completed": false
+                        },
+                        {
+                            "id": "exerciseRollingOver",
+                            "name": "rollingOver",
+                            "reps": 16,
+                            "time": -1,
+                            "completed": false
+                        }
+                    ]
+                },
+                {
+                    "id": "programArmsAndBackWeek5Day3",
+                    "difficulty": 1,
+                    "exercises": [
+                        {
+                            "id": "exerciseRunnersCrunch",
+                            "name": "runnersCrunch",
+                            "reps": 16,
+                            "time": -1,
+                            "completed": false
+                        },
+                        {
+                            "id": "exerciseTheFounder",
+                            "name": "theFounder",
+                            "reps": 16,
+                            "time": -1,
+                            "completed": false
+                        },
+                        {
+                            "id": "exerciseKneelingObliqueCrunch",
+                            "name": "kneelingObliqueCrunch",
+                            "reps": 16,
+                            "time": -1,
+                            "completed": false
+                        },
+                        {
+                            "id": "exerciseMcGillCurlUp",
+                            "name": "mcGillCurlUp",
+                            "reps": 16,
+                            "time": -1,
+                            "completed": false
+                        },
+                        {
+                            "id": "exerciseBirdDog",
+                            "name": "birdDog",
+                            "reps": 16,
+                            "time": -1,
+                            "completed": false
+                        }
+                    ]
+                },
+                {
+                    "id": "programArmsAndBackWeek5Day4",
+                    "difficulty": 1,
+                    "exercises": [
+                        {
+                            "id": "exerciseCrabWalk",
+                            "name": "crabWalk",
+                            "reps": 16,
+                            "time": -1,
+                            "completed": false
+                        },
+                        {
+                            "id": "exerciseSpineStretch",
+                            "name": "spineStretch",
+                            "reps": 16,
+                            "time": -1,
+                            "completed": false
+                        },
+                        {
+                            "id": "exerciseLyingKneeHug",
+                            "name": "lyingKneeHug",
+                            "reps": 16,
+                            "time": -1,
+                            "completed": false
+                        },
+                        {
+                            "id": "exerciseWoodpecker",
+                            "name": "woodpecker",
+                            "reps": 16,
+                            "time": -1,
+                            "completed": false
+                        },
+                        {
+                            "id": "exerciseRollingOver",
+                            "name": "rollingOver",
+                            "reps": 16,
+                            "time": -1,
+                            "completed": false
+                        }
+                    ]
+                },
+                {
+                    "id": "programArmsAndBackWeek5Day5",
+                    "difficulty": 1,
+                    "exercises": [
+                        {
+                            "id": "exerciseRunnersCrunch",
+                            "name": "runnersCrunch",
+                            "reps": 20,
+                            "time": -1,
+                            "completed": false
+                        },
+                        {
+                            "id": "exerciseTheFounder",
+                            "name": "theFounder",
+                            "reps": 20,
+                            "time": -1,
+                            "completed": false
+                        },
+                        {
+                            "id": "exerciseKneelingObliqueCrunch",
+                            "name": "kneelingObliqueCrunch",
+                            "reps": 20,
+                            "time": -1,
+                            "completed": false
+                        },
+                        {
+                            "id": "exerciseMcGillCurlUp",
+                            "name": "mcGillCurlUp",
+                            "reps": 20,
+                            "time": -1,
+                            "completed": false
+                        },
+                        {
+                            "id": "exerciseBirdDog",
+                            "name": "birdDog",
+                            "reps": 20,
+                            "time": -1,
+                            "completed": false
+                        }
+                    ]
+                },
+                {
+                    "id": "programArmsAndBackWeek5Day6",
+                    "difficulty": 1,
+                    "exercises": [
+                        {
+                            "id": "exerciseCrabWalk",
+                            "name": "crabWalk",
+                            "reps": 20,
+                            "time": -1,
+                            "completed": false
+                        },
+                        {
+                            "id": "exerciseSpineStretch",
+                            "name": "spineStretch",
+                            "reps": 20,
+                            "time": -1,
+                            "completed": false
+                        },
+                        {
+                            "id": "exerciseLyingKneeHug",
+                            "name": "lyingKneeHug",
+                            "reps": 20,
+                            "time": -1,
+                            "completed": false
+                        },
+                        {
+                            "id": "exerciseWoodpecker",
+                            "name": "woodpecker",
+                            "reps": 20,
+                            "time": -1,
+                            "completed": false
+                        },
+                        {
+                            "id": "exerciseRollingOver",
+                            "name": "rollingOver",
+                            "reps": 20,
+                            "time": -1,
+                            "completed": false
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "id": "programArmsAndBackWeek6",
+            "days": [
+                {
+                    "id": "programArmsAndBackWeek6Day0",
+                    "difficulty": 2,
+                    "exercises": [
+                        {
+                            "id": "exerciseCrabWalk",
+                            "name": "crabWalk",
+                            "reps": 20,
+                            "time": -1,
+                            "completed": false
+                        },
+                        {
+                            "id": "exerciseSpineStretch",
+                            "name": "spineStretch",
+                            "reps": 20,
+                            "time": -1,
+                            "completed": false
+                        },
+                        {
+                            "id": "exerciseLyingKneeHug",
+                            "name": "lyingKneeHug",
+                            "reps": 20,
+                            "time": -1,
+                            "completed": false
+                        },
+                        {
+                            "id": "exerciseWoodpecker",
+                            "name": "woodpecker",
+                            "reps": 20,
+                            "time": -1,
+                            "completed": false
+                        },
+                        {
+                            "id": "exerciseRollingOver",
+                            "name": "rollingOver",
+                            "reps": 20,
+                            "time": -1,
+                            "completed": false
+                        }
+                    ]
+                },
+                {
+                    "id": "programArmsAndBackWeek6Day1",
+                    "difficulty": 2,
+                    "exercises": [
+                        {
+                            "id": "exerciseRunnersCrunch",
+                            "name": "runnersCrunch",
+                            "reps": 20,
+                            "time": -1,
+                            "completed": false
+                        },
+                        {
+                            "id": "exerciseTheFounder",
+                            "name": "theFounder",
+                            "reps": 20,
+                            "time": -1,
+                            "completed": false
+                        },
+                        {
+                            "id": "exerciseKneelingObliqueCrunch",
+                            "name": "kneelingObliqueCrunch",
+                            "reps": 20,
+                            "time": -1,
+                            "completed": false
+                        },
+                        {
+                            "id": "exerciseMcGillCurlUp",
+                            "name": "mcGillCurlUp",
+                            "reps": 20,
+                            "time": -1,
+                            "completed": false
+                        },
+                        {
+                            "id": "exerciseBirdDog",
+                            "name": "birdDog",
+                            "reps": 20,
+                            "time": -1,
+                            "completed": false
+                        }
+                    ]
+                },
+                {
+                    "id": "programArmsAndBackWeek6Day2",
+                    "difficulty": 2,
+                    "exercises": [
+                        {
+                            "id": "exerciseCrabWalk",
+                            "name": "crabWalk",
+                            "reps": 20,
+                            "time": -1,
+                            "completed": false
+                        },
+                        {
+                            "id": "exerciseSpineStretch",
+                            "name": "spineStretch",
+                            "reps": 20,
+                            "time": -1,
+                            "completed": false
+                        },
+                        {
+                            "id": "exerciseLyingKneeHug",
+                            "name": "lyingKneeHug",
+                            "reps": 20,
+                            "time": -1,
+                            "completed": false
+                        },
+                        {
+                            "id": "exerciseWoodpecker",
+                            "name": "woodpecker",
+                            "reps": 20,
+                            "time": -1,
+                            "completed": false
+                        },
+                        {
+                            "id": "exerciseRollingOver",
+                            "name": "rollingOver",
+                            "reps": 20,
+                            "time": -1,
+                            "completed": false
+                        }
+                    ]
+                },
+                {
+                    "id": "programArmsAndBackWeek6Day3",
+                    "difficulty": 2,
+                    "exercises": [
+                        {
+                            "id": "exerciseRunnersCrunch",
+                            "name": "runnersCrunch",
+                            "reps": 20,
+                            "time": -1,
+                            "completed": false
+                        },
+                        {
+                            "id": "exerciseTheFounder",
+                            "name": "theFounder",
+                            "reps": 20,
+                            "time": -1,
+                            "completed": false
+                        },
+                        {
+                            "id": "exerciseKneelingObliqueCrunch",
+                            "name": "kneelingObliqueCrunch",
+                            "reps": 20,
+                            "time": -1,
+                            "completed": false
+                        },
+                        {
+                            "id": "exerciseMcGillCurlUp",
+                            "name": "mcGillCurlUp",
+                            "reps": 20,
+                            "time": -1,
+                            "completed": false
+                        },
+                        {
+                            "id": "exerciseBirdDog",
+                            "name": "birdDog",
+                            "reps": 20,
+                            "time": -1,
+                            "completed": false
+                        }
+                    ]
+                },
+                {
+                    "id": "programArmsAndBackWeek6Day4",
+                    "difficulty": 2,
+                    "exercises": [
+                        {
+                            "id": "exerciseCrabWalk",
+                            "name": "crabWalk",
+                            "reps": 20,
+                            "time": -1,
+                            "completed": false
+                        },
+                        {
+                            "id": "exerciseSpineStretch",
+                            "name": "spineStretch",
+                            "reps": 20,
+                            "time": -1,
+                            "completed": false
+                        },
+                        {
+                            "id": "exerciseLyingKneeHug",
+                            "name": "lyingKneeHug",
+                            "reps": 20,
+                            "time": -1,
+                            "completed": false
+                        },
+                        {
+                            "id": "exerciseWoodpecker",
+                            "name": "woodpecker",
+                            "reps": 20,
+                            "time": -1,
+                            "completed": false
+                        },
+                        {
+                            "id": "exerciseRollingOver",
+                            "name": "rollingOver",
+                            "reps": 20,
+                            "time": -1,
+                            "completed": false
+                        }
+                    ]
+                },
+                {
+                    "id": "programArmsAndBackWeek6Day5",
+                    "difficulty": 2,
+                    "exercises": [
+                        {
+                            "id": "exerciseRunnersCrunch",
+                            "name": "runnersCrunch",
+                            "reps": 20,
+                            "time": -1,
+                            "completed": false
+                        },
+                        {
+                            "id": "exerciseTheFounder",
+                            "name": "theFounder",
+                            "reps": 20,
+                            "time": -1,
+                            "completed": false
+                        },
+                        {
+                            "id": "exerciseKneelingObliqueCrunch",
+                            "name": "kneelingObliqueCrunch",
+                            "reps": 20,
+                            "time": -1,
+                            "completed": false
+                        },
+                        {
+                            "id": "exerciseMcGillCurlUp",
+                            "name": "mcGillCurlUp",
+                            "reps": 20,
+                            "time": -1,
+                            "completed": false
+                        },
+                        {
+                            "id": "exerciseBirdDog",
+                            "name": "birdDog",
+                            "reps": 20,
+                            "time": -1,
+                            "completed": false
+                        }
+                    ]
+                },
+                {
+                    "id": "programArmsAndBackWeek6Day6",
+                    "difficulty": 2,
+                    "exercises": [
+                        {
+                            "id": "exerciseCrabWalk",
+                            "name": "crabWalk",
+                            "reps": 20,
+                            "time": -1,
+                            "completed": false
+                        },
+                        {
+                            "id": "exerciseSpineStretch",
+                            "name": "spineStretch",
+                            "reps": 20,
+                            "time": -1,
+                            "completed": false
+                        },
+                        {
+                            "id": "exerciseLyingKneeHug",
+                            "name": "lyingKneeHug",
+                            "reps": 20,
+                            "time": -1,
+                            "completed": false
+                        },
+                        {
+                            "id": "exerciseWoodpecker",
+                            "name": "woodpecker",
+                            "reps": 20,
+                            "time": -1,
+                            "completed": false
+                        },
+                        {
+                            "id": "exerciseRollingOver",
+                            "name": "rollingOver",
+                            "reps": 20,
+                            "time": -1,
+                            "completed": false
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "id": "programArmsAndBackWeek7",
+            "days": [
+                {
+                    "id": "programArmsAndBackWeek7Day0",
+                    "difficulty": 2,
+                    "exercises": [
+                        {
+                            "id": "exerciseRunnersCrunch",
+                            "name": "runnersCrunch",
+                            "reps": 28,
+                            "time": -1,
+                            "completed": false
+                        },
+                        {
+                            "id": "exerciseTheFounder",
+                            "name": "theFounder",
+                            "reps": 28,
+                            "time": -1,
+                            "completed": false
+                        },
+                        {
+                            "id": "exerciseKneelingObliqueCrunch",
+                            "name": "kneelingObliqueCrunch",
+                            "reps": 28,
+                            "time": -1,
+                            "completed": false
+                        },
+                        {
+                            "id": "exerciseMcGillCurlUp",
+                            "name": "mcGillCurlUp",
+                            "reps": 28,
+                            "time": -1,
+                            "completed": false
+                        },
+                        {
+                            "id": "exerciseBirdDog",
+                            "name": "birdDog",
+                            "reps": 28,
+                            "time": -1,
+                            "completed": false
+                        }
+                    ]
+                },
+                {
+                    "id": "programArmsAndBackWeek7Day1",
+                    "difficulty": 2,
+                    "exercises": [
+                        {
+                            "id": "exerciseCrabWalk",
+                            "name": "crabWalk",
+                            "reps": 28,
+                            "time": -1,
+                            "completed": false
+                        },
+                        {
+                            "id": "exerciseSpineStretch",
+                            "name": "spineStretch",
+                            "reps": 28,
+                            "time": -1,
+                            "completed": false
+                        },
+                        {
+                            "id": "exerciseLyingKneeHug",
+                            "name": "lyingKneeHug",
+                            "reps": 28,
+                            "time": -1,
+                            "completed": false
+                        },
+                        {
+                            "id": "exerciseWoodpecker",
+                            "name": "woodpecker",
+                            "reps": 28,
+                            "time": -1,
+                            "completed": false
+                        },
+                        {
+                            "id": "exerciseRollingOver",
+                            "name": "rollingOver",
+                            "reps": 28,
+                            "time": -1,
+                            "completed": false
+                        }
+                    ]
+                },
+                {
+                    "id": "programArmsAndBackWeek7Day2",
+                    "difficulty": 2,
+                    "exercises": [
+                        {
+                            "id": "exerciseRunnersCrunch",
+                            "name": "runnersCrunch",
+                            "reps": 28,
+                            "time": -1,
+                            "completed": false
+                        },
+                        {
+                            "id": "exerciseTheFounder",
+                            "name": "theFounder",
+                            "reps": 28,
+                            "time": -1,
+                            "completed": false
+                        },
+                        {
+                            "id": "exerciseKneelingObliqueCrunch",
+                            "name": "kneelingObliqueCrunch",
+                            "reps": 28,
+                            "time": -1,
+                            "completed": false
+                        },
+                        {
+                            "id": "exerciseMcGillCurlUp",
+                            "name": "mcGillCurlUp",
+                            "reps": 28,
+                            "time": -1,
+                            "completed": false
+                        },
+                        {
+                            "id": "exerciseBirdDog",
+                            "name": "birdDog",
+                            "reps": 28,
+                            "time": -1,
+                            "completed": false
+                        }
+                    ]
+                },
+                {
+                    "id": "programArmsAndBackWeek7Day3",
+                    "difficulty": 2,
+                    "exercises": [
+                        {
+                            "id": "exerciseCrabWalk",
+                            "name": "crabWalk",
+                            "reps": 28,
+                            "time": -1,
+                            "completed": false
+                        },
+                        {
+                            "id": "exerciseSpineStretch",
+                            "name": "spineStretch",
+                            "reps": 28,
+                            "time": -1,
+                            "completed": false
+                        },
+                        {
+                            "id": "exerciseLyingKneeHug",
+                            "name": "lyingKneeHug",
+                            "reps": 28,
+                            "time": -1,
+                            "completed": false
+                        },
+                        {
+                            "id": "exerciseWoodpecker",
+                            "name": "woodpecker",
+                            "reps": 28,
+                            "time": -1,
+                            "completed": false
+                        },
+                        {
+                            "id": "exerciseRollingOver",
+                            "name": "rollingOver",
+                            "reps": 28,
+                            "time": -1,
+                            "completed": false
+                        }
+                    ]
+                },
+                {
+                    "id": "programArmsAndBackWeek7Day4",
+                    "difficulty": 2,
+                    "exercises": [
+                        {
+                            "id": "exerciseRunnersCrunch",
+                            "name": "runnersCrunch",
+                            "reps": 28,
+                            "time": -1,
+                            "completed": false
+                        },
+                        {
+                            "id": "exerciseTheFounder",
+                            "name": "theFounder",
+                            "reps": 28,
+                            "time": -1,
+                            "completed": false
+                        },
+                        {
+                            "id": "exerciseKneelingObliqueCrunch",
+                            "name": "kneelingObliqueCrunch",
+                            "reps": 28,
+                            "time": -1,
+                            "completed": false
+                        },
+                        {
+                            "id": "exerciseMcGillCurlUp",
+                            "name": "mcGillCurlUp",
+                            "reps": 28,
+                            "time": -1,
+                            "completed": false
+                        },
+                        {
+                            "id": "exerciseBirdDog",
+                            "name": "birdDog",
+                            "reps": 28,
+                            "time": -1,
+                            "completed": false
+                        }
+                    ]
+                },
+                {
+                    "id": "programArmsAndBackWeek7Day5",
+                    "difficulty": 2,
+                    "exercises": [
+                        {
+                            "id": "exerciseCrabWalk",
+                            "name": "crabWalk",
+                            "reps": 28,
+                            "time": -1,
+                            "completed": false
+                        },
+                        {
+                            "id": "exerciseSpineStretch",
+                            "name": "spineStretch",
+                            "reps": 28,
+                            "time": -1,
+                            "completed": false
+                        },
+                        {
+                            "id": "exerciseLyingKneeHug",
+                            "name": "lyingKneeHug",
+                            "reps": 28,
+                            "time": -1,
+                            "completed": false
+                        },
+                        {
+                            "id": "exerciseWoodpecker",
+                            "name": "woodpecker",
+                            "reps": 28,
+                            "time": -1,
+                            "completed": false
+                        },
+                        {
+                            "id": "exerciseRollingOver",
+                            "name": "rollingOver",
+                            "reps": 28,
+                            "time": -1,
+                            "completed": false
+                        }
+                    ]
+                },
+                {
+                    "id": "programArmsAndBackWeek7Day6",
+                    "difficulty": 2,
+                    "exercises": [
+                        {
+                            "id": "exerciseRunnersCrunch",
+                            "name": "runnersCrunch",
+                            "reps": 28,
+                            "time": -1,
+                            "completed": false
+                        },
+                        {
+                            "id": "exerciseTheFounder",
+                            "name": "theFounder",
+                            "reps": 28,
+                            "time": -1,
+                            "completed": false
+                        },
+                        {
+                            "id": "exerciseKneelingObliqueCrunch",
+                            "name": "kneelingObliqueCrunch",
+                            "reps": 28,
+                            "time": -1,
+                            "completed": false
+                        },
+                        {
+                            "id": "exerciseMcGillCurlUp",
+                            "name": "mcGillCurlUp",
+                            "reps": 28,
+                            "time": -1,
+                            "completed": false
+                        },
+                        {
+                            "id": "exerciseBirdDog",
+                            "name": "birdDog",
+                            "reps": 28,
+                            "time": -1,
+                            "completed": false
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "id": "programArmsAndBackWeek8",
+            "days": [
+                {
+                    "id": "programArmsAndBackWeek8Day0",
+                    "difficulty": 2,
+                    "exercises": [
+                        {
+                            "id": "exerciseCrabWalk",
+                            "name": "crabWalk",
+                            "reps": 28,
+                            "time": -1,
+                            "completed": false
+                        },
+                        {
+                            "id": "exerciseSpineStretch",
+                            "name": "spineStretch",
+                            "reps": 28,
+                            "time": -1,
+                            "completed": false
+                        },
+                        {
+                            "id": "exerciseLyingKneeHug",
+                            "name": "lyingKneeHug",
+                            "reps": 28,
+                            "time": -1,
+                            "completed": false
+                        },
+                        {
+                            "id": "exerciseWoodpecker",
+                            "name": "woodpecker",
+                            "reps": 28,
+                            "time": -1,
+                            "completed": false
+                        },
+                        {
+                            "id": "exerciseRollingOver",
+                            "name": "rollingOver",
+                            "reps": 28,
+                            "time": -1,
+                            "completed": false
+                        }
+                    ]
+                },
+                {
+                    "id": "programArmsAndBackWeek8Day1",
+                    "difficulty": 2,
+                    "exercises": [
+                        {
+                            "id": "exerciseRunnersCrunch",
+                            "name": "runnersCrunch",
+                            "reps": 32,
+                            "time": -1,
+                            "completed": false
+                        },
+                        {
+                            "id": "exerciseTheFounder",
+                            "name": "theFounder",
+                            "reps": 32,
+                            "time": -1,
+                            "completed": false
+                        },
+                        {
+                            "id": "exerciseKneelingObliqueCrunch",
+                            "name": "kneelingObliqueCrunch",
+                            "reps": 32,
+                            "time": -1,
+                            "completed": false
+                        },
+                        {
+                            "id": "exerciseMcGillCurlUp",
+                            "name": "mcGillCurlUp",
+                            "reps": 32,
+                            "time": -1,
+                            "completed": false
+                        },
+                        {
+                            "id": "exerciseBirdDog",
+                            "name": "birdDog",
+                            "reps": 32,
+                            "time": -1,
+                            "completed": false
+                        }
+                    ]
+                },
+                {
+                    "id": "programArmsAndBackWeek8Day2",
+                    "difficulty": 2,
+                    "exercises": [
+                        {
+                            "id": "exerciseCrabWalk",
+                            "name": "crabWalk",
+                            "reps": 32,
+                            "time": -1,
+                            "completed": false
+                        },
+                        {
+                            "id": "exerciseSpineStretch",
+                            "name": "spineStretch",
+                            "reps": 32,
+                            "time": -1,
+                            "completed": false
+                        },
+                        {
+                            "id": "exerciseLyingKneeHug",
+                            "name": "lyingKneeHug",
+                            "reps": 32,
+                            "time": -1,
+                            "completed": false
+                        },
+                        {
+                            "id": "exerciseWoodpecker",
+                            "name": "woodpecker",
+                            "reps": 32,
+                            "time": -1,
+                            "completed": false
+                        },
+                        {
+                            "id": "exerciseRollingOver",
+                            "name": "rollingOver",
+                            "reps": 32,
+                            "time": -1,
+                            "completed": false
+                        }
+                    ]
+                },
+                {
+                    "id": "programArmsAndBackWeek8Day3",
+                    "difficulty": 2,
+                    "exercises": [
+                        {
+                            "id": "exerciseRunnersCrunch",
+                            "name": "runnersCrunch",
+                            "reps": 32,
+                            "time": -1,
+                            "completed": false
+                        },
+                        {
+                            "id": "exerciseTheFounder",
+                            "name": "theFounder",
+                            "reps": 32,
+                            "time": -1,
+                            "completed": false
+                        },
+                        {
+                            "id": "exerciseKneelingObliqueCrunch",
+                            "name": "kneelingObliqueCrunch",
+                            "reps": 32,
+                            "time": -1,
+                            "completed": false
+                        },
+                        {
+                            "id": "exerciseMcGillCurlUp",
+                            "name": "mcGillCurlUp",
+                            "reps": 32,
+                            "time": -1,
+                            "completed": false
+                        },
+                        {
+                            "id": "exerciseBirdDog",
+                            "name": "birdDog",
+                            "reps": 32,
+                            "time": -1,
+                            "completed": false
+                        }
+                    ]
+                },
+                {
+                    "id": "programArmsAndBackWeek8Day4",
+                    "difficulty": 2,
+                    "exercises": [
+                        {
+                            "id": "exerciseCrabWalk",
+                            "name": "crabWalk",
+                            "reps": 32,
+                            "time": -1,
+                            "completed": false
+                        },
+                        {
+                            "id": "exerciseSpineStretch",
+                            "name": "spineStretch",
+                            "reps": 32,
+                            "time": -1,
+                            "completed": false
+                        },
+                        {
+                            "id": "exerciseLyingKneeHug",
+                            "name": "lyingKneeHug",
+                            "reps": 32,
+                            "time": -1,
+                            "completed": false
+                        },
+                        {
+                            "id": "exerciseWoodpecker",
+                            "name": "woodpecker",
+                            "reps": 32,
+                            "time": -1,
+                            "completed": false
+                        },
+                        {
+                            "id": "exerciseRollingOver",
+                            "name": "rollingOver",
+                            "reps": 32,
+                            "time": -1,
+                            "completed": false
+                        }
+                    ]
+                },
+                {
+                    "id": "programArmsAndBackWeek8Day5",
+                    "difficulty": 2,
+                    "exercises": [
+                        {
+                            "id": "exerciseRunnersCrunch",
+                            "name": "runnersCrunch",
+                            "reps": 40,
+                            "time": -1,
+                            "completed": false
+                        },
+                        {
+                            "id": "exerciseTheFounder",
+                            "name": "theFounder",
+                            "reps": 40,
+                            "time": -1,
+                            "completed": false
+                        },
+                        {
+                            "id": "exerciseKneelingObliqueCrunch",
+                            "name": "kneelingObliqueCrunch",
+                            "reps": 40,
+                            "time": -1,
+                            "completed": false
+                        },
+                        {
+                            "id": "exerciseMcGillCurlUp",
+                            "name": "mcGillCurlUp",
+                            "reps": 40,
+                            "time": -1,
+                            "completed": false
+                        },
+                        {
+                            "id": "exerciseBirdDog",
+                            "name": "birdDog",
+                            "reps": 40,
+                            "time": -1,
+                            "completed": false
+                        }
+                    ]
+                },
+                {
+                    "id": "programArmsAndBackWeek8Day6",
+                    "difficulty": 2,
+                    "exercises": [
+                        {
+                            "id": "exerciseCrabWalk",
+                            "name": "crabWalk",
+                            "reps": 40,
+                            "time": -1,
+                            "completed": false
+                        },
+                        {
+                            "id": "exerciseSpineStretch",
+                            "name": "spineStretch",
+                            "reps": 40,
+                            "time": -1,
+                            "completed": false
+                        },
+                        {
+                            "id": "exerciseLyingKneeHug",
+                            "name": "lyingKneeHug",
+                            "reps": 40,
+                            "time": -1,
+                            "completed": false
+                        },
+                        {
+                            "id": "exerciseWoodpecker",
+                            "name": "woodpecker",
+                            "reps": 40,
+                            "time": -1,
+                            "completed": false
+                        },
+                        {
+                            "id": "exerciseRollingOver",
+                            "name": "rollingOver",
+                            "reps": 40,
+                            "time": -1,
+                            "completed": false
+                        }
+                    ]
+                }
+            ]
+        }
+    ]
+}
