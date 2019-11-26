@@ -14,10 +14,11 @@ const SLIDER_ITEM_WIDTH_COEFF = 0.8;
 class TrainingProgramScreen extends React.Component {
     constructor(props) {
         super(props);
+        const { program } = this.props.navigation.state.params;
         this.state = {
             screenWidth: Dimensions.get('window').width
         };
-        this.slideIndex = 0;
+        this.slideIndex = program.progress;
         this._renderItem = this._renderItem.bind(this);
         this._startWorkout = this._startWorkout.bind(this);
         this._showExerciseList = this._showExerciseList.bind(this);
@@ -145,6 +146,7 @@ class TrainingProgramScreen extends React.Component {
                             <Carousel
                                 removeClippedSubviews={false}
                                 data={program.workouts}
+                                firstItem={program.progress}
                                 renderItem={this._renderItem}
                                 sliderWidth={this.state.screenWidth}
                                 itemWidth={this.state.screenWidth * SLIDER_ITEM_WIDTH_COEFF}

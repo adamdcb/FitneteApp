@@ -1,43 +1,6 @@
-import * as legsProgram from '../utils/data/legs.json';
-import * as abdominalsProgram from '../utils/data/abdominals.json';
-import * as armsAndBackProgram from '../utils/data/armsAndBack.json';
-import * as armsAndChestProgram from '../utils/data/armsAndChest.json';
 import I18n from '../utils/i18n/I18n';
 import Utils from '../utils/utils/Utils.js';
-import UserDataSource from '../data/UserDataSource';
-
-const PROGRAM_DURATION = {
-    0: 49,
-    1: 42,
-    2: 35,
-    3: 28
-}; // fitness level to no. of days mapping
-
-const PROGRAM_SLICE = {
-    0: {
-        start: 0,
-        end: 7
-    },
-    1: {
-        start: 1,
-        end: 6
-    },
-    2: {
-        start: 3,
-        end: 8
-    },
-    3: {
-        start: 4,
-        end: 8
-    }
-}; // fitness level to week start/end index mapping
-
-const PROGRAM = {
-    legs: legsProgram,
-    abdominals: abdominalsProgram,
-    arms_and_back: armsAndBackProgram,
-    arms_and_chest: armsAndChestProgram
-};
+import TrainingDataSource from '../data/TrainingDataSource';
 
 const DIFFICULTY = {
     0: 'easy',
@@ -59,12 +22,12 @@ const PROGRAM_BACKGROUND = {
         locations: [0, 0.34, 0.78, 1],
         angle: 180
     },
-    arms_and_back: {
+    armsAndBack: {
         colors: ['#000000', '#763F33', '#EDC200', '#CEA953'],
         locations: [0, 0.34, 0.78, 1],
         angle: 180
     },
-    arms_and_chest: {
+    armsAndChest: {
         colors: ['#000000', '#620000', '#FF7526', '#FF7526'],
         locations: [0, 0.34, 0.78, 1],
         angle: 180
@@ -79,29 +42,27 @@ const PROGRAM_BACKGROUND = {
 export default class TrainingPresenter {
     constructor(view) {
         this.view = view;
-        this.dataSource = new UserDataSource();
+        this.dataSource = new TrainingDataSource();
     }
 
     async loadData() {
-        const user = await this.dataSource.getUser();
-        const duration = PROGRAM_DURATION[user.fitnessLevel];
-        const progress = 0; // TODO
-        const uiData = user.areasOfFocus.map((area) => {
-            const program = PROGRAM[area];
-            const programSlice = PROGRAM_SLICE[user.fitnessLevel];
-            const programBackground = PROGRAM_BACKGROUND[area];
+        const programs = await this.dataSource.getPrograms();
+        const uiData = programs.map((program) => {
+            let duration = program.weeks.length * 7;
+            const programBackground = PROGRAM_BACKGROUND[program.type];
             return {
+                id: program.id,
                 title: I18n.t(`trainingPrograms.${program.type}Name`),
                 description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua', // TODO
                 image: 'for_free',
                 durationTitle: I18n.t('training.duration'),
                 durationText: `${duration} ${I18n.t('training.days')}`,
+                progress: program.progress,
                 progressTitle: I18n.t('training.progress'),
-                progressText: `${progress} / ${duration}`, // TODO
-                newText: progress === 0 ? I18n.t('training.new').toUpperCase() : '',
+                progressText: `${program.progress} / ${duration}`,
+                newText: program.progress === 0 ? I18n.t('training.new').toUpperCase() : '',
                 difficultyText: I18n.t(`workoutDifficulty.easy`).toUpperCase(), // TODO
                 workouts: program.weeks
-                    .slice(programSlice.start, programSlice.end)
                     .reduce((acc, week, wIndex) => {
                         return acc.concat(week.days.map((workout, dIndex) => ({
                             title: `${I18n.t('training.Day')} ${wIndex * 7 + dIndex + 1}`,
@@ -118,6 +79,7 @@ export default class TrainingPresenter {
                             exercises: workout.exercises.map((exercise) => {
                                 const exerciseDuration = this._getExerciseDuration(exercise);
                                 return {
+                                    id: exercise.id,
                                     title: I18n.t(`exercises.${exercise.name}Name`),
                                     description: 'Pellentesque ornare sem lacinia quam venenatis vestibulum', // TODO
                                     duration: exerciseDuration,
