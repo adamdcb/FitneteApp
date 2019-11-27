@@ -133,7 +133,7 @@ export default {
     },
     training: {
         new: 'new',
-        
+
         openProgram: 'Open program',
         days: 'days',
         day: 'day',
@@ -272,7 +272,7 @@ export default {
         commandosName: 'Commandos',
         doubleLegLiftName: 'Double Leg Lift',
         doubleLegReachName: 'Double Leg Reach',
-        armPlankwithKneesName: 'Arm Plank with Knees',
+        armPlankWithKneesName: 'Arm Plank with Knees',
         boatposeName: 'Boat pose',
         jackKnivesName: 'Jack Knives',
 
@@ -288,7 +288,7 @@ export default {
         lateralRaisesName: 'Lateral Raises',
         tricepExtensionName: 'Tricep Extension',
         dumbellSwingName: 'Dumbell Swing',
-        squatandCurlName: 'Squat and Curl',
+        squatAndCurlName: 'Squat and Curl',
         tricepKickbackName: 'Tricep Kickback',
         plankHipDipsName: 'Plank Hip Dips',
 
