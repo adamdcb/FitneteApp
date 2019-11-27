@@ -4,18 +4,19 @@ import LinearGradient from 'react-native-linear-gradient';
 import FastImage from 'react-native-fast-image';
 
 import Container from '../../utils/components/Container';
-import DemoWebP from '../../animations/training/demo.webp';
 import ButtonText from '../../utils/components/ButtonText';
 import Button from '../../utils/components/Button';
 import I18n from '../../utils/i18n/I18n';
 import CountdownProgressBar from '../../utils/components/CountdownProgressBar';
 import WorkoutPresenter from './WorkoutPresenter';
 import { push, Route } from '../../utils/navigation/NavigationService';
+import AnimationUtils from '../../utils/utils/AnimationUtils';
 
 class WorkoutScreen extends React.Component {
     constructor(props) {
         super(props);
         this.state = {
+            animationName: '',
             countdownText: '',
             countdownPercentage: 100,
             runningText: '',
@@ -74,7 +75,8 @@ class WorkoutScreen extends React.Component {
     }
 
     render() {
-        const { countdownText,
+        const { animationName,
+            countdownText,
             countdownPercentage,
             step,
             totalSteps,
@@ -82,6 +84,7 @@ class WorkoutScreen extends React.Component {
             description,
             nextExerciseText } = this.state;
         const { workout: { background } } = this.props.navigation.state.params;
+        const animation = AnimationUtils.getAnimation(animationName);
         return (
             <Container
                 colors={background.colors}
@@ -104,7 +107,7 @@ class WorkoutScreen extends React.Component {
                     <View style={{ flex: 1 }}>
                         <FastImage
                             style={{ height: '100%', width: '100%' }}
-                            source={DemoWebP}
+                            source={animation}
                             resizeMode={FastImage.resizeMode.contain}
                         />
                     </View>

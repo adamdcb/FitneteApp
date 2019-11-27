@@ -18,6 +18,7 @@ export default class WorkoutPresenter {
         const exercise = this.workout.exercises[this.exerciseIndex];
         const nextExercise = this.workout.exercises[this.exerciseIndex + 1];
         this.view.setData({
+            animationName: exercise.animationName,
             step: this.exerciseIndex + 1,
             totalSteps: this.workout.exercises.length,
             title: exercise.title,

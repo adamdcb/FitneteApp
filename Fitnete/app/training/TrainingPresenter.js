@@ -1,6 +1,7 @@
 import I18n from '../utils/i18n/I18n';
 import Utils from '../utils/utils/Utils.js';
 import TrainingDataSource from '../data/TrainingDataSource';
+import UserDataSource from '../data/UserDataSource';
 
 const DIFFICULTY = {
     0: 'easy',
@@ -42,11 +43,13 @@ const PROGRAM_BACKGROUND = {
 export default class TrainingPresenter {
     constructor(view) {
         this.view = view;
-        this.dataSource = new TrainingDataSource();
+        this.trainingDataSource = new TrainingDataSource();
+        this.userDataSource = new UserDataSource();
     }
 
     async loadData() {
-        const programs = await this.dataSource.getPrograms();
+        const programs = await this.trainingDataSource.getPrograms();
+        const user = await this.userDataSource.getUser();
         const uiData = programs.map((program) => {
             let duration = program.weeks.length * 7;
             const programBackground = PROGRAM_BACKGROUND[program.type];
@@ -84,7 +87,8 @@ export default class TrainingPresenter {
                                     description: 'Pellentesque ornare sem lacinia quam venenatis vestibulum', // TODO
                                     duration: exerciseDuration,
                                     durationText: Utils.secondsToPlainMMSS(exerciseDuration),
-                                    restTime: DEFAULT_REST_TIME
+                                    restTime: DEFAULT_REST_TIME,
+                                    animationName: `${exercise.name}-${user.gender}`
                                 }
                             })
                         })))
