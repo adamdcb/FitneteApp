@@ -273,8 +273,8 @@ export default {
         doubleLegLiftName: 'Double Leg Lift',
         doubleLegReachName: 'Double Leg Reach',
         armPlankWithKneesName: 'Arm Plank with Knees',
-        boatposeName: 'Boat pose',
-        jackKnivesName: 'Jack Knives',
+        boatPoseName: 'Boat pose',
+        reverseJackKnivesName: 'Reverse Jack Knives',
 
         cobraPushUpName: 'Cobra Push Up',
         oneArmPushUpRightArmName: 'One Arm Push Up - Right Arm',
