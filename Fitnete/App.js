@@ -17,12 +17,14 @@ class App extends React.PureComponent {
     this.presenter = new AppPresenter(this);
   }
 
-  componentDidMount() {
+  async componentDidMount() {
+    await this.presenter.openDatabse();
     this.presenter.loadInitialStoryboard();
   }
 
   componentWillUnmount() {
     this.presenter.unmountView();
+    this.presenter.closeDatabase();
   }
 
   setInitialStoryboard(storyboardName) {

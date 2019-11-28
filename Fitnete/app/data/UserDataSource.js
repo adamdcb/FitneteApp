@@ -5,7 +5,7 @@ export default class UserDataSource {
 
     getUser() {
         return AsyncWrapper.makeAsync(async (resolve, reject) => {
-            const db = await this._getDatabase();
+            const db = FNDatabase.database();
             const user = db.objectForPrimaryKey('User', 1);
             const userObj = user ? {
                 id: user.id,
@@ -24,7 +24,7 @@ export default class UserDataSource {
 
     setUser(userData) {
         return AsyncWrapper.makeAsync(async (resolve, reject) => {
-            const db = await this._getDatabase();
+            const db = FNDatabase.database();
             try {
                 db.write(() => {
                     db.create('User', {
@@ -38,12 +38,5 @@ export default class UserDataSource {
                 resolve(false);
             }
         });
-    }
-
-    async _getDatabase() {
-        if (!this.database) {
-            this.database = await FNDatabase.open();
-        }
-        return this.database;
     }
 }

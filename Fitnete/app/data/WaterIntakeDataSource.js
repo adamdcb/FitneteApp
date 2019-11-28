@@ -5,7 +5,7 @@ export default class WaterIntakeDataSource {
 
     getWaterIntake(start, end) {
         return AsyncWrapper.makeAsync(async (resolve, reject) => {
-            const db = await this._getDatabase();
+            const db = FNDatabase.database();
             const waterIntakes = db.objects('WaterIntake').filtered('date >= $0 AND date <= $1', start, end);
             resolve(waterIntakes.reduce((prev, current) => prev = prev + current.amount, 0));
         });
@@ -13,7 +13,7 @@ export default class WaterIntakeDataSource {
 
     saveWaterIntake(amount) {
         return AsyncWrapper.makeAsync(async (resolve, reject) => {
-            const db = await this._getDatabase();
+            const db = FNDatabase.database();
             try {
                 db.write(() => {
                     db.create('WaterIntake', {
@@ -31,7 +31,7 @@ export default class WaterIntakeDataSource {
 
     getNumberOfAchievedGoals() {
         return AsyncWrapper.makeAsync(async (resolve, reject) => {
-            const db = await this._getDatabase();
+            const db = FNDatabase.database();
             const count = db.objects('WaterIntakeGoal').length;
             resolve(count);
         });
@@ -39,7 +39,7 @@ export default class WaterIntakeDataSource {
 
     isGoalAchieved(date) {
         return AsyncWrapper.makeAsync(async (resolve, reject) => {
-            const db = await this._getDatabase();
+            const db = FNDatabase.database();
             const goal = db.objects('WaterIntakeGoal').filtered('date = $0', date)[0];
             resolve(goal && goal.achieved);
         });
@@ -47,7 +47,7 @@ export default class WaterIntakeDataSource {
 
     saveWaterIntakeGoal(date) {
         return AsyncWrapper.makeAsync(async (resolve, reject) => {
-            const db = await this._getDatabase();
+            const db = FNDatabase.database();
             try {
                 db.write(() => {
                     db.create('WaterIntakeGoal', {
@@ -61,12 +61,5 @@ export default class WaterIntakeDataSource {
                 resolve(false);
             }
         });
-    }
-
-    async _getDatabase() {
-        if (!this.database) {
-            this.database = await FNDatabase.open();
-        }
-        return this.database;
     }
 }

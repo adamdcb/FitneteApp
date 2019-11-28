@@ -5,7 +5,7 @@ export default class TrainingDataSource {
 
     getPrograms() {
         return AsyncWrapper.makeAsync(async (resolve, reject) => {
-            const db = await this._getDatabase();
+            const db = FNDatabase.database();
             const objects = db.objects('TrainingProgram');
             const programs = objects.map((program) => ({
                 id: program.id,
@@ -32,7 +32,7 @@ export default class TrainingDataSource {
 
     savePrograms(programs) {
         return AsyncWrapper.makeAsync(async (resolve, reject) => {
-            const db = await this._getDatabase();
+            const db = FNDatabase.database();
             try {
                 db.write(() => {
                     programs.forEach((program) => {
@@ -49,7 +49,7 @@ export default class TrainingDataSource {
 
     deleteAllPrograms() {
         return AsyncWrapper.makeAsync(async (resolve, reject) => {
-            const db = await this._getDatabase();
+            const db = FNDatabase.database();
             try {
                 const allPrograms = db.objects('TrainingProgram');
                 const allWeeks = db.objects('TrainingWeek');
@@ -71,7 +71,7 @@ export default class TrainingDataSource {
 
     setExerciseStatus(exerciseId, completed) {
         return AsyncWrapper.makeAsync(async (resolve, reject) => {
-            const db = await this._getDatabase();
+            const db = FNDatabase.database();
             try {
                 const exercise = db.objectForPrimaryKey('TrainingExercise', exerciseId);
                 if (exercise) {
@@ -91,12 +91,5 @@ export default class TrainingDataSource {
         const completedDays = db.objects('TrainingDay')
             .filtered(`weeks.programs.id = "${programId}" AND (ALL exercises.completed = true)`);
         return completedDays.length;
-    }
-
-    async _getDatabase() {
-        if (!this.database) {
-            this.database = await FNDatabase.open();
-        }
-        return this.database;
     }
 }

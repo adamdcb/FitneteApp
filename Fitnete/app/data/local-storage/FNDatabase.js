@@ -19,12 +19,22 @@ const DB_SCHEMA = [
 let database = null;
 
 export default {
+    database() {
+        return database;
+    },
+
     async open() {
         if (!database) {
             database = await this._openDB();
             console.log('Realm path: ', database.path);
         }
-        return database;
+        return true;
+    },
+
+    close() {
+        if (database) {
+            database.close();
+        }
     },
 
     async _openDB() {
