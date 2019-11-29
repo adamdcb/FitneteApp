@@ -38,6 +38,7 @@ import DemoWorkoutIntroScreen from '../../training/demo/DemoWorkoutIntroScreen';
 import DemoWorkoutScreen from '../../training/demo/DemoWorkoutScreen';
 import DemoWorkoutDoneScreen from '../../training/demo/DemoWorkoutDoneScreen';
 import TrainingProgramScreen from '../../training/program/TrainingProgramScreen';
+import ExerciseListScreen from '../../training/exercise-list/ExerciseListScreen';
 import CountdownScreen from '../../training/countdown/CountdownScreen';
 import WorkoutScreen from '../../training/workout/WorkoutScreen';
 import PauseScreen from '../../training/pause/PauseScreen';
@@ -166,10 +167,16 @@ const WorkoutDemoStack = createStackNavigator(
 
 const TrainingProgramStack = createStackNavigator(
     {
-        TrainingProgram: TrainingProgramScreen
+        TrainingProgram: TrainingProgramScreen,
+        ExerciseList: ExerciseListScreen
     },
     {
-        headerMode: 'none'
+        defaultNavigationOptions: () => ({
+            headerBackImage: <HeaderBackButton />,
+            headerStyle: HEADER_STYLE,
+            headerBackTitle: null,
+            headerTitleStyle: HEADER_TITLE_STYLE
+        })
     }
 );
 

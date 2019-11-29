@@ -31,7 +31,11 @@ class TrainingProgramScreen extends React.Component {
     }
 
     _showExerciseList() {
-
+        const { program } = this.props.navigation.state.params;
+        navigate(Route.ExerciseList, {
+            workout: program.workouts[this.slideIndex],
+            programName: program.title
+        });
     }
 
     _renderItem({ item, index }) {
@@ -49,11 +53,13 @@ class TrainingProgramScreen extends React.Component {
                 <Text style={styles.dayProgramDescription} numberOfLines={3}>{item.description}</Text>
                 <View style={styles.dayProgramOuterContainer}>
                     <View style={styles.dayProgramContainer}>
-                        <FNIcon
-                            name='clock'
-                            size={18}
-                            color="#008FA6"
-                        />
+                        <View style={styles.dayStatusImage}>
+                            <FNIcon
+                                name='clock'
+                                size={18}
+                                color="#008FA6"
+                            />
+                        </View>
                         <Text style={styles.dayStatusTitle}>{item.durationTitle}</Text>
                         <Text style={styles.dayStatusDetails}>{item.durationText}</Text>
                     </View>
@@ -295,7 +301,8 @@ const styles = StyleSheet.create({
 });
 
 TrainingProgramScreen.navigationOptions = () => ({
-
+    headerTransparent: true,
+    header: null
 });
 
 export default TrainingProgramScreen;
