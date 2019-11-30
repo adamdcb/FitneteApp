@@ -18,7 +18,7 @@ export default class AppPresenter {
 
     async loadInitialStoryboard() {
         try {
-            this.view.setInitialStoryboard(InitialStoryboard.MainApp);
+            this.view.setInitialStoryboard(InitialStoryboard.AppIntro);
             // TODO: implement logic here!
         } catch (e) {
             this.view.setInitialStoryboard(InitialStoryboard.AppIntro);

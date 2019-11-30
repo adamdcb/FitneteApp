@@ -169,13 +169,13 @@ const styles = StyleSheet.create({
         marginVertical: 16,
         fontFamily: 'Poppins-SemiBold',
         fontSize: 15,
-        color: '#3E3750',
+        color: '#FFFFFF',
         textAlign: 'center'
     },
     timeText: {
         fontFamily: 'Poppins-SemiBold',
         fontSize: 48,
-        color: '#3E3750',
+        color: '#FFFFFF',
         textAlign: 'center'
     },
     bottomContainer: {
