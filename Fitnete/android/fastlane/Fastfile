@@ -191,7 +191,7 @@ platform :android do
   	git_commit(
       path: ".",
       message: "Release Android v#{ENV["VERSION_NAME"]}(#{ENV["BUILD_NUMBER"]})",
-      allow_nothing_to_commit: true
+      # allow_nothing_to_commit: true
     )
   	# Add a git tag for this build
     add_git_tag(
