@@ -59,7 +59,7 @@ platform :android do
     end
     
     # Pull from remote
-    sh("git", "pull")
+    sh("git pull")
     # Run npm install
     npm_install()
 
@@ -118,7 +118,7 @@ platform :android do
 
   def npm_install()
     Dir.chdir("..") do
-      sh("npm", "install")
+      sh("npm install")
     end
   end
 
