@@ -1,24 +1,32 @@
-
 import I18n from '../../utils/i18n/I18n';
 import Utils from '../../utils/utils/Utils.js';
 import CountdownTimer from '../../utils/utils/CountdownTimer';
 import TrainingDataSource from '../../data/TrainingDataSource';
+import UserDataSource from '../../data/UserDataSource';
+import AnimationUtils from '../../utils/utils/AnimationUtils';
+import AnimationWorker from '../../data/remote/AnimationWorker';
 
 export default class WorkoutPresenter {
     constructor(view, workout) {
         this.view = view;
         this.workout = workout;
-        this.dataSource = new TrainingDataSource();
+        this.trainingDataSource = new TrainingDataSource();
+        this.userDataSource = new UserDataSource();
+        this.user = null;
         this.exerciseIndex = 0;
         this._onTick = this._onTick.bind(this);
         this._onComplete = this._onComplete.bind(this);
     }
 
-    startWorkout() {
+    async loadWorkout() {
+        if (!this.user) {
+            this.user = await this.userDataSource.getUser();
+        }
         const exercise = this.workout.exercises[this.exerciseIndex];
         const nextExercise = this.workout.exercises[this.exerciseIndex + 1];
         this.view.setData({
-            animationName: exercise.animationName,
+            loading: true,
+            animationSource: this._getAnimationSourceObj(exercise.name, this.user.gender),
             step: this.exerciseIndex + 1,
             totalSteps: this.workout.exercises.length,
             title: exercise.title,
@@ -29,8 +37,27 @@ export default class WorkoutPresenter {
             repeatText: this.workout.repeatText,
             nextExerciseText: nextExercise ? `${I18n.t('workout.nextExercise')} ${nextExercise.title}` : ''
         });
-        this.countdownTimer = new CountdownTimer(exercise.duration, this._onTick, this._onComplete);
-        this.countdownTimer.start();
+        if (nextExercise) {
+            const nextAnimationName = AnimationUtils.getAnimationName(nextExercise.name, this.user.gender);
+            AnimationWorker.preloadAnimations([nextAnimationName]);
+        }
+    }
+
+    startWorkout() {
+        this.view.setData({
+            loading: false
+        });
+        const exercise = this.workout.exercises[this.exerciseIndex];
+        this._startCountdown(exercise.duration);
+    }
+
+    restartWorkout() {
+        const exercise = this.workout.exercises[this.exerciseIndex];
+        this.view.setData({
+            countdownText: exercise.durationText,
+            countdownPercentage: 100
+        });
+        this._startCountdown(exercise.duration);
     }
 
     pauseWorkout() {
@@ -47,10 +74,18 @@ export default class WorkoutPresenter {
         this._completeExercise(exercise);
         if (this.exerciseIndex < this.workout.exercises.length - 1) {
             this.exerciseIndex = this.exerciseIndex + 1;
-            this.startWorkout();
+            this.loadWorkout();
         } else {
             this.view.didCompleteWorkout();
         }
+    }
+
+    _startCountdown(duration) {
+        if (this.countdownTimer) {
+            this.countdownTimer.stop();
+        }
+        this.countdownTimer = new CountdownTimer(duration, this._onTick, this._onComplete);
+        this.countdownTimer.start();
     }
 
     _onTick(count) {
@@ -78,10 +113,15 @@ export default class WorkoutPresenter {
 
     async _completeExercise(exercise) {
         try {
-            await this.dataSource.setExerciseStatus(exercise.id, true);
+            await this.trainingDataSource.setExerciseStatus(exercise.id, true);
         } catch (error) {
             console.log('_completeExercise()', error);
         }
+    }
+
+    _getAnimationSourceObj(name, gender) {
+        const animationName = AnimationUtils.getAnimationName(name, gender);
+        return AnimationWorker.getSourceObj(animationName);
     }
 
     unmountView() {

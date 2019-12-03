@@ -1,5 +1,5 @@
 import React from 'react';
-import { SafeAreaView, Text, View, StyleSheet } from 'react-native';
+import { SafeAreaView, Text, View, ActivityIndicator, StyleSheet } from 'react-native';
 import LinearGradient from 'react-native-linear-gradient';
 import FastImage from 'react-native-fast-image';
 
@@ -10,13 +10,13 @@ import I18n from '../../utils/i18n/I18n';
 import CountdownProgressBar from '../../utils/components/CountdownProgressBar';
 import WorkoutPresenter from './WorkoutPresenter';
 import { push, Route } from '../../utils/navigation/NavigationService';
-import AnimationUtils from '../../utils/utils/AnimationUtils';
 
 class WorkoutScreen extends React.Component {
     constructor(props) {
         super(props);
         this.state = {
-            animationName: '',
+            loading: true,
+            animationSource: null,
             countdownText: '',
             countdownPercentage: 100,
             runningText: '',
@@ -27,11 +27,12 @@ class WorkoutScreen extends React.Component {
         this._didTapSkipButton = this._didTapSkipButton.bind(this);
         this.resumeExercise = this.resumeExercise.bind(this);
         this.restartExercise = this.restartExercise.bind(this);
+        this.startExercise = this.startExercise.bind(this);
         this.skipRest = this.skipRest.bind(this);
     }
 
     componentDidMount() {
-        this.presenter.startWorkout();
+        this.presenter.loadWorkout();
     }
 
     componentWillUnmount() {
@@ -59,6 +60,10 @@ class WorkoutScreen extends React.Component {
     }
 
     restartExercise() {
+        this.presenter.restartWorkout();
+    }
+
+    startExercise() {
         this.presenter.startWorkout();
     }
 
@@ -74,17 +79,38 @@ class WorkoutScreen extends React.Component {
         this.presenter.goToNextExercise();
     }
 
+    renderAnimation(animationSource) {
+        return (
+            <FastImage
+                style={styles.animation}
+                source={animationSource}
+                resizeMode={FastImage.resizeMode.contain}
+                onLoadEnd={this.startExercise}
+            />
+        );
+    }
+
+    renderLoading() {
+        return (
+            <ActivityIndicator
+                size='large'
+                color='#FFFFFF'
+                style={styles.loading}
+            />
+        );
+    }
+
     render() {
-        const { animationName,
+        const { loading,
+            animationSource,
             countdownText,
             countdownPercentage,
-            step,
-            totalSteps,
+            step = 0,
+            totalSteps = 0,
             title,
             description,
             nextExerciseText } = this.state;
         const { workout: { background } } = this.props.navigation.state.params;
-        const animation = AnimationUtils.getAnimation(animationName);
         return (
             <Container
                 colors={background.colors}
@@ -104,12 +130,13 @@ class WorkoutScreen extends React.Component {
                         </Text>
                     </View>
                     <Text style={styles.title}>{title}</Text>
-                    <View style={{ flex: 1 }}>
-                        <FastImage
-                            style={{ height: '100%', width: '100%' }}
-                            source={animation}
-                            resizeMode={FastImage.resizeMode.contain}
-                        />
+                    <View style={styles.animationContainer}>
+                        {
+                            animationSource ? this.renderAnimation(animationSource) : null
+                        }
+                        {
+                            loading ? this.renderLoading() : null
+                        }
                     </View>
                     <Text style={styles.timeText}>{countdownText}</Text>
                 </SafeAreaView>
@@ -125,12 +152,14 @@ class WorkoutScreen extends React.Component {
                         }
                         <View style={styles.buttonContainer}>
                             <ButtonText
+                                disabled={loading}
                                 style={styles.skipButton}
                                 title={I18n.t('workout.skipToNextExercise')}
                                 showArrow={false}
                                 onPress={this._didTapSkipButton}
                             />
                             <Button
+                                disabled={loading}
                                 style={styles.pauseButton}
                                 title={I18n.t('workout.pause')}
                                 onPress={this._didTapPauseButton}
@@ -177,6 +206,18 @@ const styles = StyleSheet.create({
         fontSize: 48,
         color: '#FFFFFF',
         textAlign: 'center'
+    },
+    loading: {
+        alignSelf: 'center',
+        paddingBottom: 32
+    },
+    animationContainer: {
+        flex: 1,
+        justifyContent: 'center'
+    },
+    animation: {
+        height: '100%',
+        width: '100%'
     },
     bottomContainer: {
         borderTopLeftRadius: 16,
