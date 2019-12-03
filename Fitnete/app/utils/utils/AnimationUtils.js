@@ -92,7 +92,7 @@ export default {
             case 'boatpose':
                 name = '23_Boat_pose';
                 break;
-            case 'jackKnives':
+            case 'reverseJackKnives':
                 name = '24_Jack_Knives';
                 break;
             case 'cobraPushUp':
@@ -183,7 +183,7 @@ export default {
                 name = 'burpees'; // TODO
                 break;
             default:
-                name = '';
+                name = 'unknown';
                 break;
         }
         return name ? `${name}_${gender}` : '';
