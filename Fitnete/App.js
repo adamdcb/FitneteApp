@@ -24,7 +24,6 @@ class App extends React.PureComponent {
 
   componentWillUnmount() {
     this.presenter.unmountView();
-    this.presenter.closeDatabase();
   }
 
   setInitialStoryboard(storyboardName) {

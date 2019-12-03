@@ -12,10 +12,6 @@ export default class AppPresenter {
         await FNDatabase.open();
     }
 
-    closeDatabase() {
-        FNDatabase.close();
-    }
-
     async loadInitialStoryboard() {
         try {
             this.view.setInitialStoryboard(InitialStoryboard.AppIntro);
