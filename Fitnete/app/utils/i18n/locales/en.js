@@ -296,7 +296,7 @@ export default {
         spineStretchName: 'Spine Stretch',
         lyingKneeHugName: 'Lying Knee Hug',
         woodpeckerName: 'Woodpecker',
-        rollingoverName: 'Rolling over',
+        rollingOverName: 'Rolling over',
         runnersCrunchName: 'Runner\'s Crunch',
         theFounderName: 'The Founder',
         kneelingObliqueCrunchName: 'Kneeling Oblique Crunch',
