@@ -67,10 +67,11 @@ export default class PrepareWorkoutPlanPresenter {
                 return acc.concat(program);
             }, [])
             await this.trainingDataSource.savePrograms(programs);
-            const exerciseNames = await this.trainingDataSource.getAllExerciseNames();
-            const animationNames = exerciseNames.map(name => AnimationUtils.getAnimationName(name, user.gender))
-                .filter(name => !!name);
-            AnimationWorker.preloadAnimations(animationNames);
+            // FIXME!
+            // const exerciseNames = await this.trainingDataSource.getAllExerciseNames();
+            // const animationNames = exerciseNames.map(name => AnimationUtils.getAnimationName(name, user.gender))
+            //     .filter(name => !!name);
+            // AnimationWorker.preloadAnimations(animationNames);
         } catch (error) {
             console.log('startPreparingWorkoutPlan()', error);
         }
