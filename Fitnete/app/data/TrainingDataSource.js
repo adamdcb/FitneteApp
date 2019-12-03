@@ -87,6 +87,21 @@ export default class TrainingDataSource {
         });
     }
 
+    getAllExerciseNames() {
+        return AsyncWrapper.makeAsync(async (resolve, reject) => {
+            const db = FNDatabase.database();
+            try {
+                const exercises = db.objects('TrainingExercise')
+                    .filtered('name != "" DISTINCT(name)');
+                const names = exercises.reduce((acc, exercise) => acc.concat(exercise.name), []);
+                resolve(names);
+            } catch (e) {
+                console.log('getUniqueExercises()', e);
+                reject(e);
+            }
+        });
+    }
+
     _getProgress(programId, db) {
         const completedDays = db.objects('TrainingDay')
             .filtered(`weeks.programs.id = "${programId}" AND (ALL exercises.completed = true)`);
