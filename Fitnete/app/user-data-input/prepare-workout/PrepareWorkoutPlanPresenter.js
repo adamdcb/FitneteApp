@@ -5,6 +5,8 @@ import * as armsAndChestProgram from '../../utils/data/armsAndChest.json';
 import * as generalProgram from '../../utils/data/general.json';
 import UserDataSource from '../../data/UserDataSource';
 import TrainingDataSource from '../../data/TrainingDataSource.js';
+import AnimationUtils from '../../utils/utils/AnimationUtils.js';
+import AnimationWorker from '../../data/remote/AnimationWorker.js';
 
 const PROGRAM = {
     legs: legsProgram,
@@ -65,6 +67,10 @@ export default class PrepareWorkoutPlanPresenter {
                 return acc.concat(program);
             }, [])
             await this.trainingDataSource.savePrograms(programs);
+            const exerciseNames = await this.trainingDataSource.getAllExerciseNames();
+            const animationNames = exerciseNames.map(name => AnimationUtils.getAnimationName(name, user.gender))
+                .filter(name => !!name);
+            AnimationWorker.preloadAnimations(animationNames);
         } catch (error) {
             console.log('startPreparingWorkoutPlan()', error);
         }
