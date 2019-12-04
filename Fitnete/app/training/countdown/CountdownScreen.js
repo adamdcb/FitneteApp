@@ -12,16 +12,16 @@ const progressViewSize = Dimensions.get('window').width - 100;
 class CountdownScreen extends React.Component {
     constructor(props) {
         super(props);
+        const { workout } = this.props.navigation.state.params;
         this.state = {
             progress: 0,
-            count: 3
+            count: 0
         };
-        this.presenter = new CountdownPresenter(this);
+        this.presenter = new CountdownPresenter(this, workout);
     }
 
     componentDidMount() {
-        const { count } = this.state;
-        this.presenter.start(count);
+        this.presenter.start();
     }
 
     componentWillUnmount() {

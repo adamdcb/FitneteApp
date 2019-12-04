@@ -1,15 +1,24 @@
+import UserDataSource from "../../data/UserDataSource";
+import AnimationUtils from "../../utils/utils/AnimationUtils";
+import AnimationWorker from "../../data/remote/AnimationWorker";
+
 const STEP = 5;
+const COUNT = 3; // seconds
 
 export default class CountdownPresenter {
-    constructor(view) {
+    constructor(view, workout) {
         this.view = view;
+        this.workout = workout;
+        this.userDataSource = new UserDataSource();
     }
 
-    start(seconds) {
+    start() {
+        this.view.setProgress(0, COUNT);
         this.startTimeout = setTimeout(() => {
             clearTimeout(this.startTimeout);
-            this._startCountdown(seconds);
+            this._startCountdown(COUNT);
         }, 500);
+        this._preloadFirstAnimation();
     }
 
     unmountView() {
@@ -41,5 +50,14 @@ export default class CountdownPresenter {
             clearTimeout(this.endTimeout);
             this.view.onCountdownDidEnd();
         }, 500);
+    }
+
+    async _preloadFirstAnimation() {
+        const user = await this.userDataSource.getUser();
+        const exercise = this.workout.exercises[0];
+        if (exercise && user) {
+            const animationName = AnimationUtils.getAnimationName(exercise.name, user.gender);
+            AnimationWorker.preloadAnimations([animationName]);
+        }
     }
 }
