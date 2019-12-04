@@ -198,7 +198,8 @@ ExerciseListScreen.navigationOptions = ({ navigation }) => ({
     title: navigation.state.params.programName,
     headerStyle: {
         ...HEADER_STYLE,
-        backgroundColor: '#FFFFFF'
+        backgroundColor: '#FFFFFF',
+        elevation: 3 // FIXE: workaround for shadow issue
     }
 });
 
