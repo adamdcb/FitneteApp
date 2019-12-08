@@ -44,6 +44,7 @@ import WorkoutScreen from '../../training/workout/WorkoutScreen';
 import PauseScreen from '../../training/pause/PauseScreen';
 import RestScreen from '../../training/rest/RestScreen';
 import WorkoutCompleteScreen from '../../training/workout-complete/WorkoutCompleteScreen';
+import ReminderScreen from '../../training/reminder/ReminderScreen';
 import StartupScreen from '../../app-intro/StartupScreen';
 import SettingsScreen from '../../user-profile/settings/SettingsScreen';
 
@@ -186,10 +187,16 @@ const WorkoutStack = createStackNavigator(
         Workout: WorkoutScreen,
         Pause: PauseScreen,
         Rest: RestScreen,
-        WorkoutComplete: WorkoutCompleteScreen
+        WorkoutComplete: WorkoutCompleteScreen,
+        Reminder: ReminderScreen
     },
     {
-        headerMode: 'none'
+        defaultNavigationOptions: () => ({
+            headerBackImage: <HeaderBackButton />,
+            headerStyle: HEADER_STYLE,
+            headerBackTitle: null,
+            headerTitleStyle: HEADER_TITLE_STYLE
+        })
     }
 );
 

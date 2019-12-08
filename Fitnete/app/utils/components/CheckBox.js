@@ -12,6 +12,12 @@ class CheckBox extends React.Component {
         this.onToggle = this.onToggle.bind(this);
     }
 
+    componentDidUpdate(prevProps) {
+        if (prevProps.active !== this.props.active) {
+            this.setState({ active: this.props.active });
+        }
+    }
+
     onToggle() {
         const { active } = this.state;
         if (this.props.onToggle) {

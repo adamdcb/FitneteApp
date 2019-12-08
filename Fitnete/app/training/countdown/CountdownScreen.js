@@ -128,7 +128,8 @@ const styles = StyleSheet.create({
 });
 
 CountdownScreen.navigationOptions = ({ navigation }) => ({
-
+    headerTransparent: true,
+    header: null
 });
 
 export default CountdownScreen;

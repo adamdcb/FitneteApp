@@ -3,6 +3,15 @@ export default {
     termsAndConditionsTitle: 'Terms and Conditions',
     save: 'Save',
     later: 'Later',
+    weekdays: {
+        monday: 'Monday',
+        tuesday: 'Tuesday',
+        wednesday: 'Wednesday',
+        thursday: 'Thursday',
+        friday: 'Friday',
+        saturday: 'Saturday',
+        sunday: 'Sunday'
+    },
     startup: {
         welcome: 'Welcome to',
         start: 'Start!'
@@ -194,6 +203,18 @@ export default {
         description1: 'Congratulations',
         description2: 'Workout complete!',
         goToMainScreen: 'Go to main screen'
+    },
+    workoutReminder: {
+        title: 'Shedule workout reminder',
+        description: 'Users with workout reminders are 70% more likely to reach their goal',
+        repeat: {
+            once: 'Once',
+            weekly: 'Repeat weekly',
+        },
+        time: 'Time',
+        change: 'Change',
+        continue: 'Continue your training',
+        reminderTime: 'Reminder Time:'
     },
     userProfile: {
         params: {

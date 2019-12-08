@@ -264,7 +264,8 @@ const styles = StyleSheet.create({
 });
 
 WorkoutScreen.navigationOptions = () => ({
-
+    headerTransparent: true,
+    header: null
 });
 
 export default WorkoutScreen;

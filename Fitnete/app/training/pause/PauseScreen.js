@@ -32,7 +32,7 @@ class PauseScreen extends React.Component {
     }
 
     _quit() {
-        navigate(Route.Training);
+        navigate(Route.Reminder);
     }
 
     _continue() {
@@ -103,6 +103,8 @@ const styles = StyleSheet.create({
 });
 
 PauseScreen.navigationOptions = () => ({
+    headerTransparent: true,
+    header: null,
     gesturesEnabled: false
 });
 

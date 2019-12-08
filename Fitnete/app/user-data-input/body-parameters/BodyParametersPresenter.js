@@ -1,6 +1,7 @@
 import I18n from '../../utils/i18n/I18n';
 import UserDataSource from '../../data/UserDataSource';
 import BodyParameterFactory from './params/BodyParameterFactory';
+import Utils from '../../utils/utils/Utils';
 
 export default class BodyParametersPresenter {
     constructor(view) {
@@ -94,9 +95,7 @@ export default class BodyParametersPresenter {
     }
 
     _dataWithPadding(data, padding) {
-        data.unshift(padding);
-        data.push(padding);
-        return data;
+        return Utils.arrayWithPadding(data, padding);
     }
 
     _getData() {

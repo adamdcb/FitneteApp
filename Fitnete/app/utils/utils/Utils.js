@@ -22,5 +22,10 @@ export default {
                 .replace('-', '')
                 .replace('_', '')
         );
+    },
+    arrayWithPadding(array, padding) {
+        array.unshift(padding);
+        array.push(padding);
+        return array;
     }
 }

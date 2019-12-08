@@ -24,6 +24,7 @@ const Route = {
     Pause: 'Pause',
     Rest: 'Rest',
     WorkoutComplete: 'WorkoutComplete',
+    Reminder: 'Reminder',
     Settings: 'Settings'
 }
 

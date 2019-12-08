@@ -179,6 +179,8 @@ const styles = StyleSheet.create({
 });
 
 RestScreen.navigationOptions = () => ({
+    headerTransparent: true,
+    header: null,
     gesturesEnabled: false
 });
 

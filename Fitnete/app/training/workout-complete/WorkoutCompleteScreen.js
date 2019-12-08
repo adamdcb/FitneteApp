@@ -101,6 +101,8 @@ const styles = StyleSheet.create({
 });
 
 WorkoutCompleteScreen.navigationOptions = () => ({
+    headerTransparent: true,
+    header: null,
     gesturesEnabled: false
 });
 
