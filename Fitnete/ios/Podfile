@@ -36,6 +36,7 @@ target 'Fitnete' do
   
   # Firebase
   pod 'RNFirebase', :path => '../node_modules/react-native-firebase/ios'
+  pod 'Firebase/Messaging', '~> 6.3.0'
 
   target 'FitneteTests' do
     inherit! :search_paths
