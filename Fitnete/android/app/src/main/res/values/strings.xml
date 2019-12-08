@@ -1,3 +1,4 @@
 <resources>
     <string name="app_name">Fitnete</string>
+    <string name="notifications_reminder_channel_id">7d846b59-c188-41f3-b0e0-d4f0b1cc02ba</string>
 </resources>
