@@ -26,6 +26,7 @@
 		B43C784D45B7A16CF97BA5C7 /* libPods-Fitnete-tvOS.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 1492F996E5B29BCF24639C55 /* libPods-Fitnete-tvOS.a */; };
 		D392F876C3B17F467B5760B5 /* libPods-Fitnete-tvOSTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 97AF703555F8D58E19867ECC /* libPods-Fitnete-tvOSTests.a */; };
 		F5AA49BA33B27400FEAE6C15 /* libPods-FitneteTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = B951253FBBAD05F079786C1C /* libPods-FitneteTests.a */; };
+		F834D539239D366B001C3B89 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = F834D538239D366A001C3B89 /* GoogleService-Info.plist */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -96,6 +97,7 @@
 		ED2971642150620600B7C4FE /* JavaScriptCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = JavaScriptCore.framework; path = Platforms/AppleTVOS.platform/Developer/SDKs/AppleTVOS12.0.sdk/System/Library/Frameworks/JavaScriptCore.framework; sourceTree = DEVELOPER_DIR; };
 		F3213AA27E064989B1FE301A /* AntDesign.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = AntDesign.ttf; path = "../node_modules/react-native-vector-icons/Fonts/AntDesign.ttf"; sourceTree = "<group>"; };
 		F583C8CF44FA068C48A1471A /* Pods-Fitnete-tvOS.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Fitnete-tvOS.debug.xcconfig"; path = "Target Support Files/Pods-Fitnete-tvOS/Pods-Fitnete-tvOS.debug.xcconfig"; sourceTree = "<group>"; };
+		F834D538239D366A001C3B89 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "GoogleService-Info.plist"; path = "Fitnete/GoogleService-Info.plist"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -176,6 +178,7 @@
 				13B07FB01A68108700A75B9A /* AppDelegate.m */,
 				13B07FB51A68108700A75B9A /* Images.xcassets */,
 				13B07FB61A68108700A75B9A /* Info.plist */,
+				F834D538239D366A001C3B89 /* GoogleService-Info.plist */,
 				13B07FB11A68108700A75B9A /* LaunchScreen.xib */,
 				13B07FB71A68108700A75B9A /* main.m */,
 			);
@@ -418,6 +421,7 @@
 				38C513C9919E4FA18DAAFCA6 /* Poppins-Bold.ttf in Resources */,
 				9AD37E0AC55D42C3AAC77E25 /* Poppins-SemiBold.ttf in Resources */,
 				6E1E475A827843B3866D35AB /* fitnete.ttf in Resources */,
+				F834D539239D366B001C3B89 /* GoogleService-Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
