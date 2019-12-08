@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "176316550891",
+    "firebase_url": "https://fitnete-9e3de.firebaseio.com",
+    "project_id": "fitnete-9e3de",
+    "storage_bucket": "fitnete-9e3de.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:176316550891:android:c3dd5bd5ec6c53308738ae",
+        "android_client_info": {
+          "package_name": "com.rierra.fitnete"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "176316550891-cobo7nvsav1l7d8jrbs90qnja3h7ibdf.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCJ_f5QIRVFZ5Iwn0Ey_hWDCxpwJcJfOVI"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "176316550891-cobo7nvsav1l7d8jrbs90qnja3h7ibdf.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "176316550891-v9f03or86ik95elit6fcvcmdrr2pbncq.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.rierra.fitnete",
+                "app_store_id": "1482161450"
+              }
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

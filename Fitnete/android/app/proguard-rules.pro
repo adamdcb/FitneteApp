@@ -19,3 +19,6 @@
 }
 # Realm
 -keep class io.realm.react.util.SSLHelper
+# Firebase
+-keep class io.invertase.firebase.** { *; }
+-dontwarn io.invertase.firebase.**
