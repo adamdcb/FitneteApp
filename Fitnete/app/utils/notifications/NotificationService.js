@@ -20,6 +20,7 @@ function _createNotification(channel, { id, title, body, data }) {
     if (Platform.OS === 'android') {
         notification.android.setChannelId(CHANNEL_ID[channel]);
         notification.android.setSmallIcon('ic_notification');
+        notification.android.setColor('#08C757');
     } else if (Platform.OS === 'ios') {
         notification.ios.setBadge(1);
     }
@@ -27,11 +28,14 @@ function _createNotification(channel, { id, title, body, data }) {
 }
 
 function _createSchedule({ fireDate, repeat }) {
-    return schedule = {
+    const schedule = {
         fireDate,
-        repeatInterval: repeat,
         exact: true
     };
+    if (repeat) {
+        schedule.repeatInterval = repeat;
+    }
+    return schedule;
 }
 
 export default {

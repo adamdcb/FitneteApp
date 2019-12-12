@@ -3,6 +3,7 @@ export default {
     termsAndConditionsTitle: 'Terms and Conditions',
     save: 'Save',
     later: 'Later',
+    ok: 'OK',
     weekdays: {
         monday: 'Monday',
         tuesday: 'Tuesday',
@@ -11,6 +12,16 @@ export default {
         friday: 'Friday',
         saturday: 'Saturday',
         sunday: 'Sunday'
+    },
+    notification: {
+        reminder: {
+            channelName: 'Reminders',
+            channelDescription: 'Your workout reminders',
+            title: 'Don\'t Forget',
+            body: 'It\'s time for your %{day}\'s workout session'
+        },
+        permissionDeniedTitle: 'Permission Denied',
+        permissionDeniedMessage: 'You must enable Notifications in your phone settings first'
     },
     startup: {
         welcome: 'Welcome to',
@@ -107,7 +118,7 @@ export default {
     prepareWorkoutPlan: {
         title: 'Preparing workout plan',
         description1: 'Get ready for your',
-        description2: 'personalized fitntess\njourney',
+        description2: 'personalized fitness\njourney',
         processing: 'Processing...'
     },
     workoutPlanReady: {

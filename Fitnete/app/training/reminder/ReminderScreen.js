@@ -1,10 +1,10 @@
 import React from 'react';
-import { SafeAreaView, Text, View, TouchableOpacity, FlatList, StyleSheet } from 'react-native';
+import { SafeAreaView, Text, View, TouchableOpacity, FlatList, Alert, StyleSheet } from 'react-native';
 
 import Button from '../../utils/components/Button';
 import I18n from '../../utils/i18n/I18n';
-import { navigate, Route, HEADER_STYLE } from '../../utils/navigation/NavigationService';
-import LinearGradient from 'react-native-linear-gradient';
+import { navigate, Route } from '../../utils/navigation/NavigationService';
+import Container from '../../utils/components/Container';
 import CheckBox from '../../utils/components/CheckBox';
 import ListViewItemSeparator from '../../utils/components/ListViewItemSeparator';
 import FNIcon from '../../utils/components/FNIcon';
@@ -20,6 +20,7 @@ class ReminderScreen extends React.Component {
             activeRepeatButton: '',
             selectedWeekdays: [],
             selectedTimeIndexes: [],
+            time: '',
             isPickerVisible: false
         }
         this.presenter = new ReminderPresenter(this);
@@ -42,8 +43,25 @@ class ReminderScreen extends React.Component {
         this.setState({ ...data });
     }
 
-    _continue() {
+    showPermissionDeniedError() {
+        Alert.alert(
+            I18n.t('notification.permissionDeniedTitle'),
+            I18n.t('notification.permissionDeniedMessage'),
+            [{
+                text: I18n.t('ok')
+            }],
+            {
+                cancelable: true
+            }
+        );
+    }
+
+    onRemiderScheduled() {
         navigate(Route.Training);
+    }
+
+    _continue() {
+        this.presenter.addReminder();
     }
 
     _changeTime() {
@@ -57,7 +75,8 @@ class ReminderScreen extends React.Component {
     }
 
     _onSaveTime(values) {
-        this.presenter.addReminder(values);
+        this.presenter.setSelectedTime(values);
+        this._onDismissPicker();
     }
 
     _renderPicker() {
@@ -81,7 +100,10 @@ class ReminderScreen extends React.Component {
         const { selectedWeekdays } = this.state;
         return (
             <View style={styles.weekdayContainer}>
-                <CheckBox active={selectedWeekdays.includes(item.id)} />
+                <CheckBox
+                    active={selectedWeekdays.includes(item.id)}
+                    onToggle={(active) => this.presenter.setWeekdaySelected(item.id, active)}
+                />
                 <Text style={styles.weekdayText}>{item.name}</Text>
             </View>
         )
@@ -92,7 +114,7 @@ class ReminderScreen extends React.Component {
         return (
             <TouchableOpacity
                 style={[styles.repeatButtonContainer, activeRepeatButton === type ? styles.repeatButtonContainerActive : styles.repeatButtonContainerInactive]}
-                onPress={() => this.setState({ activeRepeatButton: type })}
+                onPress={() => this.presenter.setSelectedRepeat(type)}
             >
                 <Text style={[styles.repeatButtonText, activeRepeatButton === type ? styles.repeatButtonTextActive : styles.repeatButtonTextInactive]}>{I18n.t(`workoutReminder.repeat.${type}`)}</Text>
             </TouchableOpacity>
@@ -102,21 +124,15 @@ class ReminderScreen extends React.Component {
     render() {
         const { time } = this.state;
         return (
-            <LinearGradient
-                style={styles.container}
-                colors={['#89F8AC3D', '#73F9E01A', '#FFFFFF00']}
-                locations={[0, 0.45, 1]}
-                angle={180}
-                useAngle
-            >
-                <SafeAreaView style={styles.container}>
-                    <View style={styles.content}>
+            <SafeAreaView style={styles.container}>
+                <Container>
+                    <View style={styles.topContainer}>
                         <Text style={styles.description}>{I18n.t('workoutReminder.description')}</Text>
                         <View style={styles.repeatButtons}>
                             {this._renderRepeatButton('once')}
                             {this._renderRepeatButton('weekly')}
                         </View>
-                        <View>
+                        <View style={styles.listViewContainer}>
                             <FlatList
                                 style={styles.listView}
                                 data={this.presenter.getWeekdays()}
@@ -141,16 +157,17 @@ class ReminderScreen extends React.Component {
                                 </View>
                             </TouchableOpacity>
                         </View>
-                        <View style={styles.bottomContainer}>
-                            <Button
-                                title={I18n.t('workoutReminder.continue')}
-                                onPress={this._continue}
-                            />
-                        </View>
                     </View>
-                </SafeAreaView>
+                    <View style={styles.bottomContainer}>
+                        <Button
+                            title={I18n.t('workoutReminder.continue')}
+                            onPress={this._continue}
+                        />
+                    </View>
+
+                </Container>
                 {this._renderPicker()}
-            </LinearGradient>
+            </SafeAreaView>
         );
     }
 }
@@ -159,12 +176,11 @@ const styles = StyleSheet.create({
     container: {
         flex: 1
     },
-    content: {
-        flex: 1,
-        marginHorizontal: 20
+    topContainer: {
+        flex: 1
     },
     description: {
-        marginTop: 64,
+        marginTop: 24,
         fontFamily: 'Poppins',
         fontSize: 15,
         color: '#4F4C57',
@@ -199,8 +215,13 @@ const styles = StyleSheet.create({
     repeatButtonTextInactive: {
         color: '#3E3750'
     },
+    listViewContainer: {
+        marginTop: 12,
+        maxHeight: 7 * (ROW_HEIGHT + ListViewItemSeparator.HEIGHT),
+        flexGrow: 1
+    },
     listView: {
-        marginTop: 12
+        flex: 1
     },
     weekdayContainer: {
         flexDirection: 'row',
@@ -218,7 +239,8 @@ const styles = StyleSheet.create({
         flexDirection: 'row',
         alignItems: 'center',
         height: ROW_HEIGHT,
-        justifyContent: 'space-between'
+        justifyContent: 'space-between',
+        marginBottom: 24
     },
     timeText: {
         fontFamily: 'Poppins',
@@ -244,18 +266,13 @@ const styles = StyleSheet.create({
         alignItems: 'center'
     },
     bottomContainer: {
-        flex: 1,
         marginBottom: 16,
         justifyContent: 'flex-end'
     }
 });
 
 ReminderScreen.navigationOptions = () => ({
-    title: I18n.t('workoutReminder.title'),
-    headerStyle: {
-        ...HEADER_STYLE,
-        backgroundColor: '#89F8AC'
-    }
+    title: I18n.t('workoutReminder.title')
 });
 
 export default ReminderScreen;

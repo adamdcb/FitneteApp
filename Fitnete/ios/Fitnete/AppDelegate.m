@@ -46,6 +46,12 @@
   [[RNFirebaseNotifications instance] didReceiveLocalNotification:notification];
 }
 
+- (void)applicationDidBecomeActive:(UIApplication *)application
+{
+  [UNUserNotificationCenter.currentNotificationCenter removeAllDeliveredNotifications];
+  [UIApplication sharedApplication].applicationIconBadgeNumber = 0;
+}
+
 - (NSURL *)sourceURLForBridge:(RCTBridge *)bridge
 {
 #if DEBUG
