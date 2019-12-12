@@ -1,6 +1,8 @@
 import React from 'react';
 import { View, StyleSheet } from 'react-native';
 
+const HEIGHT = 1;
+
 class ListViewItemSeparator extends React.PureComponent {
     render() {
         const { style = {} } = this.props;
@@ -12,9 +14,11 @@ class ListViewItemSeparator extends React.PureComponent {
 
 const styles = StyleSheet.create({
     container: {
-        height: 1,
+        height: HEIGHT,
         backgroundColor: '#EEEFF1'
     }
 });
+
+ListViewItemSeparator.HEIGHT = HEIGHT;
 
 export default ListViewItemSeparator;
