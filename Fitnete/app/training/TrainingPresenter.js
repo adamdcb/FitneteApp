@@ -59,7 +59,7 @@ export default class TrainingPresenter {
             return {
                 id: program.id,
                 title: I18n.t(`trainingPrograms.${program.type}Name`),
-                description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua', // TODO
+                description: I18n.t(`trainingPrograms.${program.type}Description`),
                 image: 'for_free',
                 durationTitle: I18n.t('training.duration'),
                 durationText: `${duration} ${I18n.t('training.days')}`,
@@ -90,7 +90,7 @@ export default class TrainingPresenter {
                                     id: exercise.id,
                                     name: exercise.name,
                                     title: I18n.t(`exercises.${exercise.name}Name`),
-                                    description: 'Pellentesque ornare sem lacinia quam venenatis vestibulum', // TODO
+                                    description: I18n.t(`exercises.${exercise.name}Description`),
                                     duration: exerciseDuration,
                                     durationText: Utils.secondsToPlainMMSS(exerciseDuration),
                                     restTime: DEFAULT_REST_TIME

@@ -72,15 +72,29 @@
                             "completed": false
                         },
                         {
-                            "id": "programArmsAndBackWeek0Day1ExerciseMcGillCurlUp",
-                            "name": "mcGillCurlUp",
+                            "id": "programArmsAndBackWeek0Day1ExerciseMcGillCurlUpLeft",
+                            "name": "mcGillCurlUpLeft",
                             "reps": 5,
                             "time": -1,
                             "completed": false
                         },
                         {
-                            "id": "programArmsAndBackWeek0Day1ExerciseBirdDog",
-                            "name": "birdDog",
+                            "id": "programArmsAndBackWeek0Day1ExerciseMcGillCurlUpRight",
+                            "name": "mcGillCurlUpRight",
+                            "reps": 5,
+                            "time": -1,
+                            "completed": false
+                        },
+                        {
+                            "id": "programArmsAndBackWeek0Day1ExerciseBirdDogLeft",
+                            "name": "birdDogLeft",
+                            "reps": 5,
+                            "time": -1,
+                            "completed": false
+                        },
+                        {
+                            "id": "programArmsAndBackWeek0Day1ExerciseBirdDogRight",
+                            "name": "birdDogRight",
                             "reps": 5,
                             "time": -1,
                             "completed": false
@@ -154,15 +168,29 @@
                             "completed": false
                         },
                         {
-                            "id": "programArmsAndBackWeek0Day3ExerciseMcGillCurlUp",
-                            "name": "mcGillCurlUp",
+                            "id": "programArmsAndBackWeek0Day3ExerciseMcGillCurlUpLeft",
+                            "name": "mcGillCurlUpLeft",
                             "reps": 5,
                             "time": -1,
                             "completed": false
                         },
                         {
-                            "id": "programArmsAndBackWeek0Day3ExerciseBirdDog",
-                            "name": "birdDog",
+                            "id": "programArmsAndBackWeek0Day3ExerciseMcGillCurlUpRight",
+                            "name": "mcGillCurlUpRight",
+                            "reps": 5,
+                            "time": -1,
+                            "completed": false
+                        },
+                        {
+                            "id": "programArmsAndBackWeek0Day1ExerciseBirdDogLeft",
+                            "name": "birdDogLeft",
+                            "reps": 5,
+                            "time": -1,
+                            "completed": false
+                        },
+                        {
+                            "id": "programArmsAndBackWeek0Day1ExerciseBirdDogRight",
+                            "name": "birdDogRight",
                             "reps": 5,
                             "time": -1,
                             "completed": false
@@ -236,15 +264,29 @@
                             "completed": false
                         },
                         {
-                            "id": "programArmsAndBackWeek0Day5ExerciseMcGillCurlUp",
-                            "name": "mcGillCurlUp",
+                            "id": "programArmsAndBackWeek0Day3ExerciseMcGillCurlUpLeft",
+                            "name": "mcGillCurlUpLeft",
                             "reps": 5,
                             "time": -1,
                             "completed": false
                         },
                         {
-                            "id": "programArmsAndBackWeek0Day5ExerciseBirdDog",
-                            "name": "birdDog",
+                            "id": "programArmsAndBackWeek0Day3ExerciseMcGillCurlUpRight",
+                            "name": "mcGillCurlUpRight",
+                            "reps": 5,
+                            "time": -1,
+                            "completed": false
+                        },
+                        {
+                            "id": "programArmsAndBackWeek0Day1ExerciseBirdDogLeft",
+                            "name": "birdDogLeft",
+                            "reps": 5,
+                            "time": -1,
+                            "completed": false
+                        },
+                        {
+                            "id": "programArmsAndBackWeek0Day1ExerciseBirdDogRight",
+                            "name": "birdDogRight",
                             "reps": 5,
                             "time": -1,
                             "completed": false
@@ -323,15 +365,29 @@
                             "completed": false
                         },
                         {
-                            "id": "programArmsAndBackWeek1Day0ExerciseMcGillCurlUp",
-                            "name": "mcGillCurlUp",
+                            "id": "programArmsAndBackWeek0Day3ExerciseMcGillCurlUpLeft",
+                            "name": "mcGillCurlUpLeft",
                             "reps": 7,
                             "time": -1,
                             "completed": false
                         },
                         {
-                            "id": "programArmsAndBackWeek1Day0ExerciseBirdDog",
-                            "name": "birdDog",
+                            "id": "programArmsAndBackWeek0Day3ExerciseMcGillCurlUpRight",
+                            "name": "mcGillCurlUpRight",
+                            "reps": 7,
+                            "time": -1,
+                            "completed": false
+                        },
+                        {
+                            "id": "programArmsAndBackWeek0Day1ExerciseBirdDogLeft",
+                            "name": "birdDogLeft",
+                            "reps": 7,
+                            "time": -1,
+                            "completed": false
+                        },
+                        {
+                            "id": "programArmsAndBackWeek0Day1ExerciseBirdDogRight",
+                            "name": "birdDogRight",
                             "reps": 7,
                             "time": -1,
                             "completed": false
@@ -405,15 +461,29 @@
                             "completed": false
                         },
                         {
-                            "id": "programArmsAndBackWeek1Day2ExerciseMcGillCurlUp",
-                            "name": "mcGillCurlUp",
+                            "id": "programArmsAndBackWeek0Day3ExerciseMcGillCurlUpLeft",
+                            "name": "mcGillCurlUpLeft",
                             "reps": 7,
                             "time": -1,
                             "completed": false
                         },
                         {
-                            "id": "programArmsAndBackWeek1Day2ExerciseBirdDog",
-                            "name": "birdDog",
+                            "id": "programArmsAndBackWeek0Day3ExerciseMcGillCurlUpRight",
+                            "name": "mcGillCurlUpRight",
+                            "reps": 7,
+                            "time": -1,
+                            "completed": false
+                        },
+                        {
+                            "id": "programArmsAndBackWeek0Day1ExerciseBirdDogLeft",
+                            "name": "birdDogLeft",
+                            "reps": 7,
+                            "time": -1,
+                            "completed": false
+                        },
+                        {
+                            "id": "programArmsAndBackWeek0Day1ExerciseBirdDogRight",
+                            "name": "birdDogRight",
                             "reps": 7,
                             "time": -1,
                             "completed": false
@@ -487,15 +557,29 @@
                             "completed": false
                         },
                         {
-                            "id": "programArmsAndBackWeek1Day4ExerciseMcGillCurlUp",
-                            "name": "mcGillCurlUp",
+                            "id": "programArmsAndBackWeek0Day3ExerciseMcGillCurlUpLeft",
+                            "name": "mcGillCurlUpLeft",
                             "reps": 7,
                             "time": -1,
                             "completed": false
                         },
                         {
-                            "id": "programArmsAndBackWeek1Day4ExerciseBirdDog",
-                            "name": "birdDog",
+                            "id": "programArmsAndBackWeek0Day3ExerciseMcGillCurlUpRight",
+                            "name": "mcGillCurlUpRight",
+                            "reps": 7,
+                            "time": -1,
+                            "completed": false
+                        },
+                        {
+                            "id": "programArmsAndBackWeek0Day1ExerciseBirdDogLeft",
+                            "name": "birdDogLeft",
+                            "reps": 7,
+                            "time": -1,
+                            "completed": false
+                        },
+                        {
+                            "id": "programArmsAndBackWeek0Day1ExerciseBirdDogRight",
+                            "name": "birdDogRight",
                             "reps": 7,
                             "time": -1,
                             "completed": false
@@ -569,15 +653,29 @@
                             "completed": false
                         },
                         {
-                            "id": "programArmsAndBackWeek1Day6ExerciseMcGillCurlUp",
-                            "name": "mcGillCurlUp",
+                            "id": "programArmsAndBackWeek0Day3ExerciseMcGillCurlUpLeft",
+                            "name": "mcGillCurlUpLeft",
                             "reps": 7,
                             "time": -1,
                             "completed": false
                         },
                         {
-                            "id": "programArmsAndBackWeek1Day6ExerciseBirdDog",
-                            "name": "birdDog",
+                            "id": "programArmsAndBackWeek0Day3ExerciseMcGillCurlUpRight",
+                            "name": "mcGillCurlUpRight",
+                            "reps": 7,
+                            "time": -1,
+                            "completed": false
+                        },
+                        {
+                            "id": "programArmsAndBackWeek0Day1ExerciseBirdDogLeft",
+                            "name": "birdDogLeft",
+                            "reps": 7,
+                            "time": -1,
+                            "completed": false
+                        },
+                        {
+                            "id": "programArmsAndBackWeek0Day1ExerciseBirdDogRight",
+                            "name": "birdDogRight",
                             "reps": 7,
                             "time": -1,
                             "completed": false
@@ -656,15 +754,29 @@
                             "completed": false
                         },
                         {
-                            "id": "programArmsAndBackWeek2Day1ExerciseMcGillCurlUp",
-                            "name": "mcGillCurlUp",
+                            "id": "programArmsAndBackWeek0Day3ExerciseMcGillCurlUpLeft",
+                            "name": "mcGillCurlUpLeft",
                             "reps": 8,
                             "time": -1,
                             "completed": false
                         },
                         {
-                            "id": "programArmsAndBackWeek2Day1ExerciseBirdDog",
-                            "name": "birdDog",
+                            "id": "programArmsAndBackWeek0Day3ExerciseMcGillCurlUpRight",
+                            "name": "mcGillCurlUpRight",
+                            "reps": 8,
+                            "time": -1,
+                            "completed": false
+                        },
+                        {
+                            "id": "programArmsAndBackWeek0Day1ExerciseBirdDogLeft",
+                            "name": "birdDogLeft",
+                            "reps": 8,
+                            "time": -1,
+                            "completed": false
+                        },
+                        {
+                            "id": "programArmsAndBackWeek0Day1ExerciseBirdDogRight",
+                            "name": "birdDogRight",
                             "reps": 8,
                             "time": -1,
                             "completed": false
@@ -738,15 +850,29 @@
                             "completed": false
                         },
                         {
-                            "id": "programArmsAndBackWeek2Day3ExerciseMcGillCurlUp",
-                            "name": "mcGillCurlUp",
+                            "id": "programArmsAndBackWeek0Day3ExerciseMcGillCurlUpLeft",
+                            "name": "mcGillCurlUpLeft",
                             "reps": 8,
                             "time": -1,
                             "completed": false
                         },
                         {
-                            "id": "programArmsAndBackWeek2Day3ExerciseBirdDog",
-                            "name": "birdDog",
+                            "id": "programArmsAndBackWeek0Day3ExerciseMcGillCurlUpRight",
+                            "name": "mcGillCurlUpRight",
+                            "reps": 8,
+                            "time": -1,
+                            "completed": false
+                        },
+                        {
+                            "id": "programArmsAndBackWeek0Day1ExerciseBirdDogLeft",
+                            "name": "birdDogLeft",
+                            "reps": 8,
+                            "time": -1,
+                            "completed": false
+                        },
+                        {
+                            "id": "programArmsAndBackWeek0Day1ExerciseBirdDogRight",
+                            "name": "birdDogRight",
                             "reps": 8,
                             "time": -1,
                             "completed": false
@@ -820,15 +946,29 @@
                             "completed": false
                         },
                         {
-                            "id": "programArmsAndBackWeek2Day5ExerciseMcGillCurlUp",
-                            "name": "mcGillCurlUp",
+                            "id": "programArmsAndBackWeek0Day3ExerciseMcGillCurlUpLeft",
+                            "name": "mcGillCurlUpLeft",
                             "reps": 10,
                             "time": -1,
                             "completed": false
                         },
                         {
-                            "id": "programArmsAndBackWeek2Day5ExerciseBirdDog",
-                            "name": "birdDog",
+                            "id": "programArmsAndBackWeek0Day3ExerciseMcGillCurlUpRight",
+                            "name": "mcGillCurlUpRight",
+                            "reps": 10,
+                            "time": -1,
+                            "completed": false
+                        },
+                        {
+                            "id": "programArmsAndBackWeek0Day1ExerciseBirdDogLeft",
+                            "name": "birdDogLeft",
+                            "reps": 10,
+                            "time": -1,
+                            "completed": false
+                        },
+                        {
+                            "id": "programArmsAndBackWeek0Day1ExerciseBirdDogRight",
+                            "name": "birdDogRight",
                             "reps": 10,
                             "time": -1,
                             "completed": false
@@ -948,15 +1088,29 @@
                             "completed": false
                         },
                         {
-                            "id": "programArmsAndBackWeek3Day1ExerciseMcGillCurlUp",
-                            "name": "mcGillCurlUp",
+                            "id": "programArmsAndBackWeek0Day3ExerciseMcGillCurlUpLeft",
+                            "name": "mcGillCurlUpLeft",
                             "reps": 10,
                             "time": -1,
                             "completed": false
                         },
                         {
-                            "id": "programArmsAndBackWeek3Day1ExerciseBirdDog",
-                            "name": "birdDog",
+                            "id": "programArmsAndBackWeek0Day3ExerciseMcGillCurlUpRight",
+                            "name": "mcGillCurlUpRight",
+                            "reps": 10,
+                            "time": -1,
+                            "completed": false
+                        },
+                        {
+                            "id": "programArmsAndBackWeek0Day1ExerciseBirdDogLeft",
+                            "name": "birdDogLeft",
+                            "reps": 10,
+                            "time": -1,
+                            "completed": false
+                        },
+                        {
+                            "id": "programArmsAndBackWeek0Day1ExerciseBirdDogRight",
+                            "name": "birdDogRight",
                             "reps": 10,
                             "time": -1,
                             "completed": false
@@ -1030,15 +1184,29 @@
                             "completed": false
                         },
                         {
-                            "id": "programArmsAndBackWeek3Day3ExerciseMcGillCurlUp",
-                            "name": "mcGillCurlUp",
+                            "id": "programArmsAndBackWeek0Day3ExerciseMcGillCurlUpLeft",
+                            "name": "mcGillCurlUpLeft",
                             "reps": 10,
                             "time": -1,
                             "completed": false
                         },
                         {
-                            "id": "programArmsAndBackWeek3Day3ExerciseBirdDog",
-                            "name": "birdDog",
+                            "id": "programArmsAndBackWeek0Day3ExerciseMcGillCurlUpRight",
+                            "name": "mcGillCurlUpRight",
+                            "reps": 10,
+                            "time": -1,
+                            "completed": false
+                        },
+                        {
+                            "id": "programArmsAndBackWeek0Day1ExerciseBirdDogLeft",
+                            "name": "birdDogLeft",
+                            "reps": 10,
+                            "time": -1,
+                            "completed": false
+                        },
+                        {
+                            "id": "programArmsAndBackWeek0Day1ExerciseBirdDogRight",
+                            "name": "birdDogRight",
                             "reps": 10,
                             "time": -1,
                             "completed": false
@@ -1112,15 +1280,29 @@
                             "completed": false
                         },
                         {
-                            "id": "programArmsAndBackWeek3Day5ExerciseMcGillCurlUp",
-                            "name": "mcGillCurlUp",
+                            "id": "programArmsAndBackWeek0Day3ExerciseMcGillCurlUpLeft",
+                            "name": "mcGillCurlUpLeft",
                             "reps": 10,
                             "time": -1,
                             "completed": false
                         },
                         {
-                            "id": "programArmsAndBackWeek3Day5ExerciseBirdDog",
-                            "name": "birdDog",
+                            "id": "programArmsAndBackWeek0Day3ExerciseMcGillCurlUpRight",
+                            "name": "mcGillCurlUpRight",
+                            "reps": 10,
+                            "time": -1,
+                            "completed": false
+                        },
+                        {
+                            "id": "programArmsAndBackWeek0Day1ExerciseBirdDogLeft",
+                            "name": "birdDogLeft",
+                            "reps": 10,
+                            "time": -1,
+                            "completed": false
+                        },
+                        {
+                            "id": "programArmsAndBackWeek0Day1ExerciseBirdDogRight",
+                            "name": "birdDogRight",
                             "reps": 10,
                             "time": -1,
                             "completed": false
@@ -1199,15 +1381,29 @@
                             "completed": false
                         },
                         {
-                            "id": "programArmsAndBackWeek4Day0ExerciseMcGillCurlUp",
-                            "name": "mcGillCurlUp",
+                            "id": "programArmsAndBackWeek0Day3ExerciseMcGillCurlUpLeft",
+                            "name": "mcGillCurlUpLeft",
                             "reps": 14,
                             "time": -1,
                             "completed": false
                         },
                         {
-                            "id": "programArmsAndBackWeek4Day0ExerciseBirdDog",
-                            "name": "birdDog",
+                            "id": "programArmsAndBackWeek0Day3ExerciseMcGillCurlUpRight",
+                            "name": "mcGillCurlUpRight",
+                            "reps": 14,
+                            "time": -1,
+                            "completed": false
+                        },
+                        {
+                            "id": "programArmsAndBackWeek0Day1ExerciseBirdDogLeft",
+                            "name": "birdDogLeft",
+                            "reps": 14,
+                            "time": -1,
+                            "completed": false
+                        },
+                        {
+                            "id": "programArmsAndBackWeek0Day1ExerciseBirdDogRight",
+                            "name": "birdDogRight",
                             "reps": 14,
                             "time": -1,
                             "completed": false
@@ -1281,15 +1477,29 @@
                             "completed": false
                         },
                         {
-                            "id": "programArmsAndBackWeek4Day2ExerciseMcGillCurlUp",
-                            "name": "mcGillCurlUp",
+                            "id": "programArmsAndBackWeek0Day3ExerciseMcGillCurlUpLeft",
+                            "name": "mcGillCurlUpLeft",
                             "reps": 14,
                             "time": -1,
                             "completed": false
                         },
                         {
-                            "id": "programArmsAndBackWeek4Day2ExerciseBirdDog",
-                            "name": "birdDog",
+                            "id": "programArmsAndBackWeek0Day3ExerciseMcGillCurlUpRight",
+                            "name": "mcGillCurlUpRight",
+                            "reps": 14,
+                            "time": -1,
+                            "completed": false
+                        },
+                        {
+                            "id": "programArmsAndBackWeek0Day1ExerciseBirdDogLeft",
+                            "name": "birdDogLeft",
+                            "reps": 14,
+                            "time": -1,
+                            "completed": false
+                        },
+                        {
+                            "id": "programArmsAndBackWeek0Day1ExerciseBirdDogRight",
+                            "name": "birdDogRight",
                             "reps": 14,
                             "time": -1,
                             "completed": false
@@ -1363,15 +1573,29 @@
                             "completed": false
                         },
                         {
-                            "id": "programArmsAndBackWeek4Day4ExerciseMcGillCurlUp",
-                            "name": "mcGillCurlUp",
+                            "id": "programArmsAndBackWeek0Day3ExerciseMcGillCurlUpLeft",
+                            "name": "mcGillCurlUpLeft",
                             "reps": 14,
                             "time": -1,
                             "completed": false
                         },
                         {
-                            "id": "programArmsAndBackWeek4Day4ExerciseBirdDog",
-                            "name": "birdDog",
+                            "id": "programArmsAndBackWeek0Day3ExerciseMcGillCurlUpRight",
+                            "name": "mcGillCurlUpRight",
+                            "reps": 14,
+                            "time": -1,
+                            "completed": false
+                        },
+                        {
+                            "id": "programArmsAndBackWeek0Day1ExerciseBirdDogLeft",
+                            "name": "birdDogLeft",
+                            "reps": 14,
+                            "time": -1,
+                            "completed": false
+                        },
+                        {
+                            "id": "programArmsAndBackWeek0Day1ExerciseBirdDogRight",
+                            "name": "birdDogRight",
                             "reps": 14,
                             "time": -1,
                             "completed": false
@@ -1445,15 +1669,29 @@
                             "completed": false
                         },
                         {
-                            "id": "programArmsAndBackWeek4Day6ExerciseMcGillCurlUp",
-                            "name": "mcGillCurlUp",
+                            "id": "programArmsAndBackWeek0Day3ExerciseMcGillCurlUpLeft",
+                            "name": "mcGillCurlUpLeft",
                             "reps": 14,
                             "time": -1,
                             "completed": false
                         },
                         {
-                            "id": "programArmsAndBackWeek4Day6ExerciseBirdDog",
-                            "name": "birdDog",
+                            "id": "programArmsAndBackWeek0Day3ExerciseMcGillCurlUpRight",
+                            "name": "mcGillCurlUpRight",
+                            "reps": 14,
+                            "time": -1,
+                            "completed": false
+                        },
+                        {
+                            "id": "programArmsAndBackWeek0Day1ExerciseBirdDogLeft",
+                            "name": "birdDogLeft",
+                            "reps": 14,
+                            "time": -1,
+                            "completed": false
+                        },
+                        {
+                            "id": "programArmsAndBackWeek0Day1ExerciseBirdDogRight",
+                            "name": "birdDogRight",
                             "reps": 14,
                             "time": -1,
                             "completed": false
@@ -1532,15 +1770,29 @@
                             "completed": false
                         },
                         {
-                            "id": "programArmsAndBackWeek5Day1ExerciseMcGillCurlUp",
-                            "name": "mcGillCurlUp",
+                            "id": "programArmsAndBackWeek0Day3ExerciseMcGillCurlUpLeft",
+                            "name": "mcGillCurlUpLeft",
                             "reps": 16,
                             "time": -1,
                             "completed": false
                         },
                         {
-                            "id": "programArmsAndBackWeek5Day1ExerciseBirdDog",
-                            "name": "birdDog",
+                            "id": "programArmsAndBackWeek0Day3ExerciseMcGillCurlUpRight",
+                            "name": "mcGillCurlUpRight",
+                            "reps": 16,
+                            "time": -1,
+                            "completed": false
+                        },
+                        {
+                            "id": "programArmsAndBackWeek0Day1ExerciseBirdDogLeft",
+                            "name": "birdDogLeft",
+                            "reps": 16,
+                            "time": -1,
+                            "completed": false
+                        },
+                        {
+                            "id": "programArmsAndBackWeek0Day1ExerciseBirdDogRight",
+                            "name": "birdDogRight",
                             "reps": 16,
                             "time": -1,
                             "completed": false
@@ -1614,15 +1866,29 @@
                             "completed": false
                         },
                         {
-                            "id": "programArmsAndBackWeek5Day3ExerciseMcGillCurlUp",
-                            "name": "mcGillCurlUp",
+                            "id": "programArmsAndBackWeek0Day3ExerciseMcGillCurlUpLeft",
+                            "name": "mcGillCurlUpLeft",
                             "reps": 16,
                             "time": -1,
                             "completed": false
                         },
                         {
-                            "id": "programArmsAndBackWeek5Day3ExerciseBirdDog",
-                            "name": "birdDog",
+                            "id": "programArmsAndBackWeek0Day3ExerciseMcGillCurlUpRight",
+                            "name": "mcGillCurlUpRight",
+                            "reps": 16,
+                            "time": -1,
+                            "completed": false
+                        },
+                        {
+                            "id": "programArmsAndBackWeek0Day1ExerciseBirdDogLeft",
+                            "name": "birdDogLeft",
+                            "reps": 16,
+                            "time": -1,
+                            "completed": false
+                        },
+                        {
+                            "id": "programArmsAndBackWeek0Day1ExerciseBirdDogRight",
+                            "name": "birdDogRight",
                             "reps": 16,
                             "time": -1,
                             "completed": false
@@ -1696,15 +1962,29 @@
                             "completed": false
                         },
                         {
-                            "id": "programArmsAndBackWeek5Day5ExerciseMcGillCurlUp",
-                            "name": "mcGillCurlUp",
+                            "id": "programArmsAndBackWeek0Day3ExerciseMcGillCurlUpLeft",
+                            "name": "mcGillCurlUpLeft",
                             "reps": 20,
                             "time": -1,
                             "completed": false
                         },
                         {
-                            "id": "programArmsAndBackWeek5Day5ExerciseBirdDog",
-                            "name": "birdDog",
+                            "id": "programArmsAndBackWeek0Day3ExerciseMcGillCurlUpRight",
+                            "name": "mcGillCurlUpRight",
+                            "reps": 20,
+                            "time": -1,
+                            "completed": false
+                        },
+                        {
+                            "id": "programArmsAndBackWeek0Day1ExerciseBirdDogLeft",
+                            "name": "birdDogLeft",
+                            "reps": 20,
+                            "time": -1,
+                            "completed": false
+                        },
+                        {
+                            "id": "programArmsAndBackWeek0Day1ExerciseBirdDogRight",
+                            "name": "birdDogRight",
                             "reps": 20,
                             "time": -1,
                             "completed": false
@@ -1824,15 +2104,29 @@
                             "completed": false
                         },
                         {
-                            "id": "programArmsAndBackWeek6Day1ExerciseMcGillCurlUp",
-                            "name": "mcGillCurlUp",
+                            "id": "programArmsAndBackWeek0Day3ExerciseMcGillCurlUpLeft",
+                            "name": "mcGillCurlUpLeft",
                             "reps": 20,
                             "time": -1,
                             "completed": false
                         },
                         {
-                            "id": "programArmsAndBackWeek6Day1ExerciseBirdDog",
-                            "name": "birdDog",
+                            "id": "programArmsAndBackWeek0Day3ExerciseMcGillCurlUpRight",
+                            "name": "mcGillCurlUpRight",
+                            "reps": 20,
+                            "time": -1,
+                            "completed": false
+                        },
+                        {
+                            "id": "programArmsAndBackWeek0Day1ExerciseBirdDogLeft",
+                            "name": "birdDogLeft",
+                            "reps": 20,
+                            "time": -1,
+                            "completed": false
+                        },
+                        {
+                            "id": "programArmsAndBackWeek0Day1ExerciseBirdDogRight",
+                            "name": "birdDogRight",
                             "reps": 20,
                             "time": -1,
                             "completed": false
@@ -1906,15 +2200,29 @@
                             "completed": false
                         },
                         {
-                            "id": "programArmsAndBackWeek6Day3ExerciseMcGillCurlUp",
-                            "name": "mcGillCurlUp",
+                            "id": "programArmsAndBackWeek0Day3ExerciseMcGillCurlUpLeft",
+                            "name": "mcGillCurlUpLeft",
                             "reps": 20,
                             "time": -1,
                             "completed": false
                         },
                         {
-                            "id": "programArmsAndBackWeek6Day3ExerciseBirdDog",
-                            "name": "birdDog",
+                            "id": "programArmsAndBackWeek0Day3ExerciseMcGillCurlUpRight",
+                            "name": "mcGillCurlUpRight",
+                            "reps": 20,
+                            "time": -1,
+                            "completed": false
+                        },
+                        {
+                            "id": "programArmsAndBackWeek0Day1ExerciseBirdDogLeft",
+                            "name": "birdDogLeft",
+                            "reps": 20,
+                            "time": -1,
+                            "completed": false
+                        },
+                        {
+                            "id": "programArmsAndBackWeek0Day1ExerciseBirdDogRight",
+                            "name": "birdDogRight",
                             "reps": 20,
                             "time": -1,
                             "completed": false
@@ -1988,15 +2296,29 @@
                             "completed": false
                         },
                         {
-                            "id": "programArmsAndBackWeek6Day5ExerciseMcGillCurlUp",
-                            "name": "mcGillCurlUp",
+                            "id": "programArmsAndBackWeek0Day3ExerciseMcGillCurlUpLeft",
+                            "name": "mcGillCurlUpLeft",
                             "reps": 20,
                             "time": -1,
                             "completed": false
                         },
                         {
-                            "id": "programArmsAndBackWeek6Day5ExerciseBirdDog",
-                            "name": "birdDog",
+                            "id": "programArmsAndBackWeek0Day3ExerciseMcGillCurlUpRight",
+                            "name": "mcGillCurlUpRight",
+                            "reps": 20,
+                            "time": -1,
+                            "completed": false
+                        },
+                        {
+                            "id": "programArmsAndBackWeek0Day1ExerciseBirdDogLeft",
+                            "name": "birdDogLeft",
+                            "reps": 20,
+                            "time": -1,
+                            "completed": false
+                        },
+                        {
+                            "id": "programArmsAndBackWeek0Day1ExerciseBirdDogRight",
+                            "name": "birdDogRight",
                             "reps": 20,
                             "time": -1,
                             "completed": false
@@ -2075,15 +2397,29 @@
                             "completed": false
                         },
                         {
-                            "id": "programArmsAndBackWeek7Day0ExerciseMcGillCurlUp",
-                            "name": "mcGillCurlUp",
+                            "id": "programArmsAndBackWeek0Day3ExerciseMcGillCurlUpLeft",
+                            "name": "mcGillCurlUpLeft",
                             "reps": 28,
                             "time": -1,
                             "completed": false
                         },
                         {
-                            "id": "programArmsAndBackWeek7Day0ExerciseBirdDog",
-                            "name": "birdDog",
+                            "id": "programArmsAndBackWeek0Day3ExerciseMcGillCurlUpRight",
+                            "name": "mcGillCurlUpRight",
+                            "reps": 28,
+                            "time": -1,
+                            "completed": false
+                        },
+                        {
+                            "id": "programArmsAndBackWeek0Day1ExerciseBirdDogLeft",
+                            "name": "birdDogLeft",
+                            "reps": 28,
+                            "time": -1,
+                            "completed": false
+                        },
+                        {
+                            "id": "programArmsAndBackWeek0Day1ExerciseBirdDogRight",
+                            "name": "birdDogRight",
                             "reps": 28,
                             "time": -1,
                             "completed": false
@@ -2157,15 +2493,29 @@
                             "completed": false
                         },
                         {
-                            "id": "programArmsAndBackWeek7Day2ExerciseMcGillCurlUp",
-                            "name": "mcGillCurlUp",
+                            "id": "programArmsAndBackWeek0Day3ExerciseMcGillCurlUpLeft",
+                            "name": "mcGillCurlUpLeft",
                             "reps": 28,
                             "time": -1,
                             "completed": false
                         },
                         {
-                            "id": "programArmsAndBackWeek7Day2ExerciseBirdDog",
-                            "name": "birdDog",
+                            "id": "programArmsAndBackWeek0Day3ExerciseMcGillCurlUpRight",
+                            "name": "mcGillCurlUpRight",
+                            "reps": 28,
+                            "time": -1,
+                            "completed": false
+                        },
+                        {
+                            "id": "programArmsAndBackWeek0Day1ExerciseBirdDogLeft",
+                            "name": "birdDogLeft",
+                            "reps": 28,
+                            "time": -1,
+                            "completed": false
+                        },
+                        {
+                            "id": "programArmsAndBackWeek0Day1ExerciseBirdDogRight",
+                            "name": "birdDogRight",
                             "reps": 28,
                             "time": -1,
                             "completed": false
@@ -2239,15 +2589,29 @@
                             "completed": false
                         },
                         {
-                            "id": "programArmsAndBackWeek7Day4ExerciseMcGillCurlUp",
-                            "name": "mcGillCurlUp",
+                            "id": "programArmsAndBackWeek0Day3ExerciseMcGillCurlUpLeft",
+                            "name": "mcGillCurlUpLeft",
                             "reps": 28,
                             "time": -1,
                             "completed": false
                         },
                         {
-                            "id": "programArmsAndBackWeek7Day4ExerciseBirdDog",
-                            "name": "birdDog",
+                            "id": "programArmsAndBackWeek0Day3ExerciseMcGillCurlUpRight",
+                            "name": "mcGillCurlUpRight",
+                            "reps": 28,
+                            "time": -1,
+                            "completed": false
+                        },
+                        {
+                            "id": "programArmsAndBackWeek0Day1ExerciseBirdDogLeft",
+                            "name": "birdDogLeft",
+                            "reps": 28,
+                            "time": -1,
+                            "completed": false
+                        },
+                        {
+                            "id": "programArmsAndBackWeek0Day1ExerciseBirdDogRight",
+                            "name": "birdDogRight",
                             "reps": 28,
                             "time": -1,
                             "completed": false
@@ -2321,15 +2685,29 @@
                             "completed": false
                         },
                         {
-                            "id": "programArmsAndBackWeek7Day6ExerciseMcGillCurlUp",
-                            "name": "mcGillCurlUp",
+                            "id": "programArmsAndBackWeek0Day3ExerciseMcGillCurlUpLeft",
+                            "name": "mcGillCurlUpLeft",
                             "reps": 28,
                             "time": -1,
                             "completed": false
                         },
                         {
-                            "id": "programArmsAndBackWeek7Day6ExerciseBirdDog",
-                            "name": "birdDog",
+                            "id": "programArmsAndBackWeek0Day3ExerciseMcGillCurlUpRight",
+                            "name": "mcGillCurlUpRight",
+                            "reps": 28,
+                            "time": -1,
+                            "completed": false
+                        },
+                        {
+                            "id": "programArmsAndBackWeek0Day1ExerciseBirdDogLeft",
+                            "name": "birdDogLeft",
+                            "reps": 28,
+                            "time": -1,
+                            "completed": false
+                        },
+                        {
+                            "id": "programArmsAndBackWeek0Day1ExerciseBirdDogRight",
+                            "name": "birdDogRight",
                             "reps": 28,
                             "time": -1,
                             "completed": false
@@ -2408,15 +2786,29 @@
                             "completed": false
                         },
                         {
-                            "id": "programArmsAndBackWeek8Day1ExerciseMcGillCurlUp",
-                            "name": "mcGillCurlUp",
+                            "id": "programArmsAndBackWeek0Day3ExerciseMcGillCurlUpLeft",
+                            "name": "mcGillCurlUpLeft",
                             "reps": 32,
                             "time": -1,
                             "completed": false
                         },
                         {
-                            "id": "programArmsAndBackWeek8Day1ExerciseBirdDog",
-                            "name": "birdDog",
+                            "id": "programArmsAndBackWeek0Day3ExerciseMcGillCurlUpRight",
+                            "name": "mcGillCurlUpRight",
+                            "reps": 32,
+                            "time": -1,
+                            "completed": false
+                        },
+                        {
+                            "id": "programArmsAndBackWeek0Day1ExerciseBirdDogLeft",
+                            "name": "birdDogLeft",
+                            "reps": 32,
+                            "time": -1,
+                            "completed": false
+                        },
+                        {
+                            "id": "programArmsAndBackWeek0Day1ExerciseBirdDogRight",
+                            "name": "birdDogRight",
                             "reps": 32,
                             "time": -1,
                             "completed": false
@@ -2490,15 +2882,29 @@
                             "completed": false
                         },
                         {
-                            "id": "programArmsAndBackWeek8Day3ExerciseMcGillCurlUp",
-                            "name": "mcGillCurlUp",
+                            "id": "programArmsAndBackWeek0Day3ExerciseMcGillCurlUpLeft",
+                            "name": "mcGillCurlUpLeft",
                             "reps": 32,
                             "time": -1,
                             "completed": false
                         },
                         {
-                            "id": "programArmsAndBackWeek8Day3ExerciseBirdDog",
-                            "name": "birdDog",
+                            "id": "programArmsAndBackWeek0Day3ExerciseMcGillCurlUpRight",
+                            "name": "mcGillCurlUpRight",
+                            "reps": 32,
+                            "time": -1,
+                            "completed": false
+                        },
+                        {
+                            "id": "programArmsAndBackWeek0Day1ExerciseBirdDogLeft",
+                            "name": "birdDogLeft",
+                            "reps": 32,
+                            "time": -1,
+                            "completed": false
+                        },
+                        {
+                            "id": "programArmsAndBackWeek0Day1ExerciseBirdDogRight",
+                            "name": "birdDogRight",
                             "reps": 32,
                             "time": -1,
                             "completed": false
@@ -2572,15 +2978,29 @@
                             "completed": false
                         },
                         {
-                            "id": "programArmsAndBackWeek8Day5ExerciseMcGillCurlUp",
-                            "name": "mcGillCurlUp",
+                            "id": "programArmsAndBackWeek0Day3ExerciseMcGillCurlUpLeft",
+                            "name": "mcGillCurlUpLeft",
                             "reps": 40,
                             "time": -1,
                             "completed": false
                         },
                         {
-                            "id": "programArmsAndBackWeek8Day5ExerciseBirdDog",
-                            "name": "birdDog",
+                            "id": "programArmsAndBackWeek0Day3ExerciseMcGillCurlUpRight",
+                            "name": "mcGillCurlUpRight",
+                            "reps": 40,
+                            "time": -1,
+                            "completed": false
+                        },
+                        {
+                            "id": "programArmsAndBackWeek0Day1ExerciseBirdDogLeft",
+                            "name": "birdDogLeft",
+                            "reps": 40,
+                            "time": -1,
+                            "completed": false
+                        },
+                        {
+                            "id": "programArmsAndBackWeek0Day1ExerciseBirdDogRight",
+                            "name": "birdDogRight",
                             "reps": 40,
                             "time": -1,
                             "completed": false

@@ -41,7 +41,8 @@ const ANIMATION_NAME = {
     pushUp: '30_Push_Ups',
     bentOverRow: '31_Bent_Over_Row',
     lateralRaises: '32_Lateral_Raise',
-    tricepExtension: '33_Tricep_Extension_R', // FIXME
+    tricepExtensionRight: '33_Tricep_Extension_R', // FIXME
+    tricepExtensionLeft: '33_Tricep_Extension_L', // FIXME
     dumbellSwing: '34_Dumbell_Swing',
     squatAndCurl: '35_Squat_and_Curl',
     tricepKickback: '36_Tricep_Kickback',
@@ -54,8 +55,10 @@ const ANIMATION_NAME = {
     runnersCrunch: '43_Runner_s_Crunch',
     theFounder: '44_The_Founder',
     kneelingObliqueCrunch: '', // TODO
-    mcGillCurlUp: '46_McGill_Curl_Up_R', // FIXME
-    birdDog: '47_Bird_Dog_R', // FIXME
+    mcGillCurlUpRight: '46_McGill_Curl_Up_R', // FIXME
+    mcGillCurlUpLeft: '46_McGill_Curl_Up_L', // FIXME
+    birdDogRight: '47_Bird_Dog_R', // FIXME
+    birdDogLeft: '47_Bird_Dog_L', // FIXME
     tricepDip: '57_Tricep_Dip',
     wallSit: '58_Wall_sit',
     jumpingJacks: '', // TODO
