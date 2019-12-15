@@ -18,9 +18,10 @@ function _createNotification(channel, { id, title, body, data }) {
         .setBody(body)
         .setData(data);
     if (Platform.OS === 'android') {
-        notification.android.setChannelId(CHANNEL_ID[channel]);
-        notification.android.setSmallIcon('ic_notification');
-        notification.android.setColor('#08C757');
+        notification.android.setChannelId(CHANNEL_ID[channel])
+            .android.setPriority(firebase.notifications.Android.Priority.High)
+            .android.setSmallIcon('ic_notification')
+            .android.setColor('#08C757');
     } else if (Platform.OS === 'ios') {
         notification.ios.setBadge(1);
     }
@@ -40,6 +41,12 @@ function _createSchedule({ fireDate, repeat }) {
 
 export default {
     CHANNEL,
+
+    registerListener() {
+        this.notificationListener = firebase
+            .notifications()
+            .onNotification(async notification => await firebase.notifications().displayNotification(notification));
+    },
 
     async requestPermission() {
         return firebase.messaging().requestPermission();
