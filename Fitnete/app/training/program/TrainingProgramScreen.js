@@ -62,7 +62,7 @@ class TrainingProgramScreen extends React.Component {
                     <View style={styles.dayProgramContainer}>
                         <View style={styles.dayStatusImage}>
                             <FNIcon
-                                name='clock'
+                                name='filters'
                                 size={18}
                                 color="#008FA6"
                             />
@@ -73,7 +73,7 @@ class TrainingProgramScreen extends React.Component {
                     <View style={styles.dayProgramContainer}>
                         <View style={styles.dayStatusImage}>
                             <FNIcon
-                                name='filters'
+                                name='clock'
                                 size={18}
                                 color="#008FA6"
                             />

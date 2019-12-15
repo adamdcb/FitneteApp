@@ -70,7 +70,7 @@ class DemoWorkoutScreen extends React.Component {
                         <View style={styles.detailsContainer}>
                             <View style={styles.statusImage}>
                                 <FNIcon
-                                    name='clock'
+                                    name='filters'
                                     size={18}
                                     color="#008FA6"
                                 />
@@ -81,7 +81,7 @@ class DemoWorkoutScreen extends React.Component {
                         <View style={styles.detailsContainer}>
                             <View style={styles.statusImage}>
                                 <FNIcon
-                                    name='filters'
+                                    name='clock'
                                     size={18}
                                     color="#008FA6"
                                 />
