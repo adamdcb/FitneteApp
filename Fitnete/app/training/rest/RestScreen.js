@@ -106,9 +106,7 @@ const styles = StyleSheet.create({
         fontFamily: 'Poppins-Bold',
         fontSize: 24,
         color: '#3E3750',
-        textAlign: 'center',
-        textDecorationLine: 'underline',
-        textDecorationColor: '#30D87C'
+        textAlign: 'center'
     },
     timeText: {
         marginVertical: 48,
