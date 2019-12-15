@@ -46,7 +46,7 @@ class NoPlanPurchasedScreen extends React.Component {
                         <View style={styles.imageContainer}>
                             <Image
                                 style={styles.image}
-                                source={{ uri: 'no_premium' }}
+                                source={{ uri: 'for_free' }}
                             />
                         </View>
                     </Container>
