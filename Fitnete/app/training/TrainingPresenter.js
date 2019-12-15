@@ -8,7 +8,7 @@ const DIFFICULTY = {
     2: 'hard'
 };
 
-const DEFAULT_REST_TIME = 45; // sec.
+const DEFAULT_REST_TIME = 3; // sec.
 const REP_TIME_COEFF = 1.5;
 
 const PROGRAM_BACKGROUND = {
