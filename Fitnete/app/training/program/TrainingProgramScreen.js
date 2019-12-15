@@ -46,8 +46,15 @@ class TrainingProgramScreen extends React.Component {
                     source={{ uri: 'for_free' }}
                 />
                 <View style={styles.difficultyContainer}>
-                    <Text style={styles.difficultyText}>{item.difficultyText}</Text>
-                    <View style={styles.difficultyIcon} />
+                    <Text style={[styles.difficultyText, {
+                        color: item.difficulty.color
+                    }]}
+                    >
+                        {item.difficulty.text}
+                    </Text>
+                    <View style={[styles.difficultyIcon, {
+                        backgroundColor: item.difficulty.color
+                    }]} />
                 </View>
                 <Text style={styles.dayProgramTitle}>{item.title}</Text>
                 <Text style={styles.dayProgramDescription} numberOfLines={3}>{item.description}</Text>
@@ -265,8 +272,7 @@ const styles = StyleSheet.create({
         width: 10,
         height: 10,
         borderRadius: 5,
-        marginLeft: 6,
-        backgroundColor: '#08C757'
+        marginLeft: 6
     },
     dayProgramOuterContainer: {
         marginTop: 24,

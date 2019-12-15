@@ -39,6 +39,12 @@ const PROGRAM_BACKGROUND = {
     }
 };
 
+const DIFFICULTY_COLOR = {
+    0: '#08C757',
+    1: '#F56609',
+    2: '#E40026'
+};
+
 export default class TrainingPresenter {
     constructor(view) {
         this.view = view;
@@ -73,7 +79,10 @@ export default class TrainingPresenter {
                             repeatText: `${workout.exercises.length - 1}`,
                             gearTitle: I18n.t('training.gear'),
                             gearText: I18n.t('workoutGear.none'), // TODO
-                            difficultyText: `${I18n.t(`workoutDifficulty.${DIFFICULTY[workout.difficulty]}`)}`.toUpperCase(),
+                            difficulty: {
+                                text: `${I18n.t(`workoutDifficulty.${DIFFICULTY[workout.difficulty]}`)}`.toUpperCase(),
+                                color: `${DIFFICULTY_COLOR[workout.difficulty]}`
+                            },
                             background: programBackground,
                             exercises: workout.exercises.map((exercise) => {
                                 const exerciseDuration = this._getExerciseDuration(exercise);
