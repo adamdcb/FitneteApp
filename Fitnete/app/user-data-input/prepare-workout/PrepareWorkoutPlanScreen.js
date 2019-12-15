@@ -87,9 +87,7 @@ class PrepareWorkoutPlanScreen extends React.Component {
                                             <Text style={styles.progressText}>
                                                 {this.state.progress}
                                             </Text>
-                                            <Text style={styles.progressUnit}>
-                                                %
-                                            </Text>
+                                            <Text style={styles.progressUnit}>%</Text>
                                         </View>
                                     </View>
                                 )
@@ -186,7 +184,8 @@ const styles = StyleSheet.create({
         fontFamily: 'Poppins-Bold',
         fontSize: 40,
         color: '#3E3750',
-        textAlign: 'center'
+        textAlign: 'center',
+        letterSpacing: -1
     },
     progressUnit: {
         marginTop: 8,
