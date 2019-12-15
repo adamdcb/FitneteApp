@@ -5,30 +5,50 @@ import I18n from '../../utils/i18n/I18n';
 import Container from '../../utils/components/Container';
 import Button from '../../utils/components/Button';
 import { push, Route } from '../../utils/navigation/NavigationService';
+import WorkoutPlanReadyPresenter from './WorkoutPlanReadyPresenter';
 
 class WorkoutPlanReadyScreen extends React.Component {
     constructor(props) {
         super(props);
+        this.state = {
+            duration: 0
+        }
+        this.presenter = new WorkoutPlanReadyPresenter(this);
         this.goToPlan = this.goToPlan.bind(this);
+    }
+
+    componentDidMount() {
+        this.presenter.loadData();
+    }
+
+    componentWillUnmount() {
+        this.presenter.unmountView();
     }
 
     goToPlan() {
         push(Route.NoPlanPurchased);
     }
 
+    setData(data) {
+        this.setState({ ...data });
+    }
+
     render() {
+        const { duration } = this.state;
         return (
             <SafeAreaView style={styles.container}>
                 <Container>
                     <Text style={styles.description}>
                         {I18n.t('workoutPlanReady.description1')}
                     </Text>
-                    <Text style={styles.description2}>
-                        {I18n.t('workoutPlanReady.description2')}
-                    </Text>
-                    <Text style={styles.description3}>
-                            {I18n.t('workoutPlanReady.description3')}
+                    {duration ?
+                        <Text style={styles.description2}>
+                            {I18n.t('workoutPlanReady.description2', { days: duration })}
                         </Text>
+                        : null}
+                    <Text style={styles.description3}>
+                        {I18n.t('workoutPlanReady.description3')}
+                    </Text>
                     <View style={styles.successImageContainer}>
                         <Image
                             style={styles.successImage}

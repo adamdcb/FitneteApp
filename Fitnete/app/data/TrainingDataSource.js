@@ -30,6 +30,16 @@ export default class TrainingDataSource {
         });
     }
 
+    getAnyProgramDuration() {
+        return AsyncWrapper.makeAsync(async (resolve, reject) => {
+            const db = FNDatabase.database();
+            const objects = db.objects('TrainingProgram');
+            const anyProgram = objects[0];
+            const duration = anyProgram ? anyProgram.weeks.length * 7 : 0;
+            resolve(duration);
+        });
+    }
+
     savePrograms(programs) {
         return AsyncWrapper.makeAsync(async (resolve, reject) => {
             const db = FNDatabase.database();
@@ -76,7 +86,7 @@ export default class TrainingDataSource {
                 const exercise = db.objectForPrimaryKey('TrainingExercise', exerciseId);
                 if (exercise) {
                     db.write(() => {
-                       exercise.completed = completed;
+                        exercise.completed = completed;
                     });
                 }
                 resolve(true);

@@ -124,7 +124,7 @@ export default {
     workoutPlanReady: {
         title: 'Success!',
         description1: 'Your fitness program is ready!',
-        description2: '28-days Plan',
+        description2: '%{days}-days Plan',
         description3: 'to Get In Shape',
         getYourPlan: 'Get your plan'
     },

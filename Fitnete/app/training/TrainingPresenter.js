@@ -54,7 +54,7 @@ export default class TrainingPresenter {
     async loadData() {
         const programs = await this.dataSource.getPrograms();
         const uiData = programs.map((program) => {
-            let duration = program.weeks.length * 7;
+            const duration = program.weeks.length * 7;
             const programBackground = PROGRAM_BACKGROUND[program.type];
             return {
                 id: program.id,
