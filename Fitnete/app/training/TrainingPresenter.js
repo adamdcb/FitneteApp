@@ -61,7 +61,6 @@ export default class TrainingPresenter {
                 progressTitle: I18n.t('training.progress'),
                 progressText: `${program.progress} / ${duration}`,
                 newText: program.progress === 0 ? I18n.t('training.new').toUpperCase() : '',
-                difficultyText: I18n.t(`workoutDifficulty.easy`).toUpperCase(), // TODO
                 workouts: program.weeks
                     .reduce((acc, week, wIndex) => {
                         return acc.concat(week.days.map((workout, dIndex) => ({

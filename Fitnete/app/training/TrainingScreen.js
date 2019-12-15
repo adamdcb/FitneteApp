@@ -109,10 +109,6 @@ class TrainingScreen extends React.Component {
                             {item.newText ?
                                 <Text style={styles.newText}>{item.newText}</Text>
                                 : <View />}
-                            <View style={styles.difficultyContainer}>
-                                <Text style={styles.difficultyText}>{item.difficultyText}</Text>
-                                <View style={styles.difficultyIcon}></View>
-                            </View>
                         </View>
                         <Image
                             style={styles.slideImage}
@@ -206,22 +202,6 @@ const styles = StyleSheet.create({
         fontSize: 11,
         color: '#FFD338',
         fontWeight: "500"
-    },
-    difficultyContainer: {
-        flexDirection: 'row',
-        alignItems: 'center'
-    },
-    difficultyText: {
-        fontFamily: 'Poppins-Regular',
-        fontSize: 11,
-        color: '#30D87C'
-    },
-    difficultyIcon: {
-        width: 10,
-        height: 10,
-        borderRadius: 5,
-        marginLeft: 6,
-        backgroundColor: '#08C757'
     },
     slideImage: {
         alignSelf: 'center',
