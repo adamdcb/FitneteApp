@@ -79,9 +79,10 @@ export default {
         try {
             const firebaseNotifications = await firebase.notifications().getScheduledNotifications();
             const notifications = firebaseNotifications.filter(notif => notif.notificationId.startsWith(`${SCHEDULE_NOTIFICATION_PREFIX}${channel}`));
-            notifications.forEach(notification => {
-                firebase.notifications().cancelNotification(notification.notificationId);
-            });
+            for (let index = 0; index < notifications.length; index++) {
+                const notification = notifications[index];
+                await firebase.notifications().cancelNotification(notification.notificationId);
+            }
         } catch (error) {
             console.log(error);
         }
