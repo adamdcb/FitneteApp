@@ -12,8 +12,8 @@ const ANIMATION_NAME = {
     pulsingLungesLeftLeg: '07_Pulsing_Lunges_L',
     pulsingLungesRightLeg: '07_Pulsing_Lunges_R',
     marchingHip: '08_Marching_Hip',
-    singleLegHipThrustersRightLeg: '09_Single_Leg_Hip_Thrusters',
-    singleLegHipThrustersLeftLeg: '09_Single_Leg_Hip_Thrusters',
+    singleLegHipThrustersRightLeg: '09_Single_Leg_Hip_Thrusters_R',
+    singleLegHipThrustersLeftLeg: '09_Single_Leg_Hip_Thrusters_L',
     oneLegBridgeRightLeg: '10_One_Leg_Bridge_R',
     oneLegBridgeLeftLeg: '10_One_Leg_Bridge_L',
     singleLegDeadliftRightLeg: '11_Single_Leg_Deadlift_R',
@@ -34,20 +34,20 @@ const ANIMATION_NAME = {
     oneArmPushUpRightArm: '26_One_Arm_Push_Up_R',
     oneArmPushUpLeftArm: '26_One_Arm_Push_Up_L',
     handPlankReaches: '27_Hand_Plank_Reaches',
-    plankRightSide: '', // TODO
-    plankLeftSide: '', // TODO
+    plankRightSide: '28_Side_Plank_R',
+    plankLeftSide: '28_Side_Plank_L',
     kneePushUps: '29_Knee_Push_Ups',
     shouldPushUps: '', // TODO
     pushUp: '30_Push_Ups',
     bentOverRow: '31_Bent_Over_Row',
     lateralRaises: '32_Lateral_Raise',
-    tricepExtensionRight: '33_Tricep_Extension_R', // FIXME
-    tricepExtensionLeft: '33_Tricep_Extension_L', // FIXME
+    tricepExtensionRight: '33_Tricep_Extension_R',
+    tricepExtensionLeft: '33_Tricep_Extension_L',
     dumbellSwing: '34_Dumbell_Swing',
     squatAndCurl: '35_Squat_and_Curl',
     tricepKickback: '36_Tricep_Kickback',
     plankHipDips: '', // TODO
-    crabWalk: '', // TODO
+    crabWalk: '38_Crab_Walks',
     spineStretch: '39_Spine_Stretch',
     lyingKneeHug: '40_Lying_Knee_Hug_R', // FIXME
     woodpecker: '41_Woodpecker',
@@ -55,14 +55,14 @@ const ANIMATION_NAME = {
     runnersCrunch: '43_Runner_s_Crunch',
     theFounder: '44_The_Founder',
     kneelingObliqueCrunch: '', // TODO
-    mcGillCurlUpRight: '46_McGill_Curl_Up_R', // FIXME
-    mcGillCurlUpLeft: '46_McGill_Curl_Up_L', // FIXME
-    birdDogRight: '47_Bird_Dog_R', // FIXME
-    birdDogLeft: '47_Bird_Dog_L', // FIXME
+    mcGillCurlUpRight: '46_McGill_Curl_Up_R',
+    mcGillCurlUpLeft: '46_McGill_Curl_Up_L',
+    birdDogRight: '47_Bird_Dog_R',
+    birdDogLeft: '47_Bird_Dog_L',
     tricepDip: '57_Tricep_Dip',
     wallSit: '58_Wall_sit',
-    jumpingJacks: '', // TODO
-    burpees: '', // TODO
+    jumpingJacks: '59_Jumping_Jacks',
+    burpees: '60_Burpees',
 };
 
 export default {
