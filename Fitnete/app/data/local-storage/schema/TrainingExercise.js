@@ -6,6 +6,7 @@ const TrainingExercise = {
         name: 'string',
         reps: 'int',
         time: 'int',
+        needsGear: 'bool?',
         completed: 'bool',
         days: {
             type: 'linkingObjects',

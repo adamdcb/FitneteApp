@@ -6,7 +6,7 @@ import TrainingWeek from './schema/TrainingWeek';
 import TrainingDay from './schema/TrainingDay';
 import TrainingExercise from './schema/TrainingExercise';
 
-const DB_SCHEMA_VERSION = 3;
+const DB_SCHEMA_VERSION = 4;
 const DB_SCHEMA = [
     User,
     WaterIntake,

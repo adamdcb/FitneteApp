@@ -21,6 +21,7 @@ export default class TrainingDataSource {
                             name: exercise.name,
                             reps: exercise.reps,
                             time: exercise.time,
+                            needsGear: exercise.needsGear,
                             completed: exercise.completed
                         }))
                     }))
