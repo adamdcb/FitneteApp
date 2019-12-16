@@ -44,7 +44,7 @@ class TrainingScreen extends React.Component {
 
     _openProgram() {
         const { programs } = this.state;
-        navigate(Route.DemoWorkoutIntro, { program: programs[this.slideIndex] });
+        navigate(Route.TrainingProgram, { program: programs[this.slideIndex] });
     }
 
     _renderItem({ item, index }) {

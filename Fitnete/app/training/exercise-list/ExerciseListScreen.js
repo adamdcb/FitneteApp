@@ -1,5 +1,5 @@
 import React from 'react';
-import { SafeAreaView, FlatList, Text, View, Image, StyleSheet } from 'react-native';
+import { SafeAreaView, FlatList, Text, View, Image, TouchableOpacity, StyleSheet } from 'react-native';
 import LinearGradient from 'react-native-linear-gradient';
 
 import Button from '../../utils/components/Button';
@@ -13,6 +13,7 @@ class ExerciseListScreen extends React.Component {
         };
         this._renderItem = this._renderItem.bind(this);
         this._startWorkout = this._startWorkout.bind(this);
+        this._previewExercise = this._previewExercise.bind(this);
     }
 
     _startWorkout() {
@@ -20,9 +21,17 @@ class ExerciseListScreen extends React.Component {
         navigate(Route.Countdown, { workout });
     }
 
+    _previewExercise(exercise) {
+        const { workout } = this.props.navigation.state.params;
+        navigate(Route.ExercisePreview, { workout, exercise });
+    }
+
     _renderItem({ item }) {
         return (
-            <View style={styles.exerciseInnerContainer}>
+            <TouchableOpacity
+                style={styles.exerciseInnerContainer}
+                onPress={() => this._previewExercise(item)}
+            >
                 <View style={styles.exerciseImageContainer}>
                     <LinearGradient
                         style={styles.exerciseGradient}
@@ -41,7 +50,7 @@ class ExerciseListScreen extends React.Component {
                     <Text style={styles.exerciseName}>{item.title}</Text>
                     <Text style={styles.exerciseDuration}>{item.durationText}</Text>
                 </View>
-            </View>
+            </TouchableOpacity>
         )
     }
 

@@ -39,6 +39,7 @@ import DemoWorkoutScreen from '../../training/demo/DemoWorkoutScreen';
 import DemoWorkoutDoneScreen from '../../training/demo/DemoWorkoutDoneScreen';
 import TrainingProgramScreen from '../../training/program/TrainingProgramScreen';
 import ExerciseListScreen from '../../training/exercise-list/ExerciseListScreen';
+import ExercisePreviewScreen from '../../training/exercise-preview/ExercisePreviewScreen';
 import CountdownScreen from '../../training/countdown/CountdownScreen';
 import WorkoutScreen from '../../training/workout/WorkoutScreen';
 import PauseScreen from '../../training/pause/PauseScreen';
@@ -169,7 +170,8 @@ const WorkoutDemoStack = createStackNavigator(
 const TrainingProgramStack = createStackNavigator(
     {
         TrainingProgram: TrainingProgramScreen,
-        ExerciseList: ExerciseListScreen
+        ExerciseList: ExerciseListScreen,
+        ExercisePreview: ExercisePreviewScreen
     },
     {
         defaultNavigationOptions: () => ({
