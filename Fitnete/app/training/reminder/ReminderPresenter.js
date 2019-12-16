@@ -66,7 +66,7 @@ export default class ReminderPresenter {
             const notifications = await NotificationService.getScheduleNotifications(NotificationService.CHANNEL.reminder);
             console.log("notifications:", notifications);
             if (notifications.length === 0) {
-                reminder = this._getReminder([], [0, 0], REPEAT.weekly);
+                reminder = this._getReminder([], [0, 0], this.selectedRepeat);
             } else {
                 const days = [];
                 let timeIndexes = [];
