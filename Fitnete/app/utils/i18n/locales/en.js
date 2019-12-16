@@ -277,7 +277,8 @@ export default {
     },
 
     workoutGear: {
-        none: 'None'
+        none: 'None',
+        yes: 'Yes'
     },
 
     exercises: {

@@ -78,7 +78,7 @@ export default class TrainingPresenter {
                             repeatTitle: I18n.t('training.rests'),
                             repeatText: `${workout.exercises.length - 1}`,
                             gearTitle: I18n.t('training.gear'),
-                            gearText: I18n.t('workoutGear.none'), // TODO
+                            gearText: workout.exercises.some(ex => ex.needsGear === true) ? I18n.t('workoutGear.yes') : I18n.t('workoutGear.none'),
                             difficulty: {
                                 text: `${I18n.t(`workoutDifficulty.${DIFFICULTY[workout.difficulty]}`)}`.toUpperCase(),
                                 color: `${DIFFICULTY_COLOR[workout.difficulty]}`
