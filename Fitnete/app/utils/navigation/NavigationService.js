@@ -100,9 +100,7 @@ const UserDataInputScreens = {
         params: { step: 4, stepsTotal: 4 }
     },
     WorkoutPlanReady: WorkoutPlanReadyScreen,
-    NoPlanPurchased: NoPlanPurchasedScreen,
-    ContinueForFree: ContinueForFreeScreen,
-    WaterIntakeIntro: WaterIntakeIntroScreen
+    NoPlanPurchased: NoPlanPurchasedScreen
 }
 
 const WaterTrackerScreens = {
@@ -126,8 +124,7 @@ const AppIntroStack = createStackNavigator(
 
 const UserDataInputStack = createStackNavigator(
     {
-        ...UserDataInputScreens,
-        ...WaterTrackerScreens
+        ...UserDataInputScreens
     },
     {
         defaultNavigationOptions: () => ({

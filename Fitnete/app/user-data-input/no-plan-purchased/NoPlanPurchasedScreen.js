@@ -5,8 +5,7 @@ import LinearGradient from 'react-native-linear-gradient';
 import I18n from '../../utils/i18n/I18n';
 import Container from '../../utils/components/Container';
 import Button from '../../utils/components/Button';
-import { push, Route } from '../../utils/navigation/NavigationService';
-import HeaderTextButton from '../../utils/components/HeaderTextButton';
+import { Route, pop, navigate } from '../../utils/navigation/NavigationService';
 import ButtonText from '../../utils/components/ButtonText';
 
 class NoPlanPurchasedScreen extends React.Component {
@@ -14,20 +13,14 @@ class NoPlanPurchasedScreen extends React.Component {
         super(props);
         this.continueForFree = this.continueForFree.bind(this);
         this.goPremium = this.goPremium.bind(this);
-        this.goToApp = this.goToApp.bind(this);
-        this.props.navigation.setParams({ goToApp: this.goToApp });
     }
 
     continueForFree() {
-        push(Route.ContinueForFree);
+        navigate(Route.MainApp);
     }
 
     goPremium() {
-
-    }
-
-    goToApp() {
-        push(Route.WaterTracker);
+        pop();
     }
 
     render() {
@@ -150,7 +143,7 @@ const styles = StyleSheet.create({
     },
     goPremiumButtonContainer: {
         flexDirection: 'row',
-        flex: 1 
+        flex: 1
     },
     goPremiumButton: {
         flex: 1
@@ -172,12 +165,8 @@ const styles = StyleSheet.create({
     }
 });
 
-NoPlanPurchasedScreen.navigationOptions = ({ navigation }) => ({
-    headerRight:
-        <HeaderTextButton
-            text={I18n.t('later')}
-            onPress={navigation.getParam('goToApp')}
-        />
+NoPlanPurchasedScreen.navigationOptions = () => ({
+
 });
 
 export default NoPlanPurchasedScreen;
