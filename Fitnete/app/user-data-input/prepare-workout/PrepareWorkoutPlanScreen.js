@@ -179,7 +179,7 @@ const styles = StyleSheet.create({
         flexDirection: 'row'
     },
     progressText: {
-        width: 68,
+        minWidth: 68,
         textAlign: 'right',
         fontFamily: 'Poppins-Bold',
         fontSize: 40,
