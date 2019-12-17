@@ -22,9 +22,8 @@ class ButtonText extends React.PureComponent {
                             color="#0F7788"
                             size={11}
                         />
-                    </View> : <View/>
+                    </View> : null
                 }
-
             </TouchableOpacity>
         );
     };

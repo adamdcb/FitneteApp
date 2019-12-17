@@ -1,5 +1,5 @@
 import React from 'react';
-import { SafeAreaView, View, Text, StyleSheet, Image, TouchableOpacity } from 'react-native';
+import { SafeAreaView, View, Text, StyleSheet, Image } from 'react-native';
 import LinearGradient from 'react-native-linear-gradient';
 
 import I18n from '../../utils/i18n/I18n';
@@ -7,6 +7,7 @@ import Container from '../../utils/components/Container';
 import Button from '../../utils/components/Button';
 import { push, Route } from '../../utils/navigation/NavigationService';
 import HeaderTextButton from '../../utils/components/HeaderTextButton';
+import ButtonText from '../../utils/components/ButtonText';
 
 class NoPlanPurchasedScreen extends React.Component {
     constructor(props) {
@@ -58,16 +59,18 @@ class NoPlanPurchasedScreen extends React.Component {
                         angle={0}
                     >
                         <View style={styles.buttonsContainer}>
-                            <TouchableOpacity
-                                style={styles.continueButtonContainer}
+                            <View style={styles.goPremiumButtonContainer}>
+                                <Button
+                                    style={styles.goPremiumButton}
+                                    title={I18n.t('noPlanPurchased.goPremium')}
+                                    onPress={this.goPremium}
+                                />
+                            </View>
+                            <ButtonText
+                                style={styles.continueButton}
+                                title={I18n.t('noPlanPurchased.continue')}
+                                showArrow={false}
                                 onPress={this.continueForFree}
-                            >
-                                <Text style={styles.continueButton}>{I18n.t('noPlanPurchased.continue')}</Text>
-                            </TouchableOpacity>
-                            <Button
-                                style={styles.goPremiumButton}
-                                title={I18n.t('noPlanPurchased.goPremium')}
-                                onPress={this.goPremium}
                             />
                         </View>
                         <View style={styles.divider} />
@@ -129,36 +132,33 @@ const styles = StyleSheet.create({
         },
         shadowOpacity: 0.44,
         shadowRadius: 10.32,
-        elevation: 16,
+        elevation: 16
     },
     linearGradient: {
         borderTopLeftRadius: 16,
         borderTopRightRadius: 16
     },
     buttonsContainer: {
-        flexDirection: 'row',
         marginHorizontal: 16,
         marginTop: 16,
         alignItems: 'center'
     },
-    continueButtonContainer: {
-        flex: 1,
+    continueButton: {
         height: 40,
-        marginRight: 16,
+        marginTop: 8,
         justifyContent: 'center'
     },
-    continueButton: {
-        fontFamily: 'Poppins',
-        fontSize: 15,
-        color: '#0F7788',
-        textAlign: 'left'
+    goPremiumButtonContainer: {
+        flexDirection: 'row',
+        flex: 1 
     },
     goPremiumButton: {
         flex: 1
     },
     divider: {
         flex: 1,
-        margin: 16,
+        marginHorizontal: 16,
+        marginVertical: 8,
         height: 1,
         backgroundColor: '#EEEFF1'
     },
