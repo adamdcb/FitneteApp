@@ -4,6 +4,8 @@ export default {
     save: 'Save',
     later: 'Later',
     ok: 'OK',
+    month: 'Month',
+    year: 'Year',
     weekdays: {
         monday: 'Monday',
         tuesday: 'Tuesday',
@@ -127,6 +129,21 @@ export default {
         description2: '%{days}-days Plan',
         description3: 'to Get In Shape',
         getYourPlan: 'Get your plan'
+    },
+    purchase: {
+        continue: 'Continue',
+        continueForFree: 'Continue for free',
+        pay: {
+            month: 'Paid Monthly',
+            year: 'Paid Yearly'
+        },
+        goPremium: 'GO PREMIUM',
+        trialTitle: '7 Day Trial',
+        trialDescription: 'Free for a week',
+        pricePerYear: 'Paid Annually at $%{price} / year',
+        workoutsPerWeek: 'workouts per week',
+        workoutsToAchieveGoal: 'workouts until you achieve your goal',
+        legalDescription: 'Legal description about subsricption. Sit amet dolor un, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip.'
     },
     noPlanPurchased: {
         description1: 'Not ready for the',

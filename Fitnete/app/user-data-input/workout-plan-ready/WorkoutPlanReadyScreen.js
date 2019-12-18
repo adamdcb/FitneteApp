@@ -26,7 +26,7 @@ class WorkoutPlanReadyScreen extends React.Component {
     }
 
     goToPlan() {
-        push(Route.NoPlanPurchased);
+        push(Route.Purchase);
     }
 
     setData(data) {

@@ -28,6 +28,7 @@ import SelectFitLevelScreen from '../../user-data-input/select-fit-level/SelectF
 import BodyParametersScreen from '../../user-data-input/body-parameters/BodyParametersScreen';
 import PrepareWorkoutPlanScreen from '../../user-data-input/prepare-workout/PrepareWorkoutPlanScreen';
 import WorkoutPlanReadyScreen from '../../user-data-input/workout-plan-ready/WorkoutPlanReadyScreen';
+import PurchaseScreen from '../../user-data-input/purchase/PurchaseScreen';
 import NoPlanPurchasedScreen from '../../user-data-input/no-plan-purchased/NoPlanPurchasedScreen';
 import ContinueForFreeScreen from '../../user-data-input/no-plan-purchased/ContinueForFreeScreen';
 import WaterIntakeIntroScreen from '../../user-data-input/no-plan-purchased/water-tracker/WaterIntakeIntroScreen';
@@ -100,6 +101,7 @@ const UserDataInputScreens = {
         params: { step: 4, stepsTotal: 4 }
     },
     WorkoutPlanReady: WorkoutPlanReadyScreen,
+    Purchase: PurchaseScreen,
     NoPlanPurchased: NoPlanPurchasedScreen
 }
 
