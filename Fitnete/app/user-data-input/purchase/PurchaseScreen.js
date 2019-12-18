@@ -173,6 +173,7 @@ const styles = StyleSheet.create({
         color: '#4F4C57'
     },
     subscriptionOuterContainer: {
+        overflow: 'hidden',
         backgroundColor: '#FFFFFF',
         borderRadius: 4,
         shadowColor: "#000",
