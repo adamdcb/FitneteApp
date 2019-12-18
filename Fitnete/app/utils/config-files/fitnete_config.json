@@ -257,6 +257,12 @@
       "src": "linecons"
     },
     {
+      "uid": "0817b47d6e5f1d85f2428640a021f0c4",
+      "css": "star",
+      "code": 59412,
+      "src": "linecons"
+    },
+    {
       "uid": "82ebd73e59a35a7d064df40eb0fce2cb",
       "css": "arrow-right-bold",
       "code": 59411,
@@ -271,10 +277,18 @@
       ]
     },
     {
-      "uid": "0817b47d6e5f1d85f2428640a021f0c4",
-      "css": "star",
-      "code": 59412,
-      "src": "linecons"
+      "uid": "74bd3e0dc2d35b6c3401757396469c42",
+      "css": "bars",
+      "code": 59413,
+      "src": "custom_icons",
+      "selected": true,
+      "svg": {
+        "path": "M458.3 738.1L458.3 446.4 583.3 446.4 583.3 738.1 458.3 738.1ZM708.3 738.1L708.3 238.1 833.3 238.1 833.3 738.1 708.3 738.1ZM208.3 738.1L208.3 571.4 333.3 571.4 333.3 738.1 208.3 738.1Z",
+        "width": 1000
+      },
+      "search": [
+        "bars"
+      ]
     }
   ]
 }
