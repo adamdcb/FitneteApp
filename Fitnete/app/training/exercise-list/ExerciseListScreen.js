@@ -1,5 +1,5 @@
 import React from 'react';
-import { SafeAreaView, FlatList, Text, View, Image, TouchableOpacity, StyleSheet } from 'react-native';
+import { SafeAreaView, FlatList, Text, View, Image, TouchableHighlight, StyleSheet } from 'react-native';
 import LinearGradient from 'react-native-linear-gradient';
 
 import Button from '../../utils/components/Button';
@@ -28,29 +28,33 @@ class ExerciseListScreen extends React.Component {
 
     _renderItem({ item }) {
         return (
-            <TouchableOpacity
+            <TouchableHighlight
+                underlayColor='#DBDBDE32'
+                activeOpacity={1}
                 style={styles.exerciseInnerContainer}
                 onPress={() => this._previewExercise(item)}
             >
-                <View style={styles.exerciseImageContainer}>
-                    <LinearGradient
-                        style={styles.exerciseGradient}
-                        colors={['#FFFFFF', '#D9FCFF']}
-                        locations={[0, 1]}
-                        useAngle
-                        angle={0}
-                    >
-                        <Image
-                            style={styles.exerciseImage}
-                            source={{ uri: 'exercise_1' }}
-                        />
-                    </LinearGradient>
+                <View style={styles.listItemContainer}>
+                    <View style={styles.exerciseImageContainer}>
+                        <LinearGradient
+                            style={styles.exerciseGradient}
+                            colors={['#FFFFFF', '#D9FCFF']}
+                            locations={[0, 1]}
+                            useAngle
+                            angle={0}
+                        >
+                            <Image
+                                style={styles.exerciseImage}
+                                source={{ uri: 'exercise_1' }}
+                            />
+                        </LinearGradient>
+                    </View>
+                    <View style={styles.exerciseDetailsContainer}>
+                        <Text style={styles.exerciseName}>{item.title}</Text>
+                        <Text style={styles.exerciseDuration}>{item.durationText}</Text>
+                    </View>
                 </View>
-                <View style={styles.exerciseDetailsContainer}>
-                    <Text style={styles.exerciseName}>{item.title}</Text>
-                    <Text style={styles.exerciseDuration}>{item.durationText}</Text>
-                </View>
-            </TouchableOpacity>
+            </TouchableHighlight>
         )
     }
 
@@ -84,18 +88,18 @@ class ExerciseListScreen extends React.Component {
                     useAngle
                 >
                     <FlatList
-                        style={{ flex: 1, marginTop: 8 }}
-                        contentContainerStyle={{ paddingVertical: 8, paddingHorizontal: 16 }}
+                        style={styles.list}
+                        contentContainerStyle={styles.listContent}
                         data={workout.exercises}
                         keyExtractor={item => item.id}
                         renderItem={this._renderItem}
                     />
                     <View style={styles.bottomContainer}>
-                    <Button
-                        title={I18n.t('dayProgram.startWorkout')}
-                        onPress={this._startWorkout}
-                    />
-                </View>
+                        <Button
+                            title={I18n.t('dayProgram.startWorkout')}
+                            onPress={this._startWorkout}
+                        />
+                    </View>
                 </LinearGradient>
             </SafeAreaView>
         );
@@ -154,13 +158,20 @@ const styles = StyleSheet.create({
         color: '#3E3750',
         textAlign: 'left'
     },
+    listItemContainer: {
+        flex: 1,
+        flexDirection: 'row',
+        paddingVertical: 4,
+        alignItems: 'center'
+    },
     exerciseInnerContainer: {
         flexDirection: 'row',
-        marginTop: 16
+        marginTop: 16,
+        paddingHorizontal: 16
     },
     exerciseImageContainer: {
-        width: 72,
-        height: 72,
+        width: 64,
+        height: 64,
         borderRadius: 12,
         shadowColor: "#000",
         shadowOffset: {
@@ -172,8 +183,8 @@ const styles = StyleSheet.create({
         elevation: 2
     },
     exerciseGradient: {
-        width: 72,
-        height: 72,
+        width: 64,
+        height: 64,
         borderRadius: 12,
         overflow: 'hidden'
     },
@@ -196,6 +207,13 @@ const styles = StyleSheet.create({
         fontFamily: 'Poppins',
         fontSize: 12,
         color: '#3E3750'
+    },
+    list: {
+        flex: 1,
+        marginTop: 8 
+    },
+    listContent: {
+        paddingVertical: 8
     },
     bottomContainer: {
         margin: 16,
