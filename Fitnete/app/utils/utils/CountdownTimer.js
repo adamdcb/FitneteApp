@@ -1,7 +1,8 @@
 
 export default class CountdownTimer {
-    constructor(seconds, onTick, onComplete) {
+    constructor(seconds, onTick, onComplete, tickInterval = 1000) {
         this.seconds = seconds;
+        this.tickInterval = tickInterval;
         this.onTick = onTick;
         this.onComplete = onComplete;
         this._onTick = this._onTick.bind(this);
@@ -11,7 +12,7 @@ export default class CountdownTimer {
         clearTimeout(this.timeoutId);
         this.count = 0;
         this.tickTime = Date.now();
-        this.timeoutId = setTimeout(this._onTick, 1000);
+        this.timeoutId = setTimeout(this._onTick, this.tickInterval);
     }
 
     resume() {
@@ -19,7 +20,7 @@ export default class CountdownTimer {
             return;
         }
         this.tickTime = Date.now();
-        this.timeoutId = setTimeout(this._onTick, 1000);
+        this.timeoutId = setTimeout(this._onTick, this.tickInterval);
     }
 
     pause() {
@@ -37,9 +38,9 @@ export default class CountdownTimer {
             this.onComplete();
         } else {
             const now = Date.now();
-            const timeDiff = now - this.tickTime - 1000;
+            const timeDiff = now - this.tickTime - this.tickInterval;
             this.tickTime = now;
-            this.timeoutId = setTimeout(this._onTick, 1000 - timeDiff);
+            this.timeoutId = setTimeout(this._onTick, this.tickInterval - timeDiff);
             this.onTick(this.count);
         }
     }

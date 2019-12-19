@@ -9,7 +9,7 @@ const DIFFICULTY = {
 };
 
 const DEFAULT_REST_TIME = 3; // sec.
-const REP_TIME_COEFF = 1.5;
+const REP_TIME_COEFF = 1.75;
 
 const PROGRAM_BACKGROUND = {
     legs: {
@@ -91,8 +91,10 @@ export default class TrainingPresenter {
                                     name: exercise.name,
                                     title: I18n.t(`exercises.${exercise.name}Name`),
                                     description: I18n.t(`exercises.${exercise.name}Description`),
-                                    duration: exerciseDuration,
-                                    durationText: Utils.secondsToPlainMMSS(exerciseDuration),
+                                    duration: exerciseDuration.duration,
+                                    durationText: exerciseDuration.durationText,
+                                    isTimeBased: exerciseDuration.isTimeBased,
+                                    tickInterval: exerciseDuration.tickInterval,
                                     restTime: DEFAULT_REST_TIME
                                 }
                             })
@@ -118,9 +120,24 @@ export default class TrainingPresenter {
     }
 
     _getExerciseDuration(exercise) {
+        let duration = 0;
+        let durationText = '';
+        let isTimeBased = true;
+        let tickInterval = 1000;
         if (exercise.time > -1) {
-            return exercise.time;
+            duration = exercise.time;
+            durationText = Utils.secondsToPlainMMSS(duration);
+        } else {
+            duration = exercise.reps;
+            durationText = `${exercise.reps}`;
+            isTimeBased = false;
+            tickInterval = 1000 * REP_TIME_COEFF;
         }
-        return Math.round(exercise.reps * REP_TIME_COEFF);
+        return {
+            duration,
+            durationText,
+            isTimeBased,
+            tickInterval
+        }
     }
 }

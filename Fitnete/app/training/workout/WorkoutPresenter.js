@@ -48,7 +48,7 @@ export default class WorkoutPresenter {
             loading: false
         });
         const exercise = this.workout.exercises[this.exerciseIndex];
-        this._startCountdown(exercise.duration);
+        this._startCountdown(exercise.duration, exercise.tickInterval);
     }
 
     restartWorkout() {
@@ -57,7 +57,7 @@ export default class WorkoutPresenter {
             countdownText: exercise.durationText,
             countdownPercentage: 100
         });
-        this._startCountdown(exercise.duration);
+        this._startCountdown(exercise.duration, exercise.tickInterval);
     }
 
     pauseWorkout() {
@@ -80,19 +80,20 @@ export default class WorkoutPresenter {
         }
     }
 
-    _startCountdown(duration) {
+    _startCountdown(duration, tickInterval) {
         if (this.countdownTimer) {
             this.countdownTimer.stop();
         }
-        this.countdownTimer = new CountdownTimer(duration, this._onTick, this._onComplete);
+        this.countdownTimer = new CountdownTimer(duration, this._onTick, this._onComplete, tickInterval);
         this.countdownTimer.start();
     }
 
     _onTick(count) {
         const exercise = this.workout.exercises[this.exerciseIndex];
+        const remainingDuration = exercise.duration - count;
         this.view.setData({
-            countdownText: Utils.secondsToPlainMMSS(exercise.duration - count),
-            countdownPercentage: (100 / exercise.duration) * (exercise.duration - count)
+            countdownText: exercise.isTimeBased ? Utils.secondsToPlainMMSS(remainingDuration) : `${remainingDuration}`,
+            countdownPercentage: (100 / exercise.duration) * remainingDuration
         });
     }
 
@@ -100,7 +101,7 @@ export default class WorkoutPresenter {
         const exercise = this.workout.exercises[this.exerciseIndex];
         this._completeExercise(exercise);
         this.view.setData({
-            countdownText: Utils.secondsToPlainMMSS(0),
+            countdownText: exercise.isTimeBased ? Utils.secondsToPlainMMSS(0) : '0',
             countdownPercentage: 0
         });
         const nextExercise = this.workout.exercises[this.exerciseIndex + 1];
