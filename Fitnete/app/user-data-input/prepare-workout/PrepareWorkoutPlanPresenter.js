@@ -17,22 +17,10 @@ const PROGRAM = {
 };
 
 const PROGRAM_SLICE = {
-    0: {
-        start: 0,
-        end: 7
-    },
-    1: {
-        start: 1,
-        end: 6
-    },
-    2: {
-        start: 3,
-        end: 8
-    },
-    3: {
-        start: 4,
-        end: 8
-    }
+    0: [0, 1, 2, 3, 4, 5, 6],
+    1: [1, 2, 3, 4, 6, 7],
+    2: [2, 3, 4, 6, 7],
+    3: [4, 5, 6, 7]
 }; // fitness level to week start/end index mapping -> FIXME: Should be moved to server side!
 
 export default class PrepareWorkoutPlanPresenter {
@@ -63,7 +51,7 @@ export default class PrepareWorkoutPlanPresenter {
             const programSlice = PROGRAM_SLICE[user.fitnessLevel];
             const programs = user.areasOfFocus.reduce((acc, area) => {
                 const program = PROGRAM[area];
-                program.weeks = program.weeks.slice(programSlice.start, programSlice.end)
+                program.weeks = program.weeks.filter((value, index) => programSlice.includes(index));
                 return acc.concat(program);
             }, [])
             await this.trainingDataSource.savePrograms(programs);
