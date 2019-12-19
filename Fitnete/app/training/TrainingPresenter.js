@@ -71,7 +71,7 @@ export default class TrainingPresenter {
                     .reduce((acc, week, wIndex) => {
                         return acc.concat(week.days.map((workout, dIndex) => ({
                             title: `${I18n.t('training.Day')} ${wIndex * 7 + dIndex + 1}`,
-                            description: workout.id, // TODO
+                            description: '',
                             image: this._getWorkoutImage(), // TODO
                             durationTitle: I18n.t('training.exercises'),
                             durationText: `${workout.exercises.length}`,

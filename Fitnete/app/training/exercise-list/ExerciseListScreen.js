@@ -78,7 +78,6 @@ class ExerciseListScreen extends React.Component {
                             <Text style={styles.infoStatusDetails}>{workout.gearText}</Text>
                         </View>
                     </View>
-                    <Text style={styles.programDescription} numberOfLines={3}>{workout.description}</Text>
                 </View>
                 <LinearGradient
                     style={styles.container}
@@ -149,14 +148,6 @@ const styles = StyleSheet.create({
         fontSize: 15,
         color: '#3E3750',
         textAlign: 'center'
-    },
-    programDescription: {
-        marginHorizontal: 16,
-        marginBottom: 16,
-        fontFamily: 'Poppins-Regular',
-        fontSize: 12,
-        color: '#3E3750',
-        textAlign: 'left'
     },
     listItemContainer: {
         flex: 1,

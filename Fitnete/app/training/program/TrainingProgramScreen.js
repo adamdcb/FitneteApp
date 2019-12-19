@@ -1,5 +1,5 @@
 import React from 'react';
-import { SafeAreaView, ScrollView, Text, View, Image, StyleSheet, Dimensions } from 'react-native';
+import { SafeAreaView, ScrollView, Text, View, Image, StyleSheet, Dimensions, Platform } from 'react-native';
 import Carousel from 'react-native-snap-carousel';
 import LinearGradient from 'react-native-linear-gradient';
 
@@ -57,7 +57,6 @@ class TrainingProgramScreen extends React.Component {
                     }]} />
                 </View>
                 <Text style={styles.dayProgramTitle}>{item.title}</Text>
-                <Text style={styles.dayProgramDescription} numberOfLines={3}>{item.description}</Text>
                 <View style={styles.dayProgramOuterContainer}>
                     <View style={styles.dayProgramContainer}>
                         <View style={styles.dayStatusImage}>
@@ -243,30 +242,27 @@ const styles = StyleSheet.create({
         color: '#3E3750',
         textAlign: 'left'
     },
-    dayProgramDescription: {
-        marginTop: 8,
-        marginHorizontal: 16,
-        marginBottom: 24,
-        fontFamily: 'Poppins-Regular',
-        fontSize: 12,
-        color: '#3E3750',
-        textAlign: 'left'
-    },
     dayProgramImage: {
         width: null,
         height: 168,
         resizeMode: 'contain'
     },
     difficultyContainer: {
-        alignSelf: 'flex-end',
         marginRight: 16,
         flexDirection: 'row',
-        alignItems: 'center'
+        alignItems: Platform.select({
+            ios: 'baseline',
+            android: 'center'
+        }),
+        justifyContent: 'flex-end'
     },
     difficultyText: {
         fontFamily: 'Poppins-Regular',
         fontSize: 11,
-        color: '#30D87C'
+        color: '#30D87C',
+        textAlign: 'center',
+        textAlignVertical: 'center',
+        includeFontPadding: false
     },
     difficultyIcon: {
         width: 10,
