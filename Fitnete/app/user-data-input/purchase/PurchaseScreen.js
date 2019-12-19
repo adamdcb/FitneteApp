@@ -1,5 +1,5 @@
 import React from 'react';
-import { SafeAreaView, View, Text, StyleSheet, TouchableOpacity } from 'react-native';
+import { SafeAreaView, View, Text, StyleSheet, TouchableOpacity, Platform } from 'react-native';
 import { getStatusBarHeight } from 'react-native-safe-area-view';
 import LinearGradient from 'react-native-linear-gradient';
 
@@ -120,7 +120,10 @@ class PurchaseScreen extends React.Component {
                             size={20}
                             color="#008FA6"
                         />
-                        <Text style={styles.headerValueText} numberOfLines={1} ellipsizeMode="tail">{workoutsPerWeek} <Text style={styles.headerText}>{I18n.t('purchase.workoutsPerWeek')}</Text></Text>
+                        <Text style={styles.headerTextContainer}>
+                            <Text style={styles.headerValueText} numberOfLines={1} ellipsizeMode="tail">{workoutsPerWeek}{' '}</Text>
+                            <Text style={styles.headerText}>{I18n.t('purchase.workoutsPerWeek')}</Text>
+                        </Text>
                     </View>
                     <View style={styles.headerViewContainer}>
                         <FNIcon
@@ -128,7 +131,10 @@ class PurchaseScreen extends React.Component {
                             size={20}
                             color="#008FA6"
                         />
-                        <Text style={styles.headerValueText} numberOfLines={1} ellipsizeMode="tail">{workoutsTotal} <Text style={styles.headerText}>{I18n.t('purchase.workoutsToAchieveGoal')}</Text></Text>
+                        <Text style={styles.headerTextContainer}>
+                            <Text style={styles.headerValueText} numberOfLines={1} ellipsizeMode="tail">{workoutsTotal}{' '}</Text>
+                            <Text style={styles.headerText}>{I18n.t('purchase.workoutsToAchieveGoal')}</Text>
+                        </Text>
                     </View>
                 </View>
             </SafeAreaView>
@@ -144,6 +150,7 @@ const styles = StyleSheet.create({
     contentContainer: {
         flex: 1,
         marginTop: HEADER_VIEW_HEIGHT + 16,
+        marginHorizontal: 1
     },
     headerBackground: {
         position: 'absolute',
@@ -159,31 +166,37 @@ const styles = StyleSheet.create({
     headerViewContainer: {
         flexDirection: 'row'
     },
-    headerValueText: {
+    headerTextContainer: {
         height: 24,
         marginLeft: 4,
+        justifyContent: 'center',
+        includeFontPadding: false
+    },
+    headerValueText: {
         fontFamily: 'Poppins-Bold',
         fontSize: 15,
         color: '#3E3750'
     },
     headerText: {
-        height: 24,
         fontFamily: 'Poppins',
         fontSize: 15,
         color: '#4F4C57'
     },
     subscriptionOuterContainer: {
-        overflow: 'hidden',
         backgroundColor: '#FFFFFF',
         borderRadius: 4,
+        overflow: Platform.select({
+            ios: 'visible',
+            android: 'hidden',
+        }),
         shadowColor: "#000",
         shadowOffset: {
             width: 0,
             height: 1,
         },
-        shadowOpacity: 0.18,
-        shadowRadius: 1.00,
-        elevation: 1
+        shadowOpacity: 0.20,
+        shadowRadius: 1.41,
+        elevation: 2
     },
     subscriptionContainer: {
         flexDirection: 'row',
