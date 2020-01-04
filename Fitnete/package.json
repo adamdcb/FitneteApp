@@ -12,6 +12,7 @@
   },
   "dependencies": {
     "@react-native-community/async-storage": "1.6.1",
+    "fiber-react-native-elevated-view": "0.2.2",
     "i18n-js": "3.3.0",
     "lodash.merge": "4.6.2",
     "patch-package": "6.2.0",
