@@ -38,22 +38,8 @@
                             "completed": false
                         },
                         {
-                            "id": "programAbdominalsWeek0Day0ExerciseWindshield",
-                            "name": "windshield",
-                            "reps": 5,
-                            "time": -1,
-                            "completed": false
-                        },
-                        {
                             "id": "programAbdominalsWeek0Day0ExerciseReverseCrunchStraight",
                             "name": "reverseCrunchStraight",
-                            "reps": 5,
-                            "time": -1,
-                            "completed": false
-                        },
-                        {
-                            "id": "programAbdominalsWeek0Day0ExercisePlankHipDips",
-                            "name": "plankHipDips",
                             "reps": 5,
                             "time": -1,
                             "completed": false
@@ -120,22 +106,8 @@
                             "completed": false
                         },
                         {
-                            "id": "programAbdominalsWeek0Day2ExerciseWindshield",
-                            "name": "windshield",
-                            "reps": 5,
-                            "time": -1,
-                            "completed": false
-                        },
-                        {
                             "id": "programAbdominalsWeek0Day2ExerciseReverseCrunchStraight",
                             "name": "reverseCrunchStraight",
-                            "reps": 5,
-                            "time": -1,
-                            "completed": false
-                        },
-                        {
-                            "id": "programAbdominalsWeek0Day2ExercisePlankHipDips",
-                            "name": "plankHipDips",
                             "reps": 5,
                             "time": -1,
                             "completed": false
@@ -196,22 +168,8 @@
                             "completed": false
                         },
                         {
-                            "id": "programAbdominalsWeek0Day3ExerciseWindshield",
-                            "name": "windshield",
-                            "reps": 5,
-                            "time": -1,
-                            "completed": false
-                        },
-                        {
                             "id": "programAbdominalsWeek0Day3ExerciseReverseCrunchStraight",
                             "name": "reverseCrunchStraight",
-                            "reps": 5,
-                            "time": -1,
-                            "completed": false
-                        },
-                        {
-                            "id": "programAbdominalsWeek0Day3ExercisePlankHipDips",
-                            "name": "plankHipDips",
                             "reps": 5,
                             "time": -1,
                             "completed": false
@@ -278,22 +236,8 @@
                             "completed": false
                         },
                         {
-                            "id": "programAbdominalsWeek0Day5ExerciseWindshield",
-                            "name": "windshield",
-                            "reps": 5,
-                            "time": -1,
-                            "completed": false
-                        },
-                        {
                             "id": "programAbdominalsWeek0Day5ExerciseReverseCrunchStraight",
                             "name": "reverseCrunchStraight",
-                            "reps": 5,
-                            "time": -1,
-                            "completed": false
-                        },
-                        {
-                            "id": "programAbdominalsWeek0Day5ExercisePlankHipDips",
-                            "name": "plankHipDips",
                             "reps": 5,
                             "time": -1,
                             "completed": false
@@ -354,22 +298,8 @@
                             "completed": false
                         },
                         {
-                            "id": "programAbdominalsWeek0Day6ExerciseWindshield",
-                            "name": "windshield",
-                            "reps": 5,
-                            "time": -1,
-                            "completed": false
-                        },
-                        {
                             "id": "programAbdominalsWeek0Day6ExerciseReverseCrunchStraight",
                             "name": "reverseCrunchStraight",
-                            "reps": 5,
-                            "time": -1,
-                            "completed": false
-                        },
-                        {
-                            "id": "programAbdominalsWeek0Day6ExercisePlankHipDips",
-                            "name": "plankHipDips",
                             "reps": 5,
                             "time": -1,
                             "completed": false
@@ -441,22 +371,8 @@
                             "completed": false
                         },
                         {
-                            "id": "programAbdominalsWeek1Day1ExerciseWindshield",
-                            "name": "windshield",
-                            "reps": 7,
-                            "time": -1,
-                            "completed": false
-                        },
-                        {
                             "id": "programAbdominalsWeek1Day1ExerciseReverseCrunchStraight",
                             "name": "reverseCrunchStraight",
-                            "reps": 7,
-                            "time": -1,
-                            "completed": false
-                        },
-                        {
-                            "id": "programAbdominalsWeek1Day1ExercisePlankHipDips",
-                            "name": "plankHipDips",
                             "reps": 7,
                             "time": -1,
                             "completed": false
@@ -517,22 +433,8 @@
                             "completed": false
                         },
                         {
-                            "id": "programAbdominalsWeek1Day2ExerciseWindshield",
-                            "name": "windshield",
-                            "reps": 7,
-                            "time": -1,
-                            "completed": false
-                        },
-                        {
                             "id": "programAbdominalsWeek1Day2ExerciseReverseCrunchStraight",
                             "name": "reverseCrunchStraight",
-                            "reps": 7,
-                            "time": -1,
-                            "completed": false
-                        },
-                        {
-                            "id": "programAbdominalsWeek1Day2ExercisePlankHipDips",
-                            "name": "plankHipDips",
                             "reps": 7,
                             "time": -1,
                             "completed": false
@@ -599,22 +501,8 @@
                             "completed": false
                         },
                         {
-                            "id": "programAbdominalsWeek1Day4ExerciseWindshield",
-                            "name": "windshield",
-                            "reps": 7,
-                            "time": -1,
-                            "completed": false
-                        },
-                        {
                             "id": "programAbdominalsWeek1Day4ExerciseReverseCrunchStraight",
                             "name": "reverseCrunchStraight",
-                            "reps": 7,
-                            "time": -1,
-                            "completed": false
-                        },
-                        {
-                            "id": "programAbdominalsWeek1Day4ExercisePlankHipDips",
-                            "name": "plankHipDips",
                             "reps": 7,
                             "time": -1,
                             "completed": false
@@ -675,22 +563,8 @@
                             "completed": false
                         },
                         {
-                            "id": "programAbdominalsWeek1Day5ExerciseWindshield",
-                            "name": "windshield",
-                            "reps": 7,
-                            "time": -1,
-                            "completed": false
-                        },
-                        {
                             "id": "programAbdominalsWeek1Day5ExerciseReverseCrunchStraight",
                             "name": "reverseCrunchStraight",
-                            "reps": 7,
-                            "time": -1,
-                            "completed": false
-                        },
-                        {
-                            "id": "programAbdominalsWeek1Day5ExercisePlankHipDips",
-                            "name": "plankHipDips",
                             "reps": 7,
                             "time": -1,
                             "completed": false
@@ -762,22 +636,8 @@
                             "completed": false
                         },
                         {
-                            "id": "programAbdominalsWeek2Day0ExerciseWindshield",
-                            "name": "windshield",
-                            "reps": 7,
-                            "time": -1,
-                            "completed": false
-                        },
-                        {
                             "id": "programAbdominalsWeek2Day0ExerciseReverseCrunchStraight",
                             "name": "reverseCrunchStraight",
-                            "reps": 7,
-                            "time": -1,
-                            "completed": false
-                        },
-                        {
-                            "id": "programAbdominalsWeek2Day0ExercisePlankHipDips",
-                            "name": "plankHipDips",
                             "reps": 7,
                             "time": -1,
                             "completed": false
@@ -838,22 +698,8 @@
                             "completed": false
                         },
                         {
-                            "id": "programAbdominalsWeek2Day1ExerciseWindshield",
-                            "name": "windshield",
-                            "reps": 7,
-                            "time": -1,
-                            "completed": false
-                        },
-                        {
                             "id": "programAbdominalsWeek2Day1ExerciseReverseCrunchStraight",
                             "name": "reverseCrunchStraight",
-                            "reps": 7,
-                            "time": -1,
-                            "completed": false
-                        },
-                        {
-                            "id": "programAbdominalsWeek2Day1ExercisePlankHipDips",
-                            "name": "plankHipDips",
                             "reps": 7,
                             "time": -1,
                             "completed": false
@@ -920,22 +766,8 @@
                             "completed": false
                         },
                         {
-                            "id": "programAbdominalsWeek2Day3ExerciseWindshield",
-                            "name": "windshield",
-                            "reps": 8,
-                            "time": -1,
-                            "completed": false
-                        },
-                        {
                             "id": "programAbdominalsWeek2Day3ExerciseReverseCrunchStraight",
                             "name": "reverseCrunchStraight",
-                            "reps": 8,
-                            "time": -1,
-                            "completed": false
-                        },
-                        {
-                            "id": "programAbdominalsWeek2Day3ExercisePlankHipDips",
-                            "name": "plankHipDips",
                             "reps": 8,
                             "time": -1,
                             "completed": false
@@ -996,22 +828,8 @@
                             "completed": false
                         },
                         {
-                            "id": "programAbdominalsWeek2Day4ExerciseWindshield",
-                            "name": "windshield",
-                            "reps": 8,
-                            "time": -1,
-                            "completed": false
-                        },
-                        {
                             "id": "programAbdominalsWeek2Day4ExerciseReverseCrunchStraight",
                             "name": "reverseCrunchStraight",
-                            "reps": 8,
-                            "time": -1,
-                            "completed": false
-                        },
-                        {
-                            "id": "programAbdominalsWeek2Day4ExercisePlankHipDips",
-                            "name": "plankHipDips",
                             "reps": 8,
                             "time": -1,
                             "completed": false
@@ -1078,22 +896,8 @@
                             "completed": false
                         },
                         {
-                            "id": "programAbdominalsWeek2Day6ExerciseWindshield",
-                            "name": "windshield",
-                            "reps": 10,
-                            "time": -1,
-                            "completed": false
-                        },
-                        {
                             "id": "programAbdominalsWeek2Day6ExerciseReverseCrunchStraight",
                             "name": "reverseCrunchStraight",
-                            "reps": 10,
-                            "time": -1,
-                            "completed": false
-                        },
-                        {
-                            "id": "programAbdominalsWeek2Day6ExercisePlankHipDips",
-                            "name": "plankHipDips",
                             "reps": 10,
                             "time": -1,
                             "completed": false
@@ -1159,22 +963,8 @@
                             "completed": false
                         },
                         {
-                            "id": "programAbdominalsWeek3Day0ExerciseWindshield",
-                            "name": "windshield",
-                            "reps": 10,
-                            "time": -1,
-                            "completed": false
-                        },
-                        {
                             "id": "programAbdominalsWeek3Day0ExerciseReverseCrunchStraight",
                             "name": "reverseCrunchStraight",
-                            "reps": 10,
-                            "time": -1,
-                            "completed": false
-                        },
-                        {
-                            "id": "programAbdominalsWeek3Day0ExercisePlankHipDips",
-                            "name": "plankHipDips",
                             "reps": 10,
                             "time": -1,
                             "completed": false
@@ -1241,22 +1031,8 @@
                             "completed": false
                         },
                         {
-                            "id": "programAbdominalsWeek3Day2ExerciseWindshield",
-                            "name": "windshield",
-                            "reps": 10,
-                            "time": -1,
-                            "completed": false
-                        },
-                        {
                             "id": "programAbdominalsWeek3Day2ExerciseReverseCrunchStraight",
                             "name": "reverseCrunchStraight",
-                            "reps": 10,
-                            "time": -1,
-                            "completed": false
-                        },
-                        {
-                            "id": "programAbdominalsWeek3Day2ExercisePlankHipDips",
-                            "name": "plankHipDips",
                             "reps": 10,
                             "time": -1,
                             "completed": false
@@ -1317,22 +1093,8 @@
                             "completed": false
                         },
                         {
-                            "id": "programAbdominalsWeek3Day3ExerciseWindshield",
-                            "name": "windshield",
-                            "reps": 10,
-                            "time": -1,
-                            "completed": false
-                        },
-                        {
                             "id": "programAbdominalsWeek3Day3ExerciseReverseCrunchStraight",
                             "name": "reverseCrunchStraight",
-                            "reps": 10,
-                            "time": -1,
-                            "completed": false
-                        },
-                        {
-                            "id": "programAbdominalsWeek3Day3ExercisePlankHipDips",
-                            "name": "plankHipDips",
                             "reps": 10,
                             "time": -1,
                             "completed": false
@@ -1399,22 +1161,8 @@
                             "completed": false
                         },
                         {
-                            "id": "programAbdominalsWeek3Day5ExerciseWindshield",
-                            "name": "windshield",
-                            "reps": 10,
-                            "time": -1,
-                            "completed": false
-                        },
-                        {
                             "id": "programAbdominalsWeek3Day5ExerciseReverseCrunchStraight",
                             "name": "reverseCrunchStraight",
-                            "reps": 10,
-                            "time": -1,
-                            "completed": false
-                        },
-                        {
-                            "id": "programAbdominalsWeek3Day5ExercisePlankHipDips",
-                            "name": "plankHipDips",
                             "reps": 10,
                             "time": -1,
                             "completed": false
@@ -1475,22 +1223,8 @@
                             "completed": false
                         },
                         {
-                            "id": "programAbdominalsWeek3Day6ExerciseWindshield",
-                            "name": "windshield",
-                            "reps": 10,
-                            "time": -1,
-                            "completed": false
-                        },
-                        {
                             "id": "programAbdominalsWeek3Day6ExerciseReverseCrunchStraight",
                             "name": "reverseCrunchStraight",
-                            "reps": 10,
-                            "time": -1,
-                            "completed": false
-                        },
-                        {
-                            "id": "programAbdominalsWeek3Day6ExercisePlankHipDips",
-                            "name": "plankHipDips",
                             "reps": 10,
                             "time": -1,
                             "completed": false
@@ -1562,22 +1296,8 @@
                             "completed": false
                         },
                         {
-                            "id": "programAbdominalsWeek4Day1ExerciseWindshield",
-                            "name": "windshield",
-                            "reps": 14,
-                            "time": -1,
-                            "completed": false
-                        },
-                        {
                             "id": "programAbdominalsWeek4Day1ExerciseReverseCrunchStraight",
                             "name": "reverseCrunchStraight",
-                            "reps": 14,
-                            "time": -1,
-                            "completed": false
-                        },
-                        {
-                            "id": "programAbdominalsWeek4Day1ExercisePlankHipDips",
-                            "name": "plankHipDips",
                             "reps": 14,
                             "time": -1,
                             "completed": false
@@ -1638,22 +1358,8 @@
                             "completed": false
                         },
                         {
-                            "id": "programAbdominalsWeek4Day2ExerciseWindshield",
-                            "name": "windshield",
-                            "reps": 14,
-                            "time": -1,
-                            "completed": false
-                        },
-                        {
                             "id": "programAbdominalsWeek4Day2ExerciseReverseCrunchStraight",
                             "name": "reverseCrunchStraight",
-                            "reps": 14,
-                            "time": -1,
-                            "completed": false
-                        },
-                        {
-                            "id": "programAbdominalsWeek4Day2ExercisePlankHipDips",
-                            "name": "plankHipDips",
                             "reps": 14,
                             "time": -1,
                             "completed": false
@@ -1720,22 +1426,8 @@
                             "completed": false
                         },
                         {
-                            "id": "programAbdominalsWeek4Day4ExerciseWindshield",
-                            "name": "windshield",
-                            "reps": 14,
-                            "time": -1,
-                            "completed": false
-                        },
-                        {
                             "id": "programAbdominalsWeek4Day4ExerciseReverseCrunchStraight",
                             "name": "reverseCrunchStraight",
-                            "reps": 14,
-                            "time": -1,
-                            "completed": false
-                        },
-                        {
-                            "id": "programAbdominalsWeek4Day4ExercisePlankHipDips",
-                            "name": "plankHipDips",
                             "reps": 14,
                             "time": -1,
                             "completed": false
@@ -1796,22 +1488,8 @@
                             "completed": false
                         },
                         {
-                            "id": "programAbdominalsWeek4Day5ExerciseWindshield",
-                            "name": "windshield",
-                            "reps": 14,
-                            "time": -1,
-                            "completed": false
-                        },
-                        {
                             "id": "programAbdominalsWeek4Day5ExerciseReverseCrunchStraight",
                             "name": "reverseCrunchStraight",
-                            "reps": 14,
-                            "time": -1,
-                            "completed": false
-                        },
-                        {
-                            "id": "programAbdominalsWeek4Day5ExercisePlankHipDips",
-                            "name": "plankHipDips",
                             "reps": 14,
                             "time": -1,
                             "completed": false
@@ -1883,22 +1561,8 @@
                             "completed": false
                         },
                         {
-                            "id": "programAbdominalsWeek5Day0ExerciseWindshield",
-                            "name": "windshield",
-                            "reps": 14,
-                            "time": -1,
-                            "completed": false
-                        },
-                        {
                             "id": "programAbdominalsWeek5Day0ExerciseReverseCrunchStraight",
                             "name": "reverseCrunchStraight",
-                            "reps": 14,
-                            "time": -1,
-                            "completed": false
-                        },
-                        {
-                            "id": "programAbdominalsWeek5Day0ExercisePlankHipDips",
-                            "name": "plankHipDips",
                             "reps": 14,
                             "time": -1,
                             "completed": false
@@ -1959,22 +1623,8 @@
                             "completed": false
                         },
                         {
-                            "id": "programAbdominalsWeek5Day1ExerciseWindshield",
-                            "name": "windshield",
-                            "reps": 14,
-                            "time": -1,
-                            "completed": false
-                        },
-                        {
                             "id": "programAbdominalsWeek5Day1ExerciseReverseCrunchStraight",
                             "name": "reverseCrunchStraight",
-                            "reps": 14,
-                            "time": -1,
-                            "completed": false
-                        },
-                        {
-                            "id": "programAbdominalsWeek5Day1ExercisePlankHipDips",
-                            "name": "plankHipDips",
                             "reps": 14,
                             "time": -1,
                             "completed": false
@@ -2041,22 +1691,8 @@
                             "completed": false
                         },
                         {
-                            "id": "programAbdominalsWeek5Day3ExerciseWindshield",
-                            "name": "windshield",
-                            "reps": 16,
-                            "time": -1,
-                            "completed": false
-                        },
-                        {
                             "id": "programAbdominalsWeek5Day3ExerciseReverseCrunchStraight",
                             "name": "reverseCrunchStraight",
-                            "reps": 16,
-                            "time": -1,
-                            "completed": false
-                        },
-                        {
-                            "id": "programAbdominalsWeek5Day3ExercisePlankHipDips",
-                            "name": "plankHipDips",
                             "reps": 16,
                             "time": -1,
                             "completed": false
@@ -2117,22 +1753,8 @@
                             "completed": false
                         },
                         {
-                            "id": "programAbdominalsWeek5Day4ExerciseWindshield",
-                            "name": "windshield",
-                            "reps": 16,
-                            "time": -1,
-                            "completed": false
-                        },
-                        {
                             "id": "programAbdominalsWeek5Day4ExerciseReverseCrunchStraight",
                             "name": "reverseCrunchStraight",
-                            "reps": 16,
-                            "time": -1,
-                            "completed": false
-                        },
-                        {
-                            "id": "programAbdominalsWeek5Day4ExercisePlankHipDips",
-                            "name": "plankHipDips",
                             "reps": 16,
                             "time": -1,
                             "completed": false
@@ -2199,22 +1821,8 @@
                             "completed": false
                         },
                         {
-                            "id": "programAbdominalsWeek5Day6ExerciseWindshield",
-                            "name": "windshield",
-                            "reps": 20,
-                            "time": -1,
-                            "completed": false
-                        },
-                        {
                             "id": "programAbdominalsWeek5Day6ExerciseReverseCrunchStraight",
                             "name": "reverseCrunchStraight",
-                            "reps": 20,
-                            "time": -1,
-                            "completed": false
-                        },
-                        {
-                            "id": "programAbdominalsWeek5Day6ExercisePlankHipDips",
-                            "name": "plankHipDips",
                             "reps": 20,
                             "time": -1,
                             "completed": false
@@ -2280,22 +1888,8 @@
                             "completed": false
                         },
                         {
-                            "id": "programAbdominalsWeek6Day0ExerciseWindshield",
-                            "name": "windshield",
-                            "reps": 20,
-                            "time": -1,
-                            "completed": false
-                        },
-                        {
                             "id": "programAbdominalsWeek6Day0ExerciseReverseCrunchStraight",
                             "name": "reverseCrunchStraight",
-                            "reps": 20,
-                            "time": -1,
-                            "completed": false
-                        },
-                        {
-                            "id": "programAbdominalsWeek6Day0ExercisePlankHipDips",
-                            "name": "plankHipDips",
                             "reps": 20,
                             "time": -1,
                             "completed": false
@@ -2362,22 +1956,8 @@
                             "completed": false
                         },
                         {
-                            "id": "programAbdominalsWeek6Day2ExerciseWindshield",
-                            "name": "windshield",
-                            "reps": 20,
-                            "time": -1,
-                            "completed": false
-                        },
-                        {
                             "id": "programAbdominalsWeek6Day2ExerciseReverseCrunchStraight",
                             "name": "reverseCrunchStraight",
-                            "reps": 20,
-                            "time": -1,
-                            "completed": false
-                        },
-                        {
-                            "id": "programAbdominalsWeek6Day2ExercisePlankHipDips",
-                            "name": "plankHipDips",
                             "reps": 20,
                             "time": -1,
                             "completed": false
@@ -2438,22 +2018,8 @@
                             "completed": false
                         },
                         {
-                            "id": "programAbdominalsWeek6Day3ExerciseWindshield",
-                            "name": "windshield",
-                            "reps": 20,
-                            "time": -1,
-                            "completed": false
-                        },
-                        {
                             "id": "programAbdominalsWeek6Day3ExerciseReverseCrunchStraight",
                             "name": "reverseCrunchStraight",
-                            "reps": 20,
-                            "time": -1,
-                            "completed": false
-                        },
-                        {
-                            "id": "programAbdominalsWeek6Day3ExercisePlankHipDips",
-                            "name": "plankHipDips",
                             "reps": 20,
                             "time": -1,
                             "completed": false
@@ -2520,22 +2086,8 @@
                             "completed": false
                         },
                         {
-                            "id": "programAbdominalsWeek6Day5ExerciseWindshield",
-                            "name": "windshield",
-                            "reps": 20,
-                            "time": -1,
-                            "completed": false
-                        },
-                        {
                             "id": "programAbdominalsWeek6Day5ExerciseReverseCrunchStraight",
                             "name": "reverseCrunchStraight",
-                            "reps": 20,
-                            "time": -1,
-                            "completed": false
-                        },
-                        {
-                            "id": "programAbdominalsWeek6Day5ExercisePlankHipDips",
-                            "name": "plankHipDips",
                             "reps": 20,
                             "time": -1,
                             "completed": false
@@ -2596,22 +2148,8 @@
                             "completed": false
                         },
                         {
-                            "id": "programAbdominalsWeek6Day6ExerciseWindshield",
-                            "name": "windshield",
-                            "reps": 20,
-                            "time": -1,
-                            "completed": false
-                        },
-                        {
                             "id": "programAbdominalsWeek6Day6ExerciseReverseCrunchStraight",
                             "name": "reverseCrunchStraight",
-                            "reps": 20,
-                            "time": -1,
-                            "completed": false
-                        },
-                        {
-                            "id": "programAbdominalsWeek6Day6ExercisePlankHipDips",
-                            "name": "plankHipDips",
                             "reps": 20,
                             "time": -1,
                             "completed": false
@@ -2683,22 +2221,8 @@
                             "completed": false
                         },
                         {
-                            "id": "programAbdominalsWeek7Day1ExerciseWindshield",
-                            "name": "windshield",
-                            "reps": 28,
-                            "time": -1,
-                            "completed": false
-                        },
-                        {
                             "id": "programAbdominalsWeek7Day1ExerciseReverseCrunchStraight",
                             "name": "reverseCrunchStraight",
-                            "reps": 28,
-                            "time": -1,
-                            "completed": false
-                        },
-                        {
-                            "id": "programAbdominalsWeek7Day1ExercisePlankHipDips",
-                            "name": "plankHipDips",
                             "reps": 28,
                             "time": -1,
                             "completed": false
@@ -2759,22 +2283,8 @@
                             "completed": false
                         },
                         {
-                            "id": "programAbdominalsWeek7Day2ExerciseWindshield",
-                            "name": "windshield",
-                            "reps": 28,
-                            "time": -1,
-                            "completed": false
-                        },
-                        {
                             "id": "programAbdominalsWeek7Day2ExerciseReverseCrunchStraight",
                             "name": "reverseCrunchStraight",
-                            "reps": 28,
-                            "time": -1,
-                            "completed": false
-                        },
-                        {
-                            "id": "programAbdominalsWeek7Day2ExercisePlankHipDips",
-                            "name": "plankHipDips",
                             "reps": 28,
                             "time": -1,
                             "completed": false
@@ -2841,22 +2351,8 @@
                             "completed": false
                         },
                         {
-                            "id": "programAbdominalsWeek7Day4ExerciseWindshield",
-                            "name": "windshield",
-                            "reps": 28,
-                            "time": -1,
-                            "completed": false
-                        },
-                        {
                             "id": "programAbdominalsWeek7Day4ExerciseReverseCrunchStraight",
                             "name": "reverseCrunchStraight",
-                            "reps": 28,
-                            "time": -1,
-                            "completed": false
-                        },
-                        {
-                            "id": "programAbdominalsWeek7Day4ExercisePlankHipDips",
-                            "name": "plankHipDips",
                             "reps": 28,
                             "time": -1,
                             "completed": false
@@ -2917,22 +2413,8 @@
                             "completed": false
                         },
                         {
-                            "id": "programAbdominalsWeek7Day5ExerciseWindshield",
-                            "name": "windshield",
-                            "reps": 28,
-                            "time": -1,
-                            "completed": false
-                        },
-                        {
                             "id": "programAbdominalsWeek7Day5ExerciseReverseCrunchStraight",
                             "name": "reverseCrunchStraight",
-                            "reps": 28,
-                            "time": -1,
-                            "completed": false
-                        },
-                        {
-                            "id": "programAbdominalsWeek7Day5ExercisePlankHipDips",
-                            "name": "plankHipDips",
                             "reps": 28,
                             "time": -1,
                             "completed": false
@@ -3004,22 +2486,8 @@
                             "completed": false
                         },
                         {
-                            "id": "programAbdominalsWeek8Day0ExerciseWindshield",
-                            "name": "windshield",
-                            "reps": 28,
-                            "time": -1,
-                            "completed": false
-                        },
-                        {
                             "id": "programAbdominalsWeek8Day0ExerciseReverseCrunchStraight",
                             "name": "reverseCrunchStraight",
-                            "reps": 28,
-                            "time": -1,
-                            "completed": false
-                        },
-                        {
-                            "id": "programAbdominalsWeek8Day0ExercisePlankHipDips",
-                            "name": "plankHipDips",
                             "reps": 28,
                             "time": -1,
                             "completed": false
@@ -3080,22 +2548,8 @@
                             "completed": false
                         },
                         {
-                            "id": "programAbdominalsWeek8Day1ExerciseWindshield",
-                            "name": "windshield",
-                            "reps": 28,
-                            "time": -1,
-                            "completed": false
-                        },
-                        {
                             "id": "programAbdominalsWeek8Day1ExerciseReverseCrunchStraight",
                             "name": "reverseCrunchStraight",
-                            "reps": 28,
-                            "time": -1,
-                            "completed": false
-                        },
-                        {
-                            "id": "programAbdominalsWeek8Day1ExercisePlankHipDips",
-                            "name": "plankHipDips",
                             "reps": 28,
                             "time": -1,
                             "completed": false
@@ -3162,22 +2616,8 @@
                             "completed": false
                         },
                         {
-                            "id": "programAbdominalsWeek8Day3ExerciseWindshield",
-                            "name": "windshield",
-                            "reps": 32,
-                            "time": -1,
-                            "completed": false
-                        },
-                        {
                             "id": "programAbdominalsWeek8Day3ExerciseReverseCrunchStraight",
                             "name": "reverseCrunchStraight",
-                            "reps": 32,
-                            "time": -1,
-                            "completed": false
-                        },
-                        {
-                            "id": "programAbdominalsWeek8Day3ExercisePlankHipDips",
-                            "name": "plankHipDips",
                             "reps": 32,
                             "time": -1,
                             "completed": false
@@ -3238,22 +2678,8 @@
                             "completed": false
                         },
                         {
-                            "id": "programAbdominalsWeek8Day4ExerciseWindshield",
-                            "name": "windshield",
-                            "reps": 32,
-                            "time": -1,
-                            "completed": false
-                        },
-                        {
                             "id": "programAbdominalsWeek8Day4ExerciseReverseCrunchStraight",
                             "name": "reverseCrunchStraight",
-                            "reps": 32,
-                            "time": -1,
-                            "completed": false
-                        },
-                        {
-                            "id": "programAbdominalsWeek8Day4ExercisePlankHipDips",
-                            "name": "plankHipDips",
                             "reps": 32,
                             "time": -1,
                             "completed": false
@@ -3320,22 +2746,8 @@
                             "completed": false
                         },
                         {
-                            "id": "programAbdominalsWeek8Day6ExerciseWindshield",
-                            "name": "windshield",
-                            "reps": 40,
-                            "time": -1,
-                            "completed": false
-                        },
-                        {
                             "id": "programAbdominalsWeek8Day6ExerciseReverseCrunchStraight",
                             "name": "reverseCrunchStraight",
-                            "reps": 40,
-                            "time": -1,
-                            "completed": false
-                        },
-                        {
-                            "id": "programAbdominalsWeek8Day6ExercisePlankHipDips",
-                            "name": "plankHipDips",
                             "reps": 40,
                             "time": -1,
                             "completed": false

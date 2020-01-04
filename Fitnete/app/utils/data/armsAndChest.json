@@ -126,13 +126,6 @@
                             "reps": 5,
                             "time": -1,
                             "completed": false
-                        },
-                        {
-                            "id": "programArmsAndChestWeek0Day1ExercisePlankHipDips",
-                            "name": "plankHipDips",
-                            "reps": 5,
-                            "time": -1,
-                            "completed": false
                         }
                     ]
                 },
@@ -190,13 +183,6 @@
                             "id": "programArmsAndChestWeek0Day2ExerciseTricepKickback",
                             "name": "tricepKickback",
                             "needsGear": true,
-                            "reps": 5,
-                            "time": -1,
-                            "completed": false
-                        },
-                        {
-                            "id": "programArmsAndChestWeek0Day2ExercisePlankHipDips",
-                            "name": "plankHipDips",
                             "reps": 5,
                             "time": -1,
                             "completed": false
@@ -324,13 +310,6 @@
                             "reps": 5,
                             "time": -1,
                             "completed": false
-                        },
-                        {
-                            "id": "programArmsAndChestWeek0Day4ExercisePlankHipDips",
-                            "name": "plankHipDips",
-                            "reps": 5,
-                            "time": -1,
-                            "completed": false
                         }
                     ]
                 },
@@ -388,13 +367,6 @@
                             "id": "programArmsAndChestWeek0Day5ExerciseTricepKickback",
                             "name": "tricepKickback",
                             "needsGear": true,
-                            "reps": 5,
-                            "time": -1,
-                            "completed": false
-                        },
-                        {
-                            "id": "programArmsAndChestWeek0Day5ExercisePlankHipDips",
-                            "name": "plankHipDips",
                             "reps": 5,
                             "time": -1,
                             "completed": false
@@ -839,13 +811,6 @@
                             "reps": 7,
                             "time": -1,
                             "completed": false
-                        },
-                        {
-                            "id": "programArmsAndChestWeek1Day6ExercisePlankHipDips",
-                            "name": "plankHipDips",
-                            "reps": 7,
-                            "time": -1,
-                            "completed": false
                         }
                     ]
                 }
@@ -900,13 +865,6 @@
                             "id": "programArmsAndChestWeek2Day0ExerciseSquatAndCurl",
                             "name": "squatAndCurl",
                             "needsGear": true,
-                            "reps": 7,
-                            "time": -1,
-                            "completed": false
-                        },
-                        {
-                            "id": "programArmsAndChestWeek2Day0ExercisePlankHipDips",
-                            "name": "plankHipDips",
                             "reps": 7,
                             "time": -1,
                             "completed": false
@@ -1407,13 +1365,6 @@
                             "reps": 10,
                             "time": -1,
                             "completed": false
-                        },
-                        {
-                            "id": "programArmsAndChestWeek3Day1ExercisePlankHipDips",
-                            "name": "plankHipDips",
-                            "reps": 10,
-                            "time": -1,
-                            "completed": false
                         }
                     ]
                 },
@@ -1471,13 +1422,6 @@
                             "id": "programArmsAndChestWeek3Day2ExerciseTricepKickback",
                             "name": "tricepKickback",
                             "needsGear": true,
-                            "reps": 10,
-                            "time": -1,
-                            "completed": false
-                        },
-                        {
-                            "id": "programArmsAndChestWeek3Day2ExercisePlankHipDips",
-                            "name": "plankHipDips",
                             "reps": 10,
                             "time": -1,
                             "completed": false
@@ -1605,13 +1549,6 @@
                             "reps": 10,
                             "time": -1,
                             "completed": false
-                        },
-                        {
-                            "id": "programArmsAndChestWeek3Day4ExercisePlankHipDips",
-                            "name": "plankHipDips",
-                            "reps": 10,
-                            "time": -1,
-                            "completed": false
                         }
                     ]
                 },
@@ -1669,13 +1606,6 @@
                             "id": "programArmsAndChestWeek3Day5ExerciseTricepKickback",
                             "name": "tricepKickback",
                             "needsGear": true,
-                            "reps": 10,
-                            "time": -1,
-                            "completed": false
-                        },
-                        {
-                            "id": "programArmsAndChestWeek3Day5ExercisePlankHipDips",
-                            "name": "plankHipDips",
                             "reps": 10,
                             "time": -1,
                             "completed": false
@@ -2120,13 +2050,6 @@
                             "reps": 14,
                             "time": -1,
                             "completed": false
-                        },
-                        {
-                            "id": "programArmsAndChestWeek4Day6ExercisePlankHipDips",
-                            "name": "plankHipDips",
-                            "reps": 14,
-                            "time": -1,
-                            "completed": false
                         }
                     ]
                 }
@@ -2181,13 +2104,6 @@
                             "id": "programArmsAndChestWeek5Day0ExerciseSquatAndCurl",
                             "name": "squatAndCurl",
                             "needsGear": true,
-                            "reps": 14,
-                            "time": -1,
-                            "completed": false
-                        },
-                        {
-                            "id": "programArmsAndChestWeek5Day0ExercisePlankHipDips",
-                            "name": "plankHipDips",
                             "reps": 14,
                             "time": -1,
                             "completed": false
@@ -2688,13 +2604,6 @@
                             "reps": 20,
                             "time": -1,
                             "completed": false
-                        },
-                        {
-                            "id": "programArmsAndChestWeek6Day1ExercisePlankHipDips",
-                            "name": "plankHipDips",
-                            "reps": 20,
-                            "time": -1,
-                            "completed": false
                         }
                     ]
                 },
@@ -2752,13 +2661,6 @@
                             "id": "programArmsAndChestWeek6Day2ExerciseTricepKickback",
                             "name": "tricepKickback",
                             "needsGear": true,
-                            "reps": 20,
-                            "time": -1,
-                            "completed": false
-                        },
-                        {
-                            "id": "programArmsAndChestWeek6Day2ExercisePlankHipDips",
-                            "name": "plankHipDips",
                             "reps": 20,
                             "time": -1,
                             "completed": false
@@ -2886,13 +2788,6 @@
                             "reps": 20,
                             "time": -1,
                             "completed": false
-                        },
-                        {
-                            "id": "programArmsAndChestWeek6Day4ExercisePlankHipDips",
-                            "name": "plankHipDips",
-                            "reps": 20,
-                            "time": -1,
-                            "completed": false
                         }
                     ]
                 },
@@ -2950,13 +2845,6 @@
                             "id": "programArmsAndChestWeek6Day5ExerciseTricepKickback",
                             "name": "tricepKickback",
                             "needsGear": true,
-                            "reps": 20,
-                            "time": -1,
-                            "completed": false
-                        },
-                        {
-                            "id": "programArmsAndChestWeek6Day5ExercisePlankHipDips",
-                            "name": "plankHipDips",
                             "reps": 20,
                             "time": -1,
                             "completed": false
@@ -3401,13 +3289,6 @@
                             "reps": 28,
                             "time": -1,
                             "completed": false
-                        },
-                        {
-                            "id": "programArmsAndChestWeek7Day6ExercisePlankHipDips",
-                            "name": "plankHipDips",
-                            "reps": 28,
-                            "time": -1,
-                            "completed": false
                         }
                     ]
                 }
@@ -3462,13 +3343,6 @@
                             "id": "programArmsAndChestWeek8Day0ExerciseSquatAndCurl",
                             "name": "squatAndCurl",
                             "needsGear": true,
-                            "reps": 28,
-                            "time": -1,
-                            "completed": false
-                        },
-                        {
-                            "id": "programArmsAndChestWeek8Day0ExercisePlankHipDips",
-                            "name": "plankHipDips",
                             "reps": 28,
                             "time": -1,
                             "completed": false

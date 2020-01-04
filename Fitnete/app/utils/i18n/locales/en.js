@@ -369,14 +369,16 @@ export default {
         rollupName: 'Rollup',
         rollupDescription: 'Lie supine, reach arms upward, and exhale as you roll up from the top of the spine, one vertebrae at a time, to the bottom, ending seated. Then back down. Keep the core engaged!',
 
-        windshieldName: 'Windshield',
-        windshieldDescription: 'Lie supine, arms extended outward, hips and knees each bent 90°. With control, bring both knees to one side, then the other, alternating. Keep the core tight!',
+        // TODO: N/A
+        // windshieldName: 'Windshield',
+        // windshieldDescription: 'Lie supine, arms extended outward, hips and knees each bent 90°. With control, bring both knees to one side, then the other, alternating. Keep the core tight!',
 
         reverseCrunchStraightName: 'Reverse Crunch Straight',
         reverseCrunchStraightDescription: 'Lie supine, hands under bottom, with knees bent, and with feet hovering above ground. Lift knees up and in by contracting the core.',
 
-        plankHipDipsName: 'Plank Hip Dips',
-        plankHipDipsDescription: 'From an elbow plank, begin shifting your weight from one side to the other, bringing the outer thigh and glute to the ground each time.',
+        // TODO: N/A
+        // plankHipDipsName: 'Plank Hip Dips',
+        // plankHipDipsDescription: 'From an elbow plank, begin shifting your weight from one side to the other, bringing the outer thigh and glute to the ground each time.',
 
         commandosName: 'Commandos',
         commandosDescription: 'Lie prone with toes tucked and weight on elbows stacked under shoulders. Lift the body into a plank, then move from elbows to hands, then back down again. Repeat.',
@@ -468,8 +470,9 @@ export default {
         theFounderName: 'The Founder',
         theFounderDescription: 'With feet at medium-width, bend knees to pull back hips and lift chest. Arms push back to open chest then extend upward, contracting lower back. Lower hands to the floor then up.',
         
-        kneelingObliqueCrunchName: 'Kneeling Oblique Crunch',
-        kneelingObliqueCrunchDescription: 'Kneel in front of cable machine with rope attachment held above head. Engage core to \'crunch\' toward the ground, rotating to bring one elbow to opposite thigh, then alternate.',
+        // TODO: N/A
+        // kneelingObliqueCrunchName: 'Kneeling Oblique Crunch',
+        // kneelingObliqueCrunchDescription: 'Kneel in front of cable machine with rope attachment held above head. Engage core to \'crunch\' toward the ground, rotating to bring one elbow to opposite thigh, then alternate.',
         
         mcGillCurlUpLeftName: 'McGill Curl Up Left',
         mcGillCurlUpLeftDescription: 'Lie supine with one knee bent up and hands under small of back. Contract core to elevate chest looking upward toward the ceiling. Alternate bent leg every set.',

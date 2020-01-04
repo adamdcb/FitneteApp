@@ -22,7 +22,7 @@ const ANIMATION_NAME = {
     basicCrunches: '13_Basic_Crunches',
     mountainClimbers: '14_Mountain_Climbers',
     rollup: '15_Rollup',
-    windshield: '', // TODO
+    // windshield: '', // TODO: N/A
     reverseCrunchStraight: '17_Reverse_Crunch_Straight',
     commandos: '19_Commandos',
     doubleLegLift: '20_Double_Leg_Lift',
@@ -46,7 +46,7 @@ const ANIMATION_NAME = {
     dumbellSwing: '34_Dumbell_Swing',
     squatAndCurl: '35_Squat_and_Curl',
     tricepKickback: '36_Tricep_Kickback',
-    plankHipDips: '', // TODO
+    // plankHipDips: '', // TODO: N/A
     crabWalk: '38_Crab_Walks',
     spineStretch: '39_Spine_Stretch',
     lyingKneeHug: '40_Lying_Knee_Hug_R', // FIXME
@@ -54,7 +54,7 @@ const ANIMATION_NAME = {
     rollingOver: '42_Rolling_over',
     runnersCrunch: '43_Runner_s_Crunch',
     theFounder: '44_The_Founder',
-    kneelingObliqueCrunch: '', // TODO
+    // kneelingObliqueCrunch: '', // TODO: N/A
     mcGillCurlUpRight: '46_McGill_Curl_Up_R',
     mcGillCurlUpLeft: '46_McGill_Curl_Up_L',
     birdDogRight: '47_Bird_Dog_R',
