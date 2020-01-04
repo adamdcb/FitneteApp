@@ -1,7 +1,8 @@
 import React from 'react';
-import { SafeAreaView, Text, View, Image, StyleSheet, Dimensions } from 'react-native';
+import { SafeAreaView, Text, View, Image, StyleSheet, Dimensions, Platform } from 'react-native';
 import Carousel from 'react-native-snap-carousel';
 import LinearGradient from 'react-native-linear-gradient';
+import ElevatedView from 'fiber-react-native-elevated-view';
 
 import Container from '../utils/components/Container';
 import Button from '../utils/components/Button';
@@ -53,7 +54,10 @@ class TrainingScreen extends React.Component {
         const topMargin = SLIDER_ITEM_TOP_VIEW_HEIGHT - circleSize;
         const leftMargin = -(CIRCLE_SIZE_COEFF - SLIDER_ITEM_WIDTH_COEFF) / 2 * screenWidth - SLIDER_ITEM_MARGIN;
         return (
-            <View style={styles.sliderItemView}>
+            <ElevatedView
+                style={styles.sliderItemView}
+                elevation={2}
+            >
                 <LinearGradient
                     style={styles.sliderItemBottomContaier}
                     locations={[0, 1]}
@@ -116,7 +120,7 @@ class TrainingScreen extends React.Component {
                         />
                     </View>
                 </View>
-            </View>
+            </ElevatedView>
         );
     }
 
@@ -140,7 +144,10 @@ class TrainingScreen extends React.Component {
                             sliderWidth={this.state.screenWidth}
                             itemWidth={this.state.screenWidth * SLIDER_ITEM_WIDTH_COEFF}
                             activeSlideAlignment='start'
-                            inactiveSlideOpacity={0.34}
+                            inactiveSlideOpacity={Platform.select({
+                                ios: 0.34,
+                                android: 1
+                            })}
                             onSnapToItem={this._onSnapToItem}
                             slideStyle={styles.slideStyle}
                         />
@@ -167,15 +174,7 @@ const styles = StyleSheet.create({
         overflow: 'hidden'
     },
     slideStyle: {
-        margin: SLIDER_ITEM_MARGIN,
-        shadowColor: "#000",
-        shadowOffset: {
-            width: 0,
-            height: 1,
-        },
-        shadowOpacity: 0.20,
-        shadowRadius: 1.41,
-        elevation: 2
+        margin: SLIDER_ITEM_MARGIN
     },
     sliderItemTopContaier: {
         position: 'absolute',

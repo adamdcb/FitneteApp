@@ -1,6 +1,7 @@
 import React from 'react';
 import { SafeAreaView, View, Text, StyleSheet, Image } from 'react-native';
 import LinearGradient from 'react-native-linear-gradient';
+import ElevatedView from 'fiber-react-native-elevated-view';
 
 import I18n from '../../utils/i18n/I18n';
 import Container from '../../utils/components/Container';
@@ -45,7 +46,10 @@ class NoPlanPurchasedScreen extends React.Component {
                         </View>
                     </Container>
                 </SafeAreaView>
-                <View style={styles.bottomContainer}>
+                <ElevatedView
+                    style={styles.bottomContainer}
+                    elevation={16}
+                >
                     <LinearGradient
                         style={styles.linearGradient}
                         colors={['#FFFFFF', '#FAFAFA']}
@@ -71,7 +75,7 @@ class NoPlanPurchasedScreen extends React.Component {
                             {I18n.t('noPlanPurchased.continueForFreeDescription')}
                         </Text>
                     </LinearGradient>
-                </View>
+                </ElevatedView>
             </View>
         )
     }
@@ -117,15 +121,7 @@ const styles = StyleSheet.create({
         left: 0,
         right: 0,
         borderTopLeftRadius: 16,
-        borderTopRightRadius: 16,
-        shadowColor: "#000",
-        shadowOffset: {
-            width: 0,
-            height: 8,
-        },
-        shadowOpacity: 0.44,
-        shadowRadius: 10.32,
-        elevation: 16
+        borderTopRightRadius: 16
     },
     linearGradient: {
         borderTopLeftRadius: 16,

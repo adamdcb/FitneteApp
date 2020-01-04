@@ -1,6 +1,7 @@
 import React from 'react';
 import { SafeAreaView, FlatList, Text, View, Image, TouchableHighlight, StyleSheet } from 'react-native';
 import LinearGradient from 'react-native-linear-gradient';
+import ElevatedView from 'fiber-react-native-elevated-view';
 
 import Button from '../../utils/components/Button';
 import I18n from '../../utils/i18n/I18n';
@@ -34,8 +35,14 @@ class ExerciseListScreen extends React.Component {
                 style={styles.exerciseInnerContainer}
                 onPress={() => this._previewExercise(item)}
             >
-                <View style={styles.listItemContainer}>
-                    <View style={styles.exerciseImageContainer}>
+                <View
+                    style={styles.listItemContainer}
+                    pointerEvents="none"
+                >
+                    <ElevatedView
+                        style={styles.exerciseImageContainer}
+                        elevation={2}
+                    >
                         <LinearGradient
                             style={styles.exerciseGradient}
                             colors={['#FFFFFF', '#D9FCFF']}
@@ -48,7 +55,7 @@ class ExerciseListScreen extends React.Component {
                                 source={{ uri: 'exercise_1' }}
                             />
                         </LinearGradient>
-                    </View>
+                    </ElevatedView>
                     <View style={styles.exerciseDetailsContainer}>
                         <Text style={styles.exerciseName}>{item.title}</Text>
                         <Text style={styles.exerciseDuration}>{item.durationText}</Text>
@@ -62,7 +69,10 @@ class ExerciseListScreen extends React.Component {
         const { workout } = this.props.navigation.state.params;
         return (
             <SafeAreaView style={styles.container}>
-                <View style={styles.infoOuterContainer}>
+                <ElevatedView
+                    style={styles.infoOuterContainer}
+                    elevation={3}
+                >
                     <Text style={styles.programTitle}>{workout.title}</Text>
                     <View style={styles.infoInnerContainer}>
                         <View style={styles.infoContainer}>
@@ -78,7 +88,7 @@ class ExerciseListScreen extends React.Component {
                             <Text style={styles.infoStatusDetails}>{workout.gearText}</Text>
                         </View>
                     </View>
-                </View>
+                </ElevatedView>
                 <LinearGradient
                     style={styles.container}
                     colors={['#89F8AC3D', '#73F9E01A', '#FFFFFF00']}
@@ -110,15 +120,7 @@ const styles = StyleSheet.create({
         flex: 1
     },
     infoOuterContainer: {
-        backgroundColor: '#FFFFFF',
-        shadowColor: "#000",
-        shadowOffset: {
-            width: 0,
-            height: 1,
-        },
-        shadowOpacity: 0.22,
-        shadowRadius: 2.22,
-        elevation: 3,
+        backgroundColor: '#FFFFFF'
     },
     programTitle: {
         marginTop: 16,
@@ -163,15 +165,7 @@ const styles = StyleSheet.create({
     exerciseImageContainer: {
         width: 64,
         height: 64,
-        borderRadius: 12,
-        shadowColor: "#000",
-        shadowOffset: {
-            width: 0,
-            height: 1,
-        },
-        shadowOpacity: 0.20,
-        shadowRadius: 1.41,
-        elevation: 2
+        borderRadius: 12
     },
     exerciseGradient: {
         width: 64,

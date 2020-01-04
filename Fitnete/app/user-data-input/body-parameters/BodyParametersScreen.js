@@ -1,5 +1,6 @@
 import React from 'react';
 import { SafeAreaView, View, Text, FlatList, TouchableOpacity, StyleSheet } from 'react-native';
+import ElevatedView from 'fiber-react-native-elevated-view';
 
 import I18n from '../../utils/i18n/I18n';
 import Container from '../../utils/components/Container';
@@ -88,15 +89,17 @@ class BodyParametersScreen extends React.Component {
 
     _renderAddButton(item) {
         return (
-            <TouchableOpacity
-                style={styles.addButtonContainer}
-                onPress={() => this._onPress(item)}
-            >
+            <View style={styles.addButtonContainer}>
                 <Text style={styles.addButtonText}>{I18n.t('bodyParameters.add')}</Text>
-                <View style={styles.addButton}>
+                <ElevatedView
+                    style={styles.addButton}
+                    elevation={3}
+                    feedbackEnabled
+                    onPress={() => this._onPress(item)}
+                >
                     <Text style={styles.addButtonPlus}>{'\uff0b'}</Text>
-                </View>
-            </TouchableOpacity>
+                </ElevatedView>
+            </View>
         )
     }
 
@@ -246,7 +249,8 @@ const styles = StyleSheet.create({
         marginRight: 4,
         fontFamily: 'Poppins-Regular',
         fontSize: 15,
-        color: '#08C757'
+        color: '#08C757',
+        includeFontPadding: false
     },
     addButton: {
         height: 28,
@@ -254,15 +258,7 @@ const styles = StyleSheet.create({
         borderRadius: 4,
         backgroundColor: '#08C757',
         alignItems: 'center',
-        justifyContent: 'center',
-        shadowColor: "#000",
-        shadowOffset: {
-            width: 0,
-            height: 1,
-        },
-        shadowOpacity: 0.22,
-        shadowRadius: 2.22,
-        // elevation: 3,
+        justifyContent: 'center'
     },
     addButtonPlus: {
         height: 20,

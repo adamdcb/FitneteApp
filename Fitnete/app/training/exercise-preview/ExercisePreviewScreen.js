@@ -2,6 +2,7 @@ import React from 'react';
 import { SafeAreaView, Text, View, ActivityIndicator, StyleSheet } from 'react-native';
 import LinearGradient from 'react-native-linear-gradient';
 import FastImage from 'react-native-fast-image';
+import ElevatedView from 'fiber-react-native-elevated-view';
 
 import Container from '../../utils/components/Container';
 import ExercisePreviewPresenter from './ExercisePreviewPresenter';
@@ -78,7 +79,10 @@ class ExercisePreviewScreen extends React.Component {
                         }
                     </View>
                 </SafeAreaView>
-                <View style={styles.bottomContainer}>
+                <ElevatedView
+                    style={styles.bottomContainer}
+                    elevation={16}
+                >
                     <LinearGradient
                         style={styles.linearGradient}
                         colors={['#FFFFFF', '#FAFAFA']}
@@ -86,7 +90,7 @@ class ExercisePreviewScreen extends React.Component {
                     >
                         <Text style={styles.infoDescription}>{description}</Text>
                     </LinearGradient>
-                </View>
+                </ElevatedView>
             </Container>
         );
     }
@@ -111,15 +115,7 @@ const styles = StyleSheet.create({
     },
     bottomContainer: {
         borderTopLeftRadius: 16,
-        borderTopRightRadius: 16,
-        shadowColor: "#000",
-        shadowOffset: {
-            width: 0,
-            height: 8,
-        },
-        shadowOpacity: 0.44,
-        shadowRadius: 10.32,
-        elevation: 16,
+        borderTopRightRadius: 16
     },
     linearGradient: {
         paddingHorizontal: 32,

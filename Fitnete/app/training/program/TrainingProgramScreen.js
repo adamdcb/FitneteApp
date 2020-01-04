@@ -2,6 +2,7 @@ import React from 'react';
 import { SafeAreaView, ScrollView, Text, View, Image, StyleSheet, Dimensions, Platform } from 'react-native';
 import Carousel from 'react-native-snap-carousel';
 import LinearGradient from 'react-native-linear-gradient';
+import ElevatedView from 'fiber-react-native-elevated-view';
 
 import I18n from '../../utils/i18n/I18n';
 import Button from '../../utils/components/Button';
@@ -40,7 +41,10 @@ class TrainingProgramScreen extends React.Component {
 
     _renderItem({ item, index }) {
         return (
-            <View style={styles.sliderItemView}>
+            <ElevatedView
+                style={styles.sliderItemView}
+                elevation={2}
+            >
                 <Image
                     style={styles.dayProgramImage}
                     source={{ uri: 'for_free' }}
@@ -104,7 +108,7 @@ class TrainingProgramScreen extends React.Component {
                         onPress={this._showExerciseList}
                     />
                 </View>
-            </View>
+            </ElevatedView>
         );
     }
 
@@ -163,7 +167,10 @@ class TrainingProgramScreen extends React.Component {
                                 sliderWidth={this.state.screenWidth}
                                 itemWidth={this.state.screenWidth * SLIDER_ITEM_WIDTH_COEFF}
                                 activeSlideAlignment='start'
-                                inactiveSlideOpacity={0.34}
+                                inactiveSlideOpacity={Platform.select({
+                                    ios: 0.34,
+                                    android: 1
+                                })}
                                 onSnapToItem={this._onSnapToItem}
                                 slideStyle={styles.slideStyle}
                             />
@@ -209,14 +216,10 @@ const styles = StyleSheet.create({
     },
     slideStyle: {
         padding: 4,
-        shadowColor: "#000",
-        shadowOffset: {
-            width: 0,
-            height: 1,
-        },
-        shadowOpacity: 0.20,
-        shadowRadius: 1.41,
-        elevation: 2
+        overflow: Platform.select({
+            ios: 'visible',
+            android: 'hidden',
+        })
     },
     statusOuterContainer: {
         flex: 1,

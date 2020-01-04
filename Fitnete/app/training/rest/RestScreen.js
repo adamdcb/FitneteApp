@@ -1,5 +1,6 @@
 import React from 'react';
 import { SafeAreaView, Text, View, Image, StyleSheet, BackHandler } from 'react-native';
+import ElevatedView from 'fiber-react-native-elevated-view';
 
 import Button from '../../utils/components/Button';
 import I18n from '../../utils/i18n/I18n';
@@ -67,7 +68,10 @@ class RestScreen extends React.Component {
                         <View style={styles.bottomContainer}>
                             <Text style={styles.nextExercise}>{I18n.t('rest.nextExercise')}</Text>
                             <View style={styles.nextExerciseInnerContainer}>
-                                <View style={styles.nextExerciseImageContainer}>
+                                <ElevatedView 
+                                    style={styles.nextExerciseImageContainer}
+                                    elevation={2}
+                                >
                                     <LinearGradient
                                         style={styles.nextExerciseGradient}
                                         colors={['#FFFFFF', '#D9FCFF']}
@@ -80,7 +84,7 @@ class RestScreen extends React.Component {
                                             source={{ uri: 'exercise_1' }}
                                         />
                                     </LinearGradient>
-                                </View>
+                                </ElevatedView>
                                 <View style={styles.nextExerciseDetailsContainer}>
                                     <Text style={styles.nextExerciseName}>{nextExercise.title}</Text>
                                     <Text style={styles.nextExerciseDuration}>{nextExercise.durationText}</Text>
@@ -153,15 +157,7 @@ const styles = StyleSheet.create({
     nextExerciseImageContainer: {
         width: 72,
         height: 72,
-        borderRadius: 12,
-        shadowColor: "#000",
-        shadowOffset: {
-            width: 0,
-            height: 1,
-        },
-        shadowOpacity: 0.20,
-        shadowRadius: 1.41,
-        elevation: 2
+        borderRadius: 12
     },
     nextExerciseGradient: {
         width: 72,

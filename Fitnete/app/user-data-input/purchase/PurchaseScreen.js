@@ -1,7 +1,8 @@
 import React from 'react';
-import { SafeAreaView, View, Text, StyleSheet, TouchableOpacity, Platform } from 'react-native';
+import { SafeAreaView, View, Text, StyleSheet, TouchableOpacity } from 'react-native';
 import { getStatusBarHeight } from 'react-native-safe-area-view';
 import LinearGradient from 'react-native-linear-gradient';
+import ElevatedView from 'fiber-react-native-elevated-view';
 
 import I18n from '../../utils/i18n/I18n';
 import Container from '../../utils/components/Container';
@@ -66,8 +67,12 @@ class PurchaseScreen extends React.Component {
             <SafeAreaView style={styles.container}>
                 <Container>
                     <View style={styles.contentContainer}>
-                        <View style={styles.subscriptionOuterContainer}>
+                        <ElevatedView
+                            style={styles.subscriptionOuterContainer}
+                            elevation={2}
+                        >
                             <LinearGradient
+                                style={styles.subscriptionGradient}
                                 colors={['#1CD9D929', '#FFFFFF00']}
                                 locations={[0, 1]}
                                 angle={90}
@@ -89,7 +94,7 @@ class PurchaseScreen extends React.Component {
                                     </View>
                                 </View>
                             </LinearGradient>
-                        </View>
+                        </ElevatedView>
                         <View style={styles.payButtons}>
                             {subscriptions.map(subscription => this.renderPayButton(subscription.type))}
                         </View>
@@ -184,19 +189,10 @@ const styles = StyleSheet.create({
     },
     subscriptionOuterContainer: {
         backgroundColor: '#FFFFFF',
-        borderRadius: 4,
-        overflow: Platform.select({
-            ios: 'visible',
-            android: 'hidden',
-        }),
-        shadowColor: "#000",
-        shadowOffset: {
-            width: 0,
-            height: 1,
-        },
-        shadowOpacity: 0.20,
-        shadowRadius: 1.41,
-        elevation: 2
+        borderRadius: 4
+    },
+    subscriptionGradient: {
+        borderRadius: 4
     },
     subscriptionContainer: {
         flexDirection: 'row',

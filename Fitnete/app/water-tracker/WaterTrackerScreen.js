@@ -2,6 +2,7 @@ import React from 'react';
 import { View, SafeAreaView, Text, TouchableOpacity, StyleSheet, Image, Dimensions } from 'react-native';
 import Slider from 'react-native-slider-custom';
 import LinearGradient from 'react-native-linear-gradient';
+import ElevatedView from 'fiber-react-native-elevated-view';
 
 import { HEADER_STYLE, navigate, Route } from '../utils/navigation/NavigationService';
 import I18n from '../utils/i18n/I18n';
@@ -94,10 +95,10 @@ class WaterTrackerScreen extends React.Component {
                             </Text>
                         </View>
                     </View>
-                    <View style={styles.sliderOuterContainer}>
-                        <View style={styles.sliderShadowContainer}>
-                            <View style={styles.sliderShadowView} />
-                        </View>
+                    <ElevatedView
+                        style={styles.sliderOuterContainer}
+                        elevation={3}
+                    >
                         <View style={styles.sliderBackgroundContainer}>
                             <LinearGradient
                                 style={styles.sliderBackgroundView}
@@ -153,7 +154,7 @@ class WaterTrackerScreen extends React.Component {
                                 <View style={styles.sliderTick} />
                             </View>
                         </View>
-                    </View>
+                    </ElevatedView>
                     <Text style={styles.sliderInfo} >
                         {I18n.t('waterTracker.sliderInfo', { default_amount: drinkSizeText })}
                     </Text>
@@ -232,31 +233,11 @@ const styles = StyleSheet.create({
         height: SLIDER_HEIGHT * 3,
         paddingBottom: SLIDER_HEIGHT / 2
     },
-    sliderShadowContainer: {
-        width: '100%',
-        height: SLIDER_HEIGHT,
-        top: SLIDER_HEIGHT * 1.5,
-        position: 'absolute'
-    },
-    sliderShadowView: {
-        flex: 1,
-        marginHorizontal: SLIDER_PADDING,
-        borderRadius: 8,
-        backgroundColor: '#FFFFFF',
-        shadowOffset: {
-            width: 0,
-            height: 1
-        },
-        shadowOpacity: 0.22,
-        shadowRadius: 2.22,
-        elevation: 3
-    },
     sliderBackgroundContainer: {
         width: '100%',
         height: SLIDER_HEIGHT,
         top: SLIDER_HEIGHT * 1.5,
-        position: 'absolute',
-        elevation: 4
+        position: 'absolute'
     },
     sliderBackgroundView: {
         flex: 1,
@@ -265,8 +246,7 @@ const styles = StyleSheet.create({
     },
     slider: {
         flex: 1,
-        justifyContent: 'flex-end',
-        elevation: 4
+        justifyContent: 'flex-end'
     },
     sliderTrack: {
         marginLeft: SLIDER_PADDING,
@@ -317,8 +297,7 @@ const styles = StyleSheet.create({
         width: '100%',
         height: SLIDER_HEIGHT,
         top: SLIDER_HEIGHT * 1.5,
-        position: 'absolute',
-        elevation: 4
+        position: 'absolute'
     },
     sliderTickInnerContainer: {
         flex: 1,
