@@ -5,8 +5,9 @@ import TrainingProgram from './schema/TrainingProgram';
 import TrainingWeek from './schema/TrainingWeek';
 import TrainingDay from './schema/TrainingDay';
 import TrainingExercise from './schema/TrainingExercise';
+import Reminder from './schema/Reminder';
 
-const DB_SCHEMA_VERSION = 4;
+const DB_SCHEMA_VERSION = 5;
 const DB_SCHEMA = [
     User,
     WaterIntake,
@@ -14,7 +15,8 @@ const DB_SCHEMA = [
     TrainingProgram,
     TrainingWeek,
     TrainingDay,
-    TrainingExercise
+    TrainingExercise,
+    Reminder
 ];
 let database = null;
 

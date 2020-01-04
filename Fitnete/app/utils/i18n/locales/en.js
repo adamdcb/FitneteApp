@@ -237,7 +237,7 @@ export default {
         description: 'Users with workout reminders are 70% more likely to reach their goal',
         repeat: {
             once: 'Once',
-            weekly: 'Repeat weekly',
+            week: 'Repeat weekly',
         },
         time: 'Time',
         change: 'Change',

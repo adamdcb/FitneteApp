@@ -130,7 +130,7 @@ class ReminderScreen extends React.Component {
                         <Text style={styles.description}>{I18n.t('workoutReminder.description')}</Text>
                         <View style={styles.repeatButtons}>
                             {this._renderRepeatButton('once')}
-                            {this._renderRepeatButton('weekly')}
+                            {this._renderRepeatButton('week')}
                         </View>
                         <View style={styles.listViewContainer}>
                             <FlatList

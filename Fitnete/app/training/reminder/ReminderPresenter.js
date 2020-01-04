@@ -1,4 +1,5 @@
 import NotificationService from '../../utils/notifications/NotificationService';
+import ReminderDataSource from '../../data/ReminderDataSource';
 import I18n from '../../utils/i18n/I18n';
 import Utils from '../../utils/utils/Utils';
 
@@ -6,12 +7,14 @@ const MS_IN_DAY = 24 * 3600 * 1000;
 const WEEKDAYS = ['monday', 'tuesday', 'wednesday', 'thursday', 'friday', 'saturday', 'sunday'];
 const REPEAT = {
     once: 'once',
-    weekly: 'weekly'
+    weekly: 'week'
 };
+const SCHEDULE_NOTIFICATION_PREFIX = '@Fitnete.notification.schedule.';
 
 export default class ReminderPresenter {
     constructor(view) {
         this.view = view;
+        this.dataSource = new ReminderDataSource();
         this.selectedWeekdays = [];
         this.selectedHour = 0;
         this.selectedMinute = 0;
@@ -61,9 +64,10 @@ export default class ReminderPresenter {
     }
 
     async getReminder() {
+        const date = new Date();
         let reminder = {};
         try {
-            const notifications = await NotificationService.getScheduleNotifications(NotificationService.CHANNEL.reminder);
+            const notifications = await this.dataSource.getReminders();
             console.log("notifications:", notifications);
             if (notifications.length === 0) {
                 reminder = this._getReminder([], [0, 0], this.selectedRepeat);
@@ -71,11 +75,16 @@ export default class ReminderPresenter {
                 const days = [];
                 let timeIndexes = [];
                 let repeat = REPEAT.weekly;
-                notifications.forEach(notification => {
-                    days.push(notification.data.day);
-                    timeIndexes = notification.data.time.split(':').map(v => parseInt(v, 10));
-                    repeat = notification.data.repeat
-                });
+                for (let index = 0; index < notifications.length; index++) {
+                    const notification = notifications[index];
+                    if (notification.repeatInterval === REPEAT.once && notification.firstFireDate < date.getTime()) {
+                        await this.dataSource.deleteReminder(notification.id);
+                    } else {
+                        days.push(notification.day);
+                        timeIndexes = notification.time.split(':').map(v => parseInt(v, 10));
+                        repeat = notification.repeatInterval;
+                    }
+                }
                 reminder = this._getReminder(days, timeIndexes, repeat);
             }
         } catch (error) {
@@ -93,7 +102,10 @@ export default class ReminderPresenter {
         const weekday = date.getDay(); // Sunday - Saturday : 0 - 6
         try {
             // Cancel all notififcations before scheduling new ones
-            await NotificationService.cancelScheduleNotificationsInChannel(NotificationService.CHANNEL.reminder);
+            const notifications = await this.dataSource.getReminders();
+            const notificationIds = notifications.map(notification => notification.id);
+            await NotificationService.cancelScheduleNotifications(notificationIds);
+            await this.dataSource.deleteAllReminders();
             await NotificationService.requestPermission();
             for (let index = 0; index < this.selectedWeekdays.length; index++) {
                 const day = this.selectedWeekdays[index];
@@ -104,6 +116,13 @@ export default class ReminderPresenter {
                 const notificationData = this._getNotificationData(day);
                 const scheduleData = this._getScheduleData(fireDate);
 
+                await this.dataSource.saveReminder({
+                    id: notificationData.id,
+                    day: notificationData.data.day,
+                    time: notificationData.data.time,
+                    repeatInterval: notificationData.data.repeat,
+                    firstFireDate: fireDate.getTime()
+                })
                 await NotificationService.scheduleNotification(NotificationService.CHANNEL.reminder, notificationData, scheduleData);
             }
             if (this.view) {
@@ -143,7 +162,7 @@ export default class ReminderPresenter {
             repeat: this.selectedRepeat
         };
         return {
-            id: `${day}_${this.selectedHour}_${this.selectedMinute}`,
+            id: `${SCHEDULE_NOTIFICATION_PREFIX}${NotificationService.CHANNEL.reminder}_${day}_${this.selectedHour}_${this.selectedMinute}`,
             title,
             body,
             data

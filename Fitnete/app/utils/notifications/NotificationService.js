@@ -9,11 +9,10 @@ const CHANNEL = {
 const CHANNEL_ID = {
     reminder: '86440091-a53d-415a-beb4-cb7334708dca'
 }
-const SCHEDULE_NOTIFICATION_PREFIX = '@Fitnete.notification.schedule.';
 
 function _createNotification(channel, { id, title, body, data }) {
     const notification = new firebase.notifications.Notification()
-        .setNotificationId(`${SCHEDULE_NOTIFICATION_PREFIX}${channel}_${id}`)
+        .setNotificationId(id)
         .setTitle(title)
         .setBody(body)
         .setData(data);
@@ -21,7 +20,8 @@ function _createNotification(channel, { id, title, body, data }) {
         notification.android.setChannelId(CHANNEL_ID[channel])
             .android.setPriority(firebase.notifications.Android.Priority.High)
             .android.setSmallIcon('ic_notification')
-            .android.setColor('#08C757');
+            .android.setColor('#08C757')
+            .android.setAutoCancel(true);
     } else if (Platform.OS === 'ios') {
         notification.ios.setBadge(1);
     }
@@ -65,11 +65,6 @@ export default {
         firebase.notifications().android.createChannel(channel);
     },
 
-    async getScheduleNotifications(channel) {
-        const firebaseNotifications = await firebase.notifications().getScheduledNotifications();
-        return firebaseNotifications.filter(notif => notif.notificationId.startsWith(`${SCHEDULE_NOTIFICATION_PREFIX}${channel}`));
-    },
-
     async scheduleNotification(channel, notificationData, scheduleData) {
         try {
             const notification = _createNotification(channel, notificationData);
@@ -82,13 +77,11 @@ export default {
         }
     },
 
-    async cancelScheduleNotificationsInChannel(channel) {
+    async cancelScheduleNotifications(notificationIds) {
         try {
-            const firebaseNotifications = await firebase.notifications().getScheduledNotifications();
-            const notifications = firebaseNotifications.filter(notif => notif.notificationId.startsWith(`${SCHEDULE_NOTIFICATION_PREFIX}${channel}`));
-            for (let index = 0; index < notifications.length; index++) {
-                const notification = notifications[index];
-                await firebase.notifications().cancelNotification(notification.notificationId);
+            for (let index = 0; index < notificationIds.length; index++) {
+                const notificationId = notificationIds[index];
+                await firebase.notifications().cancelNotification(notificationId);
             }
         } catch (error) {
             console.log(error);
