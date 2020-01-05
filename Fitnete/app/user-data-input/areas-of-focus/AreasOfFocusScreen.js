@@ -16,9 +16,12 @@ class AreasOfFocusScreen extends React.Component {
         super(props);
         this.presenter = new AreaOfFocusPresenter(this);
         this.state = {
-            tabView: null
+            tabView: null,
+            hasSelectedArea: false
         };
+        this.tabViewRefs = {};
         this.onIndexChange = this.onIndexChange.bind(this);
+        this.onAreaSelectionChange = this.onAreaSelectionChange.bind(this);
         this.getScene = this.getScene.bind(this);
         this.onContinue = this.onContinue.bind(this);
     }
@@ -37,10 +40,16 @@ class AreasOfFocusScreen extends React.Component {
 
     onIndexChange(index) {
         this.presenter.didSelectGroup(index);
+        this.tabViewRefs[this.presenter.getGroupTypeAt(index)].reload();
+    }
+
+    onAreaSelectionChange() {
+       this.presenter.areaSelectionDidChange();
     }
 
     setTabViewData(data) {
         this.setState({
+            hasSelectedArea: data.hasSelectedArea,
             tabView: this.getTabViewData(data)
         });
     }
@@ -48,7 +57,9 @@ class AreasOfFocusScreen extends React.Component {
     getScene({ route }) {
         return (
             <AreasOfFocusTabViewScene
+                ref={tab => this.tabViewRefs[route.key] = tab}
                 type={route.key}
+                onSelectionChange={this.onAreaSelectionChange}
             />
         )
     }
@@ -114,6 +125,7 @@ class AreasOfFocusScreen extends React.Component {
                     <View style={styles.bottomContainer}>
                         <Button
                             title={I18n.t('dataCollection.continue')}
+                            disabled={!this.state.hasSelectedArea}
                             onPress={this.onContinue}
                         />
                     </View>

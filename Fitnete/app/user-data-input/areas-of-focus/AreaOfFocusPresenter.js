@@ -18,6 +18,7 @@ export default class AreaOfFocusPresenter {
         } else {
             this._init(data);
         }
+        data.hasSelectedArea = user.areasOfFocus.length > 0;
         this.data = data;
         this.view.setTabViewData(this.data);
     }
@@ -32,6 +33,16 @@ export default class AreaOfFocusPresenter {
         };
         this.view.setTabViewData(this.data);
         this.dataSource.setUser(data);
+    }
+
+    async areaSelectionDidChange() {
+        const user = await this.dataSource.getUser();
+        this.data.hasSelectedArea = user.areasOfFocus.length > 0;
+        this.view.setTabViewData(this.data);
+    }
+
+    getGroupTypeAt(index) {
+        return this.data.groups[index].type;
     }
 
     unmountView() {

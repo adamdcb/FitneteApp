@@ -27,6 +27,13 @@ class AreasOfFocusTabViewScene extends React.Component {
 
     setAreasData(areas) {
         this.setState({ areas });
+        if (this.props.onSelectionChange) {
+            this.props.onSelectionChange();
+        }
+    }
+
+    reload() {
+        this.presenter.loadData();
     }
 
     render() {
