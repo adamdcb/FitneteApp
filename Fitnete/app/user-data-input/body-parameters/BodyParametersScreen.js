@@ -176,6 +176,7 @@ class BodyParametersScreen extends React.Component {
                     <View style={styles.bottomContainer}>
                         <Button
                             title={I18n.t('dataCollection.continue')}
+                            disabled={!data.hasSelectedBodyParams}
                             onPress={this.onContinue}
                         />
                     </View>

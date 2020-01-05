@@ -48,7 +48,7 @@ export default class BodyParametersPresenter {
             ...param
         }
         await this.dataSource.setUser(data);
-        return this.uiData.map((item) => {
+        const uiData = this.uiData.map((item) => {
             if (item.id === id) {
                 return {
                     ...item,
@@ -60,6 +60,8 @@ export default class BodyParametersPresenter {
             }
             return item;
         });
+        uiData.hasSelectedBodyParams = !uiData.some(d => d.isDefaultValue);
+        return uiData;
     }
 
     unmountView() {
@@ -74,7 +76,7 @@ export default class BodyParametersPresenter {
     }
 
     _getUIData(user) {
-        return this.data.map((item) => {
+        const uiData = this.data.map((item) => {
             const paramValue = user[item.id];
             const dataset = item.datasets.find(ds => ds.unit === this.unit) || item.datasets[0];
             const bParam = BodyParameterFactory.createParameter(item.type);
@@ -92,6 +94,8 @@ export default class BodyParametersPresenter {
                 isDefaultValue: valueObj.isDefault
             }
         });
+        uiData.hasSelectedBodyParams = !uiData.some(d => d.isDefaultValue);
+        return uiData;
     }
 
     _dataWithPadding(data, padding) {
