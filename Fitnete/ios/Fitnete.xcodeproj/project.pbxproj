@@ -98,6 +98,7 @@
 		F3213AA27E064989B1FE301A /* AntDesign.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = AntDesign.ttf; path = "../node_modules/react-native-vector-icons/Fonts/AntDesign.ttf"; sourceTree = "<group>"; };
 		F583C8CF44FA068C48A1471A /* Pods-Fitnete-tvOS.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Fitnete-tvOS.debug.xcconfig"; path = "Target Support Files/Pods-Fitnete-tvOS/Pods-Fitnete-tvOS.debug.xcconfig"; sourceTree = "<group>"; };
 		F834D538239D366A001C3B89 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "GoogleService-Info.plist"; path = "Fitnete/GoogleService-Info.plist"; sourceTree = "<group>"; };
+		F834D53D23C3C0D5001C3B89 /* Fitnete.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; name = Fitnete.entitlements; path = Fitnete/Fitnete.entitlements; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -181,6 +182,7 @@
 				F834D538239D366A001C3B89 /* GoogleService-Info.plist */,
 				13B07FB11A68108700A75B9A /* LaunchScreen.xib */,
 				13B07FB71A68108700A75B9A /* main.m */,
+				F834D53D23C3C0D5001C3B89 /* Fitnete.entitlements */,
 			);
 			name = Fitnete;
 			sourceTree = "<group>";
@@ -777,6 +779,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_ENTITLEMENTS = Fitnete/Fitnete.entitlements;
 				CURRENT_PROJECT_VERSION = 22;
 				DEAD_CODE_STRIPPING = NO;
 				DEVELOPMENT_TEAM = MU6C2DGFBK;
@@ -808,6 +811,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_ENTITLEMENTS = Fitnete/Fitnete.entitlements;
 				CURRENT_PROJECT_VERSION = 22;
 				DEVELOPMENT_TEAM = MU6C2DGFBK;
 				HEADER_SEARCH_PATHS = (
