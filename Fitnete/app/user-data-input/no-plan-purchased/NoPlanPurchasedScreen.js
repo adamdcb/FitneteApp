@@ -162,7 +162,7 @@ const styles = StyleSheet.create({
 });
 
 NoPlanPurchasedScreen.navigationOptions = () => ({
-
+    headerTitle: () => null
 });
 
 export default NoPlanPurchasedScreen;

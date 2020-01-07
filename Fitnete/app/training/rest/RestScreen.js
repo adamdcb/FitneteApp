@@ -68,7 +68,7 @@ class RestScreen extends React.Component {
                         <View style={styles.bottomContainer}>
                             <Text style={styles.nextExercise}>{I18n.t('rest.nextExercise')}</Text>
                             <View style={styles.nextExerciseInnerContainer}>
-                                <ElevatedView 
+                                <ElevatedView
                                     style={styles.nextExerciseImageContainer}
                                     elevation={2}
                                 >
@@ -174,8 +174,8 @@ const styles = StyleSheet.create({
 
 RestScreen.navigationOptions = () => ({
     headerTransparent: true,
-    header: null,
-    gesturesEnabled: false
+    headerShown: false,
+    gestureEnabled: false
 });
 
 export default RestScreen;

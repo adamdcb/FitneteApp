@@ -142,7 +142,7 @@ const styles = StyleSheet.create({
 });
 
 WaterIntakeIntroScreen.navigationOptions = ({ navigation }) => ({
-    headerRight:
+    headerRight: () =>
         <HeaderTextButton
             text={I18n.t('later')}
             onPress={navigation.getParam('goToApp')}

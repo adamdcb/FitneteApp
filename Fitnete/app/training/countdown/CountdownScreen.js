@@ -1,5 +1,5 @@
 import React from 'react';
-import { Image, Text, View, StyleSheet, Dimensions } from 'react-native';
+import { Image, Text, View, StyleSheet, Dimensions, BackHandler } from 'react-native';
 import { AnimatedCircularProgress } from 'react-native-circular-progress';
 import LinearGradient from 'react-native-linear-gradient';
 
@@ -21,10 +21,14 @@ class CountdownScreen extends React.Component {
     }
 
     componentDidMount() {
+        this.backHandler = BackHandler.addEventListener('hardwareBackPress', () => {
+            return true;
+        });
         this.presenter.start();
     }
 
     componentWillUnmount() {
+        this.backHandler.remove();
         this.presenter.unmountView();
     }
 
@@ -128,8 +132,9 @@ const styles = StyleSheet.create({
 });
 
 CountdownScreen.navigationOptions = ({ navigation }) => ({
-    headerTransparent: true,
-    header: null
+    headerShown: false,
+    animationEnabled: false,
+    gestureEnabled: false
 });
 
 export default CountdownScreen;

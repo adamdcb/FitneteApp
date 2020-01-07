@@ -3,9 +3,9 @@ import { SafeAreaView, Text, View, StyleSheet, BackHandler } from 'react-native'
 
 import Button from '../../utils/components/Button';
 import I18n from '../../utils/i18n/I18n';
-import { HEADER_TITLE_STYLE, pop, navigate, Route } from '../../utils/navigation/NavigationService';
-import LinearGradient from 'react-native-linear-gradient';
+import { pop, navigate, Route } from '../../utils/navigation/NavigationService';
 import ButtonInverted from '../../utils/components/ButtonInverted';
+import Container from '../../utils/components/Container';
 
 class PauseScreen extends React.Component {
     constructor(props) {
@@ -43,16 +43,9 @@ class PauseScreen extends React.Component {
 
     render() {
         return (
-            <LinearGradient
-                style={styles.container}
-                colors={['#89F8AC3D', '#73F9E01A', '#FFFFFF00']}
-                locations={[0, 0.45, 1]}
-                angle={180}
-                useAngle
-            >
+            <Container>
                 <SafeAreaView style={styles.container}>
                     <View style={styles.content}>
-                        <Text style={HEADER_TITLE_STYLE}>{I18n.t('pause.title')}</Text>
                         <Text style={styles.description}>{I18n.t('pause.description')}</Text>
                         <ButtonInverted
                             style={styles.button}
@@ -72,7 +65,7 @@ class PauseScreen extends React.Component {
                         </View>
                     </View>
                 </SafeAreaView>
-            </LinearGradient>
+            </Container>
         );
     }
 }
@@ -103,9 +96,9 @@ const styles = StyleSheet.create({
 });
 
 PauseScreen.navigationOptions = () => ({
-    headerTransparent: true,
-    header: null,
-    gesturesEnabled: false
+    title: I18n.t('pause.title'),
+    headerLeft: () => null,
+    gestureEnabled: false
 });
 
 export default PauseScreen;

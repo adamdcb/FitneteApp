@@ -1,5 +1,5 @@
 import React from 'react';
-import { SafeAreaView, Text, View, ActivityIndicator, StyleSheet } from 'react-native';
+import { SafeAreaView, Text, View, ActivityIndicator, StyleSheet, BackHandler } from 'react-native';
 import LinearGradient from 'react-native-linear-gradient';
 import FastImage from 'react-native-fast-image';
 import ElevatedView from 'fiber-react-native-elevated-view';
@@ -33,10 +33,14 @@ class WorkoutScreen extends React.Component {
     }
 
     componentDidMount() {
+        this.backHandler = BackHandler.addEventListener('hardwareBackPress', () => {
+            return true;
+        });
         this.presenter.loadWorkout();
     }
 
     componentWillUnmount() {
+        this.backHandler.remove();
         this.presenter.unmountView();
     }
 
@@ -260,8 +264,9 @@ const styles = StyleSheet.create({
 });
 
 WorkoutScreen.navigationOptions = () => ({
-    headerTransparent: true,
-    header: null
+    headerShown: false,
+    animationEnabled: false,
+    gestureEnabled: false
 });
 
 export default WorkoutScreen;

@@ -117,7 +117,8 @@ class ExerciseListScreen extends React.Component {
 
 const styles = StyleSheet.create({
     container: {
-        flex: 1
+        flex: 1,
+        backgroundColor: '#FFFFFF'
     },
     infoOuterContainer: {
         backgroundColor: '#FFFFFF'
@@ -210,8 +211,7 @@ ExerciseListScreen.navigationOptions = ({ navigation }) => ({
     title: navigation.state.params.programName,
     headerStyle: {
         ...HEADER_STYLE,
-        backgroundColor: '#FFFFFF',
-        elevation: 3 // FIXE: workaround for shadow issue
+        backgroundColor: '#FFFFFF'
     }
 });
 

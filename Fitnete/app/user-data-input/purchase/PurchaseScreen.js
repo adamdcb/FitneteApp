@@ -296,8 +296,8 @@ const styles = StyleSheet.create({
 });
 
 PurchaseScreen.navigationOptions = () => ({
-    header: null,
-    gesturesEnabled: false
+    headerShown: false,
+    gestureEnabled: false
 });
 
 export default PurchaseScreen;

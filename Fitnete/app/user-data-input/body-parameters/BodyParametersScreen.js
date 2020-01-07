@@ -146,8 +146,8 @@ class BodyParametersScreen extends React.Component {
         }
         const { step, stepsTotal } = this.props.navigation.state.params;
         return (
-            <SafeAreaView style={styles.container}>
-                <Container>
+            <Container>
+                <SafeAreaView style={styles.container}>
                     <View style={styles.progressContainer}>
                         <Text style={styles.stepTextLeft}>
                             {I18n.t('dataCollection.stepCurrent', { step_number: step })}
@@ -181,8 +181,8 @@ class BodyParametersScreen extends React.Component {
                         />
                     </View>
                     {this._renderPicker()}
-                </Container>
-            </SafeAreaView>
+                </SafeAreaView>
+            </Container>
         )
     }
 }

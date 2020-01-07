@@ -44,7 +44,7 @@ class AreasOfFocusScreen extends React.Component {
     }
 
     onAreaSelectionChange() {
-       this.presenter.areaSelectionDidChange();
+        this.presenter.areaSelectionDidChange();
     }
 
     setTabViewData(data) {
@@ -86,8 +86,8 @@ class AreasOfFocusScreen extends React.Component {
         }, {});
         const { step, stepsTotal } = this.props.navigation.state.params;
         return (
-            <SafeAreaView style={styles.container}>
-                <Container>
+            <Container>
+                <SafeAreaView style={styles.container}>
                     <View style={styles.progressContainer}>
                         <Text style={styles.stepTextLeft}>
                             {I18n.t('dataCollection.stepCurrent', { step_number: step })}
@@ -129,8 +129,8 @@ class AreasOfFocusScreen extends React.Component {
                             onPress={this.onContinue}
                         />
                     </View>
-                </Container>
-            </SafeAreaView>
+                </SafeAreaView>
+            </Container>
         )
     }
 }

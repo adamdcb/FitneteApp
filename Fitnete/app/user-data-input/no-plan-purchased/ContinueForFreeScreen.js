@@ -119,7 +119,7 @@ const styles = StyleSheet.create({
 });
 
 ContinueForFreeScreen.navigationOptions = ({ navigation }) => ({
-    headerRight:
+    headerRight: () =>
         <HeaderTextButton
             text={I18n.t('later')}
             onPress={navigation.getParam('goToApp')}

@@ -61,10 +61,7 @@ const HEADER_TITLE_STYLE = {
     fontFamily: 'Poppins-SemiBold',
     fontSize: 18,
     color: '#3E3750',
-    textAlign: Platform.select({
-        ios: 'center',
-        android: 'left'
-    })
+    textAlign: 'center'
 };
 
 const TAB_BAR_STYLE = {
@@ -74,7 +71,12 @@ const TAB_BAR_STYLE = {
 };
 
 const NO_TAB_BAR_ROUTES = [
-    'WorkoutPlanStack'
+    Route.Countdown,
+    Route.Workout,
+    Route.Pause,
+    Route.Rest,
+    Route.WorkoutComplete,
+    Route.Reminder
 ];
 
 const _shouldDisplayTabBar = (routeName) => {
@@ -105,17 +107,15 @@ const UserDataInputScreens = {
     NoPlanPurchased: NoPlanPurchasedScreen
 }
 
-const WaterTrackerScreens = {
-    WaterTracker: {
-        screen: WaterTrackerScreen,
-        params: { showWorkoutsLink: true }
-    }
-};
-
 const AppIntroStack = createStackNavigator(
     {
         Startup: StartupScreen,
-        AppIntro: AppIntroScreen,
+        AppIntro: {
+            screen: AppIntroScreen,
+            navigationOptions: () => ({
+                animationEnabled: false
+            })
+        },
         PrivacyPolicy: PrivacyPolicyScreen,
         TermsAndConditions: TermsAndConditionsScreen
     },
@@ -130,60 +130,21 @@ const UserDataInputStack = createStackNavigator(
     },
     {
         defaultNavigationOptions: () => ({
-            headerBackImage: <HeaderBackButton />,
+            headerBackImage: () => <HeaderBackButton />,
             headerStyle: HEADER_STYLE,
-            headerBackTitle: null,
+            headerBackTitleVisible: false,
+            headerTitleAlign: 'center',
             headerTitleStyle: HEADER_TITLE_STYLE
         })
     }
 );
 
-const TrainingPlanStack = createStackNavigator(
+const TrainingStack = createStackNavigator(
     {
-        Training: TrainingScreen
-    },
-    {
-        headerMode: 'none'
-    }
-);
-
-const WorkoutDemoStack = createStackNavigator(
-    {
-        DemoWorkoutIntro: DemoWorkoutIntroScreen,
-        DemoWorkout: DemoWorkoutScreen,
-        DemoWorkoutDone: DemoWorkoutDoneScreen
-    },
-    {
-        defaultNavigationOptions: () => ({
-            headerBackImage: <HeaderBackButton />,
-            headerStyle: HEADER_STYLE,
-            headerBackTitle: null,
-            headerTitleStyle: HEADER_TITLE_STYLE
-        }),
-        navigationOptions: () => ({
-            tabBarVisible: false
-        })
-    }
-);
-
-const TrainingProgramStack = createStackNavigator(
-    {
+        Training: TrainingScreen,
         TrainingProgram: TrainingProgramScreen,
         ExerciseList: ExerciseListScreen,
-        ExercisePreview: ExercisePreviewScreen
-    },
-    {
-        defaultNavigationOptions: () => ({
-            headerBackImage: <HeaderBackButton />,
-            headerStyle: HEADER_STYLE,
-            headerBackTitle: null,
-            headerTitleStyle: HEADER_TITLE_STYLE
-        })
-    }
-);
-
-const WorkoutStack = createStackNavigator(
-    {
+        ExercisePreview: ExercisePreviewScreen,
         Countdown: CountdownScreen,
         Workout: WorkoutScreen,
         Pause: PauseScreen,
@@ -192,29 +153,19 @@ const WorkoutStack = createStackNavigator(
         Reminder: ReminderScreen
     },
     {
-        defaultNavigationOptions: () => ({
-            headerBackImage: <HeaderBackButton />,
-            headerStyle: HEADER_STYLE,
-            headerBackTitle: null,
-            headerTitleStyle: HEADER_TITLE_STYLE
-        })
-    }
-);
-
-const TrainingStack = createSwitchNavigator(
-    {
-        TrainingPlanStack: TrainingPlanStack,
-        TrainingProgramStack: TrainingProgramStack,
-        WorkoutDemoStack: WorkoutDemoStack,
-        WorkoutPlanStack: WorkoutStack
-    },
-    {
         navigationOptions: ({ navigation }) => {
             const { routeName } = navigation.state.routes[navigation.state.index];
             return {
                 tabBarVisible: _shouldDisplayTabBar(routeName)
             }
-        }
+        },
+        defaultNavigationOptions: () => ({
+            headerBackImage: () => <HeaderBackButton />,
+            headerStyle: HEADER_STYLE,
+            headerBackTitleVisible: false,
+            headerTitleAlign: 'center',
+            headerTitleStyle: HEADER_TITLE_STYLE
+        })
     }
 );
 
@@ -224,9 +175,10 @@ const FoodStack = createStackNavigator(
     },
     {
         defaultNavigationOptions: () => ({
-            headerBackImage: <HeaderBackButton />,
+            headerBackImage: () => <HeaderBackButton />,
             headerStyle: HEADER_STYLE,
-            headerBackTitle: null,
+            headerBackTitleVisible: false,
+            headerTitleAlign: 'center',
             headerTitleStyle: HEADER_TITLE_STYLE
         })
     }
@@ -241,10 +193,10 @@ const WaterStack = createStackNavigator(
     },
     {
         defaultNavigationOptions: () => ({
-            headerBackImage: <HeaderBackButton />,
-            headerStyle: HEADER_STYLE,
-            headerBackTitle: null,
-            headerTitleStyle: HEADER_TITLE_STYLE
+            headerBackImage: () => <HeaderBackButton />,
+            headerTransparent: true,
+            headerBackTitleVisible: false,
+            headerTitle: () => null,
         })
     }
 );
@@ -256,10 +208,10 @@ const UserProfileStack = createStackNavigator(
     },
     {
         defaultNavigationOptions: () => ({
-            headerBackImage: <HeaderBackButton />,
+            headerBackImage: () => <HeaderBackButton />,
             headerTransparent: true,
-            headerBackTitle: null,
-            headerTitleStyle: HEADER_TITLE_STYLE
+            headerBackTitleVisible: false,
+            headerTitleAlign: 'center'
         })
     }
 );
@@ -325,6 +277,10 @@ function pop() {
     _navigator.dispatch(StackActions.pop());
 }
 
+function popToTop() {
+    _navigator.dispatch(StackActions.popToTop());
+}
+
 function navigate(route, params) {
     const action = NavigationActions.navigate({
         routeName: route,
@@ -349,6 +305,7 @@ export {
     push,
     navigate,
     pop,
+    popToTop,
     replace,
     HEADER_STYLE,
     HEADER_TITLE_STYLE

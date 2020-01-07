@@ -47,7 +47,7 @@ class SelectFitLevelScreen extends React.Component {
             levelIndex: index
         })
     }
-    
+
     getLevelDescription(level) {
         const highlightStartIndex = level.description.indexOf(level.descriptionHighlight);
         return (
@@ -66,8 +66,8 @@ class SelectFitLevelScreen extends React.Component {
         }
         const { step, stepsTotal } = this.props.navigation.state.params;
         return (
-            <SafeAreaView style={styles.container}>
-                <Container>
+            <Container>
+                <SafeAreaView style={styles.container}>
                     <View style={styles.progressContainer}>
                         <Text style={styles.stepTextLeft}>
                             {I18n.t('dataCollection.stepCurrent', { step_number: step })}
@@ -146,8 +146,8 @@ class SelectFitLevelScreen extends React.Component {
                             onPress={this.onContinue}
                         />
                     </View>
-                </Container>
-            </SafeAreaView>
+                </SafeAreaView>
+            </Container>
         )
     }
 }

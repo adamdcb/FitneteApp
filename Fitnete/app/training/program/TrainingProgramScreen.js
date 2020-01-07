@@ -306,8 +306,7 @@ const styles = StyleSheet.create({
 });
 
 TrainingProgramScreen.navigationOptions = () => ({
-    headerTransparent: true,
-    header: null
+    headerShown: false
 });
 
 export default TrainingProgramScreen;

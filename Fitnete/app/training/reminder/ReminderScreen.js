@@ -3,7 +3,7 @@ import { SafeAreaView, Text, View, TouchableOpacity, FlatList, Alert, StyleSheet
 
 import Button from '../../utils/components/Button';
 import I18n from '../../utils/i18n/I18n';
-import { navigate, Route } from '../../utils/navigation/NavigationService';
+import { popToTop } from '../../utils/navigation/NavigationService';
 import Container from '../../utils/components/Container';
 import CheckBox from '../../utils/components/CheckBox';
 import ListViewItemSeparator from '../../utils/components/ListViewItemSeparator';
@@ -57,7 +57,7 @@ class ReminderScreen extends React.Component {
     }
 
     onRemiderScheduled() {
-        navigate(Route.Training);
+        popToTop();
     }
 
     _continue() {
@@ -124,8 +124,8 @@ class ReminderScreen extends React.Component {
     render() {
         const { time } = this.state;
         return (
-            <SafeAreaView style={styles.container}>
-                <Container>
+            <Container>
+                <SafeAreaView style={styles.container}>
                     <View style={styles.topContainer}>
                         <Text style={styles.description}>{I18n.t('workoutReminder.description')}</Text>
                         <View style={styles.repeatButtons}>
@@ -165,9 +165,9 @@ class ReminderScreen extends React.Component {
                         />
                     </View>
 
-                </Container>
+                </SafeAreaView>
                 {this._renderPicker()}
-            </SafeAreaView>
+            </Container>
         );
     }
 }

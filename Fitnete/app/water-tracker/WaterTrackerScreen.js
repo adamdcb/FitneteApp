@@ -4,7 +4,7 @@ import Slider from 'react-native-slider-custom';
 import LinearGradient from 'react-native-linear-gradient';
 import ElevatedView from 'fiber-react-native-elevated-view';
 
-import { HEADER_STYLE, navigate, Route } from '../utils/navigation/NavigationService';
+import { navigate, Route } from '../utils/navigation/NavigationService';
 import I18n from '../utils/i18n/I18n';
 import Container from '../utils/components/Container';
 import FNIcon from '../utils/components/FNIcon';
@@ -58,11 +58,11 @@ class WaterTrackerScreen extends React.Component {
         const waterTrackerImageMaxWidth = (pageWidth - 40) * 0.42;
         const { showWorkoutsLink } = this.props.navigation.state.params;
         return (
-            <SafeAreaView style={styles.container}>
                 <Container
                     locations={[0, 0.5, 1]}
                     colors={['#CEF9FC', '#ECFFFA', '#FFFFFF']}
                 >
+            <SafeAreaView style={styles.container}>
                     <Text style={styles.title}>
                         {I18n.t('waterTracker.title')}
                     </Text>
@@ -179,8 +179,8 @@ class WaterTrackerScreen extends React.Component {
                                 </View>
                             </View> : null
                     }
-                </Container>
             </SafeAreaView>
+                </Container>
         );
     }
 }
@@ -348,10 +348,6 @@ const styles = StyleSheet.create({
 });
 
 WaterTrackerScreen.navigationOptions = () => ({
-    headerStyle: {
-        ...HEADER_STYLE,
-        backgroundColor: '#CEF9FC'
-    },
 });
 
 export default WaterTrackerScreen;

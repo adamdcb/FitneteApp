@@ -261,7 +261,8 @@ const styles = StyleSheet.create({
 });
 
 TrainingScreen.navigationOptions = () => ({
-
+    headerTitle: () => null,
+    headerTransparent: true
 });
 
 export default TrainingScreen;

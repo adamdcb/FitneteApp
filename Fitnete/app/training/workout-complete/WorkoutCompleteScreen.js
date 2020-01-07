@@ -3,7 +3,7 @@ import { SafeAreaView, Text, View, Image, StyleSheet, BackHandler } from 'react-
 
 import Button from '../../utils/components/Button';
 import I18n from '../../utils/i18n/I18n';
-import { navigate, Route, HEADER_TITLE_STYLE } from '../../utils/navigation/NavigationService';
+import { navigate, Route } from '../../utils/navigation/NavigationService';
 import LinearGradient from 'react-native-linear-gradient';
 
 class WorkoutCompleteScreen extends React.Component {
@@ -37,7 +37,6 @@ class WorkoutCompleteScreen extends React.Component {
             >
                 <SafeAreaView style={styles.container}>
                     <View style={styles.content}>
-                        <Text style={HEADER_TITLE_STYLE}>{I18n.t('workoutComplete.title')}</Text>
                         <Text style={styles.description1}>{I18n.t('workoutComplete.description1')}</Text>
                         <Text style={styles.description2}>{I18n.t('workoutComplete.description2')}</Text>
                         <View style={styles.imageContainer}>
@@ -100,8 +99,9 @@ const styles = StyleSheet.create({
 
 WorkoutCompleteScreen.navigationOptions = () => ({
     headerTransparent: true,
-    header: null,
-    gesturesEnabled: false
+    headerShown: false,
+    headerTitle: () => null,
+    gestureEnabled: false
 });
 
 export default WorkoutCompleteScreen;

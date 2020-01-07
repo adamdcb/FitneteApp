@@ -40,8 +40,8 @@ class PrepareWorkoutPlanScreen extends React.Component {
     render() {
         const { step, stepsTotal } = this.props.navigation.state.params;
         return (
-            <SafeAreaView style={styles.container}>
-                <Container>
+            <Container>
+                <SafeAreaView style={styles.container}>
                     <View style={styles.progressContainer}>
                         <Text style={styles.stepTextLeft}>
                             {I18n.t('dataCollection.stepCurrent', { step_number: step })}
@@ -94,8 +94,8 @@ class PrepareWorkoutPlanScreen extends React.Component {
                             }
                         </AnimatedCircularProgress>
                     </View>
-                </Container>
-            </SafeAreaView>
+                </SafeAreaView>
+            </Container>
         )
     }
 }

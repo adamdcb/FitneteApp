@@ -227,7 +227,7 @@ const styles = StyleSheet.create({
 });
 
 UserProfileScreen.navigationOptions = ({ navigation }) => ({
-    headerRight:
+    headerRight: () =>
         <TouchableOpacity
             style={styles.settingsButton}
             onPress={navigation.getParam('openSettings')}
@@ -237,7 +237,8 @@ UserProfileScreen.navigationOptions = ({ navigation }) => ({
                 size={24}
                 color="#FFFFFF"
             />
-        </TouchableOpacity>
+        </TouchableOpacity>,
+    headerTitle: () => null
 });
 
 export default UserProfileScreen;

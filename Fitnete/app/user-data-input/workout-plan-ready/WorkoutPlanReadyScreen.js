@@ -36,8 +36,8 @@ class WorkoutPlanReadyScreen extends React.Component {
     render() {
         const { duration } = this.state;
         return (
-            <SafeAreaView style={styles.container}>
-                <Container>
+            <Container>
+                <SafeAreaView style={styles.container}>
                     <Text style={styles.description}>
                         {I18n.t('workoutPlanReady.description1')}
                     </Text>
@@ -61,8 +61,8 @@ class WorkoutPlanReadyScreen extends React.Component {
                             onPress={this.goToPlan}
                         />
                     </View>
-                </Container>
-            </SafeAreaView>
+                </SafeAreaView>
+            </Container>
         )
     }
 }
