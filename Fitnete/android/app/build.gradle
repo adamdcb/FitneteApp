@@ -129,8 +129,8 @@ android {
         applicationId "com.rierra.fitnete"
         minSdkVersion rootProject.ext.minSdkVersion
         targetSdkVersion rootProject.ext.targetSdkVersion
-        versionCode 3145757
-        versionName "0.6.3"
+        versionCode 3145758
+        versionName "0.6.4"
     }
 
     signingConfigs {
