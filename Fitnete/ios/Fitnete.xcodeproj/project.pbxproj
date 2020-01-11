@@ -27,6 +27,7 @@
 		D392F876C3B17F467B5760B5 /* libPods-Fitnete-tvOSTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 97AF703555F8D58E19867ECC /* libPods-Fitnete-tvOSTests.a */; };
 		F5AA49BA33B27400FEAE6C15 /* libPods-FitneteTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = B951253FBBAD05F079786C1C /* libPods-FitneteTests.a */; };
 		F834D539239D366B001C3B89 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = F834D538239D366A001C3B89 /* GoogleService-Info.plist */; };
+		F834D53F23C9F527001C3B89 /* StoreKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F834D53E23C9F527001C3B89 /* StoreKit.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -99,6 +100,7 @@
 		F583C8CF44FA068C48A1471A /* Pods-Fitnete-tvOS.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Fitnete-tvOS.debug.xcconfig"; path = "Target Support Files/Pods-Fitnete-tvOS/Pods-Fitnete-tvOS.debug.xcconfig"; sourceTree = "<group>"; };
 		F834D538239D366A001C3B89 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "GoogleService-Info.plist"; path = "Fitnete/GoogleService-Info.plist"; sourceTree = "<group>"; };
 		F834D53D23C3C0D5001C3B89 /* Fitnete.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; name = Fitnete.entitlements; path = Fitnete/Fitnete.entitlements; sourceTree = "<group>"; };
+		F834D53E23C9F527001C3B89 /* StoreKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = StoreKit.framework; path = System/Library/Frameworks/StoreKit.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -117,6 +119,7 @@
 				A05967AC868F1F020B1950F7 /* libPods-Fitnete.a in Frameworks */,
 				5440F94093E44A11A8D90248 /* libc++.tbd in Frameworks */,
 				43CE3E84941744CFB60F469E /* libz.tbd in Frameworks */,
+				F834D53F23C9F527001C3B89 /* StoreKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -190,6 +193,7 @@
 		2D16E6871FA4F8E400B85C8A /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				F834D53E23C9F527001C3B89 /* StoreKit.framework */,
 				ED297162215061F000B7C4FE /* JavaScriptCore.framework */,
 				ED2971642150620600B7C4FE /* JavaScriptCore.framework */,
 				40A216BB1094A2327F50BD89 /* libPods-Fitnete.a */,
