@@ -42,10 +42,16 @@ function _createSchedule({ fireDate, repeat }) {
 export default {
     CHANNEL,
 
-    registerListener() {
+    init() {
         this.notificationListener = firebase
             .notifications()
             .onNotification(async notification => await firebase.notifications().displayNotification(notification));
+    },
+
+    deinit() {
+        if (this.notificationListener) {
+            this.notificationListener = null;
+        }
     },
 
     async requestPermission() {

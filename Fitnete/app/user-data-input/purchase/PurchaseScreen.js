@@ -1,5 +1,5 @@
 import React from 'react';
-import { SafeAreaView, View, Text, StyleSheet, TouchableOpacity } from 'react-native';
+import { SafeAreaView, View, Text, StyleSheet, TouchableOpacity, Alert } from 'react-native';
 import { getStatusBarHeight } from 'react-native-safe-area-view';
 import LinearGradient from 'react-native-linear-gradient';
 import ElevatedView from 'fiber-react-native-elevated-view';
@@ -41,21 +41,39 @@ class PurchaseScreen extends React.Component {
     }
 
     continue() {
-        navigate(Route.MainApp);
+        this.presenter.requestSubscription();
     }
 
     continueForFree() {
         push(Route.NoPlanPurchased);
     }
 
-    renderPayButton(type) {
+    onSubscriptionSuccess() {
+        navigate(Route.MainApp);
+    }
+
+    onSubscriptionError() {
+        // TODO
+        Alert.alert(
+            '',
+            'Oops, something went wrong',
+            [{
+                text: I18n.t('ok')
+            }],
+            {
+                cancelable: true
+            }
+        );
+    }
+
+    renderPayButton(subscription) {
         const { activeSubscriptionType } = this.state;
         return (
             <TouchableOpacity
-                style={[styles.payButtonContainer, activeSubscriptionType === type ? styles.payButtonContainerActive : styles.payButtonContainerInactive]}
-                onPress={() => this.presenter.setSelectedSubscriptionType(type)}
+                style={[styles.payButtonContainer, activeSubscriptionType === subscription.type ? styles.payButtonContainerActive : styles.payButtonContainerInactive]}
+                onPress={() => this.presenter.setSelectedSubscription(subscription.id)}
             >
-                <Text style={[styles.payButtonText, activeSubscriptionType === type ? styles.payButtonTextActive : styles.payButtonTextInactive]}>{I18n.t(`purchase.pay.${type}`)}</Text>
+                <Text style={[styles.payButtonText, activeSubscriptionType === subscription.type ? styles.payButtonTextActive : styles.payButtonTextInactive]}>{I18n.t(`purchase.pay.${subscription.type}`)}</Text>
             </TouchableOpacity>
         );
     }
@@ -96,10 +114,10 @@ class PurchaseScreen extends React.Component {
                             </LinearGradient>
                         </ElevatedView>
                         <View style={styles.payButtons}>
-                            {subscriptions.map(subscription => this.renderPayButton(subscription.type))}
+                            {subscriptions.map(subscription => this.renderPayButton(subscription))}
                         </View>
                         <Text style={styles.legalDescription}>
-                            {I18n.t('purchase.legalDescription')}
+                            {subscription.description}
                         </Text>
                         <View style={styles.buttonsContainer}>
                             <View style={styles.goPremiumButtonContainer}>

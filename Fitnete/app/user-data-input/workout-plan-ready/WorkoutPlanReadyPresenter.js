@@ -1,14 +1,16 @@
-import TrainingDataSource from '../../data/TrainingDataSource';
+import UserDataSource from '../../data/UserDataSource';
+import WorkoutDataManager from '../../data/WorkoutDataManager';
 
 
 export default class WorkoutPlanReadyPresenter {
     constructor(view) {
         this.view = view;
-        this.dataSource = new TrainingDataSource();
+        this.userDataSource = new UserDataSource();
     }
 
     async loadData() {
-        const duration = await this.dataSource.getAnyProgramDuration();
+        const user = await this.userDataSource.getUser();
+        const duration = WorkoutDataManager.PROGRAM_SLICE[user.fitnessLevel].length * 7;
         const data = {
             duration
         };

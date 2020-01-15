@@ -2,6 +2,7 @@ import UserDataSource from './app/data/UserDataSource';
 import { InitialStoryboard } from './app/utils/navigation/NavConstants';
 import FNDatabase from './app/data/local-storage/FNDatabase';
 import NotificationService from './app/utils/notifications/NotificationService';
+import IAPService from './app/utils/iap/IAPService';
 
 export default class AppPresenter {
     constructor(view) {
@@ -9,9 +10,10 @@ export default class AppPresenter {
         this.dataSource = new UserDataSource();
     }
 
-    async openDatabse() {
+    async init() {
         await FNDatabase.open();
-        NotificationService.registerListener();
+        NotificationService.init();
+        IAPService.init();
     }
 
     async loadInitialStoryboard() {
@@ -24,6 +26,8 @@ export default class AppPresenter {
     }
 
     unmountView() {
+        IAPService.deinit();
+        NotificationService.deinit();
         this.view = null;
     }
 }

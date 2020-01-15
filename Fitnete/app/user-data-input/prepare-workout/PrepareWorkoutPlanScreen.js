@@ -5,7 +5,7 @@ import { AnimatedCircularProgress } from 'react-native-circular-progress';
 import I18n from '../../utils/i18n/I18n';
 import Container from '../../utils/components/Container';
 import ProgressIndicator from '../../utils/components/ProgressIndicator';
-import { push, Route } from '../../utils/navigation/NavigationService';
+import { push, Route, navigate } from '../../utils/navigation/NavigationService';
 import PrepareWorkoutPlanPresenter from './PrepareWorkoutPlanPresenter';
 
 const progressViewSize = Dimensions.get('window').width - 120;
@@ -27,8 +27,12 @@ class PrepareWorkoutPlanScreen extends React.Component {
         this.presenter.unmountView();
     }
 
-    onContinue() {
-        push(Route.WorkoutPlanReady);
+    onContinue(premium) {
+        if (premium) {
+            navigate(Route.MainApp);
+        } else {
+            push(Route.WorkoutPlanReady);
+        }
     }
 
     setProgress(progress) {

@@ -137,13 +137,24 @@ export default {
             month: 'Paid Monthly',
             year: 'Paid Yearly'
         },
+        subscriptionPeriod: {
+            P1M: 'Month',
+            MONTH: 'Month',
+
+            P1Y: 'Year',
+            YEAR: 'Year'
+        },
+        trialTitle: {
+            P1W: '7 Day Trial',
+            WEEK: '7 Day Trial'
+        },
+        trialDescription: {
+            P1W: 'Free for a week',
+            WEEK: 'Free for a week'
+        },
         goPremium: 'GO PREMIUM',
-        trialTitle: '7 Day Trial',
-        trialDescription: 'Free for a week',
-        pricePerYear: 'Paid Annually at $%{price} / year',
         workoutsPerWeek: 'workouts per week',
-        workoutsToAchieveGoal: 'workouts until you achieve your goal',
-        legalDescription: 'Legal description about subsricption. Sit amet dolor un, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip.'
+        workoutsToAchieveGoal: 'workouts until you achieve your goal'
     },
     noPlanPurchased: {
         description1: 'Not ready for the',
@@ -398,82 +409,82 @@ export default {
         reverseJackKnivesName: 'Reverse Jack Knives',
         reverseJackKnivesDescription: 'Lie supine and extend the legs out and up to 45°. Inhale and then as you exhale bring the legs up overhead with the weight balanced between the shoulder-blades.',
 
-        
+
         cobraPushUpName: 'Cobra Push Up',
         cobraPushUpDescription: 'Lie prone in push-up position with hands under shoulders. As you push up, look forward, keep your hips low, and push your chest out. Lower and repeat.',
-        
+
         oneArmPushUpRightArmName: 'One Arm Push Up - Right Arm',
         oneArmPushUpRightArmDescription: 'In a push-up position with feet wide apart, place the left hand on the left thigh and lower with the right arm until right pectoral is just above the ground. Extend and repeat.',
-        
+
         oneArmPushUpLeftArmName: 'One Arm Push Up - Left Arm',
         oneArmPushUpLeftArmDescription: 'In a push-up position with feet wide apart, place the right hand on the right thigh and lower with the left arm until left pectoral is just above the ground. Extend and repeat.',
-        
+
         handPlankReachesName: 'Hand Plank Reaches',
         handPlankReachesDescription: 'In a hand plank, alternate reaching each arm forward, extending it past the head, while maintaining three points of contact with the ground. Keep a tight core.',
-        
+
         plankRightSideName: 'Plank - Right Side',
         plankRightSideDescription: 'Shift weight to the right during elbow plank, balancing on right elbow and outside of right foot. Left arm should reach upward and body should be in a line. Tight core!',
-        
+
         plankLeftSideName: 'Plank - Left Side',
         plankLeftSideDescription: 'Shift weight to the left during elbow plank, balancing on left elbow and outside of left foot. Right arm should reach upward and body should be in a line. Tight core!',
-        
+
         kneePushUpsName: 'Knee Push Ups',
         kneePushUpsDescription: 'Planking from the hands and knees with arms stacked under the shoulders, lower down until the elbows are bent 90° and then lift. Keep alignment intact.',
-        
+
         shouldPushUpsName: 'Should Push Ups',
         shouldPushUpsDescription: 'In a hand plank with the arms stacked under the shoulders, lower down until the elbows are bent 90° and then lift. Keep alignment intact.',
-        
+
         bentOverRowName: 'Bent Over Row',
         bentOverRowDescription: 'Feet slightly wider than hips, grab bar with over or underhand grip and stand up. With straight back, bend forward at waist and pull the bar up repeatedly.',
-        
+
         lateralRaisesName: 'Lateral Raises',
         lateralRaisesDescription: 'Standing with two dumbells held to either side, exhale and raise the arms to the sides with a slight elbow bend until they are parallel to the ground. Then lower.',
-        
+
         tricepExtensionLeftName: 'Tricep Extension Left',
         tricepExtensionLeftDescription: 'With right foot lunged forward and right hand braced on right thigh, keep the shoulders level and fully extend back with the left arm, contracting the tricep.',
         tricepExtensionRightName: 'Tricep Extension Right',
         tricepExtensionRightDescription: 'With left foot lunged forward and left hand braced on left thigh, keep the shoulders level and fully extend back with the right arm, contracting the tricep.',
-        
+
         dumbellSwingName: 'Dumbell Swing',
         dumbellSwingDescription: 'With feet at shoulder-width and a two-hand grip on a dumbell, bring dumbell between legs in a partial squat, then extend thighs to swing dumbell above head. Maintain lumbar curve.',
-        
+
         squatAndCurlName: 'Squat and Curl',
         squatAndCurlDescription: 'With dumbells held to both sides, keep your weight on your heels and squat until thighs are parallel to the ground. Standing back up, perform the two curls.',
-        
+
         tricepKickbackName: 'Tricep Kickback',
         tricepKickbackDescription: 'With right knee and right hand planted on bench and left foot on the ground, keep the shoulders level and fully extend back with left arm, contracting the tricep.',
         //'With left knee and left hand planted on bench and right foot on the ground, keep the shoulders level and fully extend back with right arm, contracting the tricep.',
-        
+
         plankHipDipsName: 'Plank Hip Dips',
         plankHipDipsDescription: 'From an elbow plank, begin shifting your weight from one side to the other, bringing the outer thigh and glute to the ground each time.',
 
 
         crabWalkName: 'Crab Walk',
         crabWalkDescription: 'From a supine position, support your weight on hands and feet (fingers out to the sides) keeping your trunk parallel to the ground and walk forward.',
-        
+
         spineStretchName: 'Spine Stretch',
         spineStretchDescription: 'Seated on ground with legs extended and arms raised to front. Inhale and straighten spine, then exhale and fall forward, articulating the spine vertebrae by vertebrae.',
-        
+
         lyingKneeHugName: 'Lying Knee Hug',
         lyingKneeHugDescription: 'Lying supine, bring one knee to the chest and hug it to pull it closer while the other remains on the ground. Alternate legs, keeping the body flat on the ground.',
         // 'Lying supine, bring one knee to the chest and hug it to pull it closer while the other remains on the ground. Alternate legs, keeping the body flat on the ground.',
-        
+
         woodpeckerName: 'Woodpecker',
         woodpeckerDescription: 'In a slight lunge, align the spine with back leg. Supinate hands/extend arms for a stretch, then bob up and down over front knee by contracting the glutes. Alternate lunging leg.',
-        
+
         rollingOverName: 'Rolling over',
         rollingOverDescription: 'Lie supine, knees to chest, extend legs to 45°, lift legs behind head, open legs, flex heels, articulate the spine to the floor one vertebrae at a time, close legs, back to 45°.',
-        
+
         runnersCrunchName: 'Runner\'s Crunch',
         runnersCrunchDescription: 'Lie supine with extended legs. Contract core and flex hip bringing one elbow to opposite knee. Slight rotation but focus on upward contraction. Alternate sides.',
-        
+
         theFounderName: 'The Founder',
         theFounderDescription: 'With feet at medium-width, bend knees to pull back hips and lift chest. Arms push back to open chest then extend upward, contracting lower back. Lower hands to the floor then up.',
-        
+
         // TODO: N/A
         // kneelingObliqueCrunchName: 'Kneeling Oblique Crunch',
         // kneelingObliqueCrunchDescription: 'Kneel in front of cable machine with rope attachment held above head. Engage core to \'crunch\' toward the ground, rotating to bring one elbow to opposite thigh, then alternate.',
-        
+
         mcGillCurlUpLeftName: 'McGill Curl Up Left',
         mcGillCurlUpLeftDescription: 'Lie supine with one knee bent up and hands under small of back. Contract core to elevate chest looking upward toward the ceiling. Alternate bent leg every set.',
         mcGillCurlUpRightName: 'McGill Curl Up Right',
@@ -484,19 +495,19 @@ export default {
         birdDogRightName: 'Bird Dog Right',
         birdDogRightDescription: 'On all fours, extend one leg behind and opposite arm out in front, reaching. For an extra challenge, do knee to elbow reps. Alternate limbs.',
 
-        
+
         pushUpName: 'Push Up',
         pushUpDescription: 'A proper push-up will have wrists stacked under shoulders, no sag in the body, and pelvis tilted back with glutes squeezed. All the way up and down!',
-        
+
         tricepDipName: 'Tricep Dip',
         tricepDipDescription: 'Support weight with hands on the edge of a bench while the knees are bent 90° with feet on the ground. Lower until upper arms are parallel with ground, then back up.',
-        
+
         wallSitName: 'Wall Sit',
         wallSitDescription: 'Squat against a wall with knees over ankles and 90° bend in knees. Hold for 30 seconds or longer depending on fitness level.',
-        
+
         jumpingJacksName: 'Jumping Jacks',
         jumpingJacksDescription: 'From standing, jump and abduct all four limbs, spreading the feet apart and bringing arms over head. On the next jump, bring all limbs back to neutral. Repeat rhythmically.',
-        
+
         burpeesName: 'Burpees',
         burpeesDescription: 'From standing, jump/drop to prone position, lift chest, snap hips up into standing, jump and overhead clap, before returning to standing position. Repeat.',
     }

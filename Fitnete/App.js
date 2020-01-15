@@ -18,7 +18,7 @@ class App extends React.PureComponent {
   }
 
   async componentDidMount() {
-    await this.presenter.openDatabse();
+    await this.presenter.init();
     this.presenter.loadInitialStoryboard();
   }
 
