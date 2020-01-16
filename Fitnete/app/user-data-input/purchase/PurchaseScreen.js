@@ -1,5 +1,5 @@
 import React from 'react';
-import { SafeAreaView, View, Text, StyleSheet, TouchableOpacity, Alert } from 'react-native';
+import { SafeAreaView, View, Text, StyleSheet, TouchableOpacity, ActivityIndicator, Alert } from 'react-native';
 import { getStatusBarHeight } from 'react-native-safe-area-view';
 import LinearGradient from 'react-native-linear-gradient';
 import ElevatedView from 'fiber-react-native-elevated-view';
@@ -11,6 +11,7 @@ import { Route, navigate, push } from '../../utils/navigation/NavigationService'
 import ButtonText from '../../utils/components/ButtonText';
 import PurchasePresenter from './PurchasePresenter';
 import FNIcon from '../../utils/components/FNIcon';
+import LoadingView from '../../utils/components/LoadingView';
 
 const HEADER_VIEW_HEIGHT = 84;
 
@@ -18,10 +19,11 @@ class PurchaseScreen extends React.Component {
     constructor(props) {
         super(props);
         this.state = {
-            subscriptions: [],
+            subscriptions: null,
             activeSubscriptionType: '',
             workoutsTotal: 0,
-            workoutsPerWeek: 0
+            workoutsPerWeek: 0,
+            loading: false
         }
         this.presenter = new PurchasePresenter(this);
         this.continue = this.continue.bind(this);
@@ -41,6 +43,7 @@ class PurchaseScreen extends React.Component {
     }
 
     continue() {
+        this.setState({ loading: true });
         this.presenter.requestSubscription();
     }
 
@@ -49,14 +52,15 @@ class PurchaseScreen extends React.Component {
     }
 
     onSubscriptionSuccess() {
+        this.setState({ loading: false });
         navigate(Route.MainApp);
     }
 
-    onSubscriptionError() {
-        // TODO
+    onSubscriptionError(errorTitle, errorMessage) {
+        this.setState({ loading: false });
         Alert.alert(
-            '',
-            'Oops, something went wrong',
+            errorTitle,
+            errorMessage,
             [{
                 text: I18n.t('ok')
             }],
@@ -78,8 +82,41 @@ class PurchaseScreen extends React.Component {
         );
     }
 
+    renderLoading() {
+        return (
+            <ActivityIndicator
+                size='large'
+                color='#08C757'
+                style={styles.loading}
+            />
+        );
+    }
+
+    renderButtons() {
+        return (
+            <View style={{ flex: 1 }}>
+                <View style={styles.goPremiumButtonContainer}>
+                    <Button
+                        style={styles.goPremiumButton}
+                        title={I18n.t('purchase.continue')}
+                        onPress={this.continue}
+                    />
+                </View>
+                <ButtonText
+                    style={styles.continueButton}
+                    title={I18n.t('purchase.continueForFree')}
+                    showArrow={false}
+                    onPress={this.continueForFree}
+                />
+            </View>
+        );
+    }
+
     render() {
-        const { subscriptions, activeSubscriptionType, workoutsTotal, workoutsPerWeek } = this.state;
+        const { subscriptions, activeSubscriptionType, workoutsTotal, workoutsPerWeek, loading } = this.state;
+        if (subscriptions === null) {
+            return (<LoadingView />);
+        }
         const subscription = subscriptions.find(subscription => subscription.type === activeSubscriptionType) || {};
         return (
             <SafeAreaView style={styles.container}>
@@ -120,19 +157,10 @@ class PurchaseScreen extends React.Component {
                             {subscription.description}
                         </Text>
                         <View style={styles.buttonsContainer}>
-                            <View style={styles.goPremiumButtonContainer}>
-                                <Button
-                                    style={styles.goPremiumButton}
-                                    title={I18n.t('purchase.continue')}
-                                    onPress={this.continue}
-                                />
-                            </View>
-                            <ButtonText
-                                style={styles.continueButton}
-                                title={I18n.t('purchase.continueForFree')}
-                                showArrow={false}
-                                onPress={this.continueForFree}
-                            />
+                            {
+                                loading ? this.renderLoading() : this.renderButtons()
+                            }
+
                         </View>
                     </View>
                 </Container>
@@ -174,6 +202,9 @@ const styles = StyleSheet.create({
         flex: 1,
         marginTop: HEADER_VIEW_HEIGHT + 16,
         marginHorizontal: 1
+    },
+    loading: {
+        marginVertical: 48
     },
     headerBackground: {
         position: 'absolute',
@@ -296,9 +327,10 @@ const styles = StyleSheet.create({
     },
     buttonsContainer: {
         flex: 1,
-        justifyContent: 'flex-end',
+        flexDirection: 'row',
         marginVertical: 16,
-        alignItems: 'center'
+        alignItems: 'flex-end',
+        justifyContent: 'center'
     },
     continueButton: {
         height: 40,

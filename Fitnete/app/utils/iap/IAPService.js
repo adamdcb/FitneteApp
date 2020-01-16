@@ -9,13 +9,22 @@ const subscriptionIds = Platform.select({
     ],
     android: [
         'com.fitnete.subscription.year.v2',
-        'com.fitnete.subscription.month.v2'
+        'com.fitnete.subscription.month.v2',
+        'com.fitnete.subscription.week.v2'
     ]
 });
+
+const ERROR = {
+    UNKNOWN: 'ERR_UNKNOWN',
+    USER_CANCELLED: 'ERR_USER_CANCELLED',
+    RECEIPT_VERIFY_FAILED: 'ERR_RECEIPT_VERIFY_FAILED'
+}
 
 let subscribers = [];
 
 export default {
+    ERROR,
+
     async init() {
         this.purchaseUpdateSubscription = RNIap.purchaseUpdatedListener(async (purchase) => {
             const receipt = purchase.transactionReceipt;
@@ -31,7 +40,7 @@ export default {
             } else {
                 subscribers.forEach(s => {
                     if (s.onPurchaseUpdateError) {
-                        s.onPurchaseUpdateError();
+                        s.onPurchaseUpdateError(RECEIPT_VERIFY_FAILED);
                     }
                 });
             }
@@ -39,9 +48,10 @@ export default {
 
         this.purchaseErrorSubscription = RNIap.purchaseErrorListener((error) => {
             console.log('purchaseErrorListener', error);
+            const errorCode = this.parseError(error);
             subscribers.forEach(s => {
                 if (s.onPurchaseUpdateError) {
-                    s.onPurchaseUpdateError();
+                    s.onPurchaseUpdateError(errorCode);
                 }
             });
         });
@@ -86,22 +96,39 @@ export default {
     },
 
     async getAvailableSubscriptions() {
-        const subscriptions = [];
-        try {
-            let availablePurchases = await RNIap.getAvailablePurchases();
-            availablePurchases = availablePurchases.filter(purchase => subscriptionIds.includes(purchase.productId));
-            for (let index = 0; index < availablePurchases.length; index++) {
-                const purchase = availablePurchases[index];
-                const isValid = await this.verifyReceipt(purchase.transactionReceipt);
-                if (isValid) {
-                    subscriptions.push(purchase);
-                }
-            }
-            return subscriptions;
-        } catch (error) {
-            console.log('getAvailableSubscriptions()', error);
-            return subscriptions;
+        let subscriptions = [];
+        let availablePurchases = [];
+        if (Platform.OS === 'android') {
+            availablePurchases = await this.getAvailablePurchasesAndroid();
+        } else if (Platform.OS === 'ios') {
+            availablePurchases = await this.getAvailablePurchasesIOS();
         }
+        for (let index = 0; index < availablePurchases.length; index++) {
+            const purchase = availablePurchases[index];
+            const isValid = await this.verifyReceipt(purchase.transactionReceipt);
+            if (isValid) {
+                try {
+                    await RNIap.finishTransaction(purchase, false);
+                } catch { }
+                subscriptions.push(purchase);
+            }
+        }
+        return subscriptions;
+    },
+
+    async getAvailablePurchasesAndroid() {
+        try {
+            const availablePurchases = await RNIap.getAvailablePurchases();
+            return availablePurchases.filter(purchase => subscriptionIds.includes(purchase.productId));
+        } catch (error) {
+            console.log('getAvailablePurchasesAndroid()', error);
+            return [];
+        }
+    },
+
+    async getAvailablePurchasesIOS() {
+        // TODO
+        return [];
     },
 
     async verifyReceipt(receipt) {
@@ -119,6 +146,15 @@ export default {
         } catch (error) {
             console.log('Verify receipt error', error);
             return false;
+        }
+    },
+
+    parseError(error) {
+        switch (error.code) {
+            case RNIap.IAPErrorCode.E_USER_CANCELLED:
+                return ERROR.USER_CANCELLED;
+            default:
+                return ERROR.UNKNOWN;
         }
     }
 }

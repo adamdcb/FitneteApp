@@ -5,6 +5,7 @@ import IAPService from '../../utils/iap/IAPService';
 import WorkoutDataManager from '../../data/WorkoutDataManager';
 
 const SUBSCRIPTION_TYPE = {
+    week: 'week',
     month: 'month',
     year: 'year'
 }
@@ -27,6 +28,7 @@ export default class PurchasePresenter {
                 return {
                     id: subscription.id,
                     type: this._getSubscriptionType(subscription.subscriptionPeriod),
+                    price: subscription.price,
                     title: subscription.title,
                     description: subscription.description,
                     priceText: `${subscription.localizedPrice} / ${I18n.t(`purchase.subscriptionPeriod.${subscription.subscriptionPeriod}`)}`,
@@ -34,8 +36,9 @@ export default class PurchasePresenter {
                     trialTitle: I18n.t(`purchase.trialTitle.${subscription.freeTrialPeriod}`),
                     trialDescription: I18n.t(`purchase.trialDescription.${subscription.freeTrialPeriod}`)
                 }
-            });
-            this.selectedSubscription = this.subscriptions[0];
+            })
+                .sort((a, b) => parseFloat(a.price) - parseFloat(b.price));
+            this.selectedSubscription = this.subscriptions.find(s => this._getSubscriptionType(s.subscriptionPeriod) === (subscriptionsUi[0] || {}).type);
             duration = WorkoutDataManager.PROGRAM_SLICE[user.fitnessLevel].length * 7;
         } catch (error) {
             console.log(error);
@@ -70,10 +73,17 @@ export default class PurchasePresenter {
         }
     }
 
-    onPurchaseUpdateError() {
-        if (this.view) {
-            this.view.onSubscriptionError();
+    onPurchaseUpdateError(errorCode) {
+        if (!this.view) {
+            return;
         }
+        if (errorCode === IAPService.ERROR.USER_CANCELLED) {
+            this.view.setData({ loading: false });
+            return;
+        }
+        const errorTitle = '';
+        const errorMessage = I18n.t('purchase.errorUnknowMessage');
+        this.view.onSubscriptionError(errorTitle, errorMessage);
     }
 
     unmountView() {
@@ -103,6 +113,9 @@ export default class PurchasePresenter {
 
     _getSubscriptionType(period) {
         switch (period) {
+            case 'P1W':
+            case 'WEEK':
+                return SUBSCRIPTION_TYPE.week;
             case 'P1M':
             case 'MONTH':
                 return SUBSCRIPTION_TYPE.month;

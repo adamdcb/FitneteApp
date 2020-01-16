@@ -134,10 +134,14 @@ export default {
         continue: 'Continue',
         continueForFree: 'Continue for free',
         pay: {
+            week: 'Paid Weekly',
             month: 'Paid Monthly',
             year: 'Paid Yearly'
         },
         subscriptionPeriod: {
+            P1W: 'Week',
+            WEEK: 'Week',
+
             P1M: 'Month',
             MONTH: 'Month',
 
@@ -154,7 +158,8 @@ export default {
         },
         goPremium: 'GO PREMIUM',
         workoutsPerWeek: 'workouts per week',
-        workoutsToAchieveGoal: 'workouts until you achieve your goal'
+        workoutsToAchieveGoal: 'workouts until you achieve your goal',
+        errorUnknowMessage: 'Oops, something went wrong'
     },
     noPlanPurchased: {
         description1: 'Not ready for the',
