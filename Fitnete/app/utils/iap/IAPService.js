@@ -1,9 +1,7 @@
 import { Platform } from 'react-native';
 import * as RNIap from 'react-native-iap';
-import UserDataSource from '../../data/UserDataSource';
-import TrainingDataSource from '../../data/TrainingDataSource';
 
-const VERIFY_RECEIPT_URL = `http://app-purchases-validator-1224487661.us-east-2.elb.amazonaws.com/verify/${Platform.OS.toLowerCase()}`;
+const VERIFY_RECEIPT_URL = `https://get-in-app.com/verify/${Platform.OS.toLowerCase()}`;
 const subscriptionIds = Platform.select({
     ios: [
         'com.fitnete.subscription.year',
@@ -108,10 +106,12 @@ export default {
 
     async verifyReceipt(receipt) {
         try {
+            const headers = new Headers();
+            headers.append('Authorization', 'Basic dmFsaWRhdG9yOjFmY2ZiYjFlNDcwMjQwMTE4ZWNjZmM4YmM3NjUzZWVm');
             const response = await fetch(VERIFY_RECEIPT_URL,
                 {
                     method: 'post',
-                    headers: { 'Authorization': 'Basic dmFsaWRhdG9yOjFmY2ZiYjFlNDcwMjQwMTE4ZWNjZmM4YmM3NjUzZWVm' },
+                    headers,
                     body: receipt
                 });
             console.log('VERIFY_RECEIPT_URL', response);
