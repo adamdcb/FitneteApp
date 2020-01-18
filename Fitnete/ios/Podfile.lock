@@ -305,7 +305,7 @@ PODS:
     - React
   - RNCAsyncStorage (1.6.1):
     - React
-  - RNCMaskedView (0.1.5):
+  - RNCMaskedView (0.1.6):
     - React
   - RNFastImage (7.0.2):
     - React
@@ -531,7 +531,7 @@ SPEC CHECKSUMS:
   ReactCommon: a6a294e7028ed67b926d29551aa9394fd989c24c
   RealmJS: 870acf1f09c637672f624fd7f7b5c71ea0662651
   RNCAsyncStorage: 621bad7a889b5bf1583a52547f2dcd3a4d1ff15e
-  RNCMaskedView: c8b53164b85ecf94c9a44d67082df0f03c1f74cc
+  RNCMaskedView: e5b99bc191945f157adeede68da9d424462de177
   RNFastImage: 9b0c22643872bb7494c8d87bbbb66cc4c0d9e7a2
   RNFirebase: 37daa9a346d070f9f6ee1f3b4aaf4c8e3b1d5d1c
   RNGestureHandler: 02905abe54e1f6e59c081a10b4bd689721e17aa6

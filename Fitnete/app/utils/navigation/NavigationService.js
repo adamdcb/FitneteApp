@@ -20,8 +20,6 @@ import TabBarIcon from '../components/TabBarIcon';
 
 import LoadingScreen from '../../loading/LoadingScreen';
 import AppIntroScreen from '../../app-intro/AppIntroScreen';
-import PrivacyPolicyScreen from '../../terms-and-conditions/privacy-policy/PrivacyPolicyScreen';
-import TermsAndConditionsScreen from '../../terms-and-conditions/terms/TermsAndConditionsScreen';
 import WaterTrackerScreen from '../../water-tracker/WaterTrackerScreen';
 import AreasOfFocusScreen from '../../user-data-input/areas-of-focus/AreasOfFocusScreen';
 import SelectFitLevelScreen from '../../user-data-input/select-fit-level/SelectFitLevelScreen';
@@ -115,9 +113,7 @@ const AppIntroStack = createStackNavigator(
             navigationOptions: () => ({
                 animationEnabled: false
             })
-        },
-        PrivacyPolicy: PrivacyPolicyScreen,
-        TermsAndConditions: TermsAndConditionsScreen
+        }
     },
     {
         headerMode: 'none'

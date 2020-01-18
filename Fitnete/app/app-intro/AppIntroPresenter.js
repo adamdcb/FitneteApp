@@ -1,5 +1,10 @@
-import UserDataSource from "../data/UserDataSource";
+import { Linking } from 'react-native';
+import UserDataSource from '../data/UserDataSource';
 
+const URL = {
+    TermsAndConditions: 'https://www.fitnete.com/terms-of-service',
+    PrivacyPolicy: 'https://www.fitnete.com/privacypolicy'
+};
 const NO_OF_SLIDES = 3;
 
 export default class AppIntroPresenter {
@@ -18,6 +23,22 @@ export default class AppIntroPresenter {
                 description: `appIntro.page${page}Description`
             }
         });
+    }
+
+    async didTapTermsAndConditions() {
+        try {
+            Linking.openURL(URL.TermsAndConditions)
+        } catch (error) {
+            console.log('didTapTermsAndConditions()', error);
+        }
+    }
+
+    async didTapPrivacyPolicy() {
+        try {
+            Linking.openURL(URL.PrivacyPolicy)
+        } catch (error) {
+            console.log('didTapPrivacyPolicy()', error);
+        }
     }
 
     async didAcceptTerms() {

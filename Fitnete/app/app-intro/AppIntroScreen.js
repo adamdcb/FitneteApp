@@ -2,7 +2,7 @@ import React from 'react';
 import { View, SafeAreaView, Text, TouchableOpacity, StyleSheet, Image } from 'react-native';
 import Swiper from 'react-native-web-swiper';
 
-import { push, Route, navigate } from '../utils/navigation/NavigationService';
+import { Route, navigate } from '../utils/navigation/NavigationService';
 import I18n from '../utils/i18n/I18n';
 import AppIntroPresenter from './AppIntroPresenter';
 import Button from '../utils/components/Button';
@@ -34,11 +34,11 @@ class AppIntroScreen extends React.Component {
     }
 
     onPrivacyPolicyTap() {
-        push(Route.PrivacyPolicy);
+        this.presenter.didTapPrivacyPolicy();
     }
 
     onTermsAndConditionsTap() {
-        push(Route.TermsAndConditions);
+        this.presenter.didTapTermsAndConditions();
     }
 
     onToggleTermsAndConditionsCheckBox(active) {
