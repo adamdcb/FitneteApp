@@ -25,20 +25,21 @@ export default class PurchasePresenter {
             const user = await this.userDataSource.getUser();
             this.subscriptions = await this._getSubscriptions();
             subscriptionsUi = this.subscriptions.map(subscription => {
+                const type = this._getSubscriptionType(subscription.id);
                 return {
                     id: subscription.id,
-                    type: this._getSubscriptionType(subscription.subscriptionPeriod),
+                    type,
                     price: subscription.price,
                     title: subscription.title,
                     description: subscription.description,
                     fullDescription: I18n.t('purchase.fullDescription'),
-                    priceText: `${subscription.localizedPrice} / ${I18n.t(`purchase.subscriptionPeriod.${subscription.subscriptionPeriod}`)}`,
+                    priceText: `${subscription.localizedPrice} / ${I18n.t(`purchase.subscriptionPeriod.${type}`)}`,
                     trialTitle: I18n.t(`purchase.trialTitle.${subscription.freeTrialPeriod}`),
                     trialDescription: I18n.t(`purchase.trialDescription.${subscription.freeTrialPeriod}`)
                 }
             })
                 .sort((a, b) => parseFloat(a.price) - parseFloat(b.price));
-            this.selectedSubscription = this.subscriptions.find(s => this._getSubscriptionType(s.subscriptionPeriod) === (subscriptionsUi[0] || {}).type);
+            this.selectedSubscription = this.subscriptions.find(s => s.id === (subscriptionsUi[0] || {}).id);
             duration = WorkoutDataManager.PROGRAM_SLICE[user.fitnessLevel].length * 7;
         } catch (error) {
             console.log(error);
@@ -46,7 +47,7 @@ export default class PurchasePresenter {
             if (this.view) {
                 this.view.setData({
                     subscriptions: subscriptionsUi,
-                    activeSubscriptionType: this._getSubscriptionType((this.selectedSubscription || {}).subscriptionPeriod),
+                    activeSubscriptionType: this._getSubscriptionType((this.selectedSubscription || {}).id),
                     workoutsTotal: duration,
                     workoutsPerWeek: 4 // TODO
                 });
@@ -57,7 +58,7 @@ export default class PurchasePresenter {
     setSelectedSubscription(subscriptionId) {
         this.selectedSubscription = this.subscriptions.find(s => s.id === subscriptionId);
         this.view.setData({
-            activeSubscriptionType: this._getSubscriptionType((this.selectedSubscription || {}).subscriptionPeriod)
+            activeSubscriptionType: this._getSubscriptionType((this.selectedSubscription || {}).id)
         });
     }
 
@@ -94,10 +95,6 @@ export default class PurchasePresenter {
     async _getSubscriptions() {
         const storeSubscriptions = await IAPService.getAllSubscriptions();
         return storeSubscriptions.map(subscription => {
-            const subscriptionPeriod = Platform.select({
-                ios: subscription.subscriptionPeriodUnitIOS,
-                android: subscription.subscriptionPeriodAndroid
-            })
             const freeTrialPeriod = Platform.select({
                 ios: subscription.introductoryPriceSubscriptionPeriodIOS,
                 android: subscription.freeTrialPeriodAndroid
@@ -105,25 +102,28 @@ export default class PurchasePresenter {
             return {
                 ...subscription,
                 id: subscription.productId,
-                subscriptionPeriod,
-                freeTrialPeriod
+                freeTrialPeriod: this._getPeriodType(freeTrialPeriod)
             }
         });
     }
 
-    _getSubscriptionType(period) {
+    _getSubscriptionType(subscriptionId) {
+        if (subscriptionId.includes('week')) {
+            return SUBSCRIPTION_TYPE.week;
+        }
+        if (subscriptionId.includes('month')) {
+            return SUBSCRIPTION_TYPE.month;
+        }
+        return SUBSCRIPTION_TYPE.year;
+    }
+
+    _getPeriodType(period) {
         switch (period) {
-            case 'P1W':
             case 'WEEK':
-                return SUBSCRIPTION_TYPE.week;
-            case 'P1M':
-            case 'MONTH':
-                return SUBSCRIPTION_TYPE.month;
-            case 'P1Y':
-            case 'YEAR':
-                return SUBSCRIPTION_TYPE.year;
+            case 'P1W':
+                return 'week';
             default:
-                return SUBSCRIPTION_TYPE.year;
+                return '';
         }
     }
 }

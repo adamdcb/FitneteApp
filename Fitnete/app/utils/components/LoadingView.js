@@ -1,13 +1,12 @@
 import React from 'react';
-import { SafeAreaView, StyleSheet } from 'react-native';
-import Container from './Container';
+import { SafeAreaView, StyleSheet, ActivityIndicator } from 'react-native';
 
 class LoadingView extends React.PureComponent {
     render() {
         const { style = {} } = this.props;
         return (
             <SafeAreaView style={[styles.container, style]}>
-                <Container />
+                <ActivityIndicator size="large" />
             </SafeAreaView>
         )
     }
@@ -15,7 +14,10 @@ class LoadingView extends React.PureComponent {
 
 const styles = StyleSheet.create({
     container: {
-        flex: 1
+        flex: 1,
+        backgroundColor: '#F3F4FA',
+        justifyContent: 'center',
+        alignItems: 'center'
     }
 });
 

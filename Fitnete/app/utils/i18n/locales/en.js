@@ -139,22 +139,15 @@ export default {
             year: 'Paid Yearly'
         },
         subscriptionPeriod: {
-            P1W: 'Week',
-            WEEK: 'Week',
-
-            P1M: 'Month',
-            MONTH: 'Month',
-
-            P1Y: 'Year',
-            YEAR: 'Year'
+            week: 'Week',
+            month: 'Month',
+            year: 'Year'
         },
         trialTitle: {
-            P1W: '7 Day Trial',
-            WEEK: '7 Day Trial'
+            week: '7 Day Trial'
         },
         trialDescription: {
-            P1W: 'Free for a week',
-            WEEK: 'Free for a week'
+            week: 'Free for a week'
         },
         fullDescription: 'Unlock your complete FITNETE workout experience with over 100 workouts for women and men',
         goPremium: 'GO PREMIUM',

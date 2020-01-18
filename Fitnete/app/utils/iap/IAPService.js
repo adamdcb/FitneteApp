@@ -41,7 +41,7 @@ export default {
             } else {
                 subscribers.forEach(s => {
                     if (s.onPurchaseUpdateError) {
-                        s.onPurchaseUpdateError(RECEIPT_VERIFY_FAILED);
+                        s.onPurchaseUpdateError(ERROR.RECEIPT_VERIFY_FAILED);
                     }
                 });
             }
@@ -97,13 +97,8 @@ export default {
     },
 
     async getAvailableSubscriptions() {
-        let subscriptions = [];
-        let availablePurchases = [];
-        if (Platform.OS === 'android') {
-            availablePurchases = await this.getAvailablePurchasesAndroid();
-        } else if (Platform.OS === 'ios') {
-            availablePurchases = await this.getAvailablePurchasesIOS();
-        }
+        const subscriptions = [];
+        const availablePurchases = await this.getAvailablePurchases();
         for (let index = 0; index < availablePurchases.length; index++) {
             const purchase = availablePurchases[index];
             const isValid = await this.verifyReceipt(purchase.transactionReceipt);
@@ -117,7 +112,17 @@ export default {
         return subscriptions;
     },
 
-    async getAvailablePurchasesAndroid() {
+    async hasPurchaseHistory() {
+        try {
+            const history = await RNIap.getPurchaseHistory();
+            return history.length > 0;
+        } catch (error) {
+            console.log('hasPurchaseHistory()', error);
+            return false;
+        }
+    },
+
+    async getAvailablePurchases() {
         try {
             const availablePurchases = await RNIap.getAvailablePurchases();
             return availablePurchases.filter(purchase => subscriptionIds.includes(purchase.productId));
@@ -125,11 +130,6 @@ export default {
             console.log('getAvailablePurchasesAndroid()', error);
             return [];
         }
-    },
-
-    async getAvailablePurchasesIOS() {
-        // TODO
-        return [];
     },
 
     async verifyReceipt(receipt) {
@@ -140,7 +140,13 @@ export default {
                 {
                     method: 'post',
                     headers,
-                    body: receipt
+                    body: Platform.select({
+                        ios: {
+                            environment: 'sandbox', // FIXME
+                            receipt_data: receipt
+                        },
+                        android: receipt
+                    })
                 });
             console.log('VERIFY_RECEIPT_URL', response);
             return response.ok;
