@@ -31,8 +31,8 @@ export default class PurchasePresenter {
                     price: subscription.price,
                     title: subscription.title,
                     description: subscription.description,
+                    fullDescription: I18n.t('purchase.fullDescription'),
                     priceText: `${subscription.localizedPrice} / ${I18n.t(`purchase.subscriptionPeriod.${subscription.subscriptionPeriod}`)}`,
-                    pricePerYearText: '',
                     trialTitle: I18n.t(`purchase.trialTitle.${subscription.freeTrialPeriod}`),
                     trialDescription: I18n.t(`purchase.trialDescription.${subscription.freeTrialPeriod}`)
                 }

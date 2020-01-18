@@ -86,7 +86,7 @@ export default {
     },
     bodyParameters: {
         title: 'Body parameters',
-        description: 'Enter your body parameters to get your personalised workout & meal plan',
+        description: 'Enter your body parameters to get your personalised workout',
         height: 'Your height',
         weight: 'Your current weight',
         targetWeight: 'Target weight',
@@ -156,6 +156,7 @@ export default {
             P1W: 'Free for a week',
             WEEK: 'Free for a week'
         },
+        fullDescription: 'Unlock your complete FITNETE workout experience with over 100 workouts for women and men',
         goPremium: 'GO PREMIUM',
         workoutsPerWeek: 'workouts per week',
         workoutsToAchieveGoal: 'workouts until you achieve your goal',

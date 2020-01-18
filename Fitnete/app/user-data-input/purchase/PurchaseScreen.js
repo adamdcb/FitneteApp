@@ -137,11 +137,7 @@ class PurchaseScreen extends React.Component {
                                     <View style={styles.subscriptionContainerLeft}>
                                         <Text style={styles.goPremium}>{I18n.t('purchase.goPremium')}</Text>
                                         <Text style={styles.priceText}>{subscription.priceText}</Text>
-                                        {
-                                            subscription.pricePerYearText ?
-                                                <Text style={styles.priceAnnualText}>{subscription.pricePerYearText}</Text>
-                                                : null
-                                        }
+                                        <Text style={styles.priceDescription}>{subscription.description}</Text>
                                     </View>
                                     <View style={styles.subscriptionContainerRight}>
                                         <Text style={styles.trialTitle}>{subscription.trialTitle}</Text>
@@ -154,7 +150,7 @@ class PurchaseScreen extends React.Component {
                             {subscriptions.map(subscription => this.renderPayButton(subscription))}
                         </View>
                         <Text style={styles.legalDescription}>
-                            {subscription.description}
+                            {subscription.fullDescription}
                         </Text>
                         <View style={styles.buttonsContainer}>
                             {
@@ -265,13 +261,14 @@ const styles = StyleSheet.create({
         textAlign: 'center'
     },
     priceText: {
+        marginTop: 16,
         fontFamily: 'Poppins',
         fontSize: 12,
         color: '#3E3750',
         textAlign: 'center'
     },
-    priceAnnualText: {
-        marginTop: 16,
+    priceDescription: {
+        marginTop: 4,
         fontFamily: 'Poppins',
         fontSize: 12,
         color: '#B4B3B6',
