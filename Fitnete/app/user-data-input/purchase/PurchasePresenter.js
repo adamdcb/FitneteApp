@@ -67,8 +67,11 @@ export default class PurchasePresenter {
         IAPService.requestSubscription(this.selectedSubscription.id);
     }
 
-    async onPurchaseUpdateSuccess() {
-        await WorkoutDataManager.prepareWorkouts(true);
+    async onPurchaseUpdateSuccess(purchase) {
+        await this.userDataSource.setUser({
+            subscriptionId: purchase.productId
+        });
+        await WorkoutDataManager.prepareWorkouts();
         if (this.view) {
             this.view.onSubscriptionSuccess();
         }

@@ -1,9 +1,11 @@
 import IAPService from '../../utils/iap/IAPService.js';
 import WorkoutDataManager from '../../data/WorkoutDataManager.js';
+import UserDataSource from '../../data/UserDataSource.js';
 
 export default class PrepareWorkoutPlanPresenter {
     constructor(view) {
         this.view = view;
+        this.userDataSource = new UserDataSource();
     }
 
     async startPreparingWorkoutPlan() {
@@ -27,7 +29,15 @@ export default class PrepareWorkoutPlanPresenter {
         try {
             const subscriptions = await IAPService.getAvailableSubscriptions();
             const prem = subscriptions.length > 0;
-            await WorkoutDataManager.prepareWorkouts(prem);
+            let subscriptionId = null;
+            if (prem) {
+                const lastIndex = subscriptions.length - 1; // TODO: Is this right?
+                subscriptionId = subscriptions[lastIndex].productId;
+            }
+            await this.userDataSource.setUser({
+                subscriptionId
+            });
+            await WorkoutDataManager.prepareWorkouts();
             premium = prem;
         } catch (error) {
             console.log('startPreparingWorkoutPlan()', error);

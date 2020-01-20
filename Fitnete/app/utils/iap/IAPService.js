@@ -35,7 +35,7 @@ export default {
                 await RNIap.finishTransaction(purchase, false);
                 subscribers.forEach(s => {
                     if (s.onPurchaseUpdateSuccess) {
-                        s.onPurchaseUpdateSuccess();
+                        s.onPurchaseUpdateSuccess(purchase);
                     }
                 });
             } else {

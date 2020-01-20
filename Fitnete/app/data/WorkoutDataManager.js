@@ -24,7 +24,7 @@ const PROGRAM_SLICE = {
 export default {
     PROGRAM_SLICE,
 
-    async prepareWorkouts(premium) {
+    async prepareWorkouts() {
         const userDataSource = new UserDataSource();
         const trainingDataSource = new TrainingDataSource();
         try {
@@ -36,6 +36,7 @@ export default {
                 const personalisedProgram = {
                     ...program
                 }
+                const premium = !!user.subscriptionId;
                 if (premium) {
                     personalisedProgram.weeks = program.weeks.filter((value, index) => programSlice.includes(index));
                 } else {
