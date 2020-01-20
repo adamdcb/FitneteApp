@@ -5,11 +5,11 @@ const URL = {
     BillingTerms: 'https://www.fitnete.com/terms-of-service'
 };
 
-const APPLE_ID = '1482161450';
-const APP_PACKAGE_NAME = 'com.rierra.fitnete';
+const AppleId = '1482161450';
+const AppPackageName = 'com.rierra.fitnete';
 
 export {
     URL,
-    APPLE_ID,
-    APP_PACKAGE_NAME
+    AppleId,
+    AppPackageName
 }

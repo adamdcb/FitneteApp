@@ -76,14 +76,14 @@ class UserProfileScreen extends React.Component {
                         height: photoSize * (1 - PHOTO_OVERLAP_RATIO) + PADDING_TOP
                     }]} />
                     <View style={styles.userInfoContainer}>
-                        <View style={[styles.photoContainer, {
+                        {/* <View style={[styles.photoContainer, {
                             width: photoSize,
                             height: photoSize,
                             borderRadius: photoSize / 2
                         }]}>
 
-                        </View>
-                        <View style={styles.userInfoInnerContainer}>
+                        </View> */}
+                        {/* <View style={styles.userInfoInnerContainer}>
                             <View style={styles.userNameContainer}>
                                 <View>
                                     <Text style={styles.greeting}>{I18n.t('userProfile.greeting')}</Text>
@@ -98,7 +98,7 @@ class UserProfileScreen extends React.Component {
                                 />
                                 <Text style={styles.changePhoto}>{I18n.t('userProfile.changePhoto')}</Text>
                             </TouchableOpacity>
-                        </View>
+                        </View> */}
                     </View>
                 </View>
                 <Container useScroll={false}>
@@ -116,7 +116,7 @@ class UserProfileScreen extends React.Component {
     }
 }
 
-const PHOTO_SIZE_COEFF = 0.35;
+const PHOTO_SIZE_COEFF = 0.15; // TODO: Set to 0.35
 const PHOTO_OVERLAP_RATIO = 0.2;
 const PADDING_TOP = 8;
 
@@ -148,6 +148,7 @@ const styles = StyleSheet.create({
     },
     userInfoContainer: {
         paddingTop: PADDING_TOP,
+        minHeight: 108, // FIXME
         paddingLeft: 16,
         flexDirection: 'row'
     },
@@ -238,7 +239,7 @@ UserProfileScreen.navigationOptions = ({ navigation }) => ({
                 color="#FFFFFF"
             />
         </TouchableOpacity>,
-    headerTitle: () => null
+    title: I18n.t('userProfile.title')
 });
 
 export default UserProfileScreen;

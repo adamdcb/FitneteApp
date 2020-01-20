@@ -1,8 +1,8 @@
 const settings = [
-    {
-        id: 'stopDataCollection',
-        name: 'stopDataCollection'
-    },
+    // {
+    //     id: 'stopDataCollection',
+    //     name: 'stopDataCollection'
+    // },
     {
         id: 'appFeedback',
         name: 'appFeedback'

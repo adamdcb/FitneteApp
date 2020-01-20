@@ -13,10 +13,13 @@ class SettingsScreen extends React.Component {
     constructor(props) {
         super(props);
         this.state = {
-            data: null
+            isPremium: false,
+            premiumStatusText: '',
+            settings: null
         };
         this.presenter = new SettingsPresenter(this);
         this._renderItem = this._renderItem.bind(this);
+        this._onItemTap = this._onItemTap.bind(this);
     }
 
     componentDidMount() {
@@ -28,13 +31,18 @@ class SettingsScreen extends React.Component {
     }
 
     setData(data) {
-        this.setState({ data });
+        this.setState({ ...data });
+    }
+
+    _onItemTap(itemId) {
+        this.presenter.openSettings(itemId);
     }
 
     _renderItem({ item }) {
         return (
             <TouchableOpacity
                 style={styles.listItemContainer}
+                onPress={() => this._onItemTap(item.id)}
             >
                 <Text style={styles.listItemTitle}>{item.title}</Text>
                 <FNIcon
@@ -47,8 +55,8 @@ class SettingsScreen extends React.Component {
     }
 
     render() {
-        const { data } = this.state;
-        if (!data) {
+        const { settings, isPremium, premiumStatusText } = this.state;
+        if (!settings) {
             return (<LoadingView />);
         }
         return (
@@ -65,27 +73,29 @@ class SettingsScreen extends React.Component {
                     <View style={styles.statusContainer}>
                         <Text style={styles.status}>{I18n.t('settings.status').toUpperCase()}</Text>
                         <View style={styles.statusBottomViewContainer}>
-                            <Text style={styles.pro}>{I18n.t('settings.pro').toUpperCase()} <Text style={styles.proStatus}>Inactive</Text></Text>
-                            <TouchableOpacity style={styles.getFullAccessButton}>
-                                <LinearGradient
-                                    style={styles.getFullAccessButtonGradient}
-                                    colors={['#89F8AD', '#73F9E0']}
-                                    locations={[0, 1]}
-                                    angle={270}
-                                    useAngle
-                                >
-                                    <View style={styles.getFullAccessButtonContent}>
-                                        <Text style={styles.getFullAccess}>{I18n.t('settings.getFullAccess')}</Text>
-                                        <View style={styles.star}>
-                                            <FNIcon
-                                                name="star"
-                                                size={15}
-                                                color="#DFB63E"
-                                            />
+                            <Text style={styles.pro}>{I18n.t('settings.pro').toUpperCase()} <Text style={styles.proStatus}>{premiumStatusText}</Text></Text>
+                            {!isPremium ?
+                                <TouchableOpacity style={styles.getFullAccessButton}>
+                                    <LinearGradient
+                                        style={styles.getFullAccessButtonGradient}
+                                        colors={['#89F8AD', '#73F9E0']}
+                                        locations={[0, 1]}
+                                        angle={270}
+                                        useAngle
+                                    >
+                                        <View style={styles.getFullAccessButtonContent}>
+                                            <Text style={styles.getFullAccess}>{I18n.t('settings.getFullAccess')}</Text>
+                                            <View style={styles.star}>
+                                                <FNIcon
+                                                    name="star"
+                                                    size={15}
+                                                    color="#DFB63E"
+                                                />
+                                            </View>
                                         </View>
-                                    </View>
-                                </LinearGradient>
-                            </TouchableOpacity>
+                                    </LinearGradient>
+                                </TouchableOpacity>
+                                : null}
                         </View>
                     </View>
                 </View>
@@ -93,7 +103,7 @@ class SettingsScreen extends React.Component {
                     <Text style={styles.listTitle}>{I18n.t('settings.proStatus').toUpperCase()}</Text>
                     <FlatList
                         style={{ flex: 1 }}
-                        data={data}
+                        data={settings}
                         keyExtractor={item => item.id}
                         renderItem={this._renderItem}
                         ItemSeparatorComponent={ListViewItemSeparator}

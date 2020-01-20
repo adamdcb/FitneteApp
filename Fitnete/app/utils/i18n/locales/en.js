@@ -25,6 +25,10 @@ export default {
         permissionDeniedTitle: 'Permission Denied',
         permissionDeniedMessage: 'You must enable Notifications in your phone settings first'
     },
+    status: {
+        active: 'Active',
+        inactive: 'Inactive'
+    },
     startup: {
         welcome: 'Welcome to',
         start: 'Start!'
@@ -255,6 +259,7 @@ export default {
         reminderTime: 'Reminder Time:'
     },
     userProfile: {
+        title: 'Profile',
         params: {
             unit: 'Unit',
             height: 'Your height',
@@ -271,7 +276,7 @@ export default {
         title: 'Settings',
         status: 'Fitnete status',
         proStatus: 'Fitnete Pro Status',
-        pro: 'Pro:',
+        pro: 'Premium:',
         getFullAccess: 'Get Full Access',
         option: {
             stopDataCollection: 'Stop Data Collection',
