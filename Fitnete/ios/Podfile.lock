@@ -326,6 +326,8 @@ PODS:
     - React
   - RNLocalize (1.1.4):
     - React
+  - RNRate (1.1.10):
+    - React
   - RNReanimated (1.4.0):
     - React
   - RNScreens (1.0.0-alpha.23):
@@ -381,6 +383,7 @@ DEPENDENCIES:
   - RNGestureHandler (from `../node_modules/react-native-gesture-handler`)
   - RNIap (from `../node_modules/react-native-iap`)
   - RNLocalize (from `../node_modules/react-native-localize`)
+  - RNRate (from `../node_modules/react-native-rate`)
   - RNReanimated (from `../node_modules/react-native-reanimated`)
   - RNScreens (from `../node_modules/react-native-screens`)
   - RNSVG (from `../node_modules/react-native-svg`)
@@ -476,6 +479,8 @@ EXTERNAL SOURCES:
     :path: "../node_modules/react-native-iap"
   RNLocalize:
     :path: "../node_modules/react-native-localize"
+  RNRate:
+    :path: "../node_modules/react-native-rate"
   RNReanimated:
     :path: "../node_modules/react-native-reanimated"
   RNScreens:
@@ -537,6 +542,7 @@ SPEC CHECKSUMS:
   RNGestureHandler: 02905abe54e1f6e59c081a10b4bd689721e17aa6
   RNIap: 9b6e92869de716305ecc6cac8c413321210e33c7
   RNLocalize: a91e036a6abc46e656a989456701182e0e228c7a
+  RNRate: d44a8bca6ee08f5d890ecccddaec2810955ffbb3
   RNReanimated: b2ab0b693dddd2339bd2f300e770f6302d2e960c
   RNScreens: f28b48b8345f2f5f39ed6195518291515032a788
   RNSVG: be27aa7c58819f97399388ae53d7fa0572f32c7f
