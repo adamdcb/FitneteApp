@@ -1,10 +1,8 @@
 import { Linking } from 'react-native';
-import UserDataSource from '../data/UserDataSource';
 
-const URL = {
-    TermsAndConditions: 'https://www.fitnete.com/terms-of-service',
-    PrivacyPolicy: 'https://www.fitnete.com/privacypolicy'
-};
+import UserDataSource from '../data/UserDataSource';
+import { URL } from '../utils/utils/Constants';
+
 const NO_OF_SLIDES = 3;
 
 export default class AppIntroPresenter {
@@ -27,7 +25,7 @@ export default class AppIntroPresenter {
 
     async didTapTermsAndConditions() {
         try {
-            Linking.openURL(URL.TermsAndConditions)
+            Linking.openURL(URL.TermsAndConditions);
         } catch (error) {
             console.log('didTapTermsAndConditions()', error);
         }
@@ -35,7 +33,7 @@ export default class AppIntroPresenter {
 
     async didTapPrivacyPolicy() {
         try {
-            Linking.openURL(URL.PrivacyPolicy)
+            Linking.openURL(URL.PrivacyPolicy);
         } catch (error) {
             console.log('didTapPrivacyPolicy()', error);
         }
