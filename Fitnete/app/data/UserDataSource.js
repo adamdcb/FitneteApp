@@ -16,7 +16,8 @@ export default class UserDataSource {
                 targetWeight: user.targetWeight,
                 fitnessLevel: user.fitnessLevel,
                 areasOfFocus: user.areasOfFocus.map(area => area),
-                unit: user.unit
+                unit: user.unit,
+                subscriptionId: user.subscriptionId
             } : null;
             resolve(userObj);
         });

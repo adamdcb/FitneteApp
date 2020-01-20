@@ -16,7 +16,8 @@ const User = {
         unit: {
             type: 'string',
             default: 'metric'
-        }
+        },
+        subscriptionId: 'string?'
     }
 };
 
