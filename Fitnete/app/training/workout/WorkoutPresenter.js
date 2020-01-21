@@ -4,7 +4,6 @@ import CountdownTimer from '../../utils/utils/CountdownTimer';
 import TrainingDataSource from '../../data/TrainingDataSource';
 import UserDataSource from '../../data/UserDataSource';
 import AnimationUtils from '../../utils/utils/AnimationUtils';
-import AnimationWorker from '../../data/remote/AnimationWorker';
 
 export default class WorkoutPresenter {
     constructor(view, workout) {
@@ -26,7 +25,7 @@ export default class WorkoutPresenter {
         const nextExercise = this.workout.exercises[this.exerciseIndex + 1];
         this.view.setData({
             loading: true,
-            animationSource: this._getAnimationSourceObj(exercise.name, this.user.gender),
+            animationSource: AnimationUtils.getAnimationSource(exercise.name, this.user.gender),
             step: this.exerciseIndex + 1,
             totalSteps: this.workout.exercises.length,
             title: exercise.title,
@@ -37,10 +36,6 @@ export default class WorkoutPresenter {
             repeatText: this.workout.repeatText,
             nextExerciseText: nextExercise ? `${I18n.t('workout.nextExercise')} ${nextExercise.title}` : ''
         });
-        if (nextExercise) {
-            const nextAnimationName = AnimationUtils.getAnimationName(nextExercise.name, this.user.gender);
-            AnimationWorker.preloadAnimations([nextAnimationName]);
-        }
     }
 
     startWorkout() {
@@ -118,11 +113,6 @@ export default class WorkoutPresenter {
         } catch (error) {
             console.log('_completeExercise()', error);
         }
-    }
-
-    _getAnimationSourceObj(name, gender) {
-        const animationName = AnimationUtils.getAnimationName(name, gender);
-        return AnimationWorker.getSourceObj(animationName);
     }
 
     unmountView() {
