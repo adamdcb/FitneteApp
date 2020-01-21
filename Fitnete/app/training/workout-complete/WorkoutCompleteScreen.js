@@ -23,7 +23,7 @@ class WorkoutCompleteScreen extends React.Component {
     }
 
     _goToMainScreen() {
-        navigate(Route.Training);
+        navigate(Route.Training, { shouldRefreshProgress: true });
     }
 
     render() {

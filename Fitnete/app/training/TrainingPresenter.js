@@ -49,11 +49,12 @@ export default class TrainingPresenter {
     constructor(view) {
         this.view = view;
         this.dataSource = new TrainingDataSource();
+        this.uiData = [];
     }
 
     async loadData() {
         const programs = await this.dataSource.getPrograms();
-        const uiData = programs.map((program) => {
+        this.uiData = programs.map((program) => {
             const duration = program.weeks.length * 7;
             const programBackground = PROGRAM_BACKGROUND[program.type];
             return {
@@ -61,6 +62,7 @@ export default class TrainingPresenter {
                 title: I18n.t(`trainingPrograms.${program.type}Name`),
                 description: I18n.t(`trainingPrograms.${program.type}Description`),
                 image: 'for_free',
+                duration,
                 durationTitle: I18n.t('training.duration'),
                 durationText: `${duration} ${I18n.t('training.days')}`,
                 progress: program.progress,
@@ -104,7 +106,25 @@ export default class TrainingPresenter {
             }
         });
         if (this.view) {
-            this.view.setData(uiData);
+            this.view.setData(this.uiData);
+        }
+    }
+
+    async loadProgress(programId) {
+        const progress = await this.dataSource.getProgress(programId);
+        this.uiData = this.uiData.map((program) => {
+            if (program.id !== programId) {
+                return program;
+            } else {
+                return {
+                    ...program,
+                    progress,
+                    progressText: `${progress} / ${program.duration}`
+                };
+            }
+        });
+        if (this.view) {
+            this.view.setData(this.uiData);
         }
     }
 

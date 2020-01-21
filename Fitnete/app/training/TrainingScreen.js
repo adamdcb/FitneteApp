@@ -35,6 +35,15 @@ class TrainingScreen extends React.Component {
         this.presenter.loadData();
     }
 
+    componentDidUpdate() {
+        const { shouldRefreshProgress } = (this.props.navigation.state.params || {});
+        if (shouldRefreshProgress) {
+            const { programs } = this.state;
+            const programId = programs[this.slideIndex].id;
+            this.presenter.loadProgress(programId);
+        }
+    }
+
     componentWillUnmount() {
         this.presenter.unmountView();
     }

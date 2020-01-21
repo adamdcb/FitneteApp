@@ -113,6 +113,19 @@ export default class TrainingDataSource {
         });
     }
 
+    getProgress(programId) {
+        return AsyncWrapper.makeAsync(async (resolve, reject) => {
+            const db = FNDatabase.database();
+            try {
+                const progress = this._getProgress(programId, db);
+                resolve(progress);
+            } catch (e) {
+                console.log('getProgress()', e);
+                reject(e);
+            }
+        });
+    }
+
     _getProgress(programId, db) {
         const completedDays = db.objects('TrainingDay')
             .filtered(`weeks.programs.id = "${programId}" AND (ALL exercises.completed = true)`);
