@@ -42,7 +42,7 @@ const ANIMATION_NAME = {
     plankRightSide_male: require('../../data/local-storage/animations/28_Plank_Hip_Dips_R_male.webp'), // 28_Side_Plank_R_male
     plankLeftSide_male: require('../../data/local-storage/animations/28_Plank_Hip_Dips_L_male.webp'), // 28_Side_Plank_L_male
     kneePushUps_male: require('../../data/local-storage/animations/29_Knee_Push_Ups_male.webp'),
-    // shouldPushUps_male: require('../../data/local-storage/animations/_male.webp'), // TODO
+    shouldPushUps_male: require('../../data/local-storage/animations/30_Push_Ups_male.webp'),
     pushUp_male: require('../../data/local-storage/animations/30_Push_Ups_male.webp'),
     bentOverRow_male: require('../../data/local-storage/animations/31_Bent_Over_Row_male.webp'),
     lateralRaises_male: require('../../data/local-storage/animations/32_Lateral_Raise_male.webp'),
@@ -111,7 +111,7 @@ const ANIMATION_NAME = {
     plankRightSide_female: require('../../data/local-storage/animations/28_Plank_Hip_Dips_R_female.webp'),
     plankLeftSide_female: require('../../data/local-storage/animations/28_Plank_Hip_Dips_L_female.webp'),
     kneePushUps_female: require('../../data/local-storage/animations/29_Knee_Push_Ups_female.webp'),
-    // shouldPushUps_female: require('../../data/local-storage/animations/_female.webp'), // TODO
+    shouldPushUps_female: require('../../data/local-storage/animations/30_Push_Ups_female.webp'),
     pushUp_female: require('../../data/local-storage/animations/30_Push_Ups_female.webp'),
     bentOverRow_female: require('../../data/local-storage/animations/31_Bent_Over_Row_female.webp'),
     lateralRaises_female: require('../../data/local-storage/animations/32_Lateral_Raise_female.webp'),
