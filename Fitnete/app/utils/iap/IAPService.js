@@ -21,7 +21,7 @@ const ERROR = {
     RECEIPT_VERIFY_FAILED: 'ERR_RECEIPT_VERIFY_FAILED'
 }
 
-let subscribers = [];
+const subscribers = new Set();
 
 export default {
     ERROR,
@@ -70,13 +70,11 @@ export default {
     },
 
     subscribe(subscriber) {
-        if (!subscribers.includes(subscriber)) {
-            subscribers.push(subscriber);
-        }
+        subscribers.add(subscriber);
     },
 
     unsubscribe(subscriber) {
-        subscribers = subscribers.filter(s => s !== subscriber);
+        subscribers.delete(subscriber);
     },
 
     async getAllSubscriptions() {
@@ -127,7 +125,7 @@ export default {
             const availablePurchases = await RNIap.getAvailablePurchases();
             return availablePurchases.filter(purchase => subscriptionIds.includes(purchase.productId));
         } catch (error) {
-            console.log('getAvailablePurchasesAndroid()', error);
+            console.log('getAvailablePurchases()', error);
             return [];
         }
     },

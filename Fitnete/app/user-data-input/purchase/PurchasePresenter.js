@@ -21,6 +21,7 @@ export default class PurchasePresenter {
     async loadData() {
         let duration = 0;
         let subscriptionsUi = [];
+        let premium = false;
         try {
             const user = await this.userDataSource.getUser();
             this.subscriptions = await this._getSubscriptions();
@@ -41,6 +42,7 @@ export default class PurchasePresenter {
                 .sort((a, b) => parseFloat(a.price) - parseFloat(b.price));
             this.selectedSubscription = this.subscriptions.find(s => s.id === (subscriptionsUi[0] || {}).id);
             duration = WorkoutDataManager.PROGRAM_SLICE[user.fitnessLevel].length * 7;
+            premium = await this._restorePurchasesIfPossible();
         } catch (error) {
             console.log(error);
         } finally {
@@ -49,7 +51,9 @@ export default class PurchasePresenter {
                     subscriptions: subscriptionsUi,
                     activeSubscriptionType: this._getSubscriptionType((this.selectedSubscription || {}).id),
                     workoutsTotal: duration,
-                    workoutsPerWeek: 4 // TODO
+                    workoutsPerWeek: 4, // TODO
+                    premium,
+                    loading: false
                 });
             }
         }
@@ -93,6 +97,27 @@ export default class PurchasePresenter {
     unmountView() {
         IAPService.unsubscribe(this);
         this.view = null;
+    }
+
+    async _restorePurchasesIfPossible() {
+        let premium = false
+        try {
+            const subscriptions = await IAPService.getAvailableSubscriptions();
+            premium = subscriptions.length > 0;
+            let subscriptionId = null;
+            if (premium) {
+                const lastIndex = subscriptions.length - 1; // TODO: Is this right?
+                subscriptionId = subscriptions[lastIndex].productId;
+            }
+            await this.userDataSource.setUser({
+                subscriptionId
+            });
+            await WorkoutDataManager.prepareWorkouts();
+        } catch (error) {
+            console.log('_restorePurchasesIfPossible()', error);
+        } finally {
+            return premium;
+        }
     }
 
     async _getSubscriptions() {

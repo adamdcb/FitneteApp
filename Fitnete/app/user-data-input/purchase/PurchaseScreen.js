@@ -7,7 +7,7 @@ import ElevatedView from 'fiber-react-native-elevated-view';
 import I18n from '../../utils/i18n/I18n';
 import Container from '../../utils/components/Container';
 import Button from '../../utils/components/Button';
-import { Route, navigate, push } from '../../utils/navigation/NavigationService';
+import { Route, navigate, push, pop } from '../../utils/navigation/NavigationService';
 import ButtonText from '../../utils/components/ButtonText';
 import PurchasePresenter from './PurchasePresenter';
 import FNIcon from '../../utils/components/FNIcon';
@@ -19,12 +19,14 @@ class PurchaseScreen extends React.Component {
     constructor(props) {
         super(props);
         this.state = {
-            subscriptions: null,
+            subscriptions: [],
             activeSubscriptionType: '',
             workoutsTotal: 0,
             workoutsPerWeek: 0,
-            loading: false
+            loading: true,
+            paymentLoading: false
         }
+        this.usesModalBehaviour = !!(this.props.navigation.state.params || {}).useModalBehaviour;
         this.presenter = new PurchasePresenter(this);
         this.continue = this.continue.bind(this);
         this.continueForFree = this.continueForFree.bind(this);
@@ -40,24 +42,37 @@ class PurchaseScreen extends React.Component {
 
     setData(data) {
         this.setState({ ...data });
+        if (data.premium) {
+            this.onSubscriptionSuccess();
+        }
     }
 
     continue() {
-        this.setState({ loading: true });
+        this.setState({ paymentLoading: true });
         this.presenter.requestSubscription();
     }
 
     continueForFree() {
-        push(Route.NoPlanPurchased);
+        if (this.usesModalBehaviour) {
+            pop();
+        } else {
+            push(Route.NoPlanPurchased);
+        }
     }
 
     onSubscriptionSuccess() {
-        this.setState({ loading: false });
-        navigate(Route.MainApp);
+        this.setState({ paymentLoading: false });
+        if (this.usesModalBehaviour) {
+            const { onPurchaseSuccess } = (this.props.navigation.state.params || {});
+            onPurchaseSuccess();
+            pop();
+        } else {
+            navigate(Route.MainApp);
+        }
     }
 
     onSubscriptionError(errorTitle, errorMessage) {
-        this.setState({ loading: false });
+        this.setState({ paymentLoading: false });
         Alert.alert(
             errorTitle,
             errorMessage,
@@ -86,8 +101,7 @@ class PurchaseScreen extends React.Component {
         return (
             <ActivityIndicator
                 size='large'
-                color='#08C757'
-                style={styles.loading}
+                style={styles.paymentLoading}
             />
         );
     }
@@ -113,10 +127,11 @@ class PurchaseScreen extends React.Component {
     }
 
     render() {
-        const { subscriptions, activeSubscriptionType, workoutsTotal, workoutsPerWeek, loading } = this.state;
-        if (subscriptions === null) {
+        const { loading } = this.state;
+        if (loading) {
             return (<LoadingView />);
         }
+        const { subscriptions, activeSubscriptionType, workoutsTotal, workoutsPerWeek, paymentLoading } = this.state;
         const subscription = subscriptions.find(subscription => subscription.type === activeSubscriptionType) || {};
         return (
             <SafeAreaView style={styles.container}>
@@ -154,7 +169,7 @@ class PurchaseScreen extends React.Component {
                         </Text>
                         <View style={styles.buttonsContainer}>
                             {
-                                loading ? this.renderLoading() : this.renderButtons()
+                                paymentLoading ? this.renderLoading() : this.renderButtons()
                             }
 
                         </View>
@@ -199,7 +214,7 @@ const styles = StyleSheet.create({
         marginTop: HEADER_VIEW_HEIGHT + 16,
         marginHorizontal: 1
     },
-    loading: {
+    paymentLoading: {
         marginVertical: 48
     },
     headerBackground: {

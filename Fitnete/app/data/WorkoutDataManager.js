@@ -21,6 +21,8 @@ const PROGRAM_SLICE = {
     3: [4, 5, 6, 7]
 }; // fitness level to week start/end index mapping -> FIXME: Should be moved to server side!
 
+const subscriptions = new Set();
+
 export default {
     PROGRAM_SLICE,
 
@@ -45,10 +47,23 @@ export default {
                 return acc.concat(personalisedProgram);
             }, [])
             await trainingDataSource.savePrograms(programs);
+            subscriptions.forEach((s) => {
+                if (s.onWorkoutDataChange) {
+                    s.onWorkoutDataChange();
+                }
+            });
             return true;
         } catch (error) {
             console.log('prepareWorkouts()', error);
             return false;
         }
-    }
+    },
+
+    subscribe(subscriber) {
+        subscriptions.add(subscriber);
+    },
+
+    unsubscribe(subscriber) {
+        subscriptions.delete(subscriber);
+    },
 }

@@ -200,7 +200,8 @@ const WaterStack = createStackNavigator(
 const UserProfileStack = createStackNavigator(
     {
         UserProfile: UserProfileScreen,
-        Settings: SettingsScreen
+        Settings: SettingsScreen,
+        Purchase: PurchaseScreen,
     },
     {
         defaultNavigationOptions: () => ({

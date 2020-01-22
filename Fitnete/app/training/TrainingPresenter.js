@@ -1,6 +1,7 @@
 import I18n from '../utils/i18n/I18n';
 import Utils from '../utils/utils/Utils.js';
 import TrainingDataSource from '../data/TrainingDataSource';
+import WorkoutDataManager from '../data/WorkoutDataManager';
 
 const DIFFICULTY = {
     0: 'easy',
@@ -50,6 +51,7 @@ export default class TrainingPresenter {
         this.view = view;
         this.dataSource = new TrainingDataSource();
         this.uiData = [];
+        WorkoutDataManager.subscribe(this);
     }
 
     async loadData() {
@@ -130,6 +132,12 @@ export default class TrainingPresenter {
 
     unmountView() {
         this.view = null;
+        WorkoutDataManager.unsubscribe(this);
+    }
+
+    // WorkoutDataManager observer function
+    onWorkoutDataChange() {
+        this.loadData();
     }
 
     _getWorkoutImage(workoutName) {

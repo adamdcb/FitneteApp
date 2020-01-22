@@ -8,6 +8,7 @@ import I18n from '../../utils/i18n/I18n';
 import SettingsPresenter from './SettingsPresenter';
 import ListViewItemSeparator from '../../utils/components/ListViewItemSeparator';
 import LoadingView from '../../utils/components/LoadingView';
+import { push, Route } from '../../utils/navigation/NavigationService';
 
 class SettingsScreen extends React.Component {
     constructor(props) {
@@ -20,6 +21,8 @@ class SettingsScreen extends React.Component {
         this.presenter = new SettingsPresenter(this);
         this._renderItem = this._renderItem.bind(this);
         this._onItemTap = this._onItemTap.bind(this);
+        this._onGetFullAccessBtnTap = this._onGetFullAccessBtnTap.bind(this);
+        this._onGetFullAccessSuccess = this._onGetFullAccessSuccess.bind(this);
     }
 
     componentDidMount() {
@@ -32,6 +35,16 @@ class SettingsScreen extends React.Component {
 
     setData(data) {
         this.setState({ ...data });
+    }
+
+    _onGetFullAccessBtnTap() {
+        push(Route.Purchase, {
+            useModalBehaviour: true,
+            onPurchaseSuccess: this._onGetFullAccessSuccess
+        });
+    }
+    _onGetFullAccessSuccess() {
+        this.presenter.loadData();
     }
 
     _onItemTap(itemId) {
@@ -75,7 +88,10 @@ class SettingsScreen extends React.Component {
                         <View style={styles.statusBottomViewContainer}>
                             <Text style={styles.pro}>{I18n.t('settings.pro').toUpperCase()} <Text style={styles.proStatus}>{premiumStatusText}</Text></Text>
                             {!isPremium ?
-                                <TouchableOpacity style={styles.getFullAccessButton}>
+                                <TouchableOpacity
+                                    style={styles.getFullAccessButton}
+                                    onPress={this._onGetFullAccessBtnTap}
+                                >
                                     <LinearGradient
                                         style={styles.getFullAccessButtonGradient}
                                         colors={['#89F8AD', '#73F9E0']}

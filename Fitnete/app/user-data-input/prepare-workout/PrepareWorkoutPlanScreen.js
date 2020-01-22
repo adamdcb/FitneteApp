@@ -27,12 +27,8 @@ class PrepareWorkoutPlanScreen extends React.Component {
         this.presenter.unmountView();
     }
 
-    onContinue(premium) {
-        if (premium) {
-            navigate(Route.MainApp);
-        } else {
-            push(Route.WorkoutPlanReady);
-        }
+    onContinue() {
+        push(Route.WorkoutPlanReady);
     }
 
     setProgress(progress) {
