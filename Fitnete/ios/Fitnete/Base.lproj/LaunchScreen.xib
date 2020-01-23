@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="15505" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" launchScreen="YES" useTraitCollections="YES" colorMatched="YES">
-    <device id="retina6_5" orientation="portrait" appearance="light"/>
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15510"/>
@@ -16,9 +16,8 @@
                 <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="startup_background" translatesAutoresizingMaskIntoConstraints="NO" id="XMI-N4-DA1">
                     <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                 </imageView>
-                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="startup_circle" translatesAutoresizingMaskIntoConstraints="NO" id="ybU-0J-vhW">
+                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="startup_circle" translatesAutoresizingMaskIntoConstraints="NO" id="ybU-0J-vhW">
                     <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
-                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                 </imageView>
                 <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="logo" translatesAutoresizingMaskIntoConstraints="NO" id="1Ed-cu-Rd3">
                     <rect key="frame" x="147" y="388" width="120" height="120"/>
@@ -30,13 +29,25 @@
             </subviews>
             <color key="backgroundColor" red="0.24313725490196078" green="0.21568627450980393" blue="0.31372549019607843" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
             <constraints>
+                <constraint firstAttribute="bottom" secondItem="XMI-N4-DA1" secondAttribute="bottom" id="7oq-2Z-ROf"/>
+                <constraint firstItem="XMI-N4-DA1" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="AaT-Fv-Aaa"/>
                 <constraint firstItem="XMI-N4-DA1" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="Alh-2z-zne"/>
                 <constraint firstAttribute="trailing" secondItem="XMI-N4-DA1" secondAttribute="trailing" id="J5g-ut-uIj"/>
+                <constraint firstAttribute="trailing" secondItem="ybU-0J-vhW" secondAttribute="trailing" id="LKm-2f-c9E"/>
+                <constraint firstItem="ybU-0J-vhW" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="MA6-2f-8fI"/>
+                <constraint firstItem="XMI-N4-DA1" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="O4B-oK-G8C"/>
                 <constraint firstItem="1Ed-cu-Rd3" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="RGG-z0-zA2"/>
+                <constraint firstItem="ybU-0J-vhW" firstAttribute="centerY" secondItem="iN0-l3-epB" secondAttribute="centerY" id="UGZ-UA-FFu"/>
                 <constraint firstItem="XMI-N4-DA1" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="VhC-VJ-HNG"/>
+                <constraint firstAttribute="trailing" secondItem="XMI-N4-DA1" secondAttribute="trailing" id="aVH-eL-E4e"/>
+                <constraint firstItem="ybU-0J-vhW" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="hkL-a5-xQw"/>
                 <constraint firstItem="1Ed-cu-Rd3" firstAttribute="centerY" secondItem="iN0-l3-epB" secondAttribute="centerY" id="l0d-rN-JcY"/>
                 <constraint firstItem="XMI-N4-DA1" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="qAZ-Iq-0CV"/>
                 <constraint firstItem="XMI-N4-DA1" firstAttribute="centerY" secondItem="iN0-l3-epB" secondAttribute="centerY" id="uHu-GB-Td0"/>
+                <constraint firstItem="XMI-N4-DA1" firstAttribute="centerY" secondItem="iN0-l3-epB" secondAttribute="centerY" id="y1c-Vj-qXt"/>
+                <constraint firstItem="XMI-N4-DA1" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="yzU-jT-s6p"/>
+                <constraint firstItem="ybU-0J-vhW" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="zKj-X1-khi"/>
+                <constraint firstAttribute="bottom" secondItem="ybU-0J-vhW" secondAttribute="bottom" id="zyM-CT-YUp"/>
             </constraints>
             <nil key="simulatedStatusBarMetrics"/>
             <point key="canvasLocation" x="402.89855072463769" y="537.05357142857144"/>
