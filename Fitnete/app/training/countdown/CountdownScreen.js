@@ -1,7 +1,6 @@
 import React from 'react';
 import { Image, Text, View, StyleSheet, Dimensions, BackHandler } from 'react-native';
 import { AnimatedCircularProgress } from 'react-native-circular-progress';
-import LinearGradient from 'react-native-linear-gradient';
 
 import { replace, Route } from '../../utils/navigation/NavigationService';
 import I18n from '../../utils/i18n/I18n';
@@ -46,18 +45,14 @@ class CountdownScreen extends React.Component {
     render() {
         const { count, progress } = this.state;
         return (
-            <LinearGradient
+            <View
                 style={styles.container}
-                colors={['#89F8AD', '#73F9E0']}
-                locations={[0, 1]}
-                angle={270}
-                useAngle >
-                <View style={styles.backgroundView} />
+            >
                 <Image
                     style={styles.backgroundImage}
                     source={{ uri: 'startup_background' }}
                 />
-                 <Image
+                <Image
                     style={styles.circleImage}
                     source={{ uri: 'startup_circle' }}
                 />
@@ -82,7 +77,7 @@ class CountdownScreen extends React.Component {
                         }
                     </AnimatedCircularProgress>
                 </View>
-            </LinearGradient >
+            </View >
         );
     }
 }
@@ -95,21 +90,13 @@ const styles = StyleSheet.create({
         position: 'absolute',
         width: '100%',
         height: '100%',
-        resizeMode: 'contain'
+        resizeMode: 'cover'
     },
     circleImage: {
         position: 'absolute',
         width: '100%',
         height: '100%',
         resizeMode: 'contain'
-    },
-    backgroundView: {
-        position: 'absolute',
-        bottom: 0,
-        left: 0,
-        height: '50%',
-        width: '100%',
-        backgroundColor: '#FFFFFF'
     },
     progressViewContainer: {
         flex: 1,

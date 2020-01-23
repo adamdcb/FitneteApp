@@ -1,5 +1,5 @@
 import React from 'react';
-import { SafeAreaView, Text, View, ActivityIndicator, StyleSheet, BackHandler } from 'react-native';
+import { SafeAreaView, Text, View, ActivityIndicator, StyleSheet, BackHandler, Image } from 'react-native';
 import LinearGradient from 'react-native-linear-gradient';
 import FastImage from 'react-native-fast-image';
 import ElevatedView from 'fiber-react-native-elevated-view';
@@ -118,12 +118,12 @@ class WorkoutScreen extends React.Component {
         const { workout: { background } } = this.props.navigation.state.params;
         return (
             <Container
-                colors={background.colors}
-                locations={background.locations}
-                angle={background.angle}
-                useAngle
                 scrollViewStyle={{ paddingHorizontal: 0 }}
             >
+                <Image
+                    style={styles.background}
+                    source={{ uri: background }}
+                />
                 <SafeAreaView style={styles.container}>
                     <View style={styles.progressContainer}>
                         <Text style={styles.stepTextLeft}>
@@ -184,6 +184,12 @@ const styles = StyleSheet.create({
     container: {
         flex: 1,
         marginHorizontal: 20
+    },
+    background: {
+        position: 'absolute',
+        height: '100%',
+        width: '100%',
+        resizeMode: 'cover'
     },
     progressContainer: {
         flexDirection: 'row',

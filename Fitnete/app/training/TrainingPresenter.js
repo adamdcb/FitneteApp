@@ -13,31 +13,11 @@ const DEFAULT_REST_TIME = 3; // sec.
 const REP_TIME_COEFF = 1.75;
 
 const PROGRAM_BACKGROUND = {
-    legs: {
-        colors: ['#000000', '#64162D', '#F0005B', '#F0005B'],
-        locations: [0, 0.34, 0.78, 1],
-        angle: 180
-    },
-    abdominals: {
-        colors: ['#000000', '#421A6A', '#6C38DC', '#6C38DC'],
-        locations: [0, 0.34, 0.78, 1],
-        angle: 180
-    },
-    armsAndBack: {
-        colors: ['#000000', '#763F33', '#EDC200', '#CEA953'],
-        locations: [0, 0.34, 0.78, 1],
-        angle: 180
-    },
-    armsAndChest: {
-        colors: ['#000000', '#620000', '#FF7526', '#FF7526'],
-        locations: [0, 0.34, 0.78, 1],
-        angle: 180
-    },
-    general: {
-        colors: ['#000000', '#093A70', '#1CD9D9', '#1CC5D9'],
-        locations: [0, 0.34, 0.78, 1],
-        angle: 180
-    }
+    legs: 'bgr_legs',
+    abdominals: 'bgr_abdominals',
+    armsAndBack: 'bgr_arms_and_back',
+    armsAndChest: 'bgr_arms_and_chest',
+    general: 'bgr_general_fitness',
 };
 
 const DIFFICULTY_COLOR = {
