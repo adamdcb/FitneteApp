@@ -2,6 +2,7 @@ import React from 'react';
 import {
   StatusBar,
 } from 'react-native';
+import SplashScreen from 'react-native-splash-screen';
 
 import { createAppNavigator, setTopLevelNavigator, navigate } from './app/utils/navigation/NavigationService';
 import AppPresenter from './AppPresenter';
@@ -20,6 +21,7 @@ class App extends React.PureComponent {
   async componentDidMount() {
     await this.presenter.init();
     this.presenter.loadInitialStoryboard();
+    SplashScreen.hide();
   }
 
   componentWillUnmount() {

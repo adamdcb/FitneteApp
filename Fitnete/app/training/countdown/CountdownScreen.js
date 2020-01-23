@@ -55,7 +55,11 @@ class CountdownScreen extends React.Component {
                 <View style={styles.backgroundView} />
                 <Image
                     style={styles.backgroundImage}
-                    source={{ uri: 'startup' }}
+                    source={{ uri: 'startup_background' }}
+                />
+                 <Image
+                    style={styles.circleImage}
+                    source={{ uri: 'startup_circle' }}
                 />
                 <View style={styles.progressViewContainer}>
                     <AnimatedCircularProgress
@@ -88,6 +92,12 @@ const styles = StyleSheet.create({
         flex: 1
     },
     backgroundImage: {
+        position: 'absolute',
+        width: '100%',
+        height: '100%',
+        resizeMode: 'contain'
+    },
+    circleImage: {
         position: 'absolute',
         width: '100%',
         height: '100%',

@@ -20,7 +20,11 @@ class StartupScreen extends React.Component {
             <View style={styles.container}>
                 <Image
                     style={styles.backgroundImage}
-                    source={{ uri: 'startup' }}
+                    source={{ uri: 'startup_background' }}
+                />
+                 <Image
+                    style={styles.circleImage}
+                    source={{ uri: 'startup_circle' }}
                 />
                 <View style={styles.welcomeContainer}>
                     <Text style={styles.welcomeText}>{I18n.t('startup.welcome')}</Text>
@@ -49,6 +53,12 @@ const styles = StyleSheet.create({
         width: '100%',
         height: '100%',
         resizeMode: 'cover'
+    },
+    circleImage: {
+        position: 'absolute',
+        width: '100%',
+        height: '100%',
+        resizeMode: 'contain'
     },
     welcomeContainer: {
         flex: 1,

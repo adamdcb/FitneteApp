@@ -2,8 +2,14 @@
 <layer-list xmlns:android="http://schemas.android.com/apk/res/android"
     android:opacity="opaque">
     <item
+        android:drawable="@color/splash_bgr"/>
+    <item
         android:gravity="fill"
-        android:drawable="@drawable/startup">
+        android:drawable="@drawable/startup_background">
+    </item>
+    <item
+        android:gravity="center"
+        android:drawable="@drawable/startup_circle">
     </item>
     <item
         android:gravity="center"

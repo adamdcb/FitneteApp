@@ -1,9 +1,16 @@
 package com.fitnete;
 
+import android.os.Bundle;
+import android.os.PersistableBundle;
+
 import com.facebook.react.ReactActivity;
 import com.facebook.react.ReactActivityDelegate;
 import com.facebook.react.ReactRootView;
 import com.swmansion.gesturehandler.react.RNGestureHandlerEnabledRootView;
+
+import org.devio.rn.splashscreen.SplashScreen;
+
+import androidx.annotation.Nullable;
 
 public class MainActivity extends ReactActivity {
 
@@ -24,5 +31,11 @@ public class MainActivity extends ReactActivity {
                 return new RNGestureHandlerEnabledRootView(MainActivity.this);
             }
         };
+    }
+
+    @Override
+    public void onCreate(@Nullable Bundle savedInstanceState, @Nullable PersistableBundle persistentState) {
+        SplashScreen.show(this);
+        super.onCreate(savedInstanceState, persistentState);
     }
 }
