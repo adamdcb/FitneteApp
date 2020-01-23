@@ -1,6 +1,7 @@
 import I18n from '../utils/i18n/I18n';
 import Utils from '../utils/utils/Utils.js';
 import TrainingDataSource from '../data/TrainingDataSource';
+import UserDataSource from '../data/UserDataSource';
 import WorkoutDataManager from '../data/WorkoutDataManager';
 
 const DIFFICULTY = {
@@ -20,6 +21,14 @@ const PROGRAM_BACKGROUND = {
     general: 'bgr_general_fitness',
 };
 
+const PROGRAM_IMAGE = {
+    legs: 'legs',
+    abdominals: 'abdominals',
+    armsAndBack: 'arms_and_back',
+    armsAndChest: 'arms_and_chest',
+    general: 'general'
+};
+
 const DIFFICULTY_COLOR = {
     0: '#08C757',
     1: '#F56609',
@@ -30,12 +39,14 @@ export default class TrainingPresenter {
     constructor(view) {
         this.view = view;
         this.dataSource = new TrainingDataSource();
+        this.userDataSource = new UserDataSource();
         this.uiData = [];
         WorkoutDataManager.subscribe(this);
     }
 
     async loadData() {
         const programs = await this.dataSource.getPrograms();
+        const user = await this.userDataSource.getUser();
         this.uiData = programs.map((program) => {
             const duration = program.weeks.length * 7;
             const programBackground = PROGRAM_BACKGROUND[program.type];
@@ -56,7 +67,7 @@ export default class TrainingPresenter {
                         return acc.concat(week.days.map((workout, dIndex) => ({
                             title: `${I18n.t('training.Day')} ${wIndex * 7 + dIndex + 1}`,
                             description: '',
-                            image: this._getWorkoutImage(), // TODO
+                            image: `${PROGRAM_IMAGE[program.type]}_${user.gender}`,
                             durationTitle: I18n.t('training.exercises'),
                             durationText: `${workout.exercises.length}`,
                             repeatTitle: I18n.t('training.rests'),
@@ -118,13 +129,6 @@ export default class TrainingPresenter {
     // WorkoutDataManager observer function
     onWorkoutDataChange() {
         this.loadData();
-    }
-
-    _getWorkoutImage(workoutName) {
-        switch (workoutName) {
-            default:
-                return 'for_free';
-        }
     }
 
     _getExerciseDuration(exercise) {

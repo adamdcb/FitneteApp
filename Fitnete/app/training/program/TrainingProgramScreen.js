@@ -45,10 +45,16 @@ class TrainingProgramScreen extends React.Component {
                 style={styles.sliderItemView}
                 elevation={2}
             >
-                <Image
-                    style={styles.dayProgramImage}
-                    source={{ uri: 'for_free' }}
-                />
+                <View style={styles.imageContainer}>
+                    <Image
+                        style={styles.imageBackground}
+                        source={{ uri: item.background }}
+                    />
+                    <Image
+                        style={styles.dayProgramImage}
+                        source={{ uri: item.image }}
+                    />
+                </View>
                 <View style={styles.difficultyContainer}>
                     <Text style={[styles.difficultyText, {
                         color: item.difficulty.color
@@ -209,6 +215,18 @@ const styles = StyleSheet.create({
         lineHeight: 28,
         color: '#FFFFFF'
     },
+    imageContainer: {
+        height: 168,
+        borderTopLeftRadius: 12,
+        borderTopRightRadius: 12,
+        overflow: 'hidden'
+    },
+    imageBackground: {
+        position: 'absolute',
+        height: '100%',
+        width: '100%',
+        resizeMode: 'cover'
+    },
     sliderItemView: {
         flex: 1,
         backgroundColor: '#FFFFFF',
@@ -251,6 +269,7 @@ const styles = StyleSheet.create({
         resizeMode: 'contain'
     },
     difficultyContainer: {
+        marginTop: 8,
         marginRight: 16,
         flexDirection: 'row',
         alignItems: Platform.select({
