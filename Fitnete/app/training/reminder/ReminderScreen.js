@@ -49,6 +49,10 @@ class ReminderScreen extends React.Component {
             I18n.t('notification.permissionDeniedMessage'),
             [{
                 text: I18n.t('ok')
+            },
+            {
+                text: I18n.t('later'),
+                onPress: () => popToTop()
             }],
             {
                 cancelable: true

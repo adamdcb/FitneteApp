@@ -106,24 +106,26 @@ export default class ReminderPresenter {
             const notificationIds = notifications.map(notification => notification.id);
             await NotificationService.cancelScheduleNotifications(notificationIds);
             await this.dataSource.deleteAllReminders();
-            await NotificationService.requestPermission();
-            for (let index = 0; index < this.selectedWeekdays.length; index++) {
-                const day = this.selectedWeekdays[index];
-                let dayIndex = (WEEKDAYS.indexOf(day) + 1) % 7; // covert to Sunday - Saturday : 0 - 6
-                const dayDiff = (dayIndex - weekday + 7) % 7;
-                const fireDate = new Date(date.getTime() + dayDiff * MS_IN_DAY);
+            if (this.selectedWeekdays.length > 0) {
+                await NotificationService.requestPermission();
+                for (let index = 0; index < this.selectedWeekdays.length; index++) {
+                    const day = this.selectedWeekdays[index];
+                    let dayIndex = (WEEKDAYS.indexOf(day) + 1) % 7; // covert to Sunday - Saturday : 0 - 6
+                    const dayDiff = (dayIndex - weekday + 7) % 7;
+                    const fireDate = new Date(date.getTime() + dayDiff * MS_IN_DAY);
 
-                const notificationData = this._getNotificationData(day);
-                const scheduleData = this._getScheduleData(fireDate);
+                    const notificationData = this._getNotificationData(day);
+                    const scheduleData = this._getScheduleData(fireDate);
 
-                await this.dataSource.saveReminder({
-                    id: notificationData.id,
-                    day: notificationData.data.day,
-                    time: notificationData.data.time,
-                    repeatInterval: notificationData.data.repeat,
-                    firstFireDate: fireDate.getTime()
-                })
-                await NotificationService.scheduleNotification(NotificationService.CHANNEL.reminder, notificationData, scheduleData);
+                    await this.dataSource.saveReminder({
+                        id: notificationData.id,
+                        day: notificationData.data.day,
+                        time: notificationData.data.time,
+                        repeatInterval: notificationData.data.repeat,
+                        firstFireDate: fireDate.getTime()
+                    })
+                    await NotificationService.scheduleNotification(NotificationService.CHANNEL.reminder, notificationData, scheduleData);
+                }
             }
             if (this.view) {
                 this.view.onRemiderScheduled();
