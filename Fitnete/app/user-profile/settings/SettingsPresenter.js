@@ -5,6 +5,7 @@ import UserDataSource from '../../data/UserDataSource';
 import settings from '../../data/local-storage/content/settings';
 import I18n from '../../utils/i18n/I18n';
 import { URL, AppleId, AppPackageName } from '../../utils/utils/Constants';
+import { push, Route, pop } from '../../utils/navigation/NavigationService';
 
 const RateOptions = {
     AppleAppID: AppleId,
@@ -22,7 +23,7 @@ export default class SettingsPresenter {
     async loadData() {
         const user = await this.dataSource.getUser();
         const isPremium = !!user.subscriptionId;
-        const premiumStatusText = isPremium ? I18n.t('status.active') :  I18n.t('status.inactive');
+        const premiumStatusText = isPremium ? I18n.t('status.active') : I18n.t('status.inactive');
         const settingsUi = settings.map(item => ({
             id: item.id,
             title: I18n.t(`settings.option.${item.name}`),
@@ -59,6 +60,12 @@ export default class SettingsPresenter {
             case 'billingTerms':
                 this._openUrl(URL.BillingTerms);
                 break;
+            case 'reminders':
+                push(Route.Reminder, {
+                    continueButtonTitle: I18n.t('continue'),
+                    onContinue: this._onReminderSave
+                });
+                break;
             default:
                 break;
         }
@@ -70,5 +77,9 @@ export default class SettingsPresenter {
         } catch (error) {
             console.log(`_openUrl(): ${url}`, error);
         }
+    }
+
+    _onReminderSave() {
+        pop();
     }
 }

@@ -22,6 +22,10 @@ const settings = [
     {
         id: 'billingTerms',
         name: 'billingTerms'
+    },
+    {
+        id: 'reminders',
+        name: 'reminders'
     }
 ];
 

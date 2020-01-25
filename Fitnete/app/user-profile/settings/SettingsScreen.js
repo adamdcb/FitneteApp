@@ -8,7 +8,7 @@ import I18n from '../../utils/i18n/I18n';
 import SettingsPresenter from './SettingsPresenter';
 import ListViewItemSeparator from '../../utils/components/ListViewItemSeparator';
 import LoadingView from '../../utils/components/LoadingView';
-import { push, Route } from '../../utils/navigation/NavigationService';
+import { push, Route, HEADER_STYLE } from '../../utils/navigation/NavigationService';
 
 class SettingsScreen extends React.Component {
     constructor(props) {
@@ -148,7 +148,7 @@ const styles = StyleSheet.create({
     },
     headerBackground2: {
         position: 'absolute',
-        height: 54,
+        height: 16,
         width: '100%',
         top: 0,
         backgroundColor: '#FFFFFF',
@@ -156,7 +156,7 @@ const styles = StyleSheet.create({
         borderBottomRightRadius: 24
     },
     statusContainer: {
-        marginTop: 54
+        marginTop: 16
     },
     status: {
         marginVertical: 16,
@@ -233,7 +233,11 @@ const styles = StyleSheet.create({
 });
 
 SettingsScreen.navigationOptions = () => ({
-    title: I18n.t('settings.title')
+    title: I18n.t('settings.title'),
+    headerStyle: {
+        ...HEADER_STYLE,
+        backgroundColor: '#FFFFFF'
+    }
 });
 
 export default SettingsScreen;

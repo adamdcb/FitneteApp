@@ -201,15 +201,17 @@ const UserProfileStack = createStackNavigator(
     {
         UserProfile: UserProfileScreen,
         Settings: SettingsScreen,
-        Purchase: PurchaseScreen
+        Purchase: PurchaseScreen,
+        Reminder: ReminderScreen
     },
     {
         defaultNavigationOptions: () => ({
             headerBackImage: () => <HeaderBackButton />,
-            headerTransparent: true,
+            headerStyle: HEADER_STYLE,
             headerBackTitleVisible: false,
             headerTitleAlign: 'center'
-        })
+        }),
+        headerMode: 'screen'
     }
 );
 

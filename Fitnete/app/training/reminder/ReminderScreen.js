@@ -61,7 +61,12 @@ class ReminderScreen extends React.Component {
     }
 
     onRemiderScheduled() {
-        popToTop();
+        const { onContinue } = (this.props.navigation.state.params || {});
+        if (onContinue) {
+            onContinue();
+        } else {
+            popToTop();
+        }
     }
 
     _continue() {
@@ -127,6 +132,7 @@ class ReminderScreen extends React.Component {
 
     render() {
         const { time } = this.state;
+        const { continueButtonTitle } = (this.props.navigation.state.params || {});
         return (
             <Container>
                 <SafeAreaView style={styles.container}>
@@ -164,7 +170,7 @@ class ReminderScreen extends React.Component {
                     </View>
                     <View style={styles.bottomContainer}>
                         <Button
-                            title={I18n.t('workoutReminder.continue')}
+                            title={continueButtonTitle || I18n.t('workoutReminder.continue')}
                             onPress={this._continue}
                         />
                     </View>

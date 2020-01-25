@@ -5,7 +5,7 @@ import Container from '../utils/components/Container';
 import FNIcon from '../utils/components/FNIcon';
 import UserProfilePresenter from './UserProfilePresenter';
 import I18n from '../utils/i18n/I18n';
-import { push, Route } from '../utils/navigation/NavigationService';
+import { push, Route, HEADER_TITLE_STYLE } from '../utils/navigation/NavigationService';
 import ListViewItemSeparator from '../utils/components/ListViewItemSeparator';
 import LoadingView from '../utils/components/LoadingView';
 
@@ -228,6 +228,11 @@ const styles = StyleSheet.create({
 });
 
 UserProfileScreen.navigationOptions = ({ navigation }) => ({
+    headerTransparent: true,
+    headerTitleStyle: {
+        ...HEADER_TITLE_STYLE,
+        color: '#FFFFFF'
+    },
     headerRight: () =>
         <TouchableOpacity
             style={styles.settingsButton}

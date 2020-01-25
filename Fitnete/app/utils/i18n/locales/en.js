@@ -1,6 +1,7 @@
 export default {
     privacyPolicyTitle: 'Privacy Policy',
     termsAndConditionsTitle: 'Terms and Conditions',
+    continue: 'Continue',
     save: 'Save',
     later: 'Later',
     ok: 'OK',
@@ -243,7 +244,7 @@ export default {
         goToMainScreen: 'Go to main screen'
     },
     workoutReminder: {
-        title: 'Shedule workout reminder',
+        title: 'Schedule workout reminder',
         description: 'Users with workout reminders are 70% more likely to reach their goal',
         repeat: {
             once: 'Once',
@@ -280,7 +281,8 @@ export default {
             aboutUs: 'About Us',
             termsAndConditions: 'Terms & Conditions',
             privacyPolicy: 'Privacy Policy',
-            billingTerms: 'Billing Terms'
+            billingTerms: 'Billing Terms',
+            reminders: 'Workout reminders'
         }
     },
 
