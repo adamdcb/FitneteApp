@@ -18,7 +18,7 @@ export default class PurchasePresenter {
         IAPService.subscribe(this);
     }
 
-    async loadData() {
+    async loadData(tryRestore) {
         let duration = 0;
         let subscriptionsUi = [];
         let premium = false;
@@ -42,7 +42,11 @@ export default class PurchasePresenter {
                 .sort((a, b) => parseFloat(b.price) - parseFloat(a.price));
             this.selectedSubscription = this.subscriptions.find(s => s.id === (subscriptionsUi[0] || {}).id);
             duration = WorkoutDataManager.PROGRAM_SLICE[user.fitnessLevel].length * 7;
-            premium = await this._restorePurchasesIfPossible();
+            if (tryRestore) {
+                premium = await this._restorePurchasesIfPossible();
+            } else {
+                await WorkoutDataManager.prepareWorkouts();
+            }
         } catch (error) {
             console.log(error);
         } finally {
@@ -68,10 +72,21 @@ export default class PurchasePresenter {
 
     async requestSubscription() {
         console.log(this.selectedSubscription.id);
-        IAPService.requestSubscription(this.selectedSubscription.id);
+        const subscriptions = await IAPService.getAvailableSubscriptions();
+        if (!subscriptions.find(s => s.productId === this.selectedSubscription.id)) {
+            IAPService.requestSubscription(this.selectedSubscription.id);
+        } else {
+            const premium = await this._restorePurchasesIfPossible(subscriptions);
+            if (premium && this.view) {
+                this.view.onSubscriptionSuccess();
+            }
+        }
     }
 
     async onPurchaseUpdateSuccess(purchase) {
+        if (purchase.productId !== this.selectedSubscription.id) {
+            return;
+        }
         await this.userDataSource.setUser({
             subscriptionId: purchase.productId
         });
@@ -99,10 +114,10 @@ export default class PurchasePresenter {
         this.view = null;
     }
 
-    async _restorePurchasesIfPossible() {
-        let premium = false
+    async _restorePurchasesIfPossible(purchases) {
+        let premium = false;
         try {
-            const subscriptions = await IAPService.getAvailableSubscriptions();
+            const subscriptions = purchases || await IAPService.getAvailableSubscriptions();
             premium = subscriptions.length > 0;
             let subscriptionId = null;
             if (premium) {

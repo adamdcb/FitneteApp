@@ -40,6 +40,7 @@ class SettingsScreen extends React.Component {
     _onGetFullAccessBtnTap() {
         push(Route.Purchase, {
             useModalBehaviour: true,
+            tryRestore: true,
             onPurchaseSuccess: this._onGetFullAccessSuccess
         });
     }

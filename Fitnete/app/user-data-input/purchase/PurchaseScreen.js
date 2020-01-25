@@ -25,14 +25,16 @@ class PurchaseScreen extends React.Component {
             loading: true,
             paymentLoading: false
         }
-        this.usesModalBehaviour = !!(this.props.navigation.state.params || {}).useModalBehaviour;
+        this.navigationParams = this.props.navigation.state.params || {};
+        this.usesModalBehaviour = !!this.navigationParams.useModalBehaviour;
+        this.tryRestore = !!this.navigationParams.tryRestore;
         this.presenter = new PurchasePresenter(this);
         this.continue = this.continue.bind(this);
         this.continueForFree = this.continueForFree.bind(this);
     }
 
     componentDidMount() {
-        this.presenter.loadData();
+        this.presenter.loadData(this.tryRestore);
     }
 
     componentWillUnmount() {
@@ -62,7 +64,7 @@ class PurchaseScreen extends React.Component {
     onSubscriptionSuccess() {
         this.setState({ paymentLoading: false });
         if (this.usesModalBehaviour) {
-            const { onPurchaseSuccess } = (this.props.navigation.state.params || {});
+            const { onPurchaseSuccess } = this.navigationParams;
             onPurchaseSuccess();
             pop();
         } else {

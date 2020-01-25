@@ -86,7 +86,7 @@ export default {
 
     async requestSubscription(subscriptionId) {
         try {
-            await RNIap.requestSubscription(subscriptionId);
+            await RNIap.requestSubscription(subscriptionId, false);
         } catch (error) {
             console.log('requestSubscription()', error);
         }
