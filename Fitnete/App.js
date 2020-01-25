@@ -1,6 +1,6 @@
-import React from 'react';
+import React, { Fragment } from 'react';
 import {
-  StatusBar,
+  StatusBar
 } from 'react-native';
 import SplashScreen from 'react-native-splash-screen';
 
@@ -21,7 +21,6 @@ class App extends React.PureComponent {
   async componentDidMount() {
     await this.presenter.init();
     this.presenter.loadInitialStoryboard();
-    SplashScreen.hide();
   }
 
   componentWillUnmount() {
@@ -30,16 +29,17 @@ class App extends React.PureComponent {
 
   setInitialStoryboard(storyboardName) {
     navigate(storyboardName);
+    SplashScreen.hide();
   }
 
   render() {
     return (
-      <>
+      <Fragment>
         <StatusBar barStyle="dark-content" />
         <AppContainer
           ref={(nav) => setTopLevelNavigator(nav)}
         />
-      </>
+      </Fragment>
     );
   }
 }

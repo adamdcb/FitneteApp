@@ -5,7 +5,7 @@ import { replace, Route } from '../utils/navigation/NavigationService';
 import I18n from '../utils/i18n/I18n';
 import Button from '../utils/components/Button';
 
-class StartupScreen extends React.Component {
+class StartupScreen extends React.PureComponent {
     constructor(props) {
         super(props);
         this._start = this._start.bind(this);
@@ -18,18 +18,21 @@ class StartupScreen extends React.Component {
     render() {
         return (
             <View style={styles.container}>
-                <Image
+                 <Image
                     style={styles.backgroundImage}
-                    source={{ uri: 'startup_background' }}
+                    defaultSource={{ uri: 'startup_background'}}
+                    source={{ uri: 'startup_background'}}
                 />
                  <Image
                     style={styles.circleImage}
+                    defaultSource={{ uri: 'startup_circle'}}
                     source={{ uri: 'startup_circle' }}
                 />
                 <View style={styles.welcomeContainer}>
                     <Text style={styles.welcomeText}>{I18n.t('startup.welcome')}</Text>
                     <Image
                         style={styles.logo}
+                        defaultSource={{ uri: 'logo' }}
                         source={{ uri: 'logo' }}
                     />
                 </View>
