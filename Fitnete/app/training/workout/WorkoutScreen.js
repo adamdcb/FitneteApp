@@ -4,7 +4,6 @@ import LinearGradient from 'react-native-linear-gradient';
 import FastImage from 'react-native-fast-image';
 import ElevatedView from 'fiber-react-native-elevated-view';
 
-import Container from '../../utils/components/Container';
 import ButtonText from '../../utils/components/ButtonText';
 import Button from '../../utils/components/Button';
 import I18n from '../../utils/i18n/I18n';
@@ -117,9 +116,7 @@ class WorkoutScreen extends React.Component {
             nextExerciseText } = this.state;
         const { workout: { background } } = this.props.navigation.state.params;
         return (
-            <Container
-                scrollViewStyle={{ paddingHorizontal: 0 }}
-            >
+            <View style={styles.outerContainer} >
                 <Image
                     style={styles.background}
                     source={{ uri: background }}
@@ -175,12 +172,16 @@ class WorkoutScreen extends React.Component {
                         </View>
                     </LinearGradient>
                 </ElevatedView>
-            </Container>
+            </View>
         );
     }
 }
 
 const styles = StyleSheet.create({
+    outerContainer: {
+        flex: 1,
+        backgroundColor: '#FFFFFF'
+    },
     container: {
         flex: 1,
         marginHorizontal: 20

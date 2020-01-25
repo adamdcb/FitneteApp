@@ -201,7 +201,7 @@ const UserProfileStack = createStackNavigator(
     {
         UserProfile: UserProfileScreen,
         Settings: SettingsScreen,
-        Purchase: PurchaseScreen,
+        Purchase: PurchaseScreen
     },
     {
         defaultNavigationOptions: () => ({
