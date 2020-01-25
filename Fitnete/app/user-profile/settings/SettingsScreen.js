@@ -148,7 +148,7 @@ const styles = StyleSheet.create({
     },
     headerBackground2: {
         position: 'absolute',
-        height: 16,
+        height: 54,
         width: '100%',
         top: 0,
         backgroundColor: '#FFFFFF',
@@ -156,7 +156,7 @@ const styles = StyleSheet.create({
         borderBottomRightRadius: 24
     },
     statusContainer: {
-        marginTop: 16
+        marginTop: 54
     },
     status: {
         marginVertical: 16,
@@ -179,7 +179,7 @@ const styles = StyleSheet.create({
         color: '#FFFFFF'
     },
     proStatus: {
-        fontFamily: 'Poppins-Regular',
+        fontFamily: 'Poppins',
         fontSize: 15,
         color: '#FFFFFF'
     },
@@ -234,6 +234,7 @@ const styles = StyleSheet.create({
 
 SettingsScreen.navigationOptions = () => ({
     title: I18n.t('settings.title'),
+    headerTransparent: true,
     headerStyle: {
         ...HEADER_STYLE,
         backgroundColor: '#FFFFFF'
