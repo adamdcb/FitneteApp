@@ -86,7 +86,10 @@ class SettingsScreen extends React.Component {
                     <View style={styles.statusContainer}>
                         <Text style={styles.status}>{I18n.t('settings.status').toUpperCase()}</Text>
                         <View style={styles.statusBottomViewContainer}>
-                            <Text style={styles.pro}>{I18n.t('settings.pro').toUpperCase()} <Text style={styles.proStatus}>{premiumStatusText}</Text></Text>
+                            <View style={styles.proContainer}>
+                                <Text style={styles.pro}>{I18n.t('settings.pro').toUpperCase()}</Text>
+                                <Text style={styles.proStatus}>{premiumStatusText}</Text>
+                            </View>
                             {!isPremium ?
                                 <TouchableOpacity
                                     style={styles.getFullAccessButton}
@@ -173,10 +176,14 @@ const styles = StyleSheet.create({
         justifyContent: 'space-between',
         alignItems: 'center'
     },
+    proContainer: {
+        flexDirection: 'row'
+    },
     pro: {
         fontFamily: 'Poppins-SemiBold',
         fontSize: 15,
-        color: '#FFFFFF'
+        color: '#FFFFFF',
+        marginRight: 4
     },
     proStatus: {
         fontFamily: 'Poppins',
