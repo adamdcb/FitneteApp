@@ -42,6 +42,7 @@ class WorkoutCompleteScreen extends React.Component {
                         <View style={styles.imageContainer}>
                             <Image
                                 style={styles.image}
+                                defaultSource={{ uri: 'workout_complete' }}
                                 source={{ uri: 'workout_complete' }}
                             />
                         </View>

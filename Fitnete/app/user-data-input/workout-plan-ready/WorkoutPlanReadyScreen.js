@@ -52,6 +52,7 @@ class WorkoutPlanReadyScreen extends React.Component {
                     <View style={styles.successImageContainer}>
                         <Image
                             style={styles.successImage}
+                            defaultSource={{ uri: 'plan_ready' }}
                             source={{ uri: 'plan_ready' }}
                         />
                     </View>

@@ -54,10 +54,12 @@ class CountdownScreen extends React.Component {
             >
                 <Image
                     style={styles.backgroundImage}
+                    defaultSource={{ uri: 'startup_background' }}
                     source={{ uri: 'startup_background' }}
                 />
                 <Image
                     style={styles.circleImage}
+                    defaultSource={{ uri: 'startup_circle' }}
                     source={{ uri: 'startup_circle' }}
                 />
                 <View style={styles.progressViewContainer}>

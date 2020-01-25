@@ -78,6 +78,7 @@ class PrepareWorkoutPlanScreen extends React.Component {
                                     <View style={styles.progressViewChildrenInnerContainer}>
                                         <Image
                                             style={styles.progressImage}
+                                            defaultSource={{ uri: 'processing' }}
                                             source={{ uri: 'processing' }}
                                         />
                                         <Text style={styles.processingText}>

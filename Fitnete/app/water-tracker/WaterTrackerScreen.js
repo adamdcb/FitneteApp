@@ -83,6 +83,7 @@ class WaterTrackerScreen extends React.Component {
                                     width: waterTrackerImageMaxWidth,
                                     height: waterTrackerImageMaxWidth
                                 }]}
+                                defaultSource={{ uri: 'daily_water' }}
                                 source={{ uri: 'daily_water' }}
                             />
                         </TouchableOpacity>

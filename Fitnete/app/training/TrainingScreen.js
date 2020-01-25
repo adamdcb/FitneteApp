@@ -125,6 +125,7 @@ class TrainingScreen extends React.Component {
                         </View>
                         <Image
                             style={styles.slideImage}
+                            defaultSource={{ uri: 'exercise_1' }}
                             source={{ uri: 'exercise_1' }}
                         />
                     </View>

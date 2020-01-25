@@ -88,6 +88,7 @@ class SelectFitLevelScreen extends React.Component {
                         <View style={styles.fitnessLevelView}>
                             <Image
                                 style={styles.fitnessLevelImage}
+                                defaultSource={{ uri: 'exercise_3' }}
                                 source={{ uri: 'exercise_3' }}
                             />
                             <Text style={styles.fitnessLevelTitle}>

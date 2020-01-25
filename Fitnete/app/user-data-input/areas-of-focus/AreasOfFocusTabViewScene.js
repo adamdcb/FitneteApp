@@ -42,6 +42,7 @@ class AreasOfFocusTabViewScene extends React.Component {
                 <View>
                     <Image
                         style={styles.tabViewImage}
+                        defaultSource={{ uri: `area_${this.props.type}` }}
                         source={{ uri: `area_${this.props.type}` }}
                     />
                     {this.state.areas.map((area) => {
@@ -54,6 +55,7 @@ class AreasOfFocusTabViewScene extends React.Component {
                                 ...styles.areaItemHighlightImage,
                                 ...area.highlight.position
                             }}
+                            defaultSource={{ uri: area.highlight.iconName }}
                             source={{ uri: area.highlight.iconName }}
                         />)
                     })}

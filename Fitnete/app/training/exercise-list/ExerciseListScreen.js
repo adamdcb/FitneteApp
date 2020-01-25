@@ -52,6 +52,7 @@ class ExerciseListScreen extends React.Component {
                         >
                             <Image
                                 style={styles.exerciseImage}
+                                defaultSource={{ uri: 'exercise_1' }}
                                 source={{ uri: 'exercise_1' }}
                             />
                         </LinearGradient>

@@ -48,10 +48,12 @@ class TrainingProgramScreen extends React.Component {
                 <View style={styles.imageContainer}>
                     <Image
                         style={styles.imageBackground}
+                        defaultSource={{ uri: item.background }}
                         source={{ uri: item.background }}
                     />
                     <Image
                         style={styles.dayProgramImage}
+                        defaultSource={{ uri: item.image }}
                         source={{ uri: item.image }}
                     />
                 </View>

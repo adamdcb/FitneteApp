@@ -64,6 +64,7 @@ class ExercisePreviewScreen extends React.Component {
             <View style={styles.outerContainer} >
                 <Image
                     style={styles.background}
+                    defaultSource={{ uri: background }}
                     source={{ uri: background }}
                 />
                 <SafeAreaView style={styles.container}>

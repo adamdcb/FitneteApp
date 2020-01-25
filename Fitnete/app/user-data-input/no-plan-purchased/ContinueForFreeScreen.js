@@ -39,6 +39,7 @@ class ContinueForFreeScreen extends React.Component {
                     <View style={styles.imageContainer}>
                         <Image
                             style={styles.image}
+                            defaultSource={{ uri: 'for_free' }}
                             source={{ uri: 'for_free' }}
                         />
                     </View>

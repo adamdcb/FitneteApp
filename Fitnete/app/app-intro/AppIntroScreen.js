@@ -116,6 +116,7 @@ class AppIntroScreen extends React.Component {
                                 >
                                     <Image
                                         style={styles.slideImage}
+                                        defaultSource={{ uri: element.imageName }}
                                         source={{ uri: element.imageName }}
                                     />
                                 </View>
