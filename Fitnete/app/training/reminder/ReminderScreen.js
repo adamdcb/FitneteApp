@@ -52,7 +52,7 @@ class ReminderScreen extends React.Component {
             },
             {
                 text: I18n.t('later'),
-                onPress: () => popToTop()
+                onPress: () => this.onRemiderScheduled()
             }],
             {
                 cancelable: true
