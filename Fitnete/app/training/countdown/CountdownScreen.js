@@ -1,12 +1,16 @@
 import React from 'react';
-import { Image, Text, View, StyleSheet, Dimensions, BackHandler } from 'react-native';
+import { Image, Text, View, StyleSheet, Dimensions, BackHandler, Platform } from 'react-native';
 import { AnimatedCircularProgress } from 'react-native-circular-progress';
 
 import { replace, Route } from '../../utils/navigation/NavigationService';
 import I18n from '../../utils/i18n/I18n';
 import CountdownPresenter from './CountdownPresenter';
 
-const progressViewSize = Dimensions.get('window').width - 100;
+const offset = Platform.select({
+    ios: 116,
+    android: 100
+});
+const progressViewSize = Dimensions.get('window').width - offset;
 
 class CountdownScreen extends React.Component {
     constructor(props) {
