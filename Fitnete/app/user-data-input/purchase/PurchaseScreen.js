@@ -1,7 +1,6 @@
 import React from 'react';
-import { SafeAreaView, View, Text, StyleSheet, TouchableOpacity, ActivityIndicator, Alert } from 'react-native';
+import { SafeAreaView, View, Text, StyleSheet, ActivityIndicator, Alert } from 'react-native';
 import { getStatusBarHeight } from 'react-native-safe-area-view';
-import LinearGradient from 'react-native-linear-gradient';
 import ElevatedView from 'fiber-react-native-elevated-view';
 
 import I18n from '../../utils/i18n/I18n';
@@ -85,18 +84,6 @@ class PurchaseScreen extends React.Component {
         );
     }
 
-    renderPayButton(subscription) {
-        const { activeSubscriptionType } = this.state;
-        return (
-            <TouchableOpacity
-                style={[styles.payButtonContainer, activeSubscriptionType === subscription.type ? styles.payButtonContainerActive : styles.payButtonContainerInactive]}
-                onPress={() => this.presenter.setSelectedSubscription(subscription.id)}
-            >
-                <Text style={[styles.payButtonText, activeSubscriptionType === subscription.type ? styles.payButtonTextActive : styles.payButtonTextInactive]}>{I18n.t(`purchase.pay.${subscription.type}`)}</Text>
-            </TouchableOpacity>
-        );
-    }
-
     renderLoading() {
         return (
             <ActivityIndicator
@@ -126,46 +113,47 @@ class PurchaseScreen extends React.Component {
         );
     }
 
+    renderSubscriptionButton(subscription) {
+        const { activeSubscriptionType } = this.state;
+        const borderColor = activeSubscriptionType === subscription.type ? '#08C757' : '#E2E2E2';
+        const topTextColor = activeSubscriptionType === subscription.type ? '#08C757' : '#3E3750';
+        return (
+            <ElevatedView
+                style={{ flex: 1 }}
+                elevation={1}
+                onPress={() => this.presenter.setSelectedSubscription(subscription.id)}
+            >
+                <View style={[styles.subscriptionButtonContainer, { borderColor }]}>
+                    <View>
+                        <Text style={[styles.title, { color: topTextColor }]}>{subscription.title}</Text>
+                        <Text style={[styles.pricePerWeek, { color: topTextColor }]}>{subscription.pricePerWeekText}</Text>
+                    </View>
+                    <View style={styles.subscriptionButtonBottomView}>
+                        <Text style={styles.priceText}>{subscription.priceText}</Text>
+                        <Text style={styles.description}>{subscription.description}</Text>
+                    </View>
+                </View>
+
+
+            </ElevatedView>
+        );
+    }
+
     render() {
         const { loading } = this.state;
         if (loading) {
             return (<LoadingView />);
         }
-        const { subscriptions, activeSubscriptionType, workoutsTotal, workoutsPerWeek, paymentLoading } = this.state;
-        const subscription = subscriptions.find(subscription => subscription.type === activeSubscriptionType) || {};
+        const { subscriptions, workoutsTotal, workoutsPerWeek, paymentLoading } = this.state;
         return (
             <SafeAreaView style={styles.container}>
                 <Container>
                     <View style={styles.contentContainer}>
-                        <ElevatedView
-                            style={styles.subscriptionOuterContainer}
-                            elevation={2}
-                        >
-                            <LinearGradient
-                                style={styles.subscriptionGradient}
-                                colors={['#1CD9D929', '#FFFFFF00']}
-                                locations={[0, 1]}
-                                angle={90}
-                                useAngle
-                            >
-                                <View style={styles.subscriptionContainer}>
-                                    <View style={styles.subscriptionContainerLeft}>
-                                        <Text style={styles.goPremium}>{I18n.t('purchase.goPremium')}</Text>
-                                        <Text style={styles.priceText}>{subscription.priceText}</Text>
-                                        <Text style={styles.priceDescription}>{subscription.description}</Text>
-                                    </View>
-                                    <View style={styles.subscriptionContainerRight}>
-                                        <Text style={styles.trialTitle}>{subscription.trialTitle}</Text>
-                                        <Text style={styles.trialDescription}>{subscription.trialDescription}</Text>
-                                    </View>
-                                </View>
-                            </LinearGradient>
-                        </ElevatedView>
-                        <View style={styles.payButtons}>
-                            {subscriptions.map(subscription => this.renderPayButton(subscription))}
+                        <View style={styles.subscriptionContainer}>
+                            {subscriptions.map(subscription => this.renderSubscriptionButton(subscription))}
                         </View>
                         <Text style={styles.legalDescription}>
-                            {subscription.fullDescription}
+                            {I18n.t('purchase.fullDescription')}
                         </Text>
                         <View style={styles.buttonsContainer}>
                             {
@@ -211,7 +199,7 @@ const styles = StyleSheet.create({
     },
     contentContainer: {
         flex: 1,
-        marginTop: HEADER_VIEW_HEIGHT + 16,
+        marginTop: HEADER_VIEW_HEIGHT + 24,
         marginHorizontal: 1
     },
     paymentLoading: {
@@ -247,27 +235,19 @@ const styles = StyleSheet.create({
         fontSize: 15,
         color: '#4F4C57'
     },
-    subscriptionOuterContainer: {
-        backgroundColor: '#FFFFFF',
-        borderRadius: 4
-    },
-    subscriptionGradient: {
-        borderRadius: 4
-    },
     subscriptionContainer: {
-        flexDirection: 'row',
-        paddingVertical: 24
+        flexDirection: 'row'
     },
-    subscriptionContainerLeft: {
-        flex: 1,
-        paddingHorizontal: 8,
-        justifyContent: 'flex-start',
-        alignItems: 'center'
+    subscriptionButtonContainer: {
+        backgroundColor: '#FFFFFF',
+        marginHorizontal: 12,
+        paddingVertical: 16,
+        paddingLeft: 12,
+        borderRadius: 8,
+        borderWidth: 1
     },
-    subscriptionContainerRight: {
-        flex: 1,
-        justifyContent: 'flex-start',
-        alignItems: 'center'
+    subscriptionButtonBottomView: {
+        marginTop: 24
     },
     goPremium: {
         fontFamily: 'Poppins-Bold',
@@ -275,63 +255,32 @@ const styles = StyleSheet.create({
         color: '#0F7788',
         textAlign: 'center'
     },
-    priceText: {
-        marginTop: 16,
-        fontFamily: 'Poppins',
-        fontSize: 12,
-        color: '#3E3750',
-        textAlign: 'center'
-    },
-    priceDescription: {
-        marginTop: 4,
-        fontFamily: 'Poppins',
-        fontSize: 12,
-        color: '#B4B3B6',
-        textAlign: 'center'
-    },
-    trialTitle: {
-        fontFamily: 'Poppins-Bold',
-        fontSize: 15,
-        color: '#3E3750',
-        textAlign: 'center'
-    },
-    trialDescription: {
-        fontFamily: 'Poppins',
-        fontSize: 12,
-        color: '#3E3750',
-        textAlign: 'center'
-    },
-    payButtons: {
-        flexDirection: 'row',
-        height: 32,
-        marginTop: 16
-    },
-    payButtonContainer: {
-        flex: 1,
-        borderRadius: 4,
-        justifyContent: 'center'
-    },
-    payButtonContainerActive: {
-        backgroundColor: '#3E3750'
-    },
-    payButtonContainerInactive: {
-        backgroundColor: '#FFFFFF',
-        borderWidth: 1,
-        borderColor: '#E2E2E2'
-    },
-    payButtonText: {
+    title: {
         fontFamily: 'Poppins-SemiBold',
-        fontSize: 12,
-        textAlign: 'center'
-    },
-    payButtonTextActive: {
-        color: '#FFFFFF'
-    },
-    payButtonTextInactive: {
+        fontSize: 13,
+        lineHeight: 15,
         color: '#3E3750'
     },
+    pricePerWeek: {
+        fontFamily: 'Poppins',
+        fontSize: 12,
+        lineHeight: 14,
+        color: '#B4B3B6'
+    },
+    priceText: {
+        fontFamily: 'Poppins-SemiBold',
+        fontSize: 12,
+        lineHeight: 14,
+        color: '#3E3750'
+    },
+    description: {
+        fontFamily: 'Poppins',
+        fontSize: 12,
+        lineHeight: 14,
+        color: '#B4B3B6'
+    },
     legalDescription: {
-        marginVertical: 16,
+        marginVertical: 24,
         fontFamily: 'Poppins',
         fontSize: 12,
         color: '#3E3750',

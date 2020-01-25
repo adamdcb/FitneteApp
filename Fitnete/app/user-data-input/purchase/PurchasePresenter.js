@@ -27,19 +27,19 @@ export default class PurchasePresenter {
             this.subscriptions = await this._getSubscriptions();
             subscriptionsUi = this.subscriptions.map(subscription => {
                 const type = this._getSubscriptionType(subscription.id);
+                const noOfWeeks = this._getNumberOfWeeks(subscription.id);
+                const pricePerWeek = subscription.price / noOfWeeks;
                 return {
                     id: subscription.id,
                     type,
                     price: subscription.price,
-                    title: subscription.title,
-                    description: subscription.description,
-                    fullDescription: I18n.t('purchase.fullDescription'),
-                    priceText: `${subscription.localizedPrice} / ${I18n.t(`purchase.subscriptionPeriod.${type}`)}`,
-                    trialTitle: I18n.t(`purchase.trialTitle.${subscription.freeTrialPeriod}`),
-                    trialDescription: I18n.t(`purchase.trialDescription.${subscription.freeTrialPeriod}`)
+                    title: `${I18n.t(`purchase.title.${type}`)}`.toUpperCase(),
+                    description: `${I18n.t(`purchase.description.${type}`)}`,
+                    priceText: noOfWeeks > 1 ? `${subscription.localizedPrice}/${I18n.t(`purchase.subscriptionPeriod.${type}`)}` : ' ',
+                    pricePerWeekText: `${subscription.currency} ${pricePerWeek.toFixed(2)}/${I18n.t('purchase.subscriptionPeriod.week')}`
                 }
             })
-                .sort((a, b) => parseFloat(a.price) - parseFloat(b.price));
+                .sort((a, b) => parseFloat(b.price) - parseFloat(a.price));
             this.selectedSubscription = this.subscriptions.find(s => s.id === (subscriptionsUi[0] || {}).id);
             duration = WorkoutDataManager.PROGRAM_SLICE[user.fitnessLevel].length * 7;
             premium = await this._restorePurchasesIfPossible();
@@ -86,7 +86,7 @@ export default class PurchasePresenter {
             return;
         }
         if (errorCode === IAPService.ERROR.USER_CANCELLED) {
-            this.view.setData({ loading: false });
+            this.view.setData({ paymentLoading: false });
             return;
         }
         const errorTitle = '';
@@ -153,5 +153,12 @@ export default class PurchasePresenter {
             default:
                 return '';
         }
+    }
+
+    _getNumberOfWeeks(subscriptionId) {
+        if (subscriptionId.includes('year')) {
+            return 52;
+        }
+        return 1;
     }
 }

@@ -5,12 +5,10 @@ const VERIFY_RECEIPT_URL = `https://get-in-app.com/verify/${Platform.OS.toLowerC
 const subscriptionIds = Platform.select({
     ios: [
         'com.fitnete.subscription.year',
-        'com.fitnete.subscription.month',
         'com.fitnete.subscription.week'
     ],
     android: [
         'com.fitnete.subscription.year.v2',
-        'com.fitnete.subscription.month.v2',
         'com.fitnete.subscription.week.v2'
     ]
 });
