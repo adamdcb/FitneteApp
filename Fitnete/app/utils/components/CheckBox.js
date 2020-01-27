@@ -39,7 +39,7 @@ class CheckBox extends React.Component {
                 <FNIcon
                     name="check"
                     color={checkmarkColor}
-                    size={12}
+                    size={16}
                 />
                 </View>
             </TouchableOpacity>
@@ -49,15 +49,13 @@ class CheckBox extends React.Component {
 
 const styles = StyleSheet.create({
     container: {
-        marginLeft: -4,
-        height: 24,
-        width: 24,
-        justifyContent: 'center',
-        alignItems: 'center'
+        height: 32,
+        width: 32,
+        justifyContent: 'center'
     },
     box: {
-        height: 16,
-        width: 16,
+        height: 20,
+        width: 20,
         borderRadius: 2,
         borderWidth: 1,
         borderColor: '#B4B3B6',
@@ -65,8 +63,8 @@ const styles = StyleSheet.create({
         alignItems: 'center'
     },
     boxActive: {
-        height: 16,
-        width: 16,
+        height: 20,
+        width: 20,
         borderRadius: 2,
         backgroundColor: '#08C757',
         justifyContent: 'center',
