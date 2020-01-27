@@ -106,6 +106,7 @@ class ExerciseListScreen extends React.Component {
                     />
                     <View style={styles.bottomContainer}>
                         <Button
+                            disabled={workout.locked}
                             title={I18n.t('dayProgram.startWorkout')}
                             onPress={this._startWorkout}
                         />
@@ -197,7 +198,7 @@ const styles = StyleSheet.create({
     },
     list: {
         flex: 1,
-        marginTop: 8 
+        marginTop: 8
     },
     listContent: {
         paddingVertical: 8

@@ -3,6 +3,7 @@ import { SafeAreaView, ScrollView, Text, View, Image, StyleSheet, Dimensions, Pl
 import Carousel from 'react-native-snap-carousel';
 import LinearGradient from 'react-native-linear-gradient';
 import ElevatedView from 'fiber-react-native-elevated-view';
+import MICIcon from 'react-native-vector-icons/MaterialCommunityIcons';
 
 import I18n from '../../utils/i18n/I18n';
 import Button from '../../utils/components/Button';
@@ -68,7 +69,17 @@ class TrainingProgramScreen extends React.Component {
                         backgroundColor: item.difficulty.color
                     }]} />
                 </View>
-                <Text style={styles.dayProgramTitle}>{item.title}</Text>
+                <View style={styles.dayProgramTitleContainer}>
+                    <Text style={styles.dayProgramTitle}>{item.title}</Text>
+                    {item.locked ?
+                        <MICIcon
+                            style={styles.lockIcon}
+                            name="lock-outline"
+                            size={24}
+                            color="#000000"
+                        /> : null
+                    }
+                </View>
                 <View style={styles.dayProgramOuterContainer}>
                     <View style={styles.dayProgramContainer}>
                         <View style={styles.dayStatusImage}>
@@ -106,6 +117,7 @@ class TrainingProgramScreen extends React.Component {
                 </View>
                 <View style={styles.bottomContainer}>
                     <Button
+                        disabled={item.locked}
                         title={I18n.t('dayProgram.startWorkout')}
                         onPress={this._startWorkout}
                     />
@@ -258,6 +270,10 @@ const styles = StyleSheet.create({
         color: '#FFFFFF',
         textAlign: 'center'
     },
+    dayProgramTitleContainer: {
+        flexDirection: 'row',
+        justifyContent: 'space-between'
+    },
     dayProgramTitle: {
         marginHorizontal: 16,
         fontFamily: 'Poppins-Bold',
@@ -269,6 +285,10 @@ const styles = StyleSheet.create({
         width: null,
         height: 168,
         resizeMode: 'contain'
+    },
+    lockIcon: {
+        marginRight: 9,
+        includeFontPadding: false
     },
     difficultyContainer: {
         marginTop: 8,

@@ -79,6 +79,7 @@ export default class TrainingPresenter {
                                 color: `${DIFFICULTY_COLOR[workout.difficulty]}`
                             },
                             background: programBackground,
+                            locked: dIndex > program.progress,
                             exercises: workout.exercises.map((exercise) => {
                                 const exerciseDuration = this._getExerciseDuration(exercise);
                                 return {
@@ -112,7 +113,11 @@ export default class TrainingPresenter {
                 return {
                     ...program,
                     progress,
-                    progressText: `${progress} / ${program.duration}`
+                    progressText: `${progress} / ${program.duration}`,
+                    workouts: program.workouts.map((workout, index) => ({
+                        ...workout,
+                        locked: index > progress
+                    }))
                 };
             }
         });
