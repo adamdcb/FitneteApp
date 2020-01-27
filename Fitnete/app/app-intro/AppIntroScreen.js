@@ -220,7 +220,8 @@ const styles = StyleSheet.create({
         marginBottom: 16
     },
     checkBoxTextContainer: {
-        flexDirection: 'row'
+        flexDirection: 'row',
+        marginBottom: 24
     },
     button: {
         alignItems: 'center',
@@ -229,15 +230,14 @@ const styles = StyleSheet.create({
         padding: 12
     },
     termsText: {
-        color: '#BBBBBB',
-        fontFamily: 'Poppins-Regular',
-        fontSize: 14,
-        marginHorizontal: 12,
-        marginBottom: 24
+        flex: 1,
+        color: '#B4B3B6',
+        fontFamily: 'Poppins',
+        fontSize: 14
     },
     termsTextUnderlined: {
         color: '#08C757',
-        fontFamily: 'Poppins-Regular',
+        fontFamily: 'Poppins-SemiBold',
         fontSize: 14,
         textDecorationLine: 'underline'
     }
