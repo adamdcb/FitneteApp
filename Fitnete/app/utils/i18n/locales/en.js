@@ -53,7 +53,7 @@ export default {
         title: 'Daily Water Intake',
         totalWaterIntaker: 'Total water intake',
         completedGoals: 'Completed goals',
-        sliderInfo: 'Move this handle to set a custom water amount you drank, then tap to input. Or, simply tap the water bottle to enter %{default_amount}',
+        sliderInfo: 'Move this handle to set a custom water amount you drank, then tap to input. Or, simply tap the water bottle to enter',
         goToWorkouts: 'Go to workouts'
     },
     dataCollection: {

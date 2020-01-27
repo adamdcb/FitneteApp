@@ -58,11 +58,11 @@ class WaterTrackerScreen extends React.Component {
         const waterTrackerImageMaxWidth = (pageWidth - 40) * 0.42;
         const { showWorkoutsLink } = this.props.navigation.state.params;
         return (
-                <Container
-                    locations={[0, 0.5, 1]}
-                    colors={['#CEF9FC', '#ECFFFA', '#FFFFFF']}
-                >
-            <SafeAreaView style={styles.container}>
+            <Container
+                locations={[0, 0.5, 1]}
+                colors={['#CEF9FC', '#ECFFFA', '#FFFFFF']}
+            >
+                <SafeAreaView style={styles.container}>
                     <Text style={styles.title}>
                         {I18n.t('waterTracker.title')}
                     </Text>
@@ -96,6 +96,9 @@ class WaterTrackerScreen extends React.Component {
                             </Text>
                         </View>
                     </View>
+                    <Text style={styles.sliderInfo} >
+                            {I18n.t('waterTracker.sliderInfo')}{'\n'}<Text style={styles.sliderInfoValue}>{drinkSizeText}</Text>
+                        </Text>
                     <ElevatedView
                         style={styles.sliderOuterContainer}
                         elevation={3}
@@ -156,9 +159,6 @@ class WaterTrackerScreen extends React.Component {
                             </View>
                         </View>
                     </ElevatedView>
-                    <Text style={styles.sliderInfo} >
-                        {I18n.t('waterTracker.sliderInfo', { default_amount: drinkSizeText })}
-                    </Text>
                     {
                         showWorkoutsLink ?
                             <View style={styles.bottomContainer}>
@@ -180,8 +180,8 @@ class WaterTrackerScreen extends React.Component {
                                 </View>
                             </View> : null
                     }
-            </SafeAreaView>
-                </Container>
+                </SafeAreaView>
+            </Container>
         );
     }
 }
@@ -317,6 +317,11 @@ const styles = StyleSheet.create({
         fontFamily: 'Poppins-Regular',
         fontSize: 15,
         textAlign: "center"
+    },
+    sliderInfoValue: {
+        color: '#13B6D1',
+        fontFamily: 'Poppins-SemiBold',
+        fontSize: 17
     },
     bottomContainer: {
         flex: 1,
