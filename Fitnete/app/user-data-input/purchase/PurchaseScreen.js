@@ -1,6 +1,5 @@
 import React from 'react';
 import { SafeAreaView, View, Text, StyleSheet, ActivityIndicator, Alert } from 'react-native';
-import { getStatusBarHeight } from 'react-native-safe-area-view';
 import ElevatedView from 'fiber-react-native-elevated-view';
 
 import I18n from '../../utils/i18n/I18n';
@@ -11,8 +10,6 @@ import ButtonText from '../../utils/components/ButtonText';
 import PurchasePresenter from './PurchasePresenter';
 import FNIcon from '../../utils/components/FNIcon';
 import LoadingView from '../../utils/components/LoadingView';
-
-const HEADER_VIEW_HEIGHT = 84;
 
 class PurchaseScreen extends React.Component {
     constructor(props) {
@@ -135,8 +132,6 @@ class PurchaseScreen extends React.Component {
                         <Text style={styles.description}>{subscription.description}</Text>
                     </View>
                 </View>
-
-
             </ElevatedView>
         );
     }
@@ -148,78 +143,73 @@ class PurchaseScreen extends React.Component {
         }
         const { subscriptions, workoutsTotal, workoutsPerWeek, paymentLoading } = this.state;
         return (
-            <SafeAreaView style={styles.container}>
-                <Container>
+            <Container>
+                <SafeAreaView style={styles.container}>
                     <View style={styles.contentContainer}>
+                        <ElevatedView
+                            style={styles.goPremiumContainer}
+                            elevation={1}
+                            feedbackEnabled={false}
+                        >
+                            <View style={styles.goPremiumTextContainer}>
+                                <Text style={styles.goPremium}>{I18n.t('purchase.goPremium')}</Text>
+                                <Text style={styles.goPremium}>{I18n.t('purchase.getTheFullExperience')}</Text>
+                            </View>
+                            <View style={styles.headerViewContainer}>
+                                <FNIcon
+                                    name='bars'
+                                    size={20}
+                                    color="#008FA6"
+                                />
+                                <Text style={styles.headerTextContainer}>
+                                    <Text style={styles.headerValueText} numberOfLines={1} ellipsizeMode="tail">{workoutsPerWeek}{' '}</Text>
+                                    <Text style={styles.headerText}>{I18n.t('purchase.workoutsPerWeek')}</Text>
+                                </Text>
+                            </View>
+                            <View style={styles.headerViewContainer}>
+                                <FNIcon
+                                    name='goal'
+                                    size={20}
+                                    color="#008FA6"
+                                />
+                                <Text style={styles.headerTextContainer}>
+                                    <Text style={styles.headerValueText} numberOfLines={1} ellipsizeMode="tail">{workoutsTotal}{' '}</Text>
+                                    <Text style={styles.headerText}>{I18n.t('purchase.workoutsToAchieveGoal')}</Text>
+                                </Text>
+                            </View>
+                        </ElevatedView>
                         <View style={styles.subscriptionContainer}>
                             {subscriptions.map(subscription => this.renderSubscriptionButton(subscription))}
                         </View>
                         <Text style={styles.legalDescription}>
                             {I18n.t('purchase.fullDescription')}
                         </Text>
-                        <View style={styles.buttonsContainer}>
-                            {
-                                paymentLoading ? this.renderLoading() : this.renderButtons()
-                            }
-
-                        </View>
                     </View>
-                </Container>
-                <View style={styles.headerBackground}>
-                    <View style={styles.headerViewContainer}>
-                        <FNIcon
-                            name='bars'
-                            size={20}
-                            color="#008FA6"
-                        />
-                        <Text style={styles.headerTextContainer}>
-                            <Text style={styles.headerValueText} numberOfLines={1} ellipsizeMode="tail">{workoutsPerWeek}{' '}</Text>
-                            <Text style={styles.headerText}>{I18n.t('purchase.workoutsPerWeek')}</Text>
-                        </Text>
+                    <View style={styles.buttonsContainer}>
+                        {
+                            paymentLoading ? this.renderLoading() : this.renderButtons()
+                        }
                     </View>
-                    <View style={styles.headerViewContainer}>
-                        <FNIcon
-                            name='goal'
-                            size={20}
-                            color="#008FA6"
-                        />
-                        <Text style={styles.headerTextContainer}>
-                            <Text style={styles.headerValueText} numberOfLines={1} ellipsizeMode="tail">{workoutsTotal}{' '}</Text>
-                            <Text style={styles.headerText}>{I18n.t('purchase.workoutsToAchieveGoal')}</Text>
-                        </Text>
-                    </View>
-                </View>
-            </SafeAreaView>
+                </SafeAreaView>
+            </Container>
         )
     }
 }
 
 const styles = StyleSheet.create({
     container: {
-        flex: 1,
-        backgroundColor: '#FFFFFF'
+        flex: 1
     },
     contentContainer: {
         flex: 1,
-        marginTop: HEADER_VIEW_HEIGHT + 24,
-        marginHorizontal: 1
+        justifyContent: 'center'
     },
     paymentLoading: {
-        marginVertical: 48
-    },
-    headerBackground: {
-        position: 'absolute',
-        height: HEADER_VIEW_HEIGHT,
-        width: '100%',
-        top: getStatusBarHeight(),
-        paddingTop: 16,
-        paddingHorizontal: 16,
-        backgroundColor: '#FFFFFF',
-        borderBottomLeftRadius: 24,
-        borderBottomRightRadius: 24
+        alignSelf: 'center'
     },
     headerViewContainer: {
-        flexDirection: 'row'
+        flexDirection: 'row',
+        paddingHorizontal: 8
     },
     headerTextContainer: {
         height: 24,
@@ -250,6 +240,21 @@ const styles = StyleSheet.create({
     },
     subscriptionButtonBottomView: {
         marginTop: 24
+    },
+    goPremiumContainer: {
+        backgroundColor: '#FFFFFF',
+        borderColor: '#E2E2E2',
+        borderWidth: 1,
+        borderRadius: 8,
+        marginBottom: 32,
+        paddingVertical: 24,
+        paddingVertical: 16
+    },
+    goPremiumTextContainer: {
+        flexDirection: 'row',
+        justifyContent: 'space-around',
+        alignItems: 'center',
+        marginBottom: 24
     },
     goPremium: {
         fontFamily: 'Poppins-Bold',
@@ -282,16 +287,16 @@ const styles = StyleSheet.create({
         color: '#B4B3B6'
     },
     legalDescription: {
-        marginVertical: 24,
+        marginVertical: 32,
         fontFamily: 'Poppins',
         fontSize: 12,
         color: '#3E3750',
         textAlign: 'center'
     },
     buttonsContainer: {
-        flex: 1,
         flexDirection: 'row',
         marginVertical: 16,
+        minHeight: 88,
         alignItems: 'flex-end',
         justifyContent: 'center'
     },

@@ -131,7 +131,7 @@ export default {
     workoutPlanReady: {
         title: 'Success!',
         description1: 'Your fitness program is ready!',
-        description2: '%{days}-days Plan',
+        description2: '%{days}-day Plan',
         description3: 'to Get In Shape',
         getYourPlan: 'Get your plan'
     },
@@ -152,6 +152,7 @@ export default {
         },
         fullDescription: 'Unlock your complete FITNETE workout experience with over 100 workouts for women and men',
         goPremium: 'GO PREMIUM',
+        getTheFullExperience: 'Get The Full\nExperience',
         workoutsPerWeek: 'workouts per week',
         workoutsToAchieveGoal: 'workouts until you achieve your goal',
         errorUnknowMessage: 'Oops, something went wrong'
