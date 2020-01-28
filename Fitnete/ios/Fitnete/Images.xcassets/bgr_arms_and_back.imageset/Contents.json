@@ -6,12 +6,12 @@
     },
     {
       "idiom" : "universal",
-      "filename" : "bg_arms-and-back@2x.png",
+      "filename" : "bgr_arms_and_back.png",
       "scale" : "2x"
     },
     {
       "idiom" : "universal",
-      "filename" : "bg_arms-and-back@3x.png",
+      "filename" : "bgr_arms_and_back-1.png",
       "scale" : "3x"
     }
   ],
