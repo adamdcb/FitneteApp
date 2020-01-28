@@ -22,6 +22,7 @@ export default class PurchasePresenter {
         let duration = 0;
         let subscriptionsUi = [];
         let premium = false;
+        let workoutsPerWeek = 1;
         try {
             const user = await this.userDataSource.getUser();
             this.subscriptions = await this._getSubscriptions();
@@ -43,6 +44,7 @@ export default class PurchasePresenter {
                 .sort((a, b) => parseFloat(b.price) - parseFloat(a.price));
             this.selectedSubscription = this.subscriptions.find(s => s.id === (subscriptionsUi[0] || {}).id);
             duration = WorkoutDataManager.PROGRAM_SLICE[user.fitnessLevel].length * 7;
+            workoutsPerWeek = WorkoutDataManager.WORKOUTS_PER_WEEK[user.fitnessLevel];
             if (tryRestore) {
                 premium = await this._restorePurchasesIfPossible();
             } else {
@@ -56,7 +58,7 @@ export default class PurchasePresenter {
                     subscriptions: subscriptionsUi,
                     activeSubscriptionType: this._getSubscriptionType((this.selectedSubscription || {}).id),
                     workoutsTotal: duration,
-                    workoutsPerWeek: 4, // TODO
+                    workoutsPerWeek,
                     premium,
                     loading: false
                 });

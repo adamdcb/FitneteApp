@@ -21,10 +21,18 @@ const PROGRAM_SLICE = {
     3: [4, 5, 6, 7]
 }; // fitness level to week start/end index mapping -> FIXME: Should be moved to server side!
 
+const WORKOUTS_PER_WEEK = {
+    0: 2,
+    1: 3,
+    2: 5,
+    3: 6
+}; // fitness level to number of workouts per week mapping -> FIXME: Should be moved to server side!
+
 const subscriptions = new Set();
 
 export default {
     PROGRAM_SLICE,
+    WORKOUTS_PER_WEEK,
 
     async prepareWorkouts() {
         const userDataSource = new UserDataSource();
