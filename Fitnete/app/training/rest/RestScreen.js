@@ -134,7 +134,7 @@ const styles = StyleSheet.create({
     nextExercise: {
         fontFamily: 'Poppins',
         fontSize: 14,
-        color: '#BBBBBB'
+        color: '#B4B3B6'
     },
     nextExerciseDetailsContainer: {
         flex: 1,

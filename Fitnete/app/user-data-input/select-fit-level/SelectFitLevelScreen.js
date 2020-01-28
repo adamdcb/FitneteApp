@@ -166,14 +166,14 @@ const styles = StyleSheet.create({
         flex: 1,
         fontFamily: 'Poppins-Regular',
         fontSize: 14,
-        color: '#BBBBBB',
+        color: '#B4B3B6',
         textAlign: 'left'
     },
     stepTextRight: {
         flex: 1,
         fontFamily: 'Poppins-Regular',
         fontSize: 14,
-        color: '#BBBBBB',
+        color: '#B4B3B6',
         textAlign: 'right'
     },
     progressIndicator: {
