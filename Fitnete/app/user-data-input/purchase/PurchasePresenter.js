@@ -28,7 +28,8 @@ export default class PurchasePresenter {
             subscriptionsUi = this.subscriptions.map(subscription => {
                 const type = this._getSubscriptionType(subscription.id);
                 const noOfWeeks = this._getNumberOfWeeks(subscription.id);
-                const pricePerWeek = subscription.price / noOfWeeks;
+                const pricePerWeekRaw = subscription.price / noOfWeeks;
+                const pricePerWeek = Math.ceil((pricePerWeekRaw + Number.EPSILON) * 100) / 100;
                 return {
                     id: subscription.id,
                     type,
@@ -36,7 +37,7 @@ export default class PurchasePresenter {
                     title: `${I18n.t(`purchase.title.${type}`)}`.toUpperCase(),
                     description: `${I18n.t(`purchase.description.${type}`)}`,
                     priceText: noOfWeeks > 1 ? `${subscription.localizedPrice}/${I18n.t(`purchase.subscriptionPeriod.${type}`)}` : ' ',
-                    pricePerWeekText: `${subscription.currency} ${pricePerWeek.toFixed(2)}/${I18n.t('purchase.subscriptionPeriod.week')}`
+                    pricePerWeekText: `${subscription.currency} ${pricePerWeek}/${I18n.t('purchase.subscriptionPeriod.week')}`
                 }
             })
                 .sort((a, b) => parseFloat(b.price) - parseFloat(a.price));
