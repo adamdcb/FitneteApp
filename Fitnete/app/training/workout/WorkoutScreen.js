@@ -201,20 +201,20 @@ const styles = StyleSheet.create({
     stepTextLeft: {
         fontFamily: 'Poppins-Regular',
         fontSize: 14,
-        color: '#BBBBBB',
+        color: '#4F4C57',
         textAlign: 'left'
     },
     stepTextRight: {
         fontFamily: 'Poppins-Regular',
         fontSize: 14,
-        color: '#BBBBBB',
+        color: '#4F4C57',
         textAlign: 'right'
     },
     title: {
         marginVertical: 16,
         fontFamily: 'Poppins-SemiBold',
         fontSize: 15,
-        color: '#FFFFFF',
+        color: '#4F4C57',
         textAlign: 'center'
     },
     timeText: {
@@ -255,7 +255,7 @@ const styles = StyleSheet.create({
         marginTop: 24,
         fontFamily: 'Poppins-Regular',
         fontSize: 14,
-        color: '#BBBBBB',
+        color: '#B4B3B6',
         textAlign: 'center'
     },
     buttonContainer: {
