@@ -138,6 +138,7 @@ export default {
     purchase: {
         continue: 'Continue',
         continueForFree: 'Continue for free',
+        restore: 'Restore purchases',
         subscriptionPeriod: {
             week: 'week',
             year: 'year'
@@ -155,7 +156,9 @@ export default {
         getTheFullExperience: 'Get The Full\nExperience',
         workoutsPerWeek: 'workouts per week',
         workoutsToAchieveGoal: 'workouts until you achieve your goal',
-        errorUnknowMessage: 'Oops, something went wrong'
+        errorTitle: 'Oops',
+        errorUnknowMessage: 'Oops, something went wrong',
+        errorRestoreMessage: 'No subscriptions found'
     },
     noPlanPurchased: {
         description1: 'Not ready for the',

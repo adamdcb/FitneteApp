@@ -12,7 +12,11 @@ class ButtonText extends React.PureComponent {
                 disabled={disabled}
                 onPress={onPress}
             >
-                <Text style={[styles.link, textStyle]}>
+                <Text
+                    style={[styles.link, textStyle]}
+                    numberOfLines={1}
+                    ellipsizeMode="tail"
+                >
                     {title}
                 </Text>
                 {showArrow ?

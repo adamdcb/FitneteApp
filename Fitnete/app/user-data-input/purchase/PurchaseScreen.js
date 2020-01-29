@@ -24,14 +24,14 @@ class PurchaseScreen extends React.Component {
         }
         this.navigationParams = this.props.navigation.state.params || {};
         this.usesModalBehaviour = !!this.navigationParams.useModalBehaviour;
-        this.tryRestore = !!this.navigationParams.tryRestore;
         this.presenter = new PurchasePresenter(this);
         this.continue = this.continue.bind(this);
         this.continueForFree = this.continueForFree.bind(this);
+        this.restore = this.restore.bind(this);
     }
 
     componentDidMount() {
-        this.presenter.loadData(this.tryRestore);
+        this.presenter.loadData();
     }
 
     componentWillUnmount() {
@@ -56,6 +56,11 @@ class PurchaseScreen extends React.Component {
         } else {
             push(Route.NoPlanPurchased);
         }
+    }
+
+    restore() {
+        this.setState({ paymentLoading: true });
+        this.presenter.restoreSubscription();
     }
 
     onSubscriptionSuccess() {
@@ -102,12 +107,20 @@ class PurchaseScreen extends React.Component {
                         onPress={this.continue}
                     />
                 </View>
-                <ButtonText
-                    style={styles.continueButton}
-                    title={I18n.t('purchase.continueForFree')}
-                    showArrow={false}
-                    onPress={this.continueForFree}
-                />
+                <View style={styles.continueRestoreContainer}>
+                    <ButtonText
+                        style={styles.continueForFree}
+                        title={I18n.t('purchase.continueForFree')}
+                        showArrow={false}
+                        onPress={this.continueForFree}
+                    />
+                    <ButtonText
+                        style={styles.restore}
+                        title={I18n.t('purchase.restore')}
+                        showArrow={false}
+                        onPress={this.restore}
+                    />
+                </View>
             </View>
         );
     }
@@ -300,16 +313,23 @@ const styles = StyleSheet.create({
         alignItems: 'flex-end',
         justifyContent: 'center'
     },
-    continueButton: {
-        height: 40,
-        marginTop: 8,
-        justifyContent: 'center'
-    },
     goPremiumButtonContainer: {
         flexDirection: 'row'
     },
     goPremiumButton: {
         flex: 1
+    },
+    continueRestoreContainer: {
+        flexDirection: 'row',
+        height: 40,
+        marginTop: 8,
+        justifyContent: 'space-between'
+    },
+    continueForFree: {
+        marginRight: 12
+    },
+    restore: {
+        marginLeft: 12
     }
 });
 

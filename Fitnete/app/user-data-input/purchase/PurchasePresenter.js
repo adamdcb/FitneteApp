@@ -18,7 +18,7 @@ export default class PurchasePresenter {
         IAPService.subscribe(this);
     }
 
-    async loadData(tryRestore) {
+    async loadData() {
         let duration = 0;
         let subscriptionsUi = [];
         let premium = false;
@@ -45,11 +45,7 @@ export default class PurchasePresenter {
             this.selectedSubscription = this.subscriptions.find(s => s.id === (subscriptionsUi[0] || {}).id);
             duration = WorkoutDataManager.PROGRAM_SLICE[user.fitnessLevel].length * 7;
             workoutsPerWeek = WorkoutDataManager.WORKOUTS_PER_WEEK[user.fitnessLevel];
-            if (tryRestore) {
-                premium = await this._restorePurchasesIfPossible();
-            } else {
-                await WorkoutDataManager.prepareWorkouts();
-            }
+            await WorkoutDataManager.prepareWorkouts();
         } catch (error) {
             console.log(error);
         } finally {
@@ -79,10 +75,24 @@ export default class PurchasePresenter {
         if (!subscriptions.find(s => s.productId === this.selectedSubscription.id)) {
             IAPService.requestSubscription(this.selectedSubscription.id);
         } else {
-            const premium = await this._restorePurchasesIfPossible(subscriptions);
-            if (premium && this.view) {
+            await this._saveSubscription(this.selectedSubscription.id);
+            if (this.view) {
                 this.view.onSubscriptionSuccess();
             }
+        }
+    }
+
+    async restoreSubscription() {
+        const premium = await this._restorePurchasesIfPossible();
+        if (!this.view) {
+            return;
+        }
+        if (premium) {
+            this.view.onSubscriptionSuccess();
+        } else {
+            const errorTitle = I18n.t('purchase.errorTitle');
+            const errorMessage = I18n.t('purchase.errorRestoreMessage');
+            this.view.onSubscriptionError(errorTitle, errorMessage);
         }
     }
 
@@ -117,24 +127,34 @@ export default class PurchasePresenter {
         this.view = null;
     }
 
-    async _restorePurchasesIfPossible(purchases) {
+    async _restorePurchasesIfPossible() {
         let premium = false;
         try {
-            const subscriptions = purchases || await IAPService.getAvailableSubscriptions();
+            const subscriptions = await IAPService.getAvailableSubscriptions();
             premium = subscriptions.length > 0;
             let subscriptionId = null;
             if (premium) {
                 const lastIndex = subscriptions.length - 1; // TODO: Is this right?
                 subscriptionId = subscriptions[lastIndex].productId;
             }
-            await this.userDataSource.setUser({
-                subscriptionId
-            });
-            await WorkoutDataManager.prepareWorkouts();
+            await this._saveSubscription(subscriptionId);
         } catch (error) {
             console.log('_restorePurchasesIfPossible()', error);
         } finally {
             return premium;
+        }
+    }
+
+    async _saveSubscription(subscriptionId) {
+        try {
+            await this.userDataSource.setUser({
+                subscriptionId
+            });
+            await WorkoutDataManager.prepareWorkouts();
+            return true;
+        } catch (error) {
+            console.log('_saveSubscription()', error);
+            return false;
         }
     }
 
