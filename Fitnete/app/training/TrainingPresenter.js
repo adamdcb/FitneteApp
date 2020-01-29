@@ -11,7 +11,7 @@ const DIFFICULTY = {
 };
 
 const DEFAULT_REST_TIME = 3; // sec.
-const REP_TIME_COEFF = 1.75;
+const REP_TIME_COEFF = 2.5;
 
 const PROGRAM_BACKGROUND = {
     legs: 'bgr_legs',
