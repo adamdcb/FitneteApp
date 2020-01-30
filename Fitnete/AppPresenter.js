@@ -18,8 +18,12 @@ export default class AppPresenter {
 
     async loadInitialStoryboard() {
         try {
-            this.view.setInitialStoryboard(InitialStoryboard.AppIntro);
-            // TODO: implement logic here!
+            const user = await this.dataSource.getUser();
+            if (user && user.subscriptionId) {
+                this.view.setInitialStoryboard(InitialStoryboard.MainApp);
+            } else {
+                this.view.setInitialStoryboard(InitialStoryboard.AppIntro);
+            }
         } catch (e) {
             this.view.setInitialStoryboard(InitialStoryboard.AppIntro);
         }
