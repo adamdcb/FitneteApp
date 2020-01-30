@@ -7,7 +7,10 @@ const TrainingExercise = {
         reps: 'int',
         time: 'int',
         needsGear: 'bool?',
-        completed: 'bool',
+        completed: {
+            type: 'bool',
+            default: false
+        },
         days: {
             type: 'linkingObjects',
             objectType: 'TrainingDay',

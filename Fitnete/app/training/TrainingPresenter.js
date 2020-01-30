@@ -3,6 +3,7 @@ import Utils from '../utils/utils/Utils.js';
 import TrainingDataSource from '../data/TrainingDataSource';
 import UserDataSource from '../data/UserDataSource';
 import WorkoutDataManager from '../data/WorkoutDataManager';
+import SubscriptionManager from '../utils/iap/SubscriptionManager';
 
 const DIFFICULTY = {
     0: 'easy',
@@ -45,11 +46,55 @@ export default class TrainingPresenter {
     }
 
     async loadData() {
-        const programs = await this.dataSource.getPrograms();
         const user = await this.userDataSource.getUser();
+        const isSubscribed = !!user.subscriptionId;
+        await this._loadPrograms();
+        const premium = await SubscriptionManager.checkSubscriptionStatus();
+        if (isSubscribed !== premium) {
+            this._loadPrograms();
+        }
+    }
+
+    async loadProgress(programId) {
+        const progress = await this.dataSource.getProgress(programId);
+        this.uiData = this.uiData.map((program) => {
+            if (program.id !== programId) {
+                return program;
+            } else {
+                return {
+                    ...program,
+                    progress,
+                    progressText: `${progress} / ${program.duration}`,
+                    workouts: program.workouts.map((workout, index) => ({
+                        ...workout,
+                        locked: index > progress
+                    }))
+                };
+            }
+        });
+        if (this.view) {
+            this.view.setData(this.uiData);
+        }
+    }
+
+    unmountView() {
+        this.view = null;
+        WorkoutDataManager.unsubscribe(this);
+    }
+
+    // WorkoutDataManager observer function
+    onWorkoutDataChange() {
+        this.loadData();
+    }
+
+    async _loadPrograms() {
+        const user = await this.userDataSource.getUser();
+        const programs = await this.dataSource.getPrograms();
+        const premium = !!user.subscriptionId;
         this.uiData = programs.map((program) => {
-            const duration = program.weeks.length * 7;
             const programBackground = PROGRAM_BACKGROUND[program.type];
+            const weeks = premium ? program.weeks : [program.weeks[0]];
+            const duration = weeks.length * 7;
             return {
                 id: program.id,
                 title: I18n.t(`trainingPrograms.${program.type}Name`),
@@ -62,7 +107,7 @@ export default class TrainingPresenter {
                 progressTitle: I18n.t('training.progress'),
                 progressText: `${program.progress} / ${duration}`,
                 newText: program.progress === 0 ? I18n.t('training.new').toUpperCase() : '',
-                workouts: program.weeks
+                workouts: weeks
                     .reduce((acc, week, wIndex) => {
                         return acc.concat(week.days.map((workout, dIndex) => ({
                             title: `${I18n.t('training.Day')} ${wIndex * 7 + dIndex + 1}`,
@@ -102,38 +147,6 @@ export default class TrainingPresenter {
         if (this.view) {
             this.view.setData(this.uiData);
         }
-    }
-
-    async loadProgress(programId) {
-        const progress = await this.dataSource.getProgress(programId);
-        this.uiData = this.uiData.map((program) => {
-            if (program.id !== programId) {
-                return program;
-            } else {
-                return {
-                    ...program,
-                    progress,
-                    progressText: `${progress} / ${program.duration}`,
-                    workouts: program.workouts.map((workout, index) => ({
-                        ...workout,
-                        locked: index > progress
-                    }))
-                };
-            }
-        });
-        if (this.view) {
-            this.view.setData(this.uiData);
-        }
-    }
-
-    unmountView() {
-        this.view = null;
-        WorkoutDataManager.unsubscribe(this);
-    }
-
-    // WorkoutDataManager observer function
-    onWorkoutDataChange() {
-        this.loadData();
     }
 
     _getExerciseDuration(exercise) {

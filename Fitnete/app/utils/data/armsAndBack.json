@@ -13,36 +13,31 @@
                             "id": "programArmsAndBackWeek0Day0ExerciseCrabWalk",
                             "name": "crabWalk",
                             "reps": 5,
-                            "time": -1,
-                            "completed": false
+                            "time": -1
                         },
                         {
                             "id": "programArmsAndBackWeek0Day0ExerciseSpineStretch",
                             "name": "spineStretch",
                             "reps": 5,
-                            "time": -1,
-                            "completed": false
+                            "time": -1
                         },
                         {
                             "id": "programArmsAndBackWeek0Day0ExerciseLyingKneeHug",
                             "name": "lyingKneeHug",
                             "reps": 5,
-                            "time": -1,
-                            "completed": false
+                            "time": -1
                         },
                         {
                             "id": "programArmsAndBackWeek0Day0ExerciseWoodpecker",
                             "name": "woodpecker",
                             "reps": 5,
-                            "time": -1,
-                            "completed": false
+                            "time": -1
                         },
                         {
                             "id": "programArmsAndBackWeek0Day0ExerciseRollingOver",
                             "name": "rollingOver",
                             "reps": 5,
-                            "time": -1,
-                            "completed": false
+                            "time": -1
                         }
                     ]
                 },
@@ -54,43 +49,37 @@
                             "id": "programArmsAndBackWeek0Day1ExerciseRunnersCrunch",
                             "name": "runnersCrunch",
                             "reps": 5,
-                            "time": -1,
-                            "completed": false
+                            "time": -1
                         },
                         {
                             "id": "programArmsAndBackWeek0Day1ExerciseTheFounder",
                             "name": "theFounder",
                             "reps": 5,
-                            "time": -1,
-                            "completed": false
+                            "time": -1
                         },
                         {
                             "id": "programArmsAndBackWeek0Day1ExerciseMcGillCurlUpLeft",
                             "name": "mcGillCurlUpLeft",
                             "reps": 5,
-                            "time": -1,
-                            "completed": false
+                            "time": -1
                         },
                         {
                             "id": "programArmsAndBackWeek0Day1ExerciseMcGillCurlUpRight",
                             "name": "mcGillCurlUpRight",
                             "reps": 5,
-                            "time": -1,
-                            "completed": false
+                            "time": -1
                         },
                         {
                             "id": "programArmsAndBackWeek0Day1ExerciseBirdDogLeft",
                             "name": "birdDogLeft",
                             "reps": 5,
-                            "time": -1,
-                            "completed": false
+                            "time": -1
                         },
                         {
                             "id": "programArmsAndBackWeek0Day1ExerciseBirdDogRight",
                             "name": "birdDogRight",
                             "reps": 5,
-                            "time": -1,
-                            "completed": false
+                            "time": -1
                         }
                     ]
                 },
@@ -102,36 +91,31 @@
                             "id": "programArmsAndBackWeek0Day2ExerciseCrabWalk",
                             "name": "crabWalk",
                             "reps": 5,
-                            "time": -1,
-                            "completed": false
+                            "time": -1
                         },
                         {
                             "id": "programArmsAndBackWeek0Day2ExerciseSpineStretch",
                             "name": "spineStretch",
                             "reps": 5,
-                            "time": -1,
-                            "completed": false
+                            "time": -1
                         },
                         {
                             "id": "programArmsAndBackWeek0Day2ExerciseLyingKneeHug",
                             "name": "lyingKneeHug",
                             "reps": 5,
-                            "time": -1,
-                            "completed": false
+                            "time": -1
                         },
                         {
                             "id": "programArmsAndBackWeek0Day2ExerciseWoodpecker",
                             "name": "woodpecker",
                             "reps": 5,
-                            "time": -1,
-                            "completed": false
+                            "time": -1
                         },
                         {
                             "id": "programArmsAndBackWeek0Day2ExerciseRollingOver",
                             "name": "rollingOver",
                             "reps": 5,
-                            "time": -1,
-                            "completed": false
+                            "time": -1
                         }
                     ]
                 },
@@ -143,43 +127,37 @@
                             "id": "programArmsAndBackWeek0Day3ExerciseRunnersCrunch",
                             "name": "runnersCrunch",
                             "reps": 5,
-                            "time": -1,
-                            "completed": false
+                            "time": -1
                         },
                         {
                             "id": "programArmsAndBackWeek0Day3ExerciseTheFounder",
                             "name": "theFounder",
                             "reps": 5,
-                            "time": -1,
-                            "completed": false
+                            "time": -1
                         },
                         {
                             "id": "programArmsAndBackWeek0Day3ExerciseMcGillCurlUpLeft",
                             "name": "mcGillCurlUpLeft",
                             "reps": 5,
-                            "time": -1,
-                            "completed": false
+                            "time": -1
                         },
                         {
                             "id": "programArmsAndBackWeek0Day3ExerciseMcGillCurlUpRight",
                             "name": "mcGillCurlUpRight",
                             "reps": 5,
-                            "time": -1,
-                            "completed": false
+                            "time": -1
                         },
                         {
                             "id": "programArmsAndBackWeek0Day1ExerciseBirdDogLeft",
                             "name": "birdDogLeft",
                             "reps": 5,
-                            "time": -1,
-                            "completed": false
+                            "time": -1
                         },
                         {
                             "id": "programArmsAndBackWeek0Day1ExerciseBirdDogRight",
                             "name": "birdDogRight",
                             "reps": 5,
-                            "time": -1,
-                            "completed": false
+                            "time": -1
                         }
                     ]
                 },
@@ -191,36 +169,31 @@
                             "id": "programArmsAndBackWeek0Day4ExerciseCrabWalk",
                             "name": "crabWalk",
                             "reps": 5,
-                            "time": -1,
-                            "completed": false
+                            "time": -1
                         },
                         {
                             "id": "programArmsAndBackWeek0Day4ExerciseSpineStretch",
                             "name": "spineStretch",
                             "reps": 5,
-                            "time": -1,
-                            "completed": false
+                            "time": -1
                         },
                         {
                             "id": "programArmsAndBackWeek0Day4ExerciseLyingKneeHug",
                             "name": "lyingKneeHug",
                             "reps": 5,
-                            "time": -1,
-                            "completed": false
+                            "time": -1
                         },
                         {
                             "id": "programArmsAndBackWeek0Day4ExerciseWoodpecker",
                             "name": "woodpecker",
                             "reps": 5,
-                            "time": -1,
-                            "completed": false
+                            "time": -1
                         },
                         {
                             "id": "programArmsAndBackWeek0Day4ExerciseRollingOver",
                             "name": "rollingOver",
                             "reps": 5,
-                            "time": -1,
-                            "completed": false
+                            "time": -1
                         }
                     ]
                 },
@@ -232,43 +205,37 @@
                             "id": "programArmsAndBackWeek0Day5ExerciseRunnersCrunch",
                             "name": "runnersCrunch",
                             "reps": 5,
-                            "time": -1,
-                            "completed": false
+                            "time": -1
                         },
                         {
                             "id": "programArmsAndBackWeek0Day5ExerciseTheFounder",
                             "name": "theFounder",
                             "reps": 5,
-                            "time": -1,
-                            "completed": false
+                            "time": -1
                         },
                         {
                             "id": "programArmsAndBackWeek0Day3ExerciseMcGillCurlUpLeft",
                             "name": "mcGillCurlUpLeft",
                             "reps": 5,
-                            "time": -1,
-                            "completed": false
+                            "time": -1
                         },
                         {
                             "id": "programArmsAndBackWeek0Day3ExerciseMcGillCurlUpRight",
                             "name": "mcGillCurlUpRight",
                             "reps": 5,
-                            "time": -1,
-                            "completed": false
+                            "time": -1
                         },
                         {
                             "id": "programArmsAndBackWeek0Day1ExerciseBirdDogLeft",
                             "name": "birdDogLeft",
                             "reps": 5,
-                            "time": -1,
-                            "completed": false
+                            "time": -1
                         },
                         {
                             "id": "programArmsAndBackWeek0Day1ExerciseBirdDogRight",
                             "name": "birdDogRight",
                             "reps": 5,
-                            "time": -1,
-                            "completed": false
+                            "time": -1
                         }
                     ]
                 },
@@ -280,36 +247,31 @@
                             "id": "programArmsAndBackWeek0Day6ExerciseCrabWalk",
                             "name": "crabWalk",
                             "reps": 5,
-                            "time": -1,
-                            "completed": false
+                            "time": -1
                         },
                         {
                             "id": "programArmsAndBackWeek0Day6ExerciseSpineStretch",
                             "name": "spineStretch",
                             "reps": 5,
-                            "time": -1,
-                            "completed": false
+                            "time": -1
                         },
                         {
                             "id": "programArmsAndBackWeek0Day6ExerciseLyingKneeHug",
                             "name": "lyingKneeHug",
                             "reps": 5,
-                            "time": -1,
-                            "completed": false
+                            "time": -1
                         },
                         {
                             "id": "programArmsAndBackWeek0Day6ExerciseWoodpecker",
                             "name": "woodpecker",
                             "reps": 5,
-                            "time": -1,
-                            "completed": false
+                            "time": -1
                         },
                         {
                             "id": "programArmsAndBackWeek0Day6ExerciseRollingOver",
                             "name": "rollingOver",
                             "reps": 5,
-                            "time": -1,
-                            "completed": false
+                            "time": -1
                         }
                     ]
                 }
@@ -326,43 +288,37 @@
                             "id": "programArmsAndBackWeek1Day0ExerciseRunnersCrunch",
                             "name": "runnersCrunch",
                             "reps": 7,
-                            "time": -1,
-                            "completed": false
+                            "time": -1
                         },
                         {
                             "id": "programArmsAndBackWeek1Day0ExerciseTheFounder",
                             "name": "theFounder",
                             "reps": 7,
-                            "time": -1,
-                            "completed": false
+                            "time": -1
                         },
                         {
                             "id": "programArmsAndBackWeek0Day3ExerciseMcGillCurlUpLeft",
                             "name": "mcGillCurlUpLeft",
                             "reps": 7,
-                            "time": -1,
-                            "completed": false
+                            "time": -1
                         },
                         {
                             "id": "programArmsAndBackWeek0Day3ExerciseMcGillCurlUpRight",
                             "name": "mcGillCurlUpRight",
                             "reps": 7,
-                            "time": -1,
-                            "completed": false
+                            "time": -1
                         },
                         {
                             "id": "programArmsAndBackWeek0Day1ExerciseBirdDogLeft",
                             "name": "birdDogLeft",
                             "reps": 7,
-                            "time": -1,
-                            "completed": false
+                            "time": -1
                         },
                         {
                             "id": "programArmsAndBackWeek0Day1ExerciseBirdDogRight",
                             "name": "birdDogRight",
                             "reps": 7,
-                            "time": -1,
-                            "completed": false
+                            "time": -1
                         }
                     ]
                 },
@@ -374,36 +330,31 @@
                             "id": "programArmsAndBackWeek1Day1ExerciseCrabWalk",
                             "name": "crabWalk",
                             "reps": 7,
-                            "time": -1,
-                            "completed": false
+                            "time": -1
                         },
                         {
                             "id": "programArmsAndBackWeek1Day1ExerciseSpineStretch",
                             "name": "spineStretch",
                             "reps": 7,
-                            "time": -1,
-                            "completed": false
+                            "time": -1
                         },
                         {
                             "id": "programArmsAndBackWeek1Day1ExerciseLyingKneeHug",
                             "name": "lyingKneeHug",
                             "reps": 7,
-                            "time": -1,
-                            "completed": false
+                            "time": -1
                         },
                         {
                             "id": "programArmsAndBackWeek1Day1ExerciseWoodpecker",
                             "name": "woodpecker",
                             "reps": 7,
-                            "time": -1,
-                            "completed": false
+                            "time": -1
                         },
                         {
                             "id": "programArmsAndBackWeek1Day1ExerciseRollingOver",
                             "name": "rollingOver",
                             "reps": 7,
-                            "time": -1,
-                            "completed": false
+                            "time": -1
                         }
                     ]
                 },
@@ -415,43 +366,37 @@
                             "id": "programArmsAndBackWeek1Day2ExerciseRunnersCrunch",
                             "name": "runnersCrunch",
                             "reps": 7,
-                            "time": -1,
-                            "completed": false
+                            "time": -1
                         },
                         {
                             "id": "programArmsAndBackWeek1Day2ExerciseTheFounder",
                             "name": "theFounder",
                             "reps": 7,
-                            "time": -1,
-                            "completed": false
+                            "time": -1
                         },
                         {
                             "id": "programArmsAndBackWeek0Day3ExerciseMcGillCurlUpLeft",
                             "name": "mcGillCurlUpLeft",
                             "reps": 7,
-                            "time": -1,
-                            "completed": false
+                            "time": -1
                         },
                         {
                             "id": "programArmsAndBackWeek0Day3ExerciseMcGillCurlUpRight",
                             "name": "mcGillCurlUpRight",
                             "reps": 7,
-                            "time": -1,
-                            "completed": false
+                            "time": -1
                         },
                         {
                             "id": "programArmsAndBackWeek0Day1ExerciseBirdDogLeft",
                             "name": "birdDogLeft",
                             "reps": 7,
-                            "time": -1,
-                            "completed": false
+                            "time": -1
                         },
                         {
                             "id": "programArmsAndBackWeek0Day1ExerciseBirdDogRight",
                             "name": "birdDogRight",
                             "reps": 7,
-                            "time": -1,
-                            "completed": false
+                            "time": -1
                         }
                     ]
                 },
@@ -463,36 +408,31 @@
                             "id": "programArmsAndBackWeek1Day3ExerciseCrabWalk",
                             "name": "crabWalk",
                             "reps": 7,
-                            "time": -1,
-                            "completed": false
+                            "time": -1
                         },
                         {
                             "id": "programArmsAndBackWeek1Day3ExerciseSpineStretch",
                             "name": "spineStretch",
                             "reps": 7,
-                            "time": -1,
-                            "completed": false
+                            "time": -1
                         },
                         {
                             "id": "programArmsAndBackWeek1Day3ExerciseLyingKneeHug",
                             "name": "lyingKneeHug",
                             "reps": 7,
-                            "time": -1,
-                            "completed": false
+                            "time": -1
                         },
                         {
                             "id": "programArmsAndBackWeek1Day3ExerciseWoodpecker",
                             "name": "woodpecker",
                             "reps": 7,
-                            "time": -1,
-                            "completed": false
+                            "time": -1
                         },
                         {
                             "id": "programArmsAndBackWeek1Day3ExerciseRollingOver",
                             "name": "rollingOver",
                             "reps": 7,
-                            "time": -1,
-                            "completed": false
+                            "time": -1
                         }
                     ]
                 },
@@ -504,43 +444,37 @@
                             "id": "programArmsAndBackWeek1Day4ExerciseRunnersCrunch",
                             "name": "runnersCrunch",
                             "reps": 7,
-                            "time": -1,
-                            "completed": false
+                            "time": -1
                         },
                         {
                             "id": "programArmsAndBackWeek1Day4ExerciseTheFounder",
                             "name": "theFounder",
                             "reps": 7,
-                            "time": -1,
-                            "completed": false
+                            "time": -1
                         },
                         {
                             "id": "programArmsAndBackWeek0Day3ExerciseMcGillCurlUpLeft",
                             "name": "mcGillCurlUpLeft",
                             "reps": 7,
-                            "time": -1,
-                            "completed": false
+                            "time": -1
                         },
                         {
                             "id": "programArmsAndBackWeek0Day3ExerciseMcGillCurlUpRight",
                             "name": "mcGillCurlUpRight",
                             "reps": 7,
-                            "time": -1,
-                            "completed": false
+                            "time": -1
                         },
                         {
                             "id": "programArmsAndBackWeek0Day1ExerciseBirdDogLeft",
                             "name": "birdDogLeft",
                             "reps": 7,
-                            "time": -1,
-                            "completed": false
+                            "time": -1
                         },
                         {
                             "id": "programArmsAndBackWeek0Day1ExerciseBirdDogRight",
                             "name": "birdDogRight",
                             "reps": 7,
-                            "time": -1,
-                            "completed": false
+                            "time": -1
                         }
                     ]
                 },
@@ -552,36 +486,31 @@
                             "id": "programArmsAndBackWeek1Day5ExerciseCrabWalk",
                             "name": "crabWalk",
                             "reps": 7,
-                            "time": -1,
-                            "completed": false
+                            "time": -1
                         },
                         {
                             "id": "programArmsAndBackWeek1Day5ExerciseSpineStretch",
                             "name": "spineStretch",
                             "reps": 7,
-                            "time": -1,
-                            "completed": false
+                            "time": -1
                         },
                         {
                             "id": "programArmsAndBackWeek1Day5ExerciseLyingKneeHug",
                             "name": "lyingKneeHug",
                             "reps": 7,
-                            "time": -1,
-                            "completed": false
+                            "time": -1
                         },
                         {
                             "id": "programArmsAndBackWeek1Day5ExerciseWoodpecker",
                             "name": "woodpecker",
                             "reps": 7,
-                            "time": -1,
-                            "completed": false
+                            "time": -1
                         },
                         {
                             "id": "programArmsAndBackWeek1Day5ExerciseRollingOver",
                             "name": "rollingOver",
                             "reps": 7,
-                            "time": -1,
-                            "completed": false
+                            "time": -1
                         }
                     ]
                 },
@@ -593,43 +522,37 @@
                             "id": "programArmsAndBackWeek1Day6ExerciseRunnersCrunch",
                             "name": "runnersCrunch",
                             "reps": 7,
-                            "time": -1,
-                            "completed": false
+                            "time": -1
                         },
                         {
                             "id": "programArmsAndBackWeek1Day6ExerciseTheFounder",
                             "name": "theFounder",
                             "reps": 7,
-                            "time": -1,
-                            "completed": false
+                            "time": -1
                         },
                         {
                             "id": "programArmsAndBackWeek0Day3ExerciseMcGillCurlUpLeft",
                             "name": "mcGillCurlUpLeft",
                             "reps": 7,
-                            "time": -1,
-                            "completed": false
+                            "time": -1
                         },
                         {
                             "id": "programArmsAndBackWeek0Day3ExerciseMcGillCurlUpRight",
                             "name": "mcGillCurlUpRight",
                             "reps": 7,
-                            "time": -1,
-                            "completed": false
+                            "time": -1
                         },
                         {
                             "id": "programArmsAndBackWeek0Day1ExerciseBirdDogLeft",
                             "name": "birdDogLeft",
                             "reps": 7,
-                            "time": -1,
-                            "completed": false
+                            "time": -1
                         },
                         {
                             "id": "programArmsAndBackWeek0Day1ExerciseBirdDogRight",
                             "name": "birdDogRight",
                             "reps": 7,
-                            "time": -1,
-                            "completed": false
+                            "time": -1
                         }
                     ]
                 }
@@ -646,36 +569,31 @@
                             "id": "programArmsAndBackWeek2Day0ExerciseCrabWalk",
                             "name": "crabWalk",
                             "reps": 7,
-                            "time": -1,
-                            "completed": false
+                            "time": -1
                         },
                         {
                             "id": "programArmsAndBackWeek2Day0ExerciseSpineStretch",
                             "name": "spineStretch",
                             "reps": 7,
-                            "time": -1,
-                            "completed": false
+                            "time": -1
                         },
                         {
                             "id": "programArmsAndBackWeek2Day0ExerciseLyingKneeHug",
                             "name": "lyingKneeHug",
                             "reps": 7,
-                            "time": -1,
-                            "completed": false
+                            "time": -1
                         },
                         {
                             "id": "programArmsAndBackWeek2Day0ExerciseWoodpecker",
                             "name": "woodpecker",
                             "reps": 7,
-                            "time": -1,
-                            "completed": false
+                            "time": -1
                         },
                         {
                             "id": "programArmsAndBackWeek2Day0ExerciseRollingOver",
                             "name": "rollingOver",
                             "reps": 7,
-                            "time": -1,
-                            "completed": false
+                            "time": -1
                         }
                     ]
                 },
@@ -687,43 +605,37 @@
                             "id": "programArmsAndBackWeek2Day1ExerciseRunnersCrunch",
                             "name": "runnersCrunch",
                             "reps": 8,
-                            "time": -1,
-                            "completed": false
+                            "time": -1
                         },
                         {
                             "id": "programArmsAndBackWeek2Day1ExerciseTheFounder",
                             "name": "theFounder",
                             "reps": 8,
-                            "time": -1,
-                            "completed": false
+                            "time": -1
                         },
                         {
                             "id": "programArmsAndBackWeek0Day3ExerciseMcGillCurlUpLeft",
                             "name": "mcGillCurlUpLeft",
                             "reps": 8,
-                            "time": -1,
-                            "completed": false
+                            "time": -1
                         },
                         {
                             "id": "programArmsAndBackWeek0Day3ExerciseMcGillCurlUpRight",
                             "name": "mcGillCurlUpRight",
                             "reps": 8,
-                            "time": -1,
-                            "completed": false
+                            "time": -1
                         },
                         {
                             "id": "programArmsAndBackWeek0Day1ExerciseBirdDogLeft",
                             "name": "birdDogLeft",
                             "reps": 8,
-                            "time": -1,
-                            "completed": false
+                            "time": -1
                         },
                         {
                             "id": "programArmsAndBackWeek0Day1ExerciseBirdDogRight",
                             "name": "birdDogRight",
                             "reps": 8,
-                            "time": -1,
-                            "completed": false
+                            "time": -1
                         }
                     ]
                 },
@@ -735,36 +647,31 @@
                             "id": "programArmsAndBackWeek2Day2ExerciseCrabWalk",
                             "name": "crabWalk",
                             "reps": 8,
-                            "time": -1,
-                            "completed": false
+                            "time": -1
                         },
                         {
                             "id": "programArmsAndBackWeek2Day2ExerciseSpineStretch",
                             "name": "spineStretch",
                             "reps": 8,
-                            "time": -1,
-                            "completed": false
+                            "time": -1
                         },
                         {
                             "id": "programArmsAndBackWeek2Day2ExerciseLyingKneeHug",
                             "name": "lyingKneeHug",
                             "reps": 8,
-                            "time": -1,
-                            "completed": false
+                            "time": -1
                         },
                         {
                             "id": "programArmsAndBackWeek2Day2ExerciseWoodpecker",
                             "name": "woodpecker",
                             "reps": 8,
-                            "time": -1,
-                            "completed": false
+                            "time": -1
                         },
                         {
                             "id": "programArmsAndBackWeek2Day2ExerciseRollingOver",
                             "name": "rollingOver",
                             "reps": 8,
-                            "time": -1,
-                            "completed": false
+                            "time": -1
                         }
                     ]
                 },
@@ -776,43 +683,37 @@
                             "id": "programArmsAndBackWeek2Day3ExerciseRunnersCrunch",
                             "name": "runnersCrunch",
                             "reps": 8,
-                            "time": -1,
-                            "completed": false
+                            "time": -1
                         },
                         {
                             "id": "programArmsAndBackWeek2Day3ExerciseTheFounder",
                             "name": "theFounder",
                             "reps": 8,
-                            "time": -1,
-                            "completed": false
+                            "time": -1
                         },
                         {
                             "id": "programArmsAndBackWeek0Day3ExerciseMcGillCurlUpLeft",
                             "name": "mcGillCurlUpLeft",
                             "reps": 8,
-                            "time": -1,
-                            "completed": false
+                            "time": -1
                         },
                         {
                             "id": "programArmsAndBackWeek0Day3ExerciseMcGillCurlUpRight",
                             "name": "mcGillCurlUpRight",
                             "reps": 8,
-                            "time": -1,
-                            "completed": false
+                            "time": -1
                         },
                         {
                             "id": "programArmsAndBackWeek0Day1ExerciseBirdDogLeft",
                             "name": "birdDogLeft",
                             "reps": 8,
-                            "time": -1,
-                            "completed": false
+                            "time": -1
                         },
                         {
                             "id": "programArmsAndBackWeek0Day1ExerciseBirdDogRight",
                             "name": "birdDogRight",
                             "reps": 8,
-                            "time": -1,
-                            "completed": false
+                            "time": -1
                         }
                     ]
                 },
@@ -824,36 +725,31 @@
                             "id": "programArmsAndBackWeek2Day4ExerciseCrabWalk",
                             "name": "crabWalk",
                             "reps": 8,
-                            "time": -1,
-                            "completed": false
+                            "time": -1
                         },
                         {
                             "id": "programArmsAndBackWeek2Day4ExerciseSpineStretch",
                             "name": "spineStretch",
                             "reps": 8,
-                            "time": -1,
-                            "completed": false
+                            "time": -1
                         },
                         {
                             "id": "programArmsAndBackWeek2Day4ExerciseLyingKneeHug",
                             "name": "lyingKneeHug",
                             "reps": 8,
-                            "time": -1,
-                            "completed": false
+                            "time": -1
                         },
                         {
                             "id": "programArmsAndBackWeek2Day4ExerciseWoodpecker",
                             "name": "woodpecker",
                             "reps": 8,
-                            "time": -1,
-                            "completed": false
+                            "time": -1
                         },
                         {
                             "id": "programArmsAndBackWeek2Day4ExerciseRollingOver",
                             "name": "rollingOver",
                             "reps": 8,
-                            "time": -1,
-                            "completed": false
+                            "time": -1
                         }
                     ]
                 },
@@ -865,43 +761,37 @@
                             "id": "programArmsAndBackWeek2Day5ExerciseRunnersCrunch",
                             "name": "runnersCrunch",
                             "reps": 10,
-                            "time": -1,
-                            "completed": false
+                            "time": -1
                         },
                         {
                             "id": "programArmsAndBackWeek2Day5ExerciseTheFounder",
                             "name": "theFounder",
                             "reps": 10,
-                            "time": -1,
-                            "completed": false
+                            "time": -1
                         },
                         {
                             "id": "programArmsAndBackWeek0Day3ExerciseMcGillCurlUpLeft",
                             "name": "mcGillCurlUpLeft",
                             "reps": 10,
-                            "time": -1,
-                            "completed": false
+                            "time": -1
                         },
                         {
                             "id": "programArmsAndBackWeek0Day3ExerciseMcGillCurlUpRight",
                             "name": "mcGillCurlUpRight",
                             "reps": 10,
-                            "time": -1,
-                            "completed": false
+                            "time": -1
                         },
                         {
                             "id": "programArmsAndBackWeek0Day1ExerciseBirdDogLeft",
                             "name": "birdDogLeft",
                             "reps": 10,
-                            "time": -1,
-                            "completed": false
+                            "time": -1
                         },
                         {
                             "id": "programArmsAndBackWeek0Day1ExerciseBirdDogRight",
                             "name": "birdDogRight",
                             "reps": 10,
-                            "time": -1,
-                            "completed": false
+                            "time": -1
                         }
                     ]
                 },
@@ -913,36 +803,31 @@
                             "id": "programArmsAndBackWeek2Day6ExerciseCrabWalk",
                             "name": "crabWalk",
                             "reps": 10,
-                            "time": -1,
-                            "completed": false
+                            "time": -1
                         },
                         {
                             "id": "programArmsAndBackWeek2Day6ExerciseSpineStretch",
                             "name": "spineStretch",
                             "reps": 10,
-                            "time": -1,
-                            "completed": false
+                            "time": -1
                         },
                         {
                             "id": "programArmsAndBackWeek2Day6ExerciseLyingKneeHug",
                             "name": "lyingKneeHug",
                             "reps": 10,
-                            "time": -1,
-                            "completed": false
+                            "time": -1
                         },
                         {
                             "id": "programArmsAndBackWeek2Day6ExerciseWoodpecker",
                             "name": "woodpecker",
                             "reps": 10,
-                            "time": -1,
-                            "completed": false
+                            "time": -1
                         },
                         {
                             "id": "programArmsAndBackWeek2Day6ExerciseRollingOver",
                             "name": "rollingOver",
                             "reps": 10,
-                            "time": -1,
-                            "completed": false
+                            "time": -1
                         }
                     ]
                 }
@@ -959,36 +844,31 @@
                             "id": "programArmsAndBackWeek3Day0ExerciseCrabWalk",
                             "name": "crabWalk",
                             "reps": 10,
-                            "time": -1,
-                            "completed": false
+                            "time": -1
                         },
                         {
                             "id": "programArmsAndBackWeek3Day0ExerciseSpineStretch",
                             "name": "spineStretch",
                             "reps": 10,
-                            "time": -1,
-                            "completed": false
+                            "time": -1
                         },
                         {
                             "id": "programArmsAndBackWeek3Day0ExerciseLyingKneeHug",
                             "name": "lyingKneeHug",
                             "reps": 10,
-                            "time": -1,
-                            "completed": false
+                            "time": -1
                         },
                         {
                             "id": "programArmsAndBackWeek3Day0ExerciseWoodpecker",
                             "name": "woodpecker",
                             "reps": 10,
-                            "time": -1,
-                            "completed": false
+                            "time": -1
                         },
                         {
                             "id": "programArmsAndBackWeek3Day0ExerciseRollingOver",
                             "name": "rollingOver",
                             "reps": 10,
-                            "time": -1,
-                            "completed": false
+                            "time": -1
                         }
                     ]
                 },
@@ -1000,43 +880,37 @@
                             "id": "programArmsAndBackWeek3Day1ExerciseRunnersCrunch",
                             "name": "runnersCrunch",
                             "reps": 10,
-                            "time": -1,
-                            "completed": false
+                            "time": -1
                         },
                         {
                             "id": "programArmsAndBackWeek3Day1ExerciseTheFounder",
                             "name": "theFounder",
                             "reps": 10,
-                            "time": -1,
-                            "completed": false
+                            "time": -1
                         },
                         {
                             "id": "programArmsAndBackWeek0Day3ExerciseMcGillCurlUpLeft",
                             "name": "mcGillCurlUpLeft",
                             "reps": 10,
-                            "time": -1,
-                            "completed": false
+                            "time": -1
                         },
                         {
                             "id": "programArmsAndBackWeek0Day3ExerciseMcGillCurlUpRight",
                             "name": "mcGillCurlUpRight",
                             "reps": 10,
-                            "time": -1,
-                            "completed": false
+                            "time": -1
                         },
                         {
                             "id": "programArmsAndBackWeek0Day1ExerciseBirdDogLeft",
                             "name": "birdDogLeft",
                             "reps": 10,
-                            "time": -1,
-                            "completed": false
+                            "time": -1
                         },
                         {
                             "id": "programArmsAndBackWeek0Day1ExerciseBirdDogRight",
                             "name": "birdDogRight",
                             "reps": 10,
-                            "time": -1,
-                            "completed": false
+                            "time": -1
                         }
                     ]
                 },
@@ -1048,36 +922,31 @@
                             "id": "programArmsAndBackWeek3Day2ExerciseCrabWalk",
                             "name": "crabWalk",
                             "reps": 10,
-                            "time": -1,
-                            "completed": false
+                            "time": -1
                         },
                         {
                             "id": "programArmsAndBackWeek3Day2ExerciseSpineStretch",
                             "name": "spineStretch",
                             "reps": 10,
-                            "time": -1,
-                            "completed": false
+                            "time": -1
                         },
                         {
                             "id": "programArmsAndBackWeek3Day2ExerciseLyingKneeHug",
                             "name": "lyingKneeHug",
                             "reps": 10,
-                            "time": -1,
-                            "completed": false
+                            "time": -1
                         },
                         {
                             "id": "programArmsAndBackWeek3Day2ExerciseWoodpecker",
                             "name": "woodpecker",
                             "reps": 10,
-                            "time": -1,
-                            "completed": false
+                            "time": -1
                         },
                         {
                             "id": "programArmsAndBackWeek3Day2ExerciseRollingOver",
                             "name": "rollingOver",
                             "reps": 10,
-                            "time": -1,
-                            "completed": false
+                            "time": -1
                         }
                     ]
                 },
@@ -1089,43 +958,37 @@
                             "id": "programArmsAndBackWeek3Day3ExerciseRunnersCrunch",
                             "name": "runnersCrunch",
                             "reps": 10,
-                            "time": -1,
-                            "completed": false
+                            "time": -1
                         },
                         {
                             "id": "programArmsAndBackWeek3Day3ExerciseTheFounder",
                             "name": "theFounder",
                             "reps": 10,
-                            "time": -1,
-                            "completed": false
+                            "time": -1
                         },
                         {
                             "id": "programArmsAndBackWeek0Day3ExerciseMcGillCurlUpLeft",
                             "name": "mcGillCurlUpLeft",
                             "reps": 10,
-                            "time": -1,
-                            "completed": false
+                            "time": -1
                         },
                         {
                             "id": "programArmsAndBackWeek0Day3ExerciseMcGillCurlUpRight",
                             "name": "mcGillCurlUpRight",
                             "reps": 10,
-                            "time": -1,
-                            "completed": false
+                            "time": -1
                         },
                         {
                             "id": "programArmsAndBackWeek0Day1ExerciseBirdDogLeft",
                             "name": "birdDogLeft",
                             "reps": 10,
-                            "time": -1,
-                            "completed": false
+                            "time": -1
                         },
                         {
                             "id": "programArmsAndBackWeek0Day1ExerciseBirdDogRight",
                             "name": "birdDogRight",
                             "reps": 10,
-                            "time": -1,
-                            "completed": false
+                            "time": -1
                         }
                     ]
                 },
@@ -1137,36 +1000,31 @@
                             "id": "programArmsAndBackWeek3Day4ExerciseCrabWalk",
                             "name": "crabWalk",
                             "reps": 10,
-                            "time": -1,
-                            "completed": false
+                            "time": -1
                         },
                         {
                             "id": "programArmsAndBackWeek3Day4ExerciseSpineStretch",
                             "name": "spineStretch",
                             "reps": 10,
-                            "time": -1,
-                            "completed": false
+                            "time": -1
                         },
                         {
                             "id": "programArmsAndBackWeek3Day4ExerciseLyingKneeHug",
                             "name": "lyingKneeHug",
                             "reps": 10,
-                            "time": -1,
-                            "completed": false
+                            "time": -1
                         },
                         {
                             "id": "programArmsAndBackWeek3Day4ExerciseWoodpecker",
                             "name": "woodpecker",
                             "reps": 10,
-                            "time": -1,
-                            "completed": false
+                            "time": -1
                         },
                         {
                             "id": "programArmsAndBackWeek3Day4ExerciseRollingOver",
                             "name": "rollingOver",
                             "reps": 10,
-                            "time": -1,
-                            "completed": false
+                            "time": -1
                         }
                     ]
                 },
@@ -1178,43 +1036,37 @@
                             "id": "programArmsAndBackWeek3Day5ExerciseRunnersCrunch",
                             "name": "runnersCrunch",
                             "reps": 10,
-                            "time": -1,
-                            "completed": false
+                            "time": -1
                         },
                         {
                             "id": "programArmsAndBackWeek3Day5ExerciseTheFounder",
                             "name": "theFounder",
                             "reps": 10,
-                            "time": -1,
-                            "completed": false
+                            "time": -1
                         },
                         {
                             "id": "programArmsAndBackWeek0Day3ExerciseMcGillCurlUpLeft",
                             "name": "mcGillCurlUpLeft",
                             "reps": 10,
-                            "time": -1,
-                            "completed": false
+                            "time": -1
                         },
                         {
                             "id": "programArmsAndBackWeek0Day3ExerciseMcGillCurlUpRight",
                             "name": "mcGillCurlUpRight",
                             "reps": 10,
-                            "time": -1,
-                            "completed": false
+                            "time": -1
                         },
                         {
                             "id": "programArmsAndBackWeek0Day1ExerciseBirdDogLeft",
                             "name": "birdDogLeft",
                             "reps": 10,
-                            "time": -1,
-                            "completed": false
+                            "time": -1
                         },
                         {
                             "id": "programArmsAndBackWeek0Day1ExerciseBirdDogRight",
                             "name": "birdDogRight",
                             "reps": 10,
-                            "time": -1,
-                            "completed": false
+                            "time": -1
                         }
                     ]
                 },
@@ -1226,36 +1078,31 @@
                             "id": "programArmsAndBackWeek3Day6ExerciseCrabWalk",
                             "name": "crabWalk",
                             "reps": 10,
-                            "time": -1,
-                            "completed": false
+                            "time": -1
                         },
                         {
                             "id": "programArmsAndBackWeek3Day6ExerciseSpineStretch",
                             "name": "spineStretch",
                             "reps": 10,
-                            "time": -1,
-                            "completed": false
+                            "time": -1
                         },
                         {
                             "id": "programArmsAndBackWeek3Day6ExerciseLyingKneeHug",
                             "name": "lyingKneeHug",
                             "reps": 10,
-                            "time": -1,
-                            "completed": false
+                            "time": -1
                         },
                         {
                             "id": "programArmsAndBackWeek3Day6ExerciseWoodpecker",
                             "name": "woodpecker",
                             "reps": 10,
-                            "time": -1,
-                            "completed": false
+                            "time": -1
                         },
                         {
                             "id": "programArmsAndBackWeek3Day6ExerciseRollingOver",
                             "name": "rollingOver",
                             "reps": 10,
-                            "time": -1,
-                            "completed": false
+                            "time": -1
                         }
                     ]
                 }
@@ -1272,43 +1119,37 @@
                             "id": "programArmsAndBackWeek4Day0ExerciseRunnersCrunch",
                             "name": "runnersCrunch",
                             "reps": 14,
-                            "time": -1,
-                            "completed": false
+                            "time": -1
                         },
                         {
                             "id": "programArmsAndBackWeek4Day0ExerciseTheFounder",
                             "name": "theFounder",
                             "reps": 14,
-                            "time": -1,
-                            "completed": false
+                            "time": -1
                         },
                         {
                             "id": "programArmsAndBackWeek0Day3ExerciseMcGillCurlUpLeft",
                             "name": "mcGillCurlUpLeft",
                             "reps": 14,
-                            "time": -1,
-                            "completed": false
+                            "time": -1
                         },
                         {
                             "id": "programArmsAndBackWeek0Day3ExerciseMcGillCurlUpRight",
                             "name": "mcGillCurlUpRight",
                             "reps": 14,
-                            "time": -1,
-                            "completed": false
+                            "time": -1
                         },
                         {
                             "id": "programArmsAndBackWeek0Day1ExerciseBirdDogLeft",
                             "name": "birdDogLeft",
                             "reps": 14,
-                            "time": -1,
-                            "completed": false
+                            "time": -1
                         },
                         {
                             "id": "programArmsAndBackWeek0Day1ExerciseBirdDogRight",
                             "name": "birdDogRight",
                             "reps": 14,
-                            "time": -1,
-                            "completed": false
+                            "time": -1
                         }
                     ]
                 },
@@ -1320,36 +1161,31 @@
                             "id": "programArmsAndBackWeek4Day1ExerciseCrabWalk",
                             "name": "crabWalk",
                             "reps": 14,
-                            "time": -1,
-                            "completed": false
+                            "time": -1
                         },
                         {
                             "id": "programArmsAndBackWeek4Day1ExerciseSpineStretch",
                             "name": "spineStretch",
                             "reps": 14,
-                            "time": -1,
-                            "completed": false
+                            "time": -1
                         },
                         {
                             "id": "programArmsAndBackWeek4Day1ExerciseLyingKneeHug",
                             "name": "lyingKneeHug",
                             "reps": 14,
-                            "time": -1,
-                            "completed": false
+                            "time": -1
                         },
                         {
                             "id": "programArmsAndBackWeek4Day1ExerciseWoodpecker",
                             "name": "woodpecker",
                             "reps": 14,
-                            "time": -1,
-                            "completed": false
+                            "time": -1
                         },
                         {
                             "id": "programArmsAndBackWeek4Day1ExerciseRollingOver",
                             "name": "rollingOver",
                             "reps": 14,
-                            "time": -1,
-                            "completed": false
+                            "time": -1
                         }
                     ]
                 },
@@ -1361,43 +1197,37 @@
                             "id": "programArmsAndBackWeek4Day2ExerciseRunnersCrunch",
                             "name": "runnersCrunch",
                             "reps": 14,
-                            "time": -1,
-                            "completed": false
+                            "time": -1
                         },
                         {
                             "id": "programArmsAndBackWeek4Day2ExerciseTheFounder",
                             "name": "theFounder",
                             "reps": 14,
-                            "time": -1,
-                            "completed": false
+                            "time": -1
                         },
                         {
                             "id": "programArmsAndBackWeek0Day3ExerciseMcGillCurlUpLeft",
                             "name": "mcGillCurlUpLeft",
                             "reps": 14,
-                            "time": -1,
-                            "completed": false
+                            "time": -1
                         },
                         {
                             "id": "programArmsAndBackWeek0Day3ExerciseMcGillCurlUpRight",
                             "name": "mcGillCurlUpRight",
                             "reps": 14,
-                            "time": -1,
-                            "completed": false
+                            "time": -1
                         },
                         {
                             "id": "programArmsAndBackWeek0Day1ExerciseBirdDogLeft",
                             "name": "birdDogLeft",
                             "reps": 14,
-                            "time": -1,
-                            "completed": false
+                            "time": -1
                         },
                         {
                             "id": "programArmsAndBackWeek0Day1ExerciseBirdDogRight",
                             "name": "birdDogRight",
                             "reps": 14,
-                            "time": -1,
-                            "completed": false
+                            "time": -1
                         }
                     ]
                 },
@@ -1409,36 +1239,31 @@
                             "id": "programArmsAndBackWeek4Day3ExerciseCrabWalk",
                             "name": "crabWalk",
                             "reps": 14,
-                            "time": -1,
-                            "completed": false
+                            "time": -1
                         },
                         {
                             "id": "programArmsAndBackWeek4Day3ExerciseSpineStretch",
                             "name": "spineStretch",
                             "reps": 14,
-                            "time": -1,
-                            "completed": false
+                            "time": -1
                         },
                         {
                             "id": "programArmsAndBackWeek4Day3ExerciseLyingKneeHug",
                             "name": "lyingKneeHug",
                             "reps": 14,
-                            "time": -1,
-                            "completed": false
+                            "time": -1
                         },
                         {
                             "id": "programArmsAndBackWeek4Day3ExerciseWoodpecker",
                             "name": "woodpecker",
                             "reps": 14,
-                            "time": -1,
-                            "completed": false
+                            "time": -1
                         },
                         {
                             "id": "programArmsAndBackWeek4Day3ExerciseRollingOver",
                             "name": "rollingOver",
                             "reps": 14,
-                            "time": -1,
-                            "completed": false
+                            "time": -1
                         }
                     ]
                 },
@@ -1450,43 +1275,37 @@
                             "id": "programArmsAndBackWeek4Day4ExerciseRunnersCrunch",
                             "name": "runnersCrunch",
                             "reps": 14,
-                            "time": -1,
-                            "completed": false
+                            "time": -1
                         },
                         {
                             "id": "programArmsAndBackWeek4Day4ExerciseTheFounder",
                             "name": "theFounder",
                             "reps": 14,
-                            "time": -1,
-                            "completed": false
+                            "time": -1
                         },
                         {
                             "id": "programArmsAndBackWeek0Day3ExerciseMcGillCurlUpLeft",
                             "name": "mcGillCurlUpLeft",
                             "reps": 14,
-                            "time": -1,
-                            "completed": false
+                            "time": -1
                         },
                         {
                             "id": "programArmsAndBackWeek0Day3ExerciseMcGillCurlUpRight",
                             "name": "mcGillCurlUpRight",
                             "reps": 14,
-                            "time": -1,
-                            "completed": false
+                            "time": -1
                         },
                         {
                             "id": "programArmsAndBackWeek0Day1ExerciseBirdDogLeft",
                             "name": "birdDogLeft",
                             "reps": 14,
-                            "time": -1,
-                            "completed": false
+                            "time": -1
                         },
                         {
                             "id": "programArmsAndBackWeek0Day1ExerciseBirdDogRight",
                             "name": "birdDogRight",
                             "reps": 14,
-                            "time": -1,
-                            "completed": false
+                            "time": -1
                         }
                     ]
                 },
@@ -1498,36 +1317,31 @@
                             "id": "programArmsAndBackWeek4Day5ExerciseCrabWalk",
                             "name": "crabWalk",
                             "reps": 14,
-                            "time": -1,
-                            "completed": false
+                            "time": -1
                         },
                         {
                             "id": "programArmsAndBackWeek4Day5ExerciseSpineStretch",
                             "name": "spineStretch",
                             "reps": 14,
-                            "time": -1,
-                            "completed": false
+                            "time": -1
                         },
                         {
                             "id": "programArmsAndBackWeek4Day5ExerciseLyingKneeHug",
                             "name": "lyingKneeHug",
                             "reps": 14,
-                            "time": -1,
-                            "completed": false
+                            "time": -1
                         },
                         {
                             "id": "programArmsAndBackWeek4Day5ExerciseWoodpecker",
                             "name": "woodpecker",
                             "reps": 14,
-                            "time": -1,
-                            "completed": false
+                            "time": -1
                         },
                         {
                             "id": "programArmsAndBackWeek4Day5ExerciseRollingOver",
                             "name": "rollingOver",
                             "reps": 14,
-                            "time": -1,
-                            "completed": false
+                            "time": -1
                         }
                     ]
                 },
@@ -1539,43 +1353,37 @@
                             "id": "programArmsAndBackWeek4Day6ExerciseRunnersCrunch",
                             "name": "runnersCrunch",
                             "reps": 14,
-                            "time": -1,
-                            "completed": false
+                            "time": -1
                         },
                         {
                             "id": "programArmsAndBackWeek4Day6ExerciseTheFounder",
                             "name": "theFounder",
                             "reps": 14,
-                            "time": -1,
-                            "completed": false
+                            "time": -1
                         },
                         {
                             "id": "programArmsAndBackWeek0Day3ExerciseMcGillCurlUpLeft",
                             "name": "mcGillCurlUpLeft",
                             "reps": 14,
-                            "time": -1,
-                            "completed": false
+                            "time": -1
                         },
                         {
                             "id": "programArmsAndBackWeek0Day3ExerciseMcGillCurlUpRight",
                             "name": "mcGillCurlUpRight",
                             "reps": 14,
-                            "time": -1,
-                            "completed": false
+                            "time": -1
                         },
                         {
                             "id": "programArmsAndBackWeek0Day1ExerciseBirdDogLeft",
                             "name": "birdDogLeft",
                             "reps": 14,
-                            "time": -1,
-                            "completed": false
+                            "time": -1
                         },
                         {
                             "id": "programArmsAndBackWeek0Day1ExerciseBirdDogRight",
                             "name": "birdDogRight",
                             "reps": 14,
-                            "time": -1,
-                            "completed": false
+                            "time": -1
                         }
                     ]
                 }
@@ -1592,36 +1400,31 @@
                             "id": "programArmsAndBackWeek5Day0ExerciseCrabWalk",
                             "name": "crabWalk",
                             "reps": 14,
-                            "time": -1,
-                            "completed": false
+                            "time": -1
                         },
                         {
                             "id": "programArmsAndBackWeek5Day0ExerciseSpineStretch",
                             "name": "spineStretch",
                             "reps": 14,
-                            "time": -1,
-                            "completed": false
+                            "time": -1
                         },
                         {
                             "id": "programArmsAndBackWeek5Day0ExerciseLyingKneeHug",
                             "name": "lyingKneeHug",
                             "reps": 14,
-                            "time": -1,
-                            "completed": false
+                            "time": -1
                         },
                         {
                             "id": "programArmsAndBackWeek5Day0ExerciseWoodpecker",
                             "name": "woodpecker",
                             "reps": 14,
-                            "time": -1,
-                            "completed": false
+                            "time": -1
                         },
                         {
                             "id": "programArmsAndBackWeek5Day0ExerciseRollingOver",
                             "name": "rollingOver",
                             "reps": 14,
-                            "time": -1,
-                            "completed": false
+                            "time": -1
                         }
                     ]
                 },
@@ -1633,43 +1436,37 @@
                             "id": "programArmsAndBackWeek5Day1ExerciseRunnersCrunch",
                             "name": "runnersCrunch",
                             "reps": 16,
-                            "time": -1,
-                            "completed": false
+                            "time": -1
                         },
                         {
                             "id": "programArmsAndBackWeek5Day1ExerciseTheFounder",
                             "name": "theFounder",
                             "reps": 16,
-                            "time": -1,
-                            "completed": false
+                            "time": -1
                         },
                         {
                             "id": "programArmsAndBackWeek0Day3ExerciseMcGillCurlUpLeft",
                             "name": "mcGillCurlUpLeft",
                             "reps": 16,
-                            "time": -1,
-                            "completed": false
+                            "time": -1
                         },
                         {
                             "id": "programArmsAndBackWeek0Day3ExerciseMcGillCurlUpRight",
                             "name": "mcGillCurlUpRight",
                             "reps": 16,
-                            "time": -1,
-                            "completed": false
+                            "time": -1
                         },
                         {
                             "id": "programArmsAndBackWeek0Day1ExerciseBirdDogLeft",
                             "name": "birdDogLeft",
                             "reps": 16,
-                            "time": -1,
-                            "completed": false
+                            "time": -1
                         },
                         {
                             "id": "programArmsAndBackWeek0Day1ExerciseBirdDogRight",
                             "name": "birdDogRight",
                             "reps": 16,
-                            "time": -1,
-                            "completed": false
+                            "time": -1
                         }
                     ]
                 },
@@ -1681,36 +1478,31 @@
                             "id": "programArmsAndBackWeek5Day2ExerciseCrabWalk",
                             "name": "crabWalk",
                             "reps": 16,
-                            "time": -1,
-                            "completed": false
+                            "time": -1
                         },
                         {
                             "id": "programArmsAndBackWeek5Day2ExerciseSpineStretch",
                             "name": "spineStretch",
                             "reps": 16,
-                            "time": -1,
-                            "completed": false
+                            "time": -1
                         },
                         {
                             "id": "programArmsAndBackWeek5Day2ExerciseLyingKneeHug",
                             "name": "lyingKneeHug",
                             "reps": 16,
-                            "time": -1,
-                            "completed": false
+                            "time": -1
                         },
                         {
                             "id": "programArmsAndBackWeek5Day2ExerciseWoodpecker",
                             "name": "woodpecker",
                             "reps": 16,
-                            "time": -1,
-                            "completed": false
+                            "time": -1
                         },
                         {
                             "id": "programArmsAndBackWeek5Day2ExerciseRollingOver",
                             "name": "rollingOver",
                             "reps": 16,
-                            "time": -1,
-                            "completed": false
+                            "time": -1
                         }
                     ]
                 },
@@ -1722,43 +1514,37 @@
                             "id": "programArmsAndBackWeek5Day3ExerciseRunnersCrunch",
                             "name": "runnersCrunch",
                             "reps": 16,
-                            "time": -1,
-                            "completed": false
+                            "time": -1
                         },
                         {
                             "id": "programArmsAndBackWeek5Day3ExerciseTheFounder",
                             "name": "theFounder",
                             "reps": 16,
-                            "time": -1,
-                            "completed": false
+                            "time": -1
                         },
                         {
                             "id": "programArmsAndBackWeek0Day3ExerciseMcGillCurlUpLeft",
                             "name": "mcGillCurlUpLeft",
                             "reps": 16,
-                            "time": -1,
-                            "completed": false
+                            "time": -1
                         },
                         {
                             "id": "programArmsAndBackWeek0Day3ExerciseMcGillCurlUpRight",
                             "name": "mcGillCurlUpRight",
                             "reps": 16,
-                            "time": -1,
-                            "completed": false
+                            "time": -1
                         },
                         {
                             "id": "programArmsAndBackWeek0Day1ExerciseBirdDogLeft",
                             "name": "birdDogLeft",
                             "reps": 16,
-                            "time": -1,
-                            "completed": false
+                            "time": -1
                         },
                         {
                             "id": "programArmsAndBackWeek0Day1ExerciseBirdDogRight",
                             "name": "birdDogRight",
                             "reps": 16,
-                            "time": -1,
-                            "completed": false
+                            "time": -1
                         }
                     ]
                 },
@@ -1770,36 +1556,31 @@
                             "id": "programArmsAndBackWeek5Day4ExerciseCrabWalk",
                             "name": "crabWalk",
                             "reps": 16,
-                            "time": -1,
-                            "completed": false
+                            "time": -1
                         },
                         {
                             "id": "programArmsAndBackWeek5Day4ExerciseSpineStretch",
                             "name": "spineStretch",
                             "reps": 16,
-                            "time": -1,
-                            "completed": false
+                            "time": -1
                         },
                         {
                             "id": "programArmsAndBackWeek5Day4ExerciseLyingKneeHug",
                             "name": "lyingKneeHug",
                             "reps": 16,
-                            "time": -1,
-                            "completed": false
+                            "time": -1
                         },
                         {
                             "id": "programArmsAndBackWeek5Day4ExerciseWoodpecker",
                             "name": "woodpecker",
                             "reps": 16,
-                            "time": -1,
-                            "completed": false
+                            "time": -1
                         },
                         {
                             "id": "programArmsAndBackWeek5Day4ExerciseRollingOver",
                             "name": "rollingOver",
                             "reps": 16,
-                            "time": -1,
-                            "completed": false
+                            "time": -1
                         }
                     ]
                 },
@@ -1811,43 +1592,37 @@
                             "id": "programArmsAndBackWeek5Day5ExerciseRunnersCrunch",
                             "name": "runnersCrunch",
                             "reps": 20,
-                            "time": -1,
-                            "completed": false
+                            "time": -1
                         },
                         {
                             "id": "programArmsAndBackWeek5Day5ExerciseTheFounder",
                             "name": "theFounder",
                             "reps": 20,
-                            "time": -1,
-                            "completed": false
+                            "time": -1
                         },
                         {
                             "id": "programArmsAndBackWeek0Day3ExerciseMcGillCurlUpLeft",
                             "name": "mcGillCurlUpLeft",
                             "reps": 20,
-                            "time": -1,
-                            "completed": false
+                            "time": -1
                         },
                         {
                             "id": "programArmsAndBackWeek0Day3ExerciseMcGillCurlUpRight",
                             "name": "mcGillCurlUpRight",
                             "reps": 20,
-                            "time": -1,
-                            "completed": false
+                            "time": -1
                         },
                         {
                             "id": "programArmsAndBackWeek0Day1ExerciseBirdDogLeft",
                             "name": "birdDogLeft",
                             "reps": 20,
-                            "time": -1,
-                            "completed": false
+                            "time": -1
                         },
                         {
                             "id": "programArmsAndBackWeek0Day1ExerciseBirdDogRight",
                             "name": "birdDogRight",
                             "reps": 20,
-                            "time": -1,
-                            "completed": false
+                            "time": -1
                         }
                     ]
                 },
@@ -1859,36 +1634,31 @@
                             "id": "programArmsAndBackWeek5Day6ExerciseCrabWalk",
                             "name": "crabWalk",
                             "reps": 20,
-                            "time": -1,
-                            "completed": false
+                            "time": -1
                         },
                         {
                             "id": "programArmsAndBackWeek5Day6ExerciseSpineStretch",
                             "name": "spineStretch",
                             "reps": 20,
-                            "time": -1,
-                            "completed": false
+                            "time": -1
                         },
                         {
                             "id": "programArmsAndBackWeek5Day6ExerciseLyingKneeHug",
                             "name": "lyingKneeHug",
                             "reps": 20,
-                            "time": -1,
-                            "completed": false
+                            "time": -1
                         },
                         {
                             "id": "programArmsAndBackWeek5Day6ExerciseWoodpecker",
                             "name": "woodpecker",
                             "reps": 20,
-                            "time": -1,
-                            "completed": false
+                            "time": -1
                         },
                         {
                             "id": "programArmsAndBackWeek5Day6ExerciseRollingOver",
                             "name": "rollingOver",
                             "reps": 20,
-                            "time": -1,
-                            "completed": false
+                            "time": -1
                         }
                     ]
                 }
@@ -1905,36 +1675,31 @@
                             "id": "programArmsAndBackWeek6Day0ExerciseCrabWalk",
                             "name": "crabWalk",
                             "reps": 20,
-                            "time": -1,
-                            "completed": false
+                            "time": -1
                         },
                         {
                             "id": "programArmsAndBackWeek6Day0ExerciseSpineStretch",
                             "name": "spineStretch",
                             "reps": 20,
-                            "time": -1,
-                            "completed": false
+                            "time": -1
                         },
                         {
                             "id": "programArmsAndBackWeek6Day0ExerciseLyingKneeHug",
                             "name": "lyingKneeHug",
                             "reps": 20,
-                            "time": -1,
-                            "completed": false
+                            "time": -1
                         },
                         {
                             "id": "programArmsAndBackWeek6Day0ExerciseWoodpecker",
                             "name": "woodpecker",
                             "reps": 20,
-                            "time": -1,
-                            "completed": false
+                            "time": -1
                         },
                         {
                             "id": "programArmsAndBackWeek6Day0ExerciseRollingOver",
                             "name": "rollingOver",
                             "reps": 20,
-                            "time": -1,
-                            "completed": false
+                            "time": -1
                         }
                     ]
                 },
@@ -1946,43 +1711,37 @@
                             "id": "programArmsAndBackWeek6Day1ExerciseRunnersCrunch",
                             "name": "runnersCrunch",
                             "reps": 20,
-                            "time": -1,
-                            "completed": false
+                            "time": -1
                         },
                         {
                             "id": "programArmsAndBackWeek6Day1ExerciseTheFounder",
                             "name": "theFounder",
                             "reps": 20,
-                            "time": -1,
-                            "completed": false
+                            "time": -1
                         },
                         {
                             "id": "programArmsAndBackWeek0Day3ExerciseMcGillCurlUpLeft",
                             "name": "mcGillCurlUpLeft",
                             "reps": 20,
-                            "time": -1,
-                            "completed": false
+                            "time": -1
                         },
                         {
                             "id": "programArmsAndBackWeek0Day3ExerciseMcGillCurlUpRight",
                             "name": "mcGillCurlUpRight",
                             "reps": 20,
-                            "time": -1,
-                            "completed": false
+                            "time": -1
                         },
                         {
                             "id": "programArmsAndBackWeek0Day1ExerciseBirdDogLeft",
                             "name": "birdDogLeft",
                             "reps": 20,
-                            "time": -1,
-                            "completed": false
+                            "time": -1
                         },
                         {
                             "id": "programArmsAndBackWeek0Day1ExerciseBirdDogRight",
                             "name": "birdDogRight",
                             "reps": 20,
-                            "time": -1,
-                            "completed": false
+                            "time": -1
                         }
                     ]
                 },
@@ -1994,36 +1753,31 @@
                             "id": "programArmsAndBackWeek6Day2ExerciseCrabWalk",
                             "name": "crabWalk",
                             "reps": 20,
-                            "time": -1,
-                            "completed": false
+                            "time": -1
                         },
                         {
                             "id": "programArmsAndBackWeek6Day2ExerciseSpineStretch",
                             "name": "spineStretch",
                             "reps": 20,
-                            "time": -1,
-                            "completed": false
+                            "time": -1
                         },
                         {
                             "id": "programArmsAndBackWeek6Day2ExerciseLyingKneeHug",
                             "name": "lyingKneeHug",
                             "reps": 20,
-                            "time": -1,
-                            "completed": false
+                            "time": -1
                         },
                         {
                             "id": "programArmsAndBackWeek6Day2ExerciseWoodpecker",
                             "name": "woodpecker",
                             "reps": 20,
-                            "time": -1,
-                            "completed": false
+                            "time": -1
                         },
                         {
                             "id": "programArmsAndBackWeek6Day2ExerciseRollingOver",
                             "name": "rollingOver",
                             "reps": 20,
-                            "time": -1,
-                            "completed": false
+                            "time": -1
                         }
                     ]
                 },
@@ -2035,43 +1789,37 @@
                             "id": "programArmsAndBackWeek6Day3ExerciseRunnersCrunch",
                             "name": "runnersCrunch",
                             "reps": 20,
-                            "time": -1,
-                            "completed": false
+                            "time": -1
                         },
                         {
                             "id": "programArmsAndBackWeek6Day3ExerciseTheFounder",
                             "name": "theFounder",
                             "reps": 20,
-                            "time": -1,
-                            "completed": false
+                            "time": -1
                         },
                         {
                             "id": "programArmsAndBackWeek0Day3ExerciseMcGillCurlUpLeft",
                             "name": "mcGillCurlUpLeft",
                             "reps": 20,
-                            "time": -1,
-                            "completed": false
+                            "time": -1
                         },
                         {
                             "id": "programArmsAndBackWeek0Day3ExerciseMcGillCurlUpRight",
                             "name": "mcGillCurlUpRight",
                             "reps": 20,
-                            "time": -1,
-                            "completed": false
+                            "time": -1
                         },
                         {
                             "id": "programArmsAndBackWeek0Day1ExerciseBirdDogLeft",
                             "name": "birdDogLeft",
                             "reps": 20,
-                            "time": -1,
-                            "completed": false
+                            "time": -1
                         },
                         {
                             "id": "programArmsAndBackWeek0Day1ExerciseBirdDogRight",
                             "name": "birdDogRight",
                             "reps": 20,
-                            "time": -1,
-                            "completed": false
+                            "time": -1
                         }
                     ]
                 },
@@ -2083,36 +1831,31 @@
                             "id": "programArmsAndBackWeek6Day4ExerciseCrabWalk",
                             "name": "crabWalk",
                             "reps": 20,
-                            "time": -1,
-                            "completed": false
+                            "time": -1
                         },
                         {
                             "id": "programArmsAndBackWeek6Day4ExerciseSpineStretch",
                             "name": "spineStretch",
                             "reps": 20,
-                            "time": -1,
-                            "completed": false
+                            "time": -1
                         },
                         {
                             "id": "programArmsAndBackWeek6Day4ExerciseLyingKneeHug",
                             "name": "lyingKneeHug",
                             "reps": 20,
-                            "time": -1,
-                            "completed": false
+                            "time": -1
                         },
                         {
                             "id": "programArmsAndBackWeek6Day4ExerciseWoodpecker",
                             "name": "woodpecker",
                             "reps": 20,
-                            "time": -1,
-                            "completed": false
+                            "time": -1
                         },
                         {
                             "id": "programArmsAndBackWeek6Day4ExerciseRollingOver",
                             "name": "rollingOver",
                             "reps": 20,
-                            "time": -1,
-                            "completed": false
+                            "time": -1
                         }
                     ]
                 },
@@ -2124,43 +1867,37 @@
                             "id": "programArmsAndBackWeek6Day5ExerciseRunnersCrunch",
                             "name": "runnersCrunch",
                             "reps": 20,
-                            "time": -1,
-                            "completed": false
+                            "time": -1
                         },
                         {
                             "id": "programArmsAndBackWeek6Day5ExerciseTheFounder",
                             "name": "theFounder",
                             "reps": 20,
-                            "time": -1,
-                            "completed": false
+                            "time": -1
                         },
                         {
                             "id": "programArmsAndBackWeek0Day3ExerciseMcGillCurlUpLeft",
                             "name": "mcGillCurlUpLeft",
                             "reps": 20,
-                            "time": -1,
-                            "completed": false
+                            "time": -1
                         },
                         {
                             "id": "programArmsAndBackWeek0Day3ExerciseMcGillCurlUpRight",
                             "name": "mcGillCurlUpRight",
                             "reps": 20,
-                            "time": -1,
-                            "completed": false
+                            "time": -1
                         },
                         {
                             "id": "programArmsAndBackWeek0Day1ExerciseBirdDogLeft",
                             "name": "birdDogLeft",
                             "reps": 20,
-                            "time": -1,
-                            "completed": false
+                            "time": -1
                         },
                         {
                             "id": "programArmsAndBackWeek0Day1ExerciseBirdDogRight",
                             "name": "birdDogRight",
                             "reps": 20,
-                            "time": -1,
-                            "completed": false
+                            "time": -1
                         }
                     ]
                 },
@@ -2172,36 +1909,31 @@
                             "id": "programArmsAndBackWeek6Day6ExerciseCrabWalk",
                             "name": "crabWalk",
                             "reps": 20,
-                            "time": -1,
-                            "completed": false
+                            "time": -1
                         },
                         {
                             "id": "programArmsAndBackWeek6Day6ExerciseSpineStretch",
                             "name": "spineStretch",
                             "reps": 20,
-                            "time": -1,
-                            "completed": false
+                            "time": -1
                         },
                         {
                             "id": "programArmsAndBackWeek6Day6ExerciseLyingKneeHug",
                             "name": "lyingKneeHug",
                             "reps": 20,
-                            "time": -1,
-                            "completed": false
+                            "time": -1
                         },
                         {
                             "id": "programArmsAndBackWeek6Day6ExerciseWoodpecker",
                             "name": "woodpecker",
                             "reps": 20,
-                            "time": -1,
-                            "completed": false
+                            "time": -1
                         },
                         {
                             "id": "programArmsAndBackWeek6Day6ExerciseRollingOver",
                             "name": "rollingOver",
                             "reps": 20,
-                            "time": -1,
-                            "completed": false
+                            "time": -1
                         }
                     ]
                 }
@@ -2218,43 +1950,37 @@
                             "id": "programArmsAndBackWeek7Day0ExerciseRunnersCrunch",
                             "name": "runnersCrunch",
                             "reps": 28,
-                            "time": -1,
-                            "completed": false
+                            "time": -1
                         },
                         {
                             "id": "programArmsAndBackWeek7Day0ExerciseTheFounder",
                             "name": "theFounder",
                             "reps": 28,
-                            "time": -1,
-                            "completed": false
+                            "time": -1
                         },
                         {
                             "id": "programArmsAndBackWeek0Day3ExerciseMcGillCurlUpLeft",
                             "name": "mcGillCurlUpLeft",
                             "reps": 28,
-                            "time": -1,
-                            "completed": false
+                            "time": -1
                         },
                         {
                             "id": "programArmsAndBackWeek0Day3ExerciseMcGillCurlUpRight",
                             "name": "mcGillCurlUpRight",
                             "reps": 28,
-                            "time": -1,
-                            "completed": false
+                            "time": -1
                         },
                         {
                             "id": "programArmsAndBackWeek0Day1ExerciseBirdDogLeft",
                             "name": "birdDogLeft",
                             "reps": 28,
-                            "time": -1,
-                            "completed": false
+                            "time": -1
                         },
                         {
                             "id": "programArmsAndBackWeek0Day1ExerciseBirdDogRight",
                             "name": "birdDogRight",
                             "reps": 28,
-                            "time": -1,
-                            "completed": false
+                            "time": -1
                         }
                     ]
                 },
@@ -2266,36 +1992,31 @@
                             "id": "programArmsAndBackWeek7Day1ExerciseCrabWalk",
                             "name": "crabWalk",
                             "reps": 28,
-                            "time": -1,
-                            "completed": false
+                            "time": -1
                         },
                         {
                             "id": "programArmsAndBackWeek7Day1ExerciseSpineStretch",
                             "name": "spineStretch",
                             "reps": 28,
-                            "time": -1,
-                            "completed": false
+                            "time": -1
                         },
                         {
                             "id": "programArmsAndBackWeek7Day1ExerciseLyingKneeHug",
                             "name": "lyingKneeHug",
                             "reps": 28,
-                            "time": -1,
-                            "completed": false
+                            "time": -1
                         },
                         {
                             "id": "programArmsAndBackWeek7Day1ExerciseWoodpecker",
                             "name": "woodpecker",
                             "reps": 28,
-                            "time": -1,
-                            "completed": false
+                            "time": -1
                         },
                         {
                             "id": "programArmsAndBackWeek7Day1ExerciseRollingOver",
                             "name": "rollingOver",
                             "reps": 28,
-                            "time": -1,
-                            "completed": false
+                            "time": -1
                         }
                     ]
                 },
@@ -2307,43 +2028,37 @@
                             "id": "programArmsAndBackWeek7Day2ExerciseRunnersCrunch",
                             "name": "runnersCrunch",
                             "reps": 28,
-                            "time": -1,
-                            "completed": false
+                            "time": -1
                         },
                         {
                             "id": "programArmsAndBackWeek7Day2ExerciseTheFounder",
                             "name": "theFounder",
                             "reps": 28,
-                            "time": -1,
-                            "completed": false
+                            "time": -1
                         },
                         {
                             "id": "programArmsAndBackWeek0Day3ExerciseMcGillCurlUpLeft",
                             "name": "mcGillCurlUpLeft",
                             "reps": 28,
-                            "time": -1,
-                            "completed": false
+                            "time": -1
                         },
                         {
                             "id": "programArmsAndBackWeek0Day3ExerciseMcGillCurlUpRight",
                             "name": "mcGillCurlUpRight",
                             "reps": 28,
-                            "time": -1,
-                            "completed": false
+                            "time": -1
                         },
                         {
                             "id": "programArmsAndBackWeek0Day1ExerciseBirdDogLeft",
                             "name": "birdDogLeft",
                             "reps": 28,
-                            "time": -1,
-                            "completed": false
+                            "time": -1
                         },
                         {
                             "id": "programArmsAndBackWeek0Day1ExerciseBirdDogRight",
                             "name": "birdDogRight",
                             "reps": 28,
-                            "time": -1,
-                            "completed": false
+                            "time": -1
                         }
                     ]
                 },
@@ -2355,36 +2070,31 @@
                             "id": "programArmsAndBackWeek7Day3ExerciseCrabWalk",
                             "name": "crabWalk",
                             "reps": 28,
-                            "time": -1,
-                            "completed": false
+                            "time": -1
                         },
                         {
                             "id": "programArmsAndBackWeek7Day3ExerciseSpineStretch",
                             "name": "spineStretch",
                             "reps": 28,
-                            "time": -1,
-                            "completed": false
+                            "time": -1
                         },
                         {
                             "id": "programArmsAndBackWeek7Day3ExerciseLyingKneeHug",
                             "name": "lyingKneeHug",
                             "reps": 28,
-                            "time": -1,
-                            "completed": false
+                            "time": -1
                         },
                         {
                             "id": "programArmsAndBackWeek7Day3ExerciseWoodpecker",
                             "name": "woodpecker",
                             "reps": 28,
-                            "time": -1,
-                            "completed": false
+                            "time": -1
                         },
                         {
                             "id": "programArmsAndBackWeek7Day3ExerciseRollingOver",
                             "name": "rollingOver",
                             "reps": 28,
-                            "time": -1,
-                            "completed": false
+                            "time": -1
                         }
                     ]
                 },
@@ -2396,43 +2106,37 @@
                             "id": "programArmsAndBackWeek7Day4ExerciseRunnersCrunch",
                             "name": "runnersCrunch",
                             "reps": 28,
-                            "time": -1,
-                            "completed": false
+                            "time": -1
                         },
                         {
                             "id": "programArmsAndBackWeek7Day4ExerciseTheFounder",
                             "name": "theFounder",
                             "reps": 28,
-                            "time": -1,
-                            "completed": false
+                            "time": -1
                         },
                         {
                             "id": "programArmsAndBackWeek0Day3ExerciseMcGillCurlUpLeft",
                             "name": "mcGillCurlUpLeft",
                             "reps": 28,
-                            "time": -1,
-                            "completed": false
+                            "time": -1
                         },
                         {
                             "id": "programArmsAndBackWeek0Day3ExerciseMcGillCurlUpRight",
                             "name": "mcGillCurlUpRight",
                             "reps": 28,
-                            "time": -1,
-                            "completed": false
+                            "time": -1
                         },
                         {
                             "id": "programArmsAndBackWeek0Day1ExerciseBirdDogLeft",
                             "name": "birdDogLeft",
                             "reps": 28,
-                            "time": -1,
-                            "completed": false
+                            "time": -1
                         },
                         {
                             "id": "programArmsAndBackWeek0Day1ExerciseBirdDogRight",
                             "name": "birdDogRight",
                             "reps": 28,
-                            "time": -1,
-                            "completed": false
+                            "time": -1
                         }
                     ]
                 },
@@ -2444,36 +2148,31 @@
                             "id": "programArmsAndBackWeek7Day5ExerciseCrabWalk",
                             "name": "crabWalk",
                             "reps": 28,
-                            "time": -1,
-                            "completed": false
+                            "time": -1
                         },
                         {
                             "id": "programArmsAndBackWeek7Day5ExerciseSpineStretch",
                             "name": "spineStretch",
                             "reps": 28,
-                            "time": -1,
-                            "completed": false
+                            "time": -1
                         },
                         {
                             "id": "programArmsAndBackWeek7Day5ExerciseLyingKneeHug",
                             "name": "lyingKneeHug",
                             "reps": 28,
-                            "time": -1,
-                            "completed": false
+                            "time": -1
                         },
                         {
                             "id": "programArmsAndBackWeek7Day5ExerciseWoodpecker",
                             "name": "woodpecker",
                             "reps": 28,
-                            "time": -1,
-                            "completed": false
+                            "time": -1
                         },
                         {
                             "id": "programArmsAndBackWeek7Day5ExerciseRollingOver",
                             "name": "rollingOver",
                             "reps": 28,
-                            "time": -1,
-                            "completed": false
+                            "time": -1
                         }
                     ]
                 },
@@ -2485,43 +2184,37 @@
                             "id": "programArmsAndBackWeek7Day6ExerciseRunnersCrunch",
                             "name": "runnersCrunch",
                             "reps": 28,
-                            "time": -1,
-                            "completed": false
+                            "time": -1
                         },
                         {
                             "id": "programArmsAndBackWeek7Day6ExerciseTheFounder",
                             "name": "theFounder",
                             "reps": 28,
-                            "time": -1,
-                            "completed": false
+                            "time": -1
                         },
                         {
                             "id": "programArmsAndBackWeek0Day3ExerciseMcGillCurlUpLeft",
                             "name": "mcGillCurlUpLeft",
                             "reps": 28,
-                            "time": -1,
-                            "completed": false
+                            "time": -1
                         },
                         {
                             "id": "programArmsAndBackWeek0Day3ExerciseMcGillCurlUpRight",
                             "name": "mcGillCurlUpRight",
                             "reps": 28,
-                            "time": -1,
-                            "completed": false
+                            "time": -1
                         },
                         {
                             "id": "programArmsAndBackWeek0Day1ExerciseBirdDogLeft",
                             "name": "birdDogLeft",
                             "reps": 28,
-                            "time": -1,
-                            "completed": false
+                            "time": -1
                         },
                         {
                             "id": "programArmsAndBackWeek0Day1ExerciseBirdDogRight",
                             "name": "birdDogRight",
                             "reps": 28,
-                            "time": -1,
-                            "completed": false
+                            "time": -1
                         }
                     ]
                 }
@@ -2538,36 +2231,31 @@
                             "id": "programArmsAndBackWeek8Day0ExerciseCrabWalk",
                             "name": "crabWalk",
                             "reps": 28,
-                            "time": -1,
-                            "completed": false
+                            "time": -1
                         },
                         {
                             "id": "programArmsAndBackWeek8Day0ExerciseSpineStretch",
                             "name": "spineStretch",
                             "reps": 28,
-                            "time": -1,
-                            "completed": false
+                            "time": -1
                         },
                         {
                             "id": "programArmsAndBackWeek8Day0ExerciseLyingKneeHug",
                             "name": "lyingKneeHug",
                             "reps": 28,
-                            "time": -1,
-                            "completed": false
+                            "time": -1
                         },
                         {
                             "id": "programArmsAndBackWeek8Day0ExerciseWoodpecker",
                             "name": "woodpecker",
                             "reps": 28,
-                            "time": -1,
-                            "completed": false
+                            "time": -1
                         },
                         {
                             "id": "programArmsAndBackWeek8Day0ExerciseRollingOver",
                             "name": "rollingOver",
                             "reps": 28,
-                            "time": -1,
-                            "completed": false
+                            "time": -1
                         }
                     ]
                 },
@@ -2579,43 +2267,37 @@
                             "id": "programArmsAndBackWeek8Day1ExerciseRunnersCrunch",
                             "name": "runnersCrunch",
                             "reps": 32,
-                            "time": -1,
-                            "completed": false
+                            "time": -1
                         },
                         {
                             "id": "programArmsAndBackWeek8Day1ExerciseTheFounder",
                             "name": "theFounder",
                             "reps": 32,
-                            "time": -1,
-                            "completed": false
+                            "time": -1
                         },
                         {
                             "id": "programArmsAndBackWeek0Day3ExerciseMcGillCurlUpLeft",
                             "name": "mcGillCurlUpLeft",
                             "reps": 32,
-                            "time": -1,
-                            "completed": false
+                            "time": -1
                         },
                         {
                             "id": "programArmsAndBackWeek0Day3ExerciseMcGillCurlUpRight",
                             "name": "mcGillCurlUpRight",
                             "reps": 32,
-                            "time": -1,
-                            "completed": false
+                            "time": -1
                         },
                         {
                             "id": "programArmsAndBackWeek0Day1ExerciseBirdDogLeft",
                             "name": "birdDogLeft",
                             "reps": 32,
-                            "time": -1,
-                            "completed": false
+                            "time": -1
                         },
                         {
                             "id": "programArmsAndBackWeek0Day1ExerciseBirdDogRight",
                             "name": "birdDogRight",
                             "reps": 32,
-                            "time": -1,
-                            "completed": false
+                            "time": -1
                         }
                     ]
                 },
@@ -2627,36 +2309,31 @@
                             "id": "programArmsAndBackWeek8Day2ExerciseCrabWalk",
                             "name": "crabWalk",
                             "reps": 32,
-                            "time": -1,
-                            "completed": false
+                            "time": -1
                         },
                         {
                             "id": "programArmsAndBackWeek8Day2ExerciseSpineStretch",
                             "name": "spineStretch",
                             "reps": 32,
-                            "time": -1,
-                            "completed": false
+                            "time": -1
                         },
                         {
                             "id": "programArmsAndBackWeek8Day2ExerciseLyingKneeHug",
                             "name": "lyingKneeHug",
                             "reps": 32,
-                            "time": -1,
-                            "completed": false
+                            "time": -1
                         },
                         {
                             "id": "programArmsAndBackWeek8Day2ExerciseWoodpecker",
                             "name": "woodpecker",
                             "reps": 32,
-                            "time": -1,
-                            "completed": false
+                            "time": -1
                         },
                         {
                             "id": "programArmsAndBackWeek8Day2ExerciseRollingOver",
                             "name": "rollingOver",
                             "reps": 32,
-                            "time": -1,
-                            "completed": false
+                            "time": -1
                         }
                     ]
                 },
@@ -2668,43 +2345,37 @@
                             "id": "programArmsAndBackWeek8Day3ExerciseRunnersCrunch",
                             "name": "runnersCrunch",
                             "reps": 32,
-                            "time": -1,
-                            "completed": false
+                            "time": -1
                         },
                         {
                             "id": "programArmsAndBackWeek8Day3ExerciseTheFounder",
                             "name": "theFounder",
                             "reps": 32,
-                            "time": -1,
-                            "completed": false
+                            "time": -1
                         },
                         {
                             "id": "programArmsAndBackWeek0Day3ExerciseMcGillCurlUpLeft",
                             "name": "mcGillCurlUpLeft",
                             "reps": 32,
-                            "time": -1,
-                            "completed": false
+                            "time": -1
                         },
                         {
                             "id": "programArmsAndBackWeek0Day3ExerciseMcGillCurlUpRight",
                             "name": "mcGillCurlUpRight",
                             "reps": 32,
-                            "time": -1,
-                            "completed": false
+                            "time": -1
                         },
                         {
                             "id": "programArmsAndBackWeek0Day1ExerciseBirdDogLeft",
                             "name": "birdDogLeft",
                             "reps": 32,
-                            "time": -1,
-                            "completed": false
+                            "time": -1
                         },
                         {
                             "id": "programArmsAndBackWeek0Day1ExerciseBirdDogRight",
                             "name": "birdDogRight",
                             "reps": 32,
-                            "time": -1,
-                            "completed": false
+                            "time": -1
                         }
                     ]
                 },
@@ -2716,36 +2387,31 @@
                             "id": "programArmsAndBackWeek8Day4ExerciseCrabWalk",
                             "name": "crabWalk",
                             "reps": 32,
-                            "time": -1,
-                            "completed": false
+                            "time": -1
                         },
                         {
                             "id": "programArmsAndBackWeek8Day4ExerciseSpineStretch",
                             "name": "spineStretch",
                             "reps": 32,
-                            "time": -1,
-                            "completed": false
+                            "time": -1
                         },
                         {
                             "id": "programArmsAndBackWeek8Day4ExerciseLyingKneeHug",
                             "name": "lyingKneeHug",
                             "reps": 32,
-                            "time": -1,
-                            "completed": false
+                            "time": -1
                         },
                         {
                             "id": "programArmsAndBackWeek8Day4ExerciseWoodpecker",
                             "name": "woodpecker",
                             "reps": 32,
-                            "time": -1,
-                            "completed": false
+                            "time": -1
                         },
                         {
                             "id": "programArmsAndBackWeek8Day4ExerciseRollingOver",
                             "name": "rollingOver",
                             "reps": 32,
-                            "time": -1,
-                            "completed": false
+                            "time": -1
                         }
                     ]
                 },
@@ -2757,43 +2423,37 @@
                             "id": "programArmsAndBackWeek8Day5ExerciseRunnersCrunch",
                             "name": "runnersCrunch",
                             "reps": 40,
-                            "time": -1,
-                            "completed": false
+                            "time": -1
                         },
                         {
                             "id": "programArmsAndBackWeek8Day5ExerciseTheFounder",
                             "name": "theFounder",
                             "reps": 40,
-                            "time": -1,
-                            "completed": false
+                            "time": -1
                         },
                         {
                             "id": "programArmsAndBackWeek0Day3ExerciseMcGillCurlUpLeft",
                             "name": "mcGillCurlUpLeft",
                             "reps": 40,
-                            "time": -1,
-                            "completed": false
+                            "time": -1
                         },
                         {
                             "id": "programArmsAndBackWeek0Day3ExerciseMcGillCurlUpRight",
                             "name": "mcGillCurlUpRight",
                             "reps": 40,
-                            "time": -1,
-                            "completed": false
+                            "time": -1
                         },
                         {
                             "id": "programArmsAndBackWeek0Day1ExerciseBirdDogLeft",
                             "name": "birdDogLeft",
                             "reps": 40,
-                            "time": -1,
-                            "completed": false
+                            "time": -1
                         },
                         {
                             "id": "programArmsAndBackWeek0Day1ExerciseBirdDogRight",
                             "name": "birdDogRight",
                             "reps": 40,
-                            "time": -1,
-                            "completed": false
+                            "time": -1
                         }
                     ]
                 },
@@ -2805,36 +2465,31 @@
                             "id": "programArmsAndBackWeek8Day6ExerciseCrabWalk",
                             "name": "crabWalk",
                             "reps": 40,
-                            "time": -1,
-                            "completed": false
+                            "time": -1
                         },
                         {
                             "id": "programArmsAndBackWeek8Day6ExerciseSpineStretch",
                             "name": "spineStretch",
                             "reps": 40,
-                            "time": -1,
-                            "completed": false
+                            "time": -1
                         },
                         {
                             "id": "programArmsAndBackWeek8Day6ExerciseLyingKneeHug",
                             "name": "lyingKneeHug",
                             "reps": 40,
-                            "time": -1,
-                            "completed": false
+                            "time": -1
                         },
                         {
                             "id": "programArmsAndBackWeek8Day6ExerciseWoodpecker",
                             "name": "woodpecker",
                             "reps": 40,
-                            "time": -1,
-                            "completed": false
+                            "time": -1
                         },
                         {
                             "id": "programArmsAndBackWeek8Day6ExerciseRollingOver",
                             "name": "rollingOver",
                             "reps": 40,
-                            "time": -1,
-                            "completed": false
+                            "time": -1
                         }
                     ]
                 }

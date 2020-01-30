@@ -3,6 +3,7 @@ import I18n from '../../utils/i18n/I18n';
 import UserDataSource from '../../data/UserDataSource';
 import IAPService from '../../utils/iap/IAPService';
 import WorkoutDataManager from '../../data/WorkoutDataManager';
+import SubscriptionManager from '../../utils/iap/SubscriptionManager';
 
 const SUBSCRIPTION_TYPE = {
     week: 'week',
@@ -45,7 +46,6 @@ export default class PurchasePresenter {
             this.selectedSubscription = this.subscriptions.find(s => s.id === (subscriptionsUi[0] || {}).id);
             duration = WorkoutDataManager.PROGRAM_SLICE[user.fitnessLevel].length * 7;
             workoutsPerWeek = WorkoutDataManager.WORKOUTS_PER_WEEK[user.fitnessLevel];
-            await WorkoutDataManager.prepareWorkouts();
         } catch (error) {
             console.log(error);
         } finally {
@@ -83,7 +83,7 @@ export default class PurchasePresenter {
     }
 
     async restoreSubscription() {
-        const premium = await this._restorePurchasesIfPossible();
+        const premium = await SubscriptionManager.checkSubscriptionStatus();
         if (!this.view) {
             return;
         }
@@ -100,10 +100,7 @@ export default class PurchasePresenter {
         if (purchase.productId !== this.selectedSubscription.id) {
             return;
         }
-        await this.userDataSource.setUser({
-            subscriptionId: purchase.productId
-        });
-        await WorkoutDataManager.prepareWorkouts();
+        await this._saveSubscription(purchase.productId);
         if (this.view) {
             this.view.onSubscriptionSuccess();
         }
@@ -127,30 +124,11 @@ export default class PurchasePresenter {
         this.view = null;
     }
 
-    async _restorePurchasesIfPossible() {
-        let premium = false;
-        try {
-            const subscriptions = await IAPService.getAvailableSubscriptions();
-            premium = subscriptions.length > 0;
-            let subscriptionId = null;
-            if (premium) {
-                const lastIndex = subscriptions.length - 1; // TODO: Is this right?
-                subscriptionId = subscriptions[lastIndex].productId;
-            }
-            await this._saveSubscription(subscriptionId);
-        } catch (error) {
-            console.log('_restorePurchasesIfPossible()', error);
-        } finally {
-            return premium;
-        }
-    }
-
     async _saveSubscription(subscriptionId) {
         try {
             await this.userDataSource.setUser({
                 subscriptionId
             });
-            await WorkoutDataManager.prepareWorkouts();
             return true;
         } catch (error) {
             console.log('_saveSubscription()', error);

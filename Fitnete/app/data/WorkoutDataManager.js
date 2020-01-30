@@ -39,19 +39,13 @@ export default {
         const trainingDataSource = new TrainingDataSource();
         try {
             const user = await userDataSource.getUser();
-            await trainingDataSource.deleteAllPrograms();
             const programSlice = PROGRAM_SLICE[user.fitnessLevel];
             const programs = user.areasOfFocus.reduce((acc, area) => {
                 const program = PROGRAM[area];
                 const personalisedProgram = {
                     ...program
                 }
-                const premium = !!user.subscriptionId;
-                if (premium) {
-                    personalisedProgram.weeks = program.weeks.filter((value, index) => programSlice.includes(index));
-                } else {
-                    personalisedProgram.weeks = program.weeks.filter((value, index) => index === programSlice[0]);
-                }
+                personalisedProgram.weeks = program.weeks.filter((value, index) => programSlice.includes(index));
                 return acc.concat(personalisedProgram);
             }, [])
             await trainingDataSource.savePrograms(programs);

@@ -58,28 +58,6 @@ export default class TrainingDataSource {
         });
     }
 
-    deleteAllPrograms() {
-        return AsyncWrapper.makeAsync(async (resolve, reject) => {
-            const db = FNDatabase.database();
-            try {
-                const allPrograms = db.objects('TrainingProgram');
-                const allWeeks = db.objects('TrainingWeek');
-                const allDays = db.objects('TrainingDay');
-                const allExercises = db.objects('TrainingExercise');
-                db.write(() => {
-                    db.delete(allPrograms);
-                    db.delete(allWeeks);
-                    db.delete(allDays);
-                    db.delete(allExercises);
-                });
-                resolve(true);
-            } catch (e) {
-                console.log('deleteAllPrograms()', e);
-                reject(e);
-            }
-        });
-    }
-
     setExerciseStatus(exerciseId, completed) {
         return AsyncWrapper.makeAsync(async (resolve, reject) => {
             const db = FNDatabase.database();
