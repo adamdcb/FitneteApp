@@ -75,7 +75,7 @@ export default class PurchasePresenter {
         if (!subscriptions.find(s => s.productId === this.selectedSubscription.id)) {
             IAPService.requestSubscription(this.selectedSubscription.id);
         } else {
-            await this._saveSubscription(this.selectedSubscription.id);
+            await SubscriptionManager.saveSubscription(this.selectedSubscription.id);
             if (this.view) {
                 this.view.onSubscriptionSuccess();
             }
@@ -100,7 +100,7 @@ export default class PurchasePresenter {
         if (purchase.productId !== this.selectedSubscription.id) {
             return;
         }
-        await this._saveSubscription(purchase.productId);
+        await SubscriptionManager.saveSubscription(purchase.productId);
         if (this.view) {
             this.view.onSubscriptionSuccess();
         }
@@ -122,18 +122,6 @@ export default class PurchasePresenter {
     unmountView() {
         IAPService.unsubscribe(this);
         this.view = null;
-    }
-
-    async _saveSubscription(subscriptionId) {
-        try {
-            await this.userDataSource.setUser({
-                subscriptionId
-            });
-            return true;
-        } catch (error) {
-            console.log('_saveSubscription()', error);
-            return false;
-        }
     }
 
     async _getSubscriptions() {

@@ -2,7 +2,6 @@ import I18n from '../utils/i18n/I18n';
 import Utils from '../utils/utils/Utils.js';
 import TrainingDataSource from '../data/TrainingDataSource';
 import UserDataSource from '../data/UserDataSource';
-import WorkoutDataManager from '../data/WorkoutDataManager';
 import SubscriptionManager from '../utils/iap/SubscriptionManager';
 
 const DIFFICULTY = {
@@ -42,17 +41,12 @@ export default class TrainingPresenter {
         this.dataSource = new TrainingDataSource();
         this.userDataSource = new UserDataSource();
         this.uiData = [];
-        WorkoutDataManager.subscribe(this);
+        SubscriptionManager.subscribe(this);
     }
 
     async loadData() {
-        const user = await this.userDataSource.getUser();
-        const isSubscribed = !!user.subscriptionId;
         await this._loadPrograms();
-        const premium = await SubscriptionManager.checkSubscriptionStatus();
-        if (isSubscribed !== premium) {
-            this._loadPrograms();
-        }
+        SubscriptionManager.checkSubscriptionStatus();
     }
 
     async loadProgress(programId) {
@@ -79,12 +73,12 @@ export default class TrainingPresenter {
 
     unmountView() {
         this.view = null;
-        WorkoutDataManager.unsubscribe(this);
+        SubscriptionManager.unsubscribe(this);
     }
 
-    // WorkoutDataManager observer function
-    onWorkoutDataChange() {
-        this.loadData();
+    // SubscriptionManager observer function
+    onSubscriptionUpdate() {
+        this._loadPrograms();
     }
 
     async _loadPrograms() {
