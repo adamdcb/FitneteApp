@@ -91,7 +91,7 @@ class ExerciseListScreen extends React.Component {
                     </View>
                 </ElevatedView>
                 <LinearGradient
-                    style={styles.container}
+                    style={styles.listGradient}
                     colors={['#89F8AC3D', '#73F9E01A', '#FFFFFF00']}
                     locations={[0, 0.45, 1]}
                     angle={180}
@@ -153,6 +153,9 @@ const styles = StyleSheet.create({
         fontSize: 15,
         color: '#3E3750',
         textAlign: 'center'
+    },
+    listGradient: {
+        flex: 1
     },
     listItemContainer: {
         flex: 1,
