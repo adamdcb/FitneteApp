@@ -5,20 +5,25 @@ const subscriptions = new Set();
 
 export default {
     async checkSubscriptionStatus() {
-        let premium = false;
         try {
             const subscriptions = await IAPService.getAvailableSubscriptions();
-            premium = subscriptions.length > 0;
+            const premium = subscriptions.length > 0;
             let subscriptionId = null;
             if (premium) {
                 const lastIndex = subscriptions.length - 1; // TODO: Is this right?
                 subscriptionId = subscriptions[lastIndex].productId;
             }
-            this.saveSubscription(subscriptionId);
+            await this.saveSubscription(subscriptionId);
+            return {
+                premium,
+                error: null
+            };
         } catch (error) {
             console.log('checkSubscriptionStatus()', error);
-        } finally {
-            return premium;
+            return {
+                premium: false,
+                error
+            };
         }
     },
 
@@ -33,7 +38,7 @@ export default {
             if (subscriptionHasChanged) {
                 subscriptions.forEach((s) => {
                     if (s.onSubscriptionUpdate) {
-                        s.onSubscriptionUpdate();
+                        s.onSubscriptionUpdate(!!subscriptionId);
                     }
                 });
             }

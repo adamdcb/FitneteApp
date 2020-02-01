@@ -16,6 +16,8 @@ const subscriptionIds = Platform.select({
 const ERROR = {
     UNKNOWN: 'ERR_UNKNOWN',
     USER_CANCELLED: 'ERR_USER_CANCELLED',
+    NETWORK_ERROR: 'ERR_NETWORK_ERROR',
+    ALREADY_OWNED: 'ERR_ALREADY_OWNED',
     RECEIPT_VERIFY_FAILED: 'ERR_RECEIPT_VERIFY_FAILED'
 }
 
@@ -28,15 +30,23 @@ export default {
         this.purchaseUpdateSubscription = RNIap.purchaseUpdatedListener(async (purchase) => {
             const receipt = purchase.transactionReceipt;
             console.log('Receipt:', receipt);
-            const success = await this.verifyReceipt(receipt);
-            if (success) {
-                await RNIap.finishTransaction(purchase, false);
-                subscribers.forEach(s => {
-                    if (s.onPurchaseUpdateSuccess) {
-                        s.onPurchaseUpdateSuccess(purchase);
-                    }
-                });
-            } else {
+            try {
+                const success = await this.verifyReceipt(receipt);
+                if (success) {
+                    await RNIap.finishTransaction(purchase, false);
+                    subscribers.forEach(s => {
+                        if (s.onPurchaseUpdateSuccess) {
+                            s.onPurchaseUpdateSuccess(purchase);
+                        }
+                    });
+                } else {
+                    subscribers.forEach(s => {
+                        if (s.onPurchaseUpdateError) {
+                            s.onPurchaseUpdateError(ERROR.RECEIPT_VERIFY_FAILED);
+                        }
+                    });
+                }
+            } catch (error) {
                 subscribers.forEach(s => {
                     if (s.onPurchaseUpdateError) {
                         s.onPurchaseUpdateError(ERROR.RECEIPT_VERIFY_FAILED);
@@ -81,6 +91,8 @@ export default {
             return subscriptions;
         } catch (error) {
             console.log('getAllSubscriptions()', error);
+            const errorCode = this.parseError(error);
+            throw errorCode;
         }
     },
 
@@ -93,38 +105,24 @@ export default {
     },
 
     async getAvailableSubscriptions() {
-        const subscriptions = [];
-        const availablePurchases = await this.getAvailablePurchases();
-        for (let index = 0; index < availablePurchases.length; index++) {
-            const purchase = availablePurchases[index];
-            const isValid = await this.verifyReceipt(purchase.transactionReceipt);
-            if (isValid) {
-                try {
-                    await RNIap.finishTransaction(purchase, false);
-                } catch { }
-                subscriptions.push(purchase);
+        try {
+            const subscriptions = [];
+            let availablePurchases = await RNIap.getAvailablePurchases();
+            availablePurchases = availablePurchases.filter(purchase => subscriptionIds.includes(purchase.productId));
+            for (let index = 0; index < availablePurchases.length; index++) {
+                const purchase = availablePurchases[index];
+                const isValid = await this.verifyReceipt(purchase.transactionReceipt);
+                if (isValid) {
+                    try {
+                        await RNIap.finishTransaction(purchase, false);
+                    } catch { }
+                    subscriptions.push(purchase);
+                }
             }
-        }
-        return subscriptions;
-    },
-
-    async hasPurchaseHistory() {
-        try {
-            const history = await RNIap.getPurchaseHistory();
-            return history.length > 0;
+            return subscriptions;
         } catch (error) {
-            console.log('hasPurchaseHistory()', error);
-            return false;
-        }
-    },
-
-    async getAvailablePurchases() {
-        try {
-            const availablePurchases = await RNIap.getAvailablePurchases();
-            return availablePurchases.filter(purchase => subscriptionIds.includes(purchase.productId));
-        } catch (error) {
-            console.log('getAvailablePurchases()', error);
-            return [];
+            const errorCode = this.parseError(error);
+            throw errorCode;
         }
     },
 
@@ -148,16 +146,33 @@ export default {
             return response.ok;
         } catch (error) {
             console.log('Verify receipt error', error);
-            return false;
+            throw {
+               code: RNIap.IAPErrorCode.E_NETWORK_ERROR
+            };
         }
     },
 
     parseError(error) {
+        if (!error) {
+            return ERROR.UNKNOWN;
+        }
+        console.log('parseError:', JSON.stringify(error));
         switch (error.code) {
+            case RNIap.IAPErrorCode.E_NETWORK_ERROR:
+            case RNIap.IAPErrorCode.E_SERVICE_ERROR:
+                return ERROR.NETWORK_ERROR;
+            case RNIap.IAPErrorCode.E_ALREADY_OWNED:
+                return ERROR.ALREADY_OWNED;
             case RNIap.IAPErrorCode.E_USER_CANCELLED:
                 return ERROR.USER_CANCELLED;
-            default:
+            default: {
+                const errorMessage = (error.message || '').toLowerCase();
+                if (errorMessage.includes('cannot connect')
+                    || errorMessage.includes('internet connection appears to be offline')) {
+                    return ERROR.NETWORK_ERROR;
+                }
                 return ERROR.UNKNOWN;
+            }
         }
     }
 }

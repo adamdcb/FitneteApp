@@ -3,6 +3,7 @@ import Utils from '../utils/utils/Utils.js';
 import TrainingDataSource from '../data/TrainingDataSource';
 import UserDataSource from '../data/UserDataSource';
 import SubscriptionManager from '../utils/iap/SubscriptionManager';
+import IAPService from '../utils/iap/IAPService';
 
 const DIFFICULTY = {
     0: 'easy',
@@ -48,7 +49,10 @@ export default class TrainingPresenter {
         const user = await this.userDataSource.getUser();
         await this._loadPrograms();
         if (!!user.subscriptionId) {
-            SubscriptionManager.checkSubscriptionStatus();
+            const status = await SubscriptionManager.checkSubscriptionStatus();
+            if (status.error) {
+                this.onSubscriptionError(status.error);
+            }
         }
     }
 
@@ -70,7 +74,10 @@ export default class TrainingPresenter {
             }
         });
         if (this.view) {
-            this.view.setData(this.uiData);
+            this.view.setData({
+                programs: this.uiData,
+                error: null
+            });
         }
     }
 
@@ -80,8 +87,31 @@ export default class TrainingPresenter {
     }
 
     // SubscriptionManager observer function
-    onSubscriptionUpdate() {
+    onSubscriptionUpdate(premium) {
         this._loadPrograms();
+        if (!premium) {
+            this.view.onSubscriptionExpired();
+        }
+    }
+
+    onSubscriptionError(error) {
+        const errorUi = {
+            title: I18n.t('error.title'),
+            message: I18n.t('error.unknownError')
+        }
+        switch (error) {
+            case IAPService.ERROR.NETWORK_ERROR:
+                errorUi.message = I18n.t('error.networkError');
+                break;
+            default:
+                break;
+        }
+        if (this.view) {
+            this.view.setData({
+                programs: null,
+                error: errorUi
+            });
+        }
     }
 
     async _loadPrograms() {
@@ -142,7 +172,10 @@ export default class TrainingPresenter {
             }
         });
         if (this.view) {
-            this.view.setData(this.uiData);
+            this.view.setData({
+                programs: this.uiData,
+                error: null
+            });
         }
     }
 

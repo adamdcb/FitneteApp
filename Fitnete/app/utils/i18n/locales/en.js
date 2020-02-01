@@ -30,6 +30,15 @@ export default {
         active: 'Active',
         inactive: 'Inactive'
     },
+    error: {
+        title: 'Oops',
+        ok: 'OK',
+        retry: 'Retry',
+        networkError: 'The internet connection appears to be offline. Make sure you are connected to the internet, then tap retry',
+        subscriptionExpired: 'Your Fitnete subscription has expired',
+        noSubscriptionsFound: 'No subscriptions found',
+        unknownError: 'Oops, something went wrong'
+    },
     startup: {
         welcome: 'Welcome to',
         start: 'Start!'
@@ -155,10 +164,7 @@ export default {
         goPremium: 'GO PREMIUM',
         getTheFullExperience: 'Get The Full\nExperience',
         workoutsPerWeek: 'workouts per week',
-        workoutsToAchieveGoal: 'workouts until you achieve your goal',
-        errorTitle: 'Oops',
-        errorUnknowMessage: 'Oops, something went wrong',
-        errorRestoreMessage: 'No subscriptions found'
+        workoutsToAchieveGoal: 'workouts until you achieve your goal'
     },
     noPlanPurchased: {
         description1: 'Not ready for the',

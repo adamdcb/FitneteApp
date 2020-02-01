@@ -10,17 +10,18 @@ import ButtonText from '../../utils/components/ButtonText';
 import PurchasePresenter from './PurchasePresenter';
 import FNIcon from '../../utils/components/FNIcon';
 import LoadingView from '../../utils/components/LoadingView';
+import ErrorView from '../../utils/components/ErrorView';
 
 class PurchaseScreen extends React.Component {
     constructor(props) {
         super(props);
         this.state = {
-            subscriptions: [],
+            subscriptions: null,
             activeSubscriptionType: '',
             workoutsTotal: 0,
             workoutsPerWeek: 0,
-            loading: true,
-            paymentLoading: false
+            paymentLoading: false,
+            error: null
         }
         this.navigationParams = this.props.navigation.state.params || {};
         this.usesModalBehaviour = !!this.navigationParams.useModalBehaviour;
@@ -28,6 +29,7 @@ class PurchaseScreen extends React.Component {
         this.continue = this.continue.bind(this);
         this.continueForFree = this.continueForFree.bind(this);
         this.restore = this.restore.bind(this);
+        this.retry = this.retry.bind(this);
     }
 
     componentDidMount() {
@@ -39,10 +41,7 @@ class PurchaseScreen extends React.Component {
     }
 
     setData(data) {
-        this.setState({ ...data });
-        if (data.premium) {
-            this.onSubscriptionSuccess();
-        }
+        this.setState(data);
     }
 
     continue() {
@@ -63,6 +62,11 @@ class PurchaseScreen extends React.Component {
         this.presenter.restoreSubscription();
     }
 
+    retry() {
+        this.setState({ error: null });
+        this.presenter.loadData();
+    }
+
     onSubscriptionSuccess() {
         this.setState({ paymentLoading: false });
         if (this.usesModalBehaviour) {
@@ -74,11 +78,11 @@ class PurchaseScreen extends React.Component {
         }
     }
 
-    onSubscriptionError(errorTitle, errorMessage) {
+    onSubscriptionError(error) {
         this.setState({ paymentLoading: false });
         Alert.alert(
-            errorTitle,
-            errorMessage,
+            error.title,
+            error.message,
             [{
                 text: I18n.t('ok')
             }],
@@ -150,11 +154,20 @@ class PurchaseScreen extends React.Component {
     }
 
     render() {
-        const { loading } = this.state;
-        if (loading) {
+        const { subscriptions, error } = this.state;
+        if (error) {
+            return (
+                <ErrorView
+                    error={error}
+                    buttonTitle={I18n.t('error.retry')}
+                    onButtonPress={this.retry}
+                />
+            );
+        }
+        if (subscriptions === null) {
             return (<LoadingView />);
         }
-        const { subscriptions, workoutsTotal, workoutsPerWeek, paymentLoading } = this.state;
+        const { workoutsTotal, workoutsPerWeek, paymentLoading } = this.state;
         return (
             <Container>
                 <SafeAreaView style={styles.container}>

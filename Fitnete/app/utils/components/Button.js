@@ -37,7 +37,7 @@ class Button extends React.Component {
                 angleCenter={{ x: 0.5, y: 0.5 }}
             >
                 <TouchableOpacity
-                    style={[styles.button, style]}
+                    style={styles.button}
                     disabled={disabled}
                     activeOpacity={1}
                     onPress={onPress}

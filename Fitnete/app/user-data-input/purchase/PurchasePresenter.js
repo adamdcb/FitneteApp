@@ -20,14 +20,10 @@ export default class PurchasePresenter {
     }
 
     async loadData() {
-        let duration = 0;
-        let subscriptionsUi = [];
-        let premium = false;
-        let workoutsPerWeek = 1;
         try {
             const user = await this.userDataSource.getUser();
             this.subscriptions = await this._getSubscriptions();
-            subscriptionsUi = this.subscriptions.map(subscription => {
+            const subscriptionsUi = this.subscriptions.map(subscription => {
                 const type = this._getSubscriptionType(subscription.id);
                 const noOfWeeks = this._getNumberOfWeeks(subscription.id);
                 const pricePerWeekRaw = subscription.price / noOfWeeks;
@@ -44,19 +40,33 @@ export default class PurchasePresenter {
             })
                 .sort((a, b) => parseFloat(b.price) - parseFloat(a.price));
             this.selectedSubscription = this.subscriptions.find(s => s.id === (subscriptionsUi[0] || {}).id);
-            duration = WorkoutDataManager.PROGRAM_SLICE[user.fitnessLevel].length * 7;
-            workoutsPerWeek = WorkoutDataManager.WORKOUTS_PER_WEEK[user.fitnessLevel];
-        } catch (error) {
-            console.log(error);
-        } finally {
+            const duration = WorkoutDataManager.PROGRAM_SLICE[user.fitnessLevel].length * 7;
+            const workoutsPerWeek = WorkoutDataManager.WORKOUTS_PER_WEEK[user.fitnessLevel];
             if (this.view) {
                 this.view.setData({
                     subscriptions: subscriptionsUi,
                     activeSubscriptionType: this._getSubscriptionType((this.selectedSubscription || {}).id),
                     workoutsTotal: duration,
                     workoutsPerWeek,
-                    premium,
-                    loading: false
+                    error: null
+                });
+            }
+        } catch (error) {
+            console.log(error);
+            const errorUi = {
+                title: I18n.t('error.title'),
+                message: I18n.t('error.unknownError')
+            }
+            switch (error) {
+                case IAPService.ERROR.NETWORK_ERROR:
+                    errorUi.message = I18n.t('error.networkError');
+                    break;
+                default:
+                    break;
+            }
+            if (this.view) {
+                this.view.setData({
+                    error: errorUi
                 });
             }
         }
@@ -69,30 +79,25 @@ export default class PurchasePresenter {
         });
     }
 
-    async requestSubscription() {
+    requestSubscription() {
         console.log(this.selectedSubscription.id);
-        const subscriptions = await IAPService.getAvailableSubscriptions();
-        if (!subscriptions.find(s => s.productId === this.selectedSubscription.id)) {
-            IAPService.requestSubscription(this.selectedSubscription.id);
-        } else {
-            await SubscriptionManager.saveSubscription(this.selectedSubscription.id);
-            if (this.view) {
-                this.view.onSubscriptionSuccess();
-            }
-        }
+        IAPService.requestSubscription(this.selectedSubscription.id);
     }
 
     async restoreSubscription() {
-        const premium = await SubscriptionManager.checkSubscriptionStatus();
+        const response = await SubscriptionManager.checkSubscriptionStatus();
         if (!this.view) {
             return;
         }
-        if (premium) {
+        if (response.error !== null) {
+            this.onPurchaseUpdateError(response.error);
+        } else if (response.premium) {
             this.view.onSubscriptionSuccess();
         } else {
-            const errorTitle = I18n.t('purchase.errorTitle');
-            const errorMessage = I18n.t('purchase.errorRestoreMessage');
-            this.view.onSubscriptionError(errorTitle, errorMessage);
+            this.view.onSubscriptionError({
+                title: I18n.t('error.title'),
+                message: I18n.t('error.noSubscriptionsFound')
+            });
         }
     }
 
@@ -106,17 +111,33 @@ export default class PurchasePresenter {
         }
     }
 
-    onPurchaseUpdateError(errorCode) {
+    async onPurchaseUpdateError(errorCode) {
         if (!this.view) {
             return;
         }
-        if (errorCode === IAPService.ERROR.USER_CANCELLED) {
-            this.view.setData({ paymentLoading: false });
-            return;
+        switch (errorCode) {
+            case IAPService.ERROR.USER_CANCELLED:
+                this.view.setData({ paymentLoading: false });
+                break;
+            case IAPService.ERROR.ALREADY_OWNED:
+                await SubscriptionManager.saveSubscription(this.selectedSubscription.id);
+                if (this.view) {
+                    this.view.onSubscriptionSuccess();
+                }
+                break;
+            case IAPService.ERROR.NETWORK_ERROR:
+                this.view.onSubscriptionError({
+                    title: I18n.t('error.title'),
+                    message: I18n.t('error.networkError')
+                });
+                break;
+            default:
+                this.view.onSubscriptionError({
+                    title: I18n.t('error.title'),
+                    message: I18n.t('error.unknownError')
+                });
+                break;
         }
-        const errorTitle = '';
-        const errorMessage = I18n.t('purchase.errorUnknowMessage');
-        this.view.onSubscriptionError(errorTitle, errorMessage);
     }
 
     unmountView() {
@@ -125,21 +146,29 @@ export default class PurchasePresenter {
     }
 
     async _getSubscriptions() {
-        const storeSubscriptions = await IAPService.getAllSubscriptions();
-        return storeSubscriptions.map(subscription => {
-            const freeTrialPeriod = Platform.select({
-                ios: subscription.introductoryPriceSubscriptionPeriodIOS,
-                android: subscription.freeTrialPeriodAndroid
-            })
-            return {
-                ...subscription,
-                id: subscription.productId,
-                freeTrialPeriod: this._getPeriodType(freeTrialPeriod)
-            }
-        });
+        try {
+            const storeSubscriptions = await IAPService.getAllSubscriptions();
+            return storeSubscriptions.map(subscription => {
+                const freeTrialPeriod = Platform.select({
+                    ios: subscription.introductoryPriceSubscriptionPeriodIOS,
+                    android: subscription.freeTrialPeriodAndroid
+                })
+                return {
+                    ...subscription,
+                    id: subscription.productId,
+                    freeTrialPeriod: this._getPeriodType(freeTrialPeriod)
+                }
+            });
+        } catch (error) {
+            throw error;
+        }
+
     }
 
     _getSubscriptionType(subscriptionId) {
+        if (!subscriptionId) {
+            return '';
+        }
         if (subscriptionId.includes('week')) {
             return SUBSCRIPTION_TYPE.week;
         }

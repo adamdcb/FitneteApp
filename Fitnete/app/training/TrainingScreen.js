@@ -1,5 +1,5 @@
 import React from 'react';
-import { SafeAreaView, Text, View, Image, StyleSheet, Dimensions, Platform } from 'react-native';
+import { SafeAreaView, Text, View, Image, Alert, StyleSheet, Dimensions, Platform } from 'react-native';
 import Carousel from 'react-native-snap-carousel';
 import LinearGradient from 'react-native-linear-gradient';
 import ElevatedView from 'fiber-react-native-elevated-view';
@@ -11,6 +11,7 @@ import I18n from '../utils/i18n/I18n';
 import TrainingPresenter from './TrainingPresenter';
 import FNIcon from '../utils/components/FNIcon';
 import LoadingView from '../utils/components/LoadingView';
+import ErrorView from '../utils/components/ErrorView';
 
 const SLIDER_ITEM_WIDTH_COEFF = 0.8;
 const CIRCLE_SIZE_COEFF = 6;
@@ -22,13 +23,15 @@ class TrainingScreen extends React.Component {
         super(props);
         this.state = {
             screenWidth: Dimensions.get('window').width,
-            programs: null
+            programs: null,
+            error: null
         };
         this.slideIndex = 0;
         this.presenter = new TrainingPresenter(this);
         this._renderItem = this._renderItem.bind(this);
         this._openProgram = this._openProgram.bind(this);
         this._onSnapToItem = this._onSnapToItem.bind(this);
+        this._retry = this._retry.bind(this);
     }
 
     componentDidMount() {
@@ -49,12 +52,30 @@ class TrainingScreen extends React.Component {
     }
 
     setData(data) {
-        this.setState({ programs: data });
+        this.setState(data);
+    }
+
+    onSubscriptionExpired() {
+        Alert.alert(
+            I18n.t('error.title'),
+            I18n.t('error.subscriptionExpired'),
+            [{
+                text: I18n.t('ok')
+            }],
+            {
+                cancelable: false
+            }
+        );
     }
 
     _openProgram() {
         const { programs } = this.state;
         navigate(Route.TrainingProgram, { program: programs[this.slideIndex] });
+    }
+
+    _retry() {
+        this.setState({ error: null });
+        this.presenter.loadData();
     }
 
     _renderItem({ item, index }) {
@@ -139,7 +160,16 @@ class TrainingScreen extends React.Component {
     }
 
     render() {
-        const { programs } = this.state;
+        const { programs, error } = this.state;
+        if (error) {
+            return (
+                <ErrorView
+                    error={error}
+                    buttonTitle={I18n.t('error.retry')}
+                    onButtonPress={this._retry}
+                />
+            );
+        }
         if (programs === null) {
             return (<LoadingView />);
         }
