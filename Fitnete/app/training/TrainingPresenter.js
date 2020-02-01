@@ -45,8 +45,11 @@ export default class TrainingPresenter {
     }
 
     async loadData() {
+        const user = await this.userDataSource.getUser();
         await this._loadPrograms();
-        SubscriptionManager.checkSubscriptionStatus();
+        if (!!user.subscriptionId) {
+            SubscriptionManager.checkSubscriptionStatus();
+        }
     }
 
     async loadProgress(programId) {
