@@ -1,5 +1,5 @@
 import React from 'react';
-import { SafeAreaView, View, Text, StyleSheet, ActivityIndicator, Alert } from 'react-native';
+import { SafeAreaView, View, Text, StyleSheet, ActivityIndicator, Alert, Platform } from 'react-native';
 import ElevatedView from 'fiber-react-native-elevated-view';
 
 import I18n from '../../utils/i18n/I18n';
@@ -92,6 +92,13 @@ class PurchaseScreen extends React.Component {
         );
     }
 
+    getTextNumberOfLines() {
+        return Platform.select({
+            ios: 1,
+            android: 2
+        });
+    }
+
     renderLoading() {
         return (
             <ActivityIndicator
@@ -131,8 +138,8 @@ class PurchaseScreen extends React.Component {
 
     renderSubscriptionButton(subscription) {
         const { activeSubscriptionType } = this.state;
-        const borderColor = activeSubscriptionType === subscription.type ? '#08C757' : '#E2E2E2';
-        const topTextColor = activeSubscriptionType === subscription.type ? '#08C757' : '#3E3750';
+        const borderColor = activeSubscriptionType === subscription.type ? '#009A4D' : '#E2E2E2';
+        const topTextColor = activeSubscriptionType === subscription.type ? '#009A4D' : '#3E3750';
         return (
             <ElevatedView
                 style={{ flex: 1 }}
@@ -141,12 +148,36 @@ class PurchaseScreen extends React.Component {
             >
                 <View style={[styles.subscriptionButtonContainer, { borderColor }]}>
                     <View>
-                        <Text style={[styles.title, { color: topTextColor }]}>{subscription.title}</Text>
-                        <Text style={[styles.pricePerWeek, { color: topTextColor }]}>{subscription.pricePerWeekText}</Text>
+                        <Text
+                            numberOfLines={this.getTextNumberOfLines()}
+                            adjustsFontSizeToFit
+                            style={[styles.title, { color: topTextColor }]}
+                        >
+                            {subscription.title}
+                        </Text>
+                        <Text
+                            numberOfLines={this.getTextNumberOfLines()}
+                            adjustsFontSizeToFit
+                            style={[styles.pricePerWeek, { color: topTextColor }]}
+                        >
+                            {subscription.pricePerWeekText}
+                        </Text>
                     </View>
                     <View style={styles.subscriptionButtonBottomView}>
-                        <Text style={styles.priceText}>{subscription.priceText}</Text>
-                        <Text style={styles.description}>{subscription.description}</Text>
+                        <Text
+                            numberOfLines={this.getTextNumberOfLines()}
+                            adjustsFontSizeToFit
+                            style={styles.priceText}
+                        >
+                            {subscription.priceText}
+                        </Text>
+                        <Text
+                            numberOfLines={this.getTextNumberOfLines()}
+                            adjustsFontSizeToFit
+                            style={styles.description}
+                        >
+                            {subscription.description}
+                        </Text>
                     </View>
                 </View>
             </ElevatedView>
@@ -260,12 +291,12 @@ const styles = StyleSheet.create({
         backgroundColor: '#FFFFFF',
         marginHorizontal: 12,
         paddingVertical: 16,
-        paddingLeft: 12,
+        paddingHorizontal: 12,
         borderRadius: 8,
         borderWidth: 1
     },
     subscriptionButtonBottomView: {
-        marginTop: 24
+        marginTop: 12
     },
     goPremiumContainer: {
         backgroundColor: '#FFFFFF',
@@ -290,26 +321,26 @@ const styles = StyleSheet.create({
     },
     title: {
         fontFamily: 'Poppins-SemiBold',
-        fontSize: 13,
-        lineHeight: 15,
+        fontSize: 16,
+        lineHeight: 20,
         color: '#3E3750'
     },
     pricePerWeek: {
         fontFamily: 'Poppins',
-        fontSize: 12,
-        lineHeight: 14,
+        fontSize: 16,
+        lineHeight: 20,
         color: '#B4B3B6'
     },
     priceText: {
         fontFamily: 'Poppins-SemiBold',
         fontSize: 12,
-        lineHeight: 14,
-        color: '#3E3750'
+        lineHeight: 16,
+        color: '#5F5F5F'
     },
     description: {
         fontFamily: 'Poppins',
         fontSize: 12,
-        lineHeight: 14,
+        lineHeight: 16,
         color: '#B4B3B6'
     },
     legalDescription: {
