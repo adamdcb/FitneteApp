@@ -23,6 +23,8 @@ class AppIntroScreen extends React.Component {
         }
         this.onPrivacyPolicyTap = this.onPrivacyPolicyTap.bind(this);
         this.onTermsAndConditionsTap = this.onTermsAndConditionsTap.bind(this);
+        this.toggleTermsAndConditionsCheckBox = this.toggleTermsAndConditionsCheckBox.bind(this);
+        this.togglePrivacyPolicyCheckBox = this.togglePrivacyPolicyCheckBox.bind(this);
         this.onToggleTermsAndConditionsCheckBox = this.onToggleTermsAndConditionsCheckBox.bind(this);
         this.onTogglePrivacyPolicyCheckBox = this.onTogglePrivacyPolicyCheckBox.bind(this);
         this.onAcceptTerms = this.onAcceptTerms.bind(this);
@@ -45,6 +47,18 @@ class AppIntroScreen extends React.Component {
         this.setState({
             isTermsAndCondtionsCheckBoxActive: active
         });
+    }
+
+    toggleTermsAndConditionsCheckBox() {
+        if (this.tcCheckBox) {
+            this.tcCheckBox.onToggle();
+        }
+    }
+
+    togglePrivacyPolicyCheckBox() {
+        if (this.ppCheckBox) {
+            this.ppCheckBox.onToggle();
+        }
     }
 
     onTogglePrivacyPolicyCheckBox(active) {
@@ -131,17 +145,27 @@ class AppIntroScreen extends React.Component {
                     </Text>
                     <View style={styles.bottomContainer}>
                         <View style={styles.checkBoxTextContainer}>
-                            <CheckBox onToggle={this.onToggleTermsAndConditionsCheckBox} />
+                            <CheckBox
+                                ref={cb => this.tcCheckBox = cb}
+                                onToggle={this.onToggleTermsAndConditionsCheckBox}
+                            />
                             <Text
                                 style={styles.termsText}
+                                suppressHighlighting
+                                onPress={this.toggleTermsAndConditionsCheckBox}
                             >
                                 {I18n.t('appIntro.acceptTermsText1')} <Text onPress={this.onTermsAndConditionsTap} style={styles.termsTextUnderlined}>{I18n.t('appIntro.acceptTermsText2')} </Text>{I18n.t('appIntro.acceptTermsText3')}
                             </Text>
                         </View>
                         <View style={styles.checkBoxTextContainer}>
-                            <CheckBox onToggle={this.onTogglePrivacyPolicyCheckBox} />
+                            <CheckBox
+                                ref={cb => this.ppCheckBox = cb}
+                                onToggle={this.onTogglePrivacyPolicyCheckBox}
+                            />
                             <Text
                                 style={styles.termsText}
+                                suppressHighlighting
+                                onPress={this.togglePrivacyPolicyCheckBox}
                             >
                                 {I18n.t('appIntro.acceptPrivacyPolicyText1')} <Text onPress={this.onPrivacyPolicyTap} style={styles.termsTextUnderlined}>{I18n.t('appIntro.acceptPrivacyPolicyText2')} </Text>{I18n.t('appIntro.acceptPrivacyPolicyText3')}
                             </Text>
@@ -153,7 +177,7 @@ class AppIntroScreen extends React.Component {
                         />
                     </View>
                 </SafeAreaView>
-            </Container>
+            </Container >
         );
     }
 }
