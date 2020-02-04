@@ -36,6 +36,12 @@ const DIFFICULTY_COLOR = {
     2: '#E40026'
 };
 
+const BURNED_CALORIES = {
+    0: 20,
+    1: 25,
+    3: 30
+}; // difficulty level - burnt calories mapping
+
 export default class TrainingPresenter {
     constructor(view) {
         this.view = view;
@@ -152,6 +158,7 @@ export default class TrainingPresenter {
                             },
                             background: programBackground,
                             locked: dIndex > program.progress,
+                            caloriesBurned: BURNED_CALORIES[workout.difficulty] * workout.exercises.length,
                             exercises: workout.exercises.map((exercise) => {
                                 const exerciseDuration = this._getExerciseDuration(exercise);
                                 return {
@@ -163,7 +170,8 @@ export default class TrainingPresenter {
                                     durationText: exerciseDuration.durationText,
                                     isTimeBased: exerciseDuration.isTimeBased,
                                     tickInterval: exerciseDuration.tickInterval,
-                                    restTime: DEFAULT_REST_TIME
+                                    restTime: DEFAULT_REST_TIME,
+                                    caloriesBurned: BURNED_CALORIES[workout.difficulty]
                                 }
                             })
                         })))

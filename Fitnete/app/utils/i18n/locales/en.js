@@ -34,7 +34,7 @@ export default {
         title: 'Oops',
         ok: 'OK',
         retry: 'Retry',
-        networkError: 'The internet connection appears to be offline. Make sure you are connected to the internet, then tap retry',
+        networkError: 'The internet connection appears to be offline. Make sure you are connected to the internet, then try again',
         subscriptionExpired: 'Your Fitnete subscription has expired',
         noSubscriptionsFound: 'No subscriptions found',
         unknownError: 'Oops, something went wrong'
@@ -245,12 +245,13 @@ export default {
     rest: {
         title: 'Rest Time',
         skip: 'Skip Rest',
+        caloriesBurned: 'Nice! You\'ve just burned %{calories} calories, let\'s do some more!',
         nextExercise: 'Next exercise:'
     },
     workoutComplete: {
         title: 'Congratulations!',
         description1: 'Congratulations',
-        description2: 'Workout complete!',
+        description2: 'Workout complete! You\'ve just burned %{calories} calories',
         goToMainScreen: 'Go to main screen'
     },
     workoutReminder: {

@@ -76,7 +76,8 @@ class WorkoutScreen extends React.Component {
     }
 
     didCompleteWorkout() {
-        push(Route.WorkoutComplete);
+        const { workout: { caloriesBurned } } = this.props.navigation.state.params;
+        push(Route.WorkoutComplete, { caloriesBurned });
     }
 
     skipRest() {

@@ -46,7 +46,7 @@ class RestScreen extends React.Component {
 
     render() {
         const { countdownText } = this.state;
-        const { nextExercise } = this.props.navigation.state.params;
+        const { nextExercise, exercise: { caloriesBurned } } = this.props.navigation.state.params;
         return (
             <LinearGradient
                 style={styles.container}
@@ -59,6 +59,7 @@ class RestScreen extends React.Component {
                     <View style={styles.content}>
                         <View style={styles.topContainer}>
                             <Text style={styles.title}>{I18n.t('rest.title')}</Text>
+                            <Text style={styles.caloriesBurned}>{I18n.t('rest.caloriesBurned', { calories: caloriesBurned })}</Text>
                             <Text style={styles.timeText}>{countdownText}</Text>
                             <Button
                                 title={I18n.t('rest.skip')}
@@ -111,6 +112,13 @@ const styles = StyleSheet.create({
         fontFamily: 'Poppins-Bold',
         fontSize: 24,
         color: '#3E3750',
+        textAlign: 'center'
+    },
+    caloriesBurned: {
+        marginTop: 4,
+        fontFamily: 'Poppins',
+        fontSize: 15,
+        color: '#4F4C57',
         textAlign: 'center'
     },
     timeText: {

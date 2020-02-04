@@ -27,6 +27,7 @@ class WorkoutCompleteScreen extends React.Component {
     }
 
     render() {
+        const { caloriesBurned } = this.props.navigation.state.params;
         return (
             <LinearGradient
                 style={styles.container}
@@ -38,7 +39,7 @@ class WorkoutCompleteScreen extends React.Component {
                 <SafeAreaView style={styles.container}>
                     <View style={styles.content}>
                         <Text style={styles.description1}>{I18n.t('workoutComplete.description1')}</Text>
-                        <Text style={styles.description2}>{I18n.t('workoutComplete.description2')}</Text>
+                        <Text style={styles.description2}>{I18n.t('workoutComplete.description2', { calories: caloriesBurned })}</Text>
                         <View style={styles.imageContainer}>
                             <Image
                                 style={styles.image}
