@@ -72,6 +72,7 @@ export default class TrainingPresenter {
                     ...program,
                     progress,
                     progressText: `${progress} / ${program.duration}`,
+                    newText: progress === 0 ? I18n.t('training.new').toUpperCase() : '',
                     workouts: program.workouts.map((workout, index) => ({
                         ...workout,
                         locked: index > progress
