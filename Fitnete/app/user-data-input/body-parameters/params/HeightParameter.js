@@ -23,6 +23,21 @@ class HeightParameter {
         return this.standardiseValue(value, unit);
     }
 
+    convert(value, unit = 'metric') {
+        switch (unit) {
+            case 'metric':
+                return value;
+            case 'imperial': {
+                const inches = value / CM_INCH_COEFF;
+                const feet = Math.trunc(inches / FEET_INCH_COEFF);
+                const remainingInches = Math.round(inches - (feet * FEET_INCH_COEFF));
+                return [feet, remainingInches];
+            }
+            default:
+                return '';
+        }
+    }
+
     getFormattedValue(value, unit = 'metric') {
         switch (unit) {
             case 'metric':

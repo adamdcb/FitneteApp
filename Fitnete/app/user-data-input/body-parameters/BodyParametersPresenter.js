@@ -30,6 +30,10 @@ export default class BodyParametersPresenter {
             this.uiData = await this._saveUnit(value);
         } else {
             this.uiData = await this._saveBodyParam(id, value, bParam.getFormattedValue(value, this.unit), valuesIndexes);
+            for (let index = 0; index < bodyParam.resetParamsOnChange.length; index++) {
+                const paramId = bodyParam.resetParamsOnChange[index];
+                this.uiData = await this._resetBodyParam(paramId, value);
+            }
         }
         this.view.setData(this.uiData);
     }
@@ -64,6 +68,36 @@ export default class BodyParametersPresenter {
         return uiData;
     }
 
+    async _resetBodyParam(id, maxValue) {
+        const param = {};
+        param[id] = null;
+        const data = {
+            ...param
+        };
+        await this.dataSource.setUser(data);
+        const uiData = this.uiData.map((item) => {
+            if (item.id === id) {
+                const bParam = BodyParameterFactory.createParameter(item.type);
+                const mValue = bParam.convert(maxValue, this.unit) - 1;
+                const data = this.data.find(d => d.id === id);
+                const dataset = data.datasets.find(ds => ds.unit === this.unit) || data.datasets[0];
+                const valueObj = bParam.getValueObj({ value: null, defaultValue: Math.min(mValue, dataset.defaultValue), unit: this.unit });
+                const value = valueObj.value;
+                return {
+                    ...item,
+                    datasets: dataset.data.map(d => d.filter(v => v <= mValue).map(v => bParam.getValueStr(v))),
+                    value,
+                    displayValue: bParam.getFormattedValue(value, this.unit),
+                    valueComponents: bParam.getValueComponents(value, this.unit).map((v, i) => dataset.data[i].indexOf(v) - 1),
+                    isDefaultValue: true
+                }
+            }
+            return item;
+        });
+        uiData.hasSelectedBodyParams = false;
+        return uiData;
+    }
+
     unmountView() {
         this.view = null;
     }
@@ -80,17 +114,20 @@ export default class BodyParametersPresenter {
             const paramValue = user[item.id];
             const dataset = item.datasets.find(ds => ds.unit === this.unit) || item.datasets[0];
             const bParam = BodyParameterFactory.createParameter(item.type);
-            const valueObj = bParam.getValueObj({ value: paramValue, defaultValue: dataset.defaultValue, unit: this.unit });
+            const maxParamValue = item.dependsOn ? bParam.convert(user[item.dependsOn] || Number.MAX_VALUE, this.unit) - 1 : null;
+            const valueObj = bParam.getValueObj({ value: paramValue, defaultValue: maxParamValue ? Math.min(maxParamValue, dataset.defaultValue) : dataset.defaultValue, unit: this.unit });
             const value = valueObj.value;
             return {
                 id: item.id,
                 type: item.type,
                 title: I18n.t(`bodyParameters.${item.id}`),
                 iconName: item.id.replace(/([a-zA-Z])(?=[A-Z])/g, '$1_').toLowerCase(),
-                datasets: dataset.data.map(d => d.map(v => bParam.getValueStr(v))),
+                datasets: dataset.data.map(d => d.filter(v => maxParamValue ? v <= maxParamValue : true).map(v => bParam.getValueStr(v))),
                 labels: dataset.dataLabels,
                 displayValue: bParam.getFormattedValue(value, this.unit),
                 valueComponents: bParam.getValueComponents(value, this.unit).map((v, i) => dataset.data[i].indexOf(v) - 1),
+                resetParamsOnChange: item.resetParamsOnChange,
+                dependsOn: item.dependsOn,
                 isDefaultValue: valueObj.isDefault
             }
         });
@@ -106,6 +143,8 @@ export default class BodyParametersPresenter {
         return [{
             id: 'unit',
             type: 'unit',
+            resetParamsOnChange: [],
+            dependsOn: null,
             datasets: [{
                 defaultValue: 'metric',
                 data: [
@@ -120,6 +159,8 @@ export default class BodyParametersPresenter {
         {
             id: 'height',
             type: 'height',
+            resetParamsOnChange: [],
+            dependsOn: null,
             datasets: [{
                 unit: 'metric',
                 defaultValue: 175,
@@ -141,6 +182,8 @@ export default class BodyParametersPresenter {
         {
             id: 'weight',
             type: 'weight',
+            resetParamsOnChange: ['targetWeight'],
+            dependsOn: null,
             datasets: [{
                 unit: 'metric',
                 defaultValue: 75,
@@ -161,6 +204,8 @@ export default class BodyParametersPresenter {
         {
             id: 'targetWeight',
             type: 'weight',
+            resetParamsOnChange: [],
+            dependsOn: 'weight',
             datasets: [{
                 unit: 'metric',
                 defaultValue: 75,

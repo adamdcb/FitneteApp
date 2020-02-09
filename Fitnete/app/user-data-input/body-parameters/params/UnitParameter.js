@@ -10,6 +10,10 @@ class UnitParameter {
         return this.standardiseValue(value);
     }
 
+    convert(value) {
+        return value;
+    }
+
     getFormattedValue(value) {
         return I18n.t(`unit.${value}`, { defaultValue: '' });
     }

@@ -19,6 +19,18 @@ class WeightParameter {
         return this.standardiseValue(value, unit);
     }
 
+    convert(value, unit = 'metric') {
+        switch (unit) {
+            case 'metric':
+                return value;
+            case 'imperial': {
+                return Math.round(Math.trunc(value * KG_LBS_COEFF * 10) / 10);
+            }
+            default:
+                return 0;
+        }
+    }
+
     getFormattedValue(value, unit = 'metric') {
         switch (unit) {
             case 'metric':

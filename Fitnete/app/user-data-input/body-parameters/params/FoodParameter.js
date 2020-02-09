@@ -10,6 +10,10 @@ class FoodParameter {
         return this.standardiseValue(value);
     }
 
+    convert(value) {
+        return value;
+    }
+    
     getFormattedValue(value) {
         return I18n.t(`foodOptions.${value}`, { defaultValue: '' });
     }
