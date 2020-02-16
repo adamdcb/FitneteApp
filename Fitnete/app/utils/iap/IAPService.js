@@ -136,7 +136,6 @@ export default {
                     headers,
                     body: Platform.select({
                         ios: {
-                            environment: 'sandbox', // FIXME
                             receipt_data: receipt
                         },
                         android: receipt
