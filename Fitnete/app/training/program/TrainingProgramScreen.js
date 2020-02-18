@@ -191,6 +191,8 @@ class TrainingProgramScreen extends React.Component {
                                     ios: 0.34,
                                     android: 1
                                 })}
+                                enableMomentum
+                                shouldOptimizeUpdates
                                 onSnapToItem={this._onSnapToItem}
                                 slideStyle={styles.slideStyle}
                             />
