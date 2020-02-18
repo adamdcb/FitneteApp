@@ -97,6 +97,8 @@ platform :android do
     	skip_upload_metadata: true,
     	skip_upload_images: true
     )
+    # Upload source maps to Bugsnag
+    upload_sourcemaps()
   end 
 
   def clean_project()
@@ -200,6 +202,20 @@ platform :android do
     )
     # Push the new commit and tag back to your git remote
     push_to_git_remote(force: true)
+  end
+
+  def upload_sourcemaps()
+    sh("react-native bundle --platform android --dev false --entry-file index.js --bundle-output android-release.bundle --sourcemap-output android-release.bundle.map")
+    sh("curl https://upload.bugsnag.com/react-native-source-map \
+      -F apiKey=0f31065ba6a8f376650644cb481c4420 \
+      -F appVersion=#{ENV["VERSION_NAME"]} \
+      -F dev=false \
+      -F platform=android \
+      -F sourceMap=@android-release.bundle.map \
+      -F bundle=@android-release.bundle \
+      -F projectRoot=`pwd` \
+      -F overwrite=true
+    ")
   end
 
   after_all do |lane|

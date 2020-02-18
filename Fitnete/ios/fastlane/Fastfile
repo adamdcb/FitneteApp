@@ -111,6 +111,9 @@ platform :ios do
     
     # Upload to TestFlight
     upload_ipa_to_testflight(configuration, options[:groups])
+    # Upload dysms and source maps to Bugsnag
+    upload_dsyms()
+    upload_sourcemaps()
   end
 
   def clean_project(configuration)
@@ -218,6 +221,29 @@ platform :ios do
       groups: groups,
       distribute_external: !groups.empty?
     )
+  end
+
+  def upload_dsyms()
+    download_dsyms(
+      version: ENV["VERSION_NAME"],
+      build_number: ENV["BUILD_NUMBER"],
+      wait_for_dsym_processing: true
+    )
+    upload_symbols_to_bugsnag
+  end
+
+  def upload_sourcemaps()
+    sh("react-native bundle --platform ios --dev false --entry-file index.js --bundle-output ios-release.bundle --sourcemap-output ios-release.bundle.map")
+    sh("curl https://upload.bugsnag.com/react-native-source-map \
+      -F apiKey=0f31065ba6a8f376650644cb481c4420 \
+      -F appVersion=#{ENV["VERSION_NAME"]} \
+      -F dev=false \
+      -F platform=ios \
+      -F sourceMap=@ios-release.bundle.map \
+      -F bundle=@ios-release.bundle \
+      -F projectRoot=`pwd` \
+      -F overwrite=true
+    ")
   end
 
   after_all do |lane|
