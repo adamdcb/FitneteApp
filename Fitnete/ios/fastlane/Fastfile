@@ -20,6 +20,14 @@ platform :ios do
     clean_build_artifacts()
   end
 
+  desc "Upload dsyms and source maps to Bugsnag"
+  lane :upload_source_maps do |options|
+    ENV["VERSION_NAME"] = options[:version]
+    ENV["BUILD_NUMBER"] = options[:build]
+    upload_dsyms()
+    upload_sourcemaps()
+  end
+
   desc "Build iOS app and submit the .ipa to TestFlight"
   lane :deploy do |options|
     configuration = options[:configuration]
@@ -233,17 +241,19 @@ platform :ios do
   end
 
   def upload_sourcemaps()
-    sh("react-native bundle --platform ios --dev false --entry-file index.js --bundle-output ios-release.bundle --sourcemap-output ios-release.bundle.map")
-    sh("curl https://upload.bugsnag.com/react-native-source-map \
-      -F apiKey=0f31065ba6a8f376650644cb481c4420 \
-      -F appVersion=#{ENV["VERSION_NAME"]} \
-      -F dev=false \
-      -F platform=ios \
-      -F sourceMap=@ios-release.bundle.map \
-      -F bundle=@ios-release.bundle \
-      -F projectRoot=`pwd` \
-      -F overwrite=true
-    ")
+    Dir.chdir("../..") do
+      sh("react-native bundle --platform ios --dev false --entry-file index.js --bundle-output ios-release.bundle --sourcemap-output ios-release.bundle.map")
+      sh("curl https://upload.bugsnag.com/react-native-source-map \
+        -F apiKey=0f31065ba6a8f376650644cb481c4420 \
+        -F appVersion=#{ENV["VERSION_NAME"]} \
+        -F dev=false \
+        -F platform=ios \
+        -F sourceMap=@ios-release.bundle.map \
+        -F bundle=@ios-release.bundle \
+        -F projectRoot=`pwd` \
+        -F overwrite=true
+      ")
+    end
   end
 
   after_all do |lane|

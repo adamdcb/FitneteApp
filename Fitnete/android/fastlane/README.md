@@ -21,6 +21,11 @@ or alternatively using `brew cask install fastlane`
 fastlane android test
 ```
 Runs all the tests
+### android upload_source_maps
+```
+fastlane android upload_source_maps
+```
+Upload source maps to Bugsnag
 ### android deploy
 ```
 fastlane android deploy
