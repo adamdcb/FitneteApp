@@ -119,12 +119,14 @@ class PurchaseScreen extends React.Component {
                     />
                 </View>
                 <View style={styles.continueRestoreContainer}>
-                    <ButtonText
+                    {/* 
+                        // TODO: Enable continue for free option!
+                        <ButtonText
                         style={styles.continueForFree}
                         title={I18n.t('purchase.continueForFree')}
                         showArrow={false}
                         onPress={this.continueForFree}
-                    />
+                    /> */}
                     <ButtonText
                         style={styles.restore}
                         title={I18n.t('purchase.restore')}
@@ -367,10 +369,10 @@ const styles = StyleSheet.create({
         flexDirection: 'row',
         height: 40,
         marginTop: 8,
-        justifyContent: 'space-between'
+        justifyContent: 'center'
     },
     continueForFree: {
-        marginRight: 12
+        // marginRight: 12
     },
     restore: {
         marginLeft: 12
