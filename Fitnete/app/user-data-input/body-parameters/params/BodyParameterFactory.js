@@ -3,6 +3,7 @@ import WeightParameter from './WeightParameter';
 import FoodParameter from './FoodParameter';
 import UnitParameter from './UnitParameter';
 import AreasOfFocusParameter from './AreasOfFocusParameter';
+import FitnessLevelParameter from './FitnessLevelParameter';
 
 export default class BodyParameterFactory {
     static createParameter(type) {
@@ -17,6 +18,8 @@ export default class BodyParameterFactory {
                 return new FoodParameter();
             case 'areasOfFocus':
                 return new AreasOfFocusParameter();
+            case 'fitnessLevel':
+                return new FitnessLevelParameter();
             default:
                 return null;
         }
