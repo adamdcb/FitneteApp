@@ -16,6 +16,11 @@ or alternatively using `brew cask install fastlane`
 
 # Available Actions
 ## iOS
+### ios upload_source_maps
+```
+fastlane ios upload_source_maps
+```
+Upload dsyms and source maps to Bugsnag
 ### ios deploy
 ```
 fastlane ios deploy
