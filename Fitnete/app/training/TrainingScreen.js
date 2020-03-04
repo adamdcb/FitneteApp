@@ -189,6 +189,7 @@ class TrainingScreen extends React.Component {
                                 android: 1
                             })}
                             enableMomentum
+                            decelerationRate={0.9}
                             shouldOptimizeUpdates
                             onSnapToItem={this._onSnapToItem}
                             slideStyle={styles.slideStyle}
