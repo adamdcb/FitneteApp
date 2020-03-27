@@ -157,10 +157,10 @@ export default {
             year: 'Yearly'
         },
         description: {
-            week: 'after 7-day free trial',
-            year: 'Billed annually'
+            week: '\nafter 7-day free trial',
+            year: 'Billed annually\nafter 7-day free trial'
         },
-        fullDescription: 'Unlock your complete FITNETE workout experience with over 100 workouts for women and men',
+        fullDescription: '• 7 days free trial for any plan\n• Cancel at any time\n• Unlimited access to all features',
         goPremium: 'GO PREMIUM',
         getTheFullExperience: 'Get The Full\nExperience',
         workoutsPerWeek: 'workouts per week',

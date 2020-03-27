@@ -174,7 +174,7 @@ class PurchaseScreen extends React.Component {
                             {subscription.priceText}
                         </Text>
                         <Text
-                            numberOfLines={this.getTextNumberOfLines()}
+                            numberOfLines={2}
                             adjustsFontSizeToFit
                             style={styles.description}
                         >
@@ -347,10 +347,10 @@ const styles = StyleSheet.create({
     },
     legalDescription: {
         marginVertical: 32,
-        fontFamily: 'Poppins',
-        fontSize: 12,
-        color: '#3E3750',
-        textAlign: 'center'
+        marginLeft: 12,
+        fontFamily: 'Poppins-Bold',
+        fontSize: 15,
+        color: '#0F7788'
     },
     buttonsContainer: {
         flexDirection: 'row',
