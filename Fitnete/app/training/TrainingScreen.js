@@ -32,6 +32,7 @@ class TrainingScreen extends React.Component {
         this._openProgram = this._openProgram.bind(this);
         this._onSnapToItem = this._onSnapToItem.bind(this);
         this._retry = this._retry.bind(this);
+        this._goToStart = this._goToStart.bind(this);
     }
 
     componentDidMount() {
@@ -60,12 +61,17 @@ class TrainingScreen extends React.Component {
             I18n.t('error.title'),
             I18n.t('error.subscriptionExpired'),
             [{
-                text: I18n.t('ok')
+                text: I18n.t('ok'),
+                onPress: this._goToStart
             }],
             {
                 cancelable: false
             }
         );
+    }
+
+    _goToStart() {
+        navigate(Route.Startup);
     }
 
     _openProgram() {
