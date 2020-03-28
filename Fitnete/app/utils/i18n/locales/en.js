@@ -5,6 +5,7 @@ export default {
     save: 'Save',
     later: 'Later',
     ok: 'OK',
+    and: 'and',
     month: 'Month',
     year: 'Year',
     weekdays: {
@@ -164,7 +165,15 @@ export default {
         goPremium: 'GO PREMIUM',
         getTheFullExperience: 'Get The Full\nExperience',
         workoutsPerWeek: 'workouts per week',
-        workoutsToAchieveGoal: 'workouts until you achieve your goal'
+        workoutsToAchieveGoal: 'workouts until you achieve your goal',
+        legal: {
+            description1:  'By continuing you accept our',
+            description2_ios: 'Your Apple ID payment method will be automatically charged. The subscription renews automatically at the end of each period, until you cancel. To avoid being charged, cancel the subscription in your iTunes & App Store/Apple ID account settings at least 24 hours before the current subscription period. If you are unsure how to cancel a subscription, please visit the Apple Support website. Note that deleting the app does not cancel your subscriptions. You may wish to make a printscreen of this information for your reference. You can find it later in our app by going to "Profile" > "Settings" gear in the upper right corner of the screen > "Subscription"',
+            description2_android: 'Your Google Play payment method will be automatically charged. The subscription renews automatically at the end of each period, until you cancel. To avoid being charged, cancel the subscription in your Play Store account at least 24 hours before the current subscription period. If you are unsure how to cancel a subscription, please visit the Google Play Support website. Note that deleting the app does not cancel your subscriptions. You may wish to make a printscreen of this information for your reference. You can find it later in our app by going to "Profile" > "Settings" gear in the upper right corner of the screen > "Subscription"',
+            termsAndConditions: 'Terms & Conditions',
+            privacyPolicy: 'Privacy Policy',
+            billingTerms: 'Billing Terms',
+        }
     },
     noPlanPurchased: {
         description1: 'Not ready for the',

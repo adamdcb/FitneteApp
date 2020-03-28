@@ -1,5 +1,5 @@
 import React from 'react';
-import { SafeAreaView, View, Text, StyleSheet, ActivityIndicator, Alert, Platform } from 'react-native';
+import { SafeAreaView, View, ScrollView, Text, StyleSheet, ActivityIndicator, Alert, Platform, Linking } from 'react-native';
 import ElevatedView from 'fiber-react-native-elevated-view';
 
 import I18n from '../../utils/i18n/I18n';
@@ -11,6 +11,7 @@ import PurchasePresenter from './PurchasePresenter';
 import FNIcon from '../../utils/components/FNIcon';
 import LoadingView from '../../utils/components/LoadingView';
 import ErrorView from '../../utils/components/ErrorView';
+import { URL } from '../../utils/utils/Constants';
 
 class PurchaseScreen extends React.Component {
     constructor(props) {
@@ -30,6 +31,9 @@ class PurchaseScreen extends React.Component {
         this.continueForFree = this.continueForFree.bind(this);
         this.restore = this.restore.bind(this);
         this.retry = this.retry.bind(this);
+        this.openPrivacyPolicy = this.openPrivacyPolicy.bind(this);
+        this.openTermsAndConditions = this.openTermsAndConditions.bind(this);
+        this.openBillingTerms = this.openBillingTerms.bind(this);
     }
 
     componentDidMount() {
@@ -65,6 +69,26 @@ class PurchaseScreen extends React.Component {
     retry() {
         this.setState({ error: null });
         this.presenter.loadData();
+    }
+
+    openPrivacyPolicy() {
+        this.openURL(URL.PrivacyPolicy);
+    }
+
+    openTermsAndConditions() {
+        this.openURL(URL.TermsAndConditions);
+    }
+
+    openBillingTerms() {
+        this.openURL(URL.BillingTerms);
+    }
+
+    openURL(url) {
+        try {
+            Linking.openURL(url);
+        } catch (error) {
+            console.log(`openUrl(): ${url}`, error);
+        }
     }
 
     onSubscriptionSuccess() {
@@ -202,7 +226,7 @@ class PurchaseScreen extends React.Component {
         }
         const { workoutsTotal, workoutsPerWeek, paymentLoading } = this.state;
         return (
-            <Container>
+            <Container useScroll={false}>
                 <SafeAreaView style={styles.container}>
                     <View style={styles.contentContainer}>
                         <ElevatedView
@@ -240,9 +264,42 @@ class PurchaseScreen extends React.Component {
                         <View style={styles.subscriptionContainer}>
                             {subscriptions.map(subscription => this.renderSubscriptionButton(subscription))}
                         </View>
-                        <Text style={styles.legalDescription}>
+                        <Text style={styles.fullDescription}>
                             {I18n.t('purchase.fullDescription')}
                         </Text>
+                        <ScrollView>
+                            <Text style={styles.legalDescription}>
+                                {I18n.t('purchase.legal.description1')}
+                            </Text>
+                            <Text style={styles.legalDescription}>
+                                <Text
+                                    style={styles.terms}
+                                    onPress={this.openPrivacyPolicy}
+                                >
+                                    {I18n.t('purchase.legal.privacyPolicy')}
+                                </Text>
+                                {', '}
+                                <Text
+                                    style={styles.terms}
+                                    onPress={this.openTermsAndConditions}
+                                >
+                                    {I18n.t('purchase.legal.termsAndConditions')}
+                                </Text>
+                                {', '}
+                                <Text>
+                                    {I18n.t('and')}{' '}
+                                </Text>
+                                <Text
+                                    style={styles.terms}
+                                    onPress={this.openBillingTerms}
+                                >
+                                    {I18n.t('purchase.legal.billingTerms')}
+                                </Text>
+                            </Text>
+                            <Text style={[styles.legalDescription, { marginTop: 12 }]}>
+                                {I18n.t(`purchase.legal.description2_${Platform.OS}`)}
+                            </Text>
+                        </ScrollView>
                     </View>
                     <View style={styles.buttonsContainer}>
                         {
@@ -292,7 +349,7 @@ const styles = StyleSheet.create({
     subscriptionButtonContainer: {
         backgroundColor: '#FFFFFF',
         marginHorizontal: 12,
-        paddingVertical: 16,
+        paddingVertical: 8,
         paddingHorizontal: 12,
         borderRadius: 8,
         borderWidth: 1
@@ -305,15 +362,15 @@ const styles = StyleSheet.create({
         borderColor: '#E2E2E2',
         borderWidth: 1,
         borderRadius: 8,
-        marginBottom: 32,
-        paddingVertical: 24,
-        paddingVertical: 16
+        marginTop: 8,
+        marginBottom: 16,
+        paddingVertical: 8
     },
     goPremiumTextContainer: {
         flexDirection: 'row',
         justifyContent: 'space-around',
         alignItems: 'center',
-        marginBottom: 24
+        marginBottom: 8
     },
     goPremium: {
         fontFamily: 'Poppins-Bold',
@@ -345,12 +402,21 @@ const styles = StyleSheet.create({
         lineHeight: 16,
         color: '#B4B3B6'
     },
-    legalDescription: {
-        marginVertical: 32,
+    fullDescription: {
+        marginVertical: 12,
         marginLeft: 12,
         fontFamily: 'Poppins-Bold',
         fontSize: 15,
         color: '#0F7788'
+    },
+    legalDescription: {
+        marginLeft: 12,
+        fontFamily: 'Poppins',
+        fontSize: 12,
+        color: '#B4B3B6'
+    },
+    terms: {
+        textDecorationLine: 'underline'
     },
     buttonsContainer: {
         flexDirection: 'row',
