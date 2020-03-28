@@ -130,7 +130,7 @@ android {
         applicationId "com.rierra.fitnete"
         minSdkVersion rootProject.ext.minSdkVersion
         targetSdkVersion rootProject.ext.targetSdkVersion
-        versionCode 3145792
+        versionCode 3145793
         versionName "1.0.1"
     }
 
