@@ -34,8 +34,8 @@ export default class PurchasePresenter {
                     price: subscription.price,
                     title: `${I18n.t(`purchase.title.${type}`)}`.toUpperCase(),
                     description: `${I18n.t(`purchase.description.${type}`)}`,
-                    priceText: noOfWeeks > 1 ? `${subscription.localizedPrice}/${I18n.t(`purchase.subscriptionPeriod.${type}`)}` : ' ',
-                    pricePerWeekText: `${subscription.currency} ${pricePerWeek}/${I18n.t('purchase.subscriptionPeriod.week')}`
+                    priceText: `${subscription.localizedPrice}/${I18n.t(`purchase.subscriptionPeriod.${type}`)}`,
+                    pricePerWeekText: noOfWeeks > 1 ? `${subscription.currency} ${pricePerWeek}/${I18n.t('purchase.subscriptionPeriod.week')}` : ' '
                 }
             })
                 .sort((a, b) => parseFloat(b.price) - parseFloat(a.price));

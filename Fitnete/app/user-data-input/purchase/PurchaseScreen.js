@@ -184,18 +184,18 @@ class PurchaseScreen extends React.Component {
                         <Text
                             numberOfLines={this.getTextNumberOfLines()}
                             adjustsFontSizeToFit
-                            style={[styles.pricePerWeek, { color: topTextColor }]}
+                            style={[styles.priceText, { color: topTextColor }]}
                         >
-                            {subscription.pricePerWeekText}
+                            {subscription.priceText}
                         </Text>
                     </View>
                     <View style={styles.subscriptionButtonBottomView}>
                         <Text
                             numberOfLines={this.getTextNumberOfLines()}
                             adjustsFontSizeToFit
-                            style={styles.priceText}
+                            style={styles.pricePerWeek}
                         >
-                            {subscription.priceText}
+                            {subscription.pricePerWeekText}
                         </Text>
                         <Text
                             numberOfLines={2}
@@ -385,16 +385,16 @@ const styles = StyleSheet.create({
         color: '#3E3750'
     },
     pricePerWeek: {
-        fontFamily: 'Poppins',
-        fontSize: 16,
-        lineHeight: 20,
-        color: '#B4B3B6'
-    },
-    priceText: {
         fontFamily: 'Poppins-SemiBold',
         fontSize: 12,
         lineHeight: 16,
         color: '#5F5F5F'
+    },
+    priceText: {
+        fontFamily: 'Poppins',
+        fontSize: 16,
+        lineHeight: 20,
+        color: '#B4B3B6'
     },
     description: {
         fontFamily: 'Poppins',
